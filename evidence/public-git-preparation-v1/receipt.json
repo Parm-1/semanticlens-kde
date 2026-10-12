@@ -1,0 +1,14 @@
+{
+  "source_archive_sha256": "757543899ff3a231e1610d59829602a5166f768fef888e55d1a76a4e3524822d",
+  "internal_source_commit": "42765959f2b2ae8290d7527d074a9f9cd28906a8",
+  "public_local_commit": "4e0b0532478680a9bf10882a80ee98377df83c80",
+  "branch": "main",
+  "commit_count": 1,
+  "tracked_files": 1991,
+  "retained_content_and_modes_match": true,
+  "omitted_system_binaries_absent": true,
+  "remote_count": 0,
+  "working_tree_clean": true,
+  "publication": "not approved; no remote or upload",
+  "scope": "Fresh local Git root; no internal history imported"
+}
