@@ -1,6 +1,6 @@
 {
   "KPlugin": {
-    "Name": "KDE Index",
+    "Name": "SemanticLens for KDE",
     "Description": "Search selected folders by meaning and content",
     "Version": "0.1",
     "License": "GPL-3.0-or-later",

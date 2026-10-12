@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/tmp/stage/bin/kde-index-service",
+    "--data-dir",
+    "/tmp/startup/direct-relative-negative-r2/native-data",
+    "--socket",
+    "native-runtime/smoke.sock",
+    "--probe",
+    "/tmp/stage/bin/embedding-probe",
+    "--probe-sha256",
+    "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+    "--text-model",
+    "/models/embeddinggemma-2-Q8_0.gguf",
+    "--image-model",
+    "/models/mmproj-embeddinggemma-2-Q8_0.gguf"
+  ],
+  "cwd": "/tmp/startup/direct-relative-negative-r2",
+  "exit": 2,
+  "elapsed_ms": 16,
+  "data_files": [],
+  "socket_exists": false
+}

@@ -1,0 +1,29 @@
+{
+  "source": {
+    "src/ui-v4/backend.cpp": "76e5645f856e7eef4307ebe5ef9a18d3ca283d8f9d0db1f30746f912972cac74",
+    "src/ui-v4/backend.h": "202c76a2abcf6573433b4625d856c275ac61a575227a86a15e4b4d10e8588e6e",
+    "src/ui-v4/main.cpp": "38f85b820eff04b97e406bcd69034f5193db3e67157b90c3abf384613430d2ae",
+    "src/service-v3/main.cpp": "a90195c61d61fcc8d5bf48dcd35ca830e292bd9ecc477240b9342dbd659d419b",
+    "src/core-v5/engine.cpp": "7c6ed298befefebc4feeb6eb11605da3cb02d68de8cfd7d71d4cb77ddca42cd4",
+    "tools/ui_smoke.cpp": "9fff1d163ada07e5c3176e3a60578c9ac1762cd6f3fadb908dd02c89835d97f0",
+    "CMakeLists.txt": "cae2637ce314c187f8a3c70d487983da076b4bff37cb58f3d8c073b26383c398"
+  },
+  "stage": {
+    "usr/bin/kde-index-service": {
+      "sha256": "28c0d5ddf0ab20608ef527dd891cb023ecd2194690b9f281b95533dacd202ebe",
+      "size": 425256
+    },
+    "usr/bin/embedding-probe": {
+      "sha256": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+      "size": 8741680
+    },
+    "usr/bin/kde-index": {
+      "sha256": "e9f5c2de494c0ec445f8cf9173319bf62231e1dc50811c212bbb6baff9bcbbf5",
+      "size": 354184
+    }
+  },
+  "qt_base_package": [
+    "qt6-base-6.12.0-2"
+  ],
+  "observer_binary_sha256": "cfe806227f007bd8a142107df294b02c879e79d8bfba1450e05a91541e1e0842"
+}

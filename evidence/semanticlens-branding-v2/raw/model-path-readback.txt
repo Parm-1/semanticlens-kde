@@ -1,0 +1,2 @@
+/models/embeddinggemma-2-Q8_0.gguf 309855456 bytes
+/models/mmproj-embeddinggemma-2-Q8_0.gguf 554821024 bytes

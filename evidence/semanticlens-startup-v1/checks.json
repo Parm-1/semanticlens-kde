@@ -1,0 +1,44 @@
+{
+  "outcome": "relative directory socket argument is a harness setup violation in the observed Qt/service configuration; absolute owned socket passes narrow startup",
+  "original_helper_timeout_ms": 90032,
+  "negative_backend_terminal": {
+    "busy": false,
+    "connected": false,
+    "event": "terminal-observation",
+    "indexed": 0,
+    "message": "Unable to connect to the search service. Use Retry search to try again.",
+    "model_ready_predicate": false,
+    "model_setup_needed": false,
+    "ms": 8541
+  },
+  "positive_backend_terminal": {
+    "busy": false,
+    "connected": true,
+    "event": "terminal-observation",
+    "indexed": 0,
+    "message": "Ready",
+    "model_ready_predicate": true,
+    "model_setup_needed": false,
+    "ms": 5281
+  },
+  "raw_status_reply_count": 49,
+  "raw_phase_categories": {
+    "verifying": 45,
+    "ready": 4
+  },
+  "direct_negative_exit": 2,
+  "direct_negative_stderr": "\"QLocalServer::listen: Name error\"",
+  "negative_closure": {
+    "remaining_scoped_processes": [],
+    "socket_exists": false,
+    "forced_live_cleanup": []
+  },
+  "positive_closure": {
+    "remaining_scoped_processes": [],
+    "socket_exists": false,
+    "forced_live_cleanup": []
+  },
+  "outer_namespace_returned": true,
+  "usage": "unknown",
+  "time_scope": "diagnostic startup/observer+shutdown intervals; no latency benchmark or aggregate billing usage"
+}

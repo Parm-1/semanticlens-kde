@@ -1,0 +1,82 @@
+{
+  "source_files_synchronized_between_authorized_trees": true,
+  "stage_file_count": 21,
+  "changed_stage_paths": [
+    "usr/bin/kde-index",
+    "usr/lib/qt6/plugins/kf6/krunner/kde-index-runner.so",
+    "usr/share/applications/org.kdeindex.Search.desktop",
+    "usr/share/metainfo/org.kdeindex.Search.metainfo.xml"
+  ],
+  "unchanged_stage_paths_count": 17,
+  "unchanged_stage_hashes_match_prior_stage": true,
+  "appstream_offline_standard_validation": "pass with 2 pedantic hints",
+  "desktop_file_validation": "pass",
+  "native_application_capture_exit_code": 0,
+  "native_application_capture_window": "local/clean-arch-v1/root.x86_64/semanticlens-branding-v1/source/native-output/actual-window.png",
+  "native_window_label_readback": {
+    "application_display_name": "SemanticLens for KDE",
+    "application_name": "kde-index",
+    "native_window_visible": true,
+    "window_title": "SemanticLens for KDE"
+  },
+  "runner_plugin_metadata_readback": {
+    "valid": true,
+    "plugin_id": "kde-index-runner",
+    "name": "SemanticLens for KDE",
+    "description": "Search selected folders by meaning and content"
+  },
+  "established_ui_service_smoke": {
+    "pass": false,
+    "elapsed_ms": 90032,
+    "failed_check": "completion-within-bound",
+    "raw_result": "local/clean-arch-v1/root.x86_64/semanticlens-branding-v1/source/native-window.log",
+    "invocation": {
+      "binary": "local/clean-arch-v1/root.x86_64/semanticlens-branding-v1/source/build/bin/ui-smoke",
+      "service_arg": "local/clean-arch-v1/root.x86_64/semanticlens-branding-v1/source/stage/usr/bin/kde-index-service",
+      "producer_arg": "local/clean-arch-v1/root.x86_64/semanticlens-branding-v1/source/stage/usr/bin/embedding-probe",
+      "models_arg": "/models",
+      "data_arg": "local/clean-arch-v1/root.x86_64/semanticlens-branding-v1/source/native-data",
+      "socket_arg": "local/clean-arch-v1/root.x86_64/semanticlens-branding-v1/source/native-runtime/smoke.sock",
+      "corpus_arg": "local/clean-arch-v1/root.x86_64/semanticlens-branding-v1/source/corpus",
+      "output_prefix": "local/clean-arch-v1/root.x86_64/semanticlens-branding-v1/source/native-output/window"
+    },
+    "model_path_mapping": {
+      "sandbox_mount": "/models",
+      "host_source": "/home/parm/Documents/KDE Index/models",
+      "text_model": {
+        "path": "/models/embeddinggemma-2-Q8_0.gguf",
+        "size_bytes": 309855456,
+        "present": true
+      },
+      "image_model": {
+        "path": "/models/mmproj-embeddinggemma-2-Q8_0.gguf",
+        "size_bytes": 554821024,
+        "present": true
+      },
+      "raw_path_receipt": "local/clean-arch-v1/root.x86_64/semanticlens-branding-v1/source/model-path-readback.txt"
+    },
+    "readiness_observation": {
+      "raw_backend_message": null,
+      "raw_service_status": null,
+      "connected_or_launch_result": null,
+      "reason": "ui_smoke.cpp records only generic completion-within-bound on the 90s timeout; source waits on Backend::modelReady() before adding the root. Missing model files are ruled out by the isolated path readback, but service startup/readiness versus backend connection cannot be distinguished from the preserved receipt."
+    },
+    "scratch_observations": {
+      "native_data_file_count": 0,
+      "socket_exists": false
+    }
+  },
+  "resource_closure": {
+    "remaining_scoped_process_names": [],
+    "synthetic_service_socket_absent": true,
+    "label_probe_socket_absent": true,
+    "native_data_file_count": 0
+  },
+  "usage_and_timing": {
+    "tool_usage": "unknown",
+    "measured_native_helper_scope": "90.032 seconds; UI helper bound",
+    "capture_timer_ms": 2500,
+    "aggregate_package_elapsed": "unknown"
+  },
+  "appstream_strict_pedantic_attempt": "failed: frozen uppercase component ID and missing releases-info are pedantic hints; homepage reachability warning occurred because network was unshared"
+}

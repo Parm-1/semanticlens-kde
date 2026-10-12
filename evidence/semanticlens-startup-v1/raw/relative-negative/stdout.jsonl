@@ -1,0 +1,4 @@
+{"busy":false,"connected":false,"event":"initial","indexed":0,"message":"","model_ready_predicate":false,"model_setup_needed":false,"ms":5}
+{"busy":false,"connected":false,"event":"backend-changed","indexed":0,"message":"Unable to connect to the search service. Use Retry search to try again.","model_ready_predicate":false,"model_setup_needed":false,"ms":5441}
+{"busy":false,"connected":false,"event":"terminal-observation","indexed":0,"message":"Unable to connect to the search service. Use Retry search to try again.","model_ready_predicate":false,"model_setup_needed":false,"ms":8541}
+{"busy":false,"connected":false,"event":"post-shutdown","indexed":0,"message":"Unable to connect to the search service. Use Retry search to try again.","model_ready_predicate":false,"model_setup_needed":false,"ms":10141}

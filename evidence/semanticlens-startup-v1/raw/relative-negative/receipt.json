@@ -1,0 +1,1058 @@
+{
+  "command": [
+    "/tmp/startup/build/startup-observer",
+    "/tmp/stage/bin/kde-index-service",
+    "/tmp/stage/bin/embedding-probe",
+    "/models",
+    "native-runtime/smoke.sock",
+    "/tmp/startup/relative-negative/native-data"
+  ],
+  "cwd": "/tmp/startup/relative-negative",
+  "env": {
+    "PATH": "/usr/bin",
+    "HOME": "/tmp/startup/relative-negative/native-home",
+    "LANG": "C.UTF-8",
+    "PWD": "/tmp/startup",
+    "XDG_RUNTIME_DIR": "/tmp/startup/relative-negative/native-runtime",
+    "XDG_CONFIG_HOME": "/tmp/startup/relative-negative/native-config",
+    "XDG_DATA_HOME": "/tmp/startup/relative-negative/native-data",
+    "XDG_CACHE_HOME": "/tmp/startup/relative-negative/native-cache"
+  },
+  "initial_modes": {
+    "native-runtime": "0o700",
+    "native-data": "0o700"
+  },
+  "process_samples": [
+    {
+      "ms": 1,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "R"
+        }
+      ]
+    },
+    {
+      "ms": 101,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 202,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 303,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 405,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 506,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 606,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 5,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/relative-negative/native-data --socket native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "D"
+        }
+      ]
+    },
+    {
+      "ms": 707,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 808,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 909,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 1010,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 1111,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 1211,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 1312,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 1413,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 1514,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 1615,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 1715,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 1816,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 1916,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 2017,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 2118,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 2218,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 2319,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 2420,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 2520,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 2621,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 2721,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 2822,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 2923,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 3023,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 3124,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 3225,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 3325,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 3425,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 3526,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 3626,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 3727,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 3828,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 3928,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 4029,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 4129,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 4230,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 4331,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 4431,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 4532,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 4632,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 4733,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 4834,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 4934,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 5035,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 5135,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 5236,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 5336,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 5437,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 5538,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 5638,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 5739,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 5839,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 5940,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 6041,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 6141,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 6242,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 6342,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 6443,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 6544,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 6644,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 6745,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 6845,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 6946,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 7047,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 7147,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 7248,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 7349,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 7449,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 7550,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 7651,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 7751,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 7853,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 7954,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 8055,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 8155,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 8256,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 8356,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 8457,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 8559,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 8659,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 8760,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 8861,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 8961,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 9063,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 9164,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 9266,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 9367,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 9468,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 9568,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 9669,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 9770,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 9870,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 9971,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 10073,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 10173,
+      "processes": [
+        {
+          "pid": 3,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models native-runtime/smoke.sock /tmp/startup/relative-negative/native-data ",
+          "state": "R"
+        }
+      ]
+    }
+  ],
+  "observer_exit": 1,
+  "elapsed_ms": 10274,
+  "remaining_scoped_processes": [],
+  "socket_exists": false,
+  "data_files": [],
+  "forced_live_cleanup": []
+}

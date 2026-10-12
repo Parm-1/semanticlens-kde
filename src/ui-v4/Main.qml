@@ -11,7 +11,7 @@ Kirigami.ApplicationWindow {
     height: 740
     minimumWidth: 720
     minimumHeight: 520
-    title: "KDE Index"
+    title: "SemanticLens for KDE"
 
     FolderDialog {
         id: folderPicker

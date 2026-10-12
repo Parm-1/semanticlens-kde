@@ -1,0 +1,26 @@
+{
+  "src/ui-v4/main.cpp": {
+    "sha256": "38f85b820eff04b97e406bcd69034f5193db3e67157b90c3abf384613430d2ae",
+    "public_checkout_sha256": "38f85b820eff04b97e406bcd69034f5193db3e67157b90c3abf384613430d2ae"
+  },
+  "src/ui-v4/Main.qml": {
+    "sha256": "afee0d9ff63c1feacec1bdadacf893cba7f2010fab007ae7ee388c574fbea408",
+    "public_checkout_sha256": "afee0d9ff63c1feacec1bdadacf893cba7f2010fab007ae7ee388c574fbea408"
+  },
+  "src/runner-v5/runner.cpp": {
+    "sha256": "b0d4c6b0c1a0eb1401b00f58229ef2a29c925feb3065e10000216d781c9b2d68",
+    "public_checkout_sha256": "b0d4c6b0c1a0eb1401b00f58229ef2a29c925feb3065e10000216d781c9b2d68"
+  },
+  "src/runner-v5/kde-index-runner.json": {
+    "sha256": "b4e835f76ac31f609e2b8a8d6d2f04547bc5895148574f75530bf54de208d414",
+    "public_checkout_sha256": "b4e835f76ac31f609e2b8a8d6d2f04547bc5895148574f75530bf54de208d414"
+  },
+  "packaging/org.kdeindex.Search.desktop": {
+    "sha256": "717a04a28df88cacaa1ebbd938902f31d7e879231c60a69a2b5b411580b2a6e9",
+    "public_checkout_sha256": "717a04a28df88cacaa1ebbd938902f31d7e879231c60a69a2b5b411580b2a6e9"
+  },
+  "packaging/org.kdeindex.Search.metainfo.xml": {
+    "sha256": "0a91b34fb3464420403ad75424b43dfbf60a3982e0f36e48c7df15f420a553ee",
+    "public_checkout_sha256": "0a91b34fb3464420403ad75424b43dfbf60a3982e0f36e48c7df15f420a553ee"
+  }
+}

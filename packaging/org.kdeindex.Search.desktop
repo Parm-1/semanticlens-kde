@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=KDE Index
+Name=SemanticLens for KDE
 Comment=Find local documents and images by what they contain
 Exec=kde-index
 Icon=system-search

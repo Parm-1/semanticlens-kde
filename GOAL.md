@@ -1,6 +1,6 @@
-# KDE Index: project goal
+# SemanticLens for KDE: project goal
 
-Working name: KDE Index. This is an independent project; KDE affiliation and a final public name are not established.
+Public name: SemanticLens for KDE. This is an independent project without official KDE affiliation.
 Created: 2026-10-11. Status: active. Owner: Codex in the originating KDE Index thread.
 Canonical workspace: this repository. This file owns scope, acceptance and continuation state.
 
@@ -844,6 +844,104 @@ No liveowner/child/tool/process/window remains. Next: assemblecheckedfinalsource
 preservefinalpins, presentconcreteRCandrequestproposedParm-1/kde-indexpublicidentity/
 publication confirmation peroriginalgoal. Humanquestionsalreadyanswered.
 
+## Publication decision boundary — 2026-10-12
+
+Actual trigger: active-goal continuation. Humanrequestsdesign/Gemma/CPU/GPU are
+answered. All authorized local implementation/repair/validation/RCpreparation
+completed at its documented scope; currentturnmadeprogress. Goal remainsactive:
+publicrepository/publication/hostedCI are stillrequired and unfulfilled.
+
+Final local0.1.0-rc1 source42765959f2b2ae8290d7527d074a9f9cd28906a8:
+sourcearchive757543899ff3a231e1610d59829602a5166f768fef888e55d1a76a4e3524822d;
+nativearchive345910c6f185b90e8c8b5017234af60534d5913b707a8cac59ee193a29292f96.
+Both repeatedassemblies/checksums/readbacks agree;1991publicsourcefiles,21native
+files,13notices. Compiledcode5beaca unchanged; separatelystagedmetainfo is the
+proposedpublichomepage. Frozen release-candidate-v2 fourpins verify, manifest
+c2c68c8922cb76701bf12caf4ce347e6602e5a9ff19dc3e4b075eaf244f27adf.
+Artifacts: local/release-candidate-v2; docs/RELEASE_CANDIDATE.md and RC_AUDIT.md
+are concreteuserreview surface. Internalhistorymustnotbepushed; initializepublic
+repository from exact sanitizedsource tree. All requiredlocalproofs mappedaudit.
+
+ConnectedGitHubloginreadback Parm-1; proposedParm-1/kde-index metainfo/homepage.
+Repositorymetadata lookupreturned404(NotFound), notproofagainst inaccessible
+privatecollision. No remote/repository/upload/releasecreated. Publicidentityand
+publicationconfirmation nowrequested fromuser peroriginalobjective/GOALaction
+boundary; do not treat elapsedtime/automaticcontinuation asapproval. Afteryes:
+createapprovedpublicrepository, pushsanitizedreviewedcandidate, runhostedCI,
+repairordinaryCIissues, publishreviewedRCandverifyactualpublicstate beforefull
+completionaudit/update_goalcomplete. Ifuserchoosesdifferentowner/name, prepare
+linkedmetadata/sourcepackage forthatidentity without changingtestedprogrambytes.
+
+No live parent/child/tool/service/producer/model/namespace/socket/window/native
+interval remains. No unrelatedquestion awaitsanswer. Nextactiondepends on the
+new publicationconfirmation; goal is notcomplete orpaused. This is first ready
+publicationdecision request, not three consecutive blockedturns.
+
+## Continuation checkpoint — 2026-10-12 (local publication checkout)
+
+Actual trigger: automaticactive-goal continuation, not the requested publication
+approval. Prior human design/Gemma/CPU/GPU questions are answered. The new
+Parm-1/kde-index publicidentity/RCpublication decision remains unanswered. Previous
+turn madeprogress; currentturnalso makesprogress by preparing a separate localGit
+root, with no external action or shrinkingofgoal.
+
+NEW local/publication-v1/kde-index-source commit
+4e0b0532478680a9bf10882a80ee98377df83c80, branchmain, exactlyonecommit/no remotes/
+cleanworkingtree. All1991 content hashes/modes and committedGitblobs match the
+frozen RCsourcearchive757543899ff3a231e1610d59829602a5166f768fef888e55d1a76a4e3524822d.
+Four excludedOSbinaries absent; Gitdirinsideowncheckout, no alternates/internal
+history imported. Public-git-preparation-v1 fourrelativepinsverified, manifest
+06bb867156deb11bc3cbdc0aabfc42cff35089985ffc58d3c4b57922d10a6c45.
+Preparehandle44933 terminal0; no live process/window/child/resource remains.
+Source/nativeRCarchives and priorsealedproofs unchanged; no remotecreate/push/
+release/hostedCI. Goalactive/notcomplete/notpaused. No blockedthreshold claim.
+
+Nextactionrequires existinguserconfirmation tocreatepublicParm-1/kde-index and
+publish0.1.0-rc1. Automaticcontinuation/elapsedtime isnotapproval. Onapproval use
+thisfreshlocalcheckout, neverinternalhistory; runhostedCI andverifyactualpublic
+repository/releasebefore fullcompletionaudit. A different identity requireslinked
+metainfo/sourcepreparation. No other authorized local work is pending; do not
+repeatbenchmarks/manufactureauditwork or repeat the already-present permission
+question. Revalidate this genuine publicationboundary on furthercontinuations
+andapply the blockedthreshold only when its recurrence/impasse is actually met.
+
+
+## Blocked publication audit — 2026-10-12
+
+Actual trigger: automatic goal continuation, not human publication confirmation.
+Earlier human design/Gemma/CPU/GPU requests remain answered. The publication
+identity/public visibility/RC approval requested for Parm-1/kde-index is still
+unanswered. This same condition appeared at the ready-RC decision turn, the local
+publication-checkout continuation and this continuation. Earlier turns made
+concrete local progress; now no authorized ready work remains without that input.
+
+Current state revalidated: goal was active; clean publication checkout remains
+4e0b0532478680a9bf10882a80ee98377df83c80, no remotes/changes, original RC archives
+and all prepared artifacts retained. No tool/process/owner handle remains live.
+Automatic input and elapsed time do not satisfy the original publication condition.
+Blocked threshold audit passed; update_goal returned status blocked. This is not
+completion or user-requested pause. No repeated tests, new chores or permission
+question are warranted while this exact decision is pending.
+
+Unblock condition: human confirms public repository identity and publication
+for Parm-1/kde-index/v0.1.0-rc1, or supplies another identity. Then resume, use
+the separate publication checkout, create/push the approved public repository,
+run hosted CI, repair ordinary issues and publish/verify the reviewed candidate.
+Preserve the full objective and complete requirement audit before marking complete.
+
+
+## Publication approved — 2026-10-12
+
+Actual trigger: human explicitly authorized creating public Parm-1/kde-index and
+publishing v0.1.0-rc1. The previous approval blocker is resolved; earlier human
+design/Gemma/CPU/GPU questions remain answered and the full release goal applies.
+The fresh publication checkout remains based on 4e0b0532478680a9bf10882a80ee98377df83c80.
+GitHub repository creation succeeded and its visibility is PUBLIC. The default
+Git helper failed before pushing because libcurl-gnutls.so.4 is unavailable;
+system /usr/bin/git is retrying the push (exec session 92364). No assets have
+been published yet. Next: verify push, hosted CI, release assets and public
+readback; update the goal only after the original acceptance audit passes.
+
 
 ## Public source and README checkpoint — 2026-10-12
 
@@ -869,3 +967,88 @@ evidence and RC archives stay immutable. Publish this documentation update
 under the currently approved identity, then apply the selected name and qualify
 affected branding before release publication and asset readback. No live test
 process, desktop resource or child assignment remains. The full goal stays active.
+
+
+Documentation delivery verified: public main is now
+d3dd51960737bd3ac611967096d6a2e3403310b6. GitHub README blob
+7c3e27b55a05dd65b98c4032aef5dc90cedb7d85 equals the local committed blob.
+Only README.md, GOAL.md and the two current release/audit documents changed
+from the reviewed initial public commit. The docs-only commit explicitly skips
+redundant CI; run 38310540856 remains the successful check for unchanged code.
+Push session 60151 completed successfully; no live handles remain.
+Name selection remains the precise pending human input (recommended GemmaFind
+for KDE / Parm-1/gemmafind-kde, alternative KDE Semantic Search). No rename,
+tag, asset upload or release creation occurred. The original publication grant
+is accepted; this subsequent product-name decision does not revoke it.
+Next: apply the selected identity, update affected branding and assemble linked
+artifacts where necessary, then publish and verify v0.1.0-rc1.
+
+
+## Naming preference clarified — 2026-10-12
+
+Actual current trigger: the human answered the pending naming question: do not
+use a Google term in the product name; the proposed direction was otherwise
+right. That rejects GemmaFind as branding while retaining accurate EmbeddingGemma
+attribution in the technical README. Recommended successor is SemanticLens for
+KDE / Parm-1/semanticlens-kde; LocalLens for KDE is the offered alternative. The
+exact replacement name has not been selected. Do not infer selection from an
+automatic continuation or the default option.
+
+Immediately before this answer, the repeated naming-decision audit marked the
+goal blocked. The human's new answer resumed the runtime goal to active, as
+verified by get_goal. This is a fresh blocking audit if the decision remains
+pending. The public README/Gemma explanation, default Git helper repair, source
+publication and initial hosted CI are completed; the release is unpublished.
+No live process/tool/child handle remains. Original publication authorization
+continues; select the new identity, apply branding and verify affected packaging
+before release creation. Frozen RC evidence and archives remain unchanged.
+
+
+## SemanticLens identity selected — 2026-10-12
+
+Actual trigger: the human selected SemanticLens for KDE — Parm-1/semanticlens-kde.
+This resolves the name decision and authorizes the requested rename under the
+standing publication grant. GitHub rename and public visibility are verified;
+main retains d3dd51960737bd3ac611967096d6a2e3403310b6. Earlier feasibility,
+goal design, Gemma/CPU/GPU explanation, default Git repair and public README
+requests are answered. Release delivery remains unfinished.
+
+Parent owns repository/current docs/packaging/release. Settled package owner
+/root/semanticlens_branding owns only the six display-branding source/metadata
+files in canonical and public checkouts, its new owned build/stage and focused
+label checks. App/socket/data/binary/plugin IDs and search semantics stay stable;
+CPU producer/service bytes are expected unchanged and will be verified. No old
+sealed artifact is writable. Current docs follow the selected identity while
+release publication awaits the new build/stage receipt and linked archives.
+The package agent is active; parent has no shell process handle to resume.
+Next: verify frozen branding delivery, integrate commits, run hosted CI, assemble
+and read back source/native archives, publish prerelease and verify downloads.
+
+
+## SemanticLens branding accepted — 2026-10-12
+
+Parent checked the six exact label/homepage deltas against the initial public
+source and verified all 21 new staged files. Exactly GUI, KRunner module, desktop
+entry and AppStream bytes change; the other 17 files, including CPU producer
+fa7d1467, service28c0d5dd and CLI6773a256, remain identical. Portable branding-v2
+has 15 verified pins (manifest cb9a4131ad8dbe0c9ed82a72c2f3a72965f452d915573165bfb84423400bcf48),
+native capture/readback and valid stable plugin ID; v1 originals are immutable.
+
+Independent Sol startup analysis explains the extra 90-second helper timeout
+without candidate edits: its relative directory socket fails QLocalServer listen
+(exit2, native Name error) before Engine startup. An absolute owned socket with
+the same staged service/probe/models reaches actual verifying then ready status
+and true Backend readiness, with observed producer and clean closure. All40
+relative startup-v1 pins verify; manifest0fca439029f5f626f37a755900c33f53cf51fe728368f980efd29e8ef2f31aaa,
+report111c4031f96e42f30d30163239102d4a3a88e4a6b8f8a93b5ae7573e0636594f.
+The original broad helper failure remains; no new full-window/index/preview
+claim follows. This source-faithful diagnosis resolves the new startup concern.
+
+Parent accepts labels/metadata and bounded startup explanation. Both package
+owners are finished with all scoped processes/sockets/tool handles closed.
+Current source/docs/evidence can be committed and sent to hosted CI. The new
+v4 helper will assemble a linked SemanticLens archive set from this source
+commit and frozen 21-file stage, excluding the original four system binaries
+and all model/index data. Original release-candidate-v2 remains immutable.
+Next: hosted build, repeated packaging/readback, prerelease publication and
+actual downloaded asset/tag verification before full goal completion.

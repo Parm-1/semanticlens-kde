@@ -1,0 +1,1150 @@
+{
+  "command": [
+    "/tmp/startup/build/startup-observer",
+    "/tmp/stage/bin/kde-index-service",
+    "/tmp/stage/bin/embedding-probe",
+    "/models",
+    "/tmp/startup/absolute-positive/native-runtime/smoke.sock",
+    "/tmp/startup/absolute-positive/native-data"
+  ],
+  "cwd": "/tmp/startup/absolute-positive",
+  "env": {
+    "PATH": "/usr/bin",
+    "HOME": "/tmp/startup/absolute-positive/native-home",
+    "LANG": "C.UTF-8",
+    "PWD": "/tmp/startup",
+    "XDG_RUNTIME_DIR": "/tmp/startup/absolute-positive/native-runtime",
+    "XDG_CONFIG_HOME": "/tmp/startup/absolute-positive/native-config",
+    "XDG_DATA_HOME": "/tmp/startup/absolute-positive/native-data",
+    "XDG_CACHE_HOME": "/tmp/startup/absolute-positive/native-cache"
+  },
+  "initial_modes": {
+    "native-runtime": "0o700",
+    "native-data": "0o700"
+  },
+  "process_samples": [
+    {
+      "ms": 0,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "R"
+        }
+      ]
+    },
+    {
+      "ms": 101,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 202,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 303,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 403,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 504,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 605,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 706,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 808,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 912,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 1013,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 1117,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 1217,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 1319,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 1420,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 1521,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 1622,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 1723,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 1824,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 1925,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 2026,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "R"
+        }
+      ]
+    },
+    {
+      "ms": 2127,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "R"
+        }
+      ]
+    },
+    {
+      "ms": 2233,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "R"
+        }
+      ]
+    },
+    {
+      "ms": 2334,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "R"
+        }
+      ]
+    },
+    {
+      "ms": 2435,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "R"
+        }
+      ]
+    },
+    {
+      "ms": 2536,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "R"
+        }
+      ]
+    },
+    {
+      "ms": 2637,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "R"
+        }
+      ]
+    },
+    {
+      "ms": 2740,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "R"
+        }
+      ]
+    },
+    {
+      "ms": 2842,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "R"
+        }
+      ]
+    },
+    {
+      "ms": 2943,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "R"
+        }
+      ]
+    },
+    {
+      "ms": 3044,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "R"
+        }
+      ]
+    },
+    {
+      "ms": 3145,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "R"
+        }
+      ]
+    },
+    {
+      "ms": 3247,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "R"
+        }
+      ]
+    },
+    {
+      "ms": 3348,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "R"
+        }
+      ]
+    },
+    {
+      "ms": 3449,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "R"
+        }
+      ]
+    },
+    {
+      "ms": 3550,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "R"
+        }
+      ]
+    },
+    {
+      "ms": 3651,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 3752,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 3853,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 3954,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 4055,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "D"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 4156,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 4256,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 4357,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 4458,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 4559,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 4660,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 4761,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 4862,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 4963,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 5064,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 5165,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 5265,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 5366,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 5468,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        },
+        {
+          "pid": 12,
+          "cmdline": "/tmp/stage/bin/embedding-probe /models/embeddinggemma-2-Q8_0.gguf /models/mmproj-embeddinggemma-2-Q8_0.gguf 6 ",
+          "state": "R"
+        }
+      ]
+    },
+    {
+      "ms": 5569,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        },
+        {
+          "pid": 10,
+          "cmdline": "/tmp/stage/bin/kde-index-service --data-dir /tmp/startup/absolute-positive/native-data --socket /tmp/startup/absolute-positive/native-runtime/smoke.sock --probe /tmp/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /models/embeddinggemma-2-Q8_0.gguf --image-model /models/mmproj-embeddinggemma-2-Q8_0.gguf ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 5670,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 5771,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 5871,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 5972,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 6073,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 6173,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 6274,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 6375,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 6475,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 6576,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 6677,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 6777,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        }
+      ]
+    },
+    {
+      "ms": 6878,
+      "processes": [
+        {
+          "pid": 8,
+          "cmdline": "/tmp/startup/build/startup-observer /tmp/stage/bin/kde-index-service /tmp/stage/bin/embedding-probe /models /tmp/startup/absolute-positive/native-runtime/smoke.sock /tmp/startup/absolute-positive/native-data ",
+          "state": "S"
+        }
+      ]
+    }
+  ],
+  "observer_exit": 0,
+  "elapsed_ms": 6979,
+  "remaining_scoped_processes": [],
+  "socket_exists": false,
+  "data_files": [
+    "index.sqlite"
+  ],
+  "forced_live_cleanup": []
+}

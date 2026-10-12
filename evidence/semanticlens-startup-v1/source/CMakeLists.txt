@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.20)
+project(startup_observer LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_AUTOMOC ON)
+find_package(Qt6 REQUIRED COMPONENTS Core Gui Network)
+add_executable(startup-observer observer.cpp /tmp/candidate/src/ui-v4/backend.cpp /tmp/candidate/src/ui-v4/backend.h)
+target_include_directories(startup-observer PRIVATE /tmp/candidate/src/ui-v4)
+target_link_libraries(startup-observer PRIVATE Qt6::Core Qt6::Gui Qt6::Network)

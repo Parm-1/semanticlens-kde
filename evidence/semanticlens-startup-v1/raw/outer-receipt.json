@@ -1,0 +1,5 @@
+{
+  "exit": 0,
+  "elapsed_ms": 17505,
+  "closure": "outer bwrap returned; private PID namespace destroyed"
+}

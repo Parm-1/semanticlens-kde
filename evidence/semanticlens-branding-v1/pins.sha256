@@ -1,0 +1,16 @@
+23544d024976576669488cd1054a7693cab336e034baa8e7433d2064ba835aa1  evidence/semanticlens-branding-v1/report.md
+89070bbf901b1644192ba302ac377984c6fe68dd762f4d885a10c6d38dfce2af  evidence/semanticlens-branding-v1/stage-manifest.json
+46509ff40418d75eca945cc4a245202959edd9dc59674d0829aa756e6d638f65  evidence/semanticlens-branding-v1/checks.json
+56c21ed88b61b2b6cc9b1d652bbf37c0d5744423178c8230d638a05e55624dfe  evidence/semanticlens-branding-v1/source-hashes.json
+38f85b820eff04b97e406bcd69034f5193db3e67157b90c3abf384613430d2ae  src/ui-v4/main.cpp
+afee0d9ff63c1feacec1bdadacf893cba7f2010fab007ae7ee388c574fbea408  src/ui-v4/Main.qml
+b0d4c6b0c1a0eb1401b00f58229ef2a29c925feb3065e10000216d781c9b2d68  src/runner-v5/runner.cpp
+b4e835f76ac31f609e2b8a8d6d2f04547bc5895148574f75530bf54de208d414  src/runner-v5/kde-index-runner.json
+717a04a28df88cacaa1ebbd938902f31d7e879231c60a69a2b5b411580b2a6e9  packaging/org.kdeindex.Search.desktop
+0a91b34fb3464420403ad75424b43dfbf60a3982e0f36e48c7df15f420a553ee  packaging/org.kdeindex.Search.metainfo.xml
+38f85b820eff04b97e406bcd69034f5193db3e67157b90c3abf384613430d2ae  local/publication-v1/kde-index-source/src/ui-v4/main.cpp
+afee0d9ff63c1feacec1bdadacf893cba7f2010fab007ae7ee388c574fbea408  local/publication-v1/kde-index-source/src/ui-v4/Main.qml
+b0d4c6b0c1a0eb1401b00f58229ef2a29c925feb3065e10000216d781c9b2d68  local/publication-v1/kde-index-source/src/runner-v5/runner.cpp
+b4e835f76ac31f609e2b8a8d6d2f04547bc5895148574f75530bf54de208d414  local/publication-v1/kde-index-source/src/runner-v5/kde-index-runner.json
+717a04a28df88cacaa1ebbd938902f31d7e879231c60a69a2b5b411580b2a6e9  local/publication-v1/kde-index-source/packaging/org.kdeindex.Search.desktop
+0a91b34fb3464420403ad75424b43dfbf60a3982e0f36e48c7df15f420a553ee  local/publication-v1/kde-index-source/packaging/org.kdeindex.Search.metainfo.xml

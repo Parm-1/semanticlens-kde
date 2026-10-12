@@ -152,28 +152,28 @@ public:
             switch (exchangeResult.failure) {
             case ExchangeResult::Failure::NotFound:
                 matchId = QStringLiteral("service-not-found");
-                title = QStringLiteral("KDE Index service is not running");
-                subtext = QStringLiteral("Open KDE Index to configure the local service and selected folders");
+                title = QStringLiteral("SemanticLens service is not running");
+                subtext = QStringLiteral("Open SemanticLens to configure the local service and selected folders");
                 setup = true;
                 break;
             case ExchangeResult::Failure::Timeout:
                 matchId = QStringLiteral("service-timeout");
-                title = QStringLiteral("KDE Index search timed out");
+                title = QStringLiteral("SemanticLens search timed out");
                 subtext = QStringLiteral("The service connected but did not finish this search in time");
                 break;
             case ExchangeResult::Failure::InvalidResponse:
                 matchId = QStringLiteral("service-invalid-response");
-                title = QStringLiteral("KDE Index service returned an invalid response");
+                title = QStringLiteral("SemanticLens service returned an invalid response");
                 subtext = exchangeResult.detail;
                 break;
             case ExchangeResult::Failure::ServiceError:
                 matchId = QStringLiteral("service-error");
-                title = QStringLiteral("KDE Index service could not complete the search");
+                title = QStringLiteral("SemanticLens service could not complete the search");
                 subtext = exchangeResult.detail;
                 break;
             case ExchangeResult::Failure::Connect:
                 matchId = QStringLiteral("service-connection-error");
-                title = QStringLiteral("Could not connect to KDE Index service");
+                title = QStringLiteral("Could not connect to SemanticLens service");
                 subtext = QStringLiteral("The local service socket rejected the connection");
                 break;
             case ExchangeResult::Failure::None:

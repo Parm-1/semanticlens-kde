@@ -1,0 +1,23 @@
+-- The CXX compiler identification is GNU 16.2.1
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Configuring done (1.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /tmp/startup/build
+[1/5] Automatic MOC for target startup-observer
+[2/5] Building CXX object CMakeFiles/startup-observer.dir/startup-observer_autogen/mocs_compilation.cpp.o
+[3/5] Building CXX object CMakeFiles/startup-observer.dir/observer.cpp.o
+[4/5] Building CXX object CMakeFiles/startup-observer.dir/tmp/candidate/src/ui-v4/backend.cpp.o
+[5/5] Linking CXX executable startup-observer

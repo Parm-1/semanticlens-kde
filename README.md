@@ -1,4 +1,4 @@
-# KDE Index
+# SemanticLens for KDE
 
 **Private semantic file search for KDE Plasma 6, powered by Google EmbeddingGemma 2.**
 
@@ -35,8 +35,8 @@ The supported target for this release candidate is **Arch Linux with KDE Plasma 
 and Wayland**. Install the dependencies listed in [BUILD.md](docs/BUILD.md), then:
 
 ```sh
-git clone https://github.com/Parm-1/kde-index.git
-cd kde-index
+git clone https://github.com/Parm-1/semanticlens-kde.git
+cd semanticlens-kde
 ./tools/runtime_setup.sh
 cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j 4
@@ -45,13 +45,15 @@ cmake --build build -j 4
 
 In the app, download the model and select the folders to index. See the
 [installation instructions](docs/BUILD.md) for staging the app and KRunner plugin.
+The executable remains `kde-index`, and the KRunner plugin ID remains
+`kde-index-runner`; these identifiers preserve existing configuration.
 
 ## Release status
 
 **v0.1.0-rc1 is being prepared for publication.** The
-[hosted CPU build and installation checks](https://github.com/Parm-1/kde-index/actions/runs/38310540856)
+[hosted CPU build and installation checks](https://github.com/Parm-1/semanticlens-kde/actions/runs/38310540856)
 have passed. Source and Arch CPU runtime archives will be published through
-[GitHub Releases](https://github.com/Parm-1/kde-index/releases).
+[GitHub Releases](https://github.com/Parm-1/semanticlens-kde/releases).
 The native archive requires compatible system libraries and the recorded CPU
 instructions; it is not a self-contained installer. Other distributions and GPU
 backends remain unvalidated.

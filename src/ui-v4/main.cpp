@@ -13,7 +13,7 @@
 int main(int argc, char **argv) {
     KIconTheme::initTheme();
     QApplication app(argc, argv);
-    app.setApplicationName("kde-index"); app.setApplicationDisplayName("KDE Index"); app.setApplicationVersion("0.1.0");
+    app.setApplicationName("kde-index"); app.setApplicationDisplayName("SemanticLens for KDE"); app.setApplicationVersion("0.1.0");
     QCommandLineParser parser; parser.addHelpOption(); parser.addVersionOption();
     const auto data = QStandardPaths::writableLocation(QStandardPaths::AppLocalDataLocation);
     const auto bin = QCoreApplication::applicationDirPath();

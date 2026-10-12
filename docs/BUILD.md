@@ -1,6 +1,6 @@
 # Native development build
 
-This is a development candidate, not a released installation recipe. The actual
+These instructions build SemanticLens for KDE, currently a release candidate. The actual
 development host is Arch Linux, Qt 6.12.0, KDE Frameworks 6.30.0, GCC 16.2.1,
 CMake 4.4.4 and Ninja 1.13.2. CMake requests Qt >=6.5 and KF6 Runner >=6.0;
 older versions have not been tested. CPU inference is the validated foundation.
@@ -79,3 +79,12 @@ supplied disposable corpus and deletes its `manual.pdf` as a lifecycle control;
 never give it a personal folder. This is an integration runner, not a general
 application command. Evidence reports distinguish build, protocol, actual CPU
 integration, target-window and release acceptance.
+
+The product name is SemanticLens for KDE. Executables (`kde-index`,
+`kde-index-service`, `kde-index-cli`) and the `kde-index-runner` plugin ID remain
+stable to preserve existing local configuration and discovery.
+
+Advanced test profiles should use an absolute filesystem path for `--socket`
+when specifying a directory. The default bare socket name remains supported;
+a relative path containing directories can be resolved differently by Qt
+client/server startup contexts.
