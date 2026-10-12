@@ -50,10 +50,10 @@ The executable remains `kde-index`, and the KRunner plugin ID remains
 
 ## Release status
 
-**v0.1.0-rc1 is being prepared for publication.** The
-[hosted CPU build and installation checks](https://github.com/Parm-1/semanticlens-kde/actions/runs/38310540856)
-have passed. Source and Arch CPU runtime archives will be published through
-[GitHub Releases](https://github.com/Parm-1/semanticlens-kde/releases).
+**[v0.1.0-rc1 is published](https://github.com/Parm-1/semanticlens-kde/releases/tag/v0.1.0-rc1).**
+Source and Arch CPU runtime archives, checksums and provenance receipts are
+available on the release page. The [hosted CPU build and installation checks](https://github.com/Parm-1/semanticlens-kde/actions/runs/38314493646)
+passed; all five downloaded assets were verified against the assembled files.
 The native archive requires compatible system libraries and the recorded CPU
 instructions; it is not a self-contained installer. Other distributions and GPU
 backends remain unvalidated.

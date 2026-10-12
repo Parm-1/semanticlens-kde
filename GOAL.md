@@ -1052,3 +1052,50 @@ commit and frozen 21-file stage, excluding the original four system binaries
 and all model/index data. Original release-candidate-v2 remains immutable.
 Next: hosted build, repeated packaging/readback, prerelease publication and
 actual downloaded asset/tag verification before full goal completion.
+
+
+## First-release delivery audit — 2026-10-12
+
+Current trigger: carry the selected SemanticLens identity and authorized
+v0.1.0-rc1 publication through actual delivery. All human requests in this
+project are answered: feasibility/Baloo comparison, assigned goal, local Gemma
+and CPU explanation, default Git helper repair, public README, independent
+branding and public repository/prerelease creation. Full original first-release
+scope is preserved; audio/video timestamps and opt-in code remain later paths.
+
+Verified public repository: https://github.com/Parm-1/semanticlens-kde (PUBLIC).
+Verified published prerelease: https://github.com/Parm-1/semanticlens-kde/releases/tag/v0.1.0-rc1.
+Tag commit1c26ec8c7f75d95c0a9f24d329952ca4bd29b0b2; hosted native CPU build
+38314493646 succeeded on code commitdf327b084746cfdb33e5845175e80cd4fdd4d514.
+Ten frozen provenance records are the only intervening changes, no build input
+changed. Exact root source/build6f6b8308876f91c1678f9b07710fe2b2671716c4
+exports all2065 public files/modes, with only the four declared OS omissions.
+Both complete archive/receipt sets were assembled twice with identical bytes.
+Five real GitHub asset downloads match every local byte. Source SHA256
+20cbae80a7ec72ae5cd518eb35ed00867b6a71edf75707042215c3a20fd6230f; native
+985a71c9c7052b87b63aa58421353b50691cada840093d5d5a371bd53aae3daf.
+Native all21 file hashes match frozen stage;13 installed notices retained.
+Actual API/download readback is retained locally under publication-operation-v1.
+
+Completion audit checked the actual GOAL acceptance items and current source,
+raw outcomes, independent reports and pins: CPU text/image upstream correctness
+uses the unchanged exact packaged producer; fixed CC0 retrieval targets and
+identifiers pass with per-modality/no-match negatives disclosed; all74 lifecycle
+checks and closure pass on unchanged service/producer/CLI; selected-root privacy,
+cache/watch/error boundaries and cooperative budgets retain independent review;
+installed app/default KRunner discovery/overlapping clients/open/reveal/native
+PDF rendering and clean source/build/install/remove evidence retain their
+bounded target scope. Warm-query p95 is47.236ms, measured resource/clock limits
+stay disclosed. New label metadata/native readbacks and independent socket
+startup diagnosis pass at their stated scopes. All current evidence pins verify.
+Licenses, asset/model notices, documented build/install, CI, reproducible source
+packaging, public source/release and downloaded artifact verification are done.
+No remaining first-release implementation, validation or publication gate.
+
+No live child/runtime/window/socket/build/upload/download/watch handle remains;
+all named package and parent shell operations completed. Current README and RC
+documents now describe the live release instead of a pending decision. Final
+metadata documentation push/readback and runtime goal accounting follow this
+audit; they do not modify the immutable tag/assets/evidence or tested code.
+There is no blocked condition or unanswered approval. Future features remain
+future scope and do not authorize a recurring job or another goal automatically.
