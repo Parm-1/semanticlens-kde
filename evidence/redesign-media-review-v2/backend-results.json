@@ -1,0 +1,103 @@
+{
+    "checks": [
+        {
+            "name": "searching-debounce",
+            "pass": true
+        },
+        {
+            "name": "searching-cleared",
+            "pass": true
+        },
+        {
+            "name": "png-thumbnail-red",
+            "pass": true
+        },
+        {
+            "name": "pdf-page2-thumbnail-blue",
+            "pass": true
+        },
+        {
+            "name": "private-thumbnail-url",
+            "pass": true
+        },
+        {
+            "name": "image-preview-bounded",
+            "pass": true
+        },
+        {
+            "name": "private-preview-url",
+            "pass": true
+        },
+        {
+            "name": "contradictory-row-rejected",
+            "pass": true
+        },
+        {
+            "name": "replaced-preview-cleaned",
+            "pass": true
+        },
+        {
+            "name": "pdf-page2-preview-blue",
+            "pass": true
+        },
+        {
+            "name": "close-url-cleared",
+            "pass": true
+        },
+        {
+            "name": "close-output-cleaned",
+            "pass": true
+        },
+        {
+            "name": "query-invalidates-thumbnail",
+            "pass": true
+        },
+        {
+            "name": "stale-row-rejected",
+            "pass": true
+        },
+        {
+            "name": "query-cleans-thumbnails",
+            "pass": true
+        },
+        {
+            "name": "status-exclusion-invalidates-result",
+            "pass": true
+        },
+        {
+            "name": "excluded-current-row-rejected",
+            "pass": true
+        },
+        {
+            "name": "after-index-symlink-swap-denied",
+            "pass": true
+        },
+        {
+            "name": "active-close-clears-url",
+            "pass": true
+        },
+        {
+            "name": "canceled-renderer-closed",
+            "pass": true
+        },
+        {
+            "name": "new-preview-after-cancel",
+            "pass": true
+        },
+        {
+            "name": "renderer-timeout-closed",
+            "pass": true
+        },
+        {
+            "name": "renderer-timeout-visible-unavailable",
+            "pass": true
+        },
+        {
+            "name": "event-loop-gap-under100ms",
+            "pass": true
+        }
+    ],
+    "elapsed_ms": 29590,
+    "exit": 0,
+    "maximum_5ms_timer_gap_ms": 12
+}

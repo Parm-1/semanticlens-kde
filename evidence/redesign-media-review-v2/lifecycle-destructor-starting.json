@@ -1,0 +1,19 @@
+{
+    "checks": [
+        {
+            "name": "text-search-remains-ready",
+            "pass": true
+        },
+        {
+            "name": "shutdown-before-started-event",
+            "pass": true
+        }
+    ],
+    "destructor_ms": 52,
+    "elapsed_ms": 334,
+    "exit": 0,
+    "mode": "destructor-starting",
+    "phase_processes": [
+    ],
+    "preview_message": ""
+}

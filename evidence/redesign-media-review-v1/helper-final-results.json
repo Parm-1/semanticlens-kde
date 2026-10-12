@@ -1,0 +1,124 @@
+[
+  {
+    "name": "png",
+    "code": 0,
+    "error": "",
+    "elapsed": 0.8281169670008239,
+    "size": [
+      320,
+      160
+    ],
+    "pixel": [
+      255,
+      0,
+      0
+    ],
+    "source_removed": true
+  },
+  {
+    "name": "jpeg",
+    "code": 0,
+    "error": "",
+    "elapsed": 0.14266414300072938,
+    "size": [
+      160,
+      320
+    ],
+    "pixel": [
+      0,
+      0,
+      254
+    ],
+    "source_removed": true
+  },
+  {
+    "name": "pdf1",
+    "code": 0,
+    "error": "",
+    "elapsed": 0.5281961369983037,
+    "size": [
+      320,
+      160
+    ],
+    "pixel": [
+      255,
+      0,
+      0
+    ],
+    "source_removed": true
+  },
+  {
+    "name": "pdf2",
+    "code": 0,
+    "error": "",
+    "elapsed": 0.032368170002882835,
+    "size": [
+      320,
+      160
+    ],
+    "pixel": [
+      0,
+      0,
+      255
+    ],
+    "source_removed": true
+  },
+  {
+    "name": "previewpdf",
+    "code": 0,
+    "error": "",
+    "elapsed": 0.08624097400024766,
+    "size": [
+      1600,
+      800
+    ],
+    "pixel": [
+      0,
+      0,
+      255
+    ],
+    "source_removed": true
+  },
+  {
+    "name": "symlink",
+    "code": 1,
+    "error": "local path resolution rejected: Too many levels of symbolic links",
+    "elapsed": 0.01105496800300898
+  },
+  {
+    "name": "fifo",
+    "code": 1,
+    "error": "not a regular local source within32MiB",
+    "elapsed": 0.011401643001590855
+  },
+  {
+    "name": "outside",
+    "code": 1,
+    "error": "file outside selected root",
+    "elapsed": 0.01076491999992868
+  },
+  {
+    "name": "excluded",
+    "code": 1,
+    "error": "excluded source",
+    "elapsed": 0.010225672995147761
+  },
+  {
+    "name": "provider",
+    "code": 1,
+    "error": "unsupported storage provider: proc at /proc",
+    "elapsed": 0.011402003998227883
+  },
+  {
+    "name": "kindcontradiction",
+    "code": 1,
+    "error": "unsupported media",
+    "elapsed": 0.009380206996866036
+  },
+  {
+    "name": "pagecontradiction",
+    "code": 1,
+    "error": "invalid rendering bounds",
+    "elapsed": 0.008833154002786614
+  }
+]

@@ -6,13 +6,13 @@ CMake 4.4.4 and Ninja 1.13.2. CMake requests Qt >=6.5 and KF6 Runner >=6.0;
 older versions have not been tested. CPU inference is the validated foundation.
 
 Dependencies: a C++17 compiler with OpenMP, CMake, Ninja, Git, Python 3, Qt 6
-Core/Gui/Widgets/QML/Quick/QuickControls2/Network/Sql, Kirigami, KF6 Runner/CoreAddons/IconThemes and
+Core/Gui/Widgets/QML/Quick/QuickControls2/Network/Sql, Kirigami, KDE's `qqc2-desktop-style`, KF6 Runner/CoreAddons/IconThemes and
 Extra CMake Modules. The Qt SQLite driver must be installed. Poppler CLI tools
 (`pdftotext`, `pdftoppm`) and Tesseract with English data provide PDF/OCR support.
 The program reports unavailable extractors instead of fabricating content.
 
 On Arch these correspond to `base-devel cmake ninja git python qt6-base
-qt6-declarative kirigami krunner kiconthemes extra-cmake-modules poppler tesseract
+qt6-declarative kirigami qqc2-desktop-style breeze krunner kiconthemes extra-cmake-modules poppler tesseract
 tesseract-data-eng`. Dependency installation is a separate administrator action;
 the project scripts do not change system packages or configuration.
 
@@ -48,6 +48,13 @@ the service, whose database persists the complete model/pipeline/runtime identit
 An incompatible identity is refused and requires deliberate index rebuilding;
 existing vectors are never silently mixed with a new producer.
 
+The redesigned development interface also installs `semanticlens-media` beside
+the app. It renders local thumbnail and preview snapshots in separate processes;
+copying only the GUI executable will omit this helper. Media cancellation uses
+Linux process-group pidfds and requires kernel 6.9 or newer. On older kernels,
+text search remains available, while image/PDF previews report that the required
+kernel support is unavailable.
+
 The KRunner module installs as `lib/qt6/plugins/kf6/krunner/kde-index-runner.so`
 in this prefix. KDE derives the stable plugin ID from that filename.
 A staged directory alone does not expose it to the user's Plasma session.
@@ -79,6 +86,18 @@ supplied disposable corpus and deletes its `manual.pdf` as a lifecycle control;
 never give it a personal folder. This is an integration runner, not a general
 application command. Evidence reports distinguish build, protocol, actual CPU
 integration, target-window and release acceptance.
+
+The same option builds `ui-redesign`, which exercises the search workspace
+against the real service. It accepts absolute paths in this order: source root,
+service, producer, verified model directory, disposable data directory, socket,
+synthetic corpus and output directory. It creates deliberately malformed PDF
+and literal-markup fixtures inside that corpus; never point it at personal data.
+The [redesign validation](../evidence/redesign-ui-v1/report.md) describes the
+native interaction, rendered-window and media-lifecycle checks and their scope.
+
+The interface uses KDE desktop controls and the system color palette by default.
+Install `qqc2-desktop-style` for that integration; `QT_QUICK_CONTROLS_STYLE` can
+explicitly select another installed Qt style. No global theme settings are changed.
 
 The product name is SemanticLens for KDE. Executables (`kde-index`,
 `kde-index-service`, `kde-index-cli`) and the `kde-index-runner` plugin ID remain

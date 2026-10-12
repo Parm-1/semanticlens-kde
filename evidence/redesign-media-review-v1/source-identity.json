@@ -1,0 +1,11 @@
+{
+  "copied_admission_equal_except_unused_CloseDirectory_and_outer_whitespace": true,
+  "canonical_engine_v5_sha256": "7c6ed298befefebc4feeb6eb11605da3cb02d68de8cfd7d71d4cb77ddca42cd4",
+  "canonical_engine_equals_frozen_reference": true,
+  "candidate": {
+    "backend.h": "37c6336473d3d840db5c2fbfbb5dce56df10eb1b84fa2dd9100f4fe04e38a701",
+    "backend.cpp": "efc6bff5680a8238516725cc2db6f8e03e7ad04d76d78f5a092f45e16154d320",
+    "media_main.cpp": "3bb58aa37b3d352aa7ee8e14d2b3ecdb97955dad3f4a7bfc2f64f37c4ea40579"
+  },
+  "delivery_manifest_sha256": "adba5bdf18c9da571ab37b6e6affbc8150be116745024019ccc8435745c34a68"
+}

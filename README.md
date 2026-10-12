@@ -7,9 +7,16 @@ matching works alongside exact-text search, so both “instructions for cleaning
 the cooling system” and an identifier such as `PDF-10299` can lead to the right
 file. Search runs locally and complements KDE’s existing Baloo index.
 
+![SemanticLens search workspace with thumbnails and a matching PDF preview](docs/images/search-workspace.png)
+
+The development interface follows KDE's system colors. The screenshots use
+synthetic documents and images; your selected folders appear in the same layout.
+
 ## Features
 
-- Native Qt 6/Kirigami interface with passage, PDF-page and image previews.
+- Search-first Qt 6/Kirigami interface with thumbnail grid and compact list views.
+- Persistent side preview for images, matching PDF pages and selectable passages.
+- Native KDE colors and controls, keyboard navigation and a small-window preview.
 - KRunner integration: type `find ` followed by a query.
 - Text/Markdown, PDFs, JPEG and PNG; PDF and screenshot OCR through Tesseract.
 - Selected folders only, with exclusions, pause/resume and index removal.
@@ -43,7 +50,10 @@ cmake --build build -j 4
 ./build/bin/kde-index
 ```
 
-In the app, download the model and select the folders to index. See the
+Open **Settings** to download the model and select the folders to index. The
+search screen keeps filters and previews close to the results. Ctrl+L or Ctrl+F
+focuses search; arrow keys select results, Space previews and Enter opens a file.
+See the
 [installation instructions](docs/BUILD.md) for staging the app and KRunner plugin.
 The executable remains `kde-index`, and the KRunner plugin ID remains
 `kde-index-runner`; these identifiers preserve existing configuration.
@@ -51,6 +61,8 @@ The executable remains `kde-index`, and the KRunner plugin ID remains
 ## Release status
 
 **[v0.1.0-rc1 is published](https://github.com/Parm-1/semanticlens-kde/releases/tag/v0.1.0-rc1).**
+The search-first redesign described above is a development change; the rc1
+downloads retain the earlier interface. Build this branch to try the redesign.
 Source and Arch CPU runtime archives, checksums and provenance receipts are
 available on the release page. The [hosted CPU build and installation checks](https://github.com/Parm-1/semanticlens-kde/actions/runs/38314493646)
 passed; all five downloaded assets were verified against the assembled files.

@@ -7,6 +7,9 @@
 #include <QVariantList>
 #include <QJsonObject>
 #include <QTemporaryDir>
+#include <QMap>
+#include <memory>
+struct MediaJob;
 
 struct AppPaths {
     QString socket, service, probe, models, data, downloader;
@@ -18,6 +21,7 @@ class Backend : public QObject {
     Q_PROPERTY(bool modelReady READ modelReady NOTIFY changed)
     Q_PROPERTY(bool modelSetupNeeded READ modelSetupNeeded NOTIFY changed)
     Q_PROPERTY(bool busy READ busy NOTIFY changed)
+    Q_PROPERTY(bool searching READ searching NOTIFY changed)
     Q_PROPERTY(bool paused READ paused NOTIFY changed)
     Q_PROPERTY(bool downloading READ downloading NOTIFY changed)
     Q_PROPERTY(int downloadPercent READ downloadPercent NOTIFY changed)
@@ -28,6 +32,7 @@ class Backend : public QObject {
     Q_PROPERTY(QVariantList failures READ failures NOTIFY changed)
     Q_PROPERTY(QVariantList results READ results NOTIFY resultsChanged)
     Q_PROPERTY(QUrl previewUrl READ previewUrl NOTIFY previewChanged)
+    Q_PROPERTY(int thumbnailRevision READ thumbnailRevision NOTIFY thumbnailsChanged)
     Q_PROPERTY(QString previewMessage READ previewMessage NOTIFY previewChanged)
     Q_PROPERTY(int indexed READ indexed NOTIFY changed)
     Q_PROPERTY(int errors READ errors NOTIFY changed)
@@ -41,6 +46,7 @@ public:
     bool modelReady() const { return m_status.value("ready").toBool() && m_status.value("model_ready").toBool(); }
     bool modelSetupNeeded() const;
     bool busy() const { return m_status.value("busy").toBool(); }
+    bool searching() const { return m_debounce.isActive() || !m_searchId.isEmpty(); }
     bool paused() const { return m_status.value("paused").toBool(); }
     bool downloading() const { return m_download.state() != QProcess::NotRunning; }
     int downloadPercent() const { return m_downloadPercent; }
@@ -52,6 +58,7 @@ public:
     QString indexingNotice() const;
     QVariantList results() const { return m_results; }
     QUrl previewUrl() const { return m_previewUrl; }
+    int thumbnailRevision() const { return m_thumbnailRevision; }
     QString previewMessage() const { return m_previewMessage; }
     int indexed() const { return m_status.value("indexed").toInt(); }
     int errors() const { return m_status.value("errors").toInt(); }
@@ -72,21 +79,28 @@ public:
     Q_INVOKABLE void reveal(const QString &path);
     Q_INVOKABLE void previewResult(const QVariantMap &result);
     Q_INVOKABLE void closePreview();
+    Q_INVOKABLE QUrl thumbnailUrl(const QVariantMap &result) const;
     void shutdownOwnedService();
 signals:
     void changed();
     void resultsChanged();
     void previewChanged();
+    void thumbnailsChanged();
 private:
     AppPaths m_paths;
     QLocalSocket m_socket;
     QProcess m_download;
-    QProcess m_preview;
-    QTemporaryDir m_previewDirectory;
-    QTimer m_previewTimeout;
+    MediaJob *m_preview = nullptr, *m_thumbnail = nullptr;
+    QList<MediaJob *> m_mediaJobs;
+    std::shared_ptr<QTemporaryDir> m_previewDirectory;
+    QList<std::shared_ptr<QTemporaryDir>> m_thumbnailDirectories;
     QUrl m_previewUrl;
-    QString m_previewMessage, m_previewOutput;
-    quint64 m_previewSequence = 0;
+    QString m_previewMessage;
+    QVariantMap m_pendingPreview;
+    quint64 m_previewSequence = 0, m_thumbnailSequence = 0;
+    QVariantList m_thumbnailQueue;
+    QMap<QString, QUrl> m_thumbnails;
+    int m_thumbnailRevision = 0;
     QTimer m_poll, m_debounce, m_retry;
     QJsonObject m_status;
     QVariantList m_results;
@@ -106,4 +120,11 @@ private:
     void search();
     void invalidateResults();
     void control(const QString &op, QJsonObject args = {});
+    bool currentLocalResult(const QVariantMap &result) const;
+    QString resultKey(const QVariantMap &result) const;
+    void prepareThumbnails();
+    void nextThumbnail();
+    void clearThumbnails();
+    void startPreview();
+    void startMedia(const QVariantMap &result, bool preview);
 };

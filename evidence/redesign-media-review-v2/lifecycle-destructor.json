@@ -1,0 +1,41 @@
+{
+    "checks": [
+        {
+            "name": "text-search-remains-ready",
+            "pass": true
+        },
+        {
+            "name": "renderer-and-descendant-started",
+            "pass": true
+        },
+        {
+            "name": "renderer-descendant-and-helper-identities",
+            "pass": true
+        }
+    ],
+    "destructor_ms": 53,
+    "elapsed_ms": 354,
+    "exit": 0,
+    "mode": "destructor",
+    "phase_processes": [
+        {
+            "pgid": 608688,
+            "pid": 608689,
+            "ppid": 608688,
+            "start_ticks": "5643674"
+        },
+        {
+            "pgid": 608688,
+            "pid": 608690,
+            "ppid": 608689,
+            "start_ticks": "5643675"
+        },
+        {
+            "pgid": 608688,
+            "pid": 608688,
+            "ppid": 608686,
+            "start_ticks": "5643673"
+        }
+    ],
+    "preview_message": ""
+}

@@ -1,0 +1,97 @@
+{
+  "exit": 1,
+  "observed_processes": [
+    {
+      "pid": 579261,
+      "start_ticks": "5469237",
+      "ppid": 579260,
+      "pgid": 578946
+    },
+    {
+      "pid": 579267,
+      "start_ticks": "5469266",
+      "ppid": 579261,
+      "pgid": 579267
+    },
+    {
+      "pid": 579275,
+      "start_ticks": "5469278",
+      "ppid": 579261,
+      "pgid": 579275
+    },
+    {
+      "pid": 579276,
+      "start_ticks": "5469284",
+      "ppid": 579261,
+      "pgid": 579276
+    },
+    {
+      "pid": 579277,
+      "start_ticks": "5469284",
+      "ppid": 579276,
+      "pgid": 579276
+    },
+    {
+      "pid": 579284,
+      "start_ticks": "5469319",
+      "ppid": 579261,
+      "pgid": 579284
+    },
+    {
+      "pid": 579292,
+      "start_ticks": "5469475",
+      "ppid": 579261,
+      "pgid": 579292
+    },
+    {
+      "pid": 579319,
+      "start_ticks": "5469675",
+      "ppid": 579261,
+      "pgid": 579319
+    },
+    {
+      "pid": 579325,
+      "start_ticks": "5469680",
+      "ppid": 579261,
+      "pgid": 579325
+    },
+    {
+      "pid": 579323,
+      "start_ticks": "5469679",
+      "ppid": 579261,
+      "pgid": 579323
+    },
+    {
+      "pid": 579326,
+      "start_ticks": "5469680",
+      "ppid": 579323,
+      "pgid": 579323
+    },
+    {
+      "pid": 579327,
+      "start_ticks": "5469680",
+      "ppid": 579326,
+      "pgid": 579323
+    },
+    {
+      "pid": 579537,
+      "start_ticks": "5472183",
+      "ppid": 579261,
+      "pgid": 579537
+    },
+    {
+      "pid": 579538,
+      "start_ticks": "5472196",
+      "ppid": 579537,
+      "pgid": 579537
+    },
+    {
+      "pid": 579539,
+      "start_ticks": "5472199",
+      "ppid": 579538,
+      "pgid": 579537
+    }
+  ],
+  "live_observed_processes": [],
+  "remaining_temp_entries": []
+}
