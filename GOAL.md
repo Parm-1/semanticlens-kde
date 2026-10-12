@@ -1,7 +1,7 @@
 # SemanticLens for KDE: project goal
 
 Public name: SemanticLens for KDE. This is an independent project without official KDE affiliation.
-Created: 2026-10-11. Status: active. Owner: Codex in the originating KDE Index thread.
+Created: 2026-10-11. Status: complete (first public release candidate). Owner: Codex in the originating KDE Index thread.
 Canonical workspace: this repository. This file owns scope, acceptance and continuation state.
 
 ## Outcome
@@ -1099,3 +1099,13 @@ metadata documentation push/readback and runtime goal accounting follow this
 audit; they do not modify the immutable tag/assets/evidence or tested code.
 There is no blocked condition or unanswered approval. Future features remain
 future scope and do not authorize a recurring job or another goal automatically.
+
+
+Runtime update_goal returned complete after the requirement-by-requirement audit
+and verified public documentation push. The reviewed immutable RC tag/assets
+remain unchanged. Public README delivery blob4385b05793111f736d034b543518d0f3632e5144
+was read back from GitHub and matches the committed file. This final change is
+completion bookkeeping only. No automatic continuation or further project
+implementation is authorized by an active goal; a new human request owns any
+next scope. All prior requests are handled and no process/tool/child handles
+need resuming.
