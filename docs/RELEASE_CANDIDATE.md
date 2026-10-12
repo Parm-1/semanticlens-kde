@@ -1,8 +1,11 @@
 # KDE Index 0.1.0-rc1
 
-The native CPU candidate is prepared locally for public GitHub publication.
-Proposed identity: **Parm-1/kde-index**, public. This is an independent project;
-publication, repository creation and hosted CI are still pending user approval.
+The native CPU candidate is prepared for publication. The public repository is
+[Parm-1/kde-index](https://github.com/Parm-1/kde-index), and
+[hosted CPU build and installation checks](https://github.com/Parm-1/kde-index/actions/runs/38310540856)
+passed on the exact reviewed initial public commit. This is an independent project.
+The release is not yet published: the project name is being reconsidered before
+final branding and release delivery.
 
 The exact runtime passed Linux text/image vector checks, the fixed retrieval
 comparison, current lifecycle controls and installed KDE integration:
@@ -27,9 +30,11 @@ evidence. It omits four unnecessary copied system binaries, preserving explicit
 historical manifest omissions. The native archive has 21 runtime/notice files;
 model weights, indexes and system libraries are excluded. The tested executable
 bytes remain unchanged after the clean build; the separately staged metainfo
-contains the proposed homepage. [RC_AUDIT.md](RC_AUDIT.md) maps the complete goal
-to evidence and unfinished publication/CI work. [BUILD.md](BUILD.md) and
+contains the current repository homepage. [RC_AUDIT.md](RC_AUDIT.md) maps the complete goal
+to evidence and unfinished release delivery. [BUILD.md](BUILD.md) and
 [RELEASE_V3.md](RELEASE_V3.md) describe building and packaging.
 
-Approve the proposed public identity/publication, or supply another owner/name,
-to proceed. Nothing is published by these local artifacts.
+The original publication approval was granted. A subsequent request for a more
+specific project name is pending selection; the release assets remain unpublished.
+The frozen archives preserve their pre-publication documentation and evidence.
+These current documents record the later public repository and CI state.

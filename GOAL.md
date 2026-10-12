@@ -843,3 +843,29 @@ andlimits. HostedCI/publication are stillunfulfilled; no complete/blocked status
 No liveowner/child/tool/process/window remains. Next: assemblecheckedfinalsource,
 preservefinalpins, presentconcreteRCandrequestproposedParm-1/kde-indexpublicidentity/
 publication confirmation peroriginalgoal. Humanquestionsalreadyanswered.
+
+
+## Public source and README checkpoint — 2026-10-12
+
+Actual trigger: automatic goal continuation following the human approval to
+create public Parm-1/kde-index and publish v0.1.0-rc1, plus requests to fix the
+default Git helper, rewrite the README for public users, mention Gemma, and
+choose a more specific name. Earlier feasibility/design/Gemma/CPU/GPU requests
+remain answered. Publication approval persists; the later name preference is
+pending selection, not approval inferred from elapsed time.
+
+The public repository exists with main at initial reviewed commit
+4e0b0532478680a9bf10882a80ee98377df83c80. Hosted CI run 38310540856 completed
+successfully: frozen inputs/metadata, pinned runtime, full CPU build and runtime
+installation stage. The default Git wrapper was repaired to use system Git and
+its matching helpers; HTTPS access passed. GitHub CLI authentication completed
+with workflow access. All prior push/authentication/watch handles are terminal.
+
+The README has been rewritten for public users with EmbeddingGemma 2, features,
+local privacy, build commands, release status and bounded benchmark claims.
+Current candidate/audit documents now distinguish published source/green CI
+from unpublished release assets. These are documentation-only changes; sealed
+evidence and RC archives stay immutable. Publish this documentation update
+under the currently approved identity, then apply the selected name and qualify
+affected branding before release publication and asset readback. No live test
+process, desktop resource or child assignment remains. The full goal stays active.
