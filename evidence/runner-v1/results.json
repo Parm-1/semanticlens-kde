@@ -1,0 +1,15 @@
+{
+  "version": "runner-v1",
+  "prefix": "find ",
+  "contract": "docs/ENGINE.md candidate JSONL protocol v1",
+  "checks": {
+    "cmake_configure": "pass",
+    "native_plugin_build": "pass",
+    "kf_plugin_factory_metadata_load": "pass",
+    "synthetic_qlocalsocket_search_mapping": "pass",
+    "actual_service_transport": "not run: service producer was concurrently being authored and no service executable was available at package validation"
+  },
+  "smoke_log": "smoke.log",
+  "resource_closure": "runner smoke exited 0; fixture thread joined; isolated socket removed; no external service process launched",
+  "limits": ["No Plasma/KRunner desktop session was modified or exercised", "Synthetic responder validates adapter transport and mapping, not service producer semantics or target installation discovery", "Cancellation is implemented by aborting the per-request socket when RunnerContext becomes invalid; no live KRunner cancellation race was exercised"]
+}

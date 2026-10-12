@@ -1,0 +1,6 @@
+{
+  "tools/desktop_integration.py": "fddce21abfd80d33676320dcca7bd28524614471935dbc738c16150aed038143",
+  "tools/desktop_integration_observer.cpp": "cca8e92c25e62da69475778bf806d370d6e3b4b65b2dedda125be94242471474",
+  "local/build-own/runner-privacy-v1/libdesktop-observer.so": "98a04bef5c7da678e4edc82f74f7b83153034a3d41a1497a73837f6a01365a22",
+  "tools/runner_privacy_desktop.py": "87af07cbd02e87296c486d631dc725ecc359a73c4ac08a0c6f1d339427f5fa8b"
+}

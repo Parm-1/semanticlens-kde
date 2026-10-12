@@ -1,0 +1,22 @@
+{
+  "internal_source_commit": "ca53d3cad76503659c4d725e311fb95a27ab0873",
+  "archive_sha256": "0682c3effba8e1b2d07a7ac9259d5bb4b64b5d88cb108cae448cd616a1e0037d",
+  "archive_included_files": 1754,
+  "archive_omitted_files": 4,
+  "source_tree_has_build_before_build": false,
+  "runtime_commit": "4d756bc72bf00a4aacf410ae15a2d315f3db400d",
+  "runtime_patch_sha256": "33c8c4812a4307aef3f398e5ba622edcc54ef421054edd98ca0f71906b9a2d7e",
+  "build_tree": "/public-clean-v1/source/build",
+  "stage_prefix": "/usr",
+  "cmake_generator": "Ninja",
+  "build_type": "Release",
+  "jobs": 4,
+  "install_method": "DESTDIR=/public-clean-v1/stage cmake --install ../build --prefix /usr",
+  "network": "namespace --share-net, resolver read-only bind /etc/resolv.conf for pinned runtime fetch",
+  "bootstrap_root_readonly": true,
+  "owned_writable_root": "/public-clean-v1",
+  "source_archive_contains_vendor_or_build": false,
+  "runtime_helper_created_vendor_after_extraction": true,
+  "build_exit_code": 0,
+  "install_exit_code": 0
+}

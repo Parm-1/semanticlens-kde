@@ -1,0 +1,22 @@
+diff -ru src/runner-v3/CMakeLists.txt src/runner-v4/CMakeLists.txt
+--- src/runner-v3/CMakeLists.txt	2026-10-11 22:03:43.063438682 -0400
++++ src/runner-v4/CMakeLists.txt	2026-10-12 01:07:54.927297397 -0400
+@@ -11,6 +11,8 @@
+ find_package(KF6Runner 6.0 REQUIRED)
+ find_package(KF6CoreAddons REQUIRED)
+ add_library(kde-index-runner MODULE runner.cpp)
++# KPluginMetaData derives embedded plugin IDs from the filename basename.
++set_target_properties(kde-index-runner PROPERTIES PREFIX "")
+ target_link_libraries(kde-index-runner PRIVATE Qt6::Core Qt6::Network Qt6::Widgets KF6::Runner KF6::CoreAddons)
+ target_compile_definitions(kde-index-runner PRIVATE QT_NO_CAST_FROM_ASCII QT_NO_CAST_TO_ASCII)
+ install(TARGETS kde-index-runner DESTINATION ${KDE_INSTALL_PLUGINDIR}/kf6/krunner)
+diff -ru src/runner-v3/kde-index-runner.json src/runner-v4/kde-index-runner.json
+--- src/runner-v3/kde-index-runner.json	2026-10-11 22:03:43.063606149 -0400
++++ src/runner-v4/kde-index-runner.json	2026-10-12 01:07:34.323908436 -0400
+@@ -1,6 +1,5 @@
+ {
+   "KPlugin": {
+-    "Id": "kde-index-runner",
+     "Name": "KDE Index",
+     "Description": "Search selected folders by meaning and content",
+     "Version": "0.1",

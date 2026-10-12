@@ -1,0 +1,78 @@
+{
+  "active_candidate_processes": [],
+  "remaining_owned_sockets": [],
+  "preview_files": [
+    {
+      "file": "/tmp/ui-repair-orbbNs/1.png",
+      "exists": false
+    },
+    {
+      "file": "/tmp/ui-repair-OSTWCr/1.png",
+      "exists": false
+    },
+    {
+      "file": "/tmp/ui-smoke-fjAgBv/1.png",
+      "exists": false
+    }
+  ],
+  "real_model_partials": [],
+  "scope": "Final process/socket/preview inspection; all data roots under local/ui-v2-*; zombies are exited, not active processes. No parent/shared resource was stopped.",
+  "known_service_helper_renderer_children": [
+    {
+      "pid": 661949,
+      "state": "absent",
+      "active": false
+    },
+    {
+      "pid": 662628,
+      "state": "absent",
+      "active": false
+    },
+    {
+      "pid": 662862,
+      "state": "absent",
+      "active": false
+    },
+    {
+      "pid": 663744,
+      "state": "absent",
+      "active": false
+    },
+    {
+      "pid": 663829,
+      "state": "absent",
+      "active": false
+    },
+    {
+      "pid": 663937,
+      "state": "absent",
+      "active": false
+    },
+    {
+      "pid": 663948,
+      "state": "absent",
+      "active": false
+    },
+    {
+      "pid": 663949,
+      "state": "absent",
+      "active": false
+    },
+    {
+      "pid": 664951,
+      "state": "absent",
+      "active": false
+    },
+    {
+      "pid": 665264,
+      "state": "absent",
+      "active": false
+    },
+    {
+      "pid": 665268,
+      "state": "absent",
+      "active": false
+    }
+  ],
+  "known_pids_all_closed": true
+}

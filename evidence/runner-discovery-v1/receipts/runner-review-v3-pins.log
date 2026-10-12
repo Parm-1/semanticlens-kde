@@ -1,0 +1,13 @@
+evidence/runner-review-v3/report.md: OK
+local/runner-review-v3/CMakeLists.txt: OK
+local/runner-review-v3/replay.cpp: OK
+local/runner-review-v3/replay.jsonl: OK
+local/runner-review-v3/replay.stderr: OK
+local/runner-review-v3/actual.cpp: OK
+local/runner-review-v3/cold_service.py: OK
+local/runner-review-v3/cold-service.json: OK
+local/runner-review-v3/service.log: OK
+local/runner-review-v3/runtime/corpus/cold-result.txt: OK
+local/runner-review-v3/producer/kde-index-service: OK
+build-runner-review-v3/replay: OK
+build-runner-review-v3/actual: OK

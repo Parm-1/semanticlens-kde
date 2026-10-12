@@ -1,0 +1,415 @@
+{
+  "argv": [
+    "/usr/bin/konsole",
+    "--separate",
+    "--nofork",
+    "--hold",
+    "-e",
+    "/usr/bin/cat",
+    "/tmp/work/calibration/contrast.txt"
+  ],
+  "command": {
+    "id": "calibration-39157526132595",
+    "op": "snapshot"
+  },
+  "elapsed_ns": 52571213,
+  "executable": "/usr/bin/konsole",
+  "pid": 8,
+  "terminals": [
+    {
+      "accessible_cpp_type": "N7Konsole25TerminalDisplayAccessibleE",
+      "accessible_name": "",
+      "accessible_role": 129,
+      "accessible_valid": true,
+      "accessible_value": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "actual_native_text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "character_count": 3080,
+      "class": "Konsole::TerminalDisplay",
+      "cursor_position": 0,
+      "height": 478,
+      "object": "5611465cf320",
+      "screen_rect_x": 2,
+      "screen_rect_y": 48,
+      "text_interface_present": true,
+      "visible": true,
+      "width": 800
+    }
+  ],
+  "windows": [
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QComboBoxPrivateContainer",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "Konsole::MainWindow",
+      "height": 524,
+      "title": "~ : cat",
+      "visible": true,
+      "width": 800,
+      "window_exposed": true
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QComboBoxPrivateContainer",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QComboBoxPrivateContainer",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    }
+  ],
+  "actual_process": {
+    "pid": 8,
+    "executable": "/usr/bin/konsole",
+    "argv": "/usr/bin/konsole --separate --nofork --hold -e /usr/bin/cat /tmp/work/calibration/contrast.txt ",
+    "startticks": "3915752",
+    "loaded_konsole_maps": [
+      "7fdad9c00000-7fdad9c7e000 r--p 00000000 00:1c 1622077                    /usr/lib/libkonsoleprivate.so.26.08.2",
+      "7fdad9c7e000-7fdad9e19000 r-xp 0007e000 00:1c 1622077                    /usr/lib/libkonsoleprivate.so.26.08.2",
+      "7fdad9e19000-7fdad9e79000 r--p 00219000 00:1c 1622077                    /usr/lib/libkonsoleprivate.so.26.08.2",
+      "7fdad9e79000-7fdad9e8d000 r--p 00278000 00:1c 1622077                    /usr/lib/libkonsoleprivate.so.26.08.2",
+      "7fdad9e8d000-7fdad9e91000 rw-p 0028c000 00:1c 1622077                    /usr/lib/libkonsoleprivate.so.26.08.2",
+      "7fdad9ffe000-7fdada01b000 r--p 00000000 00:1c 1622076                    /usr/lib/libkonsoleapp.so.26.08.2",
+      "7fdada01b000-7fdada059000 r-xp 0001d000 00:1c 1622076                    /usr/lib/libkonsoleapp.so.26.08.2",
+      "7fdada059000-7fdada066000 r--p 0005b000 00:1c 1622076                    /usr/lib/libkonsoleapp.so.26.08.2",
+      "7fdada066000-7fdada06b000 r--p 00068000 00:1c 1622076                    /usr/lib/libkonsoleapp.so.26.08.2",
+      "7fdada06b000-7fdada06d000 rw-p 0006d000 00:1c 1622076                    /usr/lib/libkonsoleapp.so.26.08.2",
+      "7fdada06d000-7fdada078000 r--p 00000000 00:1c 8213418                    /tmp/work/receiver-observer.so",
+      "7fdada078000-7fdada080000 r-xp 0000b000 00:1c 8213418                    /tmp/work/receiver-observer.so",
+      "7fdada080000-7fdada084000 r--p 00013000 00:1c 8213418                    /tmp/work/receiver-observer.so",
+      "7fdada084000-7fdada085000 r--p 00016000 00:1c 8213418                    /tmp/work/receiver-observer.so",
+      "7fdada085000-7fdada086000 rw-p 00017000 00:1c 8213418                    /tmp/work/receiver-observer.so"
+    ]
+  }
+}

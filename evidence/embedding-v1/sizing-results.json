@@ -1,0 +1,22 @@
+[
+  {
+    "name": "shrinkMatchesPillow",
+    "bytes": 36,
+    "matches": true
+  },
+  {
+    "name": "growMatchesPillow",
+    "bytes": 180,
+    "matches": true
+  },
+  {
+    "name": "oneAxisMatchesPillow",
+    "bytes": 42,
+    "matches": true
+  },
+  {
+    "name": "identity",
+    "bytes": 105,
+    "matches": true
+  }
+]

@@ -1,0 +1,22 @@
+#include "backend.h"
+#include <QCoreApplication>
+#include <QLocalServer>
+#include <QJsonDocument>
+#include <QElapsedTimer>
+#include <QFileInfo>
+#include <QDir>
+#include <QThread>
+#include <functional>
+#include <cstdio>
+QJsonArray events;bool good=true;
+void record(QString e,QJsonObject v={}){v["event"]=e;events.append(v);}
+bool wait(std::function<bool()> f,int ms){QElapsedTimer t;t.start();while(t.elapsed()<ms){QCoreApplication::processEvents();if(f())return true;QThread::msleep(5);}return f();}
+int main(int argc,char**argv){QCoreApplication app(argc,argv);if(argc!=2)return 2;QString root=QFileInfo(argv[1]).absoluteFilePath(),own=root+"/local/ui-review-v2-phase";QDir().mkpath(own);QString socket=own+"/peer.sock";QLocalServer server;server.listen(socket);QLocalSocket*peer=nullptr;QByteArray buf;QList<QJsonObject> queries;bool ready=true,model=true;QString error;int statuses=0,wipes=0;
+ auto reply=[&](QString id,QJsonObject obj){obj["id"]=id;obj["protocol"]=1;if(!obj.contains("ok"))obj["ok"]=true;record("raw-reply",obj);peer->write(QJsonDocument(obj).toJson(QJsonDocument::Compact)+'\n');peer->flush();};
+ QObject::connect(&server,&QLocalServer::newConnection,&app,[&]{peer=server.nextPendingConnection();QObject::connect(peer,&QLocalSocket::readyRead,&app,[&]{buf+=peer->readAll();while(buf.contains('\n')){auto i=buf.indexOf('\n');auto request=QJsonDocument::fromJson(buf.left(i)).object();buf.remove(0,i+1);record("raw-request",request);auto op=request["op"].toString();auto id=request["id"].toString();if(op=="status"){++statuses;reply(id,{{"status",QJsonObject{{"ready",ready},{"model_ready",model},{"phase",ready&&model?"ready":"failed"},{"error",error},{"busy",false},{"index_revision",2},{"roots",QJsonArray{}},{"indexed",0}}}});}else if(op=="search")queries.append(request);else if(op=="cancel")reply(id,{{"accepted",true}});else if(op=="wipe"){++wipes;ready=false;model=false;error="model byte size mismatch";reply(id,{{"accepted",true},{"removed",true},{"ready",false},{"recovery_error",error}});}}});});
+ {Backend b({socket,root+"/evidence/ui-v2/candidate/bin/kde-index-service",root+"/evidence/ui-v2/candidate/bin/embedding-probe",root+"/models",own+"/data",""});good&=wait([&]{return b.modelReady();},3000);b.setQuery("current");good&=wait([&]{return queries.size()==1;},1500);QJsonObject row{{"path",own+"/source.txt"},{"title","source.txt"},{"text","current literal passage"},{"kind","text"},{"page",0}};reply(queries.last()["id"].toString(),{{"results",QJsonArray{row}},{"index_revision",2}});good&=wait([&]{return b.results().size()==1;},1000);record("current-ready-positive",{{"ready",b.modelReady()},{"results",b.results().size()}});
+ b.setQuery("in-flight");good&=wait([&]{return queries.size()==2;},1500);QString pending=queries.last()["id"].toString();ready=false;model=true;good&=wait([&]{return !b.modelReady();},3000);record("ready-false-model-true",{{"ready",b.modelReady()},{"results",b.results().size()}});reply(pending,{{"results",QJsonArray{row}},{"index_revision",2}});wait([]{return false;},150);record("late-inflight-success-after-readiness-loss",{{"results",b.results().size()}});good&=b.results().isEmpty();ready=true;model=false;int before=statuses;good&=wait([&]{return statuses>before;},3000);record("ready-true-model-false",{{"ready",b.modelReady()},{"results",b.results().size()}});good&=!b.modelReady()&&b.results().isEmpty();ready=true;model=true;good&=wait([&]{return b.modelReady()&&queries.size()>=3;},3500);record("readiness-restored-current-query",{{"ready",b.modelReady()},{"query",queries.last()["text"]}});good&=queries.last()["text"]=="in-flight";
+ b.wipe();record("wipe-invalidates-immediately",{{"results",b.results().size()}});good&=b.results().isEmpty();before=statuses;good&=wait([&]{return wipes==1&&statuses>before&&!b.modelReady()&&b.message()==error;},2000);record("failed-verification-removal-ack-and-current-status",{{"ready",b.modelReady()},{"message",b.message()},{"results",b.results().size()},{"status_count",statuses},{"wipes",wipes}});good&=!b.modelReady()&&b.message()=="model byte size mismatch"&&b.results().isEmpty();
+ }
+ if(peer){peer->abort();delete peer;}server.close();QLocalServer::removeServer(socket);record("completion",{{"expectations",good},{"socket_exists",QFileInfo::exists(socket)}});auto out=QJsonDocument(QJsonObject{{"events",events}}).toJson();fwrite(out.constData(),1,out.size(),stdout);return good?0:1;
+}

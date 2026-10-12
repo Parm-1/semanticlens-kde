@@ -1,0 +1,144 @@
+{
+  "trigger": "Linked affected repair of combined_storage_review F1 against integrated b557a8f",
+  "source": {
+    "src/core-v4/engine.cpp": "df6d56d2ffb29cfc6b65ecc0e2bbc5c7007a1d70f3edd4bd62d3b263c369c40b",
+    "src/core-v4/engine.h": "a93b79ed96fc2d36b2c1da4c880a827a4255a96d79ea049344049e6668c29763",
+    "src/service-v2/main.cpp": "d8f9a7bc1f0c0caa5ea9ddc2dea5e3302db166f4152094b2b506c6250c1aa5cf",
+    "local/build-own/local-root-v1/repair-v3/build/local-root-service": "80bd62531c728bb55b6304a5f744f146d6cb2d86ca123b547e1ce739cc061d7e",
+    "local/installed-host-v3/stage/usr/bin/embedding-probe": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414"
+  },
+  "original_falsifier": {
+    "local/build-own/combined-storage-review-v1/lifecycle/results.json": "0fc486b3045a788a399be413e9cf41d4ad67641267947e251af0bd8691202635",
+    "evidence/combined-storage-review-v1/integrated_lifecycle.py": "1c1cc9321dfbc492734f758db85854a5792b10a3dac2beb597440c87e06fa0dc"
+  },
+  "immutable_verification": {
+    "core_v3": {
+      "pins": 136,
+      "bad": [],
+      "manifest_sha256": "8fab439f9bdab541094ff38b53e9068cb557dbdffb2df4b25f95a147927c5ea7"
+    },
+    "review": {
+      "pins": 30,
+      "bad": [],
+      "manifest_sha256": "95d738ec9d696cf55391a6ed6d84060850cf7b24bc4314713d897521156a18c7"
+    }
+  },
+  "checks": {
+    "lifecycle": {
+      "count": 8,
+      "values": {
+        "root_unwatched_at_creation": true,
+        "root_watched_after": true,
+        "automatic_exact_path_body": true,
+        "baseline_source_exact_path_body": true,
+        "EACCES_scan_preserves_pages": true,
+        "EACCES_unrelated_exclusion_preserves_pages": true,
+        "permission_recovery_genuine_body": true,
+        "definite_exclusion_removes_only_matching_page": true
+      }
+    },
+    "focused": [
+      {
+        "kind": "EACCES",
+        "count": 11,
+        "values": {
+          "two_original_serialized_pages": true,
+          "initial_actual_body_query": true,
+          "actual_scan_failed": true,
+          "unrelated_exclusion_accepted": true,
+          "unrelated_exclusion_scan_failed": true,
+          "scan_keeps_original_pages_revision": true,
+          "unrelated_exclusion_keeps_original_pages_revision": true,
+          "definite_exclusion_accepted": true,
+          "definite_removes_only_matching_page_while_uncertain": true,
+          "restored_body_before_rescan": true,
+          "recovery_keeps_only_unexcluded_genuine_page": true
+        },
+        "closure": {
+          "service_exit": 0,
+          "socket_absent": true,
+          "workers_absent": true,
+          "known_workers": [
+            167164,
+            167176,
+            167177,
+            167183,
+            167189,
+            167191
+          ],
+          "permissions_restored": true,
+          "private_limit_closed_with_process": true
+        }
+      },
+      {
+        "kind": "EMFILE",
+        "count": 11,
+        "values": {
+          "two_original_serialized_pages": true,
+          "initial_actual_body_query": true,
+          "actual_scan_failed": true,
+          "unrelated_exclusion_accepted": true,
+          "unrelated_exclusion_scan_failed": true,
+          "scan_keeps_original_pages_revision": true,
+          "unrelated_exclusion_keeps_original_pages_revision": true,
+          "definite_exclusion_accepted": true,
+          "definite_removes_only_matching_page_while_uncertain": true,
+          "restored_body_before_rescan": true,
+          "recovery_keeps_only_unexcluded_genuine_page": true
+        },
+        "closure": {
+          "service_exit": 0,
+          "socket_absent": true,
+          "workers_absent": true,
+          "known_workers": [
+            167282,
+            167285,
+            167297,
+            167299
+          ],
+          "permissions_restored": true,
+          "private_limit_closed_with_process": true
+        }
+      }
+    ]
+  },
+  "closure": {
+    "known_workers": [
+      165084,
+      165120,
+      165121,
+      165127,
+      165133,
+      165136,
+      166171,
+      166179,
+      166180,
+      166186,
+      166192,
+      166195,
+      166229,
+      167164,
+      167176,
+      167177,
+      167183,
+      167189,
+      167191,
+      167282,
+      167285,
+      167297,
+      167299
+    ],
+    "remaining": [],
+    "owned_socket_paths": [],
+    "permissions_restored": true,
+    "initial_aborted_workers_later_absent": true,
+    "initial_aborted_stale_socket_removed": true
+  },
+  "elapsed": {
+    "lifecycle_helper_ns": 3851212530,
+    "sequential_focused_helper_ns": 5646191251,
+    "scope": "Separate actual helper wall intervals, not summed; model inspection/build/repair/review/package time not measured"
+  },
+  "usage": "Token and billing usage unavailable",
+  "acceptance": "Author repair only; same uninvolved reviewer affected recheck and parent integration pending"
+}

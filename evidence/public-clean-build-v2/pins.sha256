@@ -1,0 +1,11 @@
+8e10465eedf7282cf515c337dedb768cf6f0d4bb4ea222c790f1d353fce05b82  evidence/public-clean-build-v2/report.md
+532304e6c37292cd7ef2adac69a2c38fd6d3b2976dda4685d20b5729ff3b0dde  evidence/public-clean-build-v2/run.sh
+1854ecbdae67c2c82bfc730a2479a0b90233af7f9af38d9a383ccfc0c58b661f  evidence/public-clean-build-v2/run.log
+6a8e6f825faddddf61f86b24522933a33d42a19ad7ceefae1b614e7dde0b72b8  evidence/public-clean-build-v2/archive-hash.txt
+aa6d104c7d6a71f90b73e563af8a9c1339accb8f214c136ccbd66525ec952320  evidence/public-clean-build-v2/identity.json
+f6da32efc9170e21d13f2558cd184be49cb29f5100d71b61146071548036c159  evidence/public-clean-build-v2/stage-manifest.json
+f24375a7150bff99104645249eba58fadf13537b44aecbd685725a2f050e8147  evidence/public-clean-build-v2/producer-hashes.txt
+94344350e1b869bedb3e6675323ddff5209e68887ce9dc68351a307090882f0f  evidence/public-clean-build-v2/candidate-source-hashes.txt
+0a91ac984860aa1c6843554178b9b390d58cd2b638164ff5899c9002aa8f91f9  evidence/public-clean-build-v2/extracted-source-check.json
+41828ae83e4e6ef6eb8a2f19e545f020438308060b3aa1b3a224e28a50962601  evidence/public-clean-build-v2/tool-versions.txt
+87c72197cd8bf8201eb95e66e1e81acb600256d3f7bb872f29fd11d35b3f9422  evidence/public-clean-build-v2/recovered-attempt-notes.md

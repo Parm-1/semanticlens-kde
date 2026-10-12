@@ -1,0 +1,5467 @@
+{
+  "kind": "EACCES",
+  "witness": {
+    "parent_mode": "0o0",
+    "reader_errno": 13,
+    "reader_error": "[Errno 13] Permission denied: '/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/source.txt'"
+  },
+  "uncertain_query": {
+    "generation": 3,
+    "id": "155",
+    "identity": {
+      "backend": "CPU",
+      "byte_order": "little",
+      "dimension": 768,
+      "dtype": "float32",
+      "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+      "extractors": {
+        "pdfinfo": "pdfinfo version 26.05.0",
+        "pdftoppm": "pdftoppm version 26.05.0",
+        "pdftotext": "pdftotext version 26.08.0",
+        "tesseract": "tesseract 5.5.3"
+      },
+      "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+      "max_tokens": 2048,
+      "model": "google/embeddinggemma-2",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "pipeline": "digup-vectors1-linux-cpu-probe1",
+      "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+      "representation": 3,
+      "runtime": "llama.cpp-b11461+no-logits",
+      "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+    },
+    "index_revision": 2,
+    "ok": true,
+    "protocol": 1,
+    "results": []
+  },
+  "baseline": {
+    "pages": [
+      [
+        "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/excluded.txt",
+        "F1-REMOVE-95237 genuine requested exclusion"
+      ],
+      [
+        "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/source.txt",
+        "F1-KEEP-78164 genuine serialized sibling"
+      ]
+    ],
+    "revision": "2",
+    "exclusions": [
+      [
+        "[]"
+      ]
+    ]
+  },
+  "after_scan": {
+    "pages": [
+      [
+        "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/excluded.txt",
+        "F1-REMOVE-95237 genuine requested exclusion"
+      ],
+      [
+        "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/source.txt",
+        "F1-KEEP-78164 genuine serialized sibling"
+      ]
+    ],
+    "revision": "2",
+    "exclusions": [
+      [
+        "[]"
+      ]
+    ]
+  },
+  "after_unrelated": {
+    "pages": [
+      [
+        "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/excluded.txt",
+        "F1-REMOVE-95237 genuine requested exclusion"
+      ],
+      [
+        "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/source.txt",
+        "F1-KEEP-78164 genuine serialized sibling"
+      ]
+    ],
+    "revision": "2",
+    "exclusions": [
+      [
+        "[\"never-present\"]"
+      ]
+    ]
+  },
+  "after_definite": {
+    "pages": [
+      [
+        "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/source.txt",
+        "F1-KEEP-78164 genuine serialized sibling"
+      ]
+    ],
+    "revision": "3",
+    "exclusions": [
+      [
+        "[\"never-present\",\"excluded.txt\"]"
+      ]
+    ]
+  },
+  "after_recovery": {
+    "pages": [
+      [
+        "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/source.txt",
+        "F1-KEEP-78164 genuine serialized sibling"
+      ]
+    ],
+    "revision": "3",
+    "exclusions": [
+      [
+        "[\"never-present\",\"excluded.txt\"]"
+      ]
+    ]
+  },
+  "observations": {
+    "two_original_serialized_pages": true,
+    "initial_actual_body_query": true,
+    "uncertain_cached_source_filtered": true,
+    "actual_scan_failed": true,
+    "unrelated_exclusion_accepted": true,
+    "unrelated_exclusion_scan_failed": true,
+    "scan_keeps_original_pages_revision": true,
+    "unrelated_exclusion_keeps_original_pages_revision": true,
+    "definite_exclusion_accepted": true,
+    "definite_removes_only_matching_page_while_uncertain": true,
+    "restored_body_before_rescan": true,
+    "recovery_keeps_only_unexcluded_genuine_page": true
+  },
+  "events": [
+    {
+      "clock_ns": 16578368430683,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "1",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578418063365,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "2",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578438652296,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "3",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578459132852,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "4",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578479631852,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "5",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578500116406,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "6",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578520568448,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "7",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578540947873,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "8",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578561323941,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "9",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578581673971,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "10",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578602086087,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "11",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578622614213,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "12",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578643137811,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "13",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578663493360,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "14",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578683810929,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "15",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578705127684,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "16",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578725569387,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "17",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578745982575,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "18",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578766414239,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "19",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578786828510,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "20",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578807188809,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "21",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578827563424,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "22",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578847951425,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "23",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578868376036,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "24",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578888723220,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "25",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578909121270,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "26",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578929567822,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "27",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578949906109,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "28",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578970691150,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "29",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16578991169812,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "30",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579011530221,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "31",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579031898666,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "32",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579052276678,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "33",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579073053604,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "34",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579093415986,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "35",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579113704780,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "36",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579134069928,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "37",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579154734892,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "38",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579175243902,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "39",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579195690804,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "40",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579216140532,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "41",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579236554642,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "42",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579257024488,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "43",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579277555048,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "44",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579297889719,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "45",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579318117447,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "46",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579338344915,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "47",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579358567113,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "48",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579378788068,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "49",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579399012971,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "50",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579419237764,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "51",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579439480090,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "52",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579459729449,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "53",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579480039713,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "54",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579500337163,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "55",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579520575442,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "56",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579540842324,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "57",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579561094058,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "58",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579581473412,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "59",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579601805778,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "60",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579622076087,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "61",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579642344362,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "62",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579662578342,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "63",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579682823604,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "64",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579703038047,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "65",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579723283899,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "66",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579743531846,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "67",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579763754264,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "68",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579783955162,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "69",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579804192408,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "70",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579824431929,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "71",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579844694202,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "72",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579864969020,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "73",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579885234680,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "74",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579905473960,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "75",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579925721756,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "76",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579946050575,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "77",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579966332156,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "78",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16579986578469,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "79",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580006832417,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "80",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580027071757,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "81",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580047330244,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "82",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580067554616,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "83",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580087782474,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "84",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580108015382,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "85",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580128238933,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "86",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580148470638,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "87",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580168717673,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "88",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580188949509,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "89",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580209192687,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "90",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580229505305,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "91",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580249882005,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "92",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580270449575,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "93",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580290921174,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "94",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580311434602,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "95",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580331864963,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "96",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580352248456,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "97",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580372585581,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "98",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580392918668,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "99",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580413500034,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "100",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580433945424,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "101",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580454358512,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "102",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580474749519,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "103",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580495194097,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "104",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580515643764,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "105",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580536132776,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "106",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580556525266,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "107",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580576956198,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "108",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580598161012,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "109",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580618822329,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "110",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580639193368,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "111",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580659529731,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "112",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580679889699,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "113",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580700400052,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "114",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580720982510,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "115",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580741832303,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "116",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580762457352,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "117",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580783061992,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "118",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580803631546,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "119",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580825393132,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "120",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580845914625,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "121",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580866537139,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "122",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580887025440,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "123",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580907491388,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "124",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580928055131,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "125",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580948668898,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "126",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580969847312,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "127",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16580990490996,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "128",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581011104313,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "129",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581031620857,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "130",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581052118505,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "131",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581072579364,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "132",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581093074727,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "133",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581113544182,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "134",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581133988239,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "135",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581154436805,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "136",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581174891040,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "137",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581195383328,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "138",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581215905383,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "139",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [],
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581282191441,
+      "op": "add_root",
+      "args": {
+        "path": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus"
+      },
+      "reply": {
+        "accepted": true,
+        "id": "140",
+        "ok": true,
+        "protocol": 1
+      }
+    },
+    {
+      "clock_ns": 16581282339530,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "141",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": true,
+          "current": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/excluded.txt",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 2,
+          "scan_error": "",
+          "scan_path_bytes": 2312,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 2,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581302837269,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "142",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": true,
+          "current": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/excluded.txt",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 2,
+          "scan_error": "",
+          "scan_path_bytes": 2312,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 2,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581323384701,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "143",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": true,
+          "current": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/excluded.txt",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 2,
+          "scan_error": "",
+          "scan_path_bytes": 2312,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 2,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581343943675,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "144",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": true,
+          "current": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/excluded.txt",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 2,
+          "scan_error": "",
+          "scan_path_bytes": 2312,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 2,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581364543516,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "145",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": true,
+          "current": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/source.txt",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 1,
+          "indexed": 1,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 1,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 2,
+          "scan_error": "",
+          "scan_path_bytes": 2312,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 1,
+          "total": 2,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581385163044,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "146",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": true,
+          "current": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/source.txt",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 1,
+          "indexed": 1,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 1,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 2,
+          "scan_error": "",
+          "scan_path_bytes": 2312,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 1,
+          "total": 2,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581405840171,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "147",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": true,
+          "current": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/source.txt",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 1,
+          "indexed": 1,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 1,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 2,
+          "scan_error": "",
+          "scan_path_bytes": 2312,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 1,
+          "total": 2,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581426426607,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "148",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": true,
+          "current": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/source.txt",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 1,
+          "indexed": 1,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 1,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 2,
+          "scan_error": "",
+          "scan_path_bytes": 2312,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 1,
+          "total": 2,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581446922021,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "149",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": true,
+          "current": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/source.txt",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 1,
+          "indexed": 1,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 1,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 2,
+          "scan_error": "",
+          "scan_path_bytes": 2312,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 1,
+          "total": 2,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581467403408,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "150",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 2,
+          "indexed": 2,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 2,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 2,
+          "scan_error": "",
+          "scan_path_bytes": 2312,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 2,
+          "total": 2,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581528477782,
+      "op": "search",
+      "args": {
+        "text": "F1-KEEP-78164"
+      },
+      "reply": {
+        "generation": 2,
+        "id": "151",
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 2,
+        "ok": true,
+        "protocol": 1,
+        "results": [
+          {
+            "exact": true,
+            "kind": "text",
+            "match_scope": "text",
+            "match_type": "literal",
+            "page": 0,
+            "path": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/source.txt",
+            "score": 1,
+            "semantic_score": 0.7921259234334646,
+            "term_match": true,
+            "text": "F1-KEEP-78164 genuine serialized sibling",
+            "title": "source.txt",
+            "warning": ""
+          },
+          {
+            "exact": false,
+            "kind": "text",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 0,
+            "path": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/excluded.txt",
+            "score": 0.7716588699400568,
+            "semantic_score": 0.7340648762697904,
+            "term_match": false,
+            "text": "F1-REMOVE-95237 genuine requested exclusion",
+            "title": "excluded.txt",
+            "warning": ""
+          }
+        ]
+      }
+    },
+    {
+      "clock_ns": 16581530420010,
+      "op": "pause",
+      "args": {},
+      "reply": {
+        "accepted": true,
+        "id": "152",
+        "ok": true,
+        "protocol": 1
+      }
+    },
+    {
+      "clock_ns": 16581530518456,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "153",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 2,
+          "indexed": 2,
+          "model_ready": true,
+          "paused": true,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 2,
+          "scan_error": "",
+          "scan_path_bytes": 2312,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 2,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581568798804,
+      "op": "scan",
+      "args": {},
+      "reply": {
+        "error": "local path resolution rejected: Permission denied",
+        "id": "154",
+        "ok": false,
+        "protocol": 1
+      }
+    },
+    {
+      "clock_ns": 16581632154357,
+      "op": "search",
+      "args": {
+        "text": "F1-KEEP-78164"
+      },
+      "reply": {
+        "generation": 3,
+        "id": "155",
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 2,
+        "ok": true,
+        "protocol": 1,
+        "results": []
+      }
+    },
+    {
+      "clock_ns": 16581673809690,
+      "op": "set_exclusions",
+      "args": {
+        "path": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus",
+        "exclusions": [
+          "never-present"
+        ]
+      },
+      "reply": {
+        "accepted": true,
+        "id": "156",
+        "ok": true,
+        "protocol": 1,
+        "scan_error": "local path resolution rejected: Permission denied"
+      }
+    },
+    {
+      "clock_ns": 16581730345731,
+      "op": "set_exclusions",
+      "args": {
+        "path": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus",
+        "exclusions": [
+          "never-present",
+          "excluded.txt"
+        ]
+      },
+      "reply": {
+        "accepted": true,
+        "id": "157",
+        "ok": true,
+        "protocol": 1,
+        "scan_error": "local path resolution rejected: Permission denied"
+      }
+    },
+    {
+      "clock_ns": 16581789687091,
+      "op": "search",
+      "args": {
+        "text": "F1-KEEP-78164"
+      },
+      "reply": {
+        "generation": 5,
+        "id": "158",
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 3,
+        "ok": true,
+        "protocol": 1,
+        "results": [
+          {
+            "exact": true,
+            "kind": "text",
+            "match_scope": "text",
+            "match_type": "literal",
+            "page": 0,
+            "path": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/source.txt",
+            "score": 1,
+            "semantic_score": 0.7921259234334646,
+            "term_match": true,
+            "text": "F1-KEEP-78164 genuine serialized sibling",
+            "title": "source.txt",
+            "warning": ""
+          }
+        ]
+      }
+    },
+    {
+      "clock_ns": 16581845734990,
+      "op": "resume",
+      "args": {},
+      "reply": {
+        "accepted": true,
+        "id": "159",
+        "ok": true,
+        "protocol": 1
+      }
+    },
+    {
+      "clock_ns": 16581845870737,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "160",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": true,
+          "current": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/source.txt",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 3,
+          "indexed": 1,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [
+                "never-present",
+                "excluded.txt"
+              ],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 2,
+          "scan_error": "",
+          "scan_path_bytes": 1598,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 1,
+          "total": 1,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581866366361,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "161",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 3,
+          "indexed": 1,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 1,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [
+                "never-present",
+                "excluded.txt"
+              ],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 2,
+          "scan_error": "",
+          "scan_path_bytes": 1598,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 1,
+          "total": 1,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16581961774788,
+      "op": "search",
+      "args": {
+        "text": "F1-KEEP-78164"
+      },
+      "reply": {
+        "generation": 6,
+        "id": "162",
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 3,
+        "ok": true,
+        "protocol": 1,
+        "results": [
+          {
+            "exact": true,
+            "kind": "text",
+            "match_scope": "text",
+            "match_type": "literal",
+            "page": 0,
+            "path": "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v2/uncertainty/EACCES/parent/corpus/source.txt",
+            "score": 1,
+            "semantic_score": 0.7921259234334646,
+            "term_match": true,
+            "text": "F1-KEEP-78164 genuine serialized sibling",
+            "title": "source.txt",
+            "warning": ""
+          }
+        ]
+      }
+    },
+    {
+      "clock_ns": 16581962048585,
+      "op": "shutdown",
+      "args": {},
+      "reply": {
+        "accepted": true,
+        "id": "163",
+        "ok": true,
+        "protocol": 1
+      }
+    }
+  ],
+  "closure": {
+    "service_exit": 0,
+    "socket_absent": true,
+    "workers_absent": true,
+    "known_workers": [
+      170255,
+      170269,
+      170270,
+      170282,
+      170284,
+      170368
+    ],
+    "permissions_restored": true,
+    "private_limit_closed_with_process": true
+  }
+}

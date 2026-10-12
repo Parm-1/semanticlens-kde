@@ -1,0 +1,15 @@
+signal time=1791784851.751414 sender=org.freedesktop.DBus -> destination=:1.21 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+   string ":1.21"
+signal time=1791784851.751460 sender=org.freedesktop.DBus -> destination=:1.21 serial=4 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameLost
+   string ":1.21"
+method call time=1791784851.887992 sender=:1.13 -> destination=org.freedesktop.portal.Desktop serial=31 path=/org/freedesktop/portal/desktop; interface=org.freedesktop.portal.OpenURI; member=OpenFile
+   string "wayland:b7e32e87-35e6-4d37-aa02-20f25985fa2c"
+   file descriptor
+         inode: 8163672
+         type: file
+   array [
+      dict entry(
+         string "activation_token"
+         variant             string "kwin-51"
+      )
+   ]

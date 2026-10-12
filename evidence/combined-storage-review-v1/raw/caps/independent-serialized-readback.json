@@ -1,0 +1,57 @@
+[
+  {
+    "case": "entry",
+    "serialized_pages": [
+      [
+        "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v1/caps/entry/source.txt",
+        "OWNED-CAP-99271 retained exact literal content"
+      ]
+    ],
+    "source_body": "OWNED-CAP-99271 retained exact literal content",
+    "exact_source_association": true
+  },
+  {
+    "case": "directory",
+    "serialized_pages": [
+      [
+        "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v1/caps/directory/source.txt",
+        "OWNED-CAP-99271 retained exact literal content"
+      ]
+    ],
+    "source_body": "OWNED-CAP-99271 retained exact literal content",
+    "exact_source_association": true
+  },
+  {
+    "case": "watch",
+    "serialized_pages": [
+      [
+        "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v1/caps/watch/source.txt",
+        "OWNED-CAP-99271 retained exact literal content"
+      ]
+    ],
+    "source_body": "OWNED-CAP-99271 retained exact literal content",
+    "exact_source_association": true
+  },
+  {
+    "case": "path",
+    "serialized_pages": [
+      [
+        "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v1/caps/path/source.txt",
+        "OWNED-CAP-99271 retained exact literal content"
+      ]
+    ],
+    "source_body": "OWNED-CAP-99271 retained exact literal content",
+    "exact_source_association": true
+  },
+  {
+    "case": "cancel",
+    "serialized_pages": [
+      [
+        "/home/parm/Documents/KDE Index/local/build-own/combined-storage-review-v1/caps/cancel/source.txt",
+        "OWNED-CAP-99271 retained exact literal content"
+      ]
+    ],
+    "source_body": "OWNED-CAP-99271 retained exact literal content",
+    "exact_source_association": true
+  }
+]

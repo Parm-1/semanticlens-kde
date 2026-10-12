@@ -1,0 +1,9 @@
+000000000012c9f0 T _ZNK11DolphinView13selectedItemsEv
+000000000012a6d0 T _ZNK11DolphinView3urlEv
+                 U _ZNK14KCoreDirLister3urlEv
+0000000000157c70 T _ZNK18ViewModeController3urlEv
+0000000000076540 T _ZNK23KItemListViewAccessible13selectedItemsEv
+00000000000d6190 T _ZNK25KItemListSelectionManager13selectedItemsEv
+                 U _ZNK3KIO9SimpleJob3urlEv
+                 U _ZNK9KFileItem3urlEv
+0000000000076750 T _ZThn16_NK23KItemListViewAccessible13selectedItemsEv

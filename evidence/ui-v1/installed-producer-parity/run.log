@@ -1,0 +1,7 @@
+load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: '</s>' is a normal token here, removing it from EOG list
+..................................................
+init_audio: audio input is in experimental stage and may have reduced quality:
+    https://github.com/ggml-org/llama.cpp/discussions/13759
+Unable to open file evidence/embedding-v1/inputs/nonexistent.png: No such file or directory

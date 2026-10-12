@@ -1,0 +1,24 @@
+[ 16%] Running qmlimportscanner for ui-render
+[ 16%] Built target ui-render_qmlimportscan
+[ 16%] Built target ui-render_autogen_timestamp_deps
+[ 33%] Automatic MOC and UIC for target ui-render
+[ 33%] Built target ui-render_autogen
+[ 50%] Building CXX object CMakeFiles/ui-render.dir/home/parm/Documents/KDE_Index/tools/ui_repair_render.cpp.o
+[ 83%] Building CXX object CMakeFiles/ui-render.dir/ui-render_autogen/mocs_compilation.cpp.o
+[ 83%] Building CXX object CMakeFiles/ui-render.dir/home/parm/Documents/KDE_Index/src/ui/backend.cpp.o
+[100%] Linking CXX executable ui-render
+[100%] Built target ui-render
+[ 16%] Built target ui-render_qmlimportscan
+[ 16%] Built target ui-render_autogen_timestamp_deps
+[ 33%] Automatic MOC and UIC for target ui-render
+[ 33%] Built target ui-render_autogen
+[ 50%] Building CXX object CMakeFiles/ui-render.dir/home/parm/Documents/KDE_Index/tools/ui_repair_render.cpp.o
+[ 66%] Linking CXX executable ui-render
+[100%] Built target ui-render
+[ 16%] Built target ui-render_qmlimportscan
+[ 16%] Built target ui-render_autogen_timestamp_deps
+[ 33%] Automatic MOC and UIC for target ui-render
+[ 33%] Built target ui-render_autogen
+[ 50%] Building CXX object CMakeFiles/ui-render.dir/home/parm/Documents/KDE_Index/tools/ui_repair_render.cpp.o
+[ 66%] Linking CXX executable ui-render
+[100%] Built target ui-render

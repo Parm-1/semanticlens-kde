@@ -1,0 +1,309 @@
+{
+    "events": [
+        {
+            "event": "request",
+            "id": "ui-1",
+            "op": "status"
+        },
+        {
+            "event": "reply",
+            "id": "ui-1",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "errors": 0,
+                "failures": [
+                ],
+                "index_revision": 2,
+                "indexed": 1,
+                "model_ready": true,
+                "paused": false,
+                "progress": 0,
+                "roots": [
+                ],
+                "total": 0
+            }
+        },
+        {
+            "event": "source-shaped-status",
+            "ready": true
+        },
+        {
+            "event": "request",
+            "id": "ui-2",
+            "kind": "",
+            "limit": 20,
+            "op": "search",
+            "text": "alpha"
+        },
+        {
+            "event": "request",
+            "id": "ui-3",
+            "op": "cancel",
+            "target": "ui-2"
+        },
+        {
+            "accepted": true,
+            "event": "reply",
+            "id": "ui-3",
+            "ok": true,
+            "protocol": 1
+        },
+        {
+            "event": "request",
+            "id": "ui-4",
+            "op": "status"
+        },
+        {
+            "event": "reply",
+            "id": "ui-4",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "errors": 0,
+                "failures": [
+                ],
+                "index_revision": 2,
+                "indexed": 1,
+                "model_ready": true,
+                "paused": false,
+                "progress": 0,
+                "roots": [
+                ],
+                "total": 0
+            }
+        },
+        {
+            "event": "request",
+            "id": "ui-5",
+            "kind": "",
+            "limit": 20,
+            "op": "search",
+            "text": "beta"
+        },
+        {
+            "event": "reply",
+            "generation": 1,
+            "id": "ui-2",
+            "index_revision": 2,
+            "ok": true,
+            "protocol": 1,
+            "results": [
+                {
+                    "exact": true,
+                    "kind": "text",
+                    "page": 0,
+                    "path": "/home/parm/Documents/KDE Index/local/ui-review-v1/corpus/payment.txt",
+                    "score": 1,
+                    "semantic_score": 0.5,
+                    "text": "synthetic source passage",
+                    "title": "payment.txt",
+                    "warning": ""
+                }
+            ]
+        },
+        {
+            "event": "old-query-success",
+            "results_count": 0
+        },
+        {
+            "event": "reply",
+            "generation": 1,
+            "id": "ui-5",
+            "index_revision": 1,
+            "ok": true,
+            "protocol": 1,
+            "results": [
+                {
+                    "exact": true,
+                    "kind": "text",
+                    "page": 0,
+                    "path": "/home/parm/Documents/KDE Index/local/ui-review-v1/corpus/payment.txt",
+                    "score": 1,
+                    "semantic_score": 0.5,
+                    "text": "synthetic source passage",
+                    "title": "payment.txt",
+                    "warning": ""
+                }
+            ]
+        },
+        {
+            "event": "older-revision-success",
+            "results_count": 0
+        },
+        {
+            "event": "request",
+            "id": "ui-6",
+            "kind": "",
+            "limit": 20,
+            "op": "search",
+            "text": "beta"
+        },
+        {
+            "event": "reply",
+            "generation": 1,
+            "id": "ui-6",
+            "index_revision": 2,
+            "ok": true,
+            "protocol": 1,
+            "results": [
+                {
+                    "exact": true,
+                    "kind": "text",
+                    "page": 0,
+                    "path": "/home/parm/Documents/KDE Index/local/ui-review-v1/corpus/payment.txt",
+                    "score": 1,
+                    "semantic_score": 0.5,
+                    "text": "synthetic source passage",
+                    "title": "payment.txt",
+                    "warning": ""
+                }
+            ]
+        },
+        {
+            "event": "current-query-success",
+            "results_count": 1
+        },
+        {
+            "event": "request",
+            "id": "ui-7",
+            "kind": "",
+            "limit": 20,
+            "op": "search",
+            "text": "markup"
+        },
+        {
+            "event": "reply",
+            "generation": 1,
+            "id": "ui-7",
+            "index_revision": 2,
+            "ok": true,
+            "protocol": 1,
+            "results": [
+                {
+                    "exact": true,
+                    "kind": "text",
+                    "page": 0,
+                    "path": "/home/parm/Documents/KDE Index/local/ui-review-v1/corpus/payment.txt",
+                    "score": 1,
+                    "semantic_score": 0.5,
+                    "text": "<b>source excerpt</b><img src='http://127.0.0.1:44031/excerpt-canary.png'>",
+                    "title": "payment.txt",
+                    "warning": ""
+                }
+            ]
+        },
+        {
+            "event": "http-resource-request",
+            "raw": "GET /excerpt-canary.png HTTP/1.1\r\nHost: 127.0.0.1:44031\r\nConnection: Keep-Alive\r\nAccept-Encoding: zstd, br, gzip, deflate\r\nAccept-Language: en,*\r\nUser-Agent: Mozilla/5.0\r\n\r\n"
+        },
+        {
+            "event": "request",
+            "id": "ui-8",
+            "op": "status"
+        },
+        {
+            "event": "reply",
+            "id": "ui-8",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "errors": 0,
+                "failures": [
+                ],
+                "index_revision": 2,
+                "indexed": 1,
+                "model_ready": true,
+                "paused": false,
+                "progress": 0,
+                "roots": [
+                ],
+                "total": 0
+            }
+        },
+        {
+            "event": "markup-observation",
+            "http_fetches": 1,
+            "results_count": 1
+        },
+        {
+            "event": "window-capture",
+            "saved": true
+        },
+        {
+            "event": "empty-query",
+            "results_count": 0
+        },
+        {
+            "event": "request",
+            "id": "ui-9",
+            "kind": "",
+            "limit": 20,
+            "op": "search",
+            "text": "reconnect"
+        },
+        {
+            "event": "peer-disconnect",
+            "ready": false,
+            "results_count": 0
+        },
+        {
+            "event": "request",
+            "id": "ui-10",
+            "op": "status"
+        },
+        {
+            "event": "reply",
+            "id": "ui-10",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "errors": 0,
+                "failures": [
+                ],
+                "index_revision": 2,
+                "indexed": 1,
+                "model_ready": true,
+                "paused": false,
+                "progress": 0,
+                "roots": [
+                ],
+                "total": 0
+            }
+        },
+        {
+            "event": "request",
+            "id": "ui-11",
+            "kind": "",
+            "limit": 20,
+            "op": "search",
+            "text": "reconnect"
+        },
+        {
+            "event": "external-service-reconnect",
+            "latest_text": "reconnect",
+            "resubmitted_query": true
+        },
+        {
+            "error": "canceled",
+            "event": "reply",
+            "id": "ui-9",
+            "ok": false,
+            "protocol": 1
+        },
+        {
+            "event": "old-canceled-error",
+            "message": "Ready"
+        },
+        {
+            "event": "completion",
+            "harness_expectations": true,
+            "socket_exists": false
+        }
+    ],
+    "mode": "peer"
+}

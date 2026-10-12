@@ -1,0 +1,32 @@
+{
+    "bounded_paper_edge_correction": false,
+    "capture": "/home/parm/Documents/KDE Index/local/clean-arch-v1/root.x86_64/checkout/local/native-clean-v2/window-page.png",
+    "declared_painted_rect": [
+        568,
+        168,
+        400,
+        518
+    ],
+    "ink_reference_pixels": 652,
+    "ink_witness_correlation": 0,
+    "mean_absolute_gray_error": 16.28537162162162,
+    "nearby_white_bounds": [
+        1537,
+        1073,
+        -1537,
+        -1073
+    ],
+    "painted_rect": [
+        568,
+        168,
+        400,
+        518
+    ],
+    "pass": false,
+    "reference_raster": "/home/parm/Documents/KDE Index/local/ui-v3-smoke-readback/smoke-raster.png",
+    "thresholds": {
+        "maximum_gray_mae": 10,
+        "minimum_ink_correlation": 0.65,
+        "minimum_ink_pixels": 20
+    }
+}

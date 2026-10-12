@@ -1,0 +1,21 @@
+-- The CXX compiler identification is GNU 16.2.1
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.7")
+-- Checking for module 'gio-unix-2.0'
+--   Found gio-unix-2.0, version 2.90.1
+-- Configuring done (2.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/parm/Documents/KDE Index/build-desktop-open-v3/build

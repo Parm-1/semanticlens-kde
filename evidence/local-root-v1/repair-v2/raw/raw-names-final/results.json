@@ -1,0 +1,714 @@
+{
+  "outcome": "pass",
+  "checks": {
+    "different-native-inodes": true,
+    "explicit-invalid-body-positive-before-and-after": true,
+    "non-roundtrip-raw-name-observable-skip": true,
+    "only-valid-sibling-body-associated": true,
+    "invalid-body-not-a-literal-result": true,
+    "invalid-inode-no-open-or-access-during-engine-interval": true,
+    "actual-fd-exhaustion-preserves-old-source-and-recovers": true
+  },
+  "raw": [
+    {
+      "event": "initial",
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 0,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [],
+        "scan_warnings": [],
+        "segments": 0,
+        "total": 0
+      }
+    },
+    {
+      "event": "add_root",
+      "reply": {
+        "accepted": true
+      },
+      "status": {
+        "busy": true,
+        "current": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus/\ufffd.txt",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 0,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus"
+          }
+        ],
+        "scan_directories": 1,
+        "scan_entries": 2,
+        "scan_error": "",
+        "scan_path_bytes": 1350,
+        "scan_skipped_names": 1,
+        "scan_skipped_providers": 0,
+        "scan_warnings": [
+          {
+            "entry_bytes_hex": "ff2e747874",
+            "error": "non-UTF8 filename skipped before lookup",
+            "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus"
+          }
+        ],
+        "segments": 0,
+        "total": 1
+      },
+      "watches": 2
+    },
+    {
+      "event": "wait",
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 1,
+        "indexed": 1,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 1,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus"
+          }
+        ],
+        "scan_directories": 1,
+        "scan_entries": 2,
+        "scan_error": "",
+        "scan_path_bytes": 1350,
+        "scan_skipped_names": 1,
+        "scan_skipped_providers": 0,
+        "scan_warnings": [
+          {
+            "entry_bytes_hex": "ff2e747874",
+            "error": "non-UTF8 filename skipped before lookup",
+            "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus"
+          }
+        ],
+        "segments": 1,
+        "total": 1
+      },
+      "watches": 2
+    },
+    {
+      "event": "search",
+      "reply": {
+        "generation": 2,
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 1,
+        "results": [
+          {
+            "exact": true,
+            "kind": "text",
+            "match_scope": "text",
+            "match_type": "literal",
+            "page": 0,
+            "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus/\ufffd.txt",
+            "score": 1,
+            "semantic_score": 0.7752614772069067,
+            "term_match": true,
+            "text": "VALID-REPLACEMENT-99148 genuine valid Unicode sibling",
+            "title": "\ufffd.txt",
+            "warning": ""
+          }
+        ]
+      },
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 1,
+        "indexed": 1,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 1,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus"
+          }
+        ],
+        "scan_directories": 1,
+        "scan_entries": 2,
+        "scan_error": "",
+        "scan_path_bytes": 1350,
+        "scan_skipped_names": 1,
+        "scan_skipped_providers": 0,
+        "scan_warnings": [
+          {
+            "entry_bytes_hex": "ff2e747874",
+            "error": "non-UTF8 filename skipped before lookup",
+            "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus"
+          }
+        ],
+        "segments": 1,
+        "total": 1
+      },
+      "watches": 2
+    },
+    {
+      "event": "search",
+      "reply": {
+        "generation": 2,
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 1,
+        "results": [
+          {
+            "exact": false,
+            "kind": "text",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 0,
+            "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus/\ufffd.txt",
+            "score": 0.7476618622924988,
+            "semantic_score": 0.6801390163876376,
+            "term_match": false,
+            "text": "VALID-REPLACEMENT-99148 genuine valid Unicode sibling",
+            "title": "\ufffd.txt",
+            "warning": ""
+          }
+        ]
+      },
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 1,
+        "indexed": 1,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 1,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus"
+          }
+        ],
+        "scan_directories": 1,
+        "scan_entries": 2,
+        "scan_error": "",
+        "scan_path_bytes": 1350,
+        "scan_skipped_names": 1,
+        "scan_skipped_providers": 0,
+        "scan_warnings": [
+          {
+            "entry_bytes_hex": "ff2e747874",
+            "error": "non-UTF8 filename skipped before lookup",
+            "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus"
+          }
+        ],
+        "segments": 1,
+        "total": 1
+      },
+      "watches": 2
+    },
+    {
+      "event": "pressure_scan",
+      "reply": {
+        "error": "extractor version probe failed: pdftotext",
+        "ok": false
+      },
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 1,
+        "indexed": 1,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 1,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus"
+          }
+        ],
+        "scan_directories": 1,
+        "scan_entries": 2,
+        "scan_error": "",
+        "scan_path_bytes": 1350,
+        "scan_skipped_names": 1,
+        "scan_skipped_providers": 0,
+        "scan_warnings": [
+          {
+            "entry_bytes_hex": "ff2e747874",
+            "error": "non-UTF8 filename skipped before lookup",
+            "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus"
+          }
+        ],
+        "segments": 1,
+        "total": 1
+      },
+      "watches": 2
+    },
+    {
+      "event": "search",
+      "reply": {
+        "generation": 2,
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 1,
+        "results": [
+          {
+            "exact": true,
+            "kind": "text",
+            "match_scope": "text",
+            "match_type": "literal",
+            "page": 0,
+            "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus/\ufffd.txt",
+            "score": 1,
+            "semantic_score": 0.7752614772069067,
+            "term_match": true,
+            "text": "VALID-REPLACEMENT-99148 genuine valid Unicode sibling",
+            "title": "\ufffd.txt",
+            "warning": ""
+          }
+        ]
+      },
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 1,
+        "indexed": 1,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 1,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus"
+          }
+        ],
+        "scan_directories": 1,
+        "scan_entries": 2,
+        "scan_error": "",
+        "scan_path_bytes": 1350,
+        "scan_skipped_names": 1,
+        "scan_skipped_providers": 0,
+        "scan_warnings": [
+          {
+            "entry_bytes_hex": "ff2e747874",
+            "error": "non-UTF8 filename skipped before lookup",
+            "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus"
+          }
+        ],
+        "segments": 1,
+        "total": 1
+      },
+      "watches": 2
+    },
+    {
+      "event": "scan",
+      "reply": {
+        "accepted": true
+      },
+      "status": {
+        "busy": true,
+        "current": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus/\ufffd.txt",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 1,
+        "indexed": 1,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 0,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus"
+          }
+        ],
+        "scan_directories": 1,
+        "scan_entries": 2,
+        "scan_error": "",
+        "scan_path_bytes": 1350,
+        "scan_skipped_names": 1,
+        "scan_skipped_providers": 0,
+        "scan_warnings": [
+          {
+            "entry_bytes_hex": "ff2e747874",
+            "error": "non-UTF8 filename skipped before lookup",
+            "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus"
+          }
+        ],
+        "segments": 1,
+        "total": 1
+      },
+      "watches": 2
+    },
+    {
+      "event": "wait",
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 1,
+        "indexed": 1,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 1,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus"
+          }
+        ],
+        "scan_directories": 1,
+        "scan_entries": 2,
+        "scan_error": "",
+        "scan_path_bytes": 1350,
+        "scan_skipped_names": 1,
+        "scan_skipped_providers": 0,
+        "scan_warnings": [
+          {
+            "entry_bytes_hex": "ff2e747874",
+            "error": "non-UTF8 filename skipped before lookup",
+            "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus"
+          }
+        ],
+        "segments": 1,
+        "total": 1
+      },
+      "watches": 2
+    }
+  ],
+  "raw_name_hex": "ff2e747874",
+  "invalid_inode": 8294323,
+  "valid_inode": 8294324,
+  "inotify": {
+    "watch_descriptor": 1,
+    "positive_before_hex": "0100000020000000000000000000000001000000010000000000000000000000",
+    "engine_interval_hex": "",
+    "positive_after_hex": "0100000020000000000000000000000001000000010000000000000000000000"
+  },
+  "serialized_pages": [
+    [
+      "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/repair-v2/raw-names-final/corpus/\ufffd.txt",
+      "VALID-REPLACEMENT-99148 genuine valid Unicode sibling"
+    ]
+  ],
+  "wall_seconds": 3.7270345260003523,
+  "closure": {
+    "process_closed": true,
+    "workers_closed": true,
+    "known_worker_pids": [
+      132744,
+      132763
+    ]
+  }
+}

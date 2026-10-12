@@ -1,0 +1,30 @@
+{
+  "method": "existing tools/retrieval_service.py and tools/retrieval_score.py; no changes",
+  "namespace": {
+    "network": "unshared/network isolated",
+    "bootstrap": "read-only bind",
+    "owned_writable": "only public-clean-v2 bootstrap subtree and evidence/retrieval-v2 output",
+    "models": "read-only bind"
+  },
+  "source_commit": "5beacaebb65427478e7e2dd820c8cbea64cf13ea",
+  "source_archive_sha256": "6faeb1ed7df43834eef73702265ae7a298c8e9c53b2f5c5b0b6fe865cbfcd928",
+  "benchmark_inventory_sha256": "2fdb07dba3b3191a7073b7fa1443e58c542fa3c03e3275d429e54058c8996872",
+  "baseline": {
+    "raw_path": "evidence/retrieval-v1/baloo/results.json",
+    "sha256": "b2284df09dc184e76a11338b6f766c4de979925494c1f182fb196e1a283a8280",
+    "status": "reused unchanged prior Baloo 6.30.0 evidence; not rerun"
+  },
+  "query_exchange_counts": {
+    "initial": 37,
+    "warm_repeats": 185,
+    "cold": 3,
+    "search_total": 225
+  },
+  "resource_closure": {
+    "service_exit": 0,
+    "all_known_pids_absent": true,
+    "socket_absent": true
+  },
+  "package_usage": "unknown",
+  "overall_elapsed_time": "unknown"
+}

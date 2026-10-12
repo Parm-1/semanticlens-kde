@@ -1,0 +1,13 @@
+{
+  "candidate/src/ui/backend.h": true,
+  "candidate/src/ui/backend.cpp": true,
+  "candidate/src/ui/main.cpp": true,
+  "candidate/src/ui/Main.qml": true,
+  "candidate/tools/ui_smoke.cpp": true,
+  "candidate/tools/ui_repair_render.cpp": true,
+  "candidate/tools/ui_repair_pixels.cpp": true,
+  "candidate/bin/kde-index": true,
+  "candidate/bin/ui-smoke": true,
+  "candidate/bin/ui-render": true,
+  "candidate/bin/ui-pixels": true
+}

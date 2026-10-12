@@ -1,0 +1,53 @@
+{
+  "version": "runner-v2",
+  "successor_of": "evidence/runner-v1",
+  "review": {
+    "report": "evidence/runner-review-v1/report.md",
+    "sha256": "07d9e877e68a174bb75e78bb859e4fd36ba470b6857f8cab2fe2de0cd8ae919a",
+    "findings_repaired": ["transport failure states were conflated or hidden", "malformed result rows could become activatable matches"]
+  },
+  "contract": {
+    "prefix": "lowercase find ",
+    "protocol": "JSONL v1 from docs/ENGINE.md",
+    "ranking_score": "producer score in [-1,1]; exact hits are 1 and semantic_score is an independent dot field",
+    "consumed_row_fields": "path/title/text/kind strings; page and score numbers; absolute path; kind text/pdf/image; PDF page positive integral; text/image page zero; nonempty passage for text/pdf and empty allowed for image"
+  },
+  "candidate": {
+    "source": "src/runner-v2/runner.cpp",
+    "metadata": "src/runner-v2/kde-index-runner-v2.json",
+    "license": "GPL-3.0-or-later per THIRD_PARTY_NOTICES.md",
+    "native_module": "build-runner-v2/libkde-index-runner-v2.so",
+    "kf6_runner_abi": "6.30.0-1",
+    "qt6": "6.12.0"
+  },
+  "validation": {
+    "standalone_cmake_configure_and_plugin_build": "pass",
+    "native_plugin_metadata_and_factory_load": "pass; evidence/runner-v2/factory-smoke.log",
+    "real_runner_manager_replay": "26 cases passed by tools/runner_v2_verify.py",
+    "replay_case_categories": ["text/pdf/image positives", "fragmented response", "score endpoints and exact score 1 with semantic_score -0.5", "missing and contradictory raw fields", "invalid kind/page/path", "wrong id and protocol", "service ok:false", "connected timeout", "missing service", "RunnerContext reset and socket peer closure", "lowercase prefix boundary"],
+    "actual_service": "pass; one explicitly selected synthetic root indexed by the actual service, then the native KRunner RunnerManager queried the service and returned the exact file at relevance 1; evidence/runner-v2/actual-service.json",
+    "main_loop": "KRunner RunnerManager replay observed the runner off the main thread; 111 timer ticks during the 1113 ms connected timeout; reset suppressed matches and peer closed 25 ms after reset"
+  },
+  "closure": {
+    "actual_service_exit_code": 0,
+    "actual_service_socket_absent": true,
+    "all_replay_peers_observed_closed": true,
+    "fixture_threads_joined": true,
+    "isolated_xdg_config_and_cache": "build-runner-v2/xdg",
+    "personal_roots_or_live_desktop_config_touched": false
+  },
+  "limits": [
+    "No live Plasma desktop or installed plugin discovery session was exercised.",
+    "The actual service run covers one synthetic exact text result; it is not ranking, recall, latency distribution, image/PDF inference, app/KRunner concurrency, or installation proof.",
+    "Open, Dolphin reveal and Okular page actions were not activated.",
+    "Cancellation evidence is a native RunnerManager reset replay, not a live desktop typing race.",
+    "No game-related claim applies."
+  ],
+  "measurement_scope": {
+    "actual_service_tool_call_wall_time_seconds": 9,
+    "native_replay_and_build_tool_call_wall_time_seconds": 8.3,
+    "implementation_total_elapsed": "not measured from task start",
+    "model_or_tool_token_usage": "not exposed to this worker",
+    "reviewer_usage": "not available; parent owns reviewer handoff"
+  }
+}

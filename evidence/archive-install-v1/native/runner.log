@@ -1,0 +1,2 @@
+kf.config.core: Watching absolute paths is not supported "/archive-source-v1/installed-target-v1/runner.ini"
+kf.i18n: KLocalizedString: Domain is not set for this string, translation will not work. Please see https://api.kde.org/frameworks/ki18n/html/prg_guide.html msgid: "search term" msgid_plural: "" msgctxt: ""

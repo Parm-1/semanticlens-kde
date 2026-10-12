@@ -1,0 +1,50 @@
+{
+  "scope": "author runner-v5 bounded display repair; independent review and parent fresh-source integration pending",
+  "check_categories": {
+    "native_manager_cases": 11,
+    "candidate_display_fields": 22,
+    "raw_action_URL_maps": 10,
+    "raw_rich_control_fields": 11,
+    "actual_native_runs": 2,
+    "live_HTTP_positive_requests": 4,
+    "actual_passage_HTTP_requests": 0
+  },
+  "measurements": {
+    "native_run1_outer_session_elapsed_seconds": 18.837906052998733,
+    "native_run2_outer_session_elapsed_seconds": 19.35621544499736,
+    "elapsed_scope": "helper outer monotonic Popen/communicate, includes indexing and UI sequence; not latency/benchmark",
+    "full_package_elapsed_seconds": null,
+    "package_token_usage": null,
+    "usage_scope": "not exposed by available tools; no billing/account inference"
+  },
+  "native_resources": {
+    "execution_sessions": [
+      {
+        "id": 64830,
+        "exit": 0
+      },
+      {
+        "id": 69454,
+        "exit": 0
+      }
+    ],
+    "all_owned_processes_namespaces_closed": true,
+    "native_interval_released_to_parent": true,
+    "stale_socket_files_removed_after_namespace_exit": [
+      "native-run1/service-relay.sock",
+      "native-run1/runtime/at-spi/bus",
+      "native-run2/service-relay.sock",
+      "native-run2/runtime/dolphinFfBsEQ.3.kioworker.socket",
+      "native-run2/runtime/at-spi/bus"
+    ]
+  },
+  "limitations": [
+    "visible-popup hover phase remains unqualified; normal private viewport width0/height38 retained",
+    "geometry successor only changed View.height and ResultsView.width; did not qualify popup",
+    "readback/node flags are not physical compositor presentation",
+    "author module uses copied clean-stage GUI/service/probe; no final fresh-root build claim",
+    "only synthetic selected-root sources and local HTTP canary, no personal roots",
+    "no GPU/model/embedding claim; validated CPU baseline unchanged",
+    "public publication and root wiring belong to parent/user"
+  ]
+}

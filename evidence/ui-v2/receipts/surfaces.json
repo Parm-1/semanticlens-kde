@@ -1,0 +1,616 @@
+{
+    "events": [
+        {
+            "event": "request",
+            "id": "ui-1",
+            "op": "status"
+        },
+        {
+            "event": "reply",
+            "id": "ui-1",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "error": "",
+                "errors": 0,
+                "failures": [
+                    {
+                        "error": "<b>failure error</b><img src='http://127.0.0.1:38413/failure-error'>",
+                        "path": "<b>failure path</b><img src='http://127.0.0.1:38413/failure-path'>",
+                        "warning": "<b>failure warning</b><img src='http://127.0.0.1:38413/failure-warning'>"
+                    }
+                ],
+                "index_revision": 2,
+                "indexed": 1,
+                "model_ready": true,
+                "paused": false,
+                "progress": 0,
+                "ready": true,
+                "roots": [
+                    {
+                        "exclusions": [
+                        ],
+                        "path": "<b>root path</b><img src='http://127.0.0.1:38413/root'>"
+                    }
+                ],
+                "total": 0
+            }
+        },
+        {
+            "event": "source-shaped-status",
+            "ready": true
+        },
+        {
+            "event": "request",
+            "id": "ui-2",
+            "kind": "",
+            "limit": 20,
+            "op": "search",
+            "text": "alpha"
+        },
+        {
+            "event": "request",
+            "id": "ui-3",
+            "op": "cancel",
+            "target": "ui-2"
+        },
+        {
+            "accepted": true,
+            "event": "reply",
+            "id": "ui-3",
+            "ok": true,
+            "protocol": 1
+        },
+        {
+            "event": "request",
+            "id": "ui-4",
+            "op": "status"
+        },
+        {
+            "event": "reply",
+            "id": "ui-4",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "error": "",
+                "errors": 0,
+                "failures": [
+                    {
+                        "error": "<b>failure error</b><img src='http://127.0.0.1:38413/failure-error'>",
+                        "path": "<b>failure path</b><img src='http://127.0.0.1:38413/failure-path'>",
+                        "warning": "<b>failure warning</b><img src='http://127.0.0.1:38413/failure-warning'>"
+                    }
+                ],
+                "index_revision": 2,
+                "indexed": 1,
+                "model_ready": true,
+                "paused": false,
+                "progress": 0,
+                "ready": true,
+                "roots": [
+                    {
+                        "exclusions": [
+                        ],
+                        "path": "<b>root path</b><img src='http://127.0.0.1:38413/root'>"
+                    }
+                ],
+                "total": 0
+            }
+        },
+        {
+            "event": "request",
+            "id": "ui-5",
+            "kind": "",
+            "limit": 20,
+            "op": "search",
+            "text": "beta"
+        },
+        {
+            "event": "reply",
+            "generation": 1,
+            "id": "ui-2",
+            "index_revision": 2,
+            "ok": true,
+            "protocol": 1,
+            "results": [
+                {
+                    "exact": true,
+                    "kind": "text",
+                    "page": 0,
+                    "path": "/home/parm/Documents/KDE Index/local/ui-v2-controls/corpus/payment.txt",
+                    "score": 1,
+                    "semantic_score": 0.5,
+                    "text": "synthetic source passage",
+                    "title": "payment.txt",
+                    "warning": ""
+                }
+            ]
+        },
+        {
+            "event": "old-query-success",
+            "results_count": 0
+        },
+        {
+            "event": "reply",
+            "generation": 1,
+            "id": "ui-5",
+            "index_revision": 1,
+            "ok": true,
+            "protocol": 1,
+            "results": [
+                {
+                    "exact": true,
+                    "kind": "text",
+                    "page": 0,
+                    "path": "/home/parm/Documents/KDE Index/local/ui-v2-controls/corpus/payment.txt",
+                    "score": 1,
+                    "semantic_score": 0.5,
+                    "text": "synthetic source passage",
+                    "title": "payment.txt",
+                    "warning": ""
+                }
+            ]
+        },
+        {
+            "event": "older-revision-success",
+            "results_count": 0
+        },
+        {
+            "event": "request",
+            "id": "ui-6",
+            "kind": "",
+            "limit": 20,
+            "op": "search",
+            "text": "beta"
+        },
+        {
+            "event": "reply",
+            "generation": 1,
+            "id": "ui-6",
+            "index_revision": 2,
+            "ok": true,
+            "protocol": 1,
+            "results": [
+                {
+                    "exact": true,
+                    "kind": "text",
+                    "page": 0,
+                    "path": "/home/parm/Documents/KDE Index/local/ui-v2-controls/corpus/payment.txt",
+                    "score": 1,
+                    "semantic_score": 0.5,
+                    "text": "synthetic source passage",
+                    "title": "payment.txt",
+                    "warning": ""
+                }
+            ]
+        },
+        {
+            "event": "current-query-success",
+            "results_count": 1
+        },
+        {
+            "event": "request",
+            "id": "ui-7",
+            "kind": "",
+            "limit": 20,
+            "op": "search",
+            "text": "markup"
+        },
+        {
+            "event": "reply",
+            "generation": 1,
+            "id": "ui-7",
+            "index_revision": 2,
+            "ok": true,
+            "protocol": 1,
+            "results": [
+                {
+                    "exact": true,
+                    "kind": "text",
+                    "page": 0,
+                    "path": "<b>source excerpt</b><img src='http://127.0.0.1:38413/excerpt-canary.png'> path",
+                    "score": 1,
+                    "semantic_score": 0.5,
+                    "text": "<b>source excerpt</b><img src='http://127.0.0.1:38413/excerpt-canary.png'>",
+                    "title": "<b>source excerpt</b><img src='http://127.0.0.1:38413/excerpt-canary.png'> title",
+                    "warning": "<b>source excerpt</b><img src='http://127.0.0.1:38413/excerpt-canary.png'> warning"
+                }
+            ]
+        },
+        {
+            "event": "request",
+            "id": "ui-8",
+            "op": "status"
+        },
+        {
+            "event": "reply",
+            "id": "ui-8",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "error": "",
+                "errors": 0,
+                "failures": [
+                    {
+                        "error": "<b>failure error</b><img src='http://127.0.0.1:38413/failure-error'>",
+                        "path": "<b>failure path</b><img src='http://127.0.0.1:38413/failure-path'>",
+                        "warning": "<b>failure warning</b><img src='http://127.0.0.1:38413/failure-warning'>"
+                    }
+                ],
+                "index_revision": 2,
+                "indexed": 1,
+                "model_ready": true,
+                "paused": false,
+                "progress": 0,
+                "ready": true,
+                "roots": [
+                    {
+                        "exclusions": [
+                        ],
+                        "path": "<b>root path</b><img src='http://127.0.0.1:38413/root'>"
+                    }
+                ],
+                "total": 0
+            }
+        },
+        {
+            "event": "markup-observation",
+            "http_fetches": 0,
+            "results_count": 1
+        },
+        {
+            "error": "<b>source excerpt</b><img src='http://127.0.0.1:38413/excerpt-canary.png'> status error",
+            "event": "reply",
+            "id": "arbitrary-control-error",
+            "ok": false,
+            "protocol": 1
+        },
+        {
+            "event": "request",
+            "id": "ui-9",
+            "op": "status"
+        },
+        {
+            "event": "reply",
+            "id": "ui-9",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "error": "",
+                "errors": 0,
+                "failures": [
+                    {
+                        "error": "<b>failure error</b><img src='http://127.0.0.1:38413/failure-error'>",
+                        "path": "<b>failure path</b><img src='http://127.0.0.1:38413/failure-path'>",
+                        "warning": "<b>failure warning</b><img src='http://127.0.0.1:38413/failure-warning'>"
+                    }
+                ],
+                "index_revision": 2,
+                "indexed": 1,
+                "model_ready": true,
+                "paused": false,
+                "progress": 0,
+                "ready": true,
+                "roots": [
+                    {
+                        "exclusions": [
+                        ],
+                        "path": "<b>root path</b><img src='http://127.0.0.1:38413/root'>"
+                    }
+                ],
+                "total": 0
+            }
+        },
+        {
+            "event": "arbitrary-title-path-warning-message-preview",
+            "http_fetches": 0,
+            "message": "Ready",
+            "objects": [
+                {
+                    "class": "Label_QMLTYPE_43",
+                    "text": "<b>source excerpt</b><img src='http://127.0.0.1:38413/excerpt-canary.png'> path",
+                    "text_format": 0
+                },
+                {
+                    "class": "Label_QMLTYPE_43",
+                    "text": "<b>source excerpt</b><img src='http://127.0.0.1:38413/excerpt-canary.png'>",
+                    "text_format": 0
+                },
+                {
+                    "class": "Label_QMLTYPE_43",
+                    "text": "<b>source excerpt</b><img src='http://127.0.0.1:38413/excerpt-canary.png'> title",
+                    "text_format": 0
+                },
+                {
+                    "class": "Label_QMLTYPE_43",
+                    "text": "<b>root path</b><img src='http://127.0.0.1:38413/root'>",
+                    "text_format": 0
+                },
+                {
+                    "class": "QQuickToolTip",
+                    "text": "<b>root path</b><img src='http://127.0.0.1:38413/root'>",
+                    "text_format": 0
+                },
+                {
+                    "class": "Label_QMLTYPE_43",
+                    "text": "<b>root path</b><img src='http://127.0.0.1:38413/root'>",
+                    "text_format": 0
+                },
+                {
+                    "class": "Label_QMLTYPE_43",
+                    "text": "<b>failure error</b><img src='http://127.0.0.1:38413/failure-error'>",
+                    "text_format": 0
+                },
+                {
+                    "class": "Label_QMLTYPE_43",
+                    "text": "<b>failure path</b><img src='http://127.0.0.1:38413/failure-path'>",
+                    "text_format": 0
+                },
+                {
+                    "class": "Label_QMLTYPE_43",
+                    "text": "<b>source excerpt</b><img src='http://127.0.0.1:38413/excerpt-canary.png'> title",
+                    "text_format": 0
+                },
+                {
+                    "class": "Label_QMLTYPE_43",
+                    "text": "<b>source excerpt</b><img src='http://127.0.0.1:38413/excerpt-canary.png'> path",
+                    "text_format": 0
+                },
+                {
+                    "class": "TextArea_QMLTYPE_69",
+                    "text": "<b>source excerpt</b><img src='http://127.0.0.1:38413/excerpt-canary.png'>",
+                    "text_format": 0
+                },
+                {
+                    "class": "Label_QMLTYPE_43",
+                    "text": "<b>source excerpt</b><img src='http://127.0.0.1:38413/excerpt-canary.png'> warning",
+                    "text_format": 0
+                }
+            ],
+            "title": "Preview"
+        },
+        {
+            "event": "request",
+            "id": "ui-10",
+            "op": "status"
+        },
+        {
+            "event": "reply",
+            "id": "ui-10",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "error": "",
+                "errors": 0,
+                "failures": [
+                    {
+                        "error": "<b>failure error</b><img src='http://127.0.0.1:38413/failure-error'>",
+                        "path": "<b>failure path</b><img src='http://127.0.0.1:38413/failure-path'>",
+                        "warning": "<b>failure warning</b><img src='http://127.0.0.1:38413/failure-warning'>"
+                    }
+                ],
+                "index_revision": 2,
+                "indexed": 1,
+                "model_ready": true,
+                "paused": false,
+                "progress": 0,
+                "ready": true,
+                "roots": [
+                    {
+                        "exclusions": [
+                        ],
+                        "path": "<b>root path</b><img src='http://127.0.0.1:38413/root'>"
+                    }
+                ],
+                "total": 0
+            }
+        },
+        {
+            "event": "request",
+            "id": "ui-11",
+            "op": "status"
+        },
+        {
+            "event": "reply",
+            "id": "ui-11",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "error": "<b>status error</b><img src='http://127.0.0.1:38413/status-error'>",
+                "errors": 0,
+                "failures": [
+                    {
+                        "error": "<b>failure error</b><img src='http://127.0.0.1:38413/failure-error'>",
+                        "path": "<b>failure path</b><img src='http://127.0.0.1:38413/failure-path'>",
+                        "warning": "<b>failure warning</b><img src='http://127.0.0.1:38413/failure-warning'>"
+                    }
+                ],
+                "index_revision": 2,
+                "indexed": 1,
+                "model_ready": true,
+                "paused": false,
+                "progress": 0,
+                "ready": false,
+                "roots": [
+                    {
+                        "exclusions": [
+                        ],
+                        "path": "<b>root path</b><img src='http://127.0.0.1:38413/root'>"
+                    }
+                ],
+                "total": 0
+            }
+        },
+        {
+            "controls": [
+                {
+                    "enabled": true,
+                    "text": "Retry search",
+                    "visible": true
+                },
+                {
+                    "enabled": true,
+                    "text": "Download model",
+                    "visible": false
+                },
+                {
+                    "enabled": true,
+                    "text": "Download model",
+                    "visible": false
+                },
+                {
+                    "enabled": false,
+                    "text": "Choose folder",
+                    "visible": true
+                },
+                {
+                    "enabled": false,
+                    "text": "Choose folder",
+                    "visible": true
+                }
+            ],
+            "event": "contradictory-ready-false-model-ready-true",
+            "http_fetches": 0,
+            "message": "<b>status error</b><img src='http://127.0.0.1:38413/status-error'>",
+            "message_objects": [
+                {
+                    "format": 0,
+                    "text": "<b>status error</b><img src='http://127.0.0.1:38413/status-error'>"
+                }
+            ],
+            "model_ready_observed": false,
+            "results": 0
+        },
+        {
+            "event": "request",
+            "id": "ui-12",
+            "op": "status"
+        },
+        {
+            "event": "reply",
+            "id": "ui-12",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "error": "",
+                "errors": 0,
+                "failures": [
+                    {
+                        "error": "<b>failure error</b><img src='http://127.0.0.1:38413/failure-error'>",
+                        "path": "<b>failure path</b><img src='http://127.0.0.1:38413/failure-path'>",
+                        "warning": "<b>failure warning</b><img src='http://127.0.0.1:38413/failure-warning'>"
+                    }
+                ],
+                "index_revision": 2,
+                "indexed": 1,
+                "model_ready": true,
+                "paused": false,
+                "progress": 0,
+                "ready": true,
+                "roots": [
+                    {
+                        "exclusions": [
+                        ],
+                        "path": "<b>root path</b><img src='http://127.0.0.1:38413/root'>"
+                    }
+                ],
+                "total": 0
+            }
+        },
+        {
+            "event": "window-capture",
+            "saved": true
+        },
+        {
+            "event": "empty-query",
+            "results_count": 0
+        },
+        {
+            "event": "request",
+            "id": "ui-13",
+            "kind": "",
+            "limit": 20,
+            "op": "search",
+            "text": "reconnect"
+        },
+        {
+            "event": "peer-disconnect",
+            "ready": false,
+            "results_count": 0
+        },
+        {
+            "event": "request",
+            "id": "ui-14",
+            "op": "status"
+        },
+        {
+            "event": "reply",
+            "id": "ui-14",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "error": "",
+                "errors": 0,
+                "failures": [
+                    {
+                        "error": "<b>failure error</b><img src='http://127.0.0.1:38413/failure-error'>",
+                        "path": "<b>failure path</b><img src='http://127.0.0.1:38413/failure-path'>",
+                        "warning": "<b>failure warning</b><img src='http://127.0.0.1:38413/failure-warning'>"
+                    }
+                ],
+                "index_revision": 2,
+                "indexed": 1,
+                "model_ready": true,
+                "paused": false,
+                "progress": 0,
+                "ready": true,
+                "roots": [
+                    {
+                        "exclusions": [
+                        ],
+                        "path": "<b>root path</b><img src='http://127.0.0.1:38413/root'>"
+                    }
+                ],
+                "total": 0
+            }
+        },
+        {
+            "event": "request",
+            "id": "ui-15",
+            "kind": "",
+            "limit": 20,
+            "op": "search",
+            "text": "reconnect"
+        },
+        {
+            "event": "external-service-reconnect",
+            "latest_text": "reconnect",
+            "resubmitted_query": true
+        },
+        {
+            "error": "canceled",
+            "event": "reply",
+            "id": "ui-13",
+            "ok": false,
+            "protocol": 1
+        },
+        {
+            "event": "old-canceled-error",
+            "message": "Ready"
+        },
+        {
+            "event": "completion",
+            "harness_expectations": true,
+            "socket_exists": false
+        }
+    ],
+    "mode": "surfaces"
+}

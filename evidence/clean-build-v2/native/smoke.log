@@ -1,0 +1,2 @@
+qrc:/qt/qml/org/kde/kdeindex/Main.qml:67:5: QML Dialog: Accessible attached property must be attached to an object deriving from Item or Action
+Listening "/tmp/kde-index-clean-v2"

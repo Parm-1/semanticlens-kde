@@ -1,0 +1,72 @@
+{
+    "checks": [
+        {
+            "indexed": 3,
+            "name": "selected-root-indexed",
+            "pass": true,
+            "roots": [
+                {
+                    "exclusions": [
+                    ],
+                    "path": "/home/parm/Documents/KDE Index/local/ui-v2-smoke-final/corpus"
+                }
+            ]
+        },
+        {
+            "name": "exact-pdf-page-result",
+            "pass": true,
+            "result": {
+                "exact": true,
+                "kind": "pdf",
+                "match_scope": "text",
+                "match_type": "literal",
+                "page": 2,
+                "path": "/home/parm/Documents/KDE Index/local/ui-v2-smoke-final/corpus/manual.pdf",
+                "score": 1,
+                "semantic_score": 0.7932498815628295,
+                "term_match": true,
+                "text": "Maintenance serial PDF-10299 belongs to the cooling system.",
+                "title": "manual.pdf",
+                "warning": ""
+            }
+        },
+        {
+            "name": "target-results-window-capture",
+            "pass": true
+        },
+        {
+            "name": "preview-dialog-found",
+            "pass": true
+        },
+        {
+            "name": "actual-pdf-raster",
+            "pass": true
+        },
+        {
+            "name": "target-page-window-capture",
+            "pass": true
+        },
+        {
+            "closed_signal_observed": true,
+            "file": "/tmp/ui-smoke-fjAgBv/1.png",
+            "file_exists": false,
+            "name": "preview-temporary-file-removed",
+            "pass": true,
+            "url_empty": true
+        },
+        {
+            "name": "previous-results-cleared-immediately",
+            "pass": true
+        },
+        {
+            "name": "delete-owned-synthetic-pdf",
+            "pass": true
+        },
+        {
+            "name": "cached-results-refresh-after-fast-deletion",
+            "pass": true
+        }
+    ],
+    "milliseconds": 12043,
+    "pass": true
+}

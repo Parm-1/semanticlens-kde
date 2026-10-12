@@ -1,0 +1,26 @@
+{
+  "/usr/bin/konsole": {
+    "sha256": "b499a7e7c656b52da664686b532f152e3ba78a51f37aaa8e6894de39f9bb8dba",
+    "inode": 1622074,
+    "bytes": 51472,
+    "phase": "post-run readonly host identity collection; runtime maps pin corresponding loaded module path/inode"
+  },
+  "/usr/bin/cat": {
+    "sha256": "b97039a4875fc8d2262bb78523032f5b7637308da54551fb55038c38274817be",
+    "inode": 17869,
+    "bytes": 51576,
+    "phase": "post-run readonly host identity collection; runtime maps pin corresponding loaded module path/inode"
+  },
+  "/usr/lib/libkonsoleprivate.so.26.08.2": {
+    "sha256": "0beaf582a41ff1b97d5b4787fd49ca489f6f31776a6e8bc393920056899b953a",
+    "inode": 1622077,
+    "bytes": 2688248,
+    "phase": "post-run readonly host identity collection; runtime maps pin corresponding loaded module path/inode"
+  },
+  "/usr/lib/libkonsoleapp.so.26.08.2": {
+    "sha256": "c737985078bad3de74bad38c278a9ffa30dfb53746529c7a425831c9d25f7c86",
+    "inode": 1622076,
+    "bytes": 453296,
+    "phase": "post-run readonly host identity collection; runtime maps pin corresponding loaded module path/inode"
+  }
+}

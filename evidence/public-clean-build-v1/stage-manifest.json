@@ -1,0 +1,113 @@
+{
+  "count": 21,
+  "files": [
+    {
+      "path": "usr/bin/embedding-probe",
+      "sha256": "45181fa5c03d19c561bc6fd37cbd00e9493f08ab751fcd75844206797447165a",
+      "size": 8741680
+    },
+    {
+      "path": "usr/bin/kde-index",
+      "sha256": "a627ba11ba6903182768ebb10d384dbef38a7fca13dcd482f80308a437adcc3c",
+      "size": 354184
+    },
+    {
+      "path": "usr/bin/kde-index-cli",
+      "sha256": "6773a256b55b7c1e555727097d8e3be5db69e84e705d7ca4caf05929ffdfd086",
+      "size": 33968
+    },
+    {
+      "path": "usr/bin/kde-index-service",
+      "sha256": "ce376854f9e00f610a3b5969c11c3056d699bf010d539ea3e99a3011aa1bfde7",
+      "size": 425256
+    },
+    {
+      "path": "usr/lib/qt6/plugins/kf6/krunner/kde-index-runner.so",
+      "sha256": "a626737f2e6988437cc2c15d25bffcd76cdfc780588557033ef4efc8dc3fb32d",
+      "size": 95264
+    },
+    {
+      "path": "usr/share/applications/org.kdeindex.Search.desktop",
+      "sha256": "9ea81ba04319b44290480d891b6851a16f66ceb2f344298c8d2767705e69c3a7",
+      "size": 244
+    },
+    {
+      "path": "usr/share/kde-index/model_download.py",
+      "sha256": "b4542f5b8d9f7326fd31770ef96ef7020e7992be23db7d066619fbdd8208d47c",
+      "size": 3114
+    },
+    {
+      "path": "usr/share/licenses/kde-index/Apache-2.0.txt",
+      "sha256": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff",
+      "size": 10280
+    },
+    {
+      "path": "usr/share/licenses/kde-index/DigUp-MIT.txt",
+      "sha256": "2ba7d3ad3aafa9b791002d62a6fe237e89fa4287c2f4e59234b09d25bd909b26",
+      "size": 1068
+    },
+    {
+      "path": "usr/share/licenses/kde-index/LICENSE",
+      "sha256": "fb981668c18a279e285fc4d83fba1e836cc84dd4daa73c9697d3cfd2d8aca6e0",
+      "size": 34674
+    },
+    {
+      "path": "usr/share/licenses/kde-index/THIRD_PARTY_NOTICES.md",
+      "sha256": "7ef8213b734e6db3bc373de5fd62ba69bcecd8867bf2254f5d0ef6a35508b4b4",
+      "size": 3897
+    },
+    {
+      "path": "usr/share/licenses/kde-index/llama.cpp-MIT.txt",
+      "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d",
+      "size": 1078
+    },
+    {
+      "path": "usr/share/licenses/kde-index/miniaudio-MIT-0.txt",
+      "sha256": "c2410d4d14ad58e05a59e5de1b02c44fd73cbceb4a628d9676c2c19549908430",
+      "size": 1000
+    },
+    {
+      "path": "usr/share/licenses/kde-index/nlohmann-json-MIT.txt",
+      "sha256": "c0d068392ea65358b798b8c165103560f06e9e3b38c4ab4e2d8810a7b931af86",
+      "size": 1075
+    },
+    {
+      "path": "usr/share/licenses/kde-index/rotate-bits-MIT.txt",
+      "sha256": "ca0b44aec101afb6b46f4c39b23369fa06a64fb9c0add37c2689d702156fee55",
+      "size": 1088
+    },
+    {
+      "path": "usr/share/licenses/kde-index/sha1-Public-Domain.txt",
+      "sha256": "239e38879a3f4a4d00ec227e714afe0cc6493c3745d06c1bbf551b50d97c17c4",
+      "size": 63
+    },
+    {
+      "path": "usr/share/licenses/kde-index/sha256-Public-Domain.txt",
+      "sha256": "b81d0022ca6367918c67b57e9647d3513ee58809fd4b0ef0b3492f1356bced25",
+      "size": 41
+    },
+    {
+      "path": "usr/share/licenses/kde-index/sheredom-Unlicense.txt",
+      "sha256": "fa8fd67c42f8d9581198eb797005a9e7f0444f0baf201491e7f8c7efccbcff36",
+      "size": 1271
+    },
+    {
+      "path": "usr/share/licenses/kde-index/stb-image-MIT.txt",
+      "sha256": "7169810d8b6cf25c9bc0d1067ecce30bbff74a1ccafdfe37ccbe1ee7849d5c36",
+      "size": 1081
+    },
+    {
+      "path": "usr/share/licenses/kde-index/xxHash-BSD-2-Clause.txt",
+      "sha256": "6ffedbc0f7878612d2b23589f1ff2ab15633e1df7963a5d9fc750ec5500c7e7a",
+      "size": 1389
+    },
+    {
+      "path": "usr/share/metainfo/org.kdeindex.Search.metainfo.xml",
+      "sha256": "c9fce204bf339bbe6b43fca022d48a7fb53f4ec169e7219add815662182de933",
+      "size": 632
+    }
+  ],
+  "cmake_install_manifest_count": 21,
+  "manifest_matches_stage_paths": true,
+  "sdk_headers_static_or_cmake_packages": 0
+}

@@ -1,0 +1,6 @@
+[ 25%] Building CXX object CMakeFiles/desktop-open-v3-observer.dir/desktop_open_v3_observer.cpp.o
+[ 50%] Building CXX object CMakeFiles/desktop-open-v3-gio.dir/desktop_open_v3_gio.cpp.o
+[ 75%] Linking CXX executable desktop-open-v3-gio
+[ 75%] Built target desktop-open-v3-gio
+[100%] Linking CXX shared library libdesktop-open-v3-observer.so
+[100%] Built target desktop-open-v3-observer

@@ -1,0 +1,388 @@
+{
+    "argv": [
+        "/usr/bin/konsole",
+        "--separate",
+        "--nofork",
+        "--hold",
+        "-e",
+        "/usr/bin/cat",
+        "/tmp/work/calibration/contrast.txt"
+    ],
+    "elapsed_ns": 516415,
+    "executable": "/usr/bin/konsole",
+    "pid": 8,
+    "terminals": [
+        {
+            "accessible_cpp_type": "N7Konsole25TerminalDisplayAccessibleE",
+            "accessible_name": "",
+            "accessible_role": 129,
+            "accessible_valid": true,
+            "accessible_value": "\n",
+            "actual_native_text": "\n",
+            "character_count": 1,
+            "class": "Konsole::TerminalDisplay",
+            "cursor_position": 0,
+            "height": 480,
+            "object": "5611465cf320",
+            "screen_rect_x": 0,
+            "screen_rect_y": 75,
+            "text_interface_present": true,
+            "visible": false,
+            "width": 640
+        }
+    ],
+    "windows": [
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QComboBoxPrivateContainer",
+            "height": 30,
+            "title": "",
+            "visible": false,
+            "width": 100,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 30,
+            "title": "",
+            "visible": false,
+            "width": 100,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 30,
+            "title": "",
+            "visible": false,
+            "width": 100,
+            "window_exposed": false
+        },
+        {
+            "class": "Konsole::MainWindow",
+            "height": 100,
+            "title": "",
+            "visible": false,
+            "width": 223,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QComboBoxPrivateContainer",
+            "height": 30,
+            "title": "",
+            "visible": false,
+            "width": 100,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 30,
+            "title": "",
+            "visible": false,
+            "width": 100,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 30,
+            "title": "",
+            "visible": false,
+            "width": 100,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 30,
+            "title": "",
+            "visible": false,
+            "width": 100,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 30,
+            "title": "",
+            "visible": false,
+            "width": 100,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 30,
+            "title": "",
+            "visible": false,
+            "width": 100,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 30,
+            "title": "",
+            "visible": false,
+            "width": 100,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 30,
+            "title": "",
+            "visible": false,
+            "width": 100,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 30,
+            "title": "",
+            "visible": false,
+            "width": 100,
+            "window_exposed": false
+        },
+        {
+            "class": "QComboBoxPrivateContainer",
+            "height": 30,
+            "title": "",
+            "visible": false,
+            "width": 100,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 30,
+            "title": "",
+            "visible": false,
+            "width": 100,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 30,
+            "title": "",
+            "visible": false,
+            "width": 100,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 30,
+            "title": "",
+            "visible": false,
+            "width": 100,
+            "window_exposed": false
+        },
+        {
+            "class": "QMenu",
+            "height": 480,
+            "title": "",
+            "visible": false,
+            "width": 640,
+            "window_exposed": false
+        }
+    ]
+}

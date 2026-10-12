@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+"""Freeze requests and labels before running inference; uses public synthetic inputs only."""
+import json
+from pathlib import Path
+p=Path('evidence/embedding-v1')
+if (p/'inputs/requests.jsonl').exists():
+ raise SystemExit('Inputs already frozen. Use a new evidence version for changed fixtures.')
+texts=[('query','task: search result | query: payment declined error'),('query-bn','task: search result | query: ইলিশ মাছ রান্না'),('query-ar','task: search result | query: متى تغلق المكتبة'),('document','title: Tokyo itinerary | text: Flight to Tokyo Haneda on November 3. Then the train to Kamakura to see the Great Buddha, and back for dinner in Shibuya.'),('document-long','title: none | text: '+' '.join(f'Note {i}: the review moved to room {i%7+2} because the projector in the main hall failed again, and the team agreed to send the slides the night before.' for i in range(1,61)))]
+corpus=[{'id':'travel','title':'Japan visit','text':'We arrive at Haneda airport in Tokyo on November 3. Take a train to Kamakura to visit the Great Buddha, then return to Shibuya for dinner.'},{'id':'payment','title':'Card troubleshooting','text':'The checkout rejected the credit card. A declined transaction can mean insufficient funds or a bank security block. Contact the card issuer and try again.'},{'id':'meeting','title':'Presentation logistics','text':'The projector broke in the main hall. The design review moved to room 4. Send the slides to everyone the evening before the meeting.'},{'id':'bread','title':'Bread recipe','text':'Combine flour, water, yeast and salt. Let the dough rise, then bake the loaf until the crust is golden.'},{'id':'library','title':'Library hours','text':'The public library opens at nine in the morning and closes at six in the evening. Return borrowed books at the front desk.'},{'id':'identifier','title':'Maintenance ticket','text':'Device ZXQ-7491 failed its fan diagnostic. Replace the cooling fan and close maintenance ticket IR-8826.'},{'id':'screen','image':'screen.png','budget':280},{'id':'landscape','image':'photo.jpg','budget':140}]
+queries=[{'id':'travel-q','text':'Where are the plans for seeing the Buddha near Tokyo?','relevant':['travel']},{'id':'payment-q','text':'My bank card was rejected at checkout','relevant':['payment']},{'id':'meeting-q','text':'Which room was chosen after the presentation equipment stopped working?','relevant':['meeting']},{'id':'bread-q','text':'Instructions for baking a yeast loaf','relevant':['bread']},{'id':'image-q','text':'A sunny landscape with green hills and a tree','relevant':['landscape']},{'id':'screen-q','text':'A computer window with a sidebar and a red warning box','relevant':['screen']},{'id':'identifier-q','text':'ZXQ-7491','relevant':['identifier']},{'id':'absent-q','text':'An invoice for a submarine repair','relevant':[]}]
+(p/'inputs/texts.json').write_text(json.dumps(dict(texts),ensure_ascii=False,indent=2)+'\n')
+(p/'inputs/retrieval.json').write_text(json.dumps({'criterion':'Diagnostic only: report top1/top5 for six semantic/image labels; unique identifier separately; no abstention threshold is established. No tuning against this fixture.','corpus':corpus,'queries':queries},ensure_ascii=False,indent=2)+'\n')
+requests=[{'id':'info','op':'info'},{'id':'reference-texts','op':'texts','texts':[t for _,t in texts]}]
+for name,file,budget in [('screen-280','screen.png',280),('photo-140','photo.jpg',140),('frame-70','photo.jpg',70)]:requests.append({'id':name,'op':'image','path':str(p/'inputs'/file),'budget':budget})
+# A raw prompt omission and contradictory supported budget must move vectors; invalid raw fields must fail.
+requests.extend([{'id':'negative-unprompted-query','op':'texts','texts':['payment declined error']},{'id':'negative-screen-budget70','op':'image','path':str(p/'inputs/screen.png'),'budget':70},{'id':'negative-invalid-budget','op':'image','path':str(p/'inputs/screen.png'),'budget':71},{'id':'negative-missing-file','op':'image','path':str(p/'inputs/nonexistent.png'),'budget':280},{'id':'negative-wrong-budget-type','op':'image','path':str(p/'inputs/screen.png'),'budget':'280'},{'id':'negative-missing-text','op':'query'}])
+for doc in corpus:
+    if 'image' in doc: requests.append({'id':'doc-'+doc['id'],'op':'image','path':str(p/'inputs'/doc['image']),'budget':doc['budget']})
+    else: requests.append({'id':'doc-'+doc['id'],'op':'document','title':doc['title'],'text':doc['text']})
+for q in queries:requests.append({'id':q['id'],'op':'query','text':q['text']})
+# Valid request following per-input failures witnesses recovery rather than process survival only.
+requests.append({'id':'reference-query-after-errors','op':'query','text':'payment declined error'})
+(p/'inputs/requests.jsonl').write_text(''.join(json.dumps(r,ensure_ascii=False)+'\n' for r in requests))
+(p/'inputs/query-only.jsonl').write_text(json.dumps({'id':'query-only','op':'query','text':'payment declined error'})+'\n')

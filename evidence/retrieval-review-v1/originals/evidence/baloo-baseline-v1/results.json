@@ -1,0 +1,154 @@
+{
+  "schema": 1,
+  "kind": "Baloo isolated controls",
+  "version": "baloo 6.30.0",
+  "scope": "two synthetic text files; no KDE Index retrieval benchmark",
+  "source": "KDE/baloo v6.30.0 a5b829873849ce72eb35d2c1b48337b2d81a0593",
+  "fixtures": {
+    "alpha-record.txt": "07ea9acb8caacd05a0f5de7e782dc9d309d0d8886f563fc2fe6331603203e936",
+    "beta-record.txt": "97708be683a6c9e6807b05129eff816a43b75fab257980ae5280e979845fab0b"
+  },
+  "checks": {
+    "filename_positive": true,
+    "content_positive": true,
+    "implicit_and": true,
+    "explicit_or": true,
+    "ordered_phrase": true,
+    "content_field": true,
+    "paraphrase_negative": true
+  },
+  "queries": [
+    {
+      "query": "filename:alpha-record",
+      "hits": [
+        {
+          "id": "765aa43eb8a784",
+          "file": "alpha-record.txt"
+        }
+      ],
+      "elapsed_ms": 21.309977000782965,
+      "stderr": "Elapsed: 0.184218 msecs"
+    },
+    {
+      "query": "Domestic",
+      "hits": [
+        {
+          "id": "765aa43eb8a784",
+          "file": "alpha-record.txt"
+        }
+      ],
+      "elapsed_ms": 21.88758800184587,
+      "stderr": "Elapsed: 0.315736 msecs"
+    },
+    {
+      "query": "permission",
+      "hits": [
+        {
+          "id": "765aa43eb8a784",
+          "file": "alpha-record.txt"
+        }
+      ],
+      "elapsed_ms": 18.70354000129737,
+      "stderr": "Elapsed: 0.239322 msecs"
+    },
+    {
+      "query": "Domestic permission",
+      "hits": [
+        {
+          "id": "765aa43eb8a784",
+          "file": "alpha-record.txt"
+        }
+      ],
+      "elapsed_ms": 17.598361999262124,
+      "stderr": "Elapsed: 0.18484 msecs"
+    },
+    {
+      "query": "Domestic telescope",
+      "hits": [],
+      "elapsed_ms": 19.152670000039507,
+      "stderr": "Elapsed: 0.202934 msecs"
+    },
+    {
+      "query": "Domestic OR telescope",
+      "hits": [
+        {
+          "id": "765aa43eb8a784",
+          "file": "alpha-record.txt"
+        },
+        {
+          "id": "765aa53eb8a784",
+          "file": "beta-record.txt"
+        }
+      ],
+      "elapsed_ms": 19.28108200081624,
+      "stderr": "Elapsed: 0.209787 msecs"
+    },
+    {
+      "query": "\"prior permission\"",
+      "hits": [
+        {
+          "id": "765aa43eb8a784",
+          "file": "alpha-record.txt"
+        }
+      ],
+      "elapsed_ms": 22.88428199972259,
+      "stderr": "Elapsed: 0.357265 msecs"
+    },
+    {
+      "query": "\"permission prior\"",
+      "hits": [],
+      "elapsed_ms": 23.334452998824418,
+      "stderr": "Elapsed: 0.180081 msecs"
+    },
+    {
+      "query": "content:permission",
+      "hits": [
+        {
+          "id": "765aa43eb8a784",
+          "file": "alpha-record.txt"
+        }
+      ],
+      "elapsed_ms": 21.1783579979965,
+      "stderr": "Elapsed: 0.183006 msecs"
+    },
+    {
+      "query": "animals",
+      "hits": [
+        {
+          "id": "765aa43eb8a784",
+          "file": "alpha-record.txt"
+        }
+      ],
+      "elapsed_ms": 21.974642997520277,
+      "stderr": "Elapsed: 0.327369 msecs"
+    },
+    {
+      "query": "keeping a cat",
+      "hits": [],
+      "elapsed_ms": 20.174149998638313,
+      "stderr": "Elapsed: 0.15871 msecs"
+    }
+  ],
+  "daemon_closed": true,
+  "content_status": [
+    {
+      "file": "alpha-record.txt",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "beta-record.txt",
+      "indexing": "content",
+      "status": "done"
+    }
+  ],
+  "extracted_terms": {
+    "alpha-record.txt": "765aa43eb8a784 1052288900 7756452 <corpus>/alpha-record.txt\n\tMtime: 1791767833 2026-10-11T21:17:13\n\tCtime: 1791767833 2026-10-11T21:17:13\n\tCached properties:\n\t\tLine Count: 1\n\nInternal Info\nFile Name Terms: Falpha Frecord Ftxt \nXAttr Terms: \nPlain Text Terms: 47291 animals ax domestic from landlord permission prior reference require the \nProperty Terms: Mplain Mtext T5 T8 X20-1 \nlineCount: 1\n",
+    "beta-record.txt": "765aa53eb8a784 1052288900 7756453 <corpus>/beta-record.txt\n\tMtime: 1791767833 2026-10-11T21:17:13\n\tCtime: 1791767833 2026-10-11T21:17:13\n\tCached properties:\n\t\tLine Count: 1\n\nInternal Info\nFile Name Terms: Fbeta Frecord Ftxt \nXAttr Terms: \nPlain Text Terms: 83720 after begins bx observation reference sunset telescope the \nProperty Terms: Mplain Mtext T5 T8 X20-1 \nlineCount: 1\n"
+  },
+  "daemon_exit_code": -15,
+  "sandbox_elapsed_seconds": 6.301130228999682,
+  "sandbox_exit_code": 0,
+  "sandbox_closed": true,
+  "isolation": "read-only host root; writable sandbox only; separate PID/network namespace and session D-Bus"
+}

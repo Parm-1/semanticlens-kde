@@ -1,0 +1,30 @@
+[
+  {
+    "contract": "Main.qml",
+    "left": "evidence/clean-build-v3/source/src/ui/Main.qml",
+    "right": "evidence/ui-v3/candidate/src/ui/Main.qml",
+    "sha256": "e7c3434833b9a96c2d7db3502f2044d1ea3cb5ad35419e204b86c6237bbf7eeb",
+    "equal": true
+  },
+  {
+    "contract": "ui_smoke.cpp",
+    "left": "evidence/clean-build-v3/source/tools/ui_smoke.cpp",
+    "right": "evidence/ui-v3/candidate/tools/ui_smoke.cpp",
+    "sha256": "9fff1d163ada07e5c3176e3a60578c9ac1762cd6f3fadb908dd02c89835d97f0",
+    "equal": true
+  },
+  {
+    "contract": "service unchanged installed-v2",
+    "left": "evidence/clean-build-v3/candidate/bin/kde-index-service",
+    "right": "evidence/clean-build-v2/candidate/bin/kde-index-service",
+    "sha256": "3176fa48374a69e35b2b6b064e68dc86baf852dfd73d49c66716c569fe575845",
+    "equal": true
+  },
+  {
+    "contract": "producer unchanged installed-v2",
+    "left": "evidence/clean-build-v3/candidate/bin/embedding-probe",
+    "right": "evidence/clean-build-v2/candidate/bin/embedding-probe",
+    "sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+    "equal": true
+  }
+]

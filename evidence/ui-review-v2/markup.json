@@ -1,0 +1,50 @@
+{
+    "events": [
+        {
+            "event": "real-service-ready",
+            "ready": true
+        },
+        {
+            "event": "actual-source-indexed",
+            "http_fetches": 0,
+            "indexed": true,
+            "roots": [
+                {
+                    "exclusions": [
+                    ],
+                    "path": "/home/parm/Documents/KDE Index/local/ui-review-v2-layout/local/ui-v2-controls/markup-corpus"
+                }
+            ]
+        },
+        {
+            "event": "actual-search-rendered",
+            "http_fetches": 0,
+            "results": [
+                {
+                    "exact": true,
+                    "kind": "text",
+                    "match_scope": "text",
+                    "match_type": "literal",
+                    "page": 0,
+                    "path": "/home/parm/Documents/KDE Index/local/ui-review-v2-layout/local/ui-v2-controls/markup-corpus/markup.txt",
+                    "score": 1,
+                    "semantic_score": 0.80222880746113,
+                    "term_match": true,
+                    "text": "<b>MARKUP-CANARY</b><img src='http://127.0.0.1:34227/actual-service-canary.png'>",
+                    "title": "markup.txt",
+                    "warning": ""
+                }
+            ]
+        },
+        {
+            "event": "window-capture",
+            "saved": true
+        },
+        {
+            "event": "completion",
+            "harness_expectations": true,
+            "socket_exists": false
+        }
+    ],
+    "mode": "markup"
+}

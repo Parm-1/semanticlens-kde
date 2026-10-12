@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.22)
+project(DesktopIntegrationObserver LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(Qt6 REQUIRED COMPONENTS Quick Widgets Qml)
+find_package(KF6KIO REQUIRED)
+add_library(desktop-observer SHARED desktop_integration_observer.cpp)
+target_link_libraries(desktop-observer PRIVATE Qt6::Quick Qt6::Widgets Qt6::Qml KF6::KIOCore dl)

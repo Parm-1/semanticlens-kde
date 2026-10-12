@@ -1,0 +1,11 @@
+{
+  "exit": 0,
+  "elapsed_ns": 227821642,
+  "clock": "time.monotonic_ns outer execution includes setup and closure",
+  "helper_sha256": "1d9146f904e720e0fa4a20da10d92875358892420394b8b90f2a408d4a70d1e7",
+  "module_sha256": "522baa458d9b2b20de311b21e2454c576573b2eba6fde512f0704beefbed25c1",
+  "actual_rows": 11,
+  "byte_semantics_all_equal_to_frozen": true,
+  "helper": "reused inspected author RunnerManager helper; direct current execution; expectations not authored independently by this helper",
+  "closure": "outer private PID/network namespace exited; no threads/sockets outside namespace"
+}

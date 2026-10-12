@@ -1,0 +1,103 @@
+{
+    "checks": [
+        {
+            "name": "real-poppler-raster-produced",
+            "pass": true
+        },
+        {
+            "name": "actual-raster-positive",
+            "pass": true
+        },
+        {
+            "name": "loading-state-is-not-render-ready",
+            "pass": true
+        },
+        {
+            "name": "actual-image-ready-positive-geometry",
+            "pass": true
+        },
+        {
+            "armed_scene_frames": 1,
+            "name": "actual-ready-scene-readback",
+            "pass": true,
+            "readback_height": 1073,
+            "readback_width": 1537,
+            "submitted_scene_frames": 1
+        },
+        {
+            "name": "page-pixels-captured",
+            "pass": true
+        },
+        {
+            "actual_name": "<b>PDF & ID-7481</b><img src='http://127.0.0.1:40289/title'>",
+            "actual_role": 41,
+            "expected_name": "<b>PDF & ID-7481</b><img src='http://127.0.0.1:40289/title'>",
+            "name": "header-accessibility-applies-to-item",
+            "pass": true,
+            "text_format": 0
+        },
+        {
+            "name": "arbitrary-accessible-header-no-http-fetch",
+            "pass": true,
+            "requests": [
+            ]
+        },
+        {
+            "name": "actual-closed-cleanup",
+            "pass": true,
+            "raster": "/tmp/ui-render-HmRCLk/1.png"
+        }
+    ],
+    "milliseconds": 1573,
+    "pass": true,
+    "render_observations": [
+        {
+            "event": "controlled-loading-with-existing-valid-raster",
+            "height": 0,
+            "image_source": "image://phase/page",
+            "image_status": 2,
+            "milliseconds": 526,
+            "painted_height": 0,
+            "painted_scene_x": 148,
+            "painted_scene_y": 128,
+            "painted_width": 0,
+            "scene_frames": 1,
+            "visible": true,
+            "width": 0,
+            "window_height": 740,
+            "window_width": 1060
+        },
+        {
+            "event": "image-ready-frame-armed",
+            "height": 313,
+            "image_source": "image://phase/page",
+            "image_status": 1,
+            "milliseconds": 1028,
+            "painted_height": 313,
+            "painted_scene_x": 409.0059375,
+            "painted_scene_y": 128,
+            "painted_width": 241.988125,
+            "scene_frames": 1,
+            "visible": true,
+            "width": 764,
+            "window_height": 740,
+            "window_width": 1060
+        },
+        {
+            "event": "capture-after-ready-scene-frame",
+            "height": 313,
+            "image_source": "image://phase/page",
+            "image_status": 1,
+            "milliseconds": 1036,
+            "painted_height": 313,
+            "painted_scene_x": 409.0059375,
+            "painted_scene_y": 128,
+            "painted_width": 241.988125,
+            "scene_frames": 1,
+            "visible": true,
+            "width": 764,
+            "window_height": 740,
+            "window_width": 1060
+        }
+    ]
+}

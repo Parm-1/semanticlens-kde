@@ -1,0 +1,136 @@
+signal time=1791786580.152294 sender=org.freedesktop.DBus -> destination=:1.15 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+   string ":1.15"
+signal time=1791786580.152332 sender=org.freedesktop.DBus -> destination=:1.15 serial=4 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameLost
+   string ":1.15"
+method return time=1791786580.249177 sender=org.freedesktop.DBus -> destination=:1.16 serial=1 reply_serial=1
+   string ":1.16"
+method return time=1791786580.249648 sender=:1.1 -> destination=:1.16 serial=175 reply_serial=2
+   variant       uint32 2
+error time=1791786580.886149 sender=org.freedesktop.DBus -> destination=:1.16 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=10
+   string "Could not get owner of name 'org.a11y.Bus': no such name"
+error time=1791786580.886219 sender=org.freedesktop.DBus -> destination=:1.16 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=11
+   string "Could not get owner of name 'org.a11y.Bus': no such name"
+method return time=1791786580.886375 sender=org.freedesktop.DBus -> destination=:1.16 serial=5 reply_serial=13
+   boolean false
+error time=1791786580.886908 sender=org.freedesktop.DBus -> destination=:1.16 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=16
+   string "Could not get owner of name 'org.a11y.Bus': no such name"
+method return time=1791786580.939723 sender=org.freedesktop.DBus -> destination=:1.16 serial=7 reply_serial=21
+   string ":1.1"
+method return time=1791786580.939894 sender=org.freedesktop.DBus -> destination=:1.16 serial=8 reply_serial=24
+   string ":1.1"
+method return time=1791786580.940470 sender=org.freedesktop.DBus -> destination=:1.16 serial=9 reply_serial=25
+   boolean false
+method return time=1791786581.220008 sender=org.freedesktop.DBus -> destination=:1.1 serial=175 reply_serial=176
+   array [
+      dict entry(
+         string "ProcessID"
+         variant             uint32 133
+      )
+      dict entry(
+         string "UnixUserID"
+         variant             uint32 1000
+      )
+      dict entry(
+         string "UnixGroupIDs"
+         variant             array [
+               uint32 1000
+               uint32 65534
+               uint32 65534
+            ]
+      )
+      dict entry(
+         string "ProcessFD"
+         variant             file descriptor
+                  inode: 948516
+                  type:       )
+   ]
+method return time=1791786581.220765 sender=:1.4 -> destination=:1.1 serial=36 reply_serial=177
+   array [
+   ]
+error time=1791786581.221347 sender=org.freedesktop.DBus -> destination=:1.10 error_name=org.freedesktop.DBus.Error.ServiceUnknown reply_serial=68
+   string "The name org.kde.KWin was not provided by any .service files"
+error time=1791786581.221573 sender=org.freedesktop.DBus -> destination=:1.10 error_name=org.freedesktop.DBus.Error.ServiceUnknown reply_serial=69
+   string "The name org.kde.KWin was not provided by any .service files"
+method return time=1791786581.221656 sender=:1.10 -> destination=:1.1 serial=70 reply_serial=178
+   array [
+      dict entry(
+         string "org.kde.TabletMode"
+         array [
+            dict entry(
+               string "available"
+               variant                   boolean false
+            )
+            dict entry(
+               string "enabled"
+               variant                   boolean false
+            )
+         ]
+      )
+   ]
+method return time=1791786581.221794 sender=:1.1 -> destination=:1.16 serial=179 reply_serial=28
+   array [
+      dict entry(
+         string "org.kde.TabletMode"
+         array [
+            dict entry(
+               string "enabled"
+               variant                   boolean false
+            )
+            dict entry(
+               string "available"
+               variant                   boolean false
+            )
+         ]
+      )
+   ]
+method call time=1791786581.871588 sender=:1.16 -> destination=org.freedesktop.portal.Desktop serial=29 path=/org/freedesktop/portal/desktop; interface=org.freedesktop.portal.OpenURI; member=OpenFile
+   string "wayland:a3513d3e-8e4c-4020-9808-3515ebc6430a"
+   file descriptor
+         inode: 8175662
+         type: file
+   array [
+      dict entry(
+         string "activation_token"
+         variant             string "kwin-53"
+      )
+   ]
+method return time=1791786581.872827 sender=:1.1 -> destination=:1.16 serial=180 reply_serial=29
+   object path "/org/freedesktop/portal/desktop/request/1_16/t"
+error time=1791786581.885712 sender=:1.2 -> destination=:1.1 error_name=org.freedesktop.portal.Error.NotFound reply_serial=181
+   string "No entry for text/plain"
+method return time=1791786581.885921 sender=org.freedesktop.DBus -> destination=:1.1 serial=176 reply_serial=182
+method return time=1791786581.885935 sender=org.freedesktop.DBus -> destination=:1.1 serial=177 reply_serial=183
+   uint32 2
+method return time=1791786581.886043 sender=org.freedesktop.DBus -> destination=:1.1 serial=178 reply_serial=184
+   string ":1.10"
+method call time=1791786581.886175 sender=:1.1 -> destination=:1.10 serial=185 path=/org/freedesktop/portal/desktop; interface=org.freedesktop.impl.portal.AppChooser; member=ChooseApplication
+   object path "/org/freedesktop/portal/desktop/request/1_16/t"
+   string ""
+   string "wayland:a3513d3e-8e4c-4020-9808-3515ebc6430a"
+   array [
+   ]
+   array [
+      dict entry(
+         string "last_choice"
+         variant             string "desktop-boundary-text-opener"
+      )
+      dict entry(
+         string "content_type"
+         variant             string "text/plain"
+      )
+      dict entry(
+         string "filename"
+         variant             string "ordinary-layout-66442.txt"
+      )
+      dict entry(
+         string "uri"
+         variant             string "file:///tmp/work/corpus/ordinary-layout-66442.txt"
+      )
+      dict entry(
+         string "activation_token"
+         variant             string "kwin-53"
+      )
+   ]
+method call time=1791786582.287110 sender=:1.1 -> destination=:1.10 serial=186 path=/org/freedesktop/portal/desktop/request/1_16/t; interface=org.freedesktop.impl.portal.Request; member=Close
+error time=1791786582.287190 sender=:1.10 -> destination=:1.1 error_name=org.freedesktop.DBus.Error.UnknownObject reply_serial=186
+   string "No such object path '/org/freedesktop/portal/desktop/request/1_16/t'"

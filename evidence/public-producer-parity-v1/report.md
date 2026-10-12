@@ -1,0 +1,9 @@
+# Export-built CPU producer parity v1
+
+Actual producer45181fa5c03d19c561bc6fd37cbd00e9493f08ab751fcd75844206797447165a built from public export0682c3effba8e1b2d07a7ac9259d5bb4b64b5d88cb108cae448cd616a1e0037d / sourceca53d3cad76503659c4d725e311fb95a27ab0873 in public-clean-build-v1. Source/raw reference inputs remain unchanged; this is actual newly compiled inference, not swapping the earlier worker.
+
+In a network-isolated disposable Arch userspace, its actual five text and three image outputs agree with unchanged upstream vectors at raw-dot>=.999 (minimum cosine0.999791778842563). Both incorrect preprocessing controls fall below tolerance; four malformed inputs have no vector, recovery and text-only query cosine0.9999183428125172. Results retain the earlier diagnostic retrieval fixture separately from the fixed release Baloo corpus; no new broad quality or performance claim follows.
+
+The driver and both subprocess runs exit0 and their PID namespace closes. The first evaluator invocation erroneously attempted direct execution of a non-executable Python source, returning permission denied after all producer output had been written. The linked evaluator-r2 explicitly invokes Python on the same raw output and passes. Failed setup log retained. Raw evaluator notes mention an older runner's RSS convention; this driver collects no RSS and makes no resource claim. Recorded diagnostic request intervals exclude the later evaluation and are not a new benchmark.
+
+Only owned output, read-only exported source/system root and existing read-only public models are exposed. No model download, source change, host installation, personal folder, desktop or Baloo change. Current core/status repair is separately pending; this unchanged producer evidence does not accept it. Usage and whole-package elapsed unknown.

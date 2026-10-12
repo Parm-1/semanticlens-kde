@@ -1,0 +1,107 @@
+{
+    "events": [
+        {
+            "event": "owned-launcher-alive",
+            "launched": true,
+            "live": true,
+            "pid": 782259,
+            "start_ticks": "2951260"
+        },
+        {
+            "event": "connected-peer-credentials",
+            "listener_pid": 782217,
+            "pid": 782217,
+            "uid": 1000
+        },
+        {
+            "event": "raw-request",
+            "id": "ui-1",
+            "op": "status"
+        },
+        {
+            "event": "raw-reply",
+            "id": "ui-1",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "index_revision": 1,
+                "model_ready": true,
+                "ready": true
+            }
+        },
+        {
+            "connected": true,
+            "event": "different-live-listener-connected",
+            "launcher_live": true,
+            "launcher_pid": 782259,
+            "listener_pid": 782217,
+            "listening": true
+        },
+        {
+            "client_connected": true,
+            "event": "wrong-peer-hook",
+            "launcher_live": true,
+            "shutdown_requests": 0
+        },
+        {
+            "event": "ordinary-client-destruction",
+            "launcher_live": true
+        },
+        {
+            "closed": true,
+            "event": "owned-launcher-closed",
+            "pid": 782259
+        },
+        {
+            "bounded": true,
+            "event": "automatic-episode-bound",
+            "launch_pids": [
+                "782345",
+                "782367"
+            ],
+            "message": "Unable to connect to the search service. Use Retry search to try again."
+        },
+        {
+            "event": "bound-stays-stopped",
+            "launch_count": 2
+        },
+        {
+            "bounded": true,
+            "event": "explicit-retry-new-bounded-episode",
+            "launch_pids": [
+                "782345",
+                "782367",
+                "782592",
+                "782595"
+            ],
+            "message": "Unable to connect to the search service. Use Retry search to try again."
+        },
+        {
+            "closed": true,
+            "event": "failed-launch-closed",
+            "pid": "782345"
+        },
+        {
+            "closed": true,
+            "event": "failed-launch-closed",
+            "pid": "782367"
+        },
+        {
+            "closed": true,
+            "event": "failed-launch-closed",
+            "pid": "782592"
+        },
+        {
+            "closed": false,
+            "event": "failed-launch-closed",
+            "pid": "782595"
+        },
+        {
+            "absent_socket_exists": false,
+            "event": "completion",
+            "expectations": true,
+            "peer_socket_exists": false
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+  "runs": [
+    {
+      "mode": "peer",
+      "exit_code": 0,
+      "native_wall_seconds": 13.266989464998915
+    },
+    {
+      "mode": "real",
+      "exit_code": 0,
+      "native_wall_seconds": 30.7662269700013
+    },
+    {
+      "mode": "markup",
+      "exit_code": 0,
+      "native_wall_seconds": 13.716324352997617
+    },
+    {
+      "mode": "teardown",
+      "exit_code": 0,
+      "native_wall_seconds": 1.6696015729976352
+    },
+    {
+      "mode": "pending",
+      "exit_code": 0,
+      "native_wall_seconds": 1.16841361600018
+    },
+    {
+      "mode": "dialog",
+      "exit_code": 0,
+      "native_wall_seconds": 2.422044568000274
+    }
+  ],
+  "scope": "Python monotonic around native subprocess, including Qt/service load and functional waits; not latency distributions or billing; model/API usage unknown"
+}

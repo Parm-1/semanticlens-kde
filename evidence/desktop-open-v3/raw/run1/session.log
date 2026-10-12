@@ -1,0 +1,180 @@
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Connection :1.1 (uid=1000 pid=39 comm="/usr/bin/dbus-monitor --session interface='org.fre") became a monitor.
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Activating service name='org.freedesktop.portal.Desktop' requested by ':1.2' (uid=1000 pid=40 comm="/tmp/stage/bin/kde-index --socket /tmp/work/relay.")
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.732: load portals from /tmp/work/data/xdg-desktop-portal/portals
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.737: load portals from /tmp/stage/share/xdg-desktop-portal/portals
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.737: load portals from /usr/share/xdg-desktop-portal/portals
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.741: loading /usr/share/xdg-desktop-portal/portals/gtk.portal
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.742: loading /usr/share/xdg-desktop-portal/portals/hyprland.portal
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.742: loading /usr/share/xdg-desktop-portal/portals/kwallet.portal
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.743: loading /usr/share/xdg-desktop-portal/portals/kde.portal
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.743: loading /usr/share/xdg-desktop-portal/portals/plasmanotify.portal
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.743: load portals from /usr/share/xdg-desktop-portal/portals
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.743: loading /usr/share/xdg-desktop-portal/portals/gtk.portal
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.743: Skipping duplicate source gtk
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.744: loading /usr/share/xdg-desktop-portal/portals/hyprland.portal
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.744: Skipping duplicate source hyprland
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.744: loading /usr/share/xdg-desktop-portal/portals/kwallet.portal
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.744: Skipping duplicate source kwallet
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.744: loading /usr/share/xdg-desktop-portal/portals/kde.portal
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.744: Skipping duplicate source kde
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.744: loading /usr/share/xdg-desktop-portal/portals/plasmanotify.portal
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.744: Skipping duplicate source plasmanotify
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.744: Looking for portals configuration in '/tmp/work/config/xdg-desktop-portal/kde-portals.conf'
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.744: Looking for portals configuration in '/tmp/work/config/xdg-desktop-portal/portals.conf'
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.744: Looking for portals configuration in '/etc/xdg/xdg-desktop-portal/kde-portals.conf'
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.745: Looking for portals configuration in '/etc/xdg/xdg-desktop-portal/portals.conf'
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.745: Looking for portals configuration in '/etc/xdg-desktop-portal/kde-portals.conf'
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.745: Looking for portals configuration in '/etc/xdg-desktop-portal/portals.conf'
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.745: Looking for portals configuration in '/tmp/work/data/xdg-desktop-portal/kde-portals.conf'
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.745: Looking for portals configuration in '/tmp/work/data/xdg-desktop-portal/portals.conf'
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.745: Looking for portals configuration in '/tmp/stage/share/xdg-desktop-portal/kde-portals.conf'
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.745: Looking for portals configuration in '/tmp/stage/share/xdg-desktop-portal/portals.conf'
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.745: Looking for portals configuration in '/usr/share/xdg-desktop-portal/kde-portals.conf'
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.745: Looking for portals configuration in '/usr/share/xdg-desktop-portal/kde-portals.conf'
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Activating service name='org.freedesktop.impl.portal.PermissionStore' requested by ':1.3' (uid=1000 pid=43 comm="/usr/lib/xdg-desktop-portal")
+(/usr/lib/xdg-permission-store:49): xdg-desktop-portal-DEBUG: 03:18:37.766: Starting permission store
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Activating service name='org.freedesktop.portal.Documents' requested by ':1.3' (uid=1000 pid=43 comm="/usr/lib/xdg-desktop-portal")
+(/usr/lib/xdg-document-portal:55): xdg-desktop-portal-DEBUG: 03:18:37.806: Providing portal org.freedesktop.portal.Documents
+(/usr/lib/xdg-document-portal:55): xdg-desktop-portal-DEBUG: 03:18:37.806: Providing portal org.freedesktop.portal.FileTransfer
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Successfully activated service 'org.freedesktop.portal.Documents'
+(/usr/lib/xdg-document-portal:55): xdg-desktop-portal-DEBUG: 03:18:37.806: org.freedesktop.portal.Documents acquired
+fuse: device /dev/fuse not found. Kernel module not loaded?
+error: fuse init failed: Can't mount path /tmp/work/runtime/doc
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Activating service name='org.freedesktop.portal.Documents' requested by ':1.3' (uid=1000 pid=43 comm="/usr/lib/xdg-desktop-portal")
+(/usr/lib/xdg-document-portal:62): xdg-desktop-portal-DEBUG: 03:18:37.822: Providing portal org.freedesktop.portal.Documents
+(/usr/lib/xdg-document-portal:62): xdg-desktop-portal-DEBUG: 03:18:37.822: Providing portal org.freedesktop.portal.FileTransfer
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Successfully activated service 'org.freedesktop.portal.Documents'
+(/usr/lib/xdg-document-portal:62): xdg-desktop-portal-DEBUG: 03:18:37.822: org.freedesktop.portal.Documents acquired
+fuse: device /dev/fuse not found. Kernel module not loaded?
+error: fuse init failed: Can't mount path /tmp/work/runtime/doc
+
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-WARNING **: 03:18:37.824: Document portal fuse mount point unknown: GDBus.Error:org.freedesktop.DBus.Error.NoReply: Message recipient disconnected from message bus without replying
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.824: Found 'kde' in configuration for org.freedesktop.impl.portal.Lockdown
+xdg-desktop-portal-INFO: 03:18:37.824: Requested backend kde.portal does not support org.freedesktop.impl.portal.Lockdown. Skipping...
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:37.824: Found 'kde' in configuration for org.freedesktop.impl.portal.Lockdown
+xdg-desktop-portal-INFO: 03:18:37.824: Requested backend kde.portal does not support org.freedesktop.impl.portal.Lockdown. Skipping...
+
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-WARNING **: 03:18:37.824: Choosing gtk.portal for org.freedesktop.impl.portal.Lockdown as a last-resort fallback
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Activating service name='org.freedesktop.impl.portal.desktop.gtk' requested by ':1.3' (uid=1000 pid=43 comm="/usr/lib/xdg-desktop-portal")
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Activating service name='org.a11y.Bus' requested by ':1.8' (uid=1000 pid=69 comm="/usr/lib/xdg-desktop-portal-gtk")
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Successfully activated service 'org.a11y.Bus'
+ERROR launcher_open_journal @ ../dbus-broker-37/src/launch/launcher.c +179: No such file or directory
+      launcher_open_log @ ../dbus-broker-37/src/launch/launcher.c +193
+      launcher_new @ ../dbus-broker-37/src/launch/launcher.c +223
+
+** (process:80): CRITICAL **: 03:18:38.054: Unable to connect to the accessibility bus at 'unix:path=/tmp/work/runtime/at-spi/bus': Error receiving data: Connection reset by peer
+      run @ ../dbus-broker-37/src/launch/main.c +149
+      main @ ../dbus-broker-37/src/launch/main.c +178
+Exiting due to fatal error: -2
+
+(xdg-desktop-portal-gtk:69): atspi-WARNING **: 03:18:38.055: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/work/runtime/at-spi/bus: Connection refused
+Failed to launch bus: Bus exited with code 1
+(xdg-desktop-portal-gtk:69): xdg-desktop-portal-gtk-WARNING **: 03:18:38.085: error: Could not connect: No such file or directory
+
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Successfully activated service 'org.freedesktop.impl.portal.desktop.gtk'
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.087: Found 'kde' in configuration for org.freedesktop.impl.portal.Access
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.087: Using kde.portal for org.freedesktop.impl.portal.Access (default config)
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Activating service name='org.freedesktop.impl.portal.desktop.kde' requested by ':1.3' (uid=1000 pid=43 comm="/usr/lib/xdg-desktop-portal")
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Successfully activated service 'org.freedesktop.impl.portal.desktop.kde'
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.177: Providing portal org.freedesktop.portal.MemoryMonitor
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.177: Providing portal org.freedesktop.portal.PowerProfileMonitor
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.177: Providing portal org.freedesktop.portal.NetworkMonitor
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.191: Providing portal org.freedesktop.portal.ProxyResolver
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.191: Providing portal org.freedesktop.portal.Trash
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.191: Providing portal org.freedesktop.portal.GameMode
+
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-WARNING **: 03:18:38.191: Failed to create RealtimeKit proxy: Could not connect: No such file or directory
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.191: Providing portal org.freedesktop.portal.Realtime
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.191: Found 'kde;gtk' in configuration for org.freedesktop.impl.portal.Settings
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.191: Using kde.portal for org.freedesktop.impl.portal.Settings (config)
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.191: Using gtk.portal for org.freedesktop.impl.portal.Settings (config)
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.191: Found 'kde;gtk' in configuration for org.freedesktop.impl.portal.Settings
+xdg-desktop-portal-INFO: 03:18:38.191: Duplicate backend kde.portal. Skipping...
+xdg-desktop-portal-INFO: 03:18:38.191: Duplicate backend gtk.portal. Skipping...
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.191: Found 'kde' in configuration for default
+xdg-desktop-portal-INFO: 03:18:38.191: Duplicate backend kde.portal. Skipping...
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.193: Providing portal org.freedesktop.portal.Settings
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.193: Found 'kde' in configuration for org.freedesktop.impl.portal.FileChooser
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.193: Using kde.portal for org.freedesktop.impl.portal.FileChooser (default config)
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.193: Providing portal org.freedesktop.portal.FileChooser
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.193: Found 'kde' in configuration for org.freedesktop.impl.portal.AppChooser
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.193: Using kde.portal for org.freedesktop.impl.portal.AppChooser (default config)
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.194: Providing portal org.freedesktop.portal.OpenURI
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.194: Found 'kde' in configuration for org.freedesktop.impl.portal.Print
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.194: Using kde.portal for org.freedesktop.impl.portal.Print (default config)
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.194: Providing portal org.freedesktop.portal.Print
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.194: Found 'plasmanotify' in configuration for org.freedesktop.impl.portal.Notification
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.194: Using plasmanotify.portal for org.freedesktop.impl.portal.Notification (interface specific config)
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.195: Providing portal org.freedesktop.portal.Notification
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.195: Found 'kde' in configuration for org.freedesktop.impl.portal.Inhibit
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.195: Using kde.portal for org.freedesktop.impl.portal.Inhibit (default config)
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.196: Providing portal org.freedesktop.portal.Inhibit
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.196: Providing portal org.freedesktop.portal.Location
+
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-WARNING **: 03:18:38.216: Failed to connect to PipeWire: Couldn't connect to PipeWire
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.216: Providing portal org.freedesktop.portal.Camera
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.216: Found 'kde' in configuration for org.freedesktop.impl.portal.Screenshot
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.216: Using kde.portal for org.freedesktop.impl.portal.Screenshot (default config)
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.217: Providing portal org.freedesktop.portal.Screenshot
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.217: Found 'kde' in configuration for org.freedesktop.impl.portal.Background
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.217: Using kde.portal for org.freedesktop.impl.portal.Background (default config)
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.218: Providing portal org.freedesktop.portal.Background
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.218: Found 'kde' in configuration for org.freedesktop.impl.portal.Wallpaper
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.218: Using kde.portal for org.freedesktop.impl.portal.Wallpaper (default config)
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.219: Providing portal org.freedesktop.portal.Wallpaper
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.219: Found 'kde' in configuration for org.freedesktop.impl.portal.Account
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.219: Using kde.portal for org.freedesktop.impl.portal.Account (default config)
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.220: Providing portal org.freedesktop.portal.Account
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.220: Found 'kde' in configuration for org.freedesktop.impl.portal.Email
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.220: Using kde.portal for org.freedesktop.impl.portal.Email (default config)
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.220: Providing portal org.freedesktop.portal.Email
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.220: Found 'kwallet' in configuration for org.freedesktop.impl.portal.Secret
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.220: Using kwallet.portal for org.freedesktop.impl.portal.Secret (interface specific config)
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.221: Found 'kde' in configuration for org.freedesktop.impl.portal.GlobalShortcuts
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.221: Using kde.portal for org.freedesktop.impl.portal.GlobalShortcuts (default config)
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Activating service name='org.freedesktop.impl.portal.desktop.kwallet' requested by ':1.3' (uid=1000 pid=43 comm="/usr/lib/xdg-desktop-portal")
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.222: Providing portal org.freedesktop.portal.GlobalShortcuts
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.222: Found 'kde' in configuration for org.freedesktop.impl.portal.DynamicLauncher
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.222: Using kde.portal for org.freedesktop.impl.portal.DynamicLauncher (default config)
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.223: Providing portal org.freedesktop.portal.DynamicLauncher
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.223: Found 'kde' in configuration for org.freedesktop.impl.portal.ScreenCast
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.223: Using kde.portal for org.freedesktop.impl.portal.ScreenCast (default config)
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.224: Providing portal org.freedesktop.portal.ScreenCast
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.224: Found 'kde' in configuration for org.freedesktop.impl.portal.RemoteDesktop
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.224: Using kde.portal for org.freedesktop.impl.portal.RemoteDesktop (default config)
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.224: Providing portal org.freedesktop.portal.RemoteDesktop
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.224: Found 'kde' in configuration for org.freedesktop.impl.portal.Clipboard
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.224: Using kde.portal for org.freedesktop.impl.portal.Clipboard (default config)
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.225: Providing portal org.freedesktop.portal.Clipboard
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.225: Found 'kde' in configuration for org.freedesktop.impl.portal.InputCapture
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.225: Using kde.portal for org.freedesktop.impl.portal.InputCapture (default config)
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.225: Providing portal org.freedesktop.portal.InputCapture
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.225: Found 'kde' in configuration for org.freedesktop.impl.portal.Usb
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.225: Using kde.portal for org.freedesktop.impl.portal.Usb (default config)
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.226: [usb] Initializing USB portal
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.235: Assigned unique ID DS0Lm4mdvdYdrhFI9_HL_Q to USB device /sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.235: Assigned unique ID yqd_9uXo5Lg_vwWZAOmtiA to USB device /sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-3
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.236: Assigned unique ID A8jl__2lfRQ8g1m8_w5Gtw to USB device /sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-7
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.236: Assigned unique ID 9_yVcz_5F_zFhH6xZD3SsA to USB device /sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-9
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.236: Assigned unique ID DuL4oPX3R4CL5vWxN6TZuA to USB device /sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb2
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.236: Assigned unique ID wzcywDTemoVgDeGFKbedVQ to USB device /sys/devices/pci0000:00/0000:00:03.1/0000:07:00.2/usb3
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.236: Assigned unique ID W8h8AuoQmsSvNX41F3hNjA to USB device /sys/devices/pci0000:00/0000:00:03.1/0000:07:00.2/usb4
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.236: Assigned unique ID khrdR3RO3ruuJiLegsr6YQ to USB device /sys/devices/pci0000:00/0000:00:08.1/0000:09:00.3/usb5
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.236: Assigned unique ID oK2WJieOI3aeUGkk6cG90A to USB device /sys/devices/pci0000:00/0000:00:08.1/0000:09:00.3/usb5/5-4
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.236: Assigned unique ID a440XvJulCqWzxltyH_Nrw to USB device /sys/devices/pci0000:00/0000:00:08.1/0000:09:00.3/usb6
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.236: Providing portal org.freedesktop.portal.Usb
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.236: Providing portal org.freedesktop.host.portal.Registry
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Successfully activated service 'org.freedesktop.portal.Desktop'
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.236: org.freedesktop.portal.Desktop acquired
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.251: Adding registered host app 'org.freedesktop.impl.portal.desktop.kde'
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.251: Adding XdpAppInfo: XdpAppInfoHost app 'org.freedesktop.impl.portal.desktop.kde' for :1.10
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Successfully activated service 'org.freedesktop.impl.portal.desktop.kwallet'
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.341: Adding registered host app 'org.kde.ksecretd'
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.341: Adding XdpAppInfo: XdpAppInfoHost app 'org.kde.ksecretd' for :1.12
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.341: Providing portal org.freedesktop.portal.Secret
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.694: Adding XdpAppInfo: XdpAppInfoHost app '' for :1.2
+(/usr/lib/xdg-desktop-portal:43): xdg-desktop-portal-DEBUG: 03:18:38.909: Deleting XdpAppInfo: XdpAppInfoHost app '' for :1.2
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Monitoring connection :1.1 closed.
+{"pass": false, "error": "AssertionError()", "calibration": {"receiver_pid": 8, "receipt": "calibration-39158332400735", "actual_first_lines": ["Violet rails hold calm beacons 78162044."], "source_b_matches": true, "contradictory_source_a_rejected": true}, "receiving_app": null, "closure": {"owned_exits": [{"pid": 8, "exit": -15}, {"pid": 18, "exit": -15}, {"pid": 39, "exit": -15}, {"pid": 40, "exit": -15}], "relay_threads_closed": true, "accept_thread_closed": true, "exclusive_namespace_extras_terminated": [{"pid": 3, "argv": "dbus-daemon --nofork --print-address 4 --session "}, {"pid": 20, "argv": "/tmp/stage/bin/embedding-probe /tmp/models/embeddinggemma-2-Q8_0.gguf /tmp/models/mmproj-embeddinggemma-2-Q8_0.gguf 6 "}, {"pid": 43, "argv": "/usr/lib/xdg-desktop-portal "}, {"pid": 49, "argv": "/usr/lib/xdg-permission-store "}, {"pid": 69, "argv": "/usr/lib/xdg-desktop-portal-gtk "}, {"pid": 88, "argv": "/usr/lib/xdg-desktop-portal-kde "}, {"pid": 100, "argv": "/usr/bin/ksecretd "}], "owned_socket_files_absent": true}}
+dbus-run-session: dbus-daemon exited with code 0

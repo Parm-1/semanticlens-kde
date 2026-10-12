@@ -1,0 +1,105 @@
+[  7%] Populating .qmlls.build.ini file at /home/parm/Documents/KDE Index/build-ui-v3/.qt/.qmlls.build.ini
+[  7%] Copying kde-index qml sources into build dir
+[ 11%] Copying kde-index qml resources into build dir
+[ 15%] Running qmlimportscanner for kde-index
+[ 15%] Built target kde-index_copy_res
+[ 15%] Built target kde-index_copy_qml
+[ 19%] Running qmlimportscanner for ui-smoke
+[ 19%] Built target generate_qmlls_build_ini_file
+[ 19%] Built target kde-index_qmlimportscan
+[ 19%] Built target ui-smoke_qmlimportscan
+[ 26%] Generating qt.conf part for ui-smoke
+[ 26%] Generating qt.conf part for kde-index
+[ 30%] Generating qt.conf file
+[ 30%] Built target generate_finalqtconf_ui-smoke
+[ 30%] Built target kde-index_autogen_timestamp_deps
+[ 34%] Automatic MOC and UIC for target kde-index
+[ 34%] Built target kde-index_autogen
+[ 42%] Running AUTOMOC file extraction for target kde-index
+[ 42%] Generating .rcc/qmlcache/kde-index_qmlcache_loader.cpp
+[ 50%] Running rcc for resource kde-index_raw_qml_0
+[ 50%] Running rcc for resource qmake_org_kde_kdeindex
+[ 53%] Running moc --collect-json for target kde-index
+[ 57%] Generating meta_types/qt6kde-index_metatypes.json
+[ 61%] Automatic QML type registration for target kde-index
+[ 65%] Generating .rcc/qmlcache/kde-index_src_ui_Main_qml.cpp, .rcc/qmlcache/kde-index_src_ui_Main_qml.cpp.aotstats
+[ 69%] Building CXX object CMakeFiles/kde-index.dir/kde-index_qmltyperegistrations.cpp.o
+[ 76%] Building CXX object CMakeFiles/kde-index.dir/src/ui/main.cpp.o
+[ 80%] Building CXX object CMakeFiles/kde-index.dir/src/ui/backend.cpp.o
+[ 80%] Building CXX object CMakeFiles/kde-index.dir/kde-index_autogen/mocs_compilation.cpp.o
+[ 84%] Building CXX object CMakeFiles/kde-index.dir/build-ui-v3/.qt/rcc/qrc_qmake_org_kde_kdeindex.cpp.o
+[ 88%] Building CXX object CMakeFiles/kde-index.dir/build-ui-v3/.rcc/qmlcache/kde-index_qmlcache_loader.cpp.o
+[ 92%] Building CXX object CMakeFiles/kde-index.dir/build-ui-v3/.rcc/qmlcache/kde-index_src_ui_Main_qml.cpp.o
+[ 96%] Building CXX object CMakeFiles/kde-index.dir/build-ui-v3/.qt/rcc/qrc_kde-index_raw_qml_0.cpp.o
+[100%] Linking CXX executable bin/kde-index
+[100%] Built target kde-index
+[  3%] Copying ui-smoke qml sources into build dir
+[  7%] Built target generate_qmlls_build_ini_file
+[ 11%] Built target ui-smoke_qmlimportscan
+[ 15%] Copying ui-smoke qml resources into build dir
+[ 15%] Built target ui-smoke_copy_res
+[ 19%] Built target kde-index_qmlimportscan
+[ 19%] Built target ui-smoke_copy_qml
+[ 30%] Built target generate_finalqtconf_ui-smoke
+[ 30%] Built target ui-smoke_autogen_timestamp_deps
+[ 34%] Automatic MOC and UIC for target ui-smoke
+[ 34%] Built target ui-smoke_autogen
+[ 38%] Running AUTOMOC file extraction for target ui-smoke
+[ 42%] Generating .rcc/qmlcache/ui-smoke_qmlcache_loader.cpp
+[ 46%] Running rcc for resource ui-smoke_raw_qml_0
+[ 50%] Running moc --collect-json for target ui-smoke
+[ 53%] Generating meta_types/qt6ui-smoke_metatypes.json
+[ 57%] Automatic QML type registration for target ui-smoke
+[ 61%] Generating .rcc/qmlcache/ui-smoke_src_ui_Main_qml.cpp, .rcc/qmlcache/ui-smoke_src_ui_Main_qml.cpp.aotstats
+[ 65%] Building CXX object CMakeFiles/ui-smoke.dir/ui-smoke_autogen/mocs_compilation.cpp.o
+[ 69%] Building CXX object CMakeFiles/ui-smoke.dir/src/ui/backend.cpp.o
+[ 73%] Building CXX object CMakeFiles/ui-smoke.dir/ui-smoke_qmltyperegistrations.cpp.o
+[ 76%] Building CXX object CMakeFiles/ui-smoke.dir/tools/ui_smoke.cpp.o
+[ 80%] Building CXX object CMakeFiles/ui-smoke.dir/build-ui-v3/.qt/rcc/qrc_qmake_org_kde_kdeindex.cpp.o
+[ 84%] Building CXX object CMakeFiles/ui-smoke.dir/build-ui-v3/.rcc/qmlcache/ui-smoke_qmlcache_loader.cpp.o
+[ 88%] Building CXX object CMakeFiles/ui-smoke.dir/build-ui-v3/.rcc/qmlcache/ui-smoke_src_ui_Main_qml.cpp.o
+[ 92%] Building CXX object CMakeFiles/ui-smoke.dir/build-ui-v3/.qt/rcc/qrc_ui-smoke_raw_qml_0.cpp.o
+[ 96%] Linking CXX executable bin/ui-smoke
+[100%] Built target ui-smoke
+[  7%] Built target ui-smoke_qmlimportscan
+[  7%] Built target generate_qmlls_build_ini_file
+[ 11%] Built target ui-smoke_copy_res
+[ 15%] Built target ui-smoke_copy_qml
+[ 19%] Built target kde-index_qmlimportscan
+[ 30%] Built target generate_finalqtconf_ui-smoke
+[ 30%] Built target ui-smoke_autogen_timestamp_deps
+[ 34%] Automatic MOC and UIC for target ui-smoke
+[ 34%] Built target ui-smoke_autogen
+[ 38%] Running AUTOMOC file extraction for target ui-smoke
+[ 38%] Running AUTOMOC file extraction for target ui-smoke
+[ 42%] Building CXX object CMakeFiles/ui-smoke.dir/tools/ui_smoke.cpp.o
+[ 46%] Linking CXX executable bin/ui-smoke
+[100%] Built target ui-smoke
+[  3%] Built target generate_qmlls_build_ini_file
+[ 11%] Built target ui-smoke_copy_res
+[ 11%] Built target ui-smoke_qmlimportscan
+[ 15%] Built target ui-smoke_copy_qml
+[ 19%] Built target kde-index_qmlimportscan
+[ 30%] Built target generate_finalqtconf_ui-smoke
+[ 30%] Built target ui-smoke_autogen_timestamp_deps
+[ 34%] Automatic MOC and UIC for target ui-smoke
+[ 34%] Built target ui-smoke_autogen
+[ 38%] Running AUTOMOC file extraction for target ui-smoke
+[ 38%] Running AUTOMOC file extraction for target ui-smoke
+[ 42%] Building CXX object CMakeFiles/ui-smoke.dir/tools/ui_smoke.cpp.o
+[ 46%] Linking CXX executable bin/ui-smoke
+[100%] Built target ui-smoke
+[  7%] Built target generate_qmlls_build_ini_file
+[  7%] Built target ui-smoke_copy_qml
+[ 15%] Built target ui-smoke_qmlimportscan
+[ 15%] Built target ui-smoke_copy_res
+[ 19%] Built target kde-index_qmlimportscan
+[ 30%] Built target generate_finalqtconf_ui-smoke
+[ 30%] Built target ui-smoke_autogen_timestamp_deps
+[ 34%] Automatic MOC and UIC for target ui-smoke
+[ 34%] Built target ui-smoke_autogen
+[ 38%] Running AUTOMOC file extraction for target ui-smoke
+[ 38%] Running AUTOMOC file extraction for target ui-smoke
+[ 42%] Building CXX object CMakeFiles/ui-smoke.dir/tools/ui_smoke.cpp.o
+[ 46%] Linking CXX executable bin/ui-smoke
+[100%] Built target ui-smoke

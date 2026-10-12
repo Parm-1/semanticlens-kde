@@ -1,0 +1,14 @@
+{
+  "tool_handle": 44170,
+  "terminal_exit": 0,
+  "stage_54_file_identity_matches_clean_build_v4": true,
+  "actual_overlap_pairs": [
+    {
+      "ui_client": 1,
+      "ui_id": "ui-2",
+      "runner_client": 0,
+      "runner_id": "1",
+      "overlap_ns": 1207974503
+    }
+  ]
+}

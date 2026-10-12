@@ -1,0 +1,12 @@
+{"observations": null, "closure": {"service_exit": -15, "socket_absent": false, "workers_absent": false, "known_workers": [165084, 165120, 165121, 165127, 165133, 165136], "permissions_restored": true}}
+Traceback (most recent call last):
+  File "/home/parm/Documents/KDE Index/tools/local_root_v3_lifecycle.py", line 33, in <module>
+    assert c is not None;initial=wait(lambda s:s['ready']);req('add_root',path=str(root));before_watch=watches();auto=root/'auto.txt';auto_body='REVIEW-WATCH-93182 created before actual watch';creation=[time.monotonic_ns()];auto.write_text(auto_body);creation.append(time.monotonic_ns());settled=wait(lambda s:not s['busy'] and s['indexed']==2);after_watch=watches();auto_query=req('search',text='REVIEW-WATCH-93182');base_query=req('search',text='REVIEW-RETAIN-66129');positive_pages=pages()
+                                                                                                       ~~~~~~~^^
+  File "/home/parm/Documents/KDE Index/tools/local_root_v3_lifecycle.py", line 28, in watches
+    return {f.name:f.read_text() for f in Path(f'/proc/{p.pid}/fdinfo').iterdir() if 'inotify wd:' in f.read_text()}
+                                                                                                      ~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/pathlib/__init__.py", line 788, in read_text
+    return f.read()
+           ~~~~~~^^
+FileNotFoundError: [Errno 2] No such file or directory

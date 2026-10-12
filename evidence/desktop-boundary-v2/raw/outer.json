@@ -1,0 +1,5 @@
+{
+  "namespace_exit": 0,
+  "elapsed_seconds": 9.892632528994,
+  "isolation": "ro-host; private PID/network/D-Bus; personal homes/run/tmp masked; owned XDG; same Wayland socket"
+}

@@ -1,0 +1,94 @@
+{
+    "events": [
+        {
+            "event": "request",
+            "id": "ui-1",
+            "op": "status"
+        },
+        {
+            "event": "reply",
+            "id": "ui-1",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "error": "embedding producer SHA256 mismatch",
+                "failures": [
+                ],
+                "index_revision": 2,
+                "model_ready": false,
+                "paused": false,
+                "ready": false,
+                "roots": [
+                ]
+            }
+        },
+        {
+            "connected": true,
+            "controls": [
+                {
+                    "enabled": false,
+                    "text": "search field",
+                    "visible": true
+                },
+                {
+                    "enabled": false,
+                    "text": "Choose folder",
+                    "visible": true
+                },
+                {
+                    "enabled": false,
+                    "text": "Choose folder",
+                    "visible": true
+                },
+                {
+                    "enabled": true,
+                    "text": "Download model",
+                    "visible": true
+                },
+                {
+                    "enabled": false,
+                    "text": "Pause",
+                    "visible": true
+                },
+                {
+                    "enabled": false,
+                    "text": "Pause",
+                    "visible": true
+                },
+                {
+                    "enabled": false,
+                    "text": "Refresh",
+                    "visible": true
+                },
+                {
+                    "enabled": false,
+                    "text": "Refresh",
+                    "visible": true
+                },
+                {
+                    "enabled": true,
+                    "text": "Clear search data…",
+                    "visible": true
+                }
+            ],
+            "event": "recovery-controls",
+            "model_ready": false,
+            "weights_exist": true
+        },
+        {
+            "complete": true,
+            "connected": true,
+            "event": "verified-existing-model-setup-finished",
+            "message": "Model verified. Starting search…",
+            "model_ready": false,
+            "request_count": 1
+        },
+        {
+            "event": "completion",
+            "harness_expectations": true,
+            "socket_exists": false
+        }
+    ],
+    "mode": "recovery"
+}

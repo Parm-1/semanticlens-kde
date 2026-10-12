@@ -1,0 +1,106 @@
+{
+  "known_pid_checks": [
+    {
+      "pid": 775641,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 775719,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 775814,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 776542,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 776824,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 776880,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 776967,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 776970,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 782217,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 782259,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 782345,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 782367,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 782592,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 782595,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 799164,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    }
+  ],
+  "remaining_scoped_native_processes": [],
+  "other_project_native_processes_left_untouched": [],
+  "remaining_owned_socket_paths": [],
+  "observed_rasters": [
+    {
+      "path": "/tmp/ui-smoke-geUTTT/1.png",
+      "exists": false,
+      "directory_exists": false
+    }
+  ],
+  "real_model_partials": [],
+  "scope": "ownership is known review PIDs or own ui-review-v2 paths; separate author UI-v3/shared native processes are inventoried separately and never stopped; completed review native helpers/exact GUI and both independent harnesses; absent/exited-zombie PIDs are closed, not active; no child agents; interruption inventory preserved separately"
+}

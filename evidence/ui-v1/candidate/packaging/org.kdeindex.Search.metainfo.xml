@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.kdeindex.Search</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>KDE Index</name>
+  <summary>Find local documents and images by what they contain</summary>
+  <description><p>Search selected folders using exact text and local semantic embeddings. Preview relevant passages and images, open files, and show matches in Dolphin.</p></description>
+  <launchable type="desktop-id">org.kdeindex.Search.desktop</launchable>
+  <provides><binary>kde-index</binary></provides>
+</component>

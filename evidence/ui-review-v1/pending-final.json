@@ -1,0 +1,46 @@
+{
+    "events": [
+        {
+            "downloading": true,
+            "event": "fake-download-start",
+            "started": true
+        },
+        {
+            "event": "preview-observer",
+            "message": "",
+            "url": ""
+        },
+        {
+            "event": "preview-observer",
+            "message": "Rendering page…",
+            "url": ""
+        },
+        {
+            "event": "real-preview-rendered",
+            "path": "",
+            "rendered": true
+        },
+        {
+            "event": "preview-observer",
+            "message": "",
+            "url": ""
+        },
+        {
+            "download_alive": false,
+            "download_pid": 642116,
+            "event": "after-destructor",
+            "preview_exists": false
+        },
+        {
+            "alive": false,
+            "event": "pending-preview-after-destructor",
+            "pid": 642117
+        },
+        {
+            "event": "completion",
+            "harness_expectations": true,
+            "socket_exists": false
+        }
+    ],
+    "mode": "pending"
+}

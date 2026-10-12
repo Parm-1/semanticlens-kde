@@ -1,0 +1,46 @@
+{
+    "checks": [
+        {
+            "name": "selected-root-indexed",
+            "pass": true
+        },
+        {
+            "name": "exact-pdf-page-result",
+            "pass": true
+        },
+        {
+            "name": "target-results-window-capture",
+            "pass": true
+        },
+        {
+            "name": "preview-dialog-found",
+            "pass": true
+        },
+        {
+            "name": "actual-pdf-raster",
+            "pass": true
+        },
+        {
+            "name": "target-page-window-capture",
+            "pass": true
+        },
+        {
+            "name": "preview-temporary-file-removed",
+            "pass": true
+        },
+        {
+            "name": "previous-results-cleared-immediately",
+            "pass": true
+        },
+        {
+            "name": "delete-owned-synthetic-pdf",
+            "pass": true
+        },
+        {
+            "name": "cached-results-refresh-after-fast-deletion",
+            "pass": true
+        }
+    ],
+    "milliseconds": 11536,
+    "pass": true
+}

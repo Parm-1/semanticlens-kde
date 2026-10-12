@@ -1,0 +1,409 @@
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found OpenMP_C: -fopenmp (found version "5.2")
+-- Found OpenMP_CXX: -fopenmp (found version "5.2")
+-- llama.cpp version: 0.6.0-dev
+CMAKE_BUILD_TYPE=Release
+-- Warning: ccache not found - consider installing it for faster compilation or disable this warning with GGML_CCACHE=OFF
+-- CMAKE_SYSTEM_PROCESSOR: x86_64
+-- GGML_SYSTEM_ARCH: x86
+-- Found OpenMP_C: -fopenmp (found version "5.2")
+-- Found OpenMP_CXX: -fopenmp (found version "5.2")
+-- Including CPU backend
+-- x86 detected
+-- Adding CPU backend variant ggml-cpu: -msse4.2;-mf16c;-mfma;-mbmi2;-mavx;-mavx2 GGML_SSE42;GGML_F16C;GGML_FMA;GGML_BMI2;GGML_AVX;GGML_AVX2
+-- ggml version: 0.26.0
+-- ggml commit:  4d756bc
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'Kirigamiplugin' is a dependency of 'kde-index', but the
+  link target it defines (KF6Kirigamiplugin) does not exist in the current
+  scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiPrivateplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6KirigamiPrivateplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiPolyfillplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6KirigamiPolyfillplugin) does not exist in
+  the current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiControlsplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6KirigamiControlsplugin) does not exist in
+  the current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiPlatformplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6::KirigamiPlatformplugin) does not exist in
+  the current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiDialogsplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6KirigamiDialogsplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiLayoutsplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6KirigamiLayoutsplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiFormsplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6KirigamiFormsplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiLayoutsPrivateplugin' is a dependency of
+  'kde-index', but the link target it defines
+  (KF6KirigamiLayoutsPrivateplugin) does not exist in the current scope.  The
+  plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiFormsPrivateTemplatesplugin' is a dependency of
+  'kde-index', but the link target it defines
+  (KF6KirigamiFormsPrivateTemplatesplugin) does not exist in the current
+  scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiFormsPrivateFlatplugin' is a dependency of
+  'kde-index', but the link target it defines
+  (KF6KirigamiFormsPrivateFlatplugin) does not exist in the current scope.
+  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiFormsPrivateCardsplugin' is a dependency of
+  'kde-index', but the link target it defines
+  (KF6KirigamiFormsPrivateCardsplugin) does not exist in the current scope.
+  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'Kirigamiplugin' is a dependency of 'ui-smoke', but the link
+  target it defines (KF6Kirigamiplugin) does not exist in the current scope.
+  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiPrivateplugin' is a dependency of 'ui-smoke', but
+  the link target it defines (KF6KirigamiPrivateplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiPolyfillplugin' is a dependency of 'ui-smoke', but
+  the link target it defines (KF6KirigamiPolyfillplugin) does not exist in
+  the current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiControlsplugin' is a dependency of 'ui-smoke', but
+  the link target it defines (KF6KirigamiControlsplugin) does not exist in
+  the current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiPlatformplugin' is a dependency of 'ui-smoke', but
+  the link target it defines (KF6::KirigamiPlatformplugin) does not exist in
+  the current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiDialogsplugin' is a dependency of 'ui-smoke', but
+  the link target it defines (KF6KirigamiDialogsplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiLayoutsplugin' is a dependency of 'ui-smoke', but
+  the link target it defines (KF6KirigamiLayoutsplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiFormsplugin' is a dependency of 'ui-smoke', but the
+  link target it defines (KF6KirigamiFormsplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiLayoutsPrivateplugin' is a dependency of
+  'ui-smoke', but the link target it defines
+  (KF6KirigamiLayoutsPrivateplugin) does not exist in the current scope.  The
+  plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiFormsPrivateTemplatesplugin' is a dependency of
+  'ui-smoke', but the link target it defines
+  (KF6KirigamiFormsPrivateTemplatesplugin) does not exist in the current
+  scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiFormsPrivateFlatplugin' is a dependency of
+  'ui-smoke', but the link target it defines
+  (KF6KirigamiFormsPrivateFlatplugin) does not exist in the current scope.
+  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiFormsPrivateCardsplugin' is a dependency of
+  'ui-smoke', but the link target it defines
+  (KF6KirigamiFormsPrivateCardsplugin) does not exist in the current scope.
+  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+-- Configuring done (2.8s)
+-- Generating done (0.2s)
+-- Build files have been written to: /checkout/build-integrated
+[1/41] Copying kde-index qml sources into build dir
+[2/41] Copying ui-smoke qml sources into build dir
+[3/41] Running qmlimportscanner for kde-index
+[4/41] Running qmlimportscanner for ui-smoke
+[5/41] Generating qt.conf part for ui-smoke
+[6/41] Generating qt.conf part for kde-index
+[7/41] Generating qt.conf file
+[8/41] Running rcc for resource qmake_org_kde_kdeindex
+[9/41] Automatic MOC and UIC for target kde-index
+[10/40] Automatic MOC and UIC for target ui-smoke
+[11/39] Running AUTOMOC file extraction for target ui-smoke
+[12/36] Running AUTOMOC file extraction for target kde-index
+[13/33] Generating .rcc/qmlcache/kde-index_qmlcache_loader.cpp
+[14/33] Running rcc for resource kde-index_raw_qml_0
+[15/33] Generating .rcc/qmlcache/ui-smoke_qmlcache_loader.cpp
+[16/33] Running rcc for resource ui-smoke_raw_qml_0
+[17/33] Generating .rcc/qmlcache/ui-smoke_src_ui_Main_qml.cpp, .rcc/qmlcache/ui-smoke_src_ui_Main_qml.cpp.aotstats
+[18/33] Generating .rcc/qmlcache/kde-index_src_ui_Main_qml.cpp, .rcc/qmlcache/kde-index_src_ui_Main_qml.cpp.aotstats
+[19/33] Building CXX object CMakeFiles/ui-smoke.dir/build-integrated/.qt/rcc/qrc_qmake_org_kde_kdeindex.cpp.o
+[20/33] Building CXX object CMakeFiles/kde-index.dir/build-integrated/.qt/rcc/qrc_qmake_org_kde_kdeindex.cpp.o
+[21/33] Automatic MOC and UIC for target kde-index-runner
+[22/33] Building CXX object CMakeFiles/kde-index.dir/build-integrated/.qt/rcc/qrc_kde-index_raw_qml_0.cpp.o
+[23/33] Building CXX object CMakeFiles/ui-smoke.dir/build-integrated/.rcc/qmlcache/ui-smoke_qmlcache_loader.cpp.o
+[24/33] Building CXX object CMakeFiles/kde-index.dir/build-integrated/.rcc/qmlcache/kde-index_qmlcache_loader.cpp.o
+[25/33] Building CXX object CMakeFiles/ui-smoke.dir/build-integrated/.qt/rcc/qrc_ui-smoke_raw_qml_0.cpp.o
+[26/33] Building CXX object src/runner-v4/CMakeFiles/kde-index-runner.dir/kde-index-runner_autogen/mocs_compilation.cpp.o
+[27/33] Building CXX object CMakeFiles/ui-smoke.dir/tools/ui_smoke.cpp.o
+[28/33] Building CXX object CMakeFiles/kde-index.dir/build-integrated/.rcc/qmlcache/kde-index_src_ui_Main_qml.cpp.o
+[29/33] Linking CXX executable bin/kde-index
+[30/33] Building CXX object src/runner-v4/CMakeFiles/kde-index-runner.dir/runner.cpp.o
+[31/33] Linking CXX shared module src/runner-v4/kde-index-runner.so
+[32/33] Building CXX object CMakeFiles/ui-smoke.dir/build-integrated/.rcc/qmlcache/ui-smoke_src_ui_Main_qml.cpp.o
+[33/33] Linking CXX executable bin/ui-smoke
+-- Install configuration: "Release"
+-- Installing: /checkout/local/stage-v3/usr/lib/libggml-cpu.a
+-- Installing: /checkout/local/stage-v3/usr/lib/libggml.a
+-- Installing: /checkout/local/stage-v3/usr/include/ggml.h
+-- Installing: /checkout/local/stage-v3/usr/include/ggml-cpu.h
+-- Installing: /checkout/local/stage-v3/usr/include/ggml-alloc.h
+-- Installing: /checkout/local/stage-v3/usr/include/ggml-backend.h
+-- Installing: /checkout/local/stage-v3/usr/include/ggml-blas.h
+-- Installing: /checkout/local/stage-v3/usr/include/ggml-cann.h
+-- Installing: /checkout/local/stage-v3/usr/include/ggml-cpp.h
+-- Installing: /checkout/local/stage-v3/usr/include/ggml-cuda.h
+-- Installing: /checkout/local/stage-v3/usr/include/ggml-opt.h
+-- Installing: /checkout/local/stage-v3/usr/include/ggml-metal.h
+-- Installing: /checkout/local/stage-v3/usr/include/ggml-rpc.h
+-- Installing: /checkout/local/stage-v3/usr/include/ggml-virtgpu.h
+-- Installing: /checkout/local/stage-v3/usr/include/ggml-sycl.h
+-- Installing: /checkout/local/stage-v3/usr/include/ggml-vulkan.h
+-- Installing: /checkout/local/stage-v3/usr/include/ggml-webgpu.h
+-- Installing: /checkout/local/stage-v3/usr/include/ggml-zendnn.h
+-- Installing: /checkout/local/stage-v3/usr/include/ggml-openvino.h
+-- Installing: /checkout/local/stage-v3/usr/include/gguf.h
+-- Installing: /checkout/local/stage-v3/usr/lib/libggml-base.a
+-- Installing: /checkout/local/stage-v3/usr/lib/cmake/ggml/ggml-config.cmake
+-- Installing: /checkout/local/stage-v3/usr/lib/cmake/ggml/ggml-config-version.cmake
+-- Installing: /checkout/local/stage-v3/usr/lib/libmtmd.a
+-- Installing: /checkout/local/stage-v3/usr/include/mtmd-debug.h
+-- Installing: /checkout/local/stage-v3/usr/include/mtmd.h
+-- Installing: /checkout/local/stage-v3/usr/include/mtmd-helper.h
+-- Installing: /checkout/local/stage-v3/usr/lib/libllama.a
+-- Installing: /checkout/local/stage-v3/usr/include/llama.h
+-- Installing: /checkout/local/stage-v3/usr/include/llama-cpp.h
+-- Installing: /checkout/local/stage-v3/usr/lib/cmake/llama/llama-config.cmake
+-- Installing: /checkout/local/stage-v3/usr/lib/cmake/llama/llama-config-version.cmake
+-- Installing: /checkout/local/stage-v3/usr/lib/pkgconfig/llama.pc
+-- Installing: /checkout/local/stage-v3/usr/bin/embedding-probe
+-- Set non-toolchain portion of runtime path of "/checkout/local/stage-v3/usr/bin/embedding-probe" to "$ORIGIN:$ORIGIN/../lib"
+-- Installing: /checkout/local/stage-v3/usr/bin/kde-index-service
+-- Set non-toolchain portion of runtime path of "/checkout/local/stage-v3/usr/bin/kde-index-service" to "$ORIGIN:$ORIGIN/../lib"
+-- Installing: /checkout/local/stage-v3/usr/bin/kde-index-cli
+-- Set non-toolchain portion of runtime path of "/checkout/local/stage-v3/usr/bin/kde-index-cli" to "$ORIGIN:$ORIGIN/../lib"
+-- Installing: /checkout/local/stage-v3/usr/lib/qt6/plugins/kf6/krunner/kde-index-runner.so
+-- Set non-toolchain portion of runtime path of "/checkout/local/stage-v3/usr/lib/qt6/plugins/kf6/krunner/kde-index-runner.so" to "$ORIGIN:$ORIGIN/../lib"
+-- Installing: /checkout/local/stage-v3/usr/bin/kde-index
+-- Set non-toolchain portion of runtime path of "/checkout/local/stage-v3/usr/bin/kde-index" to "$ORIGIN:$ORIGIN/../lib"
+-- Installing: /checkout/local/stage-v3/usr/share/kde-index/model_download.py
+-- Installing: /checkout/local/stage-v3/usr/share/applications/org.kdeindex.Search.desktop
+-- Installing: /checkout/local/stage-v3/usr/share/metainfo/org.kdeindex.Search.metainfo.xml
+-- Installing: /checkout/local/stage-v3/usr/share/licenses/kde-index/LICENSE
+-- Installing: /checkout/local/stage-v3/usr/share/licenses/kde-index/THIRD_PARTY_NOTICES.md
+-- Up-to-date: /checkout/local/stage-v3/usr/share/licenses/kde-index
+-- Installing: /checkout/local/stage-v3/usr/share/licenses/kde-index/Apache-2.0.txt
+-- Installing: /checkout/local/stage-v3/usr/share/licenses/kde-index/DigUp-MIT.txt
+-- Installing: /checkout/local/stage-v3/usr/share/licenses/kde-index/llama.cpp-MIT.txt
+-- Installing: /checkout/local/stage-v3/usr/share/licenses/kde-index/miniaudio-MIT-0.txt
+-- Installing: /checkout/local/stage-v3/usr/share/licenses/kde-index/nlohmann-json-MIT.txt
+-- Installing: /checkout/local/stage-v3/usr/share/licenses/kde-index/rotate-bits-MIT.txt
+-- Installing: /checkout/local/stage-v3/usr/share/licenses/kde-index/sha1-Public-Domain.txt
+-- Installing: /checkout/local/stage-v3/usr/share/licenses/kde-index/sha256-Public-Domain.txt
+-- Installing: /checkout/local/stage-v3/usr/share/licenses/kde-index/sheredom-Unlicense.txt
+-- Installing: /checkout/local/stage-v3/usr/share/licenses/kde-index/stb-image-MIT.txt
+-- Installing: /checkout/local/stage-v3/usr/share/licenses/kde-index/xxHash-BSD-2-Clause.txt

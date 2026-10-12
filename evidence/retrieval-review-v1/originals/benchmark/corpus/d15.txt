@@ -1,0 +1,1 @@
+A router with a flashing red internet light has power but cannot connect to the provider. Check the network cable and the provider outage notice.

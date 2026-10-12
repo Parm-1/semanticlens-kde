@@ -1,0 +1,5 @@
+{
+  "owned_live_native_processes": [],
+  "owned_sockets_remaining": [],
+  "scope": "owned reviewer native command lines and sockets; parent-owned processes untouched"
+}

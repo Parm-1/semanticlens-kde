@@ -1,0 +1,14 @@
+{
+  "command": [
+    "build-probe/embedding-probe",
+    "models/embeddinggemma-2-Q8_0.gguf",
+    "models/mmproj-embeddinggemma-2-Q8_0.gguf",
+    "6"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 29.687127116998454,
+  "user_seconds": 153.314091,
+  "system_seconds": 1.668369,
+  "peak_rss_kib": 1330164,
+  "scope": "One child process in a fresh Python runner; Linux ru_maxrss KiB; perf_counter start before spawn to after wait. Includes load, warmup, requests and teardown; no memory sample profiler."
+}

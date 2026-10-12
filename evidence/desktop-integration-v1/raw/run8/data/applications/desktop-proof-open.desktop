@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Owned desktop proof opener
+Exec=/tmp/work/bin/dolphin --select %u
+MimeType=text/plain;
+NoDisplay=true

@@ -1,0 +1,41 @@
+{
+  "runs": [
+    {
+      "name": "surfaces",
+      "exit_code": 0,
+      "native_wall_seconds": 11.68658324399803,
+      "binary": "evidence/ui-v2/candidate/bin/ui-repair"
+    },
+    {
+      "name": "markup",
+      "exit_code": 0,
+      "native_wall_seconds": 10.340230583002267,
+      "binary": "evidence/ui-v2/check-bin/ui-repair-final2"
+    },
+    {
+      "name": "real",
+      "exit_code": 0,
+      "native_wall_seconds": 12.045813050997822,
+      "binary": "evidence/ui-v2/candidate/bin/ui-repair"
+    },
+    {
+      "name": "recovery",
+      "exit_code": 0,
+      "native_wall_seconds": 34.29191202900256,
+      "binary": "evidence/ui-v2/candidate/bin/ui-recovery"
+    },
+    {
+      "name": "liveness",
+      "exit_code": 0,
+      "native_wall_seconds": 24.814916936000373,
+      "binary": "evidence/ui-v2/candidate/bin/ui-liveness"
+    },
+    {
+      "name": "smoke",
+      "exit_code": 0,
+      "native_wall_seconds": 10.137351310000668,
+      "binary": "evidence/ui-v2/candidate/bin/ui-smoke"
+    }
+  ],
+  "scope": "monotonic entire native helper subprocess including functional waits/load/teardown; no billing or performance-distribution inference; preserved surfaces measurement predates interruption"
+}

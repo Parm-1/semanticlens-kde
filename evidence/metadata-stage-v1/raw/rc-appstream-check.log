@@ -1,0 +1,5 @@
+W: org.kdeindex.Search:~: url-homepage-missing
+I: org.kdeindex.Search:~: content-rating-missing
+I: org.kdeindex.Search:~: developer-info-missing
+
+✘ Validation failed: warnings: 1, infos: 2, pedantic: 2

@@ -1,0 +1,234 @@
+{
+  "scope": "one controlled private single-recommended-handler real portal open plus independent source calibration",
+  "events": [
+    {
+      "connection": 0,
+      "direction": "request",
+      "monotonic_ns": 39165354718328,
+      "raw": {
+        "id": "ui-1",
+        "op": "status"
+      }
+    },
+    {
+      "connection": 0,
+      "direction": "reply",
+      "monotonic_ns": 39165354888389,
+      "raw": {
+        "id": "ui-1",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.08.0",
+              "pdftoppm": "pdftoppm version 26.08.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 1,
+          "indexed": 1,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 1,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/tmp/work/corpus"
+            }
+          ],
+          "segments": 1,
+          "total": 1,
+          "watch_error": ""
+        }
+      }
+    }
+  ],
+  "sources": {
+    "/tmp/work/corpus/reader.txt": {
+      "sha256": "7c277018957385f882b5c8bfaa38c65c3e48b01873f16621ebd012b7d9a29d81",
+      "inode": 8213427,
+      "mode": "0o444",
+      "bytes_utf8": "Amber maps ride quiet lanterns 59317428.\n"
+    },
+    "/tmp/work/calibration/contrast.txt": {
+      "sha256": "55b0bd2a2dde4286c14ac352ddc455be5318da0b96c9ca4e2505e17519cd9282",
+      "inode": 8213429,
+      "mode": "0o444",
+      "bytes_utf8": "Violet rails hold calm beacons 78162044.\n"
+    }
+  },
+  "binaries": {
+    "/tmp/stage/bin/kde-index": "7362440ed0d4df35f1b8a8a58121db08a349cfe199f2849a1d22c7bd252f56d9",
+    "/tmp/stage/bin/kde-index-service": "3176fa48374a69e35b2b6b064e68dc86baf852dfd73d49c66716c569fe575845",
+    "/tmp/stage/bin/embedding-probe": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+    "/usr/bin/konsole": "b499a7e7c656b52da664686b532f152e3ba78a51f37aaa8e6894de39f9bb8dba",
+    "/usr/bin/cat": "b97039a4875fc8d2262bb78523032f5b7637308da54551fb55038c38274817be",
+    "/tmp/work/receiver-observer.so": "565bc907f78b7fba0a05c8527e7821b09870f9f0a6052bc01385520b66ab1b6b",
+    "/tmp/work/app-observer.so": "cbe5dee92d9a8e9f2a5d68e0ee6bff3449d3a2efafde0660397f4816a1686376"
+  },
+  "mime_cache": {
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "gio_before_open": {
+    "default": "desktop-source-consumer.desktop",
+    "fallback_to_all": false,
+    "choices": [
+      {
+        "id": "desktop-source-consumer.desktop",
+        "executable": "/usr/bin/konsole",
+        "commandline": "/usr/bin/konsole --separate --nofork --hold -e /usr/bin/cat %f",
+        "should_show": true
+      }
+    ]
+  },
+  "calibration": {
+    "receiver_pid": 8,
+    "receipt": "calibration-39158332400735",
+    "actual_first_lines": [
+      "Violet rails hold calm beacons 78162044."
+    ],
+    "source_b_matches": true,
+    "contradictory_source_a_rejected": true
+  },
+  "receiver_directories_before_open": [
+    "8"
+  ],
+  "indexed_status": {
+    "busy": false,
+    "current": "",
+    "error": "",
+    "errors": 0,
+    "failures": [],
+    "identity": {
+      "backend": "CPU",
+      "byte_order": "little",
+      "dimension": 768,
+      "dtype": "float32",
+      "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+      "extractors": {
+        "pdfinfo": "pdfinfo version 26.08.0",
+        "pdftoppm": "pdftoppm version 26.08.0",
+        "pdftotext": "pdftotext version 26.08.0",
+        "tesseract": "tesseract 5.5.3"
+      },
+      "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+      "max_tokens": 2048,
+      "model": "google/embeddinggemma-2",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "pipeline": "digup-vectors1-linux-cpu-probe1",
+      "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+      "representation": 3,
+      "runtime": "llama.cpp-b11461+no-logits",
+      "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+    },
+    "index_revision": 1,
+    "indexed": 1,
+    "model_ready": true,
+    "paused": false,
+    "phase": "ready",
+    "progress": 1,
+    "ready": true,
+    "recovery_attempt": 1,
+    "roots": [
+      {
+        "exclusions": [],
+        "path": "/tmp/work/corpus"
+      }
+    ],
+    "segments": 1,
+    "total": 1,
+    "watch_error": ""
+  },
+  "ipc_peers": [
+    {
+      "connection": 0,
+      "pid": 40,
+      "uid": 1000,
+      "gid": 1000,
+      "executable": "/tmp/stage/bin/kde-index",
+      "argv": "/tmp/stage/bin/kde-index --socket /tmp/work/relay.sock --models /tmp/models --data-dir /tmp/work/index --query reader.txt "
+    }
+  ],
+  "app_source_phase_receipt": "source-ready-39164224250062",
+  "error": "AssertionError()",
+  "pass": false,
+  "closure": {
+    "owned_exits": [
+      {
+        "pid": 8,
+        "exit": -15
+      },
+      {
+        "pid": 18,
+        "exit": -15
+      },
+      {
+        "pid": 39,
+        "exit": -15
+      },
+      {
+        "pid": 40,
+        "exit": -15
+      }
+    ],
+    "relay_threads_closed": true,
+    "accept_thread_closed": true,
+    "exclusive_namespace_extras_terminated": [
+      {
+        "pid": 3,
+        "argv": "dbus-daemon --nofork --print-address 4 --session "
+      },
+      {
+        "pid": 20,
+        "argv": "/tmp/stage/bin/embedding-probe /tmp/models/embeddinggemma-2-Q8_0.gguf /tmp/models/mmproj-embeddinggemma-2-Q8_0.gguf 6 "
+      },
+      {
+        "pid": 43,
+        "argv": "/usr/lib/xdg-desktop-portal "
+      },
+      {
+        "pid": 49,
+        "argv": "/usr/lib/xdg-permission-store "
+      },
+      {
+        "pid": 69,
+        "argv": "/usr/lib/xdg-desktop-portal-gtk "
+      },
+      {
+        "pid": 88,
+        "argv": "/usr/lib/xdg-desktop-portal-kde "
+      },
+      {
+        "pid": 100,
+        "argv": "/usr/bin/ksecretd "
+      }
+    ],
+    "owned_socket_files_absent": true
+  }
+}

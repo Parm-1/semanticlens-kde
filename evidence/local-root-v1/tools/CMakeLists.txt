@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.24)
+project(LocalRootControl LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(Qt6 REQUIRED COMPONENTS Core Sql)
+add_executable(local-root-baseline ../../../tools/local_root_baseline.cpp ../../../src/core/engine.cpp)
+target_include_directories(local-root-baseline PRIVATE ../../../src/core)
+target_link_libraries(local-root-baseline PRIVATE Qt6::Core Qt6::Sql)

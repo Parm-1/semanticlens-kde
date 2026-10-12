@@ -1,0 +1,1 @@
+For a declined transaction, telephone the card issuer to check the spending limit and whether the account has been temporarily blocked. Never send your PIN to the shop. Reference PAY-70193.

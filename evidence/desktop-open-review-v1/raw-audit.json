@@ -1,0 +1,302 @@
+{
+  "identity": {
+    "manifest_sha256": "a85f50e9f8af44ae4756384b3cf971b94ad77fa4316a66ac93b75b7e3ea8f8e0",
+    "report_sha256": "bfc65577a25b39dad828aeff44643dab54b7c4e5ccfd09699adeef4f5424be83",
+    "verified_pins": 183,
+    "repair2_prelaunch_pins": 5,
+    "observer_body_literals_absent": true
+  },
+  "receiver_phase": {
+    "calibration_full_normalized_sha256": "55b0bd2a2dde4286c14ac352ddc455be5318da0b96c9ca4e2505e17519cd9282",
+    "initial_loaded_payload_bytes": 0,
+    "loaded_full_normalized_sha256": "7c277018957385f882b5c8bfaa38c65c3e48b01873f16621ebd012b7d9a29d81",
+    "readback_full_normalized_sha256": "7c277018957385f882b5c8bfaa38c65c3e48b01873f16621ebd012b7d9a29d81",
+    "early_elapsed_ns": 135282625,
+    "loaded_elapsed_ns": 286466115,
+    "capture_elapsed_ns": 854978242
+  },
+  "receiver_identity": {
+    "pid": 109,
+    "executable": "/usr/bin/konsole",
+    "argv": "/usr/bin/konsole --separate --nofork --hold -e /usr/bin/cat /tmp/work/corpus/reader.txt ",
+    "startticks": "3997401",
+    "loaded_konsole_maps": [
+      "7ffbb9000000-7ffbb907e000 r--p 00000000 00:1c 1622077                    /usr/lib/libkonsoleprivate.so.26.08.2",
+      "7ffbb907e000-7ffbb9219000 r-xp 0007e000 00:1c 1622077                    /usr/lib/libkonsoleprivate.so.26.08.2",
+      "7ffbb9219000-7ffbb9279000 r--p 00219000 00:1c 1622077                    /usr/lib/libkonsoleprivate.so.26.08.2",
+      "7ffbb9279000-7ffbb928d000 r--p 00278000 00:1c 1622077                    /usr/lib/libkonsoleprivate.so.26.08.2",
+      "7ffbb928d000-7ffbb9291000 rw-p 0028c000 00:1c 1622077                    /usr/lib/libkonsoleprivate.so.26.08.2",
+      "7ffbb92ec000-7ffbb9309000 r--p 00000000 00:1c 1622076                    /usr/lib/libkonsoleapp.so.26.08.2",
+      "7ffbb9309000-7ffbb9347000 r-xp 0001d000 00:1c 1622076                    /usr/lib/libkonsoleapp.so.26.08.2",
+      "7ffbb9347000-7ffbb9354000 r--p 0005b000 00:1c 1622076                    /usr/lib/libkonsoleapp.so.26.08.2",
+      "7ffbb9354000-7ffbb9359000 r--p 00068000 00:1c 1622076                    /usr/lib/libkonsoleapp.so.26.08.2",
+      "7ffbb9359000-7ffbb935b000 rw-p 0006d000 00:1c 1622076                    /usr/lib/libkonsoleapp.so.26.08.2",
+      "7ffbb935b000-7ffbb9366000 r--p 00000000 00:1c 8232827                    /tmp/work/receiver-observer.so",
+      "7ffbb9366000-7ffbb936e000 r-xp 0000b000 00:1c 8232827                    /tmp/work/receiver-observer.so",
+      "7ffbb936e000-7ffbb9372000 r--p 00013000 00:1c 8232827                    /tmp/work/receiver-observer.so",
+      "7ffbb9372000-7ffbb9373000 r--p 00016000 00:1c 8232827                    /tmp/work/receiver-observer.so",
+      "7ffbb9373000-7ffbb9374000 rw-p 00017000 00:1c 8232827                    /tmp/work/receiver-observer.so"
+    ]
+  },
+  "run1_source_phase": [
+    {
+      "class": "TextField_QMLTYPE_86",
+      "node": "55924a79ec60",
+      "viewport": {
+        "height": 32,
+        "width": 797,
+        "x": 8,
+        "y": 55
+      },
+      "backend_rows": []
+    }
+  ],
+  "run1_source_phase_repaired_predicate": false,
+  "run2_source_phase": [
+    {
+      "class": "TextField_QMLTYPE_42",
+      "node": "559e323d5a60",
+      "viewport": {
+        "height": 32,
+        "width": 797,
+        "x": 8,
+        "y": 55.2068977355957
+      },
+      "backend_rows": [
+        {
+          "exact": true,
+          "kind": "text",
+          "match_scope": "title",
+          "match_type": "literal",
+          "page": 0,
+          "path": "/tmp/work/corpus/reader.txt",
+          "score": 1,
+          "semantic_score": 0.7941412738336497,
+          "term_match": true,
+          "text": "Amber maps ride quiet lanterns 59317428.\n",
+          "title": "reader.txt",
+          "warning": ""
+        }
+      ]
+    },
+    {
+      "class": "Label_QMLTYPE_48",
+      "node": "559e3275caa0",
+      "viewport": {
+        "height": 18,
+        "width": 632,
+        "x": 324,
+        "y": 140.2068977355957
+      },
+      "backend_rows": [
+        {
+          "exact": true,
+          "kind": "text",
+          "match_scope": "title",
+          "match_type": "literal",
+          "page": 0,
+          "path": "/tmp/work/corpus/reader.txt",
+          "score": 1,
+          "semantic_score": 0.7941412738336497,
+          "term_match": true,
+          "text": "Amber maps ride quiet lanterns 59317428.\n",
+          "title": "reader.txt",
+          "warning": ""
+        }
+      ]
+    }
+  ],
+  "run2_source_phase_repaired_predicate": true,
+  "raw_completed_reply": {
+    "connection": 0,
+    "direction": "reply",
+    "monotonic_ns": 39973816190995,
+    "raw": {
+      "generation": 2,
+      "id": "ui-2",
+      "identity": {
+        "backend": "CPU",
+        "byte_order": "little",
+        "dimension": 768,
+        "dtype": "float32",
+        "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+        "extractors": {
+          "pdfinfo": "pdfinfo version 26.08.0",
+          "pdftoppm": "pdftoppm version 26.08.0",
+          "pdftotext": "pdftotext version 26.08.0",
+          "tesseract": "tesseract 5.5.3"
+        },
+        "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+        "max_tokens": 2048,
+        "model": "google/embeddinggemma-2",
+        "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+        "pipeline": "digup-vectors1-linux-cpu-probe1",
+        "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+        "representation": 3,
+        "runtime": "llama.cpp-b11461+no-logits",
+        "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+      },
+      "index_revision": 1,
+      "ok": true,
+      "protocol": 1,
+      "results": [
+        {
+          "exact": true,
+          "kind": "text",
+          "match_scope": "title",
+          "match_type": "literal",
+          "page": 0,
+          "path": "/tmp/work/corpus/reader.txt",
+          "score": 1,
+          "semantic_score": 0.7941412738336497,
+          "term_match": true,
+          "text": "Amber maps ride quiet lanterns 59317428.\n",
+          "title": "reader.txt",
+          "warning": ""
+        }
+      ]
+    }
+  },
+  "portal": {
+    "OpenFile_counts": [
+      0,
+      1
+    ],
+    "run2_ChooseApplication_count": 0,
+    "source_inode": 8232834,
+    "response_request": "/org/freedesktop/portal/desktop/request/1_1/t",
+    "response": 0,
+    "api": {
+      "actual_url": "file:///tmp/work/corpus/reader.txt",
+      "after_call_elapsed_ns": 879097800,
+      "before_call_elapsed_ns": 879068425,
+      "focus_window": "KDE Index",
+      "last_input_serial": 5109,
+      "local_file": "/tmp/work/corpus/reader.txt",
+      "pid": 30,
+      "return_accepted": true
+    }
+  },
+  "closure": {
+    "run1": {
+      "owned_exits": [
+        {
+          "pid": 8,
+          "exit": -15
+        },
+        {
+          "pid": 18,
+          "exit": -15
+        },
+        {
+          "pid": 39,
+          "exit": -15
+        },
+        {
+          "pid": 40,
+          "exit": -15
+        }
+      ],
+      "relay_threads_closed": true,
+      "accept_thread_closed": true,
+      "exclusive_namespace_extras_terminated": [
+        {
+          "pid": 3,
+          "argv": "dbus-daemon --nofork --print-address 4 --session "
+        },
+        {
+          "pid": 20,
+          "argv": "/tmp/stage/bin/embedding-probe /tmp/models/embeddinggemma-2-Q8_0.gguf /tmp/models/mmproj-embeddinggemma-2-Q8_0.gguf 6 "
+        },
+        {
+          "pid": 43,
+          "argv": "/usr/lib/xdg-desktop-portal "
+        },
+        {
+          "pid": 49,
+          "argv": "/usr/lib/xdg-permission-store "
+        },
+        {
+          "pid": 69,
+          "argv": "/usr/lib/xdg-desktop-portal-gtk "
+        },
+        {
+          "pid": 88,
+          "argv": "/usr/lib/xdg-desktop-portal-kde "
+        },
+        {
+          "pid": 100,
+          "argv": "/usr/bin/ksecretd "
+        }
+      ],
+      "owned_socket_files_absent": true
+    },
+    "run2": {
+      "owned_exits": [
+        {
+          "pid": 8,
+          "exit": 0
+        },
+        {
+          "pid": 29,
+          "exit": -15
+        },
+        {
+          "pid": 30,
+          "exit": 0
+        }
+      ],
+      "relay_threads_closed": true,
+      "accept_thread_closed": true,
+      "exclusive_namespace_extras_terminated": [
+        {
+          "pid": 3,
+          "argv": "dbus-daemon --nofork --print-address 4 --session "
+        },
+        {
+          "pid": 33,
+          "argv": "/usr/lib/xdg-desktop-portal "
+        },
+        {
+          "pid": 39,
+          "argv": "/usr/lib/xdg-permission-store "
+        },
+        {
+          "pid": 59,
+          "argv": "/usr/lib/xdg-desktop-portal-gtk "
+        },
+        {
+          "pid": 78,
+          "argv": "/usr/lib/xdg-desktop-portal-kde "
+        },
+        {
+          "pid": 90,
+          "argv": "/usr/bin/ksecretd "
+        },
+        {
+          "pid": 109,
+          "argv": "/usr/bin/konsole --separate --nofork --hold -e /usr/bin/cat /tmp/work/corpus/reader.txt "
+        }
+      ],
+      "owned_socket_files_absent": true
+    }
+  },
+  "run1_outer": {
+    "namespace_exit": 1,
+    "elapsed_seconds": 8.376281413999095,
+    "isolation": "private PID/network/D-Bus/profile; ro root/public stage/models; masked personal homes/run/tmp; same Wayland socket"
+  },
+  "run2_outer": {
+    "namespace_exit": 0,
+    "elapsed_seconds": 12.389814132999163,
+    "isolation": "private PID/network/D-Bus/profile; ro root/public stage/models; masked personal homes/run/tmp; same Wayland socket"
+  },
+  "review_runtime": {
+    "native_launches": 0,
+    "review_children": 0,
+    "live_handles": [],
+    "token_usage": "unknown",
+    "billing": "unknown",
+    "total_elapsed_time": "unknown"
+  }
+}

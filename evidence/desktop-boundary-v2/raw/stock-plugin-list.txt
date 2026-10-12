@@ -1,0 +1,23 @@
+Available KRunner plugins, pluginId
+-----------------------------------
+KDE Index: kde-index-runner
+Power: krunner_powerdevil
+System Settings: krunner_systemsettings
+Global Shortcuts: krunner_keys
+KWin: krunner_kwin
+Plasma Desktop Shell: krunner_plasma-desktop
+Calculator: calculator
+Help Runner: helprunner
+Software Center: krunner_appstream
+Bookmarks: krunner_bookmarksrunner
+Terminate Applications: krunner_kill
+Places: krunner_placesrunner
+Recent Files: krunner_recentdocuments
+Applications: krunner_services
+Desktop Sessions: krunner_sessions
+Command Line: krunner_shell
+Web Search Keywords: krunner_webshortcuts
+Locations: locations
+Activities: org.kde.activities2
+Windows: windows
+File Search: baloosearch

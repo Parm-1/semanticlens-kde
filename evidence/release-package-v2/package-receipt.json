@@ -1,0 +1,50 @@
+{
+  "archives_sha256": {
+    "kde-index-0.1.0-dev2-native.tar.gz": "db5cae2c058f2e2eebec1b5bd7da4892b1dcfdee48f280effc38a50abfb11c93",
+    "kde-index-0.1.0-dev2-source.tar.gz": "704f6002d88b374e4b82ae6243b28d0b605fb053c9a484dfa4845d0f6783987e"
+  },
+  "candidate_version": "0.1.0-dev2",
+  "format": 1,
+  "limits": [
+    "Development candidate package; no publication or RC acceptance.",
+    "The source package is the original tracked Git archive and retains frozen synthetic validation evidence.",
+    "Native archive is the pinned Arch CPU stage; it is not portable to unvalidated distributions.",
+    "Archive assembly/readback does not qualify installation, KRunner layout/open, simultaneous clients, or physical desktop presentation.",
+    "The native archive contains only the runtime path allowlist and notices present in the selected source commit.",
+    "System shared libraries are supplied by the operating system and are not bundled."
+  ],
+  "native_build_commit": "c394cca550d76b7754ffbbe41bc579b202b0c9ff",
+  "native_license_file_count": 13,
+  "native_secret_pattern_file_checks": 84,
+  "native_stage_file_count": 21,
+  "native_stage_files_sha256": {
+    "bin/embedding-probe": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+    "bin/kde-index": "7362440ed0d4df35f1b8a8a58121db08a349cfe199f2849a1d22c7bd252f56d9",
+    "bin/kde-index-cli": "6773a256b55b7c1e555727097d8e3be5db69e84e705d7ca4caf05929ffdfd086",
+    "bin/kde-index-service": "3176fa48374a69e35b2b6b064e68dc86baf852dfd73d49c66716c569fe575845",
+    "lib/qt6/plugins/kf6/krunner/kde-index-runner.so": "a626737f2e6988437cc2c15d25bffcd76cdfc780588557033ef4efc8dc3fb32d",
+    "share/applications/org.kdeindex.Search.desktop": "9ea81ba04319b44290480d891b6851a16f66ceb2f344298c8d2767705e69c3a7",
+    "share/kde-index/model_download.py": "b4542f5b8d9f7326fd31770ef96ef7020e7992be23db7d066619fbdd8208d47c",
+    "share/licenses/kde-index/Apache-2.0.txt": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff",
+    "share/licenses/kde-index/DigUp-MIT.txt": "2ba7d3ad3aafa9b791002d62a6fe237e89fa4287c2f4e59234b09d25bd909b26",
+    "share/licenses/kde-index/LICENSE": "fb981668c18a279e285fc4d83fba1e836cc84dd4daa73c9697d3cfd2d8aca6e0",
+    "share/licenses/kde-index/THIRD_PARTY_NOTICES.md": "7ef8213b734e6db3bc373de5fd62ba69bcecd8867bf2254f5d0ef6a35508b4b4",
+    "share/licenses/kde-index/llama.cpp-MIT.txt": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d",
+    "share/licenses/kde-index/miniaudio-MIT-0.txt": "c2410d4d14ad58e05a59e5de1b02c44fd73cbceb4a628d9676c2c19549908430",
+    "share/licenses/kde-index/nlohmann-json-MIT.txt": "c0d068392ea65358b798b8c165103560f06e9e3b38c4ab4e2d8810a7b931af86",
+    "share/licenses/kde-index/rotate-bits-MIT.txt": "ca0b44aec101afb6b46f4c39b23369fa06a64fb9c0add37c2689d702156fee55",
+    "share/licenses/kde-index/sha1-Public-Domain.txt": "239e38879a3f4a4d00ec227e714afe0cc6493c3745d06c1bbf551b50d97c17c4",
+    "share/licenses/kde-index/sha256-Public-Domain.txt": "b81d0022ca6367918c67b57e9647d3513ee58809fd4b0ef0b3492f1356bced25",
+    "share/licenses/kde-index/sheredom-Unlicense.txt": "fa8fd67c42f8d9581198eb797005a9e7f0444f0baf201491e7f8c7efccbcff36",
+    "share/licenses/kde-index/stb-image-MIT.txt": "7169810d8b6cf25c9bc0d1067ecce30bbff74a1ccafdfe37ccbe1ee7849d5c36",
+    "share/licenses/kde-index/xxHash-BSD-2-Clause.txt": "6ffedbc0f7878612d2b23589f1ff2ab15633e1df7963a5d9fc750ec5500c7e7a",
+    "share/metainfo/org.kdeindex.Search.metainfo.xml": "c9fce204bf339bbe6b43fca022d48a7fb53f4ec169e7219add815662182de933"
+  },
+  "source_build_commit_changed_paths": [],
+  "source_commit": "c394cca550d76b7754ffbbe41bc579b202b0c9ff",
+  "source_epoch": 1791788062,
+  "source_home_path_reference_files": 112,
+  "source_secret_pattern_file_checks": 4948,
+  "source_tree_tracked_paths": 1237,
+  "source_workspace_path_reference_files": 105
+}

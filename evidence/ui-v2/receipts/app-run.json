@@ -1,0 +1,25 @@
+{
+  "exit": 0,
+  "wall_seconds": 9.234342686002492,
+  "args": [
+    "/home/parm/Documents/KDE Index/evidence/ui-v2/candidate/bin/kde-index",
+    "--socket",
+    "/home/parm/Documents/KDE Index/local/ui-v2-app/service.sock",
+    "--data-dir",
+    "/home/parm/Documents/KDE Index/local/ui-v2-smoke-final/data",
+    "--models",
+    "/home/parm/Documents/KDE Index/models",
+    "--service",
+    "/home/parm/Documents/KDE Index/evidence/ui-v2/candidate/bin/kde-index-service",
+    "--probe",
+    "/home/parm/Documents/KDE Index/evidence/ui-v2/candidate/bin/embedding-probe",
+    "--downloader",
+    "/home/parm/Documents/KDE Index/evidence/ui-v2/candidate/tools/model_download.py",
+    "--query",
+    "PAYMENT-8291",
+    "--capture",
+    "/home/parm/Documents/KDE Index/local/ui-v2-app/capture.png",
+    "--capture-delay",
+    "8500"
+  ]
+}

@@ -1,0 +1,16 @@
+# Local build and runtime data
+/build/
+/build-*/
+CMakeFiles/
+/models/
+/vendor/
+*.gguf
+*.gguf.part
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+.env
+.env.*
+__pycache__/
+*.pyc
+/local/

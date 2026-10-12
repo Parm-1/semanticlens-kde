@@ -1,0 +1,206 @@
+{
+  "evidence/desktop-boundary-v2/primary/RunCommand-v6.7.5.qml": [
+    "GPL-2.0-or-later"
+  ],
+  "evidence/desktop-boundary-v2/primary/appchooser-kde-v6.7.5.cpp": [
+    "LGPL-2.0-or-later"
+  ],
+  "evidence/desktop-boundary-v2/primary/calculatorrunner-v6.7.5.cpp": [
+    "LGPL-2.0-only"
+  ],
+  "evidence/desktop-boundary-v2/primary/installed-AppChooser.xml": [
+    "LGPL-2.1-or-later"
+  ],
+  "evidence/desktop-boundary-v2/primary/installed-OpenURI.xml": [
+    "LGPL-2.1-or-later"
+  ],
+  "evidence/desktop-boundary-v2/primary/installed-Request.xml": [
+    "LGPL-2.1-or-later"
+  ],
+  "evidence/desktop-boundary-v2/primary/installed-ResultDelegate.qml": [
+    "LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL"
+  ],
+  "evidence/desktop-boundary-v2/primary/installed-ResultsView.qml": [
+    "LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL"
+  ],
+  "evidence/desktop-boundary-v2/primary/installed-ScrollView.qml": [
+    "LGPL-3.0-only OR GPL-2.0-or-later"
+  ],
+  "evidence/desktop-boundary-v2/primary/kf-resultsmodel-v6.30.0.cpp": [
+    "LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL"
+  ],
+  "evidence/desktop-boundary-v2/primary/krunner-main-v6.7.5.cpp": [
+    "GPL-2.0-or-later"
+  ],
+  "evidence/desktop-boundary-v2/primary/krunner-view-v6.7.5.cpp": [
+    "GPL-2.0-or-later"
+  ],
+  "evidence/desktop-boundary-v2/primary/open-uri-v1.22.1.c": [
+    "LGPL-2.1-or-later"
+  ],
+  "evidence/desktop-boundary-v2/primary/qdesktopunixservices-v6.12.0.cpp": [
+    "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only"
+  ],
+  "evidence/desktop-boundary-v2/primary/qquickscrollview-v6.12.0.cpp": [
+    "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only"
+  ],
+  "evidence/desktop-boundary-v2/primary/qquickwindow-v6.12.0.cpp": [
+    "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only"
+  ],
+  "evidence/desktop-boundary-v2/primary/runnerresultsmodel-v6.30.0.cpp": [
+    "LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL"
+  ],
+  "evidence/desktop-integration-v1/primary/RunCommand-v6.7.5.qml": [
+    "GPL-2.0-or-later"
+  ],
+  "evidence/desktop-integration-v1/primary/dolphin-main-v26.08.2.cpp": [
+    "GPL-2.0-or-later"
+  ],
+  "evidence/desktop-integration-v1/primary/dolphinmainwindow-v26.08.2.cpp": [
+    "GPL-2.0-or-later"
+  ],
+  "evidence/desktop-integration-v1/primary/dolphintabwidget-v26.08.2.cpp": [
+    "GPL-2.0-or-later"
+  ],
+  "evidence/desktop-integration-v1/primary/dolphinview-v26.08.2.cpp": [
+    "GPL-2.0-or-later"
+  ],
+  "evidence/desktop-integration-v1/primary/dolphinview-v26.08.2.h": [
+    "GPL-2.0-or-later"
+  ],
+  "evidence/desktop-integration-v1/primary/installed-ResultDelegate.qml": [
+    "LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL"
+  ],
+  "evidence/desktop-integration-v1/primary/installed-ResultsView.qml": [
+    "LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL"
+  ],
+  "evidence/desktop-integration-v1/primary/installed-ToolTip.qml": [
+    "LGPL-2.0-or-later"
+  ],
+  "evidence/desktop-integration-v1/primary/installed-kfileitem.h": [
+    "LGPL-2.0-or-later"
+  ],
+  "evidence/desktop-integration-v1/primary/installed-querymatch.h": [
+    "LGPL-2.0-or-later"
+  ],
+  "evidence/desktop-integration-v1/primary/kf-resultsmodel-v6.30.0.cpp": [
+    "LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL"
+  ],
+  "evidence/desktop-integration-v1/primary/krunner-main-v6.7.5.cpp": [
+    "GPL-2.0-or-later"
+  ],
+  "evidence/desktop-integration-v1/primary/krunner-view-v6.7.5.cpp": [
+    "GPL-2.0-or-later"
+  ],
+  "evidence/desktop-integration-v1/primary/qdesktopunixservices-v6.12.0.cpp": [
+    "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only"
+  ],
+  "evidence/desktop-integration-v1/primary/qtextdocument-v6.12.0.cpp": [
+    "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only"
+  ],
+  "evidence/desktop-integration-v1/primary/querymatch-v6.30.0.cpp": [
+    "LGPL-2.0-or-later"
+  ],
+  "evidence/desktop-integration-v1/primary/resultsmodel-v6.7.5.cpp": [
+    "LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL"
+  ],
+  "evidence/desktop-integration-v1/primary/runnerresultsmodel-v6.30.0.cpp": [
+    "LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL"
+  ],
+  "evidence/desktop-open-v3/primary/Screen-v26.08.2.cpp": [
+    "GPL-2.0-or-later"
+  ],
+  "evidence/desktop-open-v3/primary/ScreenWindow-v26.08.2.cpp": [
+    "GPL-2.0-or-later"
+  ],
+  "evidence/desktop-open-v3/primary/TerminalDisplay-v26.08.2.cpp": [
+    "GPL-2.0-or-later"
+  ],
+  "evidence/desktop-open-v3/primary/TerminalDisplayAccessible-v26.08.2.cpp": [
+    "GPL-2.0-or-later"
+  ],
+  "evidence/desktop-open-v3/primary/TerminalDisplayAccessible-v26.08.2.h": [
+    "GPL-2.0-or-later"
+  ],
+  "evidence/desktop-open-v3/primary/appchooser-kde-v6.7.5.cpp": [
+    "LGPL-2.0-or-later"
+  ],
+  "evidence/desktop-open-v3/primary/installed-AppChooser.xml": [
+    "LGPL-2.1-or-later"
+  ],
+  "evidence/desktop-open-v3/primary/installed-OpenURI.xml": [
+    "LGPL-2.1-or-later"
+  ],
+  "evidence/desktop-open-v3/primary/installed-Request.xml": [
+    "LGPL-2.1-or-later"
+  ],
+  "evidence/desktop-open-v3/primary/konsole-main-v26.08.2.cpp": [
+    "GPL-2.0-or-later"
+  ],
+  "evidence/desktop-open-v3/primary/open-uri-v1.22.1.c": [
+    "LGPL-2.1-or-later"
+  ],
+  "evidence/desktop-open-v3/primary/qdesktopunixservices-v6.12.0.cpp": [
+    "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only"
+  ],
+  "evidence/local-root-v1/primary/fuse.rst": [
+    "GPL-2.0"
+  ],
+  "evidence/local-root-v1/primary/namei.c": [
+    "GPL-2.0"
+  ],
+  "evidence/local-root-v1/primary/ntfs3-frecord.c": [
+    "GPL-2.0"
+  ],
+  "evidence/local-root-v1/primary/ntfs3-fsntfs.c": [
+    "GPL-2.0"
+  ],
+  "evidence/local-root-v1/primary/ntfs3-inode.c": [
+    "GPL-2.0"
+  ],
+  "evidence/local-root-v1/primary/ntfs3-ntfs.h": [
+    "GPL-2.0"
+  ],
+  "evidence/local-root-v1/primary/ntfs3-xattr.c": [
+    "GPL-2.0"
+  ],
+  "evidence/local-root-v1/primary/proc.rst": [
+    "GPL-2.0"
+  ],
+  "evidence/local-root-v1/repair-v2/primary/ntfs3-super.c": [
+    "GPL-2.0"
+  ],
+  "evidence/retrieval-review-v1/originals/local/baloo-source/src/lib/advancedqueryparser.cpp": [
+    "LGPL-2.1-or-later"
+  ],
+  "evidence/retrieval-review-v1/originals/local/baloo-source/src/tools/baloosearch/main.cpp": [
+    "LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL"
+  ],
+  "evidence/runner-discovery-v1/primary/installed-kpluginmetadata.h": [
+    "LGPL-2.0-or-later"
+  ],
+  "evidence/runner-discovery-v1/primary/kpluginmetadata-v6.30.0.cpp": [
+    "LGPL-2.0-or-later"
+  ],
+  "evidence/runner-discovery-v1/primary/runnermanager-v6.30.0.cpp": [
+    "LGPL-2.0-or-later"
+  ],
+  "evidence/runner-privacy-review-v1/installed-Label.qml": [
+    "LGPL-2.0-or-later"
+  ],
+  "evidence/runner-privacy-v1/primary/installed-ResultDelegate.qml": [
+    "LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL"
+  ],
+  "evidence/runner-privacy-v1/primary/installed-ResultsView.qml": [
+    "LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL"
+  ],
+  "evidence/runner-privacy-v1/primary/installed-ToolTip.qml": [
+    "LGPL-2.0-or-later"
+  ],
+  "evidence/runner-privacy-v1/primary/qtextdocument-v6.12.0.cpp": [
+    "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only"
+  ],
+  "evidence/runner-privacy-v1/primary/runnerresultsmodel-v6.30.0.cpp": [
+    "LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL"
+  ]
+}

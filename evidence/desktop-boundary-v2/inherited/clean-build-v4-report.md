@@ -1,0 +1,7 @@
+# Clean userspace runner-v5 build/staging successor
+
+The owned fresh Arch userspace checkout at 8123e07 built and staged the full root application with linked runner-v5 into a new stage-v4 prefix. Build handle54593 returned terminal exit0. This is an incremental successor to clean-build-v2/v3, not another from-scratch build or native run. Source status is clean. build.log records configure, compilation/link and complete staged install.
+
+stage-comparison.json compares all54 actual installed files against the prior stage-v3: only kde-index-runner.so changed, now a626737f2e6988437cc2c15d25bffcd76cdfc780588557033ef4efc8dc3fb32d. Its exact binary is retained. App, service, CLI, producer, metadata, helper and notices are unchanged. In particular producer3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414 and service3176fa48374a69e35b2b6b064e68dc86baf852dfd73d49c66716c569fe575845 reuse their already accepted parity/engine evidence without repeated tests. Installed GUI byte identity reuses the independently reviewed clean-build-v3 preview receipts.
+
+The runner source is the frozen author candidate in runner-privacy-v1; the fresh userspace binary differs from that native-host build. This build/staging does not establish native plugin discovery, simultaneous requests, rendered KRunner rows, file-content opening or public release acceptance. Privacy review and stock layout/open diagnostics are separate live dependencies. The parent next runs the staged helper integration only after the shared native interval is released.

@@ -1,0 +1,4 @@
+{"name":"ordinary","fd_success":true,"errno":0,"statx_rc":0,"mount_id":53}
+{"name":"owned-symlink","fd_success":false,"errno":40,"statx_rc":-1,"mount_id":0}
+{"name":"parent-escape","fd_success":false,"errno":18,"statx_rc":-1,"mount_id":0}
+{"name":"existing-proc-mount-crossing","fd_success":false,"errno":18,"statx_rc":-1,"mount_id":0}

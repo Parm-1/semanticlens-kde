@@ -1,0 +1,33 @@
+{
+  "runs": [
+    {
+      "name": "smoke",
+      "exit_code": 0,
+      "native_wall_seconds": 11.24407090999739,
+      "argv": [
+        "/home/parm/Documents/KDE Index/evidence/ui-v3/candidate/bin/ui-smoke",
+        "/home/parm/Documents/KDE Index/evidence/engine-v2/candidate/bin/kde-index-service",
+        "/home/parm/Documents/KDE Index/evidence/ui-v1/candidate/bin/embedding-probe",
+        "/home/parm/Documents/KDE Index/models",
+        "/home/parm/Documents/KDE Index/local/ui-review-v3-smoke/data",
+        "/home/parm/Documents/KDE Index/local/ui-review-v3-smoke/service.sock",
+        "/home/parm/Documents/KDE Index/local/ui-review-v3-smoke/corpus",
+        "/home/parm/Documents/KDE Index/evidence/ui-review-v3/smoke"
+      ],
+      "outer_bound_seconds": 100
+    },
+    {
+      "name": "render",
+      "exit_code": 0,
+      "native_wall_seconds": 2.1688378719991306,
+      "argv": [
+        "/home/parm/Documents/KDE Index/evidence/ui-v3/candidate/bin/ui-render",
+        "/home/parm/Documents/KDE Index/evidence/ui-v3/candidate/src/ui/Main.qml",
+        "/home/parm/Documents/KDE Index/evidence/ui-v3/inputs/manual.pdf",
+        "/home/parm/Documents/KDE Index/evidence/ui-review-v3/render"
+      ],
+      "outer_bound_seconds": 45
+    }
+  ],
+  "scope": "whole native subprocess, including functional waits/load/teardown; diagnostic wall scope, no presentation/latency/billing claim"
+}

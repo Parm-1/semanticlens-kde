@@ -1,0 +1,10 @@
+df6b270badaaab455b07201a520164eeff5ec17ced055a88f58d524f12730936  evidence/public-producer-parity-v2/raw/run.py
+5a0907f9c5d21cc551e18c783507776f6ae7dc799eac60285d24308eb5a8c82d  evidence/public-producer-parity-v2/raw/command.json
+c6dcccf0f8051538734ae42ed370c22a6ed572bf05b8e79b9a8e4b706de09d7c  evidence/public-producer-parity-v2/raw/evaluation-command.json
+585f00292312a8625df17106ff2f5680dd797e45d79eb7b3b6ff4db926b8ef0e  evidence/public-producer-parity-v2/raw/run.jsonl
+ace97c19fe4705caa9d75415c191e02124ad4eb73c5f2c7df8c9ee8412728d44  evidence/public-producer-parity-v2/raw/run.log
+29e7d226489dcd17a4c2d97cd3d62596f3b7c44cedef069d8bc234f32fcbc1e1  evidence/public-producer-parity-v2/raw/query-only.jsonl
+4858ba35d22607132fb55c7186970ea8aa145905ceb3b6d639fcbcdadb819f01  evidence/public-producer-parity-v2/raw/query-only.log
+79c2627113d4b32e92311f20a844d315cffbed784f706204a9bc14e7010e9619  evidence/public-producer-parity-v2/raw/run-time.json
+af6db1aea94e389a1e90552721323b68386098357dbdb6b3a8f0e8e72689c216  evidence/public-producer-parity-v2/raw/results.json
+14919043c65505b89e332b1a164e66418c03b604cee1f503e82887a86fdb26a1  evidence/public-producer-parity-v2/raw/info-line.json

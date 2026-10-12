@@ -1,0 +1,1 @@
+The camera battery should be charged with the supplied adapter. A blinking orange indicator means charging is underway, and a green indicator means it has finished.

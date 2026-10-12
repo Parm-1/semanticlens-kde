@@ -1,0 +1,80 @@
+#pragma once
+#include <QtCore>
+#include <QtSql>
+#include <atomic>
+#include <thread>
+#include <mutex>
+#include <condition_variable>
+#include <deque>
+#include <functional>
+struct EngineOptions {
+    QString data,probe,textModel,imageModel;
+    int threads=6;
+    QString probeSha;
+}
+;
+class Engine {
+    public:  using Reply=std::function<void(QJsonObject)>;
+    Engine(EngineOptions options);
+    ~Engine();
+    void submit(QJsonObject request,QString owner,Reply reply);
+    void disconnect(QString owner);
+    QJsonObject status();
+    QStringList watchPaths();
+    quint64 currentGeneration() const {
+        return generation.load();
+    }
+    private:  struct Task {
+        QJsonObject request;
+        QString owner;
+        Reply reply;
+        quint64 generation;
+    }
+    ;
+    EngineOptions opt;
+    std::thread thread;
+    std::mutex mutex;
+    std::condition_variable wake;
+    QString activeOwner,activeId;QStringList watched;
+    std::deque<Task> queue;
+    QSet<QString> canceled,disconnected;
+    QJsonObject snapshot;
+    std::atomic<quint64> generation{
+        1
+    }
+    ;
+    std::atomic<bool> stop{
+        false
+    }
+    ,paused{
+        false
+    }
+    ;
+    QSqlDatabase db;
+    std::unique_ptr<QProcess> producer;
+    QByteArray producerBuffer;
+    QJsonObject identity;
+    struct Scan {
+        QStringList files;
+        QSet<QString> seen;
+        int position=0;
+        quint64 generation=0;
+    }
+    scan;
+    void loop();
+    void handle(Task task);
+    void startScan();
+    void scanStep();
+    void indexFile(QString path,quint64 gen);
+    void refresh();
+    void closeProducer();
+    QJsonObject embed(QJsonObject request);
+    bool valid(const Task &task);
+    QSqlQuery sql(QString statement,QVariantList values={
+    }
+    );
+    QJsonArray roots();
+    bool allowed(QString path);
+    QString rootFor(QString path);
+}
+;

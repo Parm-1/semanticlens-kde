@@ -1,0 +1,49 @@
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Activating service name='org.freedesktop.portal.Desktop' requested by ':1.0' (uid=1000 pid=29 comm="/usr/bin/krunner --runner kde-index-runner find DE")
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Activating service name='org.freedesktop.impl.portal.PermissionStore' requested by ':1.1' (uid=1000 pid=32 comm="/usr/lib/xdg-desktop-portal")
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Activating service name='org.freedesktop.portal.Documents' requested by ':1.1' (uid=1000 pid=32 comm="/usr/lib/xdg-desktop-portal")
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Successfully activated service 'org.freedesktop.portal.Documents'
+fuse: device /dev/fuse not found. Kernel module not loaded?
+error: fuse init failed: Can't mount path /tmp/work/runtime/doc
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Activating service name='org.freedesktop.portal.Documents' requested by ':1.1' (uid=1000 pid=32 comm="/usr/lib/xdg-desktop-portal")
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Successfully activated service 'org.freedesktop.portal.Documents'
+fuse: device /dev/fuse not found. Kernel module not loaded?
+error: fuse init failed: Can't mount path /tmp/work/runtime/doc
+
+(/usr/lib/xdg-desktop-portal:32): xdg-desktop-portal-WARNING **: 01:56:37.592: Document portal fuse mount point unknown: GDBus.Error:org.freedesktop.DBus.Error.NoReply: Message recipient disconnected from message bus without replying
+
+(/usr/lib/xdg-desktop-portal:32): xdg-desktop-portal-WARNING **: 01:56:37.592: Choosing gtk.portal for org.freedesktop.impl.portal.Lockdown as a last-resort fallback
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Activating service name='org.freedesktop.impl.portal.desktop.gtk' requested by ':1.1' (uid=1000 pid=32 comm="/usr/lib/xdg-desktop-portal")
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Activating service name='org.a11y.Bus' requested by ':1.6' (uid=1000 pid=58 comm="/usr/lib/xdg-desktop-portal-gtk")
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Successfully activated service 'org.a11y.Bus'
+ERROR launcher_open_journal @ ../dbus-broker-37/src/launch/launcher.c +179: No such file or directory
+      launcher_open_log @ ../dbus-broker-37/src/launch/launcher.c +193
+      launcher_new @ ../dbus-broker-37/src/launch/launcher.c +223
+      run @ ../dbus-broker-37/src/launch/main.c +149
+      main @ ../dbus-broker-37/src/launch/main.c +178
+Exiting due to fatal error: -2
+
+** (process:69): CRITICAL **: 01:56:37.830: Unable to connect to the accessibility bus at 'unix:path=/tmp/work/runtime/at-spi/bus': Error receiving data: Connection reset by peer
+Failed to launch bus: Bus exited with code 1
+(xdg-desktop-portal-gtk:58): atspi-WARNING **: 01:56:37.830: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/work/runtime/at-spi/bus: Connection refused
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Activating service name='org.kde.ActivityManager' requested by ':1.0' (uid=1000 pid=29 comm="/usr/bin/krunner --runner kde-index-runner find DE")
+
+(xdg-desktop-portal-gtk:58): xdg-desktop-portal-gtk-WARNING **: 01:56:37.848: error: Could not connect: No such file or directory
+
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Successfully activated service 'org.freedesktop.impl.portal.desktop.gtk'
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Activating service name='org.freedesktop.impl.portal.desktop.kde' requested by ':1.1' (uid=1000 pid=32 comm="/usr/lib/xdg-desktop-portal")
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Successfully activated service 'org.kde.ActivityManager'
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Successfully activated service 'org.freedesktop.impl.portal.desktop.kde'
+
+(/usr/lib/xdg-desktop-portal:32): xdg-desktop-portal-WARNING **: 01:56:37.934: Failed to create RealtimeKit proxy: Could not connect: No such file or directory
+
+(/usr/lib/xdg-desktop-portal:32): xdg-desktop-portal-WARNING **: 01:56:37.946: Failed to connect to PipeWire: Couldn't connect to PipeWire
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Activating service name='org.freedesktop.impl.portal.desktop.kwallet' requested by ':1.1' (uid=1000 pid=32 comm="/usr/lib/xdg-desktop-portal")
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Successfully activated service 'org.freedesktop.portal.Desktop'
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Successfully activated service 'org.freedesktop.impl.portal.desktop.kwallet'
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Activating service name='org.a11y.Bus' requested by ':1.0' (uid=1000 pid=29 comm="/usr/bin/krunner --runner kde-index-runner find DE")
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Successfully activated service 'org.a11y.Bus'
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Activating service name='org.kde.runners.baloo' requested by ':1.13' (uid=1000 pid=139 comm="/usr/bin/krunner --runner kde-index-runner find DE")
+dbus-daemon[3]: [session uid=1000 pid=3 pidfd=5] Successfully activated service 'org.kde.runners.baloo'
+dbus-run-session: dbus-daemon exited with code 0
+{"status": "frontends-observed", "error": null, "privacy_gets_after_visible_consumers": [{"path": "/positive-control", "monotonic_ns": 34243967434432}, {"path": "/passage", "monotonic_ns": 34245063688477}, {"path": "/passage", "monotonic_ns": 34246512109249}], "closure": {"owned_exits": [{"pid": 6, "exit": 0}, {"pid": 29, "exit": -15}, {"pid": 139, "exit": -15}, {"pid": 170, "exit": -15}], "relay_threads_closed": true, "canary_thread_closed": true}}

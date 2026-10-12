@@ -1,0 +1,4001 @@
+{
+  "command": {
+    "id": "app-reveal-target",
+    "op": "snapshot"
+  },
+  "snapshot": {
+    "executable": "/usr/bin/dolphin",
+    "nodes": [
+      {
+        "class": "QWidgetWindow",
+        "height": 551,
+        "name": "Dolphin#1Window",
+        "node": "5604f1dc2e00",
+        "opacity": 1,
+        "parent_node": "0",
+        "title": "corpus",
+        "visible": true,
+        "width": 760
+      },
+      {
+        "class": "QMenu",
+        "height": 30,
+        "name": "location_bar",
+        "node": "5604f1c51110",
+        "parent_node": "5604f1dbbef0",
+        "title": "Location Bar",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "location_bar",
+        "node": "5604f1d45f60",
+        "parent_node": "5604f1c51110",
+        "text": "Location Bar",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1c14db0",
+        "parent_node": "0",
+        "title": "Other",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1c153f0",
+        "parent_node": "5604f1c14db0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 30,
+        "name": "",
+        "node": "5604f1e64140",
+        "parent_node": "5604f1e5f170",
+        "title": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1e63b80",
+        "parent_node": "5604f1e64140",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f18bdf10",
+        "parent_node": "0",
+        "title": "Create New",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f19cba00",
+        "parent_node": "5604f18bdf10",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1c51140",
+        "parent_node": "0",
+        "title": "Select Remote Charset",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1b2b300",
+        "parent_node": "5604f1c51140",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "DiskSpaceUsageMenu",
+        "height": 30,
+        "name": "",
+        "node": "5604f1fa1c90",
+        "parent_node": "5604f1fa3c70",
+        "title": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1fa4ed0",
+        "parent_node": "5604f1fa1c90",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f19d1570",
+        "parent_node": "0",
+        "title": "",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1aff000",
+        "parent_node": "5604f19d1570",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 30,
+        "name": "settings",
+        "node": "5604f1df4550",
+        "parent_node": "5604f1d533f0",
+        "title": "&Settings",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "settings",
+        "node": "5604f1dad570",
+        "parent_node": "5604f1df4550",
+        "text": "&Settings",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f18c2750",
+        "parent_node": "5604f1df4550",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f19ce600",
+        "parent_node": "5604f1df4550",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 30,
+        "name": "tools",
+        "node": "5604f1dcc8e0",
+        "parent_node": "5604f1d533f0",
+        "title": "&Tools",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "tools",
+        "node": "5604f1b2e310",
+        "parent_node": "5604f1dcc8e0",
+        "text": "&Tools",
+        "visible": true
+      },
+      {
+        "class": "QComboBoxPrivateContainer",
+        "height": 30,
+        "name": "",
+        "node": "5604f1e6d1b0",
+        "parent_node": "5604f1e5d920",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QBoxLayout",
+        "name": "",
+        "node": "5604f1e62d40",
+        "parent_node": "5604f1e6d1b0"
+      },
+      {
+        "class": "QComboBoxListView",
+        "height": 480,
+        "name": "",
+        "node": "5604f1e6d240",
+        "parent_node": "5604f1e6d1b0",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QWidget",
+        "height": 480,
+        "name": "qt_scrollarea_viewport",
+        "node": "5604f1e6ad80",
+        "parent_node": "5604f1e6d240",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "qt_scrollarea_hcontainer",
+        "node": "5604f1e6dd20",
+        "parent_node": "5604f1e6d240",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QScrollBar",
+        "height": 30,
+        "name": "",
+        "node": "5604f1e6db40",
+        "parent_node": "5604f1e6dd20",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QBoxLayout",
+        "name": "",
+        "node": "5604f1e6e040",
+        "parent_node": "5604f1e6dd20"
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "qt_scrollarea_vcontainer",
+        "node": "5604f1e6e750",
+        "parent_node": "5604f1e6d240",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QScrollBar",
+        "height": 30,
+        "name": "",
+        "node": "5604f1e6d180",
+        "parent_node": "5604f1e6e750",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QBoxLayout",
+        "name": "",
+        "node": "5604f1e6eb00",
+        "parent_node": "5604f1e6e750"
+      },
+      {
+        "class": "QStyledItemDelegate",
+        "name": "",
+        "node": "5604f1e73180",
+        "parent_node": "5604f1e6d240"
+      },
+      {
+        "class": "QItemSelectionModel",
+        "currentIndex": null,
+        "model": null,
+        "name": "",
+        "node": "5604f1e748d0",
+        "parent_node": "5604f1e6d240"
+      },
+      {
+        "class": "QComboBoxDelegate",
+        "name": "",
+        "node": "5604f1e75880",
+        "parent_node": "5604f1e6d240"
+      },
+      {
+        "class": "QItemDelegate",
+        "name": "",
+        "node": "5604f2088ec0",
+        "parent_node": "5604f1e6d240"
+      },
+      {
+        "class": "DolphinUrlNavigator",
+        "height": 32,
+        "name": "",
+        "node": "5604f1e58850",
+        "parent_node": "0",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QHBoxLayout",
+        "name": "",
+        "node": "5604f1e623d0",
+        "parent_node": "5604f1e58850"
+      },
+      {
+        "class": "KCoreUrlNavigator",
+        "name": "",
+        "node": "5604f1e5dd60",
+        "parent_node": "5604f1e58850"
+      },
+      {
+        "class": "KDEPrivate::KUrlNavigatorPlacesSelector",
+        "height": 30,
+        "name": "",
+        "node": "5604f1e657c0",
+        "parent_node": "5604f1e58850",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QMenu",
+        "height": 30,
+        "name": "",
+        "node": "5604f1e62510",
+        "parent_node": "5604f1e657c0",
+        "title": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1e61270",
+        "parent_node": "5604f1e62510",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "KDEPrivate::KUrlNavigatorSchemeCombo",
+        "height": 30,
+        "name": "",
+        "node": "5604f1e5f170",
+        "parent_node": "5604f1e58850",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "KDEPrivate::KUrlNavigatorDropDownButton",
+        "height": 30,
+        "name": "",
+        "node": "5604f1e63450",
+        "parent_node": "5604f1e58850",
+        "text": "Go to Location on Path",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "KUrlComboBox",
+        "count": 0,
+        "currentIndex": -1,
+        "height": 30,
+        "name": "",
+        "node": "5604f1e5d920",
+        "parent_node": "5604f1e58850",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QStandardItemModel",
+        "name": "",
+        "node": "5604f1e64760",
+        "parent_node": "5604f1e5d920"
+      },
+      {
+        "class": "KLineEdit",
+        "displayText": "",
+        "height": 18,
+        "name": "",
+        "node": "5604f1c57f50",
+        "parent_node": "5604f1e5d920",
+        "text": "",
+        "visible": false,
+        "width": 74
+      },
+      {
+        "class": "QWidgetLineControl",
+        "name": "",
+        "node": "5604f18b4ff0",
+        "parent_node": "5604f1c57f50"
+      },
+      {
+        "class": "KLineEditUrlDropEventFilter",
+        "name": "",
+        "node": "5604f1bf75e0",
+        "parent_node": "5604f1c57f50"
+      },
+      {
+        "class": "QAction",
+        "name": "_q_qlineeditclearaction",
+        "node": "5604f1bf7770",
+        "parent_node": "5604f1c57f50",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QLineEditIconButton",
+        "height": 18,
+        "name": "",
+        "node": "5604f1e680e0",
+        "opacity": 0,
+        "parent_node": "5604f1c57f50",
+        "text": "",
+        "visible": false,
+        "width": 22
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "",
+        "node": "5604f1e6ba80",
+        "parent_node": "5604f1e58850",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QHBoxLayout",
+        "name": "",
+        "node": "5604f1e6bdc0",
+        "parent_node": "5604f1e6ba80"
+      },
+      {
+        "class": "QLabel",
+        "height": 480,
+        "name": "",
+        "node": "5604f1ee9030",
+        "parent_node": "5604f1e6ba80",
+        "text": "",
+        "textFormat": "AutoText",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "KDEPrivate::KUrlNavigatorToggleButton",
+        "height": 30,
+        "name": "",
+        "node": "5604f1da7f80",
+        "parent_node": "5604f1e58850",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "KDEPrivate::KUrlNavigatorButton",
+        "height": 32,
+        "name": "",
+        "node": "5604f1dad880",
+        "parent_node": "5604f1e58850",
+        "text": "/",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1e98600",
+        "parent_node": "5604f1dad880"
+      },
+      {
+        "class": "KDEPrivate::KUrlNavigatorButton",
+        "height": 32,
+        "name": "",
+        "node": "5604f1dac4e0",
+        "parent_node": "5604f1e58850",
+        "text": "tmp",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1e99490",
+        "parent_node": "5604f1dac4e0"
+      },
+      {
+        "class": "KDEPrivate::KUrlNavigatorButton",
+        "height": 32,
+        "name": "",
+        "node": "5604f1da2ea0",
+        "parent_node": "5604f1e58850",
+        "text": "work",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1e9d2a0",
+        "parent_node": "5604f1da2ea0"
+      },
+      {
+        "class": "KDEPrivate::KUrlNavigatorButton",
+        "height": 32,
+        "name": "",
+        "node": "5604f1da4800",
+        "parent_node": "5604f1e58850",
+        "text": "corpus",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1e9f560",
+        "parent_node": "5604f1da4800"
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f19b8790",
+        "parent_node": "0",
+        "title": "",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f19c8380",
+        "parent_node": "5604f19b8790",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1b2b680",
+        "parent_node": "0",
+        "title": "Show Additional Information",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1b09db0",
+        "parent_node": "5604f1b2b680",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1c30970",
+        "parent_node": "0",
+        "title": "Video",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1c31830",
+        "parent_node": "5604f1c30970",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1c06dc0",
+        "parent_node": "0",
+        "title": "Image",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1c07400",
+        "parent_node": "5604f1c06dc0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 30,
+        "name": "edit",
+        "node": "5604f1e33ce0",
+        "parent_node": "5604f1d533f0",
+        "title": "&Edit",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "edit",
+        "node": "5604f1dc80e0",
+        "parent_node": "5604f1e33ce0",
+        "text": "&Edit",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1e1b1c0",
+        "parent_node": "5604f1e33ce0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1c2d430",
+        "parent_node": "5604f1e33ce0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1e05140",
+        "parent_node": "5604f1e33ce0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1db58f0",
+        "parent_node": "5604f1e33ce0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1db9df0",
+        "parent_node": "5604f1e33ce0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1dba400",
+        "parent_node": "5604f1e33ce0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QComboBoxPrivateContainer",
+        "height": 30,
+        "name": "",
+        "node": "5604f19e3f70",
+        "parent_node": "5604f1839700",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QBoxLayout",
+        "name": "",
+        "node": "5604f18838a0",
+        "parent_node": "5604f19e3f70"
+      },
+      {
+        "class": "QComboBoxListView",
+        "height": 480,
+        "name": "",
+        "node": "5604f1828e70",
+        "parent_node": "5604f19e3f70",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QWidget",
+        "height": 480,
+        "name": "qt_scrollarea_viewport",
+        "node": "5604f19e3f40",
+        "parent_node": "5604f1828e70",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "qt_scrollarea_hcontainer",
+        "node": "5604f1aaff30",
+        "parent_node": "5604f1828e70",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QScrollBar",
+        "height": 30,
+        "name": "",
+        "node": "5604f19e4150",
+        "parent_node": "5604f1aaff30",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QBoxLayout",
+        "name": "",
+        "node": "5604f19c6f60",
+        "parent_node": "5604f1aaff30"
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "qt_scrollarea_vcontainer",
+        "node": "5604f1aced10",
+        "parent_node": "5604f1828e70",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QScrollBar",
+        "height": 30,
+        "name": "",
+        "node": "5604f19e40f0",
+        "parent_node": "5604f1aced10",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QBoxLayout",
+        "name": "",
+        "node": "5604f1a07760",
+        "parent_node": "5604f1aced10"
+      },
+      {
+        "class": "QStyledItemDelegate",
+        "name": "",
+        "node": "5604f19ecfb0",
+        "parent_node": "5604f1828e70"
+      },
+      {
+        "class": "QItemSelectionModel",
+        "currentIndex": null,
+        "model": null,
+        "name": "",
+        "node": "5604f1ac1190",
+        "parent_node": "5604f1828e70"
+      },
+      {
+        "class": "QComboBoxDelegate",
+        "name": "",
+        "node": "5604f1ac1650",
+        "parent_node": "5604f1828e70"
+      },
+      {
+        "class": "QItemDelegate",
+        "name": "",
+        "node": "5604f1af9880",
+        "parent_node": "5604f1828e70"
+      },
+      {
+        "class": "QMenu",
+        "height": 30,
+        "name": "",
+        "node": "5604f19af410",
+        "parent_node": "5604f18713a0",
+        "title": "Select",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f19af920",
+        "parent_node": "5604f19af410",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1b2b8a0",
+        "parent_node": "0",
+        "title": "Change View Mode",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f19b4650",
+        "parent_node": "5604f1b2b8a0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 30,
+        "name": "",
+        "node": "5604f1e09800",
+        "parent_node": "5604f1d533f0",
+        "title": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1e0a7d0",
+        "parent_node": "5604f1e09800",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QComboBoxPrivateContainer",
+        "height": 30,
+        "name": "",
+        "node": "5604f1efade0",
+        "parent_node": "5604f1efb380",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QBoxLayout",
+        "name": "",
+        "node": "5604f1f032f0",
+        "parent_node": "5604f1efade0"
+      },
+      {
+        "class": "QComboBoxListView",
+        "height": 480,
+        "name": "",
+        "node": "5604f1efc970",
+        "parent_node": "5604f1efade0",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QWidget",
+        "height": 480,
+        "name": "qt_scrollarea_viewport",
+        "node": "5604f1efd010",
+        "parent_node": "5604f1efc970",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "qt_scrollarea_hcontainer",
+        "node": "5604f1efd4b0",
+        "parent_node": "5604f1efc970",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QScrollBar",
+        "height": 30,
+        "name": "",
+        "node": "5604f1efd2f0",
+        "parent_node": "5604f1efd4b0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QBoxLayout",
+        "name": "",
+        "node": "5604f1efdac0",
+        "parent_node": "5604f1efd4b0"
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "qt_scrollarea_vcontainer",
+        "node": "5604f1efdec0",
+        "parent_node": "5604f1efc970",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QScrollBar",
+        "height": 30,
+        "name": "",
+        "node": "5604f1efd2c0",
+        "parent_node": "5604f1efdec0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QBoxLayout",
+        "name": "",
+        "node": "5604f1efe560",
+        "parent_node": "5604f1efdec0"
+      },
+      {
+        "class": "QStyledItemDelegate",
+        "name": "",
+        "node": "5604f1f027c0",
+        "parent_node": "5604f1efc970"
+      },
+      {
+        "class": "QItemSelectionModel",
+        "currentIndex": null,
+        "model": null,
+        "name": "",
+        "node": "5604f1f045c0",
+        "parent_node": "5604f1efc970"
+      },
+      {
+        "class": "QComboBoxDelegate",
+        "name": "",
+        "node": "5604f1f05570",
+        "parent_node": "5604f1efc970"
+      },
+      {
+        "class": "QItemDelegate",
+        "name": "",
+        "node": "5604f20965f0",
+        "parent_node": "5604f1efc970"
+      },
+      {
+        "class": "QMenu",
+        "height": 30,
+        "name": "view",
+        "node": "5604f1dbbef0",
+        "parent_node": "5604f1d533f0",
+        "title": "&View",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "view",
+        "node": "5604f1dc6040",
+        "parent_node": "5604f1dbbef0",
+        "text": "&View",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1db7030",
+        "parent_node": "5604f1dbbef0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1b1a120",
+        "parent_node": "5604f1dbbef0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f19d1cf0",
+        "parent_node": "5604f1dbbef0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1d210a0",
+        "parent_node": "5604f1dbbef0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1d9c720",
+        "parent_node": "5604f1dbbef0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1d9c540",
+        "parent_node": "5604f1dbbef0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1871478",
+        "parent_node": "0",
+        "title": "",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1829b10",
+        "parent_node": "5604f1871478",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1ae30e0",
+        "parent_node": "0",
+        "title": "Sort By",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1afe180",
+        "parent_node": "5604f1ae30e0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1acc6f0",
+        "parent_node": "0",
+        "title": "Document",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1acc7f0",
+        "parent_node": "5604f1acc6f0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1b21fd0",
+        "parent_node": "0",
+        "title": "",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f19af180",
+        "parent_node": "5604f1b21fd0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "no_entries",
+        "node": "5604f19f5e10",
+        "parent_node": "5604f1b21fd0",
+        "text": "No Entries",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "separator",
+        "node": "5604f19c9630",
+        "parent_node": "5604f1b21fd0",
+        "text": "",
+        "visible": false
+      },
+      {
+        "class": "QAction",
+        "name": "clear_action",
+        "node": "5604f19d29a0",
+        "parent_node": "5604f1b21fd0",
+        "text": "Clear List",
+        "visible": false
+      },
+      {
+        "class": "DiskSpaceUsageMenu",
+        "height": 30,
+        "name": "",
+        "node": "5604f19cdb20",
+        "parent_node": "5604f18713a0",
+        "title": "Manage Disk Space Usage",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f19ce730",
+        "parent_node": "5604f19cdb20",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1c28fa0",
+        "parent_node": "0",
+        "title": "Image",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1c295e0",
+        "parent_node": "5604f1c28fa0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 30,
+        "name": "",
+        "node": "5604f18ad840",
+        "parent_node": "5604f1879ac0",
+        "title": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f18673b0",
+        "parent_node": "5604f18ad840",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 30,
+        "name": "help",
+        "node": "5604f1dca9c0",
+        "parent_node": "5604f1d533f0",
+        "title": "&Help",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "help",
+        "node": "5604f1c002d0",
+        "parent_node": "5604f1dca9c0",
+        "text": "&Help",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1a003e0",
+        "parent_node": "5604f1dca9c0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f19b9440",
+        "parent_node": "5604f1dca9c0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f19b1160",
+        "parent_node": "5604f1dca9c0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "DolphinMainWindow",
+        "height": 551,
+        "name": "Dolphin#1",
+        "node": "5604f18713a0",
+        "parent_node": "0",
+        "visible": true,
+        "width": 760
+      },
+      {
+        "class": "QMainWindowLayout",
+        "name": "_layout",
+        "node": "5604f1871ac0",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "DockResizeListener",
+        "name": "",
+        "node": "5604f1838bb0",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "KMainWindowInterface",
+        "name": "",
+        "node": "5604f1874220",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "QDBusAdaptorConnector",
+        "name": "",
+        "node": "7fe038009dc0",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "MainWindowAdaptor",
+        "name": "",
+        "node": "5604f1875570",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "DolphinNavigatorsWidgetAction",
+        "name": "url_navigators",
+        "node": "5604f1877f90",
+        "parent_node": "5604f18713a0",
+        "text": "Location Bar",
+        "visible": true
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f183b8a0",
+        "parent_node": "5604f1877f90"
+      },
+      {
+        "class": "DolphinTabWidget",
+        "count": 1,
+        "currentIndex": 0,
+        "height": 505,
+        "name": "tabWidget",
+        "node": "5604f1ab8850",
+        "parent_node": "5604f18713a0",
+        "visible": true,
+        "width": 605
+      },
+      {
+        "class": "QStackedWidget",
+        "count": 1,
+        "currentIndex": 0,
+        "height": 505,
+        "name": "qt_tabwidget_stackedwidget",
+        "node": "5604f19e3d70",
+        "parent_node": "5604f1ab8850",
+        "visible": true,
+        "width": 605
+      },
+      {
+        "class": "QStackedLayout",
+        "currentIndex": 0,
+        "name": "",
+        "node": "5604f1ac0590",
+        "parent_node": "5604f19e3d70"
+      },
+      {
+        "class": "Breeze::TransitionWidget",
+        "height": 30,
+        "name": "",
+        "node": "5604f1dbd7a0",
+        "opacity": 0,
+        "parent_node": "5604f19e3d70",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "Breeze::Animation",
+        "name": "",
+        "node": "5604f1dbdb20",
+        "parent_node": "5604f1dbd7a0"
+      },
+      {
+        "class": "DolphinTabPage",
+        "height": 505,
+        "name": "",
+        "node": "5604f1e634f0",
+        "parent_node": "5604f19e3d70",
+        "visible": true,
+        "width": 605
+      },
+      {
+        "class": "QGridLayout",
+        "name": "",
+        "node": "5604f1e5dd80",
+        "parent_node": "5604f1e634f0"
+      },
+      {
+        "class": "DolphinTabPageSplitter",
+        "height": 505,
+        "name": "",
+        "node": "5604f1e585d0",
+        "parent_node": "5604f1e634f0",
+        "visible": true,
+        "width": 605
+      },
+      {
+        "class": "DolphinViewContainer",
+        "height": 505,
+        "name": "",
+        "node": "5604f1c1ac20",
+        "parent_node": "5604f1e585d0",
+        "visible": true,
+        "width": 605
+      },
+      {
+        "class": "QGridLayout",
+        "name": "",
+        "node": "5604f1ee8890",
+        "parent_node": "5604f1c1ac20"
+      },
+      {
+        "class": "KMessageWidget",
+        "height": 44,
+        "name": "",
+        "node": "5604f1e9ff90",
+        "parent_node": "5604f1c1ac20",
+        "text": "",
+        "textFormat": "AutoText",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QTimeLine",
+        "name": "",
+        "node": "5604f1ee8960",
+        "parent_node": "5604f1e9ff90"
+      },
+      {
+        "class": "QLabel",
+        "height": 30,
+        "name": "",
+        "node": "5604f1eec180",
+        "parent_node": "5604f1e9ff90",
+        "text": "",
+        "textFormat": "AutoText",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QLabel",
+        "height": 30,
+        "name": "",
+        "node": "5604f1eec1b0",
+        "parent_node": "5604f1e9ff90",
+        "text": "",
+        "textFormat": "AutoText",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1eecc10",
+        "parent_node": "5604f1e9ff90",
+        "text": "&Close",
+        "visible": true
+      },
+      {
+        "class": "QToolButton",
+        "height": 28,
+        "name": "",
+        "node": "5604f1eecfc0",
+        "parent_node": "5604f1e9ff90",
+        "text": "Close",
+        "visible": false,
+        "width": 28
+      },
+      {
+        "class": "QHBoxLayout",
+        "name": "",
+        "node": "5604f1fadda0",
+        "parent_node": "5604f1e9ff90"
+      },
+      {
+        "class": "FilterBar",
+        "height": 0,
+        "name": "",
+        "node": "5604f1ee9ec0",
+        "parent_node": "5604f1c1ac20",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QGridLayout",
+        "name": "",
+        "node": "5604f1ee9d70",
+        "parent_node": "5604f1ee9ec0"
+      },
+      {
+        "class": "QScrollArea",
+        "height": 30,
+        "name": "",
+        "node": "5604f1eea940",
+        "parent_node": "5604f1ee9ec0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QWidget",
+        "height": 26,
+        "name": "qt_scrollarea_viewport",
+        "node": "5604f1eea970",
+        "parent_node": "5604f1eea940",
+        "visible": false,
+        "width": 96
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "",
+        "node": "5604f1ef29a0",
+        "parent_node": "5604f1eea970",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QToolButton",
+        "height": 30,
+        "name": "",
+        "node": "5604f1ef3610",
+        "parent_node": "5604f1ef29a0",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QLineEdit",
+        "displayText": "",
+        "height": 30,
+        "name": "",
+        "node": "5604f1ef3f40",
+        "parent_node": "5604f1ef29a0",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QWidgetLineControl",
+        "name": "",
+        "node": "5604f1ee7600",
+        "parent_node": "5604f1ef3f40"
+      },
+      {
+        "class": "QAction",
+        "name": "_q_qlineeditclearaction",
+        "node": "5604f1ef4b10",
+        "parent_node": "5604f1ef3f40",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QLineEditIconButton",
+        "height": 18,
+        "name": "",
+        "node": "5604f1ef2620",
+        "opacity": 0,
+        "parent_node": "5604f1ef3f40",
+        "text": "",
+        "visible": false,
+        "width": 22
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1ef7a50",
+        "parent_node": "5604f1ef3f40",
+        "text": "",
+        "visible": false
+      },
+      {
+        "class": "QLineEditIconButton",
+        "height": 18,
+        "name": "",
+        "node": "5604f1ef7740",
+        "opacity": 1,
+        "parent_node": "5604f1ef3f40",
+        "text": "",
+        "visible": false,
+        "width": 22
+      },
+      {
+        "class": "QToolButton",
+        "height": 30,
+        "name": "",
+        "node": "5604f1efa3f0",
+        "parent_node": "5604f1ef29a0",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QComboBox",
+        "count": 3,
+        "currentIndex": 1,
+        "height": 30,
+        "name": "",
+        "node": "5604f1efb380",
+        "parent_node": "5604f1ef29a0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QStandardItemModel",
+        "name": "",
+        "node": "5604f1efb4c0",
+        "parent_node": "5604f1efb380"
+      },
+      {
+        "class": "QToolButton",
+        "height": 30,
+        "name": "",
+        "node": "5604f1efb8e0",
+        "parent_node": "5604f1ef29a0",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QHBoxLayout",
+        "name": "",
+        "node": "5604f1efbe10",
+        "parent_node": "5604f1ef29a0"
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "qt_scrollarea_hcontainer",
+        "node": "5604f1ee8c80",
+        "parent_node": "5604f1eea940",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QScrollBar",
+        "height": 30,
+        "name": "",
+        "node": "5604f1eeac70",
+        "parent_node": "5604f1ee8c80",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QBoxLayout",
+        "name": "",
+        "node": "5604f1eeb3a0",
+        "parent_node": "5604f1ee8c80"
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "qt_scrollarea_vcontainer",
+        "node": "5604f1ee8fa0",
+        "parent_node": "5604f1eea940",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QScrollBar",
+        "height": 30,
+        "name": "",
+        "node": "5604f1eeac40",
+        "parent_node": "5604f1ee8fa0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QBoxLayout",
+        "name": "",
+        "node": "5604f1eedf70",
+        "parent_node": "5604f1ee8fa0"
+      },
+      {
+        "actual_selected_urls": [
+          "file:///tmp/work/corpus/%3Cb%3ETITLE-77331.txt"
+        ],
+        "actual_view_url": "file:///tmp/work/corpus",
+        "class": "DolphinView",
+        "height": 505,
+        "name": "",
+        "node": "5604f18898c0",
+        "parent_node": "5604f1c1ac20",
+        "visible": true,
+        "width": 605
+      },
+      {
+        "class": "QVBoxLayout",
+        "name": "",
+        "node": "5604f1f07440",
+        "parent_node": "5604f18898c0"
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1f07720",
+        "parent_node": "5604f18898c0"
+      },
+      {
+        "class": "KItemListContainer",
+        "height": 505,
+        "name": "",
+        "node": "5604f1f18c90",
+        "parent_node": "5604f18898c0",
+        "visible": true,
+        "width": 605
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "qt_scrollarea_hcontainer",
+        "node": "5604f1f2e2a0",
+        "parent_node": "5604f1f18c90",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QScrollBar",
+        "height": 30,
+        "name": "",
+        "node": "5604f1f55220",
+        "parent_node": "5604f1f2e2a0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QBoxLayout",
+        "name": "",
+        "node": "5604f1f76890",
+        "parent_node": "5604f1f2e2a0"
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "qt_scrollarea_vcontainer",
+        "node": "5604f1f1f740",
+        "parent_node": "5604f1f18c90",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QScrollBar",
+        "height": 30,
+        "name": "",
+        "node": "5604f1f551f0",
+        "parent_node": "5604f1f1f740",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QBoxLayout",
+        "name": "",
+        "node": "5604f1f56710",
+        "parent_node": "5604f1f1f740"
+      },
+      {
+        "class": "KItemListController",
+        "model": null,
+        "name": "",
+        "node": "5604f1f0da90",
+        "parent_node": "5604f1f18c90"
+      },
+      {
+        "class": "KItemListSelectionManager",
+        "name": "",
+        "node": "5604f1f0c110",
+        "parent_node": "5604f1f0da90"
+      },
+      {
+        "class": "KItemListKeyboardSearchManager",
+        "name": "",
+        "node": "5604f1f0dc40",
+        "parent_node": "5604f1f0da90"
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1f0a580",
+        "parent_node": "5604f1f0da90"
+      },
+      {
+        "class": "KFileItemModel",
+        "name": "",
+        "node": "5604f1efbea0",
+        "parent_node": "5604f1f0da90"
+      },
+      {
+        "class": "KDirLister",
+        "name": "",
+        "node": "5604f1f079d0",
+        "parent_node": "5604f1efbea0"
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1f08930",
+        "parent_node": "5604f1efbea0"
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1f08b70",
+        "parent_node": "5604f1efbea0"
+      },
+      {
+        "class": "DolphinItemListView",
+        "height": 505,
+        "name": "",
+        "node": "5604f1ee6c80",
+        "opacity": 1,
+        "parent_node": "5604f1f0da90",
+        "visible": true,
+        "width": 605
+      },
+      {
+        "class": "KItemListViewLayouter",
+        "name": "",
+        "node": "5604f1ee74f0",
+        "parent_node": "5604f1ee6c80"
+      },
+      {
+        "class": "KItemListViewAnimation",
+        "name": "",
+        "node": "5604f1f06380",
+        "parent_node": "5604f1ee6c80"
+      },
+      {
+        "class": "KItemListRubberBand",
+        "name": "",
+        "node": "5604f1f063c0",
+        "parent_node": "5604f1ee6c80"
+      },
+      {
+        "class": "KItemListRubberBand",
+        "name": "",
+        "node": "5604f1f094c0",
+        "parent_node": "5604f1ee6c80"
+      },
+      {
+        "class": "QPropertyAnimation",
+        "name": "",
+        "node": "5604f1f09580",
+        "parent_node": "5604f1ee6c80"
+      },
+      {
+        "class": "KItemListHeader",
+        "name": "",
+        "node": "5604f1f09bb0",
+        "parent_node": "5604f1ee6c80"
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1f0a070",
+        "parent_node": "5604f1ee6c80"
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1f0a340",
+        "parent_node": "5604f1ee6c80"
+      },
+      {
+        "class": "KFileItemModelRolesUpdater",
+        "name": "",
+        "node": "5604f184d5d0",
+        "parent_node": "5604f1ee6c80"
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1f156b0",
+        "parent_node": "5604f184d5d0"
+      },
+      {
+        "class": "KDirectoryContentsCounter",
+        "name": "",
+        "node": "5604f1f39460",
+        "parent_node": "5604f184d5d0"
+      },
+      {
+        "class": "KDirWatch",
+        "name": "KDirWatch-3",
+        "node": "5604f1f12fc0",
+        "parent_node": "5604f1f39460"
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f20a5c20",
+        "parent_node": "5604f1ee6c80"
+      },
+      {
+        "class": "QGraphicsScene",
+        "name": "",
+        "node": "5604f1f7c160",
+        "parent_node": "5604f1f18c90"
+      },
+      {
+        "class": "QGraphicsSceneBspTreeIndex",
+        "name": "",
+        "node": "5604f1f7c510",
+        "parent_node": "5604f1f7c160"
+      },
+      {
+        "class": "KItemListContainerViewport",
+        "height": 505,
+        "name": "",
+        "node": "5604f1f7c130",
+        "parent_node": "5604f1f18c90",
+        "visible": true,
+        "width": 605
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "qt_scrollarea_hcontainer",
+        "node": "5604f1f89080",
+        "parent_node": "5604f1f7c130",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QScrollBar",
+        "height": 30,
+        "name": "",
+        "node": "5604f1f88ec0",
+        "parent_node": "5604f1f89080",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QBoxLayout",
+        "name": "",
+        "node": "5604f1f89690",
+        "parent_node": "5604f1f89080"
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "qt_scrollarea_vcontainer",
+        "node": "5604f1f89de0",
+        "parent_node": "5604f1f7c130",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QScrollBar",
+        "height": 30,
+        "name": "",
+        "node": "5604f1f88e90",
+        "parent_node": "5604f1f89de0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QBoxLayout",
+        "name": "",
+        "node": "5604f1f8a440",
+        "parent_node": "5604f1f89de0"
+      },
+      {
+        "class": "QWidget",
+        "height": 505,
+        "name": "",
+        "node": "5604f1f8ecc0",
+        "parent_node": "5604f1f7c130",
+        "visible": true,
+        "width": 605
+      },
+      {
+        "class": "QScroller",
+        "name": "",
+        "node": "5604f1f595f0",
+        "parent_node": "5604f1f7c130"
+      },
+      {
+        "class": "KItemListSmoothScroller",
+        "name": "",
+        "node": "5604f1f551a0",
+        "parent_node": "5604f1f18c90"
+      },
+      {
+        "class": "QPropertyAnimation",
+        "name": "",
+        "node": "5604f1f55250",
+        "parent_node": "5604f1f551a0"
+      },
+      {
+        "class": "KItemListSmoothScroller",
+        "name": "",
+        "node": "5604f1f8f3f0",
+        "parent_node": "5604f1f18c90"
+      },
+      {
+        "class": "QPropertyAnimation",
+        "name": "",
+        "node": "5604f1f8f110",
+        "parent_node": "5604f1f8f3f0"
+      },
+      {
+        "class": "QVBoxLayout",
+        "name": "",
+        "node": "5604f1f92d20",
+        "parent_node": "5604f1f18c90"
+      },
+      {
+        "class": "QLabel",
+        "height": 30,
+        "name": "",
+        "node": "5604f1f91e80",
+        "parent_node": "5604f1f18c90",
+        "text": "Folder is empty",
+        "textFormat": "AutoText",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QGraphicsOpacityEffect",
+        "name": "",
+        "node": "5604f1f92340",
+        "opacity": 0.5,
+        "parent_node": "5604f1f91e80"
+      },
+      {
+        "class": "Breeze::FrameShadow",
+        "height": 480,
+        "name": "",
+        "node": "5604f1f76260",
+        "parent_node": "5604f1f18c90",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "Breeze::FrameShadow",
+        "height": 480,
+        "name": "",
+        "node": "5604f1f76ab0",
+        "parent_node": "5604f1f18c90",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1f91c40",
+        "parent_node": "5604f18898c0"
+      },
+      {
+        "class": "ToolTipManager",
+        "name": "",
+        "node": "5604f1f95210",
+        "parent_node": "5604f18898c0"
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1f952f0",
+        "parent_node": "5604f1f95210"
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1f95590",
+        "parent_node": "5604f1f95210"
+      },
+      {
+        "class": "VersionControlObserver",
+        "name": "",
+        "node": "5604f1f95910",
+        "parent_node": "5604f18898c0"
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1f95a10",
+        "parent_node": "5604f1f95910"
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1f96140",
+        "parent_node": "5604f18898c0"
+      },
+      {
+        "class": "DolphinStatusBar",
+        "height": 34,
+        "name": "",
+        "node": "5604f1f98d00",
+        "parent_node": "5604f1c1ac20",
+        "visible": true,
+        "width": 307
+      },
+      {
+        "class": "QGridLayout",
+        "name": "",
+        "node": "5604f1f9b5b0",
+        "parent_node": "5604f1f98d00"
+      },
+      {
+        "class": "QScrollArea",
+        "height": 34,
+        "name": "",
+        "node": "5604f1f9dd70",
+        "parent_node": "5604f1f98d00",
+        "visible": true,
+        "width": 307
+      },
+      {
+        "class": "QWidget",
+        "height": 34,
+        "name": "qt_scrollarea_viewport",
+        "node": "5604f1f9d050",
+        "parent_node": "5604f1f9dd70",
+        "visible": true,
+        "width": 307
+      },
+      {
+        "class": "QWidget",
+        "height": 34,
+        "name": "",
+        "node": "5604f1fa17c0",
+        "parent_node": "5604f1f9d050",
+        "visible": true,
+        "width": 307
+      },
+      {
+        "class": "KSqueezedTextLabel",
+        "height": 30,
+        "name": "",
+        "node": "5604f1fa23e0",
+        "parent_node": "5604f1fa17c0",
+        "text": "<b>TITLE-77331.txt (Plain text document, 559 B)",
+        "textFormat": "PlainText",
+        "visible": true,
+        "width": 295
+      },
+      {
+        "class": "QWidgetTextControl",
+        "name": "",
+        "node": "5604f21006a0",
+        "parent_node": "5604f1fa23e0"
+      },
+      {
+        "class": "QTextDocument",
+        "name": "",
+        "node": "5604f20d8010",
+        "parent_node": "5604f21006a0"
+      },
+      {
+        "class": "QTextDocumentLayout",
+        "name": "",
+        "node": "5604f20dde80",
+        "parent_node": "5604f20d8010"
+      },
+      {
+        "class": "QTextImageHandler",
+        "name": "",
+        "node": "5604f20ddf40",
+        "parent_node": "5604f20dde80"
+      },
+      {
+        "class": "QTextFrame",
+        "name": "",
+        "node": "5604f20ac970",
+        "parent_node": "5604f20d8010"
+      },
+      {
+        "class": "KSqueezedTextLabel",
+        "height": 30,
+        "name": "",
+        "node": "5604f1fa2420",
+        "parent_node": "5604f1fa17c0",
+        "text": "Zoom:",
+        "textFormat": "AutoText",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QSlider",
+        "height": 30,
+        "name": "",
+        "node": "5604f1fa2eb0",
+        "parent_node": "5604f1fa17c0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "StatusBarSpaceInfo",
+        "height": 30,
+        "name": "",
+        "node": "5604f1fa3c70",
+        "parent_node": "5604f1fa17c0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "KCapacityBar",
+        "height": 30,
+        "name": "",
+        "node": "5604f1fa28c0",
+        "parent_node": "5604f1fa3c70",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QToolButton",
+        "height": 30,
+        "name": "",
+        "node": "5604f1fa4220",
+        "parent_node": "5604f1fa3c70",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QHBoxLayout",
+        "name": "",
+        "node": "5604f1fa57f0",
+        "parent_node": "5604f1fa3c70"
+      },
+      {
+        "class": "QToolButton",
+        "height": 30,
+        "name": "",
+        "node": "5604f1fa5d90",
+        "parent_node": "5604f1fa17c0",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QLabel",
+        "height": 30,
+        "name": "",
+        "node": "5604f1fa64a0",
+        "parent_node": "5604f1fa17c0",
+        "text": "",
+        "textFormat": "AutoText",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QProgressBar",
+        "height": 20,
+        "name": "",
+        "node": "5604f1fa6500",
+        "parent_node": "5604f1fa17c0",
+        "text": "100%",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QHBoxLayout",
+        "name": "",
+        "node": "5604f1fa8300",
+        "parent_node": "5604f1fa17c0"
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "qt_scrollarea_hcontainer",
+        "node": "5604f1f9c030",
+        "parent_node": "5604f1f9dd70",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QScrollBar",
+        "height": 30,
+        "name": "",
+        "node": "5604f1f9d0b0",
+        "parent_node": "5604f1f9c030",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QBoxLayout",
+        "name": "",
+        "node": "5604f1f9d6c0",
+        "parent_node": "5604f1f9c030"
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "qt_scrollarea_vcontainer",
+        "node": "5604f1f9b6a0",
+        "parent_node": "5604f1f9dd70",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QScrollBar",
+        "height": 30,
+        "name": "",
+        "node": "5604f1f9d080",
+        "parent_node": "5604f1f9b6a0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QBoxLayout",
+        "name": "",
+        "node": "5604f1f9fe60",
+        "parent_node": "5604f1f9b6a0"
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1fa37b0",
+        "parent_node": "5604f1f98d00"
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1fa6c60",
+        "parent_node": "5604f1f98d00"
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1fa6ea0",
+        "parent_node": "5604f1f98d00"
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1fb01b0",
+        "parent_node": "5604f1c1ac20"
+      },
+      {
+        "class": "DolphinTabPageSplitterHandle",
+        "height": 30,
+        "name": "qt_splithandle_",
+        "node": "5604f1e638f0",
+        "parent_node": "5604f1e585d0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "DolphinTabBar",
+        "count": 1,
+        "currentIndex": 0,
+        "height": 1,
+        "name": "",
+        "node": "5604f1ade270",
+        "parent_node": "5604f1ab8850",
+        "visible": false,
+        "width": 0
+      },
+      {
+        "class": "CloseButton",
+        "height": 16,
+        "name": "",
+        "node": "5604f1fcb910",
+        "parent_node": "5604f1ade270",
+        "text": "",
+        "visible": false,
+        "width": 16
+      },
+      {
+        "class": "QToolButton",
+        "height": 16,
+        "name": "ScrollLeftButton",
+        "node": "5604f1ade300",
+        "parent_node": "5604f1ade270",
+        "text": "",
+        "visible": false,
+        "width": 16
+      },
+      {
+        "class": "QToolButton",
+        "height": 16,
+        "name": "ScrollRightButton",
+        "node": "5604f1aebd30",
+        "parent_node": "5604f1ade270",
+        "text": "",
+        "visible": false,
+        "width": 16
+      },
+      {
+        "class": "QObject",
+        "name": "",
+        "node": "5604f19f0820",
+        "parent_node": "5604f1ade270"
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1af6990",
+        "parent_node": "5604f1ade270"
+      },
+      {
+        "class": "QObject",
+        "name": "",
+        "node": "5604f19c1860",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "DolphinNewFileMenu",
+        "name": "new_menu",
+        "node": "5604f18bdec0",
+        "parent_node": "5604f18713a0",
+        "text": "Create New",
+        "visible": true
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1ad97c0",
+        "parent_node": "5604f18bdec0"
+      },
+      {
+        "class": "QActionGroup",
+        "name": "",
+        "node": "5604f1ad9890",
+        "parent_node": "5604f18bdec0",
+        "visible": true
+      },
+      {
+        "class": "DolphinRecentTabsMenu",
+        "name": "closed_tabs",
+        "node": "5604f185e330",
+        "parent_node": "5604f18713a0",
+        "text": "Recently Closed Tabs",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f18798b0",
+        "parent_node": "5604f185e330",
+        "text": "Empty Recently Closed Tabs",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f182cd40",
+        "parent_node": "5604f185e330",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "MiddleClickActionEventFilter",
+        "name": "",
+        "node": "5604f18c23c0",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "KActionMenu",
+        "name": "bookmarks",
+        "node": "5604f1ac2d50",
+        "parent_node": "5604f18713a0",
+        "text": "&Bookmarks",
+        "visible": true
+      },
+      {
+        "class": "DolphinBookmarkHandler",
+        "name": "",
+        "node": "5604f19ad7c0",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "KActionMenu",
+        "name": "",
+        "node": "5604f1838470",
+        "parent_node": "5604f18713a0",
+        "text": "Color Scheme",
+        "visible": true
+      },
+      {
+        "class": "QActionGroup",
+        "name": "",
+        "node": "5604f19cd940",
+        "parent_node": "5604f1838470",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1b16d80",
+        "parent_node": "5604f1838470",
+        "text": "Default",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f19b3e90",
+        "parent_node": "5604f1838470",
+        "text": "Breeze Classic",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1a01f70",
+        "parent_node": "5604f1838470",
+        "text": "Breeze Dark",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1b1a980",
+        "parent_node": "5604f1838470",
+        "text": "Breeze Light",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "window_color_sheme",
+        "node": "5604f19cdec0",
+        "parent_node": "5604f18713a0",
+        "text": "&Window Color Scheme",
+        "visible": true
+      },
+      {
+        "class": "KRecentFilesAction",
+        "name": "",
+        "node": "5604f19f5de0",
+        "parent_node": "5604f18713a0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "DolphinViewActionHandler",
+        "name": "",
+        "node": "5604f19b15b0",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "DolphinRemoteEncoding",
+        "name": "",
+        "node": "5604f1c55b00",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "KActionMenu",
+        "name": "change_remote_encoding",
+        "node": "5604f1c4b840",
+        "parent_node": "5604f1c55b00",
+        "text": "Select Remote Charset",
+        "visible": true
+      },
+      {
+        "class": "DisabledActionNotifier",
+        "name": "",
+        "node": "5604f1c4bc60",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "DolphinDockWidget",
+        "height": 30,
+        "name": "infoDock",
+        "node": "5604f1c4b080",
+        "parent_node": "5604f18713a0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QDockWidgetLayout",
+        "name": "",
+        "node": "5604f1c3f5a0",
+        "parent_node": "5604f1c4b080"
+      },
+      {
+        "class": "QDockWidgetTitleButton",
+        "height": 30,
+        "name": "qt_dockwidget_floatbutton",
+        "node": "5604f1c44270",
+        "parent_node": "5604f1c4b080",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QDockWidgetTitleButton",
+        "height": 30,
+        "name": "qt_dockwidget_closebutton",
+        "node": "5604f1c3f130",
+        "parent_node": "5604f1c4b080",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "show_information_panel",
+        "node": "5604f1c58ab0",
+        "parent_node": "5604f1c4b080",
+        "text": "Information",
+        "visible": true
+      },
+      {
+        "class": "DolphinDockTitleBar",
+        "height": 30,
+        "name": "",
+        "node": "5604f1d1e720",
+        "parent_node": "5604f1c4b080",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "InformationPanel",
+        "height": 30,
+        "name": "",
+        "node": "5604f1c19de0",
+        "parent_node": "5604f1c4b080",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "DolphinDockWidget",
+        "height": 480,
+        "name": "foldersDock",
+        "node": "5604f1d216a0",
+        "parent_node": "5604f18713a0",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QDockWidgetLayout",
+        "name": "",
+        "node": "5604f1d245b0",
+        "parent_node": "5604f1d216a0"
+      },
+      {
+        "class": "QDockWidgetTitleButton",
+        "height": 30,
+        "name": "qt_dockwidget_floatbutton",
+        "node": "5604f1d24920",
+        "parent_node": "5604f1d216a0",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QDockWidgetTitleButton",
+        "height": 30,
+        "name": "qt_dockwidget_closebutton",
+        "node": "5604f1d25620",
+        "parent_node": "5604f1d216a0",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "show_folders_panel",
+        "node": "5604f1d223b0",
+        "parent_node": "5604f1d216a0",
+        "text": "Folders",
+        "visible": true
+      },
+      {
+        "class": "DolphinDockTitleBar",
+        "height": 30,
+        "name": "",
+        "node": "5604f1d22790",
+        "parent_node": "5604f1d216a0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QWidgetResizeHandler",
+        "name": "",
+        "node": "5604f1d27ac0",
+        "parent_node": "5604f1d216a0"
+      },
+      {
+        "class": "FoldersPanel",
+        "height": 30,
+        "name": "",
+        "node": "5604f1d227c0",
+        "parent_node": "5604f1d216a0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "DolphinDockWidget",
+        "height": 480,
+        "name": "terminalDock",
+        "node": "5604f1d292a0",
+        "parent_node": "5604f18713a0",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QDockWidgetLayout",
+        "name": "",
+        "node": "5604f1d2ac20",
+        "parent_node": "5604f1d292a0"
+      },
+      {
+        "class": "QDockWidgetTitleButton",
+        "height": 30,
+        "name": "qt_dockwidget_floatbutton",
+        "node": "5604f1d2c200",
+        "parent_node": "5604f1d292a0",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QDockWidgetTitleButton",
+        "height": 30,
+        "name": "qt_dockwidget_closebutton",
+        "node": "5604f1d2b890",
+        "parent_node": "5604f1d292a0",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "show_terminal_panel",
+        "node": "5604f1d29bc0",
+        "parent_node": "5604f1d292a0",
+        "text": "Terminal",
+        "visible": true
+      },
+      {
+        "class": "DolphinDockTitleBar",
+        "height": 30,
+        "name": "",
+        "node": "5604f1d29fa0",
+        "parent_node": "5604f1d292a0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QWidgetResizeHandler",
+        "name": "",
+        "node": "5604f1d2e060",
+        "parent_node": "5604f1d292a0"
+      },
+      {
+        "class": "TerminalPanel",
+        "height": 30,
+        "name": "",
+        "node": "5604f1c4fa70",
+        "parent_node": "5604f1d292a0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QVBoxLayout",
+        "name": "",
+        "node": "5604f1d2e030",
+        "parent_node": "5604f1c4fa70"
+      },
+      {
+        "class": "DolphinDockWidget",
+        "height": 505,
+        "name": "placesDock",
+        "node": "5604f1d30540",
+        "parent_node": "5604f18713a0",
+        "visible": true,
+        "width": 154
+      },
+      {
+        "class": "QDockWidgetLayout",
+        "name": "",
+        "node": "5604f1d34040",
+        "parent_node": "5604f1d30540"
+      },
+      {
+        "class": "QDockWidgetTitleButton",
+        "height": 30,
+        "name": "qt_dockwidget_floatbutton",
+        "node": "5604f1d33a90",
+        "parent_node": "5604f1d30540",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QDockWidgetTitleButton",
+        "height": 30,
+        "name": "qt_dockwidget_closebutton",
+        "node": "5604f1d30ed0",
+        "parent_node": "5604f1d30540",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "show_places_panel",
+        "node": "5604f1d358b0",
+        "parent_node": "5604f1d30540",
+        "text": "&Places",
+        "visible": true
+      },
+      {
+        "class": "DolphinDockTitleBar",
+        "height": 0,
+        "name": "",
+        "node": "5604f1d35c90",
+        "parent_node": "5604f1d30540",
+        "visible": true,
+        "width": 154
+      },
+      {
+        "class": "QWidgetResizeHandler",
+        "name": "",
+        "node": "5604f1d36850",
+        "parent_node": "5604f1d30540"
+      },
+      {
+        "class": "PlacesPanel",
+        "height": 505,
+        "name": "",
+        "node": "5604f1d35cc0",
+        "parent_node": "5604f1d30540",
+        "visible": true,
+        "width": 154
+      },
+      {
+        "class": "QWidget",
+        "height": 505,
+        "name": "qt_scrollarea_viewport",
+        "node": "5604f1d31210",
+        "parent_node": "5604f1d35cc0",
+        "visible": true,
+        "width": 154
+      },
+      {
+        "class": "QScroller",
+        "name": "",
+        "node": "5604f1d3db80",
+        "parent_node": "5604f1d31210"
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "qt_scrollarea_hcontainer",
+        "node": "5604f1d37530",
+        "parent_node": "5604f1d35cc0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QScrollBar",
+        "height": 30,
+        "name": "",
+        "node": "5604f1d373a0",
+        "parent_node": "5604f1d37530",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QBoxLayout",
+        "name": "",
+        "node": "5604f1d37850",
+        "parent_node": "5604f1d37530"
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "qt_scrollarea_vcontainer",
+        "node": "5604f1d37f60",
+        "parent_node": "5604f1d35cc0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QScrollBar",
+        "height": 30,
+        "name": "",
+        "node": "5604f1d36820",
+        "parent_node": "5604f1d37f60",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QBoxLayout",
+        "name": "",
+        "node": "5604f1d38600",
+        "parent_node": "5604f1d37f60"
+      },
+      {
+        "class": "QStyledItemDelegate",
+        "name": "",
+        "node": "5604f1d3cc00",
+        "parent_node": "5604f1d35cc0"
+      },
+      {
+        "class": "KFilePlacesEventWatcher",
+        "name": "",
+        "node": "5604f1d3d2e0",
+        "parent_node": "5604f1d35cc0"
+      },
+      {
+        "class": "QRubberBand",
+        "height": 30,
+        "name": "",
+        "node": "5604f1d3d3c0",
+        "parent_node": "5604f1d35cc0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "KFilePlacesViewDelegate",
+        "name": "",
+        "node": "5604f1d3d480",
+        "parent_node": "5604f1d35cc0"
+      },
+      {
+        "class": "QItemSelectionModel",
+        "currentIndex": null,
+        "model": null,
+        "name": "",
+        "node": "5604f1867950",
+        "parent_node": "5604f1d35cc0"
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1d46880",
+        "parent_node": "5604f18713a0",
+        "text": "Show Hidden Places",
+        "visible": true
+      },
+      {
+        "class": "KActionMenu",
+        "name": "panels",
+        "node": "5604f1d4a010",
+        "parent_node": "5604f18713a0",
+        "text": "Show Panels",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1bf6be0",
+        "parent_node": "5604f1d4a010",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1bf73b0",
+        "parent_node": "5604f1d4a010",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "ServiceMenuShortcutManager",
+        "name": "",
+        "node": "5604f1d4a850",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "KFileItemActions",
+        "name": "",
+        "node": "5604f1d4c540",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "QAction",
+        "name": "servicemenu_konsolerun.desktop::runInKonsole",
+        "node": "5604f1d4c9c0",
+        "parent_node": "5604f1d4c540",
+        "text": "Run In Konsole",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "servicemenu_installfont.desktop::installFont",
+        "node": "5604f1d476f0",
+        "parent_node": "5604f1d4c540",
+        "text": "Install...",
+        "visible": true
+      },
+      {
+        "class": "KDEPrivate::ToolBarHandler",
+        "name": "",
+        "node": "5604f1d4eeb0",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "KXMLGUIFactory",
+        "name": "",
+        "node": "5604f1d477c0",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "QMenuBar",
+        "height": 0,
+        "name": "",
+        "node": "5604f1d533f0",
+        "parent_node": "5604f18713a0",
+        "visible": false,
+        "width": 760
+      },
+      {
+        "class": "QToolButton",
+        "height": 30,
+        "name": "qt_menubar_ext_button",
+        "node": "5604f1d53420",
+        "parent_node": "5604f1d533f0",
+        "text": "",
+        "visible": false,
+        "width": 28
+      },
+      {
+        "class": "QMenu",
+        "height": 30,
+        "name": "file",
+        "node": "5604f1dbb4d0",
+        "parent_node": "5604f1d533f0",
+        "title": "&File",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "file",
+        "node": "5604f19d3060",
+        "parent_node": "5604f1dbb4d0",
+        "text": "&File",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1b14eb0",
+        "parent_node": "5604f1dbb4d0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1aae260",
+        "parent_node": "5604f1dbb4d0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1dfdde0",
+        "parent_node": "5604f1dbb4d0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1b0d680",
+        "parent_node": "5604f1dbb4d0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1870ad0",
+        "parent_node": "5604f1dbb4d0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f19bcc20",
+        "parent_node": "5604f1dbb4d0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f19cdcf0",
+        "parent_node": "5604f1dbb4d0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 30,
+        "name": "go",
+        "node": "5604f1d9ac70",
+        "parent_node": "5604f1d533f0",
+        "title": "&Go",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "go",
+        "node": "5604f1d9b770",
+        "parent_node": "5604f1d9ac70",
+        "text": "&Go",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1d94920",
+        "parent_node": "5604f1d9ac70",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1b0d210",
+        "parent_node": "5604f1d533f0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "KHelpMenu",
+        "name": "",
+        "node": "5604f1d9a090",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "QAction",
+        "name": "help_contents",
+        "node": "5604f1d96660",
+        "parent_node": "5604f1d9a090",
+        "text": "Dolphin &Handbook",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "help_whats_this",
+        "node": "5604f1d96a60",
+        "parent_node": "5604f1d9a090",
+        "text": "What's &This?",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "help_report_bug",
+        "node": "5604f1d9aa10",
+        "parent_node": "5604f1d9a090",
+        "text": "&Report Bug\u2026",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "help_donate",
+        "node": "5604f1d9afb0",
+        "parent_node": "5604f1d9a090",
+        "text": "&Donate",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "switch_application_language",
+        "node": "5604f1d9b4c0",
+        "parent_node": "5604f1d9a090",
+        "text": "Configure &Language\u2026",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "help_about_app",
+        "node": "5604f1d9b9f0",
+        "parent_node": "5604f1d9a090",
+        "text": "&About Dolphin",
+        "visible": true
+      },
+      {
+        "class": "QAction",
+        "name": "help_about_kde",
+        "node": "5604f1d9be90",
+        "parent_node": "5604f1d9a090",
+        "text": "About &KDE",
+        "visible": true
+      },
+      {
+        "class": "KToolBar",
+        "height": 46,
+        "name": "mainToolBar",
+        "node": "5604f1e05b90",
+        "parent_node": "5604f18713a0",
+        "visible": true,
+        "width": 760
+      },
+      {
+        "class": "QToolBarLayout",
+        "name": "",
+        "node": "5604f1db7e50",
+        "parent_node": "5604f1e05b90"
+      },
+      {
+        "class": "QToolBarExtension",
+        "height": 30,
+        "name": "qt_toolbar_ext_button",
+        "node": "5604f1dda270",
+        "parent_node": "5604f1e05b90",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1ae76a0",
+        "parent_node": "5604f1e05b90",
+        "text": "Main Toolbar",
+        "visible": true
+      },
+      {
+        "class": "QToolButton",
+        "height": 34,
+        "name": "",
+        "node": "5604f1dac320",
+        "parent_node": "5604f1e05b90",
+        "text": "&Back",
+        "visible": true,
+        "width": 34
+      },
+      {
+        "class": "QToolButton",
+        "height": 34,
+        "name": "",
+        "node": "5604f1dda390",
+        "parent_node": "5604f1e05b90",
+        "text": "&Forward",
+        "visible": true,
+        "width": 34
+      },
+      {
+        "class": "QToolButton",
+        "height": 34,
+        "name": "",
+        "node": "5604f1ddb080",
+        "parent_node": "5604f1e05b90",
+        "text": "&View Settings",
+        "visible": true,
+        "width": 54
+      },
+      {
+        "class": "QSplitter",
+        "height": 34,
+        "name": "",
+        "node": "5604f1805160",
+        "parent_node": "5604f1e05b90",
+        "visible": true,
+        "width": 487
+      },
+      {
+        "class": "QWidget",
+        "height": 34,
+        "name": "",
+        "node": "5604f18249d0",
+        "parent_node": "5604f1805160",
+        "visible": true,
+        "width": 487
+      },
+      {
+        "class": "QHBoxLayout",
+        "name": "",
+        "node": "5604f1826890",
+        "parent_node": "5604f18249d0"
+      },
+      {
+        "class": "QWidget",
+        "height": 34,
+        "name": "",
+        "node": "5604f182fe70",
+        "parent_node": "5604f18249d0",
+        "visible": true,
+        "width": 27
+      },
+      {
+        "class": "DolphinUrlNavigator",
+        "height": 32,
+        "name": "",
+        "node": "5604f182dfa0",
+        "parent_node": "5604f18249d0",
+        "visible": true,
+        "width": 460
+      },
+      {
+        "class": "QHBoxLayout",
+        "name": "",
+        "node": "5604f1883c00",
+        "parent_node": "5604f182dfa0"
+      },
+      {
+        "class": "KCoreUrlNavigator",
+        "name": "",
+        "node": "5604f18ab610",
+        "parent_node": "5604f182dfa0"
+      },
+      {
+        "class": "KDEPrivate::KUrlNavigatorPlacesSelector",
+        "height": 30,
+        "name": "",
+        "node": "5604f1879ac0",
+        "parent_node": "5604f182dfa0",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "KDEPrivate::KUrlNavigatorSchemeCombo",
+        "height": 30,
+        "name": "",
+        "node": "5604f18433f0",
+        "parent_node": "5604f182dfa0",
+        "text": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QMenu",
+        "height": 30,
+        "name": "",
+        "node": "5604f18b7b20",
+        "parent_node": "5604f18433f0",
+        "title": "",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f186ac50",
+        "parent_node": "5604f18b7b20",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "KDEPrivate::KUrlNavigatorDropDownButton",
+        "height": 32,
+        "name": "",
+        "node": "5604f18673d0",
+        "parent_node": "5604f182dfa0",
+        "text": "Go to Location on Path",
+        "visible": false,
+        "width": 17
+      },
+      {
+        "class": "KUrlComboBox",
+        "count": 0,
+        "currentIndex": -1,
+        "height": 30,
+        "name": "",
+        "node": "5604f1839700",
+        "parent_node": "5604f182dfa0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QStandardItemModel",
+        "name": "",
+        "node": "5604f18b31b0",
+        "parent_node": "5604f1839700"
+      },
+      {
+        "class": "KLineEdit",
+        "displayText": "",
+        "height": 18,
+        "name": "",
+        "node": "5604f1863420",
+        "parent_node": "5604f1839700",
+        "text": "",
+        "visible": false,
+        "width": 74
+      },
+      {
+        "class": "QWidgetLineControl",
+        "name": "",
+        "node": "5604f18453c0",
+        "parent_node": "5604f1863420"
+      },
+      {
+        "class": "KLineEditUrlDropEventFilter",
+        "name": "",
+        "node": "5604f183e660",
+        "parent_node": "5604f1863420"
+      },
+      {
+        "class": "QAction",
+        "name": "_q_qlineeditclearaction",
+        "node": "5604f183ea40",
+        "parent_node": "5604f1863420",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QLineEditIconButton",
+        "height": 18,
+        "name": "",
+        "node": "5604f18aa7e0",
+        "opacity": 0,
+        "parent_node": "5604f1863420",
+        "text": "",
+        "visible": false,
+        "width": 22
+      },
+      {
+        "class": "QWidget",
+        "height": 32,
+        "name": "",
+        "node": "5604f19e6010",
+        "parent_node": "5604f182dfa0",
+        "visible": true,
+        "width": 6
+      },
+      {
+        "class": "QHBoxLayout",
+        "name": "",
+        "node": "5604f19e60d0",
+        "parent_node": "5604f19e6010"
+      },
+      {
+        "class": "QLabel",
+        "height": 480,
+        "name": "",
+        "node": "5604f19d3a90",
+        "parent_node": "5604f19e6010",
+        "text": "",
+        "textFormat": "AutoText",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "KDEPrivate::KUrlNavigatorToggleButton",
+        "height": 32,
+        "name": "",
+        "node": "5604f18494f0",
+        "parent_node": "5604f182dfa0",
+        "text": "",
+        "visible": true,
+        "width": 249
+      },
+      {
+        "class": "KDEPrivate::KUrlNavigatorButton",
+        "height": 32,
+        "name": "",
+        "node": "5604f1f99cf0",
+        "parent_node": "5604f182dfa0",
+        "text": "/",
+        "visible": true,
+        "width": 31
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1fc8f00",
+        "parent_node": "5604f1f99cf0"
+      },
+      {
+        "class": "KDEPrivate::KUrlNavigatorButton",
+        "height": 32,
+        "name": "",
+        "node": "5604f1fc21e0",
+        "parent_node": "5604f182dfa0",
+        "text": "&tmp",
+        "visible": true,
+        "width": 51
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1fc7610",
+        "parent_node": "5604f1fc21e0"
+      },
+      {
+        "class": "KDEPrivate::KUrlNavigatorButton",
+        "height": 32,
+        "name": "",
+        "node": "5604f1f9abd0",
+        "parent_node": "5604f182dfa0",
+        "text": "&work",
+        "visible": true,
+        "width": 57
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1fc99b0",
+        "parent_node": "5604f1f9abd0"
+      },
+      {
+        "class": "KDEPrivate::KUrlNavigatorButton",
+        "height": 32,
+        "name": "",
+        "node": "5604f1f9a660",
+        "parent_node": "5604f182dfa0",
+        "text": "&corpus",
+        "visible": true,
+        "width": 54
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1fcb950",
+        "parent_node": "5604f1f9a660"
+      },
+      {
+        "class": "QPushButton",
+        "height": 30,
+        "name": "",
+        "node": "5604f1bc4c00",
+        "parent_node": "5604f18249d0",
+        "text": "Empty Trash",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QPushButton",
+        "height": 30,
+        "name": "",
+        "node": "5604f1aa2f80",
+        "parent_node": "5604f18249d0",
+        "text": "Add Network Folder",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QPushButton",
+        "height": 30,
+        "name": "KdeConnectButton",
+        "node": "5604f1accdb0",
+        "parent_node": "5604f18249d0",
+        "text": "Open KDE Connect",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QWidget",
+        "height": 34,
+        "name": "",
+        "node": "5604f1aa7820",
+        "parent_node": "5604f18249d0",
+        "visible": true,
+        "width": 0
+      },
+      {
+        "class": "QSplitterHandle",
+        "height": 30,
+        "name": "qt_splithandle_",
+        "node": "5604f1826930",
+        "parent_node": "5604f1805160",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QToolButton",
+        "height": 34,
+        "name": "",
+        "node": "5604f1dcff20",
+        "parent_node": "5604f1e05b90",
+        "text": "&Split",
+        "visible": true,
+        "width": 71
+      },
+      {
+        "class": "QToolButton",
+        "height": 30,
+        "name": "",
+        "node": "5604f1deb600",
+        "parent_node": "5604f1e05b90",
+        "text": "Stash",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QToolButton",
+        "height": 34,
+        "name": "",
+        "node": "5604f1dec020",
+        "parent_node": "5604f1e05b90",
+        "text": "S&earch",
+        "visible": true,
+        "width": 34
+      },
+      {
+        "class": "QToolButton",
+        "height": 34,
+        "name": "",
+        "node": "5604f1da6570",
+        "parent_node": "5604f1e05b90",
+        "text": "&Open Menu",
+        "visible": true,
+        "width": 34
+      },
+      {
+        "class": "Breeze::SplitterProxy",
+        "height": 30,
+        "name": "",
+        "node": "5604f1dc3250",
+        "parent_node": "5604f18713a0",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1e57920",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "MiddleClickActionEventFilter",
+        "name": "",
+        "node": "5604f1e58090",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "5604f1e56cf0",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "QTimer",
+        "name": "",
+        "node": "7fe03800e410",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "QFutureWatcherBase",
+        "name": "",
+        "node": "5604f1fdeba0",
+        "parent_node": "5604f18713a0"
+      },
+      {
+        "class": "QWidget",
+        "height": 509,
+        "name": "qt_qmainwindow_extended_splitter",
+        "node": "5604f1e0ca90",
+        "parent_node": "5604f18713a0",
+        "visible": true,
+        "width": 5
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f19f8010",
+        "parent_node": "0",
+        "title": "&Window Color Scheme",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f19cd920",
+        "parent_node": "5604f19f8010",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1c0a450",
+        "parent_node": "0",
+        "title": "Audio",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1c0aa90",
+        "parent_node": "5604f1c0a450",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1b1e480",
+        "parent_node": "0",
+        "title": "Image",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f19cf6a0",
+        "parent_node": "5604f1b1e480",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1d4ccc0",
+        "parent_node": "0",
+        "title": "Show Panels",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1d4a050",
+        "parent_node": "5604f1d4ccc0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1c2c630",
+        "parent_node": "0",
+        "title": "Audio",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1c2cda0",
+        "parent_node": "5604f1c2c630",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1b03600",
+        "parent_node": "0",
+        "title": "View Settings",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1c1d160",
+        "parent_node": "5604f1b03600",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "",
+        "node": "5604f1aa8670",
+        "parent_node": "5604f1b03600",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QHBoxLayout",
+        "name": "",
+        "node": "5604f1aa86a0",
+        "parent_node": "5604f1aa8670"
+      },
+      {
+        "class": "QToolButton",
+        "height": 25,
+        "name": "",
+        "node": "5604f1aa8920",
+        "parent_node": "5604f1aa8670",
+        "text": "Zoom Out",
+        "visible": false,
+        "width": 25
+      },
+      {
+        "class": "QToolButton",
+        "height": 25,
+        "name": "",
+        "node": "5604f1c3f170",
+        "parent_node": "5604f1aa8670",
+        "text": "Reset Zoom Level",
+        "visible": false,
+        "width": 25
+      },
+      {
+        "class": "QToolButton",
+        "height": 25,
+        "name": "",
+        "node": "5604f1aa8860",
+        "parent_node": "5604f1aa8670",
+        "text": "Zoom In",
+        "visible": false,
+        "width": 25
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "",
+        "node": "5604f1c4c170",
+        "parent_node": "5604f1b03600",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QWidget",
+        "height": 30,
+        "name": "",
+        "node": "5604f1c58100",
+        "parent_node": "5604f1b03600",
+        "visible": false,
+        "width": 100
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f19fdfd0",
+        "parent_node": "0",
+        "title": "Video",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f19f6150",
+        "parent_node": "5604f19fdfd0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1c370c0",
+        "parent_node": "0",
+        "title": "Other",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1c37700",
+        "parent_node": "5604f1c370c0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f19ba0a0",
+        "parent_node": "0",
+        "title": "Actions for \"<b>TITLE-77331.txt\"",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1b0e750",
+        "parent_node": "5604f19ba0a0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1c030f0",
+        "parent_node": "0",
+        "title": "Document",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1c03730",
+        "parent_node": "5604f1c030f0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1aab340",
+        "parent_node": "0",
+        "title": "&Bookmarks",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1b143a0",
+        "parent_node": "5604f1aab340",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1b248b0",
+        "parent_node": "0",
+        "title": "Other",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1b248e0",
+        "parent_node": "5604f1b248b0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1c25280",
+        "parent_node": "0",
+        "title": "Document",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1c258c0",
+        "parent_node": "5604f1c25280",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f181e0e0",
+        "parent_node": "0",
+        "title": "Add to Toolbar",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1873c80",
+        "parent_node": "5604f181e0e0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1af5db0",
+        "parent_node": "0",
+        "title": "",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f18ba250",
+        "parent_node": "5604f1af5db0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1b09d80",
+        "parent_node": "0",
+        "title": "Group By",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1b29940",
+        "parent_node": "5604f1b09d80",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1afb9d0",
+        "parent_node": "0",
+        "title": "",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1b34430",
+        "parent_node": "5604f1afb9d0",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1c0e660",
+        "parent_node": "0",
+        "title": "Video",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1c0f520",
+        "parent_node": "5604f1c0e660",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f1ab5e90",
+        "parent_node": "0",
+        "title": "Audio",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f1b00740",
+        "parent_node": "5604f1ab5e90",
+        "text": "",
+        "visible": true
+      },
+      {
+        "class": "QMenu",
+        "height": 480,
+        "name": "",
+        "node": "5604f19b7f00",
+        "parent_node": "0",
+        "title": "Recently Closed Tabs",
+        "visible": false,
+        "width": 640
+      },
+      {
+        "class": "QAction",
+        "name": "",
+        "node": "5604f18b4b50",
+        "parent_node": "5604f19b7f00",
+        "text": "",
+        "visible": true
+      }
+    ],
+    "pid": 183,
+    "loaded_relevant_maps": [
+      "7fe040b61000-7fe040b76000 r--p 00000000 00:1c 1632651                    /usr/lib/qt6/plugins/platformthemes/KDEPlasmaPlatformTheme6.so",
+      "7fe040b76000-7fe040ba8000 r-xp 00015000 00:1c 1632651                    /usr/lib/qt6/plugins/platformthemes/KDEPlasmaPlatformTheme6.so",
+      "7fe040ba8000-7fe040bb3000 r--p 00047000 00:1c 1632651                    /usr/lib/qt6/plugins/platformthemes/KDEPlasmaPlatformTheme6.so",
+      "7fe040bb3000-7fe040bb7000 r--p 00052000 00:1c 1632651                    /usr/lib/qt6/plugins/platformthemes/KDEPlasmaPlatformTheme6.so",
+      "7fe040bb7000-7fe040bb8000 rw-p 00056000 00:1c 1632651                    /usr/lib/qt6/plugins/platformthemes/KDEPlasmaPlatformTheme6.so",
+      "7fe04ba22000-7fe04ba8e000 r--p 00000000 00:1c 1619513                    /usr/lib/libdolphinprivate.so.26.08.2",
+      "7fe04ba8e000-7fe04bb99000 r-xp 0006c000 00:1c 1619513                    /usr/lib/libdolphinprivate.so.26.08.2",
+      "7fe04bb99000-7fe04bbce000 r--p 00177000 00:1c 1619513                    /usr/lib/libdolphinprivate.so.26.08.2",
+      "7fe04bbce000-7fe04bbdf000 r--p 001ab000 00:1c 1619513                    /usr/lib/libdolphinprivate.so.26.08.2",
+      "7fe04bbdf000-7fe04bbe2000 rw-p 001bc000 00:1c 1619513                    /usr/lib/libdolphinprivate.so.26.08.2"
+    ],
+    "observer_monotonic_ns": 34494677814255
+  }
+}

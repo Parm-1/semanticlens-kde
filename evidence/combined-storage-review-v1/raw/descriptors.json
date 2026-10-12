@@ -1,0 +1,13 @@
+{
+    "current_digest": "14091d89c5531d45201e53642881015b397359d4cb621df7cfbfe96c57eac8ce",
+    "held_after_rename_digest": "acacbe6e2babeeafd7ecf1871c7752dcb1e7c00c586b105e7f985a1731cd1fc0",
+    "held_body": "HELD-ORIGINAL-44231 actual descriptor source",
+    "held_digest": "acacbe6e2babeeafd7ecf1871c7752dcb1e7c00c586b105e7f985a1731cd1fc0",
+    "in_place_change_changes_held_digest": true,
+    "mutated_held_digest": "ed817d004143342e9bae8f95d26dd0feb6d26a11ce0377d2745c560eea0c966b",
+    "original_inode": 8309950,
+    "rename_preserves_held_source": true,
+    "replacement_body": "REPLACEMENT-87319 distinct new inode source",
+    "replacement_inode": 8309966,
+    "replacement_re_resolution_has_different_inode": true
+}

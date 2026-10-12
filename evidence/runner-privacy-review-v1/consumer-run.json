@@ -1,0 +1,10 @@
+{
+  "exit": 0,
+  "elapsed_ns": 1663825127,
+  "clock": "time.monotonic_ns outer wrapper; includes setup/Qt/namespace/closure",
+  "binary_sha256": "76e25194263dadc5c71cbacf0aaa74102590d017c06da648216cadb28ac37855",
+  "input_sha256": "84e71cc56bdeeefef033296400677dec4b2f2591fd81e2555ccb466c8b518d63",
+  "private_pid_network_namespace": true,
+  "wayland_used": false,
+  "closure": "outer bwrap process returned; PID namespace teardown closes all namespace children"
+}

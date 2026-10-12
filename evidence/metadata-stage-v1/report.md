@@ -1,0 +1,9 @@
+# Candidate metainfo staging v1
+
+AppStream's first offline validation reported a missing homepage (warning), content rating and developer information. The prepared candidate adds proposed homepage https://github.com/Parm-1/kde-index, KDE Index contributors and OARS1.1; offline validation now succeeds. This proposed repository does not exist by this report's authority and public identity/publication remain user decisions. No public action occurred.
+
+The existing clean code build5beaca is preserved. CMake actually stages to a NEW owned public-stage-v3/stage using its unchanged install script and a read-only binding of the updated metainfo. Source/build are read-only and the install manifest redirects to a new receipt. Exactly21 installed payload files result; twenty runtime/notices including every executable and the KRunner module byte-match tested public-clean-v2. Only metainfo changes, matching current source exactly.
+
+The original harness passed actual CMake exit0 and unchanged-original-manifest checks, then its final check incorrectly expected DESTDIR in CMake's manifest. The actual manifest records /usr paths. A linked check-only r3 validates that declared prefix and all actual staged bytes without rerunning or pretending to rerun installation. An unsealed intermediate local checker was superseded because its placeholder return-code object could be mistaken for a fresh process result; it is not evidence and no simulated result is claimed. Original failed setup and pure final checker are retained. Native runtime tests and producer parity apply through identical executable bytes; the metainfo has separate syntax validation.
+
+No host or bootstrap /usr installation, runtime/model/index/private-source changes. Current stage is local candidate preparation; final source assembly and publication approval remain pending. No live staging/validator process. Whole-package usage/elapsed unknown.

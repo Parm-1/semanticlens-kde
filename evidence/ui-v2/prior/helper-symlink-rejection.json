@@ -1,0 +1,2066 @@
+{
+    "events": [
+        {
+            "check": true,
+            "event": "real-engine-start"
+        },
+        {
+            "check": true,
+            "event": "relay-listens"
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-1",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-1",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                },
+                "index_revision": 0,
+                "indexed": 0,
+                "model_ready": false,
+                "paused": false,
+                "phase": "verifying",
+                "progress": 0,
+                "ready": false,
+                "recovery_attempt": 1,
+                "roots": [
+                ],
+                "segments": 0,
+                "total": 0,
+                "watch_error": ""
+            }
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-2",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-2",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 0,
+                "indexed": 0,
+                "model_ready": true,
+                "paused": false,
+                "phase": "ready",
+                "progress": 0,
+                "ready": true,
+                "recovery_attempt": 1,
+                "roots": [
+                ],
+                "segments": 0,
+                "total": 0,
+                "watch_error": ""
+            }
+        },
+        {
+            "check": true,
+            "children": [
+                "660705"
+            ],
+            "connected": true,
+            "event": "backend-real-ready",
+            "message": "Ready",
+            "ready": true,
+            "results": [
+            ],
+            "roots": [
+            ]
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-3",
+            "op": "add_root",
+            "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus"
+        },
+        {
+            "accepted": true,
+            "event": "actual-service-reply",
+            "id": "ui-3",
+            "ok": true,
+            "protocol": 1
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-4",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-4",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": true,
+                "current": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus/source.txt",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 0,
+                "indexed": 0,
+                "model_ready": true,
+                "paused": false,
+                "phase": "ready",
+                "progress": 0,
+                "ready": true,
+                "recovery_attempt": 1,
+                "roots": [
+                    {
+                        "exclusions": [
+                        ],
+                        "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus"
+                    }
+                ],
+                "segments": 0,
+                "total": 1,
+                "watch_error": ""
+            }
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-5",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-5",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 1,
+                "indexed": 1,
+                "model_ready": true,
+                "paused": false,
+                "phase": "ready",
+                "progress": 1,
+                "ready": true,
+                "recovery_attempt": 1,
+                "roots": [
+                    {
+                        "exclusions": [
+                        ],
+                        "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus"
+                    }
+                ],
+                "segments": 1,
+                "total": 1,
+                "watch_error": ""
+            }
+        },
+        {
+            "check": true,
+            "children": [
+                "660705"
+            ],
+            "connected": true,
+            "event": "root-real-indexed",
+            "message": "Ready",
+            "ready": true,
+            "results": [
+            ],
+            "roots": [
+                {
+                    "exclusions": [
+                    ],
+                    "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus"
+                }
+            ]
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-6",
+            "kind": "",
+            "limit": 20,
+            "op": "search",
+            "text": "RECOVERY-7491"
+        },
+        {
+            "event": "actual-service-reply",
+            "generation": 2,
+            "id": "ui-6",
+            "identity": {
+                "backend": "CPU",
+                "byte_order": "little",
+                "dimension": 768,
+                "dtype": "float32",
+                "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                "extractors": {
+                    "pdfinfo": "pdfinfo version 26.05.0",
+                    "pdftoppm": "pdftoppm version 26.05.0",
+                    "pdftotext": "pdftotext version 26.08.0",
+                    "tesseract": "tesseract 5.5.3"
+                },
+                "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                "max_tokens": 2048,
+                "model": "google/embeddinggemma-2",
+                "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                "pipeline": "digup-vectors1-linux-cpu-probe1",
+                "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                "representation": 3,
+                "runtime": "llama.cpp-b11461+no-logits",
+                "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+            },
+            "index_revision": 1,
+            "ok": true,
+            "protocol": 1,
+            "results": [
+                {
+                    "exact": true,
+                    "kind": "text",
+                    "match_scope": "text",
+                    "match_type": "literal",
+                    "page": 0,
+                    "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus/source.txt",
+                    "score": 1,
+                    "semantic_score": 0.7926288918459239,
+                    "term_match": true,
+                    "text": "RECOVERY-7491 actual normal text content",
+                    "title": "source.txt",
+                    "warning": ""
+                }
+            ]
+        },
+        {
+            "check": true,
+            "children": [
+                "660705"
+            ],
+            "connected": true,
+            "event": "normal-text-positive",
+            "message": "Ready",
+            "ready": true,
+            "results": [
+                {
+                    "exact": true,
+                    "kind": "text",
+                    "match_scope": "text",
+                    "match_type": "literal",
+                    "page": 0,
+                    "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus/source.txt",
+                    "score": 1,
+                    "semantic_score": 0.7926288918459239,
+                    "term_match": true,
+                    "text": "RECOVERY-7491 actual normal text content",
+                    "title": "source.txt",
+                    "warning": ""
+                }
+            ],
+            "roots": [
+                {
+                    "exclusions": [
+                    ],
+                    "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus"
+                }
+            ]
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-7",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-7",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 1,
+                "indexed": 1,
+                "model_ready": true,
+                "paused": false,
+                "phase": "ready",
+                "progress": 1,
+                "ready": true,
+                "recovery_attempt": 1,
+                "roots": [
+                    {
+                        "exclusions": [
+                        ],
+                        "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus"
+                    }
+                ],
+                "segments": 1,
+                "total": 1,
+                "watch_error": ""
+            }
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-8",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-8",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 1,
+                "indexed": 1,
+                "model_ready": true,
+                "paused": false,
+                "phase": "ready",
+                "progress": 1,
+                "ready": true,
+                "recovery_attempt": 1,
+                "roots": [
+                    {
+                        "exclusions": [
+                        ],
+                        "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus"
+                    }
+                ],
+                "segments": 1,
+                "total": 1,
+                "watch_error": ""
+            }
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-9",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-9",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 1,
+                "indexed": 1,
+                "model_ready": true,
+                "paused": false,
+                "phase": "ready",
+                "progress": 1,
+                "ready": true,
+                "recovery_attempt": 1,
+                "roots": [
+                    {
+                        "exclusions": [
+                        ],
+                        "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus"
+                    }
+                ],
+                "segments": 1,
+                "total": 1,
+                "watch_error": ""
+            }
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-10",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-10",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 1,
+                "indexed": 1,
+                "model_ready": true,
+                "paused": false,
+                "phase": "ready",
+                "progress": 1,
+                "ready": true,
+                "recovery_attempt": 1,
+                "roots": [
+                    {
+                        "exclusions": [
+                        ],
+                        "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus"
+                    }
+                ],
+                "segments": 1,
+                "total": 1,
+                "watch_error": ""
+            }
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-11",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-11",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 1,
+                "indexed": 1,
+                "model_ready": true,
+                "paused": false,
+                "phase": "ready",
+                "progress": 1,
+                "ready": true,
+                "recovery_attempt": 1,
+                "roots": [
+                    {
+                        "exclusions": [
+                        ],
+                        "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus"
+                    }
+                ],
+                "segments": 1,
+                "total": 1,
+                "watch_error": ""
+            }
+        },
+        {
+            "check": true,
+            "children": [
+            ],
+            "connected": true,
+            "event": "actual-heavy-worker-idle-exit",
+            "message": "Ready",
+            "ready": true,
+            "results": [
+                {
+                    "exact": true,
+                    "kind": "text",
+                    "match_scope": "text",
+                    "match_type": "literal",
+                    "page": 0,
+                    "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus/source.txt",
+                    "score": 1,
+                    "semantic_score": 0.7926288918459239,
+                    "term_match": true,
+                    "text": "RECOVERY-7491 actual normal text content",
+                    "title": "source.txt",
+                    "warning": ""
+                }
+            ],
+            "roots": [
+                {
+                    "exclusions": [
+                    ],
+                    "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus"
+                }
+            ]
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-12",
+            "kind": "",
+            "limit": 20,
+            "op": "search",
+            "text": "RECOVERY-7491 changed"
+        },
+        {
+            "error": "model byte size mismatch",
+            "event": "actual-service-reply",
+            "id": "ui-12",
+            "ok": false,
+            "protocol": 1
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-13",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-13",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "model byte size mismatch",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 1,
+                "indexed": 1,
+                "model_ready": false,
+                "paused": false,
+                "phase": "failed",
+                "progress": 1,
+                "ready": false,
+                "recovery_attempt": 1,
+                "roots": [
+                    {
+                        "exclusions": [
+                        ],
+                        "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus"
+                    }
+                ],
+                "segments": 1,
+                "total": 1,
+                "watch_error": ""
+            }
+        },
+        {
+            "check": true,
+            "children": [
+            ],
+            "connected": true,
+            "event": "real-reload-failure-visible",
+            "message": "model byte size mismatch",
+            "ready": false,
+            "results": [
+            ],
+            "roots": [
+                {
+                    "exclusions": [
+                    ],
+                    "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus"
+                }
+            ]
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-14",
+            "op": "scan"
+        },
+        {
+            "error": "model byte size mismatch",
+            "event": "actual-service-reply",
+            "id": "ui-14",
+            "ok": false,
+            "protocol": 1
+        },
+        {
+            "check": true,
+            "children": [
+            ],
+            "connected": true,
+            "event": "invalid-compatible-retry-remains-closed",
+            "message": "model byte size mismatch",
+            "ready": false,
+            "results": [
+            ],
+            "roots": [
+                {
+                    "exclusions": [
+                    ],
+                    "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus"
+                }
+            ]
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-15",
+            "op": "scan"
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-16",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-16",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 1,
+                "indexed": 1,
+                "model_ready": false,
+                "paused": false,
+                "phase": "verifying",
+                "progress": 1,
+                "ready": false,
+                "recovery_attempt": 3,
+                "roots": [
+                    {
+                        "exclusions": [
+                        ],
+                        "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus"
+                    }
+                ],
+                "segments": 1,
+                "total": 1,
+                "watch_error": ""
+            }
+        },
+        {
+            "accepted": true,
+            "event": "actual-service-reply",
+            "id": "ui-15",
+            "ok": true,
+            "protocol": 1
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-17",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-17",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 1,
+                "indexed": 1,
+                "model_ready": true,
+                "paused": false,
+                "phase": "ready",
+                "progress": 1,
+                "ready": true,
+                "recovery_attempt": 3,
+                "roots": [
+                    {
+                        "exclusions": [
+                        ],
+                        "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus"
+                    }
+                ],
+                "segments": 1,
+                "total": 1,
+                "watch_error": ""
+            }
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-18",
+            "kind": "",
+            "limit": 20,
+            "op": "search",
+            "text": "RECOVERY-7491 changed"
+        },
+        {
+            "event": "actual-service-reply",
+            "generation": 6,
+            "id": "ui-18",
+            "identity": {
+                "backend": "CPU",
+                "byte_order": "little",
+                "dimension": 768,
+                "dtype": "float32",
+                "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                "extractors": {
+                    "pdfinfo": "pdfinfo version 26.05.0",
+                    "pdftoppm": "pdftoppm version 26.05.0",
+                    "pdftotext": "pdftotext version 26.08.0",
+                    "tesseract": "tesseract 5.5.3"
+                },
+                "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                "max_tokens": 2048,
+                "model": "google/embeddinggemma-2",
+                "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                "pipeline": "digup-vectors1-linux-cpu-probe1",
+                "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                "representation": 3,
+                "runtime": "llama.cpp-b11461+no-logits",
+                "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+            },
+            "index_revision": 1,
+            "ok": true,
+            "protocol": 1,
+            "results": [
+                {
+                    "exact": false,
+                    "kind": "text",
+                    "match_scope": "segment",
+                    "match_type": "semantic",
+                    "page": 0,
+                    "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus/source.txt",
+                    "score": 0.7918550164423235,
+                    "semantic_score": 0.7794494751512886,
+                    "term_match": false,
+                    "text": "RECOVERY-7491 actual normal text content",
+                    "title": "source.txt",
+                    "warning": ""
+                }
+            ]
+        },
+        {
+            "check": true,
+            "children": [
+                "660857"
+            ],
+            "connected": true,
+            "event": "explicit-compatible-retry-real-ready",
+            "message": "Ready",
+            "ready": true,
+            "results": [
+                {
+                    "exact": false,
+                    "kind": "text",
+                    "match_scope": "segment",
+                    "match_type": "semantic",
+                    "page": 0,
+                    "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus/source.txt",
+                    "score": 0.7918550164423235,
+                    "semantic_score": 0.7794494751512886,
+                    "term_match": false,
+                    "text": "RECOVERY-7491 actual normal text content",
+                    "title": "source.txt",
+                    "warning": ""
+                }
+            ],
+            "roots": [
+                {
+                    "exclusions": [
+                    ],
+                    "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus"
+                }
+            ]
+        },
+        {
+            "accepted": true,
+            "event": "independent-actual-reply",
+            "id": "raw-control",
+            "ok": true,
+            "protocol": 1
+        },
+        {
+            "check": true,
+            "children": [
+            ],
+            "connected": true,
+            "event": "synthetic-incompatible-index-prepared",
+            "message": "Ready",
+            "ready": true,
+            "results": [
+                {
+                    "exact": false,
+                    "kind": "text",
+                    "match_scope": "segment",
+                    "match_type": "semantic",
+                    "page": 0,
+                    "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus/source.txt",
+                    "score": 0.7918550164423235,
+                    "semantic_score": 0.7794494751512886,
+                    "term_match": false,
+                    "text": "RECOVERY-7491 actual normal text content",
+                    "title": "source.txt",
+                    "warning": ""
+                }
+            ],
+            "roots": [
+                {
+                    "exclusions": [
+                    ],
+                    "path": "/home/parm/Documents/KDE Index/local/ui-v2-recovery-final/corpus"
+                }
+            ]
+        },
+        {
+            "check": true,
+            "children": [
+            ],
+            "connected": false,
+            "event": "incompatible-engine-start",
+            "message": "Search service disconnected. Reconnecting…",
+            "ready": false,
+            "results": [
+            ],
+            "roots": [
+            ]
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-19",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-19",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                },
+                "index_revision": 0,
+                "indexed": 0,
+                "model_ready": false,
+                "paused": false,
+                "phase": "verifying",
+                "progress": 0,
+                "ready": false,
+                "recovery_attempt": 1,
+                "roots": [
+                ],
+                "segments": 0,
+                "total": 0,
+                "watch_error": ""
+            }
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-20",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-20",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "stored identity mismatch; explicit wipe/rebuild required",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                },
+                "index_revision": 0,
+                "indexed": 0,
+                "model_ready": false,
+                "paused": false,
+                "phase": "failed",
+                "progress": 0,
+                "ready": false,
+                "recovery_attempt": 1,
+                "roots": [
+                ],
+                "segments": 0,
+                "total": 0,
+                "watch_error": ""
+            }
+        },
+        {
+            "check": true,
+            "children": [
+            ],
+            "connected": true,
+            "event": "incompatible-source-error-visible",
+            "message": "stored identity mismatch; explicit wipe/rebuild required",
+            "ready": false,
+            "results": [
+            ],
+            "roots": [
+            ]
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-21",
+            "op": "scan"
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-22",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-22",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                },
+                "index_revision": 0,
+                "indexed": 0,
+                "model_ready": false,
+                "paused": false,
+                "phase": "verifying",
+                "progress": 0,
+                "ready": false,
+                "recovery_attempt": 2,
+                "roots": [
+                ],
+                "segments": 0,
+                "total": 0,
+                "watch_error": ""
+            }
+        },
+        {
+            "error": "stored identity mismatch; explicit wipe/rebuild required",
+            "event": "actual-service-reply",
+            "id": "ui-21",
+            "ok": false,
+            "protocol": 1
+        },
+        {
+            "check": true,
+            "children": [
+            ],
+            "connected": true,
+            "event": "incompatible-retry-rejected-with-source-error",
+            "message": "stored identity mismatch; explicit wipe/rebuild required",
+            "ready": false,
+            "results": [
+            ],
+            "roots": [
+            ]
+        },
+        {
+            "event": "independent-actual-reply",
+            "id": "raw-control",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "stored identity mismatch; explicit wipe/rebuild required",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                },
+                "index_revision": 0,
+                "indexed": 0,
+                "model_ready": false,
+                "paused": false,
+                "phase": "failed",
+                "progress": 0,
+                "ready": false,
+                "recovery_attempt": 2,
+                "roots": [
+                ],
+                "segments": 0,
+                "total": 0,
+                "watch_error": ""
+            }
+        },
+        {
+            "check": true,
+            "children": [
+            ],
+            "connected": true,
+            "event": "incompatible-retry-preserves-owned-index",
+            "message": "stored identity mismatch; explicit wipe/rebuild required",
+            "ready": false,
+            "results": [
+            ],
+            "retained_segments": 1,
+            "roots": [
+            ]
+        },
+        {
+            "check": true,
+            "children": [
+            ],
+            "connected": true,
+            "event": "wipe-confirmation-found",
+            "message": "stored identity mismatch; explicit wipe/rebuild required",
+            "ready": false,
+            "results": [
+            ],
+            "roots": [
+            ]
+        },
+        {
+            "check": true,
+            "children": [
+            ],
+            "connected": true,
+            "event": "wipe-cancel-preserves-index",
+            "message": "stored identity mismatch; explicit wipe/rebuild required",
+            "ready": false,
+            "results": [
+            ],
+            "roots": [
+            ]
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-23",
+            "op": "wipe"
+        },
+        {
+            "accepted": true,
+            "event": "actual-service-reply",
+            "id": "ui-23",
+            "ok": true,
+            "protocol": 1,
+            "ready": false,
+            "recovery_error": "model byte size mismatch",
+            "removed": true
+        },
+        {
+            "check": true,
+            "children": [
+            ],
+            "connected": true,
+            "event": "explicit-wipe-removal-with-verification-failure",
+            "message": "stored identity mismatch; explicit wipe/rebuild required",
+            "ready": false,
+            "results": [
+            ],
+            "roots": [
+            ]
+        },
+        {
+            "event": "independent-actual-reply",
+            "id": "raw-control",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "model byte size mismatch",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                },
+                "index_revision": 2,
+                "indexed": 0,
+                "model_ready": false,
+                "paused": false,
+                "phase": "failed",
+                "progress": 0,
+                "ready": false,
+                "recovery_attempt": 3,
+                "roots": [
+                ],
+                "segments": 0,
+                "total": 0,
+                "watch_error": ""
+            }
+        },
+        {
+            "check": true,
+            "children": [
+            ],
+            "connected": true,
+            "event": "failed-wipe-status-empty-and-closed",
+            "message": "stored identity mismatch; explicit wipe/rebuild required",
+            "ready": false,
+            "results": [
+            ],
+            "roots": [
+            ]
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-24",
+            "op": "scan"
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-25",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-25",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                },
+                "index_revision": 2,
+                "indexed": 0,
+                "model_ready": false,
+                "paused": false,
+                "phase": "verifying",
+                "progress": 0,
+                "ready": false,
+                "recovery_attempt": 4,
+                "roots": [
+                ],
+                "segments": 0,
+                "total": 0,
+                "watch_error": ""
+            }
+        },
+        {
+            "accepted": true,
+            "event": "actual-service-reply",
+            "id": "ui-24",
+            "ok": true,
+            "protocol": 1
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-26",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-26",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 2,
+                "indexed": 0,
+                "model_ready": true,
+                "paused": false,
+                "phase": "ready",
+                "progress": 0,
+                "ready": true,
+                "recovery_attempt": 4,
+                "roots": [
+                ],
+                "segments": 0,
+                "total": 0,
+                "watch_error": ""
+            }
+        },
+        {
+            "check": true,
+            "children": [
+                "661025"
+            ],
+            "connected": true,
+            "event": "retry-after-deliberate-removal-ready",
+            "message": "Ready",
+            "ready": true,
+            "results": [
+            ],
+            "roots": [
+            ]
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-27",
+            "kind": "",
+            "limit": 20,
+            "op": "search",
+            "text": "RECOVERY-7491 changed"
+        },
+        {
+            "event": "actual-service-reply",
+            "generation": 9,
+            "id": "ui-27",
+            "identity": {
+                "backend": "CPU",
+                "byte_order": "little",
+                "dimension": 768,
+                "dtype": "float32",
+                "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                "extractors": {
+                    "pdfinfo": "pdfinfo version 26.05.0",
+                    "pdftoppm": "pdftoppm version 26.05.0",
+                    "pdftotext": "pdftotext version 26.08.0",
+                    "tesseract": "tesseract 5.5.3"
+                },
+                "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                "max_tokens": 2048,
+                "model": "google/embeddinggemma-2",
+                "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                "pipeline": "digup-vectors1-linux-cpu-probe1",
+                "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                "representation": 3,
+                "runtime": "llama.cpp-b11461+no-logits",
+                "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+            },
+            "index_revision": 2,
+            "ok": true,
+            "protocol": 1,
+            "results": [
+            ]
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-28",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-28",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 2,
+                "indexed": 0,
+                "model_ready": true,
+                "paused": false,
+                "phase": "ready",
+                "progress": 0,
+                "ready": true,
+                "recovery_attempt": 4,
+                "roots": [
+                ],
+                "segments": 0,
+                "total": 0,
+                "watch_error": ""
+            }
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-29",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-29",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 2,
+                "indexed": 0,
+                "model_ready": true,
+                "paused": false,
+                "phase": "ready",
+                "progress": 0,
+                "ready": true,
+                "recovery_attempt": 4,
+                "roots": [
+                ],
+                "segments": 0,
+                "total": 0,
+                "watch_error": ""
+            }
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-30",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-30",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 2,
+                "indexed": 0,
+                "model_ready": true,
+                "paused": false,
+                "phase": "ready",
+                "progress": 0,
+                "ready": true,
+                "recovery_attempt": 4,
+                "roots": [
+                ],
+                "segments": 0,
+                "total": 0,
+                "watch_error": ""
+            }
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-31",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-31",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 2,
+                "indexed": 0,
+                "model_ready": true,
+                "paused": false,
+                "phase": "ready",
+                "progress": 0,
+                "ready": true,
+                "recovery_attempt": 4,
+                "roots": [
+                ],
+                "segments": 0,
+                "total": 0,
+                "watch_error": ""
+            }
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-32",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-32",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 2,
+                "indexed": 0,
+                "model_ready": true,
+                "paused": false,
+                "phase": "ready",
+                "progress": 0,
+                "ready": true,
+                "recovery_attempt": 4,
+                "roots": [
+                ],
+                "segments": 0,
+                "total": 0,
+                "watch_error": ""
+            }
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-33",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-33",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 2,
+                "indexed": 0,
+                "model_ready": true,
+                "paused": false,
+                "phase": "ready",
+                "progress": 0,
+                "ready": true,
+                "recovery_attempt": 4,
+                "roots": [
+                ],
+                "segments": 0,
+                "total": 0,
+                "watch_error": ""
+            }
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-34",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-34",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 2,
+                "indexed": 0,
+                "model_ready": true,
+                "paused": false,
+                "phase": "ready",
+                "progress": 0,
+                "ready": true,
+                "recovery_attempt": 4,
+                "roots": [
+                ],
+                "segments": 0,
+                "total": 0,
+                "watch_error": ""
+            }
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-35",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-35",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 2,
+                "indexed": 0,
+                "model_ready": true,
+                "paused": false,
+                "phase": "ready",
+                "progress": 0,
+                "ready": true,
+                "recovery_attempt": 4,
+                "roots": [
+                ],
+                "segments": 0,
+                "total": 0,
+                "watch_error": ""
+            }
+        },
+        {
+            "event": "actual-client-request",
+            "id": "ui-36",
+            "op": "status"
+        },
+        {
+            "event": "actual-service-reply",
+            "id": "ui-36",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 2,
+                "indexed": 0,
+                "model_ready": true,
+                "paused": false,
+                "phase": "ready",
+                "progress": 0,
+                "ready": true,
+                "recovery_attempt": 4,
+                "roots": [
+                ],
+                "segments": 0,
+                "total": 0,
+                "watch_error": ""
+            }
+        },
+        {
+            "check": false,
+            "children": [
+            ],
+            "connected": true,
+            "event": "existing-model-helper-finishes-and-emits-scan",
+            "message": "Ready",
+            "ready": true,
+            "results": [
+            ],
+            "roots": [
+            ]
+        },
+        {
+            "event": "independent-actual-reply",
+            "id": "raw-control",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "current": "",
+                "error": "",
+                "errors": 0,
+                "failures": [
+                ],
+                "identity": {
+                    "backend": "CPU",
+                    "byte_order": "little",
+                    "dimension": 768,
+                    "dtype": "float32",
+                    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+                    "extractors": {
+                        "pdfinfo": "pdfinfo version 26.05.0",
+                        "pdftoppm": "pdftoppm version 26.05.0",
+                        "pdftotext": "pdftotext version 26.08.0",
+                        "tesseract": "tesseract 5.5.3"
+                    },
+                    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+                    "max_tokens": 2048,
+                    "model": "google/embeddinggemma-2",
+                    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+                    "pipeline": "digup-vectors1-linux-cpu-probe1",
+                    "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+                    "representation": 3,
+                    "runtime": "llama.cpp-b11461+no-logits",
+                    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+                },
+                "index_revision": 2,
+                "indexed": 0,
+                "model_ready": true,
+                "paused": false,
+                "phase": "ready",
+                "progress": 0,
+                "ready": true,
+                "recovery_attempt": 4,
+                "roots": [
+                ],
+                "segments": 0,
+                "total": 0,
+                "watch_error": ""
+            }
+        },
+        {
+            "check": true,
+            "event": "ordinary-client-close-leaves-common-service"
+        },
+        {
+            "accepted": true,
+            "event": "independent-actual-reply",
+            "id": "raw-control",
+            "ok": true,
+            "protocol": 1
+        },
+        {
+            "check": true,
+            "event": "closure"
+        }
+    ],
+    "success": false
+}

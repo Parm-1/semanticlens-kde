@@ -1,0 +1,1 @@
+<b>MARKUP-CANARY</b><img src='http://127.0.0.1:34227/actual-service-canary.png'>

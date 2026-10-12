@@ -1,0 +1,11 @@
+{
+  "owned_sockets_absent": true,
+  "native_harness_exit": 0,
+  "installed_harness_exit": 0,
+  "installed_app_exit": 0,
+  "old_teardown_gui_exit_codes": [
+    134,
+    134
+  ],
+  "scope": "completed parent tool processes; synthetic roots only; no live desktop service changed"
+}

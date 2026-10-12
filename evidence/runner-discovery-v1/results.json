@@ -1,0 +1,162 @@
+{
+  "scope": "ordinary plugin packaging correction plus native installed discovery; acceptance remains parent-owned",
+  "outcomes": {
+    "v3": "valid plugin discovered as libkde-index-runner; requested stable-ID selection fails; real query passes via derived ID",
+    "v4": "unprefixed module discovered as kde-index-runner with no embedded Id; implicit RunnerManager returns the exact selected synthetic source",
+    "stop_rule": "stop after matched metadata contradiction and implicit-manager positive with all owned resources closed; parent wires the candidate and resumes installed client overlap/action validation"
+  },
+  "metadata_controls": [
+    {
+      "name": "v3-stable-id-negative",
+      "exit": 4,
+      "observed_id": "libkde-index-runner",
+      "raw_id": "kde-index-runner",
+      "valid": true
+    },
+    {
+      "name": "v3-filename-id-positive",
+      "exit": 0,
+      "observed_id": "libkde-index-runner",
+      "raw_id": "kde-index-runner",
+      "valid": true
+    },
+    {
+      "name": "v4-stable-id-positive",
+      "exit": 0,
+      "observed_id": "kde-index-runner",
+      "raw_id": null,
+      "valid": true
+    },
+    {
+      "name": "v4-derived-id-negative",
+      "exit": 4,
+      "observed_id": "kde-index-runner",
+      "raw_id": null,
+      "valid": true
+    }
+  ],
+  "native_query_controls": [
+    {
+      "run": 1,
+      "name": "v3-derived-id",
+      "exit": 0,
+      "query_ms": 4385,
+      "pid": null,
+      "matches": 1
+    },
+    {
+      "run": 1,
+      "name": "v4-stable-id",
+      "exit": 0,
+      "query_ms": 89,
+      "pid": null,
+      "matches": 1
+    },
+    {
+      "run": 1,
+      "name": "v4-original-helper",
+      "exit": 0,
+      "query_ms": null,
+      "pid": null,
+      "matches": 1
+    },
+    {
+      "run": 2,
+      "name": "v3-derived-id",
+      "exit": 0,
+      "query_ms": 3632,
+      "pid": 859583,
+      "matches": 1
+    },
+    {
+      "run": 2,
+      "name": "v4-stable-id",
+      "exit": 0,
+      "query_ms": 76,
+      "pid": 859596,
+      "matches": 1
+    },
+    {
+      "run": 2,
+      "name": "v4-original-helper",
+      "exit": 0,
+      "query_ms": null,
+      "pid": 859598,
+      "matches": 1
+    }
+  ],
+  "source_pins": {
+    "src/runner-v4/CMakeLists.txt": "68613a68a2365699254ed509aea9fda4d671796c7b83ba57c293e2530d95c7d6",
+    "src/runner-v4/kde-index-runner.json": "7f87329a143eabe42c56d074ac7f5d711ad4db0c368f11194a308f20719ac74e",
+    "src/runner-v4/runner.cpp": "92909e658246b7cb022f50df9999283e9ce99cf2399f717fe29d14631a5b88eb",
+    "tools/installed_runner_v2.cpp": "bd57cfee24fc6c5f5d098a2a2b9813464d318e254ad2efe1cf564f08db797fe2",
+    "tools/installed_runner_v2/CMakeLists.txt": "b92ce54cd35533bc99ae55198065db022c6985eb99d031b742962fe5137afa1d",
+    "tools/installed_runner_v2_service.py": "994217d1e93d8a21bd9cfacc0334c78855632672914a4cb28c2ef544aa9b64ba"
+  },
+  "inherited_pin_counts": {
+    "runner_v3": 20,
+    "runner_review_v3": 13,
+    "clean_build_v2": 28
+  },
+  "closure": [
+    {
+      "service_exit": 0,
+      "known_pids": [
+        859090,
+        859110,
+        859177,
+        859178,
+        859179,
+        859180,
+        859184,
+        859190,
+        859192,
+        859204,
+        859206,
+        859265
+      ],
+      "all_known_pids_absent": true,
+      "socket_absent": true,
+      "sampler_closed": true
+    },
+    {
+      "service_exit": 0,
+      "known_pids": [
+        859362,
+        859376,
+        859404,
+        859405,
+        859406,
+        859407,
+        859411,
+        859417,
+        859418,
+        859425,
+        859432,
+        859441,
+        859446,
+        859583,
+        859587,
+        859596,
+        859598
+      ],
+      "all_known_pids_absent": true,
+      "socket_absent": true,
+      "sampler_closed": true
+    }
+  ],
+  "limits": [
+    "CPU, one selected synthetic exact-identifier file, staged host Qt 6.12/KF6 6.30 only",
+    "No live Plasma/KRunner UI, activation, app overlap, clean userspace rebuild, global configuration or personal folders tested",
+    "runner.cpp is unchanged; strict parser, cancellation, cold budget and actions retain prior reviewed evidence rather than being reimplemented or exhaustively repeated",
+    "cache is disabled by default on the observed path; explicit initial CacheMetaData lookup agrees, no cache-invalidation experiment claimed"
+  ],
+  "resource_usage": {
+    "model_tool_tokens": "unknown; no measurement exposed",
+    "native_interval_seconds": [
+      4.960088281,
+      4.042012549
+    ],
+    "time_scope": "monotonic first native launch through final native completion; excludes setup, indexing and idle wait; not a benchmark or package-total measurement"
+  }
+}

@@ -1,0 +1,170 @@
+           PID: 597859 (kde-index)
+           TID: 597859 (kde-index)
+           UID: 1000 (parm)
+           GID: 1000 (parm)
+        Signal: 6 (ABRT) si_code: SI_TKILL
+     Timestamp: Sun 2026-10-11 22:08:42 EDT (2min 30s ago)
+  Command Line: local/stage-v1/usr/bin/kde-index --models models --data-dir local/ui-installed-v1/data --socket /tmp/kde-index-ui-exit-repro --query PDF-10299 --capture local/ui-installed-v1/app-repro.png --capture-delay 6000
+    Executable: /home/parm/Documents/KDE Index/local/stage-v1/usr/bin/kde-index
+ Control Group: /user.slice/user-1000.slice/user@1000.service/app.slice/app-org.chromium.Chromium-1457.scope
+          Unit: user@1000.service
+     User Unit: app-org.chromium.Chromium-1457.scope
+         Slice: user-1000.slice
+     Owner UID: 1000 (parm)
+       Boot ID: 02157191b12141b1be890e6e35c02b60
+    Machine ID: 066634151ce344af8e5b856484a3ac44
+      Hostname: arch-desktop
+       Storage: /var/lib/systemd/coredump/core.kde-index.1000.02157191b12141b1be890e6e35c02b60.597859.1791770922000000.zst (present)
+  Size on Disk: 10.1M
+       Message: Process 597859 (kde-index) of user 1000 dumped core.
+                
+                Stack trace of thread 597859:
+                #0  0x00007f2b5fc9a11c n/a (libc.so.6 + 0x9a11c)
+                #1  0x00007f2b5fc3e5d0 raise (libc.so.6 + 0x3e5d0)
+                #2  0x00007f2b5fc25685 abort (libc.so.6 + 0x25685)
+                #3  0x00007f2b6009ac54 n/a (libstdc++.so.6 + 0x9ac54)
+                #4  0x00007f2b600b581a n/a (libstdc++.so.6 + 0xb581a)
+                #5  0x00007f2b6009a459 __cxa_call_terminate (libstdc++.so.6 + 0x9a459)
+                #6  0x00007f2b600b4ced __gxx_personality_v0 (libstdc++.so.6 + 0xb4ced)
+                #7  0x00007f2b625d5043 n/a (libgcc_s.so.1 + 0x22043)
+                #8  0x00007f2b625d5b8b _Unwind_Resume (libgcc_s.so.1 + 0x22b8b)
+                #9  0x00007f2b604ae8e2 n/a (libQt6Core.so.6 + 0xae8e2)
+                #10 0x00007f2b60ccb8a7 _ZN15QAbstractSocket18disconnectFromHostEv (libQt6Network.so.6 + 0xc78a7)
+                #11 0x00007f2b60d74c97 _ZN12QLocalSocketD1Ev (libQt6Network.so.6 + 0x170c97)
+                #12 0x000056436a1f1349 _ZN7BackendD1Ev (kde-index + 0xc349)
+                #13 0x000056436a1ef74f main (kde-index + 0xa74f)
+                #14 0x00007f2b5fc27781 n/a (libc.so.6 + 0x27781)
+                #15 0x00007f2b5fc278b9 __libc_start_main (libc.so.6 + 0x278b9)
+                #16 0x000056436a1f0155 _start (kde-index + 0xb155)
+                
+                Stack trace of thread 597862:
+                #0  0x00007f2b5fca08f2 n/a (libc.so.6 + 0xa08f2)
+                #1  0x00007f2b5fd112e5 __poll (libc.so.6 + 0x1112e5)
+                #2  0x00007f2b5b4f5a18 n/a (libQt6WaylandClient.so.6 + 0x70a18)
+                #3  0x00007f2b60778fdb n/a (libQt6Core.so.6 + 0x378fdb)
+                #4  0x00007f2b5fc98042 n/a (libc.so.6 + 0x98042)
+                #5  0x00007f2b5fd2072c n/a (libc.so.6 + 0x12072c)
+                
+                Stack trace of thread 597861:
+                #0  0x00007f2b5fca08f2 n/a (libc.so.6 + 0xa08f2)
+                #1  0x00007f2b5fd112e5 __poll (libc.so.6 + 0x1112e5)
+                #2  0x00007f2b5b4f5a18 n/a (libQt6WaylandClient.so.6 + 0x70a18)
+                #3  0x00007f2b60778fdb n/a (libQt6Core.so.6 + 0x378fdb)
+                #4  0x00007f2b5fc98042 n/a (libc.so.6 + 0x98042)
+                #5  0x00007f2b5fd2072c n/a (libc.so.6 + 0x12072c)
+                
+                Stack trace of thread 597932:
+                #0  0x00007f2b5fca08f2 n/a (libc.so.6 + 0xa08f2)
+                #1  0x00007f2b5fc94c79 n/a (libc.so.6 + 0x94c79)
+                #2  0x00007f2b5fc97702 pthread_cond_timedwait (libc.so.6 + 0x97702)
+                #3  0x00007f2b6077f8e9 _ZN14QWaitCondition4waitEP6QMutex14QDeadlineTimer (libQt6Core.so.6 + 0x37f8e9)
+                #4  0x00007f2b606c1845 n/a (libQt6Core.so.6 + 0x2c1845)
+                #5  0x00007f2b60778fdb n/a (libQt6Core.so.6 + 0x378fdb)
+                #6  0x00007f2b5fc98042 n/a (libc.so.6 + 0x98042)
+                #7  0x00007f2b5fd2072c n/a (libc.so.6 + 0x12072c)
+                
+                Stack trace of thread 597860:
+                #0  0x00007f2b5fca08f2 n/a (libc.so.6 + 0xa08f2)
+                #1  0x00007f2b5fd119d7 ppoll (libc.so.6 + 0x1119d7)
+                #2  0x00007f2b5f705c9e n/a (libglib-2.0.so.0 + 0x6ac9e)
+                #3  0x00007f2b5f705db5 g_main_context_iteration (libglib-2.0.so.0 + 0x6adb5)
+                #4  0x00007f2b608c4d22 _ZN20QEventDispatcherGlib13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE (libQt6Core.so.6 + 0x4c4d22)
+                #5  0x00007f2b60596a74 _ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE (libQt6Core.so.6 + 0x196a74)
+                #6  0x00007f2b606c4a02 _ZN7QThread4execEv (libQt6Core.so.6 + 0x2c4a02)
+                #7  0x00007f2b60369781 n/a (libQt6DBus.so.6 + 0x38781)
+                #8  0x00007f2b60778fdb n/a (libQt6Core.so.6 + 0x378fdb)
+                #9  0x00007f2b5fc98042 n/a (libc.so.6 + 0x98042)
+                #10 0x00007f2b5fd2072c n/a (libc.so.6 + 0x12072c)
+                
+                Stack trace of thread 597957:
+                #0  0x00007f2b5fca08f2 n/a (libc.so.6 + 0xa08f2)
+                #1  0x00007f2b5fd112e5 __poll (libc.so.6 + 0x1112e5)
+                #2  0x00007f2b42380967 n/a (libnvidia-eglcore.so.615.78.08 + 0x980967)
+                #3  0x00007f2b4237edca n/a (libnvidia-eglcore.so.615.78.08 + 0x97edca)
+                #4  0x00007f2b5fc98042 n/a (libc.so.6 + 0x98042)
+                #5  0x00007f2b5fd2072c n/a (libc.so.6 + 0x12072c)
+                
+                Stack trace of thread 597933:
+                #0  0x00007f2b5fca08f2 n/a (libc.so.6 + 0xa08f2)
+                #1  0x00007f2b5fc94c79 n/a (libc.so.6 + 0x94c79)
+                #2  0x00007f2b5fc97702 pthread_cond_timedwait (libc.so.6 + 0x97702)
+                #3  0x00007f2b6077f8e9 _ZN14QWaitCondition4waitEP6QMutex14QDeadlineTimer (libQt6Core.so.6 + 0x37f8e9)
+                #4  0x00007f2b606c1845 n/a (libQt6Core.so.6 + 0x2c1845)
+                #5  0x00007f2b60778fdb n/a (libQt6Core.so.6 + 0x378fdb)
+                #6  0x00007f2b5fc98042 n/a (libc.so.6 + 0x98042)
+                #7  0x00007f2b5fd2072c n/a (libc.so.6 + 0x12072c)
+                ELF object binary architecture: AMD x86-64
+
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/3b222edf1815b0678f7918daeae605b00fec53cf.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/23755f08f435fbee9ddff84954f23aae235fa49a.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/87fff1c47d61b24d1015919bd85604b65621fc5d.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/aacf0ac9490918c2f8a51b72cd654ecfaa7e5b45.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/8606393fc7b34b859ed5ea5cb837a2344b7ad43d.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /memfd:kwin-dmabuf-feedback-table (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/788e48f6cebd0dca60af7679078921776c0438d5.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/eb2ddd7958f7aba9913013ab80106439ed1c2335.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/407e08b12663a3e27d9db213dbad4c0b6bcdd112.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/9ae3f4e32c58e852ddbde7e83b0e1ef158cd39e1.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/f1becc0fafc5dc496990550bd07ffa411e4272a5.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/fcaa155d0f66b56d0c91e6a3aef2a43de0eb2178.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/b42bd9f020424549886a18bc17767ac465adfdbe.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/0d49af3f77430a6a85d9b1515ebe5144bc884a94.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/dcad18e78ea3d076aeed16b95eaa3f23664a3b11.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/ef9126d965207c98ed4ecef3ea1fef08bdc68627.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/e27ec01c69d4d174ef188d53040edb4a3fb5d55a.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/9efe2621445559a42ca2fb250e24027883e8597c.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/e0a51fa190198240e1bfd96d3f59d9efa55ec679.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/94f6dc085501f66044033368d13f2152a892ef3f.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/77e4fafe576eda2df20d1f116df75020385e133d.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/62c1a3ecae5b7a349b1a4dfec89d5479a0f0d57b.qmlc (deleted) during file-backed mapping note processing
+
+warning: Can't open file /home/parm/.cache/kde-index/qmlcache/676bf98fe8d1f1d7e372857a7241525dd12fc901.qmlc (deleted) during file-backed mapping note processing
+[New LWP 597859 (id 1)]
+[New LWP 597862 (id 2)]
+[New LWP 597861 (id 3)]
+[New LWP 597932 (id 4)]
+[New LWP 597860 (id 5)]
+[New LWP 597957 (id 6)]
+[New LWP 597933 (id 7)]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/libthread_db.so.1".
+Core was generated by `local/stage-v1/usr/bin/kde-index --models models --data-dir local/ui-installed-v1/data --socket /tmp/kde-index-ui-exit-repro --query PDF-10299 --capture local/ui-installed-v1/app-repro.png --capture-delay 6000'.
+Program terminated with signal SIGABRT, Aborted.
+#0  0x00007f2b5fc9a11c in ?? () from /usr/lib/libc.so.6
+[Current thread is 1 (Thread 0x7f2b5b93abc0 (LWP 597859))]
+#0  0x00007f2b5fc9a11c in ?? () from /usr/lib/libc.so.6
+#1  0x00007f2b5fc3e5d0 in raise () from /usr/lib/libc.so.6
+#2  0x00007f2b5fc25685 in abort () from /usr/lib/libc.so.6
+#3  0x00007f2b6009ac54 in ?? () from /usr/lib/libstdc++.so.6
+#4  0x00007f2b600b581a in ?? () from /usr/lib/libstdc++.so.6
+#5  0x00007f2b6009a459 in __cxa_call_terminate () from /usr/lib/libstdc++.so.6
+#6  0x00007f2b600b4ced in __gxx_personality_v0 () from /usr/lib/libstdc++.so.6
+#7  0x00007f2b625d5043 in ?? () from /usr/lib/libgcc_s.so.1
+#8  0x00007f2b625d5b8b in _Unwind_Resume () from /usr/lib/libgcc_s.so.1
+#9  0x00007f2b604ae8e2 in ?? () from /usr/lib/libQt6Core.so.6
+#10 0x00007f2b60ccb8a7 in QAbstractSocket::disconnectFromHost() () from /usr/lib/libQt6Network.so.6
+#11 0x00007f2b60d74c97 in QLocalSocket::~QLocalSocket() () from /usr/lib/libQt6Network.so.6
+#12 0x000056436a1f1349 in Backend::~Backend() ()
+#13 0x000056436a1ef74f in main ()

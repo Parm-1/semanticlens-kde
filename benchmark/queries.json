@@ -1,0 +1,435 @@
+{
+  "schema": 1,
+  "ranking": "unfiltered default service search, limit 5; native Baloo query as typed, content enabled, limit 5",
+  "queries": [
+    {
+      "id": "s01",
+      "group": "semantic",
+      "modality": "document",
+      "text": "rules about owning a pet in rented accommodation",
+      "relevant": [
+        {
+          "file": "d01.txt",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "group": "semantic",
+      "modality": "document",
+      "text": "getting my money back for a faulty purchase",
+      "relevant": [
+        {
+          "file": "d02.txt",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "group": "semantic",
+      "modality": "document",
+      "text": "saving holiday pictures before wiping their storage",
+      "relevant": [
+        {
+          "file": "d03.txt",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "group": "semantic",
+      "modality": "document",
+      "text": "why did my credit card get rejected at checkout",
+      "relevant": [
+        {
+          "file": "d04.txt",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "group": "semantic",
+      "modality": "document",
+      "text": "what should I take to the upcoming puncture repair class",
+      "relevant": [
+        {
+          "file": "d05.txt",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "group": "semantic",
+      "modality": "document",
+      "text": "preventing young vegetables from freezing overnight",
+      "relevant": [
+        {
+          "file": "d06.txt",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "group": "semantic",
+      "modality": "document",
+      "text": "wifi box is completely dark after electricity went off",
+      "relevant": [
+        {
+          "file": "d07.txt",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "group": "semantic",
+      "modality": "document",
+      "text": "breakfast prepared the night before without an oven",
+      "relevant": [
+        {
+          "file": "d08.txt",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "group": "semantic",
+      "modality": "pdf",
+      "text": "safely cleaning a clogged cooling component",
+      "relevant": [
+        {
+          "file": "p01.pdf",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "group": "semantic",
+      "modality": "pdf",
+      "text": "step free access for a person with reduced mobility",
+      "relevant": [
+        {
+          "file": "p02.pdf",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "group": "semantic",
+      "modality": "pdf",
+      "text": "keeping a borrowed book for longer",
+      "relevant": [
+        {
+          "file": "p03.pdf",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "group": "semantic",
+      "modality": "pdf",
+      "text": "leaving a suitcase somewhere during a train stop",
+      "relevant": [
+        {
+          "file": "p04.pdf",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "group": "semantic",
+      "modality": "image",
+      "text": "green vertical columns getting taller from left to right",
+      "relevant": [
+        {
+          "file": "i01.png",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "group": "semantic",
+      "modality": "image",
+      "text": "red bars steadily decreasing across a graph",
+      "relevant": [
+        {
+          "file": "i02.png",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "group": "semantic",
+      "modality": "image",
+      "text": "an error dialog about an unsuccessful card payment",
+      "relevant": [
+        {
+          "file": "i03.png",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "group": "semantic",
+      "modality": "image",
+      "text": "a successful checkout screen with a green tick",
+      "relevant": [
+        {
+          "file": "i04.png",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "group": "semantic",
+      "modality": "image",
+      "text": "settings showing automatic copies turned off and an old backup",
+      "relevant": [
+        {
+          "file": "i05.png",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "group": "semantic",
+      "modality": "image",
+      "text": "backup settings with a green on switch and a copy from today",
+      "relevant": [
+        {
+          "file": "i06.png",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "group": "semantic",
+      "modality": "image",
+      "text": "a timeline with staggered colored horizontal work stages",
+      "relevant": [
+        {
+          "file": "i07.png",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "group": "semantic",
+      "modality": "image",
+      "text": "a circular budget chart split into colored slices",
+      "relevant": [
+        {
+          "file": "i08.png",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "e01",
+      "group": "exact",
+      "modality": "mixed",
+      "text": "TEN-49271",
+      "relevant": [
+        {
+          "file": "d01.txt",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "e02",
+      "group": "exact",
+      "modality": "mixed",
+      "text": "RET-81342",
+      "relevant": [
+        {
+          "file": "d02.txt",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "e03",
+      "group": "exact",
+      "modality": "mixed",
+      "text": "CAM-25816",
+      "relevant": [
+        {
+          "file": "d03.txt",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "e04",
+      "group": "exact",
+      "modality": "mixed",
+      "text": "PAY-70193",
+      "relevant": [
+        {
+          "file": "d04.txt",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "e05",
+      "group": "exact",
+      "modality": "mixed",
+      "text": "CLG-57260",
+      "relevant": [
+        {
+          "file": "p01.pdf",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "e06",
+      "group": "exact",
+      "modality": "mixed",
+      "text": "BAK-84319",
+      "relevant": [
+        {
+          "file": "i05.png",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "l01",
+      "group": "literal",
+      "modality": "mixed",
+      "text": "prior written consent",
+      "relevant": [
+        {
+          "file": "d01.txt",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "l02",
+      "group": "literal",
+      "modality": "mixed",
+      "text": "purchase receipt",
+      "relevant": [
+        {
+          "file": "d02.txt",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "l03",
+      "group": "literal",
+      "modality": "mixed",
+      "text": "removable memory card",
+      "relevant": [
+        {
+          "file": "d03.txt",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "l04",
+      "group": "literal",
+      "modality": "mixed",
+      "text": "spending limit",
+      "relevant": [
+        {
+          "file": "d04.txt",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "l05",
+      "group": "literal",
+      "modality": "mixed",
+      "text": "charged laptop",
+      "relevant": [
+        {
+          "file": "d05.txt",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "l06",
+      "group": "literal",
+      "modality": "mixed",
+      "text": "tomato seedlings",
+      "relevant": [
+        {
+          "file": "d06.txt",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": "l07",
+      "group": "literal",
+      "modality": "mixed",
+      "text": "blocked filter",
+      "relevant": [
+        {
+          "file": "p01.pdf",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "l08",
+      "group": "literal",
+      "modality": "mixed",
+      "text": "staffed lockers",
+      "relevant": [
+        {
+          "file": "p04.pdf",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "n01",
+      "group": "no_relevant",
+      "modality": "mixed",
+      "text": "a medical report describing a fractured ankle",
+      "relevant": []
+    },
+    {
+      "id": "n02",
+      "group": "no_relevant",
+      "modality": "mixed",
+      "text": "a photograph of a giraffe beside a river",
+      "relevant": []
+    },
+    {
+      "id": "n03",
+      "group": "no_relevant",
+      "modality": "mixed",
+      "text": "instructions for changing the oil in a motorboat",
+      "relevant": []
+    }
+  ]
+}

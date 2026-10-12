@@ -1,0 +1,5 @@
+{
+  "namespace_exit": 0,
+  "elapsed_seconds": 12.389814132999163,
+  "isolation": "private PID/network/D-Bus/profile; ro root/public stage/models; masked personal homes/run/tmp; same Wayland socket"
+}

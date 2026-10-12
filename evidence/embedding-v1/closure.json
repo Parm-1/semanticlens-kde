@@ -1,0 +1,12 @@
+{
+  "owned_active_processes": [],
+  "download_text_exit": 0,
+  "download_media_exit": 0,
+  "clone_exit": 0,
+  "serialized_build_exit": 0,
+  "full_inference_exit": 0,
+  "text_only_inference_exit": 0,
+  "setup_check_exit": 0,
+  "children_spawned": 0,
+  "note": "No outstanding owned process/session; system-wide command inventory contains no probe/cmake/ninja."
+}

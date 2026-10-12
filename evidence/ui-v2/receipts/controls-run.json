@@ -1,0 +1,32 @@
+[
+  {
+    "mode": "peer",
+    "exit": 0,
+    "wall_seconds": 7.988269427998603
+  },
+  {
+    "mode": "markup",
+    "exit": 0,
+    "wall_seconds": 8.135011940001277
+  },
+  {
+    "mode": "real",
+    "exit": 0,
+    "wall_seconds": 15.844432977002725
+  },
+  {
+    "mode": "dialog",
+    "exit": 0,
+    "wall_seconds": 3.471565845000441
+  },
+  {
+    "mode": "teardown",
+    "exit": 0,
+    "wall_seconds": 1.2667597959989507
+  },
+  {
+    "mode": "pending",
+    "exit": 0,
+    "wall_seconds": 1.1151855339994654
+  }
+]

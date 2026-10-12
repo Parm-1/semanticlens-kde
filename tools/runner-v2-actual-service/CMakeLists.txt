@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.24)
+project(KDEIndexRunnerV2ActualService LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(Qt6 REQUIRED COMPONENTS Core Network)
+find_package(KF6Runner REQUIRED)
+find_package(KF6CoreAddons REQUIRED)
+add_executable(runner-v2-actual-service ../runner_v2_actual_service.cpp)
+target_link_libraries(runner-v2-actual-service PRIVATE Qt6::Core Qt6::Network KF6::Runner KF6::CoreAddons)

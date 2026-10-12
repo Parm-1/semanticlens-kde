@@ -1,0 +1,24 @@
+{
+    "discovered": [
+        {
+            "file": "/home/parm/Documents/KDE Index/local/runner-discovery-v1/stage/usr/lib/qt6/plugins/kf6/krunner/kde-index-runner.so",
+            "id": "kde-index-runner",
+            "valid": true
+        }
+    ],
+    "finished": true,
+    "matches": [
+        {
+            "data": {
+                "kind": "text",
+                "page": 0,
+                "path": "/home/parm/Documents/KDE Index/local/runner-discovery-v1/service-run-v2/corpus/payment.txt"
+            },
+            "relevance": 1,
+            "subtext": "Contact the bank when a credit card is declined. Receipt reference CARD-39312. ",
+            "text": "payment.txt"
+        }
+    ],
+    "off_main_thread": true,
+    "pass": true
+}

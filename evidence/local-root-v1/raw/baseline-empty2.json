@@ -1,0 +1,56 @@
+{
+    "reply": {
+        "accepted": true
+    },
+    "state": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [
+        ],
+        "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+                "pdfinfo": "pdfinfo version 26.05.0",
+                "pdftoppm": "pdftoppm version 26.05.0",
+                "pdftotext": "pdftotext version 26.08.0",
+                "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "f34469aa625f5000a7a3bb24a04b3c0cc91cf63ddb4e4a17fdbbf0fa1f49a9bf",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 0,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+            {
+                "exclusions": [
+                ],
+                "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/baseline-empty"
+            }
+        ],
+        "segments": 0,
+        "total": 0
+    },
+    "wall_ms": 455,
+    "watch_count": 10006,
+    "watch_directories": 10006,
+    "watch_files": 0
+}

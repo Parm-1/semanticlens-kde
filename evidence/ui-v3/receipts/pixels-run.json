@@ -1,0 +1,22 @@
+[
+  {
+    "case": "smoke",
+    "exit": 0,
+    "wall_seconds": 1.2664603740013263
+  },
+  {
+    "case": "render",
+    "exit": 0,
+    "wall_seconds": 0.16454157500265865
+  },
+  {
+    "case": "controlled-loading-negative",
+    "exit": 1,
+    "wall_seconds": 0.16482049299884238
+  },
+  {
+    "case": "parent-blank-negative",
+    "exit": 1,
+    "wall_seconds": 0.16455755499919178
+  }
+]

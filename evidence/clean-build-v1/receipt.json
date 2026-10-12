@@ -1,0 +1,22 @@
+{
+  "checkout_commit": "a8eef7bda3896186d8a2661a7fdf2ed57498c711",
+  "checkout_porcelain_before_build": "",
+  "bootstrap_sha256": "0c9c97b7a58a8a023c9e07f84cb307a9e8006e65d8fc4c17b83ddc8010b45c10",
+  "bootstrap_url": "https://geo.mirror.pkgbuild.com/iso/2026.10.01/archlinux-bootstrap-2026.10.01-x86_64.tar.zst",
+  "official_checksum_url": "https://archlinux.org/iso/2026.10.01/sha256sums.txt",
+  "compiled_executable_sha256": {
+    "build/bin/embedding-probe": "ef3959c8fb9c47995211cbda64f6faeb274f15210dda4d0def99f1d6b9139ee2",
+    "build/bin/kde-index-service": "4f0f4d6518221f9ac397f907a01b34e587f4a29764f6b041650f7ea27c967b6a",
+    "build/src/runner-v3/libkde-index-runner.so": "5155c2820efc2224e65fdda1105c1da7d901c8c8a68956d2ccb8d4ab0a7e8045"
+  },
+  "build_exit_code": 0,
+  "parity_exit_code": 0,
+  "closed": true,
+  "limits": [
+    "Fresh Arch userspace shares host kernel/CPU; not booted KDE session.",
+    "Single UID namespace package system-user/tmpfiles hooks warn; package transaction exits0.",
+    "UI at checkout is blocked by independent review and was not built or installed.",
+    "No installed discovery, action, engine integration or release latency claim.",
+    "Models mounted readonly only for parity; no weights are in source checkout or evidence."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "author": {
+    "count": 92,
+    "manifest_sha256": "beb9ff6adefd79cbbf7d112059886df2f694b6d07570731e0967b0ad2642fe01",
+    "all_match": true
+  },
+  "root": {
+    "count": 9,
+    "manifest_sha256": "35d916c0be0f7ee2ee25adaafc58c0fc7a784b8ebe29fc52928ca735392a789c",
+    "all_match": true
+  },
+  "original": {
+    "count": 105,
+    "manifest_sha256": "4d5a6cc2280d92ddcf1331806aaf2a42960618b7e94fafdda6385424788caf5f",
+    "all_match": true
+  },
+  "current_consumer_matches": {
+    "ToolTip.qml": true,
+    "ResultDelegate.qml": true,
+    "ResultsView.qml": true
+  },
+  "fixture_counts": {
+    "cases": 11,
+    "fields": 22,
+    "v4_rich_display_fields": 11,
+    "raw_action_maps_and_urls": 10
+  },
+  "independent_native_consumer": {
+    "phase_names": [
+      "candidate-match",
+      "raw-source-control"
+    ],
+    "candidate_gets": 0,
+    "raw_source_gets": 1,
+    "hidden_both": true,
+    "exit": 0
+  }
+}

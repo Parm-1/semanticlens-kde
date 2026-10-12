@@ -1,0 +1,5 @@
+# Public source export v2
+
+Linked successor consumes source5beacaebb65427478e7e2dd820c8cbea64cf13ea, including core5/service3/UI4, source-only GNU reference license texts and current application notices. Same unchanged export profile excludes only the four exact system binaries. Two independent normalized assemblies match SHA256 6faeb1ed7df43834eef73702265ae7a298c8e9c53b2f5c5b0b6fe865cbfcd928, 38638327 bytes and 1837 retained files. Every retained Git blob/mode and archive member is checked; receipts explicitly document omissions from historical full manifests. Original evidence stays unchanged. No private model/index/vendor/build payload is included.
+
+The selected source is a local preparation candidate; final core/status independent recheck is still pending. Its new clean-build consumer works in a separate bootstrap subtree. No publication, upload, public Git history, release or final installation claim. Retained measurements/labels unchanged. Whole-package usage and elapsed unknown. Export handles66118 and22306 completed0; no exporter process remains.

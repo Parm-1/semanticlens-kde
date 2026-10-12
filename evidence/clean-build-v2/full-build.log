@@ -1,0 +1,789 @@
+CPU runtime source verified at 4d756bc72bf00a4aacf410ae15a2d315f3db400d plus the pinned no-logits patch.
+-- The C compiler identification is GNU 16.2.1
+-- The CXX compiler identification is GNU 16.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found OpenMP_C: -fopenmp (found version "5.2")
+-- Found OpenMP_CXX: -fopenmp (found version "5.2")
+-- Found OpenMP: TRUE (found version "5.2")
+-- llama.cpp version: 0.6.0-dev
+CMAKE_BUILD_TYPE=Release
+-- Found Git: /usr/bin/git (found version "2.56.0")
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/cc
+-- Warning: ccache not found - consider installing it for faster compilation or disable this warning with GGML_CCACHE=OFF
+-- CMAKE_SYSTEM_PROCESSOR: x86_64
+-- GGML_SYSTEM_ARCH: x86
+-- Found OpenMP_C: -fopenmp (found version "5.2")
+-- Found OpenMP_CXX: -fopenmp (found version "5.2")
+-- Including CPU backend
+-- x86 detected
+-- Adding CPU backend variant ggml-cpu: -msse4.2;-mf16c;-mfma;-mbmi2;-mavx;-mavx2 GGML_SSE42;GGML_F16C;GGML_FMA;GGML_BMI2;GGML_AVX;GGML_AVX2
+-- ggml version: 0.26.0
+-- ggml commit:  4d756bc
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_BINDIR got its value from CMAKE_INSTALL_BINDIR.  In most cases
+  this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_BINDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_BINDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:255 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v3/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_SBINDIR got its value from CMAKE_INSTALL_SBINDIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_SBINDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_SBINDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:258 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v3/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBDIR got its value from CMAKE_INSTALL_LIBDIR.  In most cases
+  this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:261 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v3/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v3/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_INCLUDEDIR got its value from CMAKE_INSTALL_INCLUDEDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_INCLUDEDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_INCLUDEDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:279 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v3/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LOCALSTATEDIR got its value from CMAKE_INSTALL_LOCALSTATEDIR.
+  In most cases this is unintended, check if you included GNUInstallDirs
+  before KDEInstallDirs.  Some third party modules include GNUInstallDirs too
+  so eg.  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If
+  you set CMAKE_INSTALL_LOCALSTATEDIR deliberately before including
+  KDEInstallDirs its recommended to use KDE_INSTALL_LOCALSTATEDIR instead to
+  suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:288 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v3/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_SHAREDSTATEDIR got its value from CMAKE_INSTALL_SHAREDSTATEDIR.
+  In most cases this is unintended, check if you included GNUInstallDirs
+  before KDEInstallDirs.  Some third party modules include GNUInstallDirs too
+  so eg.  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If
+  you set CMAKE_INSTALL_SHAREDSTATEDIR deliberately before including
+  KDEInstallDirs its recommended to use KDE_INSTALL_SHAREDSTATEDIR instead to
+  suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:291 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v3/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_DATAROOTDIR got its value from CMAKE_INSTALL_DATAROOTDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_DATAROOTDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_DATAROOTDIR instead to suppress this
+  message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:299 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v3/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_DATADIR got its value from CMAKE_INSTALL_DATADIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_DATADIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_DATADIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:304 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v3/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LOCALEDIR got its value from CMAKE_INSTALL_LOCALEDIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LOCALEDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LOCALEDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:332 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v3/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_MANDIR got its value from CMAKE_INSTALL_MANDIR.  In most cases
+  this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_MANDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_MANDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:357 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v3/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_INFODIR got its value from CMAKE_INSTALL_INFODIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_INFODIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_INFODIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:360 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v3/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_SYSCONFDIR got its value from CMAKE_INSTALL_SYSCONFDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_SYSCONFDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_SYSCONFDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:387 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v3/CMakeLists.txt:10 (include)
+
+
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.8") found components: Interpreter
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'Kirigamiplugin' is a dependency of 'kde-index', but the
+  link target it defines (KF6Kirigamiplugin) does not exist in the current
+  scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiPrivateplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6KirigamiPrivateplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiPolyfillplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6KirigamiPolyfillplugin) does not exist in
+  the current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiControlsplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6KirigamiControlsplugin) does not exist in
+  the current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiPlatformplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6::KirigamiPlatformplugin) does not exist in
+  the current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiDialogsplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6KirigamiDialogsplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiLayoutsplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6KirigamiLayoutsplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiFormsplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6KirigamiFormsplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiLayoutsPrivateplugin' is a dependency of
+  'kde-index', but the link target it defines
+  (KF6KirigamiLayoutsPrivateplugin) does not exist in the current scope.  The
+  plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiFormsPrivateTemplatesplugin' is a dependency of
+  'kde-index', but the link target it defines
+  (KF6KirigamiFormsPrivateTemplatesplugin) does not exist in the current
+  scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiFormsPrivateFlatplugin' is a dependency of
+  'kde-index', but the link target it defines
+  (KF6KirigamiFormsPrivateFlatplugin) does not exist in the current scope.
+  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiFormsPrivateCardsplugin' is a dependency of
+  'kde-index', but the link target it defines
+  (KF6KirigamiFormsPrivateCardsplugin) does not exist in the current scope.
+  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'Kirigamiplugin' is a dependency of 'ui-smoke', but the link
+  target it defines (KF6Kirigamiplugin) does not exist in the current scope.
+  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiPrivateplugin' is a dependency of 'ui-smoke', but
+  the link target it defines (KF6KirigamiPrivateplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiPolyfillplugin' is a dependency of 'ui-smoke', but
+  the link target it defines (KF6KirigamiPolyfillplugin) does not exist in
+  the current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiControlsplugin' is a dependency of 'ui-smoke', but
+  the link target it defines (KF6KirigamiControlsplugin) does not exist in
+  the current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiPlatformplugin' is a dependency of 'ui-smoke', but
+  the link target it defines (KF6::KirigamiPlatformplugin) does not exist in
+  the current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiDialogsplugin' is a dependency of 'ui-smoke', but
+  the link target it defines (KF6KirigamiDialogsplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiLayoutsplugin' is a dependency of 'ui-smoke', but
+  the link target it defines (KF6KirigamiLayoutsplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiFormsplugin' is a dependency of 'ui-smoke', but the
+  link target it defines (KF6KirigamiFormsplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiLayoutsPrivateplugin' is a dependency of
+  'ui-smoke', but the link target it defines
+  (KF6KirigamiLayoutsPrivateplugin) does not exist in the current scope.  The
+  plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiFormsPrivateTemplatesplugin' is a dependency of
+  'ui-smoke', but the link target it defines
+  (KF6KirigamiFormsPrivateTemplatesplugin) does not exist in the current
+  scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiFormsPrivateFlatplugin' is a dependency of
+  'ui-smoke', but the link target it defines
+  (KF6KirigamiFormsPrivateFlatplugin) does not exist in the current scope.
+  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiFormsPrivateCardsplugin' is a dependency of
+  'ui-smoke', but the link target it defines
+  (KF6KirigamiFormsPrivateCardsplugin) does not exist in the current scope.
+  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+-- Configuring done (3.7s)
+-- Generating done (0.2s)
+-- Build files have been written to: /checkout/build-integrated
+[1/209] Automatic MOC and UIC for target ggml-base
+[2/209] Automatic MOC and UIC for target vendor-hash
+[3/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-base.dir/ggml-base_autogen/mocs_compilation.cpp.o
+[4/209] Running qmlimportscanner for ui-smoke
+[5/209] Running qmlimportscanner for kde-index
+[6/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.o
+[7/209] Building C object probe/llama-runtime/ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o
+[8/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o
+[9/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o
+[10/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o
+[11/209] Building C object probe/llama-runtime/ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o
+[12/209] Generating qt.conf part for kde-index
+[13/209] Generating qt.conf part for ui-smoke
+[14/209] Copying kde-index qml sources into build dir
+[15/209] Copying kde-index qml resources into build dir
+[16/209] Copying ui-smoke qml sources into build dir
+[17/209] Copying ui-smoke qml resources into build dir
+[18/209] Populating .qmlls.build.ini file at /checkout/build-integrated/.qt/.qmlls.build.ini
+[19/209] Generating qt.conf file
+[20/209] Building CXX object probe/llama-runtime/vendor/hash/CMakeFiles/vendor-hash.dir/vendor-hash_autogen/mocs_compilation.cpp.o
+[21/209] Building CXX object probe/llama-runtime/vendor/hash/CMakeFiles/vendor-hash.dir/hash.cpp.o
+[22/209] Building C object probe/llama-runtime/vendor/hash/CMakeFiles/vendor-hash.dir/xxhash/xxhash.c.o
+[23/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend-meta.cpp.o
+[24/209] Building CXX object probe/llama-runtime/vendor/hash/CMakeFiles/vendor-hash.dir/sha1/sha1.c.o
+[25/209] Building C object probe/llama-runtime/vendor/hash/CMakeFiles/vendor-hash.dir/sha256/sha256.c.o
+[26/209] Automatic MOC and UIC for target ui-smoke
+[27/209] Automatic MOC and UIC for target kde-index
+[28/209] Running AUTOMOC file extraction for target kde-index
+[29/209] Running AUTOMOC file extraction for target ui-smoke
+[30/209] Automatic MOC and UIC for target kde-index-core
+[31/209] Running moc --collect-json for target kde-index
+[32/209] Running moc --collect-json for target ui-smoke
+[33/209] Building CXX object engine/CMakeFiles/kde-index-core.dir/kde-index-core_autogen/mocs_compilation.cpp.o
+[34/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o
+[35/209] Linking CXX static library probe/llama-runtime/vendor/hash/libvendor-hash.a
+[36/209] Automatic QML type registration for target kde-index
+[37/209] Automatic QML type registration for target ui-smoke
+[38/209] Running rcc for resource qmake_org_kde_kdeindex
+[39/209] Generating .rcc/qmlcache/kde-index_qmlcache_loader.cpp
+[40/209] Running rcc for resource kde-index_raw_qml_0
+[41/209] Generating .rcc/qmlcache/ui-smoke_qmlcache_loader.cpp
+[42/209] Generating .rcc/qmlcache/kde-index_src_ui_Main_qml.cpp, .rcc/qmlcache/kde-index_src_ui_Main_qml.cpp.aotstats
+[43/209] Running rcc for resource ui-smoke_raw_qml_0
+[44/209] Generating .rcc/qmlcache/ui-smoke_src_ui_Main_qml.cpp, .rcc/qmlcache/ui-smoke_src_ui_Main_qml.cpp.aotstats
+[45/209] Automatic MOC and UIC for target sizing-check
+[46/209] Automatic MOC and UIC for target kde-index-cli
+[47/209] Automatic MOC and UIC for target kde-index-runner
+[48/209] Building CXX object CMakeFiles/kde-index.dir/kde-index_autogen/mocs_compilation.cpp.o
+[49/209] Building CXX object CMakeFiles/kde-index.dir/src/ui/main.cpp.o
+[50/209] Building C object probe/llama-runtime/ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o
+[51/209] Linking CXX static library probe/llama-runtime/ggml/src/libggml-base.a
+[52/209] Automatic MOC and UIC for target ggml-cpu
+[53/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu_autogen/mocs_compilation.cpp.o
+[54/209] Building CXX object CMakeFiles/kde-index.dir/kde-index_qmltyperegistrations.cpp.o
+[55/209] Building C object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o
+[56/209] Building CXX object CMakeFiles/kde-index.dir/src/ui/backend.cpp.o
+[57/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/hbm.cpp.o
+[58/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o
+[59/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/traits.cpp.o
+[60/209] Building C object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/quants.c.o
+[61/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o
+[62/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o
+[63/209] Building CXX object engine/CMakeFiles/kde-index-core.dir/__/src/core/engine.cpp.o
+[64/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/tiled/tiled-kernel.cpp.o
+[65/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/binary-ops.cpp.o
+[66/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/vec.cpp.o
+[67/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/unary-ops.cpp.o
+[68/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/tiled/tiled.cpp.o
+[69/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/repack.cpp.o
+[70/209] Building C object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/quants.c.o
+[71/209] Linking CXX static library engine/libkde-index-core.a
+[72/209] Automatic MOC and UIC for target kde-index-service
+[73/209] Building CXX object CMakeFiles/kde-index.dir/build-integrated/.qt/rcc/qrc_qmake_org_kde_kdeindex.cpp.o
+[74/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/repack.cpp.o
+[75/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/llamafile/sgemm.cpp.o
+[76/209] Building CXX object CMakeFiles/kde-index.dir/build-integrated/.qt/rcc/qrc_kde-index_raw_qml_0.cpp.o
+[77/209] Building CXX object CMakeFiles/kde-index.dir/build-integrated/.rcc/qmlcache/kde-index_qmlcache_loader.cpp.o
+[78/209] Building CXX object CMakeFiles/ui-smoke.dir/ui-smoke_autogen/mocs_compilation.cpp.o
+[79/209] Building CXX object CMakeFiles/ui-smoke.dir/tools/ui_smoke.cpp.o
+[80/209] Building CXX object CMakeFiles/kde-index.dir/build-integrated/.rcc/qmlcache/kde-index_src_ui_Main_qml.cpp.o
+[81/209] Building CXX object CMakeFiles/ui-smoke.dir/build-integrated/.qt/rcc/qrc_qmake_org_kde_kdeindex.cpp.o
+[82/209] Building CXX object CMakeFiles/ui-smoke.dir/ui-smoke_qmltyperegistrations.cpp.o
+[83/209] Building CXX object CMakeFiles/ui-smoke.dir/build-integrated/.rcc/qmlcache/ui-smoke_qmlcache_loader.cpp.o
+[84/209] Building CXX object CMakeFiles/ui-smoke.dir/build-integrated/.qt/rcc/qrc_ui-smoke_raw_qml_0.cpp.o
+[85/209] Building CXX object probe/CMakeFiles/sizing-check.dir/sizing-check_autogen/mocs_compilation.cpp.o
+[86/209] Building CXX object CMakeFiles/ui-smoke.dir/src/ui/backend.cpp.o
+[87/209] Building CXX object engine/CMakeFiles/kde-index-service.dir/kde-index-service_autogen/mocs_compilation.cpp.o
+[88/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o
+[89/209] Linking CXX static library probe/llama-runtime/ggml/src/libggml-cpu.a
+[90/209] Automatic MOC and UIC for target ggml
+[91/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml.dir/ggml_autogen/mocs_compilation.cpp.o
+[92/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml.dir/ggml-backend-dl.cpp.o
+[93/209] Building CXX object CMakeFiles/ui-smoke.dir/build-integrated/.rcc/qmlcache/ui-smoke_src_ui_Main_qml.cpp.o
+[94/209] Building CXX object engine/CMakeFiles/kde-index-cli.dir/kde-index-cli_autogen/mocs_compilation.cpp.o
+[95/209] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o
+[96/209] Linking CXX static library probe/llama-runtime/ggml/src/libggml.a
+[97/209] Automatic MOC and UIC for target llama
+[98/209] Building CXX object probe/CMakeFiles/sizing-check.dir/sizing_check.cpp.o
+[99/209] Building CXX object engine/CMakeFiles/kde-index-service.dir/__/src/service/main.cpp.o
+[100/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/Unity/unity_9_cxx.cxx.o
+[101/209] Building CXX object engine/CMakeFiles/kde-index-cli.dir/__/src/cli/main.cpp.o
+[102/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/Unity/unity_8_cxx.cxx.o
+[103/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/Unity/unity_7_cxx.cxx.o
+[104/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/Unity/unity_6_cxx.cxx.o
+[105/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/Unity/unity_5_cxx.cxx.o
+[106/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/Unity/unity_4_cxx.cxx.o
+[107/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/Unity/unity_2_cxx.cxx.o
+[108/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/Unity/unity_3_cxx.cxx.o
+[109/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama.cpp.o
+[110/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-arch.cpp.o
+[111/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/Unity/unity_1_cxx.cxx.o
+[112/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/Unity/unity_0_cxx.cxx.o
+[113/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-adapter.cpp.o
+[114/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-cparams.cpp.o
+[115/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-chat.cpp.o
+[116/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-batch.cpp.o
+[117/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-hparams.cpp.o
+[118/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-impl.cpp.o
+[119/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-io.cpp.o
+[120/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-context.cpp.o
+[121/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-kv-cache-iswa.cpp.o
+[122/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-graph.cpp.o
+[123/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-grammar.cpp.o
+[124/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-kv-cache-dsa.cpp.o
+[125/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-kv-cache-msa.cpp.o
+[126/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-kv-cache-dsa-iswa.cpp.o
+[127/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-memory.cpp.o
+[128/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-kv-cache.cpp.o
+[129/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-memory-hybrid.cpp.o
+[130/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-memory-hybrid-iswa.cpp.o
+[131/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-kv-cache-dsv4.cpp.o
+[132/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-mmap.cpp.o
+[133/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-memory-recurrent.cpp.o
+[134/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-memory-hybrid-idx.cpp.o
+[135/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-model-saver.cpp.o
+[136/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-quant.cpp.o
+[137/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-model-loader.cpp.o
+[138/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-sampler.cpp.o
+[139/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/unicode-data.cpp.o
+[140/209] Building CXX object src/runner-v3/CMakeFiles/kde-index-runner.dir/kde-index-runner_autogen/mocs_compilation.cpp.o
+[141/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-model.cpp.o
+[142/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-vocab.cpp.o
+[143/209] Linking CXX executable bin/kde-index
+[144/209] Linking CXX executable bin/sizing-check
+[145/209] Linking CXX executable bin/ui-smoke
+[146/209] Linking CXX executable bin/kde-index-service
+[147/209] Linking CXX executable bin/kde-index-cli
+[148/209] Building CXX object src/runner-v3/CMakeFiles/kde-index-runner.dir/runner.cpp.o
+[149/209] Linking CXX shared module src/runner-v3/libkde-index-runner.so
+[150/209] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/unicode.cpp.o
+[151/209] Linking CXX static library probe/llama-runtime/src/libllama.a
+[152/209] Automatic MOC and UIC for target mtmd
+[153/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/mtmd_autogen/mocs_compilation.cpp.o
+[154/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/mtmd-audio.cpp.o
+[155/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/mtmd-image.cpp.o
+[156/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/mtmd.cpp.o
+[157/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/cogvlm.cpp.o
+[158/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/conformer.cpp.o
+[159/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/mtmd-helper-gen.cpp.o
+[160/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/deepseek4v.cpp.o
+[161/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/dots3note.cpp.o
+[162/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/dotsocr.cpp.o
+[163/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/exaone4_5.cpp.o
+[164/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/gemma4a.cpp.o
+[165/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/gemma4v.cpp.o
+[166/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/gemma4ua.cpp.o
+[167/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/gemma4uv.cpp.o
+[168/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/glm4v.cpp.o
+[169/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/granite-speech.cpp.o
+[170/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/hunyuanvl.cpp.o
+[171/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/granite4-vision.cpp.o
+[172/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/internvl.cpp.o
+[173/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/kimivl.cpp.o
+[174/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/kimik25.cpp.o
+[175/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/nemotron-v2-vl.cpp.o
+[176/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/mtmd-helper.cpp.o
+[177/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/muse-glimmer.cpp.o
+[178/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/llama4.cpp.o
+[179/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/llava.cpp.o
+[180/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/minicpmv.cpp.o
+[181/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/paddleocr.cpp.o
+[182/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/pixtral.cpp.o
+[183/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/qwen2vl.cpp.o
+[184/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/minimax-m3.cpp.o
+[185/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/qwen3vl.cpp.o
+[186/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/ling3vl.cpp.o
+[187/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/mimovl.cpp.o
+[188/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/clip.cpp.o
+[189/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/qwen3a.cpp.o
+[190/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/mimo-audio.cpp.o
+[191/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/qwen3tts-spkenc.cpp.o
+[192/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/pockettts-seanet.cpp.o
+[193/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/pockettts-spkenc.cpp.o
+[194/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/qwen3tts-gen.cpp.o
+[195/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/step3vl.cpp.o
+[196/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/pockettts-gen.cpp.o
+[197/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/siglip.cpp.o
+[198/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/whisper-enc.cpp.o
+[199/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/deepseekocr2.cpp.o
+[200/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/deepseekocr.cpp.o
+[201/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/mobilenetv5.cpp.o
+[202/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/youtuvl.cpp.o
+[203/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/yasa2.cpp.o
+[204/209] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/parakeet.cpp.o
+[205/209] Linking CXX static library probe/llama-runtime/tools/mtmd/libmtmd.a
+[206/209] Automatic MOC and UIC for target embedding-probe
+[207/209] Building CXX object probe/CMakeFiles/embedding-probe.dir/embedding-probe_autogen/mocs_compilation.cpp.o
+[208/209] Building CXX object probe/CMakeFiles/embedding-probe.dir/main.cpp.o
+[209/209] Linking CXX executable bin/embedding-probe
+-- Install configuration: "Release"
+-- Installing: /checkout/local/stage-v2/usr/lib/libggml-cpu.a
+-- Installing: /checkout/local/stage-v2/usr/lib/libggml.a
+-- Installing: /checkout/local/stage-v2/usr/include/ggml.h
+-- Installing: /checkout/local/stage-v2/usr/include/ggml-cpu.h
+-- Installing: /checkout/local/stage-v2/usr/include/ggml-alloc.h
+-- Installing: /checkout/local/stage-v2/usr/include/ggml-backend.h
+-- Installing: /checkout/local/stage-v2/usr/include/ggml-blas.h
+-- Installing: /checkout/local/stage-v2/usr/include/ggml-cann.h
+-- Installing: /checkout/local/stage-v2/usr/include/ggml-cpp.h
+-- Installing: /checkout/local/stage-v2/usr/include/ggml-cuda.h
+-- Installing: /checkout/local/stage-v2/usr/include/ggml-opt.h
+-- Installing: /checkout/local/stage-v2/usr/include/ggml-metal.h
+-- Installing: /checkout/local/stage-v2/usr/include/ggml-rpc.h
+-- Installing: /checkout/local/stage-v2/usr/include/ggml-virtgpu.h
+-- Installing: /checkout/local/stage-v2/usr/include/ggml-sycl.h
+-- Installing: /checkout/local/stage-v2/usr/include/ggml-vulkan.h
+-- Installing: /checkout/local/stage-v2/usr/include/ggml-webgpu.h
+-- Installing: /checkout/local/stage-v2/usr/include/ggml-zendnn.h
+-- Installing: /checkout/local/stage-v2/usr/include/ggml-openvino.h
+-- Installing: /checkout/local/stage-v2/usr/include/gguf.h
+-- Installing: /checkout/local/stage-v2/usr/lib/libggml-base.a
+-- Installing: /checkout/local/stage-v2/usr/lib/cmake/ggml/ggml-config.cmake
+-- Installing: /checkout/local/stage-v2/usr/lib/cmake/ggml/ggml-config-version.cmake
+-- Installing: /checkout/local/stage-v2/usr/lib/libmtmd.a
+-- Installing: /checkout/local/stage-v2/usr/include/mtmd-debug.h
+-- Installing: /checkout/local/stage-v2/usr/include/mtmd.h
+-- Installing: /checkout/local/stage-v2/usr/include/mtmd-helper.h
+-- Installing: /checkout/local/stage-v2/usr/lib/libllama.a
+-- Installing: /checkout/local/stage-v2/usr/include/llama.h
+-- Installing: /checkout/local/stage-v2/usr/include/llama-cpp.h
+-- Installing: /checkout/local/stage-v2/usr/lib/cmake/llama/llama-config.cmake
+-- Installing: /checkout/local/stage-v2/usr/lib/cmake/llama/llama-config-version.cmake
+-- Installing: /checkout/local/stage-v2/usr/lib/pkgconfig/llama.pc
+-- Installing: /checkout/local/stage-v2/usr/bin/embedding-probe
+-- Set non-toolchain portion of runtime path of "/checkout/local/stage-v2/usr/bin/embedding-probe" to "$ORIGIN:$ORIGIN/../lib"
+-- Installing: /checkout/local/stage-v2/usr/bin/kde-index-service
+-- Set non-toolchain portion of runtime path of "/checkout/local/stage-v2/usr/bin/kde-index-service" to "$ORIGIN:$ORIGIN/../lib"
+-- Installing: /checkout/local/stage-v2/usr/bin/kde-index-cli
+-- Set non-toolchain portion of runtime path of "/checkout/local/stage-v2/usr/bin/kde-index-cli" to "$ORIGIN:$ORIGIN/../lib"
+-- Installing: /checkout/local/stage-v2/usr/lib/qt6/plugins/kf6/krunner/libkde-index-runner.so
+-- Set non-toolchain portion of runtime path of "/checkout/local/stage-v2/usr/lib/qt6/plugins/kf6/krunner/libkde-index-runner.so" to "$ORIGIN:$ORIGIN/../lib"
+-- Installing: /checkout/local/stage-v2/usr/bin/kde-index
+-- Set non-toolchain portion of runtime path of "/checkout/local/stage-v2/usr/bin/kde-index" to "$ORIGIN:$ORIGIN/../lib"
+-- Installing: /checkout/local/stage-v2/usr/share/kde-index/model_download.py
+-- Installing: /checkout/local/stage-v2/usr/share/applications/org.kdeindex.Search.desktop
+-- Installing: /checkout/local/stage-v2/usr/share/metainfo/org.kdeindex.Search.metainfo.xml
+-- Installing: /checkout/local/stage-v2/usr/share/licenses/kde-index/LICENSE
+-- Installing: /checkout/local/stage-v2/usr/share/licenses/kde-index/THIRD_PARTY_NOTICES.md
+-- Up-to-date: /checkout/local/stage-v2/usr/share/licenses/kde-index
+-- Installing: /checkout/local/stage-v2/usr/share/licenses/kde-index/Apache-2.0.txt
+-- Installing: /checkout/local/stage-v2/usr/share/licenses/kde-index/DigUp-MIT.txt
+-- Installing: /checkout/local/stage-v2/usr/share/licenses/kde-index/llama.cpp-MIT.txt
+-- Installing: /checkout/local/stage-v2/usr/share/licenses/kde-index/miniaudio-MIT-0.txt
+-- Installing: /checkout/local/stage-v2/usr/share/licenses/kde-index/nlohmann-json-MIT.txt
+-- Installing: /checkout/local/stage-v2/usr/share/licenses/kde-index/rotate-bits-MIT.txt
+-- Installing: /checkout/local/stage-v2/usr/share/licenses/kde-index/sha1-Public-Domain.txt
+-- Installing: /checkout/local/stage-v2/usr/share/licenses/kde-index/sha256-Public-Domain.txt
+-- Installing: /checkout/local/stage-v2/usr/share/licenses/kde-index/sheredom-Unlicense.txt
+-- Installing: /checkout/local/stage-v2/usr/share/licenses/kde-index/stb-image-MIT.txt
+-- Installing: /checkout/local/stage-v2/usr/share/licenses/kde-index/xxHash-BSD-2-Clause.txt

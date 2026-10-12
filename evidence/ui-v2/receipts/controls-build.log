@@ -1,0 +1,389 @@
+[ 16%] Running qmlimportscanner for ui-repair
+[ 16%] Built target ui-repair_qmlimportscan
+[ 16%] Built target ui-repair_autogen_timestamp_deps
+[ 33%] Automatic MOC and UIC for target ui-repair
+[ 33%] Built target ui-repair_autogen
+[ 50%] Building CXX object CMakeFiles/ui-repair.dir/ui-repair_autogen/mocs_compilation.cpp.o
+[ 66%] Building CXX object CMakeFiles/ui-repair.dir/home/parm/Documents/KDE_Index/tools/ui_repair_harness.cpp.o
+[ 83%] Building CXX object CMakeFiles/ui-repair.dir/home/parm/Documents/KDE_Index/src/ui/backend.cpp.o
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp: In function ‘int main(int, char**)’:
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:32:107: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   32 |     QString corpus=own+"/liveness-corpus";QDir().mkpath(corpus);QFile file(corpus+"/source.txt");file.open(QIODevice::WriteOnly);file.write("LIFETIME-7491 normal text source");file.close();b.addRoot(QUrl::fromLocalFile(corpus));outcome&=waitFor([&]{return b.indexed()==1&&!b.busy();},30000);b.setQuery("LIFETIME-7491");outcome&=waitFor([&]{return !b.results().isEmpty();},15000);
+      |                                                                                                  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qdir.h:11,
+                 from /usr/include/qt6/QtCore/qtemporarydir.h:9,
+                 from /usr/include/qt6/QtCore/QTemporaryDir:1,
+                 from /home/parm/Documents/KDE Index/local/ui-v2-harness/../../src/ui/backend.h:9,
+                 from /home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:1:
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:44:104: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   44 |    QString corpus=own+"/markup-corpus";QDir().mkpath(corpus);QFile file(corpus+"/markup.txt");file.open(QIODevice::WriteOnly);file.write(QString("<b>MARKUP-CANARY</b><img src='http://127.0.0.1:%1/actual-service-canary.png'>").arg(http.serverPort()).toUtf8());file.close();
+      |                                                                                               ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:81:93: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   81 |    if(pending){QDir().mkpath(own+"/renderer");QFile fake(own+"/renderer/pdftoppm");fake.open(QIODevice::WriteOnly);fake.write("#!/usr/bin/python3\nimport os,time\nopen(os.path.join(os.path.dirname(__file__),'preview.pid'),'w').write(str(os.getpid()))\ntime.sleep(60)\n");fake.close();fake.setPermissions(QFile::ReadOwner|QFile::WriteOwner|QFile::ExeOwner);QFile::remove(own+"/renderer/preview.pid");qputenv("PATH",(own+"/renderer:").toUtf8()+qgetenv("PATH"));}
+      |                                                                                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:82:46: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   82 |    QFile script(paths.downloader);script.open(QIODevice::WriteOnly);script.write("import os,time\nopen(os.path.join(os.path.dirname(__file__),'download.pid'),'w').write(str(os.getpid()))\ntime.sleep(60)\n");script.close();
+      |                                   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:88:27: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   88 |    QFile p(pidfile);p.open(QIODevice::ReadOnly);auto pid=p.readAll().toLongLong();record("after-destructor",{{"download_pid",double(pid)},{"download_alive",pid>0&&::kill(pid,0)==0},{"preview_exists",QFileInfo::exists(preview)}});outcome&=pid>0&&::kill(pid,0)!=0&&!QFileInfo::exists(preview);
+      |                     ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:89:59: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   89 |    if(pending){QFile p(own+"/renderer/preview.pid");p.open(QIODevice::ReadOnly);auto pid=p.readAll().toLongLong();record("pending-preview-after-destructor",{{"pid",double(pid)},{"alive",pid>0&&::kill(pid,0)==0}});outcome&=pid>0&&::kill(pid,0)!=0;}
+      |                                                     ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+[100%] Linking CXX executable ui-repair
+[100%] Built target ui-repair
+[ 16%] Running qmlimportscanner for ui-recovery
+[ 16%] Built target ui-recovery_qmlimportscan
+[ 16%] Built target ui-recovery_autogen_timestamp_deps
+[ 33%] Automatic MOC and UIC for target ui-recovery
+[ 33%] Built target ui-recovery_autogen
+[ 66%] Building CXX object CMakeFiles/ui-recovery.dir/home/parm/Documents/KDE_Index/src/ui/backend.cpp.o
+[ 66%] Building CXX object CMakeFiles/ui-recovery.dir/home/parm/Documents/KDE_Index/tools/ui_repair_recovery.cpp.o
+[ 83%] Building CXX object CMakeFiles/ui-recovery.dir/ui-recovery_autogen/mocs_compilation.cpp.o
+/home/parm/Documents/KDE Index/tools/ui_repair_recovery.cpp: In function ‘int main(int, char**)’:
+/home/parm/Documents/KDE Index/tools/ui_repair_recovery.cpp:24:155: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   24 |  QString text=own+"/models/embeddinggemma-2-Q8_0.gguf",image=own+"/models/mmproj-embeddinggemma-2-Q8_0.gguf",wrong=own+"/wrong.gguf";QFile w(wrong);w.open(QIODevice::WriteOnly);w.write("incorrect synthetic weights");w.close();
+      |                                                                                                                                                     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qdir.h:11,
+                 from /usr/include/qt6/QtCore/qtemporarydir.h:9,
+                 from /usr/include/qt6/QtCore/QTemporaryDir:1,
+                 from /home/parm/Documents/KDE Index/local/ui-v2-harness/../../src/ui/backend.h:9,
+                 from /home/parm/Documents/KDE Index/tools/ui_repair_recovery.cpp:2:
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_recovery.cpp:26:48: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   26 |  QFile file(own+"/corpus/source.txt");file.open(QIODevice::WriteOnly);file.write("RECOVERY-7491 actual normal text content");file.close();
+      |                                       ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_recovery.cpp:28:27: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   28 |  QFile exe(probe);exe.open(QIODevice::ReadOnly);QString sha=QString::fromLatin1(QCryptographicHash::hash(exe.readAll(),QCryptographicHash::Sha256).toHex());
+      |                   ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+[100%] Linking CXX executable ui-recovery
+[100%] Built target ui-recovery
+[ 16%] Built target ui-repair_qmlimportscan
+[ 16%] Built target ui-repair_autogen_timestamp_deps
+[ 33%] Automatic MOC and UIC for target ui-repair
+[ 33%] Built target ui-repair_autogen
+[ 50%] Building CXX object CMakeFiles/ui-repair.dir/home/parm/Documents/KDE_Index/tools/ui_repair_harness.cpp.o
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp: In function ‘int main(int, char**)’:
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:32:107: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   32 |     QString corpus=own+"/liveness-corpus";QDir().mkpath(corpus);QFile file(corpus+"/source.txt");file.open(QIODevice::WriteOnly);file.write("LIFETIME-7491 normal text source");file.close();b.addRoot(QUrl::fromLocalFile(corpus));outcome&=waitFor([&]{return b.indexed()==1&&!b.busy();},30000);b.setQuery("LIFETIME-7491");outcome&=waitFor([&]{return !b.results().isEmpty();},15000);
+      |                                                                                                  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qdir.h:11,
+                 from /usr/include/qt6/QtCore/qtemporarydir.h:9,
+                 from /usr/include/qt6/QtCore/QTemporaryDir:1,
+                 from /home/parm/Documents/KDE Index/local/ui-v2-harness/../../src/ui/backend.h:9,
+                 from /home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:1:
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:44:104: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   44 |    QString corpus=own+"/markup-corpus";QDir().mkpath(corpus);QFile file(corpus+"/markup.txt");file.open(QIODevice::WriteOnly);file.write(QString("<b>MARKUP-CANARY</b><img src='http://127.0.0.1:%1/actual-service-canary.png'>").arg(http.serverPort()).toUtf8());file.close();
+      |                                                                                               ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:89:93: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   89 |    if(pending){QDir().mkpath(own+"/renderer");QFile fake(own+"/renderer/pdftoppm");fake.open(QIODevice::WriteOnly);fake.write("#!/usr/bin/python3\nimport os,time\nopen(os.path.join(os.path.dirname(__file__),'preview.pid'),'w').write(str(os.getpid()))\ntime.sleep(60)\n");fake.close();fake.setPermissions(QFile::ReadOwner|QFile::WriteOwner|QFile::ExeOwner);QFile::remove(own+"/renderer/preview.pid");qputenv("PATH",(own+"/renderer:").toUtf8()+qgetenv("PATH"));}
+      |                                                                                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:90:46: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   90 |    QFile script(paths.downloader);script.open(QIODevice::WriteOnly);script.write("import os,time\nopen(os.path.join(os.path.dirname(__file__),'download.pid'),'w').write(str(os.getpid()))\ntime.sleep(60)\n");script.close();
+      |                                   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:96:27: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   96 |    QFile p(pidfile);p.open(QIODevice::ReadOnly);auto pid=p.readAll().toLongLong();record("after-destructor",{{"download_pid",double(pid)},{"download_alive",pid>0&&::kill(pid,0)==0},{"preview_exists",QFileInfo::exists(preview)}});outcome&=pid>0&&::kill(pid,0)!=0&&!QFileInfo::exists(preview);
+      |                     ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:97:59: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   97 |    if(pending){QFile p(own+"/renderer/preview.pid");p.open(QIODevice::ReadOnly);auto pid=p.readAll().toLongLong();record("pending-preview-after-destructor",{{"pid",double(pid)},{"alive",pid>0&&::kill(pid,0)==0}});outcome&=pid>0&&::kill(pid,0)!=0;}
+      |                                                     ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+[ 66%] Linking CXX executable ui-repair
+[100%] Built target ui-repair
+[ 16%] Built target ui-repair_qmlimportscan
+[ 16%] Built target ui-repair_autogen_timestamp_deps
+[ 33%] Automatic MOC and UIC for target ui-repair
+[ 33%] Built target ui-repair_autogen
+[ 50%] Building CXX object CMakeFiles/ui-repair.dir/home/parm/Documents/KDE_Index/tools/ui_repair_harness.cpp.o
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp: In function ‘int main(int, char**)’:
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:35:107: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   35 |     QString corpus=own+"/liveness-corpus";QDir().mkpath(corpus);QFile file(corpus+"/source.txt");file.open(QIODevice::WriteOnly);file.write("LIFETIME-7491 normal text source");file.close();b.addRoot(QUrl::fromLocalFile(corpus));outcome&=waitFor([&]{return b.indexed()==1&&!b.busy();},30000);b.setQuery("LIFETIME-7491");outcome&=waitFor([&]{return !b.results().isEmpty();},15000);
+      |                                                                                                  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qdir.h:11,
+                 from /usr/include/qt6/QtCore/qtemporarydir.h:9,
+                 from /usr/include/qt6/QtCore/QTemporaryDir:1,
+                 from /home/parm/Documents/KDE Index/local/ui-v2-harness/../../src/ui/backend.h:9,
+                 from /home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:1:
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:47:104: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   47 |    QString corpus=own+"/markup-corpus";QDir().mkpath(corpus);QFile file(corpus+"/markup.txt");file.open(QIODevice::WriteOnly);file.write(QString("<b>MARKUP-CANARY</b><img src='http://127.0.0.1:%1/actual-service-canary.png'>").arg(http.serverPort()).toUtf8());file.close();
+      |                                                                                               ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:95:93: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   95 |    if(pending){QDir().mkpath(own+"/renderer");QFile fake(own+"/renderer/pdftoppm");fake.open(QIODevice::WriteOnly);fake.write("#!/usr/bin/python3\nimport os,time\nopen(os.path.join(os.path.dirname(__file__),'preview.pid'),'w').write(str(os.getpid()))\ntime.sleep(60)\n");fake.close();fake.setPermissions(QFile::ReadOwner|QFile::WriteOwner|QFile::ExeOwner);QFile::remove(own+"/renderer/preview.pid");qputenv("PATH",(own+"/renderer:").toUtf8()+qgetenv("PATH"));}
+      |                                                                                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:96:46: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   96 |    QFile script(paths.downloader);script.open(QIODevice::WriteOnly);script.write("import os,time\nopen(os.path.join(os.path.dirname(__file__),'download.pid'),'w').write(str(os.getpid()))\ntime.sleep(60)\n");script.close();
+      |                                   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:102:27: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  102 |    QFile p(pidfile);p.open(QIODevice::ReadOnly);auto pid=p.readAll().toLongLong();record("after-destructor",{{"download_pid",double(pid)},{"download_alive",pid>0&&::kill(pid,0)==0},{"preview_exists",QFileInfo::exists(preview)}});outcome&=pid>0&&::kill(pid,0)!=0&&!QFileInfo::exists(preview);
+      |                     ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:103:59: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  103 |    if(pending){QFile p(own+"/renderer/preview.pid");p.open(QIODevice::ReadOnly);auto pid=p.readAll().toLongLong();record("pending-preview-after-destructor",{{"pid",double(pid)},{"alive",pid>0&&::kill(pid,0)==0}});outcome&=pid>0&&::kill(pid,0)!=0;}
+      |                                                     ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+[ 66%] Linking CXX executable ui-repair
+[100%] Built target ui-repair
+[ 16%] Built target ui-recovery_qmlimportscan
+[ 16%] Built target ui-repair_qmlimportscan
+[ 16%] Built target ui-recovery_autogen_timestamp_deps
+[ 16%] Built target ui-repair_autogen_timestamp_deps
+[ 25%] Automatic MOC and UIC for target ui-recovery
+[ 33%] Automatic MOC and UIC for target ui-repair
+[ 33%] Built target ui-recovery_autogen
+[ 33%] Built target ui-repair_autogen
+[ 41%] Building CXX object CMakeFiles/ui-repair.dir/home/parm/Documents/KDE_Index/src/ui/backend.cpp.o
+[ 50%] Building CXX object CMakeFiles/ui-recovery.dir/home/parm/Documents/KDE_Index/src/ui/backend.cpp.o
+[ 58%] Building CXX object CMakeFiles/ui-recovery.dir/home/parm/Documents/KDE_Index/tools/ui_repair_recovery.cpp.o
+/home/parm/Documents/KDE Index/tools/ui_repair_recovery.cpp: In function ‘int main(int, char**)’:
+/home/parm/Documents/KDE Index/tools/ui_repair_recovery.cpp:24:155: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   24 |  QString text=own+"/models/embeddinggemma-2-Q8_0.gguf",image=own+"/models/mmproj-embeddinggemma-2-Q8_0.gguf",wrong=own+"/wrong.gguf";QFile w(wrong);w.open(QIODevice::WriteOnly);w.write("incorrect synthetic weights");w.close();
+      |                                                                                                                                                     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qdir.h:11,
+                 from /usr/include/qt6/QtCore/qtemporarydir.h:9,
+                 from /usr/include/qt6/QtCore/QTemporaryDir:1,
+                 from /home/parm/Documents/KDE Index/local/ui-v2-harness/../../src/ui/backend.h:9,
+                 from /home/parm/Documents/KDE Index/tools/ui_repair_recovery.cpp:2:
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_recovery.cpp:26:48: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   26 |  QFile file(own+"/corpus/source.txt");file.open(QIODevice::WriteOnly);file.write("RECOVERY-7491 actual normal text content");file.close();
+      |                                       ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_recovery.cpp:28:27: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   28 |  QFile exe(probe);exe.open(QIODevice::ReadOnly);QString sha=QString::fromLatin1(QCryptographicHash::hash(exe.readAll(),QCryptographicHash::Sha256).toHex());
+      |                   ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+[ 66%] Linking CXX executable ui-repair
+[ 75%] Linking CXX executable ui-recovery
+[ 91%] Built target ui-repair
+[100%] Built target ui-recovery
+[ 16%] Running qmlimportscanner for ui-liveness
+[ 16%] Built target ui-liveness_qmlimportscan
+[ 16%] Built target ui-liveness_autogen_timestamp_deps
+[ 33%] Automatic MOC and UIC for target ui-liveness
+[ 33%] Built target ui-liveness_autogen
+[ 66%] Building CXX object CMakeFiles/ui-liveness.dir/home/parm/Documents/KDE_Index/tools/ui_repair_liveness.cpp.o
+[ 66%] Building CXX object CMakeFiles/ui-liveness.dir/ui-liveness_autogen/mocs_compilation.cpp.o
+[ 83%] Building CXX object CMakeFiles/ui-liveness.dir/home/parm/Documents/KDE_Index/src/ui/backend.cpp.o
+/home/parm/Documents/KDE Index/tools/ui_repair_liveness.cpp: In function ‘int main(int, char**)’:
+/home/parm/Documents/KDE Index/tools/ui_repair_liveness.cpp:17:232: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   17 | int main(int argc,char**argv){QApplication app(argc,argv);if(argc!=2)return 2;QString root=QFileInfo(argv[1]).absoluteFilePath(),own=root+"/local/ui-v2-liveness";QDir().mkpath(own+"/corpus");QFile f(own+"/corpus/source.txt");f.open(QIODevice::WriteOnly);f.write("REPLACEMENT-8249 original source content");f.close();
+      |                                                                                                                                                                                                                                  ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qdir.h:11,
+                 from /usr/include/qt6/QtCore/qtemporarydir.h:9,
+                 from /usr/include/qt6/QtCore/QTemporaryDir:1,
+                 from /home/parm/Documents/KDE Index/local/ui-v2-harness/../../src/ui/backend.h:9,
+                 from /home/parm/Documents/KDE Index/tools/ui_repair_liveness.cpp:1:
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_liveness.cpp:19:33: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   19 |  QFile binary(probe);binary.open(QIODevice::ReadOnly);QString sha=QString::fromLatin1(QCryptographicHash::hash(binary.readAll(),QCryptographicHash::Sha256).toHex());
+      |                      ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_liveness.cpp:35:224: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   35 |  QString held=own+"/held";QDir().mkpath(held);QLockFile heldLock(held+"/service.lock");check("live-data-lock-held",heldLock.tryLock());QString sentinel=own+"/unexpected-launch";QFile helper(own+"/launch-helper");helper.open(QIODevice::WriteOnly);helper.write("#!/bin/sh\ntouch '"+sentinel.toUtf8()+"'\n");helper.close();helper.setPermissions(QFile::ReadOwner|QFile::WriteOwner|QFile::ExeOwner);
+      |                                                                                                                                                                                                                     ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+[100%] Linking CXX executable ui-liveness
+[100%] Built target ui-liveness
+[  5%] Built target ui-liveness_qmlimportscan
+[ 11%] Built target ui-recovery_qmlimportscan
+[ 16%] Built target ui-repair_qmlimportscan
+[ 16%] Built target ui-repair_autogen_timestamp_deps
+[ 16%] Built target ui-recovery_autogen_timestamp_deps
+[ 16%] Built target ui-liveness_autogen_timestamp_deps
+[ 27%] Automatic MOC and UIC for target ui-liveness
+[ 27%] Automatic MOC and UIC for target ui-recovery
+[ 33%] Automatic MOC and UIC for target ui-repair
+[ 33%] Built target ui-repair_autogen
+[ 33%] Built target ui-liveness_autogen
+[ 33%] Built target ui-recovery_autogen
+[ 44%] Building CXX object CMakeFiles/ui-repair.dir/home/parm/Documents/KDE_Index/src/ui/backend.cpp.o
+[ 44%] Building CXX object CMakeFiles/ui-recovery.dir/home/parm/Documents/KDE_Index/src/ui/backend.cpp.o
+[ 50%] Building CXX object CMakeFiles/ui-liveness.dir/home/parm/Documents/KDE_Index/src/ui/backend.cpp.o
+[ 66%] Linking CXX executable ui-repair
+[ 66%] Linking CXX executable ui-liveness
+[ 66%] Linking CXX executable ui-recovery
+[ 77%] Built target ui-liveness
+[ 88%] Built target ui-repair
+[100%] Built target ui-recovery
+[ 16%] Built target ui-recovery_qmlimportscan
+[ 16%] Built target ui-recovery_autogen_timestamp_deps
+[ 33%] Automatic MOC and UIC for target ui-recovery
+[ 33%] Built target ui-recovery_autogen
+[ 50%] Building CXX object CMakeFiles/ui-recovery.dir/home/parm/Documents/KDE_Index/tools/ui_repair_recovery.cpp.o
+/home/parm/Documents/KDE Index/tools/ui_repair_recovery.cpp: In function ‘int main(int, char**)’:
+/home/parm/Documents/KDE Index/tools/ui_repair_recovery.cpp:24:155: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   24 |  QString text=own+"/models/embeddinggemma-2-Q8_0.gguf",image=own+"/models/mmproj-embeddinggemma-2-Q8_0.gguf",wrong=own+"/wrong.gguf";QFile w(wrong);w.open(QIODevice::WriteOnly);w.write("incorrect synthetic weights");w.close();
+      |                                                                                                                                                     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qdir.h:11,
+                 from /usr/include/qt6/QtCore/qtemporarydir.h:9,
+                 from /usr/include/qt6/QtCore/QTemporaryDir:1,
+                 from /home/parm/Documents/KDE Index/local/ui-v2-harness/../../src/ui/backend.h:9,
+                 from /home/parm/Documents/KDE Index/tools/ui_repair_recovery.cpp:2:
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_recovery.cpp:26:48: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   26 |  QFile file(own+"/corpus/source.txt");file.open(QIODevice::WriteOnly);file.write("RECOVERY-7491 actual normal text content");file.close();
+      |                                       ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_recovery.cpp:28:27: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   28 |  QFile exe(probe);exe.open(QIODevice::ReadOnly);QString sha=QString::fromLatin1(QCryptographicHash::hash(exe.readAll(),QCryptographicHash::Sha256).toHex());
+      |                   ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+[ 66%] Linking CXX executable ui-recovery
+[100%] Built target ui-recovery
+[ 16%] Built target ui-repair_qmlimportscan
+[ 16%] Built target ui-repair_autogen_timestamp_deps
+[ 33%] Automatic MOC and UIC for target ui-repair
+[ 33%] Built target ui-repair_autogen
+[ 50%] Building CXX object CMakeFiles/ui-repair.dir/home/parm/Documents/KDE_Index/tools/ui_repair_harness.cpp.o
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp: In function ‘int main(int, char**)’:
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:35:107: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   35 |     QString corpus=own+"/liveness-corpus";QDir().mkpath(corpus);QFile file(corpus+"/source.txt");file.open(QIODevice::WriteOnly);file.write("LIFETIME-7491 normal text source");file.close();b.addRoot(QUrl::fromLocalFile(corpus));outcome&=waitFor([&]{return b.indexed()==1&&!b.busy();},30000);b.setQuery("LIFETIME-7491");outcome&=waitFor([&]{return !b.results().isEmpty();},15000);
+      |                                                                                                  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qdir.h:11,
+                 from /usr/include/qt6/QtCore/qtemporarydir.h:9,
+                 from /usr/include/qt6/QtCore/QTemporaryDir:1,
+                 from /home/parm/Documents/KDE Index/local/ui-v2-harness/../../src/ui/backend.h:9,
+                 from /home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:1:
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:47:104: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   47 |    QString corpus=own+"/markup-corpus";QDir().mkpath(corpus);QFile file(corpus+"/markup.txt");file.open(QIODevice::WriteOnly);file.write(QString("<b>MARKUP-CANARY</b><img src='http://127.0.0.1:%1/actual-service-canary.png'>").arg(http.serverPort()).toUtf8());file.close();
+      |                                                                                               ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:96:93: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   96 |    if(pending){QDir().mkpath(own+"/renderer");QFile fake(own+"/renderer/pdftoppm");fake.open(QIODevice::WriteOnly);fake.write("#!/usr/bin/python3\nimport os,time\nopen(os.path.join(os.path.dirname(__file__),'preview.pid'),'w').write(str(os.getpid()))\ntime.sleep(60)\n");fake.close();fake.setPermissions(QFile::ReadOwner|QFile::WriteOwner|QFile::ExeOwner);QFile::remove(own+"/renderer/preview.pid");qputenv("PATH",(own+"/renderer:").toUtf8()+qgetenv("PATH"));}
+      |                                                                                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:97:46: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   97 |    QFile script(paths.downloader);script.open(QIODevice::WriteOnly);script.write("import os,time\nopen(os.path.join(os.path.dirname(__file__),'download.pid'),'w').write(str(os.getpid()))\ntime.sleep(60)\n");script.close();
+      |                                   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:103:27: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  103 |    QFile p(pidfile);p.open(QIODevice::ReadOnly);auto pid=p.readAll().toLongLong();record("after-destructor",{{"download_pid",double(pid)},{"download_alive",pid>0&&::kill(pid,0)==0},{"preview_exists",QFileInfo::exists(preview)}});outcome&=pid>0&&::kill(pid,0)!=0&&!QFileInfo::exists(preview);
+      |                     ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_harness.cpp:104:59: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  104 |    if(pending){QFile p(own+"/renderer/preview.pid");p.open(QIODevice::ReadOnly);auto pid=p.readAll().toLongLong();record("pending-preview-after-destructor",{{"pid",double(pid)},{"alive",pid>0&&::kill(pid,0)==0}});outcome&=pid>0&&::kill(pid,0)!=0;}
+      |                                                     ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+[ 66%] Linking CXX executable ui-repair
+[100%] Built target ui-repair
+[ 16%] Built target ui-liveness_qmlimportscan
+[ 16%] Built target ui-liveness_autogen_timestamp_deps
+[ 33%] Automatic MOC and UIC for target ui-liveness
+[ 33%] Built target ui-liveness_autogen
+[ 50%] Building CXX object CMakeFiles/ui-liveness.dir/home/parm/Documents/KDE_Index/tools/ui_repair_liveness.cpp.o
+/home/parm/Documents/KDE Index/tools/ui_repair_liveness.cpp: In function ‘int main(int, char**)’:
+/home/parm/Documents/KDE Index/tools/ui_repair_liveness.cpp:18:238: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   18 | int main(int argc,char**argv){QApplication app(argc,argv);if(argc!=2)return 2;QString root=QFileInfo(argv[1]).absoluteFilePath(),own=root+"/local/ui-v2-liveness-final";QDir().mkpath(own+"/corpus");QFile f(own+"/corpus/source.txt");f.open(QIODevice::WriteOnly);f.write("REPLACEMENT-8249 original source content");f.close();
+      |                                                                                                                                                                                                                                        ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qdir.h:11,
+                 from /usr/include/qt6/QtCore/qtemporarydir.h:9,
+                 from /usr/include/qt6/QtCore/QTemporaryDir:1,
+                 from /home/parm/Documents/KDE Index/local/ui-v2-harness/../../src/ui/backend.h:9,
+                 from /home/parm/Documents/KDE Index/tools/ui_repair_liveness.cpp:1:
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_liveness.cpp:20:33: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   20 |  QFile binary(probe);binary.open(QIODevice::ReadOnly);QString sha=QString::fromLatin1(QCryptographicHash::hash(binary.readAll(),QCryptographicHash::Sha256).toHex());
+      |                      ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/tools/ui_repair_liveness.cpp:36:224: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   36 |  QString held=own+"/held";QDir().mkpath(held);QLockFile heldLock(held+"/service.lock");check("live-data-lock-held",heldLock.tryLock());QString sentinel=own+"/unexpected-launch";QFile helper(own+"/launch-helper");helper.open(QIODevice::WriteOnly);helper.write("#!/bin/sh\ntouch '"+sentinel.toUtf8()+"'\n");helper.close();helper.setPermissions(QFile::ReadOwner|QFile::WriteOwner|QFile::ExeOwner);
+      |                                                                                                                                                                                                                     ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+[ 66%] Linking CXX executable ui-liveness
+[100%] Built target ui-liveness

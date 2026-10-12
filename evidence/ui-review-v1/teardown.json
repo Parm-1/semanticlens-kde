@@ -1,0 +1,46 @@
+{
+    "events": [
+        {
+            "downloading": true,
+            "event": "fake-download-start",
+            "started": true
+        },
+        {
+            "event": "preview-observer",
+            "message": "",
+            "url": ""
+        },
+        {
+            "event": "preview-observer",
+            "message": "Rendering page…",
+            "url": ""
+        },
+        {
+            "event": "preview-observer",
+            "message": "",
+            "url": "file:///tmp/review-UkZgZj/1.png"
+        },
+        {
+            "event": "real-preview-rendered",
+            "path": "/tmp/review-UkZgZj/1.png",
+            "rendered": true
+        },
+        {
+            "event": "preview-observer",
+            "message": "",
+            "url": ""
+        },
+        {
+            "download_alive": false,
+            "download_pid": 634957,
+            "event": "after-destructor",
+            "preview_exists": false
+        },
+        {
+            "event": "completion",
+            "harness_expectations": true,
+            "socket_exists": false
+        }
+    ],
+    "mode": "teardown"
+}

@@ -1,0 +1,30 @@
+{
+  "raw_report": "/home/parm/Documents/KDE Index/evidence/ui-review-v3/smoke.json",
+  "source_raster": "/home/parm/Documents/KDE Index/evidence/ui-review-v3/smoke-raster.png",
+  "capture": "/home/parm/Documents/KDE Index/evidence/ui-v3/prior/parent-clean-page.png",
+  "declared_rect": [
+    593,
+    186,
+    351,
+    454
+  ],
+  "observed_nearby_white_bounds": null,
+  "paper_edge_correction": false,
+  "evaluated_rect": [
+    593,
+    186,
+    351,
+    454
+  ],
+  "source_ink_pixels": 628,
+  "source_ink_witness": [
+    38,
+    33,
+    196,
+    13
+  ],
+  "mean_gray_error": 16.24115491296108,
+  "ink_correlation": 0.0,
+  "pass": false,
+  "method": "Pillow bilinear source resize; NumPy independent gray/ink Pearson calculation; no offset/content/correlation search; inherited thresholds 20 ink, MAE<=10, corr>=.65; fixture-specific"
+}

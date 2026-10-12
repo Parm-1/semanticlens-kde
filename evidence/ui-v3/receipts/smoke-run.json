@@ -1,0 +1,14 @@
+{
+  "exit": 0,
+  "wall_seconds": 12.590858599000057,
+  "args": [
+    "/home/parm/Documents/KDE Index/build-ui-v3/bin/ui-smoke",
+    "/home/parm/Documents/KDE Index/evidence/engine-v2/candidate/bin/kde-index-service",
+    "/home/parm/Documents/KDE Index/evidence/ui-v1/candidate/bin/embedding-probe",
+    "/home/parm/Documents/KDE Index/models",
+    "/home/parm/Documents/KDE Index/local/ui-v3-smoke-readback/data",
+    "/home/parm/Documents/KDE Index/local/ui-v3-smoke-readback/service.sock",
+    "/home/parm/Documents/KDE Index/local/ui-v3-smoke-readback/corpus",
+    "/home/parm/Documents/KDE Index/local/ui-v3-smoke-readback/smoke"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+    "busy": false,
+    "current": "",
+    "error": "unable to open database file Error opening database",
+    "errors": 0,
+    "failures": [
+    ],
+    "identity": {
+    },
+    "index_revision": 0,
+    "indexed": 0,
+    "model_ready": false,
+    "paused": false,
+    "phase": "failed",
+    "progress": 0,
+    "ready": false,
+    "recovery_attempt": 1,
+    "roots": [
+    ],
+    "segments": 0,
+    "total": 0
+}

@@ -1,0 +1,11 @@
+{
+  "exit": 0,
+  "known_pids": [
+    180225,
+    180513
+  ],
+  "all_known_absent": true,
+  "socket_absent": true,
+  "binary_sha256": "35ba3429af0417982b682ca9ee06d19ef56cb7b46238dbb3ea0e751ca496dc2a",
+  "service_sha256": "1853dde0c8acee17137baeedc804bd80485d982a627745bf46411732c390a4ca"
+}

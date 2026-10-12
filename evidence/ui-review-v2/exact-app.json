@@ -1,0 +1,2198 @@
+{
+  "gui_exit_code": 0,
+  "GUI_subprocess_wall_seconds": 5.1296169929992175,
+  "http_requests": 0,
+  "capture_exists": true,
+  "scope": "exact staged GUI on native desktop with preindexed selected synthetic source; not a latency or inference proof",
+  "service_exit_code": 0,
+  "socket_exists": false,
+  "listener_thread_alive": false,
+  "events": [
+    {
+      "event": "service-start",
+      "pid": 799164
+    },
+    {
+      "event": "request",
+      "id": "app-review-1",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-1",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-2",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-2",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-3",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-3",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-4",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-4",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-5",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-5",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-6",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-6",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-7",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-7",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-8",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-8",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-9",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-9",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-10",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-10",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-11",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-11",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-12",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-12",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-13",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-13",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-14",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-14",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-15",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-15",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-16",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-16",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-17",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-17",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-18",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-18",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-19",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-19",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-20",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-20",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-21",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-21",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-22",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-22",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-23",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-23",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-24",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-24",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-25",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-25",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-26",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-26",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-27",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-27",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-28",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-28",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-29",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-29",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-30",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-30",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-31",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-31",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-32",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-32",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-33",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-33",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-34",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-34",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-35",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-35",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-36",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-36",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-37",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-37",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-38",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-38",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-39",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-39",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-40",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-40",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-41",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-41",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-42",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-42",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-43",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-43",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-44",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-44",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-45",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-45",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-46",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-46",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-47",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-47",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-48",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-48",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-49",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-49",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-50",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-50",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-51",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-51",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-52",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-52",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-53",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-53",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-54",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-54",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-55",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-55",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {},
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": false,
+        "paused": false,
+        "phase": "verifying",
+        "progress": 0,
+        "ready": false,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-56",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-56",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 0,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-57",
+      "op": "add_root",
+      "path": "/home/parm/Documents/KDE Index/local/ui-review-v2-app/corpus"
+    },
+    {
+      "event": "reply",
+      "accepted": true,
+      "id": "app-review-57",
+      "ok": true,
+      "protocol": 1
+    },
+    {
+      "event": "request",
+      "id": "app-review-58",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-58",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": true,
+        "current": "/home/parm/Documents/KDE Index/local/ui-review-v2-app/corpus/markup.txt",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 0,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "/home/parm/Documents/KDE Index/local/ui-review-v2-app/corpus"
+          }
+        ],
+        "segments": 0,
+        "total": 1,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-59",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-59",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": true,
+        "current": "/home/parm/Documents/KDE Index/local/ui-review-v2-app/corpus/markup.txt",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 0,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "/home/parm/Documents/KDE Index/local/ui-review-v2-app/corpus"
+          }
+        ],
+        "segments": 0,
+        "total": 1,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-60",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-60",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": true,
+        "current": "/home/parm/Documents/KDE Index/local/ui-review-v2-app/corpus/markup.txt",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 0,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "/home/parm/Documents/KDE Index/local/ui-review-v2-app/corpus"
+          }
+        ],
+        "segments": 0,
+        "total": 1,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-61",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-61",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": true,
+        "current": "/home/parm/Documents/KDE Index/local/ui-review-v2-app/corpus/markup.txt",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 0,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "/home/parm/Documents/KDE Index/local/ui-review-v2-app/corpus"
+          }
+        ],
+        "segments": 0,
+        "total": 1,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-62",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-62",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 1,
+        "indexed": 1,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 1,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "/home/parm/Documents/KDE Index/local/ui-review-v2-app/corpus"
+          }
+        ],
+        "segments": 1,
+        "total": 1,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-63",
+      "op": "status"
+    },
+    {
+      "event": "reply",
+      "id": "app-review-63",
+      "ok": true,
+      "protocol": 1,
+      "status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 1,
+        "indexed": 1,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 1,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "/home/parm/Documents/KDE Index/local/ui-review-v2-app/corpus"
+          }
+        ],
+        "segments": 1,
+        "total": 1,
+        "watch_error": ""
+      }
+    },
+    {
+      "event": "request",
+      "id": "app-review-64",
+      "op": "search",
+      "text": "EXACT-APP-8421",
+      "kind": "",
+      "limit": 20
+    },
+    {
+      "event": "reply",
+      "generation": 2,
+      "id": "app-review-64",
+      "identity": {
+        "backend": "CPU",
+        "byte_order": "little",
+        "dimension": 768,
+        "dtype": "float32",
+        "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+        "extractors": {
+          "pdfinfo": "pdfinfo version 26.05.0",
+          "pdftoppm": "pdftoppm version 26.05.0",
+          "pdftotext": "pdftotext version 26.08.0",
+          "tesseract": "tesseract 5.5.3"
+        },
+        "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+        "max_tokens": 2048,
+        "model": "google/embeddinggemma-2",
+        "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+        "pipeline": "digup-vectors1-linux-cpu-probe1",
+        "producer_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+        "representation": 3,
+        "runtime": "llama.cpp-b11461+no-logits",
+        "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+      },
+      "index_revision": 1,
+      "ok": true,
+      "protocol": 1,
+      "results": [
+        {
+          "exact": true,
+          "kind": "text",
+          "match_scope": "text",
+          "match_type": "literal",
+          "page": 0,
+          "path": "/home/parm/Documents/KDE Index/local/ui-review-v2-app/corpus/markup.txt",
+          "score": 1,
+          "semantic_score": 0.7734168868498442,
+          "term_match": true,
+          "text": "<b>EXACT-APP-8421</b><img src='http://127.0.0.1:39795/exact-app-canary.png'>",
+          "title": "markup.txt",
+          "warning": ""
+        }
+      ]
+    },
+    {
+      "event": "before-GUI",
+      "http_requests": 0
+    },
+    {
+      "event": "request",
+      "id": "app-review-65",
+      "op": "shutdown"
+    },
+    {
+      "event": "reply",
+      "accepted": true,
+      "id": "app-review-65",
+      "ok": true,
+      "protocol": 1
+    }
+  ]
+}

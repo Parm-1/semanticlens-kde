@@ -1,0 +1,4454 @@
+{
+  "before_watch": {},
+  "failed": {
+    "busy": false,
+    "current": "",
+    "error": "",
+    "errors": 0,
+    "failures": [],
+    "identity": {
+      "backend": "CPU",
+      "byte_order": "little",
+      "dimension": 768,
+      "dtype": "float32",
+      "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+      "extractors": {
+        "pdfinfo": "pdfinfo version 26.05.0",
+        "pdftoppm": "pdftoppm version 26.05.0",
+        "pdftotext": "pdftotext version 26.08.0",
+        "tesseract": "tesseract 5.5.3"
+      },
+      "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+      "max_tokens": 2048,
+      "model": "google/embeddinggemma-2",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "pipeline": "digup-vectors1-linux-cpu-probe1",
+      "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+      "representation": 3,
+      "runtime": "llama.cpp-b11461+no-logits",
+      "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+    },
+    "index_revision": 0,
+    "indexed": 0,
+    "model_ready": true,
+    "paused": false,
+    "phase": "ready",
+    "progress": 0,
+    "ready": true,
+    "recovery_attempt": 1,
+    "roots": [
+      {
+        "exclusions": [],
+        "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+      }
+    ],
+    "scan_directories": 1,
+    "scan_entries": 0,
+    "scan_error": "",
+    "scan_path_bytes": 368,
+    "scan_skipped_names": 0,
+    "scan_skipped_providers": 0,
+    "scan_warnings": [],
+    "segments": 0,
+    "total": 0,
+    "watch_error": "native watch capacity/path failure; explicit scan remains available"
+  },
+  "idle_start": {
+    "busy": false,
+    "current": "",
+    "error": "",
+    "errors": 0,
+    "failures": [],
+    "identity": {
+      "backend": "CPU",
+      "byte_order": "little",
+      "dimension": 768,
+      "dtype": "float32",
+      "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+      "extractors": {
+        "pdfinfo": "pdfinfo version 26.05.0",
+        "pdftoppm": "pdftoppm version 26.05.0",
+        "pdftotext": "pdftotext version 26.08.0",
+        "tesseract": "tesseract 5.5.3"
+      },
+      "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+      "max_tokens": 2048,
+      "model": "google/embeddinggemma-2",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "pipeline": "digup-vectors1-linux-cpu-probe1",
+      "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+      "representation": 3,
+      "runtime": "llama.cpp-b11461+no-logits",
+      "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+    },
+    "index_revision": 0,
+    "indexed": 0,
+    "model_ready": true,
+    "paused": false,
+    "phase": "ready",
+    "progress": 0,
+    "ready": true,
+    "recovery_attempt": 1,
+    "roots": [
+      {
+        "exclusions": [],
+        "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+      }
+    ],
+    "scan_directories": 1,
+    "scan_entries": 0,
+    "scan_error": "",
+    "scan_path_bytes": 368,
+    "scan_skipped_names": 0,
+    "scan_skipped_providers": 0,
+    "scan_warnings": [],
+    "segments": 0,
+    "total": 0,
+    "watch_error": "native watch capacity/path failure; explicit scan remains available"
+  },
+  "idle_end": {
+    "busy": false,
+    "current": "",
+    "error": "",
+    "errors": 0,
+    "failures": [],
+    "identity": {
+      "backend": "CPU",
+      "byte_order": "little",
+      "dimension": 768,
+      "dtype": "float32",
+      "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+      "extractors": {
+        "pdfinfo": "pdfinfo version 26.05.0",
+        "pdftoppm": "pdftoppm version 26.05.0",
+        "pdftotext": "pdftotext version 26.08.0",
+        "tesseract": "tesseract 5.5.3"
+      },
+      "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+      "max_tokens": 2048,
+      "model": "google/embeddinggemma-2",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "pipeline": "digup-vectors1-linux-cpu-probe1",
+      "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+      "representation": 3,
+      "runtime": "llama.cpp-b11461+no-logits",
+      "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+    },
+    "index_revision": 0,
+    "indexed": 0,
+    "model_ready": true,
+    "paused": false,
+    "phase": "ready",
+    "progress": 0,
+    "ready": true,
+    "recovery_attempt": 1,
+    "roots": [
+      {
+        "exclusions": [],
+        "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+      }
+    ],
+    "scan_directories": 1,
+    "scan_entries": 0,
+    "scan_error": "",
+    "scan_path_bytes": 368,
+    "scan_skipped_names": 0,
+    "scan_skipped_providers": 0,
+    "scan_warnings": [],
+    "segments": 0,
+    "total": 0,
+    "watch_error": "native watch capacity/path failure; explicit scan remains available"
+  },
+  "removed": {
+    "busy": false,
+    "current": "",
+    "error": "",
+    "errors": 0,
+    "failures": [],
+    "identity": {
+      "backend": "CPU",
+      "byte_order": "little",
+      "dimension": 768,
+      "dtype": "float32",
+      "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+      "extractors": {
+        "pdfinfo": "pdfinfo version 26.05.0",
+        "pdftoppm": "pdftoppm version 26.05.0",
+        "pdftotext": "pdftotext version 26.08.0",
+        "tesseract": "tesseract 5.5.3"
+      },
+      "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+      "max_tokens": 2048,
+      "model": "google/embeddinggemma-2",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "pipeline": "digup-vectors1-linux-cpu-probe1",
+      "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+      "representation": 3,
+      "runtime": "llama.cpp-b11461+no-logits",
+      "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+    },
+    "index_revision": 0,
+    "indexed": 0,
+    "model_ready": true,
+    "paused": false,
+    "phase": "ready",
+    "progress": 0,
+    "ready": true,
+    "recovery_attempt": 1,
+    "roots": [],
+    "scan_directories": 0,
+    "scan_entries": 0,
+    "scan_error": "",
+    "scan_path_bytes": 0,
+    "scan_skipped_names": 0,
+    "scan_skipped_providers": 0,
+    "scan_warnings": [],
+    "segments": 0,
+    "total": 0,
+    "watch_error": ""
+  },
+  "observations": {
+    "all_add_paths_failed_before_watch": true,
+    "all_failed_batch_no_reconciliation": true,
+    "zero_roots_notice_clears": true
+  },
+  "raw": [
+    {
+      "clock_ns": 16092225297784,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "1",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092246173194,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "2",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092266825483,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "3",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092287352156,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "4",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092307848360,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "5",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092328408365,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "6",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092348977748,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "7",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092369546339,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "8",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092390063103,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "9",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092410564748,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "10",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092431384593,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "11",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092451864497,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "12",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092472372534,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "13",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092492837950,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "14",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092513308537,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "15",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092533753976,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "16",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092554239260,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "17",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092574722750,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "18",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092595217913,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "19",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092615709208,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "20",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092636188942,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "21",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092656761250,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "22",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092677211869,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "23",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092697722300,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "24",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092718233633,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "25",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092739167625,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "26",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092759635255,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "27",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092780130488,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "28",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092801605320,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "29",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092823705171,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "30",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092844216254,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "31",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092864713611,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "32",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092885154982,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "33",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092905599118,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "34",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092926102957,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "35",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092946577210,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "36",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092967034712,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "37",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16092987473749,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "38",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093007931421,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "39",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093028401065,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "40",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093048840292,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "41",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093069355212,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "42",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093089823835,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "43",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093110306674,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "44",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093130787800,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "45",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093151280067,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "46",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093171717832,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "47",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093192208145,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "48",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093212653173,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "49",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093233103722,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "50",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093253577775,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "51",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093274129063,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "52",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093294659423,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "53",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093315231580,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "54",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093335787217,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "55",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093356250480,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "56",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093376776681,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "57",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093397321447,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "58",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093417899226,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "59",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093438493085,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "60",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093459053411,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "61",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093479563682,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "62",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093500176186,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "63",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093520666940,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "64",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093541201167,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "65",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093561741655,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "66",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093582253038,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "67",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093602761396,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "68",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093623226952,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "69",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093643696857,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "70",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093664171391,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "71",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093684641637,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "72",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093705217211,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "73",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093725787916,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "74",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093746326171,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "75",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093766895403,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "76",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093787674481,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "77",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093808391743,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "78",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093829134894,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "79",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093849760092,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "80",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093870448369,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "81",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093890975362,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "82",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093911503958,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "83",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093932287475,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "84",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093952941097,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "85",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093973416973,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "86",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16093993888170,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "87",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094014408831,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "88",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094034967063,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "89",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094055569257,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "90",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094075904098,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "91",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094096343896,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "92",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094116788814,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "93",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094137206770,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "94",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094157906980,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "95",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094178459601,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "96",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {},
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": false,
+          "paused": false,
+          "phase": "verifying",
+          "progress": 0,
+          "ready": false,
+          "recovery_attempt": 1,
+          "roots": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094198956267,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "97",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [],
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094275304457,
+      "op": "add_root",
+      "args": {
+        "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+      },
+      "reply": {
+        "accepted": true,
+        "id": "98",
+        "ok": true,
+        "protocol": 1
+      }
+    },
+    {
+      "clock_ns": 16094275961817,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "99",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 0,
+          "scan_error": "",
+          "scan_path_bytes": 368,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094296473561,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "100",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 0,
+          "scan_error": "",
+          "scan_path_bytes": 368,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094316972170,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "101",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 0,
+          "scan_error": "",
+          "scan_path_bytes": 368,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094337444410,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "102",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 0,
+          "scan_error": "",
+          "scan_path_bytes": 368,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094358064609,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "103",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 0,
+          "scan_error": "",
+          "scan_path_bytes": 368,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094378514516,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "104",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 0,
+          "scan_error": "",
+          "scan_path_bytes": 368,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094398862761,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "105",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 0,
+          "scan_error": "",
+          "scan_path_bytes": 368,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094419160161,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "106",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 0,
+          "scan_error": "",
+          "scan_path_bytes": 368,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094439461157,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "107",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 0,
+          "scan_error": "",
+          "scan_path_bytes": 368,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094459749629,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "108",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 0,
+          "scan_error": "",
+          "scan_path_bytes": 368,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094480060615,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "109",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 0,
+          "scan_error": "",
+          "scan_path_bytes": 368,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094500354597,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "110",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 0,
+          "scan_error": "",
+          "scan_path_bytes": 368,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094520666184,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "111",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 0,
+          "scan_error": "",
+          "scan_path_bytes": 368,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094541064283,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "112",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 0,
+          "scan_error": "",
+          "scan_path_bytes": 368,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094561505193,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "113",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 0,
+          "scan_error": "",
+          "scan_path_bytes": 368,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094581916818,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "114",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 0,
+          "scan_error": "",
+          "scan_path_bytes": 368,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16094602267669,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "115",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 0,
+          "scan_error": "",
+          "scan_path_bytes": 368,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": "native watch capacity/path failure; explicit scan remains available"
+        }
+      }
+    },
+    {
+      "clock_ns": 16094602478066,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "116",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 0,
+          "scan_error": "",
+          "scan_path_bytes": 368,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": "native watch capacity/path failure; explicit scan remains available"
+        }
+      }
+    },
+    {
+      "clock_ns": 16105602768048,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "117",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+            }
+          ],
+          "scan_directories": 1,
+          "scan_entries": 0,
+          "scan_error": "",
+          "scan_path_bytes": 368,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": "native watch capacity/path failure; explicit scan remains available"
+        }
+      }
+    },
+    {
+      "clock_ns": 16105659974800,
+      "op": "remove_root",
+      "args": {
+        "path": "/home/parm/Documents/KDE Index/local/build-own/service-status-v1/watch-failure/parent/corpus"
+      },
+      "reply": {
+        "accepted": true,
+        "id": "118",
+        "ok": true,
+        "protocol": 1
+      }
+    },
+    {
+      "clock_ns": 16106360253468,
+      "op": "status",
+      "args": {},
+      "reply": {
+        "id": "119",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 0,
+          "indexed": 0,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 0,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [],
+          "scan_directories": 0,
+          "scan_entries": 0,
+          "scan_error": "",
+          "scan_path_bytes": 0,
+          "scan_skipped_names": 0,
+          "scan_skipped_providers": 0,
+          "scan_warnings": [],
+          "segments": 0,
+          "total": 0,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "clock_ns": 16106360589462,
+      "op": "shutdown",
+      "args": {},
+      "reply": {
+        "accepted": true,
+        "id": "120",
+        "ok": true,
+        "protocol": 1
+      }
+    }
+  ],
+  "elapsed_ns": 14289732981,
+  "service_sha256": "39b336bb464404ebcda028d800b11221da43ab076515a66a2e87039650e621cf",
+  "closure": {
+    "service_exit": 0,
+    "socket_absent": true,
+    "workers_absent": true,
+    "known_workers": [
+      167400,
+      167402,
+      167409,
+      167416
+    ]
+  }
+}

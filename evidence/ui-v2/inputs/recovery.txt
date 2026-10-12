@@ -1,0 +1,1 @@
+RECOVERY-7491 actual normal text content

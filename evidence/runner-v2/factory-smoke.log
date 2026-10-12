@@ -1,0 +1,3 @@
+{"IID":"org.kde.KPluginFactory","MetaData":{"KPlugin":{"Description":"Search selected folders by meaning and content","EnabledByDefault":true,"Id":"kde-index-runner-v2","License":"GPL-3.0-or-later","Name":"KDE Index","Version":"0.1"},"X-Plasma-Runner-Min-Letter-Count":2,"X-Plasma-Runner-Unique-Results":false,"X-Plasma-Runner-Weak-Results":true},"archlevel":1,"className":"KDEIndexRunnerFactory","debug":false,"version":396288}
+metadata=1 id=kde-index-runner-v2 file=<workspace>/build-runner-v2/libkde-index-runner-v2.so
+exit=0

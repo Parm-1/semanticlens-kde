@@ -1,0 +1,9 @@
+[
+  "bwrap", "--die-with-parent", "--unshare-all",
+  "--ro-bind", "/home/parm/Documents/KDE Index/local/clean-arch-v1/root.x86_64", "/",
+  "--bind", "/home/parm/Documents/KDE Index/local/clean-arch-v1/root.x86_64/public-parity-v2", "/public-parity-v2",
+  "--ro-bind", "/home/parm/Documents/KDE Index/models", "/public-parity-v2/models",
+  "--proc", "/proc", "--dev", "/dev", "--tmpfs", "/tmp",
+  "--chdir", "/public-clean-v2/source/kde-index-source",
+  "/usr/bin/python3", "tools/embedding_evaluate.py", "/public-parity-v2"
+]

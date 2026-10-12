@@ -1,0 +1,236 @@
+{
+    "checks": [
+        {
+            "indexed": 3,
+            "name": "selected-root-indexed",
+            "pass": true,
+            "roots": [
+                {
+                    "exclusions": [
+                    ],
+                    "path": "/home/parm/Documents/KDE Index/local/build-own/combined-native-v1/corpus"
+                }
+            ]
+        },
+        {
+            "name": "exact-pdf-page-result",
+            "pass": true,
+            "result": {
+                "exact": true,
+                "kind": "pdf",
+                "match_scope": "text",
+                "match_type": "literal",
+                "page": 2,
+                "path": "/home/parm/Documents/KDE Index/local/build-own/combined-native-v1/corpus/manual.pdf",
+                "score": 1,
+                "semantic_score": 0.7932498815628295,
+                "term_match": true,
+                "text": "Maintenance serial PDF-10299 belongs to the cooling system.",
+                "title": "manual.pdf",
+                "warning": ""
+            }
+        },
+        {
+            "name": "target-results-window-capture",
+            "pass": true
+        },
+        {
+            "name": "preview-dialog-found",
+            "pass": true
+        },
+        {
+            "name": "actual-pdf-raster",
+            "pass": true
+        },
+        {
+            "capture_painted_rect": [
+                573,
+                171,
+                391,
+                506
+            ],
+            "captured_ink_pixels": 479,
+            "captured_white_pixels": 197259,
+            "event": "capture-after-ready-scene-frame",
+            "frame_observation": "QQuickWindow::grabWindow readback",
+            "height": 349,
+            "image_source": "file:///tmp/ui-smoke-UydsDt/1.png",
+            "image_status": 1,
+            "milliseconds": 8870,
+            "name": "target-page-window-capture",
+            "painted_height": 349,
+            "painted_pixel_count": 197846,
+            "painted_scene_x": 395.08968749999997,
+            "painted_scene_y": 118,
+            "painted_width": 269.820625,
+            "pass": true,
+            "preview_url": "file:///tmp/ui-smoke-UydsDt/1.png",
+            "ready_readback_height": 1073,
+            "ready_readback_width": 1537,
+            "scene_frames": 30,
+            "visible": true,
+            "width": 788,
+            "window_exposed": true,
+            "window_height": 740,
+            "window_visible": true,
+            "window_width": 1060
+        },
+        {
+            "closed_signal_observed": true,
+            "file": "/tmp/ui-smoke-UydsDt/1.png",
+            "file_exists": false,
+            "name": "preview-temporary-file-removed",
+            "pass": true,
+            "url_empty": true
+        },
+        {
+            "name": "previous-results-cleared-immediately",
+            "pass": true
+        },
+        {
+            "name": "delete-owned-synthetic-pdf",
+            "pass": true
+        },
+        {
+            "name": "cached-results-refresh-after-fast-deletion",
+            "pass": true
+        }
+    ],
+    "milliseconds": 10371,
+    "pass": true,
+    "render_observations": [
+        {
+            "event": "backend-preview-changed",
+            "height": 0,
+            "image_source": "",
+            "image_status": 0,
+            "milliseconds": 8573,
+            "painted_height": 0,
+            "painted_scene_x": 136,
+            "painted_scene_y": 118,
+            "painted_width": 0,
+            "preview_url": "",
+            "scene_frames": 22,
+            "visible": false,
+            "width": 0,
+            "window_exposed": true,
+            "window_height": 740,
+            "window_visible": true,
+            "window_width": 1060
+        },
+        {
+            "event": "backend-preview-changed",
+            "height": 0,
+            "image_source": "",
+            "image_status": 0,
+            "milliseconds": 8574,
+            "painted_height": 0,
+            "painted_scene_x": 136,
+            "painted_scene_y": 118,
+            "painted_width": 0,
+            "preview_url": "",
+            "scene_frames": 22,
+            "visible": false,
+            "width": 0,
+            "window_exposed": true,
+            "window_height": 740,
+            "window_visible": true,
+            "window_width": 1060
+        },
+        {
+            "event": "backend-preview-changed",
+            "height": 0,
+            "image_source": "file:///tmp/ui-smoke-UydsDt/1.png",
+            "image_status": 2,
+            "milliseconds": 8714,
+            "painted_height": 0,
+            "painted_scene_x": 136,
+            "painted_scene_y": 118,
+            "painted_width": 0,
+            "preview_url": "file:///tmp/ui-smoke-UydsDt/1.png",
+            "scene_frames": 24,
+            "visible": true,
+            "width": 0,
+            "window_exposed": true,
+            "window_height": 740,
+            "window_visible": true,
+            "window_width": 1060
+        },
+        {
+            "event": "first-preview-url",
+            "height": 349,
+            "image_source": "file:///tmp/ui-smoke-UydsDt/1.png",
+            "image_status": 1,
+            "milliseconds": 8800,
+            "painted_height": 349,
+            "painted_scene_x": 395.08968749999997,
+            "painted_scene_y": 118,
+            "painted_width": 269.820625,
+            "preview_url": "file:///tmp/ui-smoke-UydsDt/1.png",
+            "scene_frames": 27,
+            "visible": true,
+            "width": 788,
+            "window_exposed": true,
+            "window_height": 740,
+            "window_visible": true,
+            "window_width": 1060
+        },
+        {
+            "event": "image-ready-frame-armed",
+            "height": 349,
+            "image_source": "file:///tmp/ui-smoke-UydsDt/1.png",
+            "image_status": 1,
+            "milliseconds": 8853,
+            "painted_height": 349,
+            "painted_scene_x": 395.08968749999997,
+            "painted_scene_y": 118,
+            "painted_width": 269.820625,
+            "preview_url": "file:///tmp/ui-smoke-UydsDt/1.png",
+            "scene_frames": 28,
+            "visible": true,
+            "width": 788,
+            "window_exposed": true,
+            "window_height": 740,
+            "window_visible": true,
+            "window_width": 1060
+        },
+        {
+            "event": "capture-after-ready-scene-frame",
+            "height": 349,
+            "image_source": "file:///tmp/ui-smoke-UydsDt/1.png",
+            "image_status": 1,
+            "milliseconds": 8870,
+            "painted_height": 349,
+            "painted_scene_x": 395.08968749999997,
+            "painted_scene_y": 118,
+            "painted_width": 269.820625,
+            "preview_url": "file:///tmp/ui-smoke-UydsDt/1.png",
+            "scene_frames": 30,
+            "visible": true,
+            "width": 788,
+            "window_exposed": true,
+            "window_height": 740,
+            "window_visible": true,
+            "window_width": 1060
+        },
+        {
+            "event": "backend-preview-changed",
+            "height": 429,
+            "image_source": "",
+            "image_status": 0,
+            "milliseconds": 8923,
+            "painted_height": 429,
+            "painted_scene_x": 364.1646875,
+            "painted_scene_y": 76,
+            "painted_width": 331.67062500000003,
+            "preview_url": "",
+            "scene_frames": 31,
+            "visible": false,
+            "width": 788,
+            "window_exposed": true,
+            "window_height": 740,
+            "window_visible": true,
+            "window_width": 1060
+        }
+    ]
+}

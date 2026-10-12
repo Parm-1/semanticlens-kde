@@ -1,0 +1,2322 @@
+{
+  "custody": {
+    "candidate_report_sha256": "11d6cc5454637345979c36d7d345e3d4f10f303a3f003efb9950914c0aaf8e73",
+    "candidate_manifest_sha256": "94b1bc5e635d64e7cfbe19257d8d055378c105775d8a85f3d291a0406b4e6ec8",
+    "benchmark_manifest_sha256": "2fdb07dba3b3191a7073b7fa1443e58c542fa3c03e3275d429e54058c8996872",
+    "candidate_pin_count": 12,
+    "corpus_input_pin_count": 39
+  },
+  "service": {
+    "aggregate": {
+      "semantic": {
+        "n": 20,
+        "hit1": 17,
+        "hit5": 20
+      },
+      "semantic:document": {
+        "n": 8,
+        "hit1": 6,
+        "hit5": 8
+      },
+      "semantic:pdf": {
+        "n": 4,
+        "hit1": 4,
+        "hit5": 4
+      },
+      "semantic:image": {
+        "n": 8,
+        "hit1": 7,
+        "hit5": 8
+      },
+      "exact": {
+        "n": 6,
+        "hit1": 6,
+        "hit5": 6
+      },
+      "literal": {
+        "n": 8,
+        "hit1": 8,
+        "hit5": 8
+      }
+    },
+    "rows": [
+      {
+        "id": "s01",
+        "group": "semantic",
+        "modality": "document",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d01.txt",
+          "d09.txt",
+          "p04.pdf",
+          "p01.pdf",
+          "p03.pdf"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "s02",
+        "group": "semantic",
+        "modality": "document",
+        "target_rank": 2,
+        "hit1": false,
+        "hit5": true,
+        "files": [
+          "d12.txt",
+          "d02.txt",
+          "d10.txt",
+          "i03.png",
+          "i04.png"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "s03",
+        "group": "semantic",
+        "modality": "document",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d03.txt",
+          "p01.pdf",
+          "i05.png",
+          "i06.png",
+          "d09.txt"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "s04",
+        "group": "semantic",
+        "modality": "document",
+        "target_rank": 2,
+        "hit1": false,
+        "hit5": true,
+        "files": [
+          "i03.png",
+          "d04.txt",
+          "i04.png",
+          "d12.txt",
+          "d07.txt"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "s05",
+        "group": "semantic",
+        "modality": "document",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d05.txt",
+          "d13.txt",
+          "d10.txt",
+          "p01.pdf",
+          "i08.png"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "s06",
+        "group": "semantic",
+        "modality": "document",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d06.txt",
+          "d08.txt",
+          "d14.txt",
+          "d09.txt",
+          "i06.png"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "s07",
+        "group": "semantic",
+        "modality": "document",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d07.txt",
+          "d15.txt",
+          "i05.png",
+          "i06.png",
+          "d11.txt"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "s08",
+        "group": "semantic",
+        "modality": "document",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d08.txt",
+          "d16.txt",
+          "d06.txt",
+          "i06.png",
+          "i05.png"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "s09",
+        "group": "semantic",
+        "modality": "pdf",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "p01.pdf",
+          "d03.txt",
+          "d10.txt",
+          "d14.txt",
+          "d05.txt"
+        ],
+        "false_positives": null,
+        "target_page_correct": true
+      },
+      {
+        "id": "s10",
+        "group": "semantic",
+        "modality": "pdf",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "p02.pdf",
+          "i05.png",
+          "i06.png",
+          "d09.txt",
+          "p04.pdf"
+        ],
+        "false_positives": null,
+        "target_page_correct": true
+      },
+      {
+        "id": "s11",
+        "group": "semantic",
+        "modality": "pdf",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "p03.pdf",
+          "d10.txt",
+          "p01.pdf",
+          "i06.png",
+          "d09.txt"
+        ],
+        "false_positives": null,
+        "target_page_correct": true
+      },
+      {
+        "id": "s12",
+        "group": "semantic",
+        "modality": "pdf",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "p04.pdf",
+          "d09.txt",
+          "p01.pdf",
+          "i06.png",
+          "i05.png"
+        ],
+        "false_positives": null,
+        "target_page_correct": true
+      },
+      {
+        "id": "s13",
+        "group": "semantic",
+        "modality": "image",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "i01.png",
+          "i02.png",
+          "i07.png",
+          "i06.png",
+          "i04.png"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "s14",
+        "group": "semantic",
+        "modality": "image",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "i02.png",
+          "i01.png",
+          "i03.png",
+          "i07.png",
+          "i08.png"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "s15",
+        "group": "semantic",
+        "modality": "image",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "i03.png",
+          "d04.txt",
+          "i04.png",
+          "d12.txt",
+          "d02.txt"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "s16",
+        "group": "semantic",
+        "modality": "image",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "i04.png",
+          "i06.png",
+          "i03.png",
+          "i01.png",
+          "i05.png"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "s17",
+        "group": "semantic",
+        "modality": "image",
+        "target_rank": 2,
+        "hit1": false,
+        "hit5": true,
+        "files": [
+          "i06.png",
+          "i05.png",
+          "d03.txt",
+          "d10.txt",
+          "p01.pdf"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "s18",
+        "group": "semantic",
+        "modality": "image",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "i06.png",
+          "i05.png",
+          "p01.pdf",
+          "d03.txt",
+          "d10.txt"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "s19",
+        "group": "semantic",
+        "modality": "image",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "i07.png",
+          "d10.txt",
+          "i08.png",
+          "i01.png",
+          "i02.png"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "s20",
+        "group": "semantic",
+        "modality": "image",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "i08.png",
+          "i07.png",
+          "i02.png",
+          "i01.png",
+          "d10.txt"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "e01",
+        "group": "exact",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d01.txt",
+          "d10.txt",
+          "i05.png",
+          "d06.txt",
+          "d04.txt"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "e02",
+        "group": "exact",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d02.txt",
+          "i05.png",
+          "d10.txt",
+          "d08.txt",
+          "d06.txt"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "e03",
+        "group": "exact",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d03.txt",
+          "d10.txt",
+          "i05.png",
+          "d08.txt",
+          "p01.pdf"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "e04",
+        "group": "exact",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d04.txt",
+          "p03.pdf",
+          "i03.png",
+          "i05.png",
+          "i04.png"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "e05",
+        "group": "exact",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "p01.pdf",
+          "d06.txt",
+          "i05.png",
+          "d10.txt",
+          "d03.txt"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "e06",
+        "group": "exact",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "i05.png",
+          "d10.txt",
+          "i06.png",
+          "d08.txt",
+          "p01.pdf"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "l01",
+        "group": "literal",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d01.txt",
+          "d10.txt",
+          "d03.txt",
+          "i04.png",
+          "i05.png"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "l02",
+        "group": "literal",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d02.txt",
+          "i04.png",
+          "d10.txt",
+          "d12.txt",
+          "p04.pdf"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "l03",
+        "group": "literal",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d03.txt",
+          "p03.pdf",
+          "i06.png",
+          "i05.png",
+          "p01.pdf"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "l04",
+        "group": "literal",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d04.txt",
+          "i08.png",
+          "d10.txt",
+          "i02.png",
+          "i01.png"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "l05",
+        "group": "literal",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d05.txt",
+          "d11.txt",
+          "d10.txt",
+          "i06.png",
+          "d07.txt"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "l06",
+        "group": "literal",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d06.txt",
+          "d14.txt",
+          "i02.png",
+          "i01.png",
+          "d08.txt"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "l07",
+        "group": "literal",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "p01.pdf",
+          "d04.txt",
+          "i03.png",
+          "i05.png",
+          "i06.png"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "l08",
+        "group": "literal",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "p04.pdf",
+          "p01.pdf",
+          "i06.png",
+          "d09.txt",
+          "i05.png"
+        ],
+        "false_positives": null,
+        "target_page_correct": null
+      },
+      {
+        "id": "n01",
+        "group": "no_relevant",
+        "modality": "mixed",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [
+          "d10.txt",
+          "d08.txt",
+          "d07.txt",
+          "d05.txt",
+          "d03.txt"
+        ],
+        "false_positives": 5,
+        "target_page_correct": null,
+        "raw_negative_fields": [
+          {
+            "file": "d10.txt",
+            "page": 0,
+            "score": 0.6966804855789905,
+            "semantic_score": 0.565574124896608,
+            "exact": false,
+            "term_match": false,
+            "match_type": "semantic"
+          },
+          {
+            "file": "d08.txt",
+            "page": 0,
+            "score": 0.6924492304124099,
+            "semantic_score": 0.5560656863200222,
+            "exact": false,
+            "term_match": false,
+            "match_type": "semantic"
+          },
+          {
+            "file": "d07.txt",
+            "page": 0,
+            "score": 0.6912734666031634,
+            "semantic_score": 0.5534235204565467,
+            "exact": false,
+            "term_match": false,
+            "match_type": "semantic"
+          },
+          {
+            "file": "d05.txt",
+            "page": 0,
+            "score": 0.6867847209087232,
+            "semantic_score": 0.543336451480277,
+            "exact": false,
+            "term_match": false,
+            "match_type": "semantic"
+          },
+          {
+            "file": "d03.txt",
+            "page": 0,
+            "score": 0.6844331329160638,
+            "semantic_score": 0.5380519840810423,
+            "exact": false,
+            "term_match": false,
+            "match_type": "semantic"
+          }
+        ]
+      },
+      {
+        "id": "n02",
+        "group": "no_relevant",
+        "modality": "mixed",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [
+          "d03.txt",
+          "p02.pdf",
+          "i06.png",
+          "i02.png",
+          "p01.pdf"
+        ],
+        "false_positives": 5,
+        "target_page_correct": null,
+        "raw_negative_fields": [
+          {
+            "file": "d03.txt",
+            "page": 0,
+            "score": 0.6977654495197348,
+            "semantic_score": 0.5680122461117636,
+            "exact": false,
+            "term_match": false,
+            "match_type": "semantic"
+          },
+          {
+            "file": "p02.pdf",
+            "page": 1,
+            "score": 0.6933939273293509,
+            "semantic_score": 0.5581886007401143,
+            "exact": false,
+            "term_match": false,
+            "match_type": "semantic"
+          },
+          {
+            "file": "i06.png",
+            "page": 0,
+            "score": 0.6878538757062841,
+            "semantic_score": 0.5457390465309755,
+            "exact": false,
+            "term_match": false,
+            "match_type": "semantic"
+          },
+          {
+            "file": "i02.png",
+            "page": 0,
+            "score": 0.6871580577612109,
+            "semantic_score": 0.5441754106993503,
+            "exact": false,
+            "term_match": false,
+            "match_type": "semantic"
+          },
+          {
+            "file": "p01.pdf",
+            "page": 1,
+            "score": 0.6862809548618136,
+            "semantic_score": 0.5422043929478957,
+            "exact": false,
+            "term_match": false,
+            "match_type": "semantic"
+          }
+        ]
+      },
+      {
+        "id": "n03",
+        "group": "no_relevant",
+        "modality": "mixed",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [
+          "p01.pdf",
+          "d14.txt",
+          "d03.txt",
+          "d08.txt",
+          "d10.txt"
+        ],
+        "false_positives": 5,
+        "target_page_correct": null,
+        "raw_negative_fields": [
+          {
+            "file": "p01.pdf",
+            "page": 2,
+            "score": 0.734852601780104,
+            "semantic_score": 0.6513541613036045,
+            "exact": false,
+            "term_match": false,
+            "match_type": "semantic"
+          },
+          {
+            "file": "d14.txt",
+            "page": 0,
+            "score": 0.7041319619608309,
+            "semantic_score": 0.5823190156423166,
+            "exact": false,
+            "term_match": false,
+            "match_type": "semantic"
+          },
+          {
+            "file": "d03.txt",
+            "page": 0,
+            "score": 0.7039696008360411,
+            "semantic_score": 0.5819541591821147,
+            "exact": false,
+            "term_match": false,
+            "match_type": "semantic"
+          },
+          {
+            "file": "d08.txt",
+            "page": 0,
+            "score": 0.7026235876764315,
+            "semantic_score": 0.5789294105088348,
+            "exact": false,
+            "term_match": false,
+            "match_type": "semantic"
+          },
+          {
+            "file": "d10.txt",
+            "page": 0,
+            "score": 0.6975792974167264,
+            "semantic_score": 0.5675939267791607,
+            "exact": false,
+            "term_match": false,
+            "match_type": "semantic"
+          }
+        ]
+      }
+    ],
+    "source_text_pdf_associations": 112,
+    "max_score_formula_error": 0
+  },
+  "baloo": {
+    "aggregate": {
+      "semantic": {
+        "n": 20,
+        "hit1": 0,
+        "hit5": 0
+      },
+      "semantic:document": {
+        "n": 8,
+        "hit1": 0,
+        "hit5": 0
+      },
+      "semantic:pdf": {
+        "n": 4,
+        "hit1": 0,
+        "hit5": 0
+      },
+      "semantic:image": {
+        "n": 8,
+        "hit1": 0,
+        "hit5": 0
+      },
+      "exact": {
+        "n": 6,
+        "hit1": 5,
+        "hit5": 5
+      },
+      "literal": {
+        "n": 8,
+        "hit1": 8,
+        "hit5": 8
+      }
+    },
+    "rows": [
+      {
+        "id": "s01",
+        "group": "semantic",
+        "modality": "document",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "s02",
+        "group": "semantic",
+        "modality": "document",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "s03",
+        "group": "semantic",
+        "modality": "document",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "s04",
+        "group": "semantic",
+        "modality": "document",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "s05",
+        "group": "semantic",
+        "modality": "document",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "s06",
+        "group": "semantic",
+        "modality": "document",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "s07",
+        "group": "semantic",
+        "modality": "document",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "s08",
+        "group": "semantic",
+        "modality": "document",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "s09",
+        "group": "semantic",
+        "modality": "pdf",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "s10",
+        "group": "semantic",
+        "modality": "pdf",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "s11",
+        "group": "semantic",
+        "modality": "pdf",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "s12",
+        "group": "semantic",
+        "modality": "pdf",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "s13",
+        "group": "semantic",
+        "modality": "image",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "s14",
+        "group": "semantic",
+        "modality": "image",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "s15",
+        "group": "semantic",
+        "modality": "image",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "s16",
+        "group": "semantic",
+        "modality": "image",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "s17",
+        "group": "semantic",
+        "modality": "image",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "s18",
+        "group": "semantic",
+        "modality": "image",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "s19",
+        "group": "semantic",
+        "modality": "image",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "s20",
+        "group": "semantic",
+        "modality": "image",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "e01",
+        "group": "exact",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d01.txt"
+        ],
+        "false_positives": null
+      },
+      {
+        "id": "e02",
+        "group": "exact",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d02.txt"
+        ],
+        "false_positives": null
+      },
+      {
+        "id": "e03",
+        "group": "exact",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d03.txt"
+        ],
+        "false_positives": null
+      },
+      {
+        "id": "e04",
+        "group": "exact",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d04.txt"
+        ],
+        "false_positives": null
+      },
+      {
+        "id": "e05",
+        "group": "exact",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "p01.pdf"
+        ],
+        "false_positives": null
+      },
+      {
+        "id": "e06",
+        "group": "exact",
+        "modality": "mixed",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": null
+      },
+      {
+        "id": "l01",
+        "group": "literal",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d01.txt"
+        ],
+        "false_positives": null
+      },
+      {
+        "id": "l02",
+        "group": "literal",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d02.txt"
+        ],
+        "false_positives": null
+      },
+      {
+        "id": "l03",
+        "group": "literal",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d03.txt"
+        ],
+        "false_positives": null
+      },
+      {
+        "id": "l04",
+        "group": "literal",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d04.txt"
+        ],
+        "false_positives": null
+      },
+      {
+        "id": "l05",
+        "group": "literal",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d05.txt"
+        ],
+        "false_positives": null
+      },
+      {
+        "id": "l06",
+        "group": "literal",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "d06.txt"
+        ],
+        "false_positives": null
+      },
+      {
+        "id": "l07",
+        "group": "literal",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "p01.pdf"
+        ],
+        "false_positives": null
+      },
+      {
+        "id": "l08",
+        "group": "literal",
+        "modality": "mixed",
+        "target_rank": 1,
+        "hit1": true,
+        "hit5": true,
+        "files": [
+          "p04.pdf"
+        ],
+        "false_positives": null
+      },
+      {
+        "id": "n01",
+        "group": "no_relevant",
+        "modality": "mixed",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": 0
+      },
+      {
+        "id": "n02",
+        "group": "no_relevant",
+        "modality": "mixed",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": 0
+      },
+      {
+        "id": "n03",
+        "group": "no_relevant",
+        "modality": "mixed",
+        "target_rank": null,
+        "hit1": false,
+        "hit5": false,
+        "files": [],
+        "false_positives": 0
+      }
+    ],
+    "source_text_pdf_associations": 0,
+    "max_score_formula_error": 0
+  },
+  "service_measurements": {
+    "warm_n": 185,
+    "p95_order_statistic": 176,
+    "warm_p95_ms": 42.05547,
+    "indexing_seconds": 21.844843353,
+    "reported_sampled_peak_rss_kib": 1127164,
+    "reported_endpoint_apparent_index_bytes": 1412976,
+    "cold": [
+      {
+        "id": "s01",
+        "begin_ns": 24351525740404,
+        "end_ns": 24354275381822,
+        "elapsed_ms": 2749.641418,
+        "producer_absent_before": true
+      },
+      {
+        "id": "s09",
+        "begin_ns": 24364485149456,
+        "end_ns": 24367214564015,
+        "elapsed_ms": 2729.414559,
+        "producer_absent_before": true
+      },
+      {
+        "id": "s13",
+        "begin_ns": 24377388974614,
+        "end_ns": 24379345651191,
+        "elapsed_ms": 1956.676577,
+        "producer_absent_before": true
+      }
+    ],
+    "closure": {
+      "service_exit": 0,
+      "all_known_pids_absent": true,
+      "socket_absent": true
+    }
+  },
+  "baloo_measurements": {
+    "warm_n": 185,
+    "p95_order_statistic": 176,
+    "warm_p95_ms": 22.72413399987272,
+    "indexing_seconds": 6.36702165,
+    "reported_sampled_peak_rss_kib": 69848,
+    "reported_endpoint_apparent_index_bytes": 139264,
+    "closure": {
+      "daemon_closed": true,
+      "daemon_exit_code": -15,
+      "sandbox_closed": true,
+      "sandbox_exit_code": 0
+    }
+  },
+  "baloo_content_receipts": {
+    "content_done": 28,
+    "text_pdf_nonempty_plain_terms": 20,
+    "png_empty_plain_terms": 8
+  },
+  "semantic_gain_percentage_points": 100.0,
+  "false_positive_score_range": [
+    0.6844331329160638,
+    0.734852601780104
+  ],
+  "baseline_raw_query_controls": {
+    "filename:alpha-record": [
+      "alpha-record.txt"
+    ],
+    "Domestic": [
+      "alpha-record.txt"
+    ],
+    "permission": [
+      "alpha-record.txt"
+    ],
+    "Domestic permission": [
+      "alpha-record.txt"
+    ],
+    "Domestic telescope": [],
+    "Domestic OR telescope": [
+      "alpha-record.txt",
+      "beta-record.txt"
+    ],
+    "\"prior permission\"": [
+      "alpha-record.txt"
+    ],
+    "\"permission prior\"": [],
+    "content:permission": [
+      "alpha-record.txt"
+    ],
+    "animals": [
+      "alpha-record.txt"
+    ],
+    "keeping a cat": []
+  },
+  "post_shutdown_corroboration": {
+    "local/retrieval-service-v1/corpus": {
+      "files": 28,
+      "frozen_corpus_byte_equal": true
+    },
+    "local/baloo-retrieval-ik6jqt8u/home/corpus": {
+      "files": 28,
+      "frozen_corpus_byte_equal": true
+    },
+    "post_shutdown_sql": {
+      "scope": "readonly closed-runtime corroboration; not original endpoint or new native retrieval",
+      "sha256": "aec216749c70c3dc519313b69679541c0e528be822dd200ad2fe7a15f5dbaaa2",
+      "bytes": 237568,
+      "rows": {
+        "meta": [
+          {
+            "key": "index_revision",
+            "value": "32"
+          },
+          {
+            "key": "identity",
+            "value": "{\"backend\":\"CPU\",\"byte_order\":\"little\",\"dimension\":768,\"dtype\":\"float32\",\"engine_pipeline\":\"kde-index-full-pages-v3-segments1800-image140-ocr32\",\"extractors\":{\"pdfinfo\":\"pdfinfo version 26.05.0\",\"pdftoppm\":\"pdftoppm version 26.05.0\",\"pdftotext\":\"pdftotext version 26.08.0\",\"tesseract\":\"tesseract 5.5.3\"},\"image_sha256\":\"c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f\",\"max_tokens\":2048,\"model\":\"google/embeddinggemma-2\",\"model_revision\":\"bfcd298762cc34d0357ece5ebdd31791a3a374d8\",\"pipeline\":\"digup-vectors1-linux-cpu-probe1\",\"producer_sha256\":\"f34469aa625f5000a7a3bb24a04b3c0cc91cf63ddb4e4a17fdbbf0fa1f49a9bf\",\"representation\":3,\"runtime\":\"llama.cpp-b11461+no-logits\",\"text_sha256\":\"2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135\"}"
+          }
+        ],
+        "files": [
+          {
+            "path": "d01.txt",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "5cf776df6955f9bff9c3379fa0120c5af6079ad3cb7145cecf6d7429afb02cd1",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "d02.txt",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "623c2aabc80481049be9796811b721b55221c1152831190b3dd2a4810dd346a8",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "d03.txt",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "f6607d88ff3a91ec0222f8211c3d7e24c2b3ed4b8d687e0c3efbbf3642720485",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "d04.txt",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "13bb9711165cc3083dfc1115ee0c2f6f1d0cc137ff780301f74befa73e6bee18",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "d05.txt",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "cc6cb1e9df3c3dde33a98081a520f1882bb31cf765f3f2cfc6d033e8e84f21b0",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "d06.txt",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "b433637c9c939739c9b34b2ba375b766229fd6aba8868531f955f37f19f56704",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "d07.txt",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "793b25ff51e640e55ec833e95758aff562cc4574bcb256ce8d7ba34bf6683f5d",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "d08.txt",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "5b5afba78cf0e2f51b713205152e1f143fbc1ea11dfb26e36eabca7aa7fe27d5",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "d09.txt",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "b7b7ece8722010c2fb7bbe352f180ddab72672a766e1fabf538b7a81686e54bf",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "d10.txt",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "353dec4a10df4deee62f00dc75d94d193de4c75edcacae33dbbceb7edd65d531",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "d11.txt",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "d1f7791110600c73879cbb74c1ac7c6a09f2b0855a1b9a69cecbb1bfd88331c2",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "d12.txt",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "a4ff1e3261f6cf51738d8a4ce37f11c894751c7b9a58db11a67bbd235fcdc901",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "d13.txt",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "0fa95eff393d87e1fa9d7df031e4fd282f6b8bbd0d8609aeeabfe0493ec3f6af",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "d14.txt",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "aef7aa7e5c58ecbb7801098ca15e74f4bfa27025e168009e34ee5c36e2f8b725",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "d15.txt",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "89c72498a15d615e03baa3b958b9f4809a4b0dcfa63e1521d5074760091cc64c",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "d16.txt",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "f7bd98d9f2fc1d5205ac5b8a3e6eeae0a840dec89c9ac4611ce22e9c4603feee",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "i01.png",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "c900754c590cb8bb997f6449f2a7a0d7d84e6a101303b7155c3e7e40044ce1be",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "i02.png",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "4c0f4fab8498e12ad16c228dfe3a1f8a58b050427fff8e39c5097004610b4bbc",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "i03.png",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "90254f636fed09a8d152be5b087e007cd681d0b9ad69732632bf04f21a4f771f",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "i04.png",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "9d4efcc2548e2d4470d0a03d05f55ed28a94348b60a499b2bf8192a1e494eb17",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "i05.png",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "43d5978ee7d9cdee64efbb7235a0ba7c9107b7df4e6594ed25eb60d6028485d1",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "i06.png",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "0068fc73fd615a61112006b18fd62c0085643198017c84099acf0ca7a1568abe",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "i07.png",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "16ff110a81fe7810385e095633fc9761b56d76d7143005a4ce47054bc735ac4e",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "i08.png",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "56a7a0728768b5c5b571241d0f471eba11fe9acfb9695cd170215ce6b5d31c4f",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "p01.pdf",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "61678ff63cc4443c826318f815bc2d9b8c626b68d526b22fac669d44cfb230c2",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "p02.pdf",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "534a288b0df8c37730a39e9d9d92a0d4e46ef53e55bddcde5bfcf5eb4e8ef060",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "p03.pdf",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "8d23abeed55fc50d9ace507e7eb02156d22ca9a9d3589ee3a3e81d163952c6c9",
+            "error": "",
+            "warning": ""
+          },
+          {
+            "path": "p04.pdf",
+            "root": "<owned-synthetic-corpus>",
+            "hash": "0556c2b0b715fb3e0c6750c5722d7412a77b0c7128813cfa63b989adccee9e31",
+            "error": "",
+            "warning": ""
+          }
+        ],
+        "pages": [
+          {
+            "id": 1,
+            "path": "d01.txt",
+            "page": 0,
+            "title": "d01.txt",
+            "text": "Residents may keep domestic animals only with prior written consent from the property manager. Any damage to the carpets must be paid for by the tenant. Reference TEN-49271.\n",
+            "kind": "text"
+          },
+          {
+            "id": 2,
+            "path": "d02.txt",
+            "page": 0,
+            "title": "d02.txt",
+            "text": "Bring the damaged product and purchase receipt to the service desk within thirty days. Staff can exchange it or return the payment to the original card. Reference RET-81342.\n",
+            "kind": "text"
+          },
+          {
+            "id": 3,
+            "path": "d03.txt",
+            "page": 0,
+            "title": "d03.txt",
+            "text": "The camera stores photographs on a removable memory card. Before erasing the card, copy the pictures to a second drive and verify that the copies open. Reference CAM-25816.\n",
+            "kind": "text"
+          },
+          {
+            "id": 4,
+            "path": "d04.txt",
+            "page": 0,
+            "title": "d04.txt",
+            "text": "For a declined transaction, telephone the card issuer to check the spending limit and whether the account has been temporarily blocked. Never send your PIN to the shop. Reference PAY-70193.\n",
+            "kind": "text"
+          },
+          {
+            "id": 5,
+            "path": "d05.txt",
+            "page": 0,
+            "title": "d05.txt",
+            "text": "A two-day workshop begins at nine on Monday in the east hall. Participants should bring a charged laptop. The afternoon session covers repairing bicycle punctures. Reference EVT-61427.\n",
+            "kind": "text"
+          },
+          {
+            "id": 6,
+            "path": "d06.txt",
+            "page": 0,
+            "title": "d06.txt",
+            "text": "To protect tomato seedlings during a cold night, drape fabric over the plants before sunset. Remove the covering the next morning. Avoid sealing wet foliage under plastic. Reference GDN-35082.\n",
+            "kind": "text"
+          },
+          {
+            "id": 7,
+            "path": "d07.txt",
+            "page": 0,
+            "title": "d07.txt",
+            "text": "The wireless router has no lights after a power interruption. Check the wall outlet, reconnect its power adapter, and wait two minutes before testing internet access. Reference NET-98614.\n",
+            "kind": "text"
+          },
+          {
+            "id": 8,
+            "path": "d08.txt",
+            "page": 0,
+            "title": "d08.txt",
+            "text": "Combine oats with milk in a jar and leave it in the refrigerator overnight. Add berries just before eating. This breakfast requires no cooking in the morning. Reference FOD-12745.\n",
+            "kind": "text"
+          },
+          {
+            "id": 9,
+            "path": "d09.txt",
+            "page": 0,
+            "title": "d09.txt",
+            "text": "Residents may keep bicycles in the basement rack. Do not leave them in corridors because the routes must stay clear for evacuation.\n",
+            "kind": "text"
+          },
+          {
+            "id": 10,
+            "path": "d10.txt",
+            "page": 0,
+            "title": "d10.txt",
+            "text": "The shop offers a repair estimate for products purchased more than thirty days ago. An estimate does not authorize the repair; the customer must agree to the quoted cost.\n",
+            "kind": "text"
+          },
+          {
+            "id": 11,
+            "path": "d11.txt",
+            "page": 0,
+            "title": "d11.txt",
+            "text": "The camera battery should be charged with the supplied adapter. A blinking orange indicator means charging is underway, and a green indicator means it has finished.\n",
+            "kind": "text"
+          },
+          {
+            "id": 12,
+            "path": "d12.txt",
+            "page": 0,
+            "title": "d12.txt",
+            "text": "A merchant may refund a canceled order. Allow several business days for the credit to appear on the card statement; contact the shop with the order number if it does not arrive.\n",
+            "kind": "text"
+          },
+          {
+            "id": 13,
+            "path": "d13.txt",
+            "page": 0,
+            "title": "d13.txt",
+            "text": "The cycling workshop was held last year in the west hall. The topic was adjusting gears, and attendees did not need a computer.\n",
+            "kind": "text"
+          },
+          {
+            "id": 14,
+            "path": "d14.txt",
+            "page": 0,
+            "title": "d14.txt",
+            "text": "Tomato plants need steady moisture during hot weather. Water the soil early and avoid wetting leaves in bright sunlight.\n",
+            "kind": "text"
+          },
+          {
+            "id": 15,
+            "path": "d15.txt",
+            "page": 0,
+            "title": "d15.txt",
+            "text": "A router with a flashing red internet light has power but cannot connect to the provider. Check the network cable and the provider outage notice.\n",
+            "kind": "text"
+          },
+          {
+            "id": 16,
+            "path": "d16.txt",
+            "page": 0,
+            "title": "d16.txt",
+            "text": "To bake oat biscuits, mix oats with butter and flour, shape small rounds and place them in a hot oven until golden.\n",
+            "kind": "text"
+          },
+          {
+            "id": 17,
+            "path": "i01.png",
+            "page": 0,
+            "title": "i01.png",
+            "text": "",
+            "kind": "image"
+          },
+          {
+            "id": 18,
+            "path": "i02.png",
+            "page": 0,
+            "title": "i02.png",
+            "text": "",
+            "kind": "image"
+          },
+          {
+            "id": 19,
+            "path": "i03.png",
+            "page": 0,
+            "title": "i03.png",
+            "text": "Payment declined\n\nContact your bank",
+            "kind": "image"
+          },
+          {
+            "id": 20,
+            "path": "i04.png",
+            "page": 0,
+            "title": "i04.png",
+            "text": "Payment complete\n\nYour receipt is ready",
+            "kind": "image"
+          },
+          {
+            "id": 21,
+            "path": "i05.png",
+            "page": 0,
+            "title": "i05.png",
+            "text": "Backup settings\nAutomatic backup C\u2019\n\nStatus: Disabled\nLast copy: 24 days ago\n\nBackup code BAK-84319",
+            "kind": "image"
+          },
+          {
+            "id": 22,
+            "path": "i06.png",
+            "page": 0,
+            "title": "i06.png",
+            "text": "Backup settings\n\nAutomatic backup ()\n\nStatus: Enabled\n\nLast copy: Today",
+            "kind": "image"
+          },
+          {
+            "id": 23,
+            "path": "i07.png",
+            "page": 0,
+            "title": "i07.png",
+            "text": "Project schedule\n\nPlan Build Review",
+            "kind": "image"
+          },
+          {
+            "id": 24,
+            "path": "i08.png",
+            "page": 0,
+            "title": "i08.png",
+            "text": "Quarterly budget",
+            "kind": "image"
+          },
+          {
+            "id": 25,
+            "path": "p01.pdf",
+            "page": 1,
+            "title": "p01.pdf",
+            "text": "Equipment inventory\nSpare labels are stored beside the front desk.",
+            "kind": "pdf"
+          },
+          {
+            "id": 26,
+            "path": "p01.pdf",
+            "page": 2,
+            "title": "p01.pdf",
+            "text": "Emergency cooling procedure\nSwitch off the pump before removing a blocked filter.\nWear gloves and allow the housing to cool.\nMaintenance code CLG-57260.",
+            "kind": "pdf"
+          },
+          {
+            "id": 27,
+            "path": "p02.pdf",
+            "page": 1,
+            "title": "p02.pdf",
+            "text": "Visitor guide\nThe gallery opens at ten in the morning.",
+            "kind": "pdf"
+          },
+          {
+            "id": 28,
+            "path": "p02.pdf",
+            "page": 2,
+            "title": "p02.pdf",
+            "text": "Museum access\nVisitors using wheelchairs can enter through the south ramp.\nAn elevator beside the ticket desk reaches every exhibition floor.",
+            "kind": "pdf"
+          },
+          {
+            "id": 29,
+            "path": "p03.pdf",
+            "page": 1,
+            "title": "p03.pdf",
+            "text": "Library membership\nIdentification is needed for a new borrowing card.",
+            "kind": "pdf"
+          },
+          {
+            "id": 30,
+            "path": "p03.pdf",
+            "page": 2,
+            "title": "p03.pdf",
+            "text": "Borrowing policy\nLoans can be extended online before the due date.\nAn item requested by another reader cannot be renewed.",
+            "kind": "pdf"
+          },
+          {
+            "id": 31,
+            "path": "p04.pdf",
+            "page": 1,
+            "title": "p04.pdf",
+            "text": "Travel notes\nTickets are sold at the station kiosk.",
+            "kind": "pdf"
+          },
+          {
+            "id": 32,
+            "path": "p04.pdf",
+            "page": 2,
+            "title": "p04.pdf",
+            "text": "Luggage storage\nTravelers can leave bags in staffed lockers near platform three.\nCollect luggage before the counter closes at eight in the evening.",
+            "kind": "pdf"
+          }
+        ],
+        "segments": [
+          {
+            "id": 1,
+            "path": "d01.txt",
+            "page_id": 1,
+            "title": "d01.txt",
+            "text": "Residents may keep domestic animals only with prior written consent from the property manager. Any damage to the carpets must be paid for by the tenant. Reference TEN-49271.\n",
+            "page": 0,
+            "kind": "text",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "e85272afd3bf50ba197219a9d844e06b51052059d11ef2a07dd5e8afe511a219"
+            }
+          },
+          {
+            "id": 2,
+            "path": "d02.txt",
+            "page_id": 2,
+            "title": "d02.txt",
+            "text": "Bring the damaged product and purchase receipt to the service desk within thirty days. Staff can exchange it or return the payment to the original card. Reference RET-81342.\n",
+            "page": 0,
+            "kind": "text",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "d06c5fd3771d34a8ad48dbfe049ed6d4781b27d21f8d0d63a581f2d585f2f797"
+            }
+          },
+          {
+            "id": 3,
+            "path": "d03.txt",
+            "page_id": 3,
+            "title": "d03.txt",
+            "text": "The camera stores photographs on a removable memory card. Before erasing the card, copy the pictures to a second drive and verify that the copies open. Reference CAM-25816.\n",
+            "page": 0,
+            "kind": "text",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "90650e9a499fab185338bec2b97355681a61ff7e5a4da0d13c74d67e690de97c"
+            }
+          },
+          {
+            "id": 4,
+            "path": "d04.txt",
+            "page_id": 4,
+            "title": "d04.txt",
+            "text": "For a declined transaction, telephone the card issuer to check the spending limit and whether the account has been temporarily blocked. Never send your PIN to the shop. Reference PAY-70193.\n",
+            "page": 0,
+            "kind": "text",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "562cf0c60769cbfaec3041de058a5b8f53bc1d987f2d328206a29ecbcb6cae41"
+            }
+          },
+          {
+            "id": 5,
+            "path": "d05.txt",
+            "page_id": 5,
+            "title": "d05.txt",
+            "text": "A two-day workshop begins at nine on Monday in the east hall. Participants should bring a charged laptop. The afternoon session covers repairing bicycle punctures. Reference EVT-61427.\n",
+            "page": 0,
+            "kind": "text",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "2fcc208eaaa620c55af5fcb9cebc66f67cd0dc7b03457ff437cb16c673e85377"
+            }
+          },
+          {
+            "id": 6,
+            "path": "d06.txt",
+            "page_id": 6,
+            "title": "d06.txt",
+            "text": "To protect tomato seedlings during a cold night, drape fabric over the plants before sunset. Remove the covering the next morning. Avoid sealing wet foliage under plastic. Reference GDN-35082.\n",
+            "page": 0,
+            "kind": "text",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "7defc04f341458383ef15504d9e6f50c4644076b852093083e974124890d63df"
+            }
+          },
+          {
+            "id": 7,
+            "path": "d07.txt",
+            "page_id": 7,
+            "title": "d07.txt",
+            "text": "The wireless router has no lights after a power interruption. Check the wall outlet, reconnect its power adapter, and wait two minutes before testing internet access. Reference NET-98614.\n",
+            "page": 0,
+            "kind": "text",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "2d56b74d22e70bc9b2f3e69ce51268930c735c7fa551c843d9003ec647d8da7d"
+            }
+          },
+          {
+            "id": 8,
+            "path": "d08.txt",
+            "page_id": 8,
+            "title": "d08.txt",
+            "text": "Combine oats with milk in a jar and leave it in the refrigerator overnight. Add berries just before eating. This breakfast requires no cooking in the morning. Reference FOD-12745.\n",
+            "page": 0,
+            "kind": "text",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "ab02c2a5fb430bace482a0e0d59429b8b3ee9468fb215f09e35e32bb89f81517"
+            }
+          },
+          {
+            "id": 9,
+            "path": "d09.txt",
+            "page_id": 9,
+            "title": "d09.txt",
+            "text": "Residents may keep bicycles in the basement rack. Do not leave them in corridors because the routes must stay clear for evacuation.\n",
+            "page": 0,
+            "kind": "text",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "e6e64b6304d04c314bbffd4899aeebde42ddb8f11f189c24a0907558147a1c35"
+            }
+          },
+          {
+            "id": 10,
+            "path": "d10.txt",
+            "page_id": 10,
+            "title": "d10.txt",
+            "text": "The shop offers a repair estimate for products purchased more than thirty days ago. An estimate does not authorize the repair; the customer must agree to the quoted cost.\n",
+            "page": 0,
+            "kind": "text",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "e6995d503ecadfe469f80f77097a587ea5ceb0faebe0b499464a0e24f948cdfb"
+            }
+          },
+          {
+            "id": 11,
+            "path": "d11.txt",
+            "page_id": 11,
+            "title": "d11.txt",
+            "text": "The camera battery should be charged with the supplied adapter. A blinking orange indicator means charging is underway, and a green indicator means it has finished.\n",
+            "page": 0,
+            "kind": "text",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "dca20aecc03b36a5e9da47ac2c6fd9b2be63425fe68f56702e3f8e4de897371e"
+            }
+          },
+          {
+            "id": 12,
+            "path": "d12.txt",
+            "page_id": 12,
+            "title": "d12.txt",
+            "text": "A merchant may refund a canceled order. Allow several business days for the credit to appear on the card statement; contact the shop with the order number if it does not arrive.\n",
+            "page": 0,
+            "kind": "text",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "7b6b71ff608542261b253df2b4187e28fcb50e37c1f5d519a60a62380ecd3957"
+            }
+          },
+          {
+            "id": 13,
+            "path": "d13.txt",
+            "page_id": 13,
+            "title": "d13.txt",
+            "text": "The cycling workshop was held last year in the west hall. The topic was adjusting gears, and attendees did not need a computer.\n",
+            "page": 0,
+            "kind": "text",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "6c9616524b4c3aa4e4ffe65e27298da0fcde41ce8907a33803f2465fba1de181"
+            }
+          },
+          {
+            "id": 14,
+            "path": "d14.txt",
+            "page_id": 14,
+            "title": "d14.txt",
+            "text": "Tomato plants need steady moisture during hot weather. Water the soil early and avoid wetting leaves in bright sunlight.\n",
+            "page": 0,
+            "kind": "text",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "4eafb8297c53e0b30f26a1c8beebd7f56cb01d061c300c6ef437dabe53321caf"
+            }
+          },
+          {
+            "id": 15,
+            "path": "d15.txt",
+            "page_id": 15,
+            "title": "d15.txt",
+            "text": "A router with a flashing red internet light has power but cannot connect to the provider. Check the network cable and the provider outage notice.\n",
+            "page": 0,
+            "kind": "text",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "8776d7ba2d7914cfedd313efada3f1ff54da406e9e60f283fbe12af38681e97d"
+            }
+          },
+          {
+            "id": 16,
+            "path": "d16.txt",
+            "page_id": 16,
+            "title": "d16.txt",
+            "text": "To bake oat biscuits, mix oats with butter and flour, shape small rounds and place them in a hot oven until golden.\n",
+            "page": 0,
+            "kind": "text",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "9782dc43e02dd27ba4683c51bc593d7c21b00558ff2fb8bf532a9a55092c36b3"
+            }
+          },
+          {
+            "id": 17,
+            "path": "i01.png",
+            "page_id": 17,
+            "title": "i01.png",
+            "text": "",
+            "page": 0,
+            "kind": "image",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "b31849c56742513c574c476541d45232f81da79e5bd8c7a65a312378c425045d"
+            }
+          },
+          {
+            "id": 18,
+            "path": "i02.png",
+            "page_id": 18,
+            "title": "i02.png",
+            "text": "",
+            "page": 0,
+            "kind": "image",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "ebbf1002f74a6b0802a1ccd260f66b4dfa4d5dca8a3ce29c2b2c75d2d8a95b68"
+            }
+          },
+          {
+            "id": 19,
+            "path": "i03.png",
+            "page_id": 19,
+            "title": "i03.png",
+            "text": "Payment declined\n\nContact your bank",
+            "page": 0,
+            "kind": "image",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "1ce307395584fd24c2f58eb380dc3268fc9fcb3cc852d142e5b6ecbec52bc4ff"
+            }
+          },
+          {
+            "id": 20,
+            "path": "i03.png",
+            "page_id": 19,
+            "title": "i03.png",
+            "text": "Payment declined\n\nContact your bank",
+            "page": 0,
+            "kind": "image",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "ae94b9157b9e799f86e7f300e8ee49ba6e0aef70080795852dc8520adbe9015a"
+            }
+          },
+          {
+            "id": 21,
+            "path": "i04.png",
+            "page_id": 20,
+            "title": "i04.png",
+            "text": "Payment complete\n\nYour receipt is ready",
+            "page": 0,
+            "kind": "image",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "b6ebe429ab24256947dffbbe558b595d2deafc07bb8e5c20be6489dea169b4c1"
+            }
+          },
+          {
+            "id": 22,
+            "path": "i04.png",
+            "page_id": 20,
+            "title": "i04.png",
+            "text": "Payment complete\n\nYour receipt is ready",
+            "page": 0,
+            "kind": "image",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "a58b871dcea73cbad320b6927801ea5efa097eb37978d1a1daa5867a984aba85"
+            }
+          },
+          {
+            "id": 23,
+            "path": "i05.png",
+            "page_id": 21,
+            "title": "i05.png",
+            "text": "Backup settings\nAutomatic backup C\u2019\n\nStatus: Disabled\nLast copy: 24 days ago\n\nBackup code BAK-84319",
+            "page": 0,
+            "kind": "image",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "3b2a88a772e525971dd340ded4770171e81a88b89e4f9854dfa88ebd03b8ccb0"
+            }
+          },
+          {
+            "id": 24,
+            "path": "i05.png",
+            "page_id": 21,
+            "title": "i05.png",
+            "text": "Backup settings\nAutomatic backup C\u2019\n\nStatus: Disabled\nLast copy: 24 days ago\n\nBackup code BAK-84319",
+            "page": 0,
+            "kind": "image",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "18b99f81837b2055119f26d64c9b7195dd7f14de1a6b34334f4df3b1ce96217f"
+            }
+          },
+          {
+            "id": 25,
+            "path": "i06.png",
+            "page_id": 22,
+            "title": "i06.png",
+            "text": "Backup settings\n\nAutomatic backup ()\n\nStatus: Enabled\n\nLast copy: Today",
+            "page": 0,
+            "kind": "image",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "122ecb7d929dd34f72c0ae6646787e1417622c8f55b23845ca1dadb42b87878b"
+            }
+          },
+          {
+            "id": 26,
+            "path": "i06.png",
+            "page_id": 22,
+            "title": "i06.png",
+            "text": "Backup settings\n\nAutomatic backup ()\n\nStatus: Enabled\n\nLast copy: Today",
+            "page": 0,
+            "kind": "image",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "762abf4b5545f62b6e8acc0f9eb5eba5bf9f8ccae9b597acc5e8974f2ea93903"
+            }
+          },
+          {
+            "id": 27,
+            "path": "i07.png",
+            "page_id": 23,
+            "title": "i07.png",
+            "text": "Project schedule\n\nPlan Build Review",
+            "page": 0,
+            "kind": "image",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "48d8b00702491b7b746143c7a2fce451019b78a54e1e5d85ca264a31b9befd29"
+            }
+          },
+          {
+            "id": 28,
+            "path": "i07.png",
+            "page_id": 23,
+            "title": "i07.png",
+            "text": "Project schedule\n\nPlan Build Review",
+            "page": 0,
+            "kind": "image",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "93d0553f29a2106bc15c3f9011daffb025f3b2d31a3200b1bbe9aa6fb4a2cdba"
+            }
+          },
+          {
+            "id": 29,
+            "path": "i08.png",
+            "page_id": 24,
+            "title": "i08.png",
+            "text": "Quarterly budget",
+            "page": 0,
+            "kind": "image",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "cad3c0bd9a9b7f4e12f77a9d595ca77e5bc565845b77d2a42ffec939744d3188"
+            }
+          },
+          {
+            "id": 30,
+            "path": "i08.png",
+            "page_id": 24,
+            "title": "i08.png",
+            "text": "Quarterly budget",
+            "page": 0,
+            "kind": "image",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "cd4295ad3caafda6f4fee35171a55ff6c600fe4d8efc0f0b02fc296c29e462ad"
+            }
+          },
+          {
+            "id": 31,
+            "path": "p01.pdf",
+            "page_id": 25,
+            "title": "p01.pdf",
+            "text": "Equipment inventory\nSpare labels are stored beside the front desk.",
+            "page": 1,
+            "kind": "pdf",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "886920e327553c294e66dfa131952c3c63b26c4c39278266da69b6a00143b430"
+            }
+          },
+          {
+            "id": 32,
+            "path": "p01.pdf",
+            "page_id": 26,
+            "title": "p01.pdf",
+            "text": "Emergency cooling procedure\nSwitch off the pump before removing a blocked filter.\nWear gloves and allow the housing to cool.\nMaintenance code CLG-57260.",
+            "page": 2,
+            "kind": "pdf",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "42303151c19947e912f73d3c26068d25a598ecbfb74c65aaa2c8c1d0b990e924"
+            }
+          },
+          {
+            "id": 33,
+            "path": "p02.pdf",
+            "page_id": 27,
+            "title": "p02.pdf",
+            "text": "Visitor guide\nThe gallery opens at ten in the morning.",
+            "page": 1,
+            "kind": "pdf",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "b76592b1dee9ddf96c65e437f83befcb04902f2f04032055d04c90bd2bc01597"
+            }
+          },
+          {
+            "id": 34,
+            "path": "p02.pdf",
+            "page_id": 28,
+            "title": "p02.pdf",
+            "text": "Museum access\nVisitors using wheelchairs can enter through the south ramp.\nAn elevator beside the ticket desk reaches every exhibition floor.",
+            "page": 2,
+            "kind": "pdf",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "098bd4b00ccd40a0d1bf32b6d5c8cbf28a9b2a7b88fd4bbdcee01676a4e92890"
+            }
+          },
+          {
+            "id": 35,
+            "path": "p03.pdf",
+            "page_id": 29,
+            "title": "p03.pdf",
+            "text": "Library membership\nIdentification is needed for a new borrowing card.",
+            "page": 1,
+            "kind": "pdf",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "ec979c0504f0b5cf84dea251655c091c65771cc78115040acc8eb5c39099f31b"
+            }
+          },
+          {
+            "id": 36,
+            "path": "p03.pdf",
+            "page_id": 30,
+            "title": "p03.pdf",
+            "text": "Borrowing policy\nLoans can be extended online before the due date.\nAn item requested by another reader cannot be renewed.",
+            "page": 2,
+            "kind": "pdf",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "2a68a6587d2f89a1dda70ea7c47293bcc3d1df7809c54de527bd7aa5154c2791"
+            }
+          },
+          {
+            "id": 37,
+            "path": "p04.pdf",
+            "page_id": 31,
+            "title": "p04.pdf",
+            "text": "Travel notes\nTickets are sold at the station kiosk.",
+            "page": 1,
+            "kind": "pdf",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "768f1a968b22e6a5b3dd3ca8e977605d92b1ac85e6206d250a410e1d0f446c81"
+            }
+          },
+          {
+            "id": 38,
+            "path": "p04.pdf",
+            "page_id": 32,
+            "title": "p04.pdf",
+            "text": "Luggage storage\nTravelers can leave bags in staffed lockers near platform three.\nCollect luggage before the counter closes at eight in the evening.",
+            "page": 2,
+            "kind": "pdf",
+            "vector": {
+              "bytes": 3072,
+              "sha256": "3b67b353c98f0ab704d1ff13045e5e3f63570b02c9ccc355aaca4f37046b4a30"
+            }
+          }
+        ]
+      }
+    },
+    "known_recorded_service_pids_present_now": [],
+    "declared_service_socket_present_now": false
+  }
+}

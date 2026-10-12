@@ -1,0 +1,1 @@
+{"id":"info","info":{"backend":"CPU","dimension":768,"load_seconds":2.228731497,"max_tokens":2048,"model":"google/embeddinggemma-2","model_revision":"bfcd298762cc34d0357ece5ebdd31791a3a374d8","pipeline":"digup-vectors1-linux-cpu-probe1","runtime":"llama.cpp-b11461+no-logits"},"ok":true,"seconds":3.19e-05}

@@ -1,0 +1,17 @@
+{
+  "old_exec_session": "46533 absent; no running handle",
+  "matching_native_processes": [],
+  "retained_endpoints": [
+    {
+      "path": "local/ui-review-v2-layout/local/ui-v2-controls/markup.sock",
+      "connects": false,
+      "mode": "0o140700"
+    }
+  ],
+  "retained_locks": [
+    {
+      "path": "local/ui-review-v2-layout/local/ui-v2-controls/data-markup/service.lock",
+      "contents": "673210\nkde-index-service\narch-desktop\n066634151ce344af8e5b856484a3ac44\n02157191-b121-41b1-be89-0e6e35c02b60\n"
+    }
+  ]
+}

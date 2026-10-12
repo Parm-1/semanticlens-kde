@@ -1,0 +1,679 @@
+{
+  "stage_binary_sha256": {
+    "embedding-probe": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+    "kde-index-service": "3176fa48374a69e35b2b6b064e68dc86baf852dfd73d49c66716c569fe575845",
+    "kde-index": "7463cd891a76c9a3a765fdd887aa0e1b5d8ca95b5287b7aabef279a862c7e760"
+  },
+  "scope": "synthetic staged host Wayland and native RunnerManager discovery; diagnostic timing only",
+  "events": [
+    {
+      "client": 0,
+      "direction": "request",
+      "monotonic_ns": 30487723435212,
+      "raw": {
+        "id": "ui-1",
+        "op": "status"
+      }
+    },
+    {
+      "client": 0,
+      "direction": "reply",
+      "monotonic_ns": 30487723595034,
+      "raw": {
+        "id": "ui-1",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 4,
+          "indexed": 3,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 3,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/installed-host-v2/run-v1/corpus"
+            }
+          ],
+          "segments": 4,
+          "total": 3,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "client": 0,
+      "direction": "request",
+      "monotonic_ns": 30488298820638,
+      "raw": {
+        "id": "ui-2",
+        "kind": "",
+        "limit": 20,
+        "op": "search",
+        "text": "CARD-39312"
+      }
+    },
+    {
+      "client": 0,
+      "direction": "request",
+      "monotonic_ns": 30489623659995,
+      "raw": {
+        "id": "ui-3",
+        "op": "status"
+      }
+    },
+    {
+      "client": 0,
+      "direction": "reply",
+      "monotonic_ns": 30489623802534,
+      "raw": {
+        "id": "ui-3",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 4,
+          "indexed": 3,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 3,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/installed-host-v2/run-v1/corpus"
+            }
+          ],
+          "segments": 4,
+          "total": 3,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "client": 0,
+      "direction": "request",
+      "monotonic_ns": 30491524247262,
+      "raw": {
+        "id": "ui-4",
+        "op": "status"
+      }
+    },
+    {
+      "client": 0,
+      "direction": "reply",
+      "monotonic_ns": 30491524446889,
+      "raw": {
+        "id": "ui-4",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 4,
+          "indexed": 3,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 3,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/installed-host-v2/run-v1/corpus"
+            }
+          ],
+          "segments": 4,
+          "total": 3,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "client": 0,
+      "direction": "reply",
+      "monotonic_ns": 30491529841529,
+      "raw": {
+        "generation": 2,
+        "id": "ui-2",
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 4,
+        "ok": true,
+        "protocol": 1,
+        "results": [
+          {
+            "exact": true,
+            "kind": "text",
+            "match_scope": "text",
+            "match_type": "literal",
+            "page": 0,
+            "path": "/home/parm/Documents/KDE Index/local/installed-host-v2/run-v1/corpus/payment.txt",
+            "score": 1,
+            "semantic_score": 0.7473516899791297,
+            "term_match": true,
+            "text": "Contact the bank when a credit card is declined. Receipt reference CARD-39312.\n",
+            "title": "payment.txt",
+            "warning": ""
+          },
+          {
+            "exact": false,
+            "kind": "pdf",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 2,
+            "path": "/home/parm/Documents/KDE Index/local/installed-host-v2/run-v1/corpus/manual.pdf",
+            "score": 0.7362937911933527,
+            "semantic_score": 0.6545927891985454,
+            "term_match": false,
+            "text": "Maintenance serial PDF-10299 belongs to the cooling system.",
+            "title": "manual.pdf",
+            "warning": ""
+          },
+          {
+            "exact": false,
+            "kind": "image",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 0,
+            "path": "/home/parm/Documents/KDE Index/local/installed-host-v2/run-v1/corpus/picture.jpg",
+            "score": 0.7018138344062016,
+            "semantic_score": 0.5771097402386555,
+            "term_match": false,
+            "text": "",
+            "title": "picture.jpg",
+            "warning": ""
+          }
+        ]
+      }
+    },
+    {
+      "client": 0,
+      "direction": "request",
+      "monotonic_ns": 30493501297109,
+      "raw": {
+        "id": "ui-5",
+        "op": "status"
+      }
+    },
+    {
+      "client": 0,
+      "direction": "reply",
+      "monotonic_ns": 30493501453855,
+      "raw": {
+        "id": "ui-5",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 4,
+          "indexed": 3,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 3,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/installed-host-v2/run-v1/corpus"
+            }
+          ],
+          "segments": 4,
+          "total": 3,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "client": 0,
+      "direction": "request",
+      "monotonic_ns": 30495500789242,
+      "raw": {
+        "id": "ui-6",
+        "op": "status"
+      }
+    },
+    {
+      "client": 0,
+      "direction": "reply",
+      "monotonic_ns": 30495500913056,
+      "raw": {
+        "id": "ui-6",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 4,
+          "indexed": 3,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 3,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/installed-host-v2/run-v1/corpus"
+            }
+          ],
+          "segments": 4,
+          "total": 3,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "client": 0,
+      "direction": "request",
+      "monotonic_ns": 30497501513422,
+      "raw": {
+        "id": "ui-7",
+        "op": "status"
+      }
+    },
+    {
+      "client": 0,
+      "direction": "reply",
+      "monotonic_ns": 30497501636775,
+      "raw": {
+        "id": "ui-7",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 4,
+          "indexed": 3,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 3,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/installed-host-v2/run-v1/corpus"
+            }
+          ],
+          "segments": 4,
+          "total": 3,
+          "watch_error": ""
+        }
+      }
+    },
+    {
+      "client": 0,
+      "direction": "request",
+      "monotonic_ns": 30499500688916,
+      "raw": {
+        "id": "ui-8",
+        "op": "status"
+      }
+    },
+    {
+      "client": 0,
+      "direction": "reply",
+      "monotonic_ns": 30499501140940,
+      "raw": {
+        "id": "ui-8",
+        "ok": true,
+        "protocol": 1,
+        "status": {
+          "busy": false,
+          "current": "",
+          "error": "",
+          "errors": 0,
+          "failures": [],
+          "identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.05.0",
+              "pdftoppm": "pdftoppm version 26.05.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+          },
+          "index_revision": 4,
+          "indexed": 3,
+          "model_ready": true,
+          "paused": false,
+          "phase": "ready",
+          "progress": 3,
+          "ready": true,
+          "recovery_attempt": 1,
+          "roots": [
+            {
+              "exclusions": [],
+              "path": "/home/parm/Documents/KDE Index/local/installed-host-v2/run-v1/corpus"
+            }
+          ],
+          "segments": 4,
+          "total": 3,
+          "watch_error": ""
+        }
+      }
+    }
+  ],
+  "indexed_status": {
+    "busy": false,
+    "current": "",
+    "error": "",
+    "errors": 0,
+    "failures": [],
+    "identity": {
+      "backend": "CPU",
+      "byte_order": "little",
+      "dimension": 768,
+      "dtype": "float32",
+      "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+      "extractors": {
+        "pdfinfo": "pdfinfo version 26.05.0",
+        "pdftoppm": "pdftoppm version 26.05.0",
+        "pdftotext": "pdftotext version 26.08.0",
+        "tesseract": "tesseract 5.5.3"
+      },
+      "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+      "max_tokens": 2048,
+      "model": "google/embeddinggemma-2",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "pipeline": "digup-vectors1-linux-cpu-probe1",
+      "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+      "representation": 3,
+      "runtime": "llama.cpp-b11461+no-logits",
+      "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+    },
+    "index_revision": 4,
+    "indexed": 3,
+    "model_ready": true,
+    "paused": false,
+    "phase": "ready",
+    "progress": 3,
+    "ready": true,
+    "recovery_attempt": 1,
+    "roots": [
+      {
+        "exclusions": [],
+        "path": "/home/parm/Documents/KDE Index/local/installed-host-v2/run-v1/corpus"
+      }
+    ],
+    "segments": 4,
+    "total": 3,
+    "watch_error": ""
+  },
+  "producer_present_before_idle": true,
+  "pre_client_process_inventory": {
+    "monotonic_ns": 30486063708031,
+    "pids": [
+      823805
+    ]
+  },
+  "runner_exit": 4,
+  "app_exit": 0,
+  "service_survives_unowned_app_capture": true,
+  "search_intervals": [
+    {
+      "client": 0,
+      "id": "ui-2",
+      "begin_ns": 30488298820638,
+      "end_ns": 30491529841529,
+      "text": "CARD-39312",
+      "ok": true,
+      "results": [
+        {
+          "exact": true,
+          "kind": "text",
+          "match_scope": "text",
+          "match_type": "literal",
+          "page": 0,
+          "path": "/home/parm/Documents/KDE Index/local/installed-host-v2/run-v1/corpus/payment.txt",
+          "score": 1,
+          "semantic_score": 0.7473516899791297,
+          "term_match": true,
+          "text": "Contact the bank when a credit card is declined. Receipt reference CARD-39312.\n",
+          "title": "payment.txt",
+          "warning": ""
+        },
+        {
+          "exact": false,
+          "kind": "pdf",
+          "match_scope": "segment",
+          "match_type": "semantic",
+          "page": 2,
+          "path": "/home/parm/Documents/KDE Index/local/installed-host-v2/run-v1/corpus/manual.pdf",
+          "score": 0.7362937911933527,
+          "semantic_score": 0.6545927891985454,
+          "term_match": false,
+          "text": "Maintenance serial PDF-10299 belongs to the cooling system.",
+          "title": "manual.pdf",
+          "warning": ""
+        },
+        {
+          "exact": false,
+          "kind": "image",
+          "match_scope": "segment",
+          "match_type": "semantic",
+          "page": 0,
+          "path": "/home/parm/Documents/KDE Index/local/installed-host-v2/run-v1/corpus/picture.jpg",
+          "score": 0.7018138344062016,
+          "semantic_score": 0.5771097402386555,
+          "term_match": false,
+          "text": "",
+          "title": "picture.jpg",
+          "warning": ""
+        }
+      ]
+    }
+  ],
+  "overlap_observed": false,
+  "pass": false,
+  "closure": {
+    "service_exit": 0,
+    "known_pids": [
+      823805,
+      823816,
+      823993,
+      824593
+    ],
+    "all_known_pids_absent": true,
+    "sockets_absent": true,
+    "relay_threads_closed": true
+  }
+}

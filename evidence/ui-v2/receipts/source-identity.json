@@ -1,0 +1,12 @@
+{
+  "evidence/ui-v2/candidate/src/ui/backend.h": true,
+  "evidence/ui-v2/candidate/src/ui/backend.cpp": true,
+  "evidence/ui-v2/candidate/src/ui/main.cpp": true,
+  "evidence/ui-v2/candidate/src/ui/Main.qml": true,
+  "evidence/ui-v2/candidate/tools/ui_smoke.cpp": true,
+  "evidence/ui-v2/candidate/tools/model_download.py": true,
+  "evidence/ui-v2/candidate/tools/ui_repair_harness.cpp": true,
+  "evidence/ui-v2/candidate/tools/ui_repair_recovery.cpp": true,
+  "evidence/ui-v2/candidate/tools/ui_repair_liveness.cpp": true,
+  "evidence/ui-v2/candidate/tools/ui_repair_CMakeLists.txt": true
+}

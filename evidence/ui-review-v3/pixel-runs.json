@@ -1,0 +1,75 @@
+{
+  "runs": [
+    {
+      "case": "smoke-positive",
+      "consumer": "candidate",
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "wall_seconds": 0.37704400299844565
+    },
+    {
+      "case": "smoke-positive",
+      "consumer": "independent",
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "wall_seconds": 0.5170769760006806
+    },
+    {
+      "case": "render-positive",
+      "consumer": "candidate",
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "wall_seconds": 0.16426617099932628
+    },
+    {
+      "case": "render-positive",
+      "consumer": "independent",
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "wall_seconds": 0.2652414399999543
+    },
+    {
+      "case": "loading-negative",
+      "consumer": "candidate",
+      "expected_exit_code": 1,
+      "exit_code": 1,
+      "wall_seconds": 0.11425303199939663
+    },
+    {
+      "case": "loading-negative",
+      "consumer": "independent",
+      "expected_exit_code": 1,
+      "exit_code": 1,
+      "wall_seconds": 0.21444717600024887
+    },
+    {
+      "case": "parent-v2-blank-negative",
+      "consumer": "candidate",
+      "expected_exit_code": 1,
+      "exit_code": 1,
+      "wall_seconds": 0.11386402700009057
+    },
+    {
+      "case": "parent-v2-blank-negative",
+      "consumer": "independent",
+      "expected_exit_code": 1,
+      "exit_code": 1,
+      "wall_seconds": 0.26424960700023803
+    },
+    {
+      "case": "wrong-page-source-negative",
+      "consumer": "candidate",
+      "expected_exit_code": 1,
+      "exit_code": 1,
+      "wall_seconds": 0.1642301320025581
+    },
+    {
+      "case": "wrong-page-source-negative",
+      "consumer": "independent",
+      "expected_exit_code": 1,
+      "exit_code": 1,
+      "wall_seconds": 0.26479782199749025
+    }
+  ],
+  "scope": "offline pixel consumers of captured geometry/source raster, not native presentation or new runtime metrics"
+}

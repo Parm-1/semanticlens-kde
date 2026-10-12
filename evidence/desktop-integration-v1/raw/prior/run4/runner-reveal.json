@@ -1,0 +1,4424 @@
+{
+    "command": {
+        "argument": 0,
+        "id": "runner-reveal",
+        "method": "runAction",
+        "node": "5603c6d6c060",
+        "op": "invoke"
+    },
+    "snapshot": {
+        "executable": "/usr/bin/krunner",
+        "nodes": [
+            {
+                "class": "View",
+                "height": 38,
+                "name": "",
+                "node": "7fff4a6caa60",
+                "opacity": 1,
+                "title": "KRunner",
+                "visible": false,
+                "width": 594
+            },
+            {
+                "class": "QQuickRootItem",
+                "effective_visible": true,
+                "height": 38,
+                "name": "",
+                "node": "5603c695c220",
+                "opacity": 1,
+                "scene_x": 297,
+                "scene_y": 19,
+                "visible": true,
+                "width": 594,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickDeliveryAgent",
+                "name": "",
+                "node": "5603c6846110"
+            },
+            {
+                "class": "PlasmaQuick::DialogBackground",
+                "effective_visible": true,
+                "height": 38,
+                "name": "",
+                "node": "5603c6a27f70",
+                "opacity": 1,
+                "scene_x": 297,
+                "scene_y": 19,
+                "visible": true,
+                "width": 594,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "PlasmaQuick::SharedQmlEngine",
+                "name": "",
+                "node": "5603c6a28070",
+                "source": ""
+            },
+            {
+                "class": "QTimer",
+                "name": "",
+                "node": "5603c6b3aca0"
+            },
+            {
+                "class": "QQmlContext",
+                "name": "",
+                "node": "5603c68d94a0"
+            },
+            {
+                "class": "KLocalizedQmlContext",
+                "name": "",
+                "node": "5603c6919930"
+            },
+            {
+                "class": "DialogBackground_QMLTYPE_43",
+                "effective_visible": true,
+                "height": 38,
+                "name": "",
+                "node": "5603c688f580",
+                "opacity": 1,
+                "scene_x": 297,
+                "scene_y": 19,
+                "visible": true,
+                "width": 594,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6a6d550"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6a3a620"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6b43290"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c68a6ff0"
+            },
+            {
+                "class": "QQuickOverlay",
+                "effective_visible": false,
+                "height": 38,
+                "name": "",
+                "node": "5603c7007230",
+                "opacity": 1,
+                "scene_x": 297,
+                "scene_y": 19,
+                "visible": false,
+                "width": 594,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "RunCommand_QMLTYPE_44",
+                "effective_visible": true,
+                "height": 30,
+                "name": "",
+                "node": "5603c6b56340",
+                "opacity": 1,
+                "query": "",
+                "scene_x": 297,
+                "scene_y": 19,
+                "singleRunner": "",
+                "visible": true,
+                "width": 586,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQmlConnections_QML_90",
+                "name": "",
+                "node": "5603c6a0e140"
+            },
+            {
+                "class": "QQmlConnections_QML_91",
+                "name": "",
+                "node": "5603c6b24b50"
+            },
+            {
+                "class": "QQmlConnections_QML_92",
+                "name": "",
+                "node": "5603c6b5b2b0"
+            },
+            {
+                "class": "QQuickRowLayout",
+                "effective_visible": true,
+                "height": 30,
+                "name": "",
+                "node": "5603c6a45040",
+                "opacity": 1,
+                "scene_x": 297,
+                "scene_y": 19,
+                "visible": true,
+                "width": 586,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "ToolButton_QMLTYPE_50",
+                "effective_visible": true,
+                "height": 30,
+                "name": "",
+                "node": "5603c6b5b540",
+                "opacity": 1,
+                "scene_x": 19,
+                "scene_y": 19,
+                "text": "",
+                "visible": true,
+                "width": 30,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickShortcut",
+                "name": "",
+                "node": "5603c6917d40"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6a57de0"
+            },
+            {
+                "class": "MnemonicAttached",
+                "name": "",
+                "node": "5603c6a03330"
+            },
+            {
+                "class": "QQuickAccessibleAttached",
+                "name": "",
+                "node": "5603c68da470"
+            },
+            {
+                "class": "ToolTip_QMLTYPE_0",
+                "height": 26,
+                "name": "",
+                "node": "5603c6926500",
+                "opacity": 1,
+                "text": "Show Usage Help",
+                "textFormat": "AutoText",
+                "visible": false,
+                "width": 106.125
+            },
+            {
+                "class": "QQuickPopupItem",
+                "effective_visible": false,
+                "height": 26,
+                "name": "ToolTip",
+                "node": "5603c6b1b310",
+                "opacity": 1,
+                "scene_x": 53.0625,
+                "scene_y": 13,
+                "title": "",
+                "visible": false,
+                "width": 106.125,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickItem",
+                "effective_visible": false,
+                "height": 26,
+                "name": "",
+                "node": "5603c6b5f770",
+                "opacity": 1,
+                "scene_x": 53.0625,
+                "scene_y": 13,
+                "visible": false,
+                "width": 106.125,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvgItem",
+                "effective_visible": false,
+                "height": 46,
+                "name": "",
+                "node": "5603c6c3e3d0",
+                "opacity": 1,
+                "scene_x": 53.0625,
+                "scene_y": 13,
+                "visible": false,
+                "width": 126.125,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6b5f910"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6a0bd40"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6a4b4f0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6cf5780"
+            },
+            {
+                "class": "KSvg::FrameSvgItem",
+                "effective_visible": false,
+                "height": 26,
+                "name": "",
+                "node": "5603c6b48c70",
+                "opacity": 1,
+                "scene_x": 53.0625,
+                "scene_y": 13,
+                "visible": false,
+                "width": 106.125,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6b48df0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6a14390"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c69ffa50"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6cf5300"
+            },
+            {
+                "class": "QQuickItem",
+                "effective_visible": false,
+                "height": 18,
+                "name": "",
+                "node": "5603c6a02a40",
+                "opacity": 1,
+                "scene_x": 53.0625,
+                "scene_y": 13,
+                "visible": false,
+                "width": 98.125,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "Label_QMLTYPE_41_QML_42",
+                "effective_visible": false,
+                "height": 17,
+                "name": "",
+                "node": "5603c68e1360",
+                "opacity": 1,
+                "scene_x": 53.0625,
+                "scene_y": 12.5,
+                "text": "Show Usage Help",
+                "textFormat": "AutoText",
+                "truncated": false,
+                "visible": false,
+                "width": 98.125,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickAccessibleAttached",
+                "name": "",
+                "node": "5603c6b1b3a0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6a00590"
+            },
+            {
+                "class": "QQuickTransition",
+                "name": "",
+                "node": "5603c690e2b0"
+            },
+            {
+                "class": "QQuickTransition",
+                "name": "",
+                "node": "5603c6907670"
+            },
+            {
+                "class": "ButtonBackground_QMLTYPE_51",
+                "effective_visible": true,
+                "height": 30,
+                "name": "",
+                "node": "5603c6cf9150",
+                "opacity": 1,
+                "scene_x": 19,
+                "scene_y": 19,
+                "visible": true,
+                "width": 30,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickLoader",
+                "effective_visible": true,
+                "height": 30,
+                "name": "",
+                "node": "5603c6cf79c0",
+                "opacity": 1,
+                "scene_x": 19,
+                "scene_y": 19,
+                "source": "",
+                "visible": true,
+                "width": 30,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "FlatButtonBackground_QMLTYPE_52",
+                "effective_visible": true,
+                "height": 30,
+                "name": "",
+                "node": "5603c6fd8390",
+                "opacity": 1,
+                "scene_x": 19,
+                "scene_y": 19,
+                "visible": true,
+                "width": 30,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "ButtonShadow_QMLTYPE_54",
+                "effective_visible": true,
+                "height": 36,
+                "name": "",
+                "node": "5603c6b32c60",
+                "opacity": 0,
+                "scene_x": 19,
+                "scene_y": 19,
+                "visible": true,
+                "width": 36,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6a3ffd0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6a24410"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6b764f0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6cb26b0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6fe5e60"
+            },
+            {
+                "class": "ButtonFocus_QMLTYPE_53",
+                "effective_visible": true,
+                "height": 34,
+                "name": "",
+                "node": "5603c6b3e410",
+                "opacity": 0,
+                "scene_x": 19,
+                "scene_y": 19,
+                "visible": true,
+                "width": 34,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6b3e720"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6dd0b60"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6dd07a0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6cb23b0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6fdbf10"
+            },
+            {
+                "class": "KSvg::FrameSvgItem",
+                "effective_visible": false,
+                "height": 30,
+                "name": "",
+                "node": "5603c6e35ac0",
+                "opacity": 1,
+                "scene_x": 19,
+                "scene_y": 19,
+                "visible": false,
+                "width": 30,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6fe64f0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6e35cd0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6cb2900"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6cf1140"
+            },
+            {
+                "class": "KSvg::FrameSvgItem_QML_55",
+                "effective_visible": true,
+                "height": 30,
+                "name": "",
+                "node": "5603c6fe1280",
+                "opacity": 0,
+                "scene_x": 19,
+                "scene_y": 19,
+                "visible": true,
+                "width": 30,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6a401f0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6fc0ed0"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6e9edb0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c7002120"
+            },
+            {
+                "class": "QQmlComponent",
+                "name": "",
+                "node": "5603c6dd4f20"
+            },
+            {
+                "class": "QQmlComponent",
+                "name": "",
+                "node": "5603c6cf97e0"
+            },
+            {
+                "class": "ButtonContent_QMLTYPE_62",
+                "effective_visible": true,
+                "height": 22,
+                "name": "",
+                "node": "5603c6da0590",
+                "opacity": 1,
+                "scene_x": 19,
+                "scene_y": 19,
+                "visible": true,
+                "width": 22,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickGridLayout",
+                "effective_visible": true,
+                "height": 22,
+                "name": "",
+                "node": "5603c6cf95d0",
+                "opacity": 1,
+                "scene_x": 19,
+                "scene_y": 19,
+                "visible": true,
+                "width": 22,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "Icon",
+                "effective_visible": true,
+                "height": 22,
+                "name": "",
+                "node": "5603c6fc1fe0",
+                "opacity": 1,
+                "scene_x": 19,
+                "scene_y": 19,
+                "source": "question",
+                "visible": true,
+                "width": 22,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6fd6030"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6cf67b0"
+            },
+            {
+                "class": "QPropertyAnimation",
+                "name": "",
+                "node": "5603c6a23520"
+            },
+            {
+                "class": "Label_QMLTYPE_41",
+                "effective_visible": false,
+                "height": 17,
+                "name": "",
+                "node": "5603c6fddde0",
+                "opacity": 1,
+                "scene_x": 8,
+                "scene_y": 16.5,
+                "text": "",
+                "textFormat": "AutoText",
+                "truncated": false,
+                "visible": false,
+                "width": 0,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickAccessibleAttached",
+                "name": "",
+                "node": "5603c6e8c4f0"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6e8f280"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6b3d510"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6e8f400"
+            },
+            {
+                "class": "KSvg::SvgItem",
+                "effective_visible": false,
+                "height": 14,
+                "name": "",
+                "node": "5603c6e8fa10",
+                "opacity": 1,
+                "scene_x": 15,
+                "scene_y": 15,
+                "visible": false,
+                "width": 14,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::Svg",
+                "name": "",
+                "node": "5603c6e8c960"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6e902d0"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6e90870"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6e9eeb0"
+            },
+            {
+                "class": "KSvg::Svg",
+                "name": "",
+                "node": "5603c6cfbad0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6e90f30"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6e93870"
+            },
+            {
+                "class": "ToolButton_QMLTYPE_50",
+                "effective_visible": false,
+                "height": 26,
+                "name": "",
+                "node": "5603c6a290c0",
+                "opacity": 1,
+                "scene_x": 52,
+                "scene_y": 19,
+                "text": "",
+                "visible": false,
+                "width": 26,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickShortcut",
+                "name": "",
+                "node": "5603c6894da0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6b365b0"
+            },
+            {
+                "class": "MnemonicAttached",
+                "name": "",
+                "node": "5603c6b360b0"
+            },
+            {
+                "class": "QQuickAccessibleAttached",
+                "name": "",
+                "node": "5603c69f0cf0"
+            },
+            {
+                "class": "ToolTip_QMLTYPE_0",
+                "height": 26,
+                "name": "",
+                "node": "5603c6a2f110",
+                "opacity": 1,
+                "text": "Showing only results from ",
+                "textFormat": "AutoText",
+                "visible": false,
+                "width": 157.6875
+            },
+            {
+                "class": "QQuickPopupItem",
+                "effective_visible": false,
+                "height": 26,
+                "name": "ToolTip",
+                "node": "5603c68e09e0",
+                "opacity": 1,
+                "scene_x": 78.84375,
+                "scene_y": 13,
+                "title": "",
+                "visible": false,
+                "width": 157.6875,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickItem",
+                "effective_visible": false,
+                "height": 26,
+                "name": "",
+                "node": "5603c68deb00",
+                "opacity": 1,
+                "scene_x": 78.84375,
+                "scene_y": 13,
+                "visible": false,
+                "width": 157.6875,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvgItem",
+                "effective_visible": false,
+                "height": 46,
+                "name": "",
+                "node": "5603c6a085c0",
+                "opacity": 1,
+                "scene_x": 78.84375,
+                "scene_y": 13,
+                "visible": false,
+                "width": 177.6875,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6a08740"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6b1a950"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6b1ab00"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6d9f650"
+            },
+            {
+                "class": "KSvg::FrameSvgItem",
+                "effective_visible": false,
+                "height": 26,
+                "name": "",
+                "node": "5603c6a5a160",
+                "opacity": 1,
+                "scene_x": 78.84375,
+                "scene_y": 13,
+                "visible": false,
+                "width": 157.6875,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6a5a2e0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c68df2a0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c68d51c0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6d9e570"
+            },
+            {
+                "class": "QQuickItem",
+                "effective_visible": false,
+                "height": 18,
+                "name": "",
+                "node": "5603c6b7a5e0",
+                "opacity": 1,
+                "scene_x": 78.84375,
+                "scene_y": 13,
+                "visible": false,
+                "width": 149.6875,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "Label_QMLTYPE_41_QML_42",
+                "effective_visible": false,
+                "height": 17,
+                "name": "",
+                "node": "5603c6a48a90",
+                "opacity": 1,
+                "scene_x": 78.84375,
+                "scene_y": 12.5,
+                "text": "Showing only results from ",
+                "textFormat": "AutoText",
+                "truncated": false,
+                "visible": false,
+                "width": 149.6875,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickAccessibleAttached",
+                "name": "",
+                "node": "5603c691a3b0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c69f02d0"
+            },
+            {
+                "class": "QQuickTransition",
+                "name": "",
+                "node": "5603c691cd70"
+            },
+            {
+                "class": "QQuickTransition",
+                "name": "",
+                "node": "5603c6b65b20"
+            },
+            {
+                "class": "ButtonBackground_QMLTYPE_51",
+                "effective_visible": false,
+                "height": 26,
+                "name": "",
+                "node": "5603c6d9faf0",
+                "opacity": 1,
+                "scene_x": 52,
+                "scene_y": 19,
+                "visible": false,
+                "width": 26,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickLoader",
+                "effective_visible": false,
+                "height": 26,
+                "name": "",
+                "node": "5603c6da0c50",
+                "opacity": 1,
+                "scene_x": 52,
+                "scene_y": 19,
+                "source": "",
+                "visible": false,
+                "width": 26,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "FlatButtonBackground_QMLTYPE_52",
+                "effective_visible": false,
+                "height": 26,
+                "name": "",
+                "node": "5603c6ff4c00",
+                "opacity": 1,
+                "scene_x": 52,
+                "scene_y": 19,
+                "visible": false,
+                "width": 26,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "ButtonShadow_QMLTYPE_54",
+                "effective_visible": false,
+                "height": 32,
+                "name": "",
+                "node": "5603c6fe4cd0",
+                "opacity": 0,
+                "scene_x": 52,
+                "scene_y": 19,
+                "visible": false,
+                "width": 32,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6eddcc0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6d0db60"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6b307e0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6b4bc60"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6ede1d0"
+            },
+            {
+                "class": "ButtonFocus_QMLTYPE_53",
+                "effective_visible": false,
+                "height": 30,
+                "name": "",
+                "node": "5603c6b56fa0",
+                "opacity": 0,
+                "scene_x": 52,
+                "scene_y": 19,
+                "visible": false,
+                "width": 30,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6edd780"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c69fb820"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6fe80d0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6b603b0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6a39480"
+            },
+            {
+                "class": "KSvg::FrameSvgItem",
+                "effective_visible": false,
+                "height": 26,
+                "name": "",
+                "node": "5603c6cfdd80",
+                "opacity": 1,
+                "scene_x": 52,
+                "scene_y": 19,
+                "visible": false,
+                "width": 26,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6b2f530"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6a2c880"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6b4bc00"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6edebd0"
+            },
+            {
+                "class": "KSvg::FrameSvgItem_QML_55",
+                "effective_visible": false,
+                "height": 26,
+                "name": "",
+                "node": "5603c6a67b40",
+                "opacity": 1,
+                "scene_x": 52,
+                "scene_y": 19,
+                "visible": false,
+                "width": 26,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6b69c60"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6b515f0"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6fc2250"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6fc9de0"
+            },
+            {
+                "class": "QQmlComponent",
+                "name": "",
+                "node": "5603c6da0b90"
+            },
+            {
+                "class": "QQmlComponent",
+                "name": "",
+                "node": "5603c6da1220"
+            },
+            {
+                "class": "ButtonContent_QMLTYPE_62",
+                "effective_visible": false,
+                "height": 18,
+                "name": "",
+                "node": "5603c68db7b0",
+                "opacity": 1,
+                "scene_x": 52,
+                "scene_y": 19,
+                "visible": false,
+                "width": 18,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickGridLayout",
+                "effective_visible": false,
+                "height": 18,
+                "name": "",
+                "node": "5603c6b3dd80",
+                "opacity": 1,
+                "scene_x": 52,
+                "scene_y": 19,
+                "visible": false,
+                "width": 18,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "Icon",
+                "effective_visible": false,
+                "height": 22,
+                "name": "",
+                "node": "5603c6e9d520",
+                "opacity": 1,
+                "scene_x": 54,
+                "scene_y": 21,
+                "source": "",
+                "visible": false,
+                "width": 22,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6b49d90"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6a12d10"
+            },
+            {
+                "class": "QPropertyAnimation",
+                "name": "",
+                "node": "5603c6b36210"
+            },
+            {
+                "class": "Label_QMLTYPE_41",
+                "effective_visible": false,
+                "height": 17,
+                "name": "",
+                "node": "5603c6fc8220",
+                "opacity": 1,
+                "scene_x": 43,
+                "scene_y": 18.5,
+                "text": "",
+                "textFormat": "AutoText",
+                "truncated": false,
+                "visible": false,
+                "width": 0,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickAccessibleAttached",
+                "name": "",
+                "node": "5603c6b474e0"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6b25470"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6cf3de0"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6b255f0"
+            },
+            {
+                "class": "KSvg::SvgItem",
+                "effective_visible": false,
+                "height": 14,
+                "name": "",
+                "node": "5603c6b75090",
+                "opacity": 1,
+                "scene_x": 50,
+                "scene_y": 17,
+                "visible": false,
+                "width": 14,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::Svg",
+                "name": "",
+                "node": "5603c6b478d0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6b4cb20"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6b1cdd0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6a13b20"
+            },
+            {
+                "class": "KSvg::Svg",
+                "name": "",
+                "node": "5603c6a38190"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6b1d130"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6a676c0"
+            },
+            {
+                "class": "SearchField_QMLTYPE_76_QML_93",
+                "displayText": "",
+                "effective_visible": true,
+                "height": 30,
+                "name": "",
+                "node": "5603c6a16cd0",
+                "opacity": 1,
+                "scene_x": 295,
+                "scene_y": 19,
+                "text": "",
+                "visible": true,
+                "width": 450,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QInputControl",
+                "name": "",
+                "node": "5603c6a16ec0"
+            },
+            {
+                "class": "QQmlComponent",
+                "name": "",
+                "node": "5603c6b72240"
+            },
+            {
+                "class": "MobileCursor_QMLTYPE_82_QML_86",
+                "effective_visible": false,
+                "height": 18,
+                "name": "",
+                "node": "5603c6b64fd0",
+                "opacity": 1,
+                "scene_x": 75.5,
+                "scene_y": 19.5,
+                "visible": false,
+                "width": 1,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickRectangle",
+                "effective_visible": false,
+                "height": 18,
+                "name": "",
+                "node": "5603c69fd140",
+                "opacity": 1,
+                "scene_x": 75.5,
+                "scene_y": 19.5,
+                "visible": false,
+                "width": 3,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickRectangle",
+                "effective_visible": false,
+                "height": 12,
+                "name": "",
+                "node": "5603c69fd3a0",
+                "opacity": 1,
+                "scene_x": 76,
+                "scene_y": 28.5,
+                "visible": false,
+                "width": 12,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6d9af10"
+            },
+            {
+                "class": "QQuickMouseArea",
+                "effective_visible": false,
+                "height": 54,
+                "name": "",
+                "node": "5603c6a41780",
+                "opacity": 1,
+                "scene_x": 75.5,
+                "scene_y": 19.5,
+                "visible": false,
+                "width": 39,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6d9b000"
+            },
+            {
+                "class": "Label_QMLTYPE_70",
+                "effective_visible": true,
+                "height": 30,
+                "name": "",
+                "node": "5603c6a408d0",
+                "opacity": 1,
+                "scene_x": 295,
+                "scene_y": 19,
+                "text": "Search…",
+                "textFormat": "AutoText",
+                "truncated": false,
+                "visible": true,
+                "width": 450,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickLayoutMirroringAttached",
+                "name": "",
+                "node": "5603c6a0b380"
+            },
+            {
+                "class": "QQuickAccessibleAttached",
+                "name": "",
+                "node": "5603c6cbcaa0"
+            },
+            {
+                "class": "Label_QMLTYPE_70",
+                "effective_visible": false,
+                "height": 29,
+                "name": "",
+                "node": "5603c6a38660",
+                "opacity": 1,
+                "scene_x": 106.234375,
+                "scene_y": 18.5,
+                "text": "●",
+                "textFormat": "AutoText",
+                "truncated": false,
+                "visible": false,
+                "width": 72.46875,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickAccessibleAttached",
+                "name": "",
+                "node": "5603c6cbbdd0"
+            },
+            {
+                "class": "QQuickRow",
+                "effective_visible": true,
+                "height": 0,
+                "name": "",
+                "node": "5603c6b583b0",
+                "opacity": 1,
+                "scene_x": 514,
+                "scene_y": 19,
+                "visible": true,
+                "width": 0,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "Icon_QML_87",
+                "effective_visible": false,
+                "height": 16,
+                "name": "",
+                "node": "5603c6b3b7f0",
+                "opacity": 0,
+                "scene_x": 522,
+                "scene_y": 27,
+                "source": "",
+                "visible": false,
+                "width": 16,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6a10590"
+            },
+            {
+                "class": "QQuickNumberAnimation",
+                "name": "",
+                "node": "5603c70c5780"
+            },
+            {
+                "class": "QQuickMouseArea",
+                "effective_visible": false,
+                "height": 16,
+                "name": "",
+                "node": "5603c6b1ca00",
+                "opacity": 1,
+                "scene_x": 522,
+                "scene_y": 27,
+                "visible": false,
+                "width": 16,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6cbaf00"
+            },
+            {
+                "class": "QPropertyAnimation",
+                "name": "",
+                "node": "5603c6cd8290"
+            },
+            {
+                "class": "QQuickLayoutMirroringAttached",
+                "name": "",
+                "node": "5603c69f28d0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6a0feb0"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6b30a70"
+            },
+            {
+                "class": "QQuickNumberAnimation",
+                "name": "",
+                "node": "5603c6eb65b0"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6a2af00"
+            },
+            {
+                "class": "QQuickShortcut_QML_89",
+                "name": "",
+                "node": "5603c6894f40"
+            },
+            {
+                "class": "QQuickRowLayout",
+                "effective_visible": false,
+                "height": 28,
+                "name": "",
+                "node": "5603c6a6a7c0",
+                "opacity": 1,
+                "scene_x": 71,
+                "scene_y": 19,
+                "visible": false,
+                "width": 0,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickRepeater",
+                "count": 0,
+                "effective_visible": false,
+                "height": 0,
+                "model": null,
+                "name": "",
+                "node": "5603c6a447e0",
+                "opacity": 1,
+                "scene_x": 71,
+                "scene_y": 5,
+                "visible": false,
+                "width": 0,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQmlComponent",
+                "name": "",
+                "node": "5603c6a44a80"
+            },
+            {
+                "class": "QQmlDelegateModel",
+                "count": 0,
+                "model": null,
+                "name": "",
+                "node": "5603c6b22d30"
+            },
+            {
+                "class": "QQmlDelegateModelGroup",
+                "count": 0,
+                "name": "",
+                "node": "5603c6b23180"
+            },
+            {
+                "class": "QQmlDelegateModelGroup",
+                "count": 0,
+                "name": "",
+                "node": "5603c6b231a0"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6cba6f0"
+            },
+            {
+                "class": "QQuickRowLayout",
+                "effective_visible": true,
+                "height": 28,
+                "name": "",
+                "node": "5603c6b5ce60",
+                "opacity": 1,
+                "scene_x": 506,
+                "scene_y": 19,
+                "visible": true,
+                "width": 26,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickRepeater",
+                "count": 1,
+                "effective_visible": true,
+                "height": 0,
+                "model": null,
+                "name": "",
+                "node": "5603c6b326e0",
+                "opacity": 1,
+                "scene_x": 493,
+                "scene_y": 5,
+                "visible": true,
+                "width": 0,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQmlComponent",
+                "name": "",
+                "node": "5603c6b329b0"
+            },
+            {
+                "class": "QQmlDelegateModel",
+                "count": 1,
+                "model": null,
+                "name": "",
+                "node": "5603c6b15a10"
+            },
+            {
+                "class": "QQmlDelegateModelGroup",
+                "count": 1,
+                "name": "",
+                "node": "5603c6b15d60"
+            },
+            {
+                "class": "QQmlDelegateModelGroup",
+                "count": 0,
+                "name": "",
+                "node": "5603c6b15dd0"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6cd7ba0"
+            },
+            {
+                "class": "InlineActionIcon",
+                "effective_visible": false,
+                "height": 28,
+                "name": "",
+                "node": "5603c6eb6460",
+                "opacity": 1,
+                "scene_x": 506,
+                "scene_y": 19,
+                "text": "Clear search",
+                "visible": false,
+                "width": 26,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickShortcut",
+                "name": "",
+                "node": "5603c6ec89c0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6a0ead0"
+            },
+            {
+                "class": "MnemonicAttached",
+                "name": "",
+                "node": "5603c6b21530"
+            },
+            {
+                "class": "QQuickAccessibleAttached",
+                "name": "",
+                "node": "5603c6cd5d80"
+            },
+            {
+                "class": "QQuickToolTipAttached",
+                "name": "",
+                "node": "5603c6cd6280",
+                "text": "Clear search",
+                "visible": false
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6f22c30"
+            },
+            {
+                "class": "ButtonBackground_QMLTYPE_51",
+                "effective_visible": false,
+                "height": 28,
+                "name": "",
+                "node": "5603c6eb6160",
+                "opacity": 1,
+                "scene_x": 506,
+                "scene_y": 19,
+                "visible": false,
+                "width": 26,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickLoader",
+                "effective_visible": false,
+                "height": 28,
+                "name": "",
+                "node": "5603c6eb5f10",
+                "opacity": 1,
+                "scene_x": 506,
+                "scene_y": 19,
+                "source": "",
+                "visible": false,
+                "width": 26,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "FlatButtonBackground_QMLTYPE_52",
+                "effective_visible": false,
+                "height": 28,
+                "name": "",
+                "node": "5603c6eb5c50",
+                "opacity": 1,
+                "scene_x": 506,
+                "scene_y": 19,
+                "visible": false,
+                "width": 26,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "ButtonShadow_QMLTYPE_54",
+                "effective_visible": false,
+                "height": 34,
+                "name": "",
+                "node": "5603c6f18410",
+                "opacity": 0,
+                "scene_x": 506,
+                "scene_y": 19,
+                "visible": false,
+                "width": 32,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6f16940"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6f19150"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6f18d40"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6ef8000"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6ef7e30"
+            },
+            {
+                "class": "ButtonFocus_QMLTYPE_53",
+                "effective_visible": false,
+                "height": 32,
+                "name": "",
+                "node": "5603c6f19db0",
+                "opacity": 0,
+                "scene_x": 506,
+                "scene_y": 19,
+                "visible": false,
+                "width": 30,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6f1a0c0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6f1ac50"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6f1a890"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6ef7c10"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6efa600"
+            },
+            {
+                "class": "KSvg::FrameSvgItem",
+                "effective_visible": false,
+                "height": 28,
+                "name": "",
+                "node": "5603c6f1b5f0",
+                "opacity": 1,
+                "scene_x": 506,
+                "scene_y": 19,
+                "visible": false,
+                "width": 26,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6f1b900"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6ef53b0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6ef8250"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6ef99d0"
+            },
+            {
+                "class": "KSvg::FrameSvgItem_QML_55",
+                "effective_visible": false,
+                "height": 28,
+                "name": "",
+                "node": "5603c6ef59c0",
+                "opacity": 0,
+                "scene_x": 506,
+                "scene_y": 19,
+                "visible": false,
+                "width": 26,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6f19c80"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6ef69c0"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6ef6430"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6ef7e80"
+            },
+            {
+                "class": "QQmlComponent",
+                "name": "",
+                "node": "5603c6f247b0"
+            },
+            {
+                "class": "QQmlComponent",
+                "name": "",
+                "node": "5603c6f25090"
+            },
+            {
+                "class": "ButtonContent_QMLTYPE_62",
+                "effective_visible": false,
+                "height": 20,
+                "name": "",
+                "node": "5603c6f174c0",
+                "opacity": 1,
+                "scene_x": 506,
+                "scene_y": 19,
+                "visible": false,
+                "width": 18,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickGridLayout",
+                "effective_visible": false,
+                "height": 16,
+                "name": "",
+                "node": "5603c6f17c40",
+                "opacity": 1,
+                "scene_x": 506,
+                "scene_y": 19,
+                "visible": false,
+                "width": 16,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "Icon",
+                "effective_visible": false,
+                "height": 16,
+                "name": "",
+                "node": "5603c68f0fa0",
+                "opacity": 1,
+                "scene_x": 506,
+                "scene_y": 19,
+                "source": "edit-clear-locationbar-rtl",
+                "visible": false,
+                "width": 16,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6efb3f0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6ef6620"
+            },
+            {
+                "class": "QPropertyAnimation",
+                "name": "",
+                "node": "5603c6fbc9a0"
+            },
+            {
+                "class": "Label_QMLTYPE_41",
+                "effective_visible": false,
+                "height": 17,
+                "name": "",
+                "node": "5603c6fb6000",
+                "opacity": 1,
+                "scene_x": 532.65625,
+                "scene_y": 19.5,
+                "text": "Clear search",
+                "textFormat": "AutoText",
+                "truncated": false,
+                "visible": false,
+                "width": 69.3125,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickAccessibleAttached",
+                "name": "",
+                "node": "5603c6efc790"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6fb7160"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6f24bd0"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6fb7360"
+            },
+            {
+                "class": "KSvg::SvgItem",
+                "effective_visible": false,
+                "height": 14,
+                "name": "",
+                "node": "5603c6fb7a10",
+                "opacity": 1,
+                "scene_x": 504,
+                "scene_y": 16,
+                "visible": false,
+                "width": 14,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::Svg",
+                "name": "",
+                "node": "5603c6fb7ce0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6fb83b0"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6fb89f0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6ef8d00"
+            },
+            {
+                "class": "KSvg::Svg",
+                "name": "",
+                "node": "5603c6e048a0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6fb90b0"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6fbbc80"
+            },
+            {
+                "class": "QQuickToolTipAttached",
+                "name": "",
+                "node": "5603c6a43970",
+                "text": "Ctrl+F",
+                "visible": false
+            },
+            {
+                "class": "QQuickLayoutMirroringAttached",
+                "name": "",
+                "node": "5603c69f2520"
+            },
+            {
+                "class": "Action_QMLTYPE_1",
+                "name": "",
+                "node": "5603c6a47b90",
+                "text": "Clear search",
+                "visible": false
+            },
+            {
+                "class": "QQuickShortcut",
+                "name": "",
+                "node": "5603c69fafa0"
+            },
+            {
+                "class": "QQmlConnections_QML_78",
+                "name": "",
+                "node": "5603c6a2d950"
+            },
+            {
+                "class": "Icon",
+                "effective_visible": true,
+                "height": 16,
+                "name": "",
+                "node": "5603c6b33300",
+                "opacity": 1,
+                "scene_x": 86,
+                "scene_y": 19,
+                "source": "search",
+                "visible": true,
+                "width": 16,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6b5c700"
+            },
+            {
+                "class": "QQuickLayoutMirroringAttached",
+                "name": "",
+                "node": "5603c6cab030"
+            },
+            {
+                "class": "QPropertyAnimation",
+                "name": "",
+                "node": "5603c6b4f140"
+            },
+            {
+                "class": "QQuickAccessibleAttached",
+                "name": "",
+                "node": "5603c6a1aba0"
+            },
+            {
+                "class": "Label_QMLTYPE_70",
+                "effective_visible": false,
+                "height": 30,
+                "name": "",
+                "node": "5603c6a14670",
+                "opacity": 0.5,
+                "scene_x": 295,
+                "scene_y": 19,
+                "text": "",
+                "textFormat": "PlainText",
+                "truncated": false,
+                "visible": false,
+                "width": 450,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "BusyIndicator_QMLTYPE_67",
+                "effective_visible": true,
+                "height": 22,
+                "name": "",
+                "node": "5603c6a54320",
+                "opacity": 1,
+                "scene_x": 480,
+                "scene_y": 19,
+                "visible": true,
+                "width": 36,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickItem_QML_68",
+                "effective_visible": false,
+                "height": 22,
+                "name": "",
+                "node": "5603c6a2b640",
+                "opacity": 0,
+                "scene_x": 480,
+                "scene_y": 19,
+                "visible": false,
+                "width": 36,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6a09810"
+            },
+            {
+                "class": "QQuickOpacityAnimator",
+                "name": "",
+                "node": "5603c6a2b980"
+            },
+            {
+                "class": "KSvg::SvgItem_QML_69",
+                "effective_visible": false,
+                "height": 22,
+                "name": "",
+                "node": "5603c69fcef0",
+                "opacity": 1,
+                "scene_x": 480,
+                "scene_y": 19,
+                "visible": false,
+                "width": 22,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::Svg",
+                "name": "",
+                "node": "5603c69fd030"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6a1cdc0"
+            },
+            {
+                "class": "QQuickRotationAnimator",
+                "name": "",
+                "node": "5603c6b13b40"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6d5a7b0"
+            },
+            {
+                "class": "QQmlComponentAttached",
+                "name": "",
+                "node": "5603c6b5c510"
+            },
+            {
+                "class": "QQmlTimer_QML_94",
+                "name": "",
+                "node": "5603c6b34140"
+            },
+            {
+                "class": "Icon",
+                "effective_visible": true,
+                "height": 24,
+                "name": "",
+                "node": "5603c6a27a10",
+                "opacity": 1,
+                "scene_x": 502,
+                "scene_y": 19,
+                "source": "expand",
+                "visible": true,
+                "width": 24,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6a0eec0"
+            },
+            {
+                "class": "QQuickMouseArea",
+                "effective_visible": true,
+                "height": 24,
+                "name": "",
+                "node": "5603c6b29fc0",
+                "opacity": 1,
+                "scene_x": 502,
+                "scene_y": 19,
+                "visible": true,
+                "width": 24,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QPropertyAnimation",
+                "name": "",
+                "node": "5603c6d4acc0"
+            },
+            {
+                "class": "QQuickKeysAttached",
+                "name": "",
+                "node": "5603c6b5d5a0"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6b4eee0"
+            },
+            {
+                "class": "KSvg::FrameSvgItem",
+                "effective_visible": true,
+                "height": 30,
+                "name": "",
+                "node": "5603c6a55e20",
+                "opacity": 1,
+                "scene_x": 295,
+                "scene_y": 19,
+                "visible": true,
+                "width": 450,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6a55fa0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6a6e620"
+            },
+            {
+                "class": "KSvg::FrameSvgItem_QML_83",
+                "effective_visible": false,
+                "height": 30.002000000094995,
+                "name": "",
+                "node": "5603c6b43870",
+                "opacity": 0,
+                "scene_x": 295,
+                "scene_y": 19,
+                "visible": false,
+                "width": 450.002000000095,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6cca2b0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c69fece0"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6a67f90"
+            },
+            {
+                "class": "QQuickNumberAnimation",
+                "name": "",
+                "node": "5603c794d880"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6f54a00"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6fe6310"
+            },
+            {
+                "class": "KSvg::FrameSvgItem_QML_84",
+                "effective_visible": true,
+                "height": 30.002000000094995,
+                "name": "",
+                "node": "5603c6b70270",
+                "opacity": 1,
+                "scene_x": 295,
+                "scene_y": 19,
+                "visible": true,
+                "width": 450.002000000095,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6b78290"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6cc5360"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6b5bad0"
+            },
+            {
+                "class": "QQuickNumberAnimation",
+                "name": "",
+                "node": "5603c6e6b540"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6f54a60"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6ede9f0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6d63340"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6ede8d0"
+            },
+            {
+                "class": "ToolButton_QMLTYPE_50",
+                "effective_visible": true,
+                "height": 30,
+                "name": "",
+                "node": "5603c6a5de80",
+                "opacity": 1,
+                "scene_x": 540,
+                "scene_y": 19,
+                "text": "",
+                "visible": true,
+                "width": 30,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickShortcut",
+                "name": "",
+                "node": "5603c6b3a1c0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6a5f240"
+            },
+            {
+                "class": "MnemonicAttached",
+                "name": "",
+                "node": "5603c6b54ca0"
+            },
+            {
+                "class": "QQuickAccessibleAttached",
+                "name": "",
+                "node": "5603c6c95460"
+            },
+            {
+                "class": "ToolTip_QMLTYPE_0",
+                "height": 26,
+                "name": "",
+                "node": "5603c69f8840",
+                "opacity": 1,
+                "text": "Configure KRunner…",
+                "textFormat": "AutoText",
+                "visible": false,
+                "width": 123.203125
+            },
+            {
+                "class": "QQuickPopupItem",
+                "effective_visible": false,
+                "height": 26,
+                "name": "ToolTip",
+                "node": "5603c6b4db80",
+                "opacity": 1,
+                "scene_x": 61.6015625,
+                "scene_y": 13,
+                "title": "",
+                "visible": false,
+                "width": 123.203125,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickItem",
+                "effective_visible": false,
+                "height": 26,
+                "name": "",
+                "node": "5603c6a4b250",
+                "opacity": 1,
+                "scene_x": 61.6015625,
+                "scene_y": 13,
+                "visible": false,
+                "width": 123.203125,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvgItem",
+                "effective_visible": false,
+                "height": 46,
+                "name": "",
+                "node": "5603c6b6ebd0",
+                "opacity": 1,
+                "scene_x": 61.6015625,
+                "scene_y": 13,
+                "visible": false,
+                "width": 143.203125,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6a627c0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6a202c0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6a5f1f0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6d4c7b0"
+            },
+            {
+                "class": "KSvg::FrameSvgItem",
+                "effective_visible": false,
+                "height": 26,
+                "name": "",
+                "node": "5603c6a30a00",
+                "opacity": 1,
+                "scene_x": 61.6015625,
+                "scene_y": 13,
+                "visible": false,
+                "width": 123.203125,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6b5ac10"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c68d3850"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6b4b540"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6d18cf0"
+            },
+            {
+                "class": "QQuickItem",
+                "effective_visible": false,
+                "height": 18,
+                "name": "",
+                "node": "5603c6a3b6c0",
+                "opacity": 1,
+                "scene_x": 61.6015625,
+                "scene_y": 13,
+                "visible": false,
+                "width": 115.203125,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "Label_QMLTYPE_41_QML_42",
+                "effective_visible": false,
+                "height": 17,
+                "name": "",
+                "node": "5603c69efd00",
+                "opacity": 1,
+                "scene_x": 61.6015625,
+                "scene_y": 12.5,
+                "text": "Configure KRunner…",
+                "textFormat": "AutoText",
+                "truncated": false,
+                "visible": false,
+                "width": 115.203125,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickAccessibleAttached",
+                "name": "",
+                "node": "5603c6b2c460"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6b3fe30"
+            },
+            {
+                "class": "QQuickTransition",
+                "name": "",
+                "node": "5603c6b58190"
+            },
+            {
+                "class": "QQuickTransition",
+                "name": "",
+                "node": "5603c6a139c0"
+            },
+            {
+                "class": "ButtonBackground_QMLTYPE_51",
+                "effective_visible": true,
+                "height": 30,
+                "name": "",
+                "node": "5603c6d7e0f0",
+                "opacity": 1,
+                "scene_x": 540,
+                "scene_y": 19,
+                "visible": true,
+                "width": 30,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickLoader",
+                "effective_visible": true,
+                "height": 30,
+                "name": "",
+                "node": "5603c6d7e3a0",
+                "opacity": 1,
+                "scene_x": 540,
+                "scene_y": 19,
+                "source": "",
+                "visible": true,
+                "width": 30,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "FlatButtonBackground_QMLTYPE_52",
+                "effective_visible": true,
+                "height": 30,
+                "name": "",
+                "node": "5603c6eb6d80",
+                "opacity": 1,
+                "scene_x": 540,
+                "scene_y": 19,
+                "visible": true,
+                "width": 30,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "ButtonShadow_QMLTYPE_54",
+                "effective_visible": true,
+                "height": 36,
+                "name": "",
+                "node": "5603c6ebc450",
+                "opacity": 0,
+                "scene_x": 540,
+                "scene_y": 19,
+                "visible": true,
+                "width": 36,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6fb3e00"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6e02c90"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6e6d4a0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6ecf680"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6ecf5e0"
+            },
+            {
+                "class": "ButtonFocus_QMLTYPE_53",
+                "effective_visible": true,
+                "height": 34,
+                "name": "",
+                "node": "5603c6e035f0",
+                "opacity": 0,
+                "scene_x": 540,
+                "scene_y": 19,
+                "visible": true,
+                "width": 34,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6e03770"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6eef5f0"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6eb5360"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6ee8970"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6f2ea80"
+            },
+            {
+                "class": "KSvg::FrameSvgItem",
+                "effective_visible": false,
+                "height": 30,
+                "name": "",
+                "node": "5603c6fa0ef0",
+                "opacity": 1,
+                "scene_x": 540,
+                "scene_y": 19,
+                "visible": false,
+                "width": 30,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6fa1070"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6fa17d0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6ecf7d0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6ec37f0"
+            },
+            {
+                "class": "KSvg::FrameSvgItem_QML_55",
+                "effective_visible": true,
+                "height": 30,
+                "name": "",
+                "node": "5603c6f13a20",
+                "opacity": 0,
+                "scene_x": 540,
+                "scene_y": 19,
+                "visible": true,
+                "width": 30,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6e035c0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6f14620"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6e721f0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6ecf630"
+            },
+            {
+                "class": "QQmlComponent",
+                "name": "",
+                "node": "5603c6d5b250"
+            },
+            {
+                "class": "QQmlComponent",
+                "name": "",
+                "node": "5603c6d37860"
+            },
+            {
+                "class": "ButtonContent_QMLTYPE_62",
+                "effective_visible": true,
+                "height": 22,
+                "name": "",
+                "node": "5603c6ef4600",
+                "opacity": 1,
+                "scene_x": 540,
+                "scene_y": 19,
+                "visible": true,
+                "width": 22,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickGridLayout",
+                "effective_visible": true,
+                "height": 22,
+                "name": "",
+                "node": "5603c6ee7cf0",
+                "opacity": 1,
+                "scene_x": 540,
+                "scene_y": 19,
+                "visible": true,
+                "width": 22,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "Icon",
+                "effective_visible": true,
+                "height": 22,
+                "name": "",
+                "node": "5603c69f5e90",
+                "opacity": 1,
+                "scene_x": 540,
+                "scene_y": 19,
+                "source": "configure",
+                "visible": true,
+                "width": 22,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6f38920"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6d7e490"
+            },
+            {
+                "class": "QPropertyAnimation",
+                "name": "",
+                "node": "5603c6f21840"
+            },
+            {
+                "class": "Label_QMLTYPE_41",
+                "effective_visible": false,
+                "height": 17,
+                "name": "",
+                "node": "5603c6eb6800",
+                "opacity": 1,
+                "scene_x": 529,
+                "scene_y": 16.5,
+                "text": "",
+                "textFormat": "AutoText",
+                "truncated": false,
+                "visible": false,
+                "width": 0,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickAccessibleAttached",
+                "name": "",
+                "node": "5603c6f39c10"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6f3c6a0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6cca1f0"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6f3c820"
+            },
+            {
+                "class": "KSvg::SvgItem",
+                "effective_visible": false,
+                "height": 14,
+                "name": "",
+                "node": "5603c6ed2450",
+                "opacity": 1,
+                "scene_x": 536,
+                "scene_y": 15,
+                "visible": false,
+                "width": 14,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::Svg",
+                "name": "",
+                "node": "5603c6f3ce30"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6f3d480"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6f3daf0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6f14280"
+            },
+            {
+                "class": "KSvg::Svg",
+                "name": "",
+                "node": "5603c6d44900"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6f3e250"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6f21250"
+            },
+            {
+                "class": "ToolButton_QMLTYPE_50",
+                "effective_visible": true,
+                "height": 30,
+                "name": "",
+                "node": "5603c69efe40",
+                "opacity": 1,
+                "scene_x": 575,
+                "scene_y": 19,
+                "text": "",
+                "visible": true,
+                "width": 30,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickShortcut",
+                "name": "",
+                "node": "5603c6a735c0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6b3cc30"
+            },
+            {
+                "class": "MnemonicAttached",
+                "name": "",
+                "node": "5603c6a3dfa0"
+            },
+            {
+                "class": "QQuickAccessibleAttached",
+                "name": "",
+                "node": "5603c6b48770"
+            },
+            {
+                "class": "ToolTip_QMLTYPE_0",
+                "height": 26,
+                "name": "",
+                "node": "5603c6b4b590",
+                "opacity": 1,
+                "text": "Keep Open",
+                "textFormat": "AutoText",
+                "visible": false,
+                "width": 70.34375
+            },
+            {
+                "class": "QQuickPopupItem",
+                "effective_visible": false,
+                "height": 26,
+                "name": "ToolTip",
+                "node": "5603c6b60730",
+                "opacity": 1,
+                "scene_x": 35.171875,
+                "scene_y": 13,
+                "title": "",
+                "visible": false,
+                "width": 70.34375,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickItem",
+                "effective_visible": false,
+                "height": 26,
+                "name": "",
+                "node": "5603c6b151c0",
+                "opacity": 1,
+                "scene_x": 35.171875,
+                "scene_y": 13,
+                "visible": false,
+                "width": 70.34375,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvgItem",
+                "effective_visible": false,
+                "height": 46,
+                "name": "",
+                "node": "5603c6b709d0",
+                "opacity": 1,
+                "scene_x": 35.171875,
+                "scene_y": 13,
+                "visible": false,
+                "width": 90.34375,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6b70b50"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6b6eac0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6b467c0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6d1a880"
+            },
+            {
+                "class": "KSvg::FrameSvgItem",
+                "effective_visible": false,
+                "height": 26,
+                "name": "",
+                "node": "5603c6b53b00",
+                "opacity": 1,
+                "scene_x": 35.171875,
+                "scene_y": 13,
+                "visible": false,
+                "width": 70.34375,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6b53c80"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6b5f050"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6b4ae50"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6d1a2c0"
+            },
+            {
+                "class": "QQuickItem",
+                "effective_visible": false,
+                "height": 18,
+                "name": "",
+                "node": "5603c6a5d950",
+                "opacity": 1,
+                "scene_x": 35.171875,
+                "scene_y": 13,
+                "visible": false,
+                "width": 62.34375,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "Label_QMLTYPE_41_QML_42",
+                "effective_visible": false,
+                "height": 17,
+                "name": "",
+                "node": "5603c6a74540",
+                "opacity": 1,
+                "scene_x": 35.171875,
+                "scene_y": 12.5,
+                "text": "Keep Open",
+                "textFormat": "AutoText",
+                "truncated": false,
+                "visible": false,
+                "width": 62.34375,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickAccessibleAttached",
+                "name": "",
+                "node": "5603c6b4b6c0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6a30e50"
+            },
+            {
+                "class": "QQuickTransition",
+                "name": "",
+                "node": "5603c6b4a690"
+            },
+            {
+                "class": "QQuickTransition",
+                "name": "",
+                "node": "5603c6b14090"
+            },
+            {
+                "class": "ButtonBackground_QMLTYPE_51",
+                "effective_visible": true,
+                "height": 30,
+                "name": "",
+                "node": "5603c6d33d90",
+                "opacity": 1,
+                "scene_x": 575,
+                "scene_y": 19,
+                "visible": true,
+                "width": 30,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickLoader",
+                "effective_visible": true,
+                "height": 30,
+                "name": "",
+                "node": "5603c6d18db0",
+                "opacity": 1,
+                "scene_x": 575,
+                "scene_y": 19,
+                "source": "",
+                "visible": true,
+                "width": 30,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "FlatButtonBackground_QMLTYPE_52",
+                "effective_visible": true,
+                "height": 30,
+                "name": "",
+                "node": "5603c6e029b0",
+                "opacity": 1,
+                "scene_x": 575,
+                "scene_y": 19,
+                "visible": true,
+                "width": 30,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "ButtonShadow_QMLTYPE_54",
+                "effective_visible": true,
+                "height": 36,
+                "name": "",
+                "node": "5603c6d7d070",
+                "opacity": 0,
+                "scene_x": 575,
+                "scene_y": 19,
+                "visible": true,
+                "width": 36,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6e041c0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6e060c0"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6e03a90"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6ecced0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6e047d0"
+            },
+            {
+                "class": "ButtonFocus_QMLTYPE_53",
+                "effective_visible": true,
+                "height": 34,
+                "name": "",
+                "node": "5603c6e33760",
+                "opacity": 0,
+                "scene_x": 575,
+                "scene_y": 19,
+                "visible": true,
+                "width": 34,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6e6e120"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6e6c510"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6f2fb00"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6f7d520"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6f0b5c0"
+            },
+            {
+                "class": "KSvg::FrameSvgItem",
+                "effective_visible": false,
+                "height": 30,
+                "name": "",
+                "node": "5603c6e6e6b0",
+                "opacity": 1,
+                "scene_x": 575,
+                "scene_y": 19,
+                "visible": false,
+                "width": 30,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6eb4ae0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6ee4cf0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6ee6af0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6ea2d50"
+            },
+            {
+                "class": "KSvg::FrameSvgItem_QML_55",
+                "effective_visible": true,
+                "height": 30,
+                "name": "",
+                "node": "5603c6ebbe40",
+                "opacity": 0,
+                "scene_x": 575,
+                "scene_y": 19,
+                "visible": true,
+                "width": 30,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6fb21f0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6ee3e20"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6f14910"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6ee6d60"
+            },
+            {
+                "class": "QQmlComponent",
+                "name": "",
+                "node": "5603c6dae850"
+            },
+            {
+                "class": "QQmlComponent",
+                "name": "",
+                "node": "5603c6d18830"
+            },
+            {
+                "class": "ButtonContent_QMLTYPE_62",
+                "effective_visible": true,
+                "height": 22,
+                "name": "",
+                "node": "5603c6ecb390",
+                "opacity": 1,
+                "scene_x": 575,
+                "scene_y": 19,
+                "visible": true,
+                "width": 22,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickGridLayout",
+                "effective_visible": true,
+                "height": 22,
+                "name": "",
+                "node": "5603c6eed5c0",
+                "opacity": 1,
+                "scene_x": 575,
+                "scene_y": 19,
+                "visible": true,
+                "width": 22,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "Icon",
+                "effective_visible": true,
+                "height": 22,
+                "name": "",
+                "node": "5603c688b050",
+                "opacity": 1,
+                "scene_x": 575,
+                "scene_y": 19,
+                "source": "window-pin",
+                "visible": true,
+                "width": 22,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6ecd8f0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6f83af0"
+            },
+            {
+                "class": "QPropertyAnimation",
+                "name": "",
+                "node": "5603c6f1cbd0"
+            },
+            {
+                "class": "Label_QMLTYPE_41",
+                "effective_visible": false,
+                "height": 17,
+                "name": "",
+                "node": "5603c6e6b360",
+                "opacity": 1,
+                "scene_x": 564,
+                "scene_y": 16.5,
+                "text": "",
+                "textFormat": "AutoText",
+                "truncated": false,
+                "visible": false,
+                "width": 0,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickAccessibleAttached",
+                "name": "",
+                "node": "5603c6ee4aa0"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6ee3c20"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6ef18d0"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6ee3d50"
+            },
+            {
+                "class": "KSvg::SvgItem",
+                "effective_visible": false,
+                "height": 14,
+                "name": "",
+                "node": "5603c6ee5cf0",
+                "opacity": 1,
+                "scene_x": 571,
+                "scene_y": 15,
+                "visible": false,
+                "width": 14,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::Svg",
+                "name": "",
+                "node": "5603c6eec500"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6ebefa0"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6f0b4e0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6ef4fb0"
+            },
+            {
+                "class": "KSvg::Svg",
+                "name": "",
+                "node": "5603c6e018d0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6d18600"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6f12760"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6b3faa0"
+            },
+            {
+                "class": "ScrollView_QMLTYPE_71",
+                "effective_visible": false,
+                "height": 68,
+                "name": "",
+                "node": "5603c6a38f20",
+                "opacity": 1,
+                "scene_x": 297,
+                "scene_y": 72,
+                "visible": false,
+                "width": 586,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "WheelHandler",
+                "name": "",
+                "node": "5603c6ceebd0"
+            },
+            {
+                "class": "QQmlBind",
+                "name": "",
+                "node": "5603c69ef0b0"
+            },
+            {
+                "class": "QQuickScrollBarAttached",
+                "name": "",
+                "node": "5603c6ceff80"
+            },
+            {
+                "class": "ScrollBar_QMLTYPE_72",
+                "effective_visible": false,
+                "height": 18,
+                "name": "",
+                "node": "5603c6b34cf0",
+                "opacity": 1,
+                "scene_x": 297,
+                "scene_y": 97,
+                "visible": false,
+                "width": 586,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickIndicatorButton",
+                "name": "",
+                "node": "5603c6a4d7b0"
+            },
+            {
+                "class": "QQuickIndicatorButton",
+                "name": "",
+                "node": "5603c6d0ed20"
+            },
+            {
+                "class": "KSvg::FrameSvgItem",
+                "effective_visible": false,
+                "height": 6,
+                "name": "",
+                "node": "5603c6d0f100",
+                "opacity": 0.5,
+                "scene_x": 297,
+                "scene_y": 97,
+                "visible": false,
+                "width": 574,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6d0f410"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6d0afd0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6d50610"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6d50970"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6e20840"
+            },
+            {
+                "class": "KSvg::FrameSvgItem_QML_73",
+                "effective_visible": false,
+                "height": 6,
+                "name": "",
+                "node": "5603c6d14430",
+                "opacity": 0,
+                "scene_x": 297,
+                "scene_y": 97,
+                "visible": false,
+                "width": 574,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6d0db30"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6cb5eb0"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6d11f40"
+            },
+            {
+                "class": "QQuickNumberAnimation",
+                "name": "",
+                "node": "5603c7529920"
+            },
+            {
+                "class": "QQuickTapHandler",
+                "name": "",
+                "node": "5603c6d18200"
+            },
+            {
+                "class": "QQmlConnections_QML_74",
+                "name": "",
+                "node": "5603c6d0bb30"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6d24780"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6d24070"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6e1f320"
+            },
+            {
+                "class": "QQuickRectangle",
+                "effective_visible": false,
+                "height": 1,
+                "name": "",
+                "node": "5603c6a1b390",
+                "opacity": 0.1,
+                "scene_x": 297,
+                "scene_y": 88.5,
+                "visible": false,
+                "width": 586,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6d6e690"
+            },
+            {
+                "class": "KSvg::Svg_QML_75",
+                "name": "",
+                "node": "5603c6d0b6e0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6d18350"
+            },
+            {
+                "class": "ScrollBar_QMLTYPE_72",
+                "effective_visible": false,
+                "height": 68,
+                "name": "",
+                "node": "5603c6d47cc0",
+                "opacity": 1,
+                "scene_x": 581,
+                "scene_y": 72,
+                "visible": false,
+                "width": 18,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickIndicatorButton",
+                "name": "",
+                "node": "5603c6d0b8c0"
+            },
+            {
+                "class": "QQuickIndicatorButton",
+                "name": "",
+                "node": "5603c6d10a40"
+            },
+            {
+                "class": "KSvg::FrameSvgItem",
+                "effective_visible": false,
+                "height": 56,
+                "name": "",
+                "node": "5603c6d140d0",
+                "opacity": 0.5,
+                "scene_x": 581,
+                "scene_y": 72,
+                "visible": false,
+                "width": 6,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6d45250"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6cfd0c0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6cd4e10"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6d6e160"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6cc6700"
+            },
+            {
+                "class": "KSvg::FrameSvgItem_QML_73",
+                "effective_visible": false,
+                "height": 56,
+                "name": "",
+                "node": "5603c6d2b130",
+                "opacity": 0,
+                "scene_x": 581,
+                "scene_y": 72,
+                "visible": false,
+                "width": 6,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6ce3ae0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6d84eb0"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6d45a40"
+            },
+            {
+                "class": "QQuickNumberAnimation",
+                "name": "",
+                "node": "5603c757f300"
+            },
+            {
+                "class": "QQuickTapHandler",
+                "name": "",
+                "node": "5603c6cfb920"
+            },
+            {
+                "class": "QQmlConnections_QML_74",
+                "name": "",
+                "node": "5603c6d68ac0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6ce05b0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6ce0700"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6de4900"
+            },
+            {
+                "class": "QQuickRectangle",
+                "effective_visible": false,
+                "height": 68,
+                "name": "",
+                "node": "5603c6b4eda0",
+                "opacity": 0.1,
+                "scene_x": 572.5,
+                "scene_y": 72,
+                "visible": false,
+                "width": 1,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6dae9d0"
+            },
+            {
+                "class": "KSvg::Svg_QML_75",
+                "name": "",
+                "node": "5603c6cc0ae0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6cfd6f0"
+            },
+            {
+                "class": "ResultsView_QMLTYPE_46",
+                "count": 0,
+                "currentIndex": 0,
+                "effective_visible": false,
+                "height": 68,
+                "model": null,
+                "name": "",
+                "node": "5603c6d6c060",
+                "opacity": 1,
+                "scene_x": 297,
+                "scene_y": 72,
+                "singleRunner": "",
+                "visible": false,
+                "width": 586,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickItem",
+                "effective_visible": false,
+                "height": 0,
+                "name": "",
+                "node": "5603c6d6a0f0",
+                "opacity": 1,
+                "scene_x": 297,
+                "scene_y": 38,
+                "visible": false,
+                "width": 586,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "Highlight_QMLTYPE_47",
+                "effective_visible": false,
+                "height": 34,
+                "name": "",
+                "node": "5603c730d0a0",
+                "opacity": 1,
+                "scene_x": 293,
+                "scene_y": 17,
+                "visible": false,
+                "width": 586,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvgItem_QML_48",
+                "effective_visible": false,
+                "height": 34,
+                "name": "",
+                "node": "5603c730d2d0",
+                "opacity": 1,
+                "scene_x": 293,
+                "scene_y": 17,
+                "visible": false,
+                "width": 586,
+                "window": "0",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c749af50"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c76348c0"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c7607e40"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c75e6fe0"
+            },
+            {
+                "class": "QQuickListViewAttached",
+                "name": "",
+                "node": "5603c75e6a40"
+            },
+            {
+                "class": "QQmlComponent",
+                "name": "",
+                "node": "5603c6cfbab0"
+            },
+            {
+                "class": "QQmlDelegateModel",
+                "count": 0,
+                "model": null,
+                "name": "",
+                "node": "5603c6d84e60"
+            },
+            {
+                "class": "QQmlDelegateModelGroup",
+                "count": 0,
+                "name": "",
+                "node": "5603c6ce10f0"
+            },
+            {
+                "class": "QQmlDelegateModelGroup",
+                "count": 0,
+                "name": "",
+                "node": "5603c6cee1a0"
+            },
+            {
+                "class": "Milou::ResultsModel_QML_66",
+                "name": "",
+                "node": "5603c6b3fc90",
+                "singleRunner": ""
+            },
+            {
+                "class": "KRunner::RunnerResultsModel",
+                "name": "",
+                "node": "5603c6d22990"
+            },
+            {
+                "class": "KRunner::RunnerManager",
+                "name": "",
+                "node": "5603c6d54c00"
+            },
+            {
+                "class": "SortProxyModel",
+                "name": "",
+                "node": "5603c6cfd0e0"
+            },
+            {
+                "class": "CategoryDistributionProxyModel",
+                "name": "",
+                "node": "5603c6d16f30"
+            },
+            {
+                "class": "KDescendantsProxyModel",
+                "model": null,
+                "name": "",
+                "node": "5603c6d16f50"
+            },
+            {
+                "class": "HideRootLevelProxyModel",
+                "name": "",
+                "node": "5603c6ce0f60"
+            },
+            {
+                "class": "QQmlComponent",
+                "name": "",
+                "node": "5603c6d53ae0"
+            },
+            {
+                "class": "QQuickItem",
+                "effective_visible": false,
+                "height": 0,
+                "name": "",
+                "node": "5603c6b57f10",
+                "opacity": 1,
+                "scene_x": 4,
+                "scene_y": 38,
+                "visible": false,
+                "width": 0,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickDragAttached",
+                "name": "",
+                "node": "5603c6d02e30",
+                "source": null
+            },
+            {
+                "class": "QQuickKeysAttached",
+                "name": "",
+                "node": "5603c6851160"
+            },
+            {
+                "class": "QQuickAccessibleAttached",
+                "name": "",
+                "node": "5603c6d45590"
+            },
+            {
+                "class": "QQuickViewSection",
+                "name": "",
+                "node": "5603c6ce3860"
+            },
+            {
+                "class": "QQuickFlickableVisibleArea",
+                "name": "",
+                "node": "5603c6d98f30"
+            },
+            {
+                "class": "WheelFilterItem",
+                "effective_visible": false,
+                "height": 68,
+                "name": "",
+                "node": "5603c6ceeeb0",
+                "opacity": 1,
+                "scene_x": 297,
+                "scene_y": 72,
+                "visible": false,
+                "width": 586,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6ccce60"
+            },
+            {
+                "class": "ScrollView_QMLTYPE_71",
+                "effective_visible": false,
+                "height": 0,
+                "name": "",
+                "node": "5603c6d00c60",
+                "opacity": 1,
+                "scene_x": 4,
+                "scene_y": 4,
+                "visible": false,
+                "width": 0,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "WheelHandler",
+                "name": "",
+                "node": "5603c6d54600"
+            },
+            {
+                "class": "QQmlBind",
+                "name": "",
+                "node": "5603c6d10620"
+            },
+            {
+                "class": "QQuickScrollBarAttached",
+                "name": "",
+                "node": "5603c6cc0210"
+            },
+            {
+                "class": "ScrollBar_QMLTYPE_72",
+                "effective_visible": false,
+                "height": 18,
+                "name": "",
+                "node": "5603c6cb8350",
+                "opacity": 1,
+                "scene_x": 4,
+                "scene_y": -5,
+                "visible": false,
+                "width": 0,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickIndicatorButton",
+                "name": "",
+                "node": "5603c6cb8810"
+            },
+            {
+                "class": "QQuickIndicatorButton",
+                "name": "",
+                "node": "5603c6cb88f0"
+            },
+            {
+                "class": "KSvg::FrameSvgItem",
+                "effective_visible": false,
+                "height": 6,
+                "name": "",
+                "node": "5603c6d2fab0",
+                "opacity": 0.5,
+                "scene_x": 10,
+                "scene_y": -5,
+                "visible": false,
+                "width": 0,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6d2d1c0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6d024b0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6ce6d00"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6cb6760"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6e31c90"
+            },
+            {
+                "class": "KSvg::FrameSvgItem_QML_73",
+                "effective_visible": false,
+                "height": 6,
+                "name": "",
+                "node": "5603c6d17ab0",
+                "opacity": 0,
+                "scene_x": 4,
+                "scene_y": -5,
+                "visible": false,
+                "width": -12,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6dae8a0"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6cbf8b0"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6d1e350"
+            },
+            {
+                "class": "QQuickTapHandler",
+                "name": "",
+                "node": "5603c6d41400"
+            },
+            {
+                "class": "QQmlConnections_QML_74",
+                "name": "",
+                "node": "5603c6d22340"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6ce4210"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6ce5740"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6e0a260"
+            },
+            {
+                "class": "QQuickRectangle",
+                "effective_visible": false,
+                "height": 1,
+                "name": "",
+                "node": "5603c6d28ec0",
+                "opacity": 0.1,
+                "scene_x": 4,
+                "scene_y": -13.5,
+                "visible": false,
+                "width": 0,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6d7a460"
+            },
+            {
+                "class": "KSvg::Svg_QML_75",
+                "name": "",
+                "node": "5603c6cc1c70"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6cded10"
+            },
+            {
+                "class": "ScrollBar_QMLTYPE_72",
+                "effective_visible": false,
+                "height": 0,
+                "name": "",
+                "node": "5603c6ce7510",
+                "opacity": 1,
+                "scene_x": -5,
+                "scene_y": 4,
+                "visible": false,
+                "width": 18,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickIndicatorButton",
+                "name": "",
+                "node": "5603c6cdc680"
+            },
+            {
+                "class": "QQuickIndicatorButton",
+                "name": "",
+                "node": "5603c6ce0fb0"
+            },
+            {
+                "class": "KSvg::FrameSvgItem",
+                "effective_visible": false,
+                "height": 0,
+                "name": "",
+                "node": "5603c6cfc230",
+                "opacity": 0.5,
+                "scene_x": -5,
+                "scene_y": 10,
+                "visible": false,
+                "width": 6,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6ce4d60"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6d16560"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6ccfaa0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6ccfb00"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6e35510"
+            },
+            {
+                "class": "KSvg::FrameSvgItem_QML_73",
+                "effective_visible": false,
+                "height": -12,
+                "name": "",
+                "node": "5603c6d48570",
+                "opacity": 0,
+                "scene_x": -5,
+                "scene_y": 4,
+                "visible": false,
+                "width": 6,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "KSvg::FrameSvg",
+                "name": "",
+                "node": "5603c6d19f40"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6d4bc30"
+            },
+            {
+                "class": "QQuickBehavior",
+                "name": "",
+                "node": "5603c6d492e0"
+            },
+            {
+                "class": "QQuickTapHandler",
+                "name": "",
+                "node": "5603c6cfccc0"
+            },
+            {
+                "class": "QQmlConnections_QML_74",
+                "name": "",
+                "node": "5603c6ccb450"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6d488c0"
+            },
+            {
+                "class": "KSvg::FrameSvgItemMargins",
+                "name": "",
+                "node": "5603c6ce81e0"
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6cf6800"
+            },
+            {
+                "class": "QQuickRectangle",
+                "effective_visible": false,
+                "height": 0,
+                "name": "",
+                "node": "5603c6d4a810",
+                "opacity": 0.1,
+                "scene_x": -13.5,
+                "scene_y": 4,
+                "visible": false,
+                "width": 1,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "PlasmaTheme",
+                "name": "",
+                "node": "5603c6d5ee10"
+            },
+            {
+                "class": "KSvg::Svg_QML_75",
+                "name": "",
+                "node": "5603c6cdb300"
+            },
+            {
+                "class": "KSvg::ImageSet",
+                "name": "",
+                "node": "5603c6d6bfb0"
+            },
+            {
+                "class": "QQuickListView_QML_95",
+                "count": 0,
+                "currentIndex": -1,
+                "effective_visible": false,
+                "height": 0,
+                "model": [
+                ],
+                "name": "",
+                "node": "5603c6d99f60",
+                "opacity": 1,
+                "scene_x": 4,
+                "scene_y": 4,
+                "visible": false,
+                "width": 0,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickItem",
+                "effective_visible": false,
+                "height": 0,
+                "name": "",
+                "node": "5603c6d57350",
+                "opacity": 1,
+                "scene_x": 4,
+                "scene_y": 4,
+                "visible": false,
+                "width": 0,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQmlComponent",
+                "name": "",
+                "node": "5603c6d535c0"
+            },
+            {
+                "class": "QQmlDelegateModel",
+                "count": 0,
+                "model": [
+                ],
+                "name": "",
+                "node": "5603c6d5b790"
+            },
+            {
+                "class": "QQmlDelegateModelGroup",
+                "count": 0,
+                "name": "",
+                "node": "5603c6d12c60"
+            },
+            {
+                "class": "QQmlDelegateModelGroup",
+                "count": 0,
+                "name": "",
+                "node": "5603c6d817e0"
+            },
+            {
+                "class": "QQmlComponent",
+                "name": "",
+                "node": "5603c6d45830"
+            },
+            {
+                "class": "QQuickKeysAttached",
+                "name": "",
+                "node": "5603c6d42820"
+            },
+            {
+                "class": "QQuickFlickableVisibleArea",
+                "name": "",
+                "node": "5603c6ce1110"
+            },
+            {
+                "class": "WheelFilterItem",
+                "effective_visible": false,
+                "height": 0,
+                "name": "",
+                "node": "5603c6d548e0",
+                "opacity": 1,
+                "scene_x": 4,
+                "scene_y": 4,
+                "visible": false,
+                "width": 0,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6d7f9d0"
+            },
+            {
+                "class": "QQuickItem",
+                "effective_visible": true,
+                "height": 0,
+                "name": "",
+                "node": "5603c6cdc460",
+                "opacity": 1,
+                "scene_x": 4,
+                "scene_y": 34,
+                "visible": true,
+                "width": 0,
+                "window": "7fff4a6caa60",
+                "window_visible": false
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6d2f150"
+            },
+            {
+                "class": "QQmlComponentAttached",
+                "name": "",
+                "node": "5603c6cdb780"
+            },
+            {
+                "class": "QQuickLayoutMirroringAttached",
+                "name": "",
+                "node": "5603c6d5a0d0"
+            },
+            {
+                "class": "QQuickLayoutAttached",
+                "name": "",
+                "node": "5603c6dd46f0"
+            },
+            {
+                "class": "LayerShellQt::Window",
+                "name": "",
+                "node": "5603c6b6f290"
+            },
+            {
+                "class": "AppAdaptor",
+                "name": "",
+                "node": "5603c6b493e0"
+            },
+            {
+                "class": "QDBusAdaptorConnector",
+                "name": "",
+                "node": "5603c6913990"
+            },
+            {
+                "class": "QObject",
+                "name": "",
+                "node": "5603c70cb580"
+            },
+            {
+                "class": "QObject",
+                "name": "",
+                "node": "5603c70d1610"
+            },
+            {
+                "class": "QObject",
+                "name": "",
+                "node": "5603c70c7700"
+            },
+            {
+                "class": "QObject",
+                "name": "",
+                "node": "5603c6cd3220"
+            }
+        ],
+        "pid": 119
+    },
+    "success": true
+}

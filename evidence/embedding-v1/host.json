@@ -1,0 +1,9 @@
+{
+  "kernel": "7.2.7-1-cachyos-bore",
+  "machine": "x86_64",
+  "python": "3.14.8",
+  "cpu": "AMD Ryzen 5 3600",
+  "logical_processors": 12,
+  "worker_threads": 6,
+  "compiler": "c++ (GCC) 16.2.1 20260810"
+}

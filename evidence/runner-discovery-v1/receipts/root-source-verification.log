@@ -1,0 +1,6 @@
+src/runner-v4/CMakeLists.txt: OK
+src/runner-v4/kde-index-runner.json: OK
+src/runner-v4/runner.cpp: OK
+tools/installed_runner_v2.cpp: OK
+tools/installed_runner_v2/CMakeLists.txt: OK
+tools/installed_runner_v2_service.py: OK

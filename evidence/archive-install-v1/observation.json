@@ -1,0 +1,43 @@
+{
+  "runtime_commit": "4d756bc72bf00a4aacf410ae15a2d315f3db400d",
+  "runtime_diff_sha256": "33c8c4812a4307aef3f398e5ba622edcc54ef421054edd98ca0f71906b9a2d7e",
+  "source_commit": "c394cca550d76b7754ffbbe41bc579b202b0c9ff",
+  "new_probe_sha256": "d5d7f4cfbceb27232e32d168d390fc232a45222373d12b13ae52d99561ec8a06",
+  "stage_files": {
+    "bin/embedding-probe": "d5d7f4cfbceb27232e32d168d390fc232a45222373d12b13ae52d99561ec8a06",
+    "bin/kde-index-service": "3176fa48374a69e35b2b6b064e68dc86baf852dfd73d49c66716c569fe575845",
+    "bin/kde-index-cli": "6773a256b55b7c1e555727097d8e3be5db69e84e705d7ca4caf05929ffdfd086",
+    "bin/kde-index": "48264cb33385a05031fd76fbba3530c51408b25ece4fc521c72a45fd04516124",
+    "share/kde-index/model_download.py": "b4542f5b8d9f7326fd31770ef96ef7020e7992be23db7d066619fbdd8208d47c",
+    "share/applications/org.kdeindex.Search.desktop": "9ea81ba04319b44290480d891b6851a16f66ceb2f344298c8d2767705e69c3a7",
+    "share/metainfo/org.kdeindex.Search.metainfo.xml": "c9fce204bf339bbe6b43fca022d48a7fb53f4ec169e7219add815662182de933",
+    "share/licenses/kde-index/LICENSE": "fb981668c18a279e285fc4d83fba1e836cc84dd4daa73c9697d3cfd2d8aca6e0",
+    "share/licenses/kde-index/THIRD_PARTY_NOTICES.md": "7ef8213b734e6db3bc373de5fd62ba69bcecd8867bf2254f5d0ef6a35508b4b4",
+    "share/licenses/kde-index/Apache-2.0.txt": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff",
+    "share/licenses/kde-index/DigUp-MIT.txt": "2ba7d3ad3aafa9b791002d62a6fe237e89fa4287c2f4e59234b09d25bd909b26",
+    "share/licenses/kde-index/llama.cpp-MIT.txt": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d",
+    "share/licenses/kde-index/miniaudio-MIT-0.txt": "c2410d4d14ad58e05a59e5de1b02c44fd73cbceb4a628d9676c2c19549908430",
+    "share/licenses/kde-index/nlohmann-json-MIT.txt": "c0d068392ea65358b798b8c165103560f06e9e3b38c4ab4e2d8810a7b931af86",
+    "share/licenses/kde-index/rotate-bits-MIT.txt": "ca0b44aec101afb6b46f4c39b23369fa06a64fb9c0add37c2689d702156fee55",
+    "share/licenses/kde-index/sha1-Public-Domain.txt": "239e38879a3f4a4d00ec227e714afe0cc6493c3745d06c1bbf551b50d97c17c4",
+    "share/licenses/kde-index/sha256-Public-Domain.txt": "b81d0022ca6367918c67b57e9647d3513ee58809fd4b0ef0b3492f1356bced25",
+    "share/licenses/kde-index/sheredom-Unlicense.txt": "fa8fd67c42f8d9581198eb797005a9e7f0444f0baf201491e7f8c7efccbcff36",
+    "share/licenses/kde-index/stb-image-MIT.txt": "7169810d8b6cf25c9bc0d1067ecce30bbff74a1ccafdfe37ccbe1ee7849d5c36",
+    "share/licenses/kde-index/xxHash-BSD-2-Clause.txt": "6ffedbc0f7878612d2b23589f1ff2ab15633e1df7963a5d9fc750ec5500c7e7a",
+    "lib/qt6/plugins/kf6/krunner/kde-index-runner.so": "a626737f2e6988437cc2c15d25bffcd76cdfc780588557033ef4efc8dc3fb32d"
+  },
+  "parity_inputs_sha256": {
+    "evidence/embedding-v1/inputs/photo.jpg": "243df6bca3dfce7888ba872d9a774b7d030f5f6d4c5f92bd11d0f3402c026133",
+    "evidence/embedding-v1/inputs/query-only.jsonl": "ed1f58f85e9aebb8f23f89a89e004017ad28abfabe31072ad4ed7d0227f07d16",
+    "evidence/embedding-v1/inputs/requests.jsonl": "49ef6cc1bb86e4044ad3ed262d0b898e586f6d2a798715c7e71f5b94c6c0cf21",
+    "evidence/embedding-v1/inputs/retrieval.json": "1851e26c02de3a534d0de3a54c5a4bb67a2ffadfd22852fd88e8257a09207d73",
+    "evidence/embedding-v1/inputs/screen.png": "a8a0c831fe4746d00c95e3ab436d53e4cc9046a774fe4f0f6edb73d1a7d55f9b",
+    "evidence/embedding-v1/inputs/sizing.jsonl": "7035e81c87961d931308209a69153d7a9dce94b86a5ba291bf9e3d318a8a805b",
+    "evidence/embedding-v1/inputs/texts.json": "c5585c5b09afdbb847cce7578b331e5afb0b9ba3502c753b028fbd6f6fa9f86d",
+    "evidence/embedding-v1/inputs/vectors.json": "0ec9336aa53fb0d5bafa074cd56122e2fd914cb73f080b4f98332872089f6dd8"
+  },
+  "native_outer_handle": 58022,
+  "native_outer_exit": 0,
+  "native_namespace_closed": true,
+  "scope": "Actual archive rebuild, owned /usr install, native Qt readback and Manager discovery; not a booted fresh distro or physical presentation."
+}

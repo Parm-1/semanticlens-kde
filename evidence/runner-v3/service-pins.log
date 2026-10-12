@@ -1,0 +1,17 @@
+bad-model-sha.log: OK
+bad-model.log: OK
+bad-probe-pin.log: OK
+candidate/bin/kde-index-cli: OK
+candidate/bin/kde-index-service: OK
+candidate/docs/ENGINE.md: OK
+candidate/engine/CMakeLists.txt: OK
+candidate/src/cli/main.cpp: OK
+candidate/src/core/engine.cpp: OK
+candidate/src/core/engine.h: OK
+candidate/src/service/main.cpp: OK
+candidate/tools/engine_integration.py: OK
+report.md: OK
+results.json: OK
+service-0.log: OK
+service-1.log: OK
+service-2.log: OK

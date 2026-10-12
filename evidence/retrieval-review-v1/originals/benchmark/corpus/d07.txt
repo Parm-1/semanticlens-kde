@@ -1,0 +1,1 @@
+The wireless router has no lights after a power interruption. Check the wall outlet, reconnect its power adapter, and wait two minutes before testing internet access. Reference NET-98614.

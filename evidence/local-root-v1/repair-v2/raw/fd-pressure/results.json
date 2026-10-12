@@ -1,0 +1,9 @@
+{
+  "exit": 0,
+  "checks": {
+    "actual-fd-pressure-stops-incomplete-scan": true,
+    "old-index-remains": true,
+    "explicit-scan-recovers": true
+  },
+  "source_row_before_and_after": 1
+}

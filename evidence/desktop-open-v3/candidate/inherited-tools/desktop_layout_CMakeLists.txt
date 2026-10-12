@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.22)
+project(DesktopLayoutObserver LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(Qt6 REQUIRED COMPONENTS Quick Widgets Qml)
+add_library(desktop-layout-observer SHARED desktop_layout_observer.cpp)
+target_link_libraries(desktop-layout-observer PRIVATE Qt6::Quick Qt6::Widgets Qt6::Qml dl)

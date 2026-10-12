@@ -1,0 +1,1 @@
+{"default":"desktop-source-consumer.desktop","fallback_to_all":false,"choices":[{"id":"desktop-source-consumer.desktop","executable":"/usr/bin/konsole","commandline":"/usr/bin/konsole --separate --nofork --hold -e /usr/bin/cat %f","should_show":true}]}

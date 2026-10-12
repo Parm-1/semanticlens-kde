@@ -1,0 +1,7 @@
+{
+  "exit_code": 0,
+  "elapsed_seconds": 29.299660433996905,
+  "binary_sha256": "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+  "peak_rss_kib": 1341944,
+  "scope": "sole installed producer; frozen upstream inputs unchanged"
+}

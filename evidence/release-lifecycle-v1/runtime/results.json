@@ -1,0 +1,16 @@
+{
+  "contract": "native actual CPU engine integration; diagnostic corpus, no release recall claim",
+  "checks": [],
+  "responses": [],
+  "request_wall_seconds": {},
+  "measurement_scope": "monotonic client send through decoded matching response, actual CPU; includes cold/warm requests; not target latency benchmark",
+  "model_usage": "unknown; billing/agent token metrics not exposed by runner",
+  "outcome": "fail",
+  "error": "FileNotFoundError(2, 'No such file or directory')",
+  "elapsed_seconds": 0.05405535099998815,
+  "resource_closure": {
+    "known_worker_pids_closed": true,
+    "all_service_processes_exited": true,
+    "socket_absent": true
+  }
+}

@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.24)
+project(CombinedReviewControls LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(Qt6 REQUIRED COMPONENTS Core Sql)
+add_executable(control control.cpp /home/parm/Documents/KDE\ Index/src/core-v3/engine.cpp)
+target_include_directories(control PRIVATE /home/parm/Documents/KDE\ Index/src/core-v3)
+target_link_libraries(control PRIVATE Qt6::Core Qt6::Sql)
+
+add_executable(descriptors descriptors.cpp)
+target_include_directories(descriptors PRIVATE /home/parm/Documents/KDE\ Index/src/core-v3)
+target_link_libraries(descriptors PRIVATE Qt6::Core Qt6::Sql)

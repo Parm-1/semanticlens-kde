@@ -1,0 +1,1 @@
+kf.coreaddons: The plugin "/home/parm/Documents/KDE Index/local/installed-host-v2/stage/usr/lib/qt6/plugins/kf6/krunner/libkde-index-runner.so" explicitly states an Id in the embedded metadata, which is different from the one derived from the filename The Id field from the KPlugin object in the metadata should be removed

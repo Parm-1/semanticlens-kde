@@ -1,0 +1,5 @@
+Embedding pipeline and image sizing ported from DigUp by Abdur Rahim, MIT License.
+Source: https://github.com/ARahim3/DigUp at 6faa29e4c315a3a591de1b41bd78751bdf39588d.
+The full DigUp license is included as DigUp-LICENSE. llama.cpp is MIT; its license
+is in vendor/llama.cpp/LICENSE. Local models are separately licensed public assets;
+no model weights are included in this source package.

@@ -1,0 +1,39 @@
+[  0%] Built target ownership_autogen_timestamp_deps
+[ 20%] Automatic MOC and UIC for target ownership
+[ 20%] Built target ownership_autogen
+[ 40%] Building CXX object CMakeFiles/ownership.dir/ownership_autogen/mocs_compilation.cpp.o
+[ 60%] Building CXX object CMakeFiles/ownership.dir/ownership.cpp.o
+/home/parm/Documents/KDE Index/local/ui-review-v2-harness/ownership.cpp: In function ‘int main(int, char**)’:
+/home/parm/Documents/KDE Index/local/ui-review-v2-harness/ownership.cpp:19:119: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   19 |  QString pidfile=own+"/launcher.pid",helper=own+"/launcher.py";QFile::remove(pidfile);QFile script(helper);script.open(QIODevice::WriteOnly);script.write("#!/usr/bin/python3\nimport os,time\nopen('"+pidfile.toUtf8()+"','w').write(str(os.getpid()))\ntime.sleep(60)\n");script.close();script.setPermissions(QFile::ReadOwner|QFile::WriteOwner|QFile::ExeOwner);
+      |                                                                                                            ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qdir.h:11,
+                 from /usr/include/qt6/QtCore/qtemporarydir.h:9,
+                 from /usr/include/qt6/QtCore/QTemporaryDir:1,
+                 from /home/parm/Documents/KDE Index/evidence/ui-v2/candidate/src/ui/backend.h:9,
+                 from /home/parm/Documents/KDE Index/local/ui-review-v2-harness/ownership.cpp:1:
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/local/ui-review-v2-harness/ownership.cpp:23:201: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   23 |  {Backend b({socket,helper,root+"/evidence/ui-v2/candidate/bin/embedding-probe",root+"/models",own+"/data",""});bool launched=wait([&]{return QFileInfo::exists(pidfile);},5000);QFile p(pidfile);p.open(QIODevice::ReadOnly);pid=p.readAll().toLongLong();ticks=start(pid);record("owned-launcher-alive",{{"pid",double(pid)},{"start_ticks",QString::fromLatin1(ticks)},{"live",pid>0&&!ticks.isEmpty()},{"launched",launched}});good&=launched&&pid>0&&!ticks.isEmpty();bool listening=server.listen(socket);bool connected=wait([&]{return b.connected()&&b.modelReady();},3000);record("different-live-listener-connected",{{"listening",listening},{"connected",connected},{"launcher_live",start(pid)==ticks},{"launcher_pid",double(pid)},{"listener_pid",double(getpid())}});good&=listening&&connected&&start(pid)==ticks&&pid!=getpid();b.shutdownOwnedService();wait([]{return false;},400);record("wrong-peer-hook",{{"shutdown_requests",shutdowns},{"client_connected",b.connected()},{"launcher_live",start(pid)==ticks}});good&=shutdowns==0&&b.connected()&&start(pid)==ticks;}
+      |                                                                                                                                                                                                   ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/local/ui-review-v2-harness/ownership.cpp:27:128: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   27 |  QString countfile=own+"/attempts.txt",failure=own+"/fail-launch.py";QFile::remove(countfile);QFile failed(failure);failed.open(QIODevice::WriteOnly);failed.write("#!/usr/bin/python3\nimport os\nopen('"+countfile.toUtf8()+"','a').write(str(os.getpid())+'\\n')\n");failed.close();failed.setPermissions(QFile::ReadOwner|QFile::WriteOwner|QFile::ExeOwner);
+      |                                                                                                                     ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/local/ui-review-v2-harness/ownership.cpp: In lambda function:
+/home/parm/Documents/KDE Index/local/ui-review-v2-harness/ownership.cpp:28:45: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   28 |  auto attempts=[&]{QFile f(countfile);f.open(QIODevice::ReadOnly);return QString::fromLatin1(f.readAll()).split('\n',Qt::SkipEmptyParts);};
+      |                                       ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+[ 80%] Building CXX object CMakeFiles/ownership.dir/home/parm/Documents/KDE_Index/evidence/ui-v2/candidate/src/ui/backend.cpp.o
+[100%] Linking CXX executable ownership
+[100%] Built target ownership

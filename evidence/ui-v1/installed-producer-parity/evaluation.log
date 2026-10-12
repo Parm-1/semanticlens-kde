@@ -1,0 +1,111 @@
+{
+  "reference_made_with": "llama.cpp b11461",
+  "parity": [
+    {
+      "name": "query",
+      "cosine": 0.9999194031731116,
+      "dot": 0.9999193770424153,
+      "norm": 1.000000003788847,
+      "pass_threshold": true
+    },
+    {
+      "name": "query-bn",
+      "cosine": 0.999929578383413,
+      "dot": 0.9999295409092257,
+      "norm": 0.9999999774589242,
+      "pass_threshold": true
+    },
+    {
+      "name": "query-ar",
+      "cosine": 0.9999212211949063,
+      "dot": 0.9999211795088857,
+      "norm": 0.9999999707384867,
+      "pass_threshold": true
+    },
+    {
+      "name": "document",
+      "cosine": 0.999791778842563,
+      "dot": 0.9997917117943279,
+      "norm": 0.9999999695014747,
+      "pass_threshold": true
+    },
+    {
+      "name": "document-long",
+      "cosine": 0.999921351551035,
+      "dot": 0.9999213993386322,
+      "norm": 1.0000000273761833,
+      "pass_threshold": true
+    },
+    {
+      "name": "screen-280",
+      "cosine": 0.9999367621652742,
+      "dot": 0.9999367966948262,
+      "norm": 1.0000000430796605,
+      "pass_threshold": true
+    },
+    {
+      "name": "photo-140",
+      "cosine": 0.9999274854275775,
+      "dot": 0.9999274649217246,
+      "norm": 1.0000000159532105,
+      "pass_threshold": true
+    },
+    {
+      "name": "frame-70",
+      "cosine": 0.9999130783619887,
+      "dot": 0.9999130245782671,
+      "norm": 0.9999999935597682,
+      "pass_threshold": true
+    }
+  ],
+  "negatives": [
+    {
+      "name": "negative-unprompted-query",
+      "cosine": 0.923620581727172,
+      "below_parity_threshold": true
+    },
+    {
+      "name": "negative-screen-budget70",
+      "cosine": 0.9515784682632673,
+      "below_parity_threshold": true
+    }
+  ],
+  "error_cases": [
+    {
+      "name": "negative-invalid-budget",
+      "ok": false,
+      "error": "unsupported image budget",
+      "vector_absent": true
+    },
+    {
+      "name": "negative-missing-file",
+      "ok": false,
+      "error": "unreadable image or wrong media type",
+      "vector_absent": true
+    },
+    {
+      "name": "negative-wrong-budget-type",
+      "ok": false,
+      "error": "[json.exception.type_error.302] type must be number, but is string",
+      "vector_absent": true
+    },
+    {
+      "name": "negative-missing-text",
+      "ok": false,
+      "error": "[json.exception.out_of_range.403] key 'text' not found",
+      "vector_absent": true
+    }
+  ],
+  "recovery_query_cosine": 0.9999183428125172,
+  "retrieval_semantic_image": {
+    "queries": 6,
+    "top1": 6,
+    "top5": 6
+  },
+  "request_count": 28,
+  "notes": [
+    "Diagnostic synthetic corpus; no release retrieval/Baloo benchmark or abstention proof.",
+    "Seconds use C++ steady_clock around request execution; load_seconds includes model/media warmup and two text warmups. RSS uses Linux resource.getrusage for the sole child in a fresh Python runner."
+  ],
+  "text_only_query_cosine": 0.9999183428125172
+}

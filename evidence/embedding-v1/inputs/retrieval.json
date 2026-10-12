@@ -1,0 +1,101 @@
+{
+  "criterion": "Diagnostic only: report top1/top5 for six semantic/image labels; unique identifier separately; no abstention threshold is established. No tuning against this fixture.",
+  "corpus": [
+    {
+      "id": "travel",
+      "title": "Japan visit",
+      "text": "We arrive at Haneda airport in Tokyo on November 3. Take a train to Kamakura to visit the Great Buddha, then return to Shibuya for dinner."
+    },
+    {
+      "id": "payment",
+      "title": "Card troubleshooting",
+      "text": "The checkout rejected the credit card. A declined transaction can mean insufficient funds or a bank security block. Contact the card issuer and try again."
+    },
+    {
+      "id": "meeting",
+      "title": "Presentation logistics",
+      "text": "The projector broke in the main hall. The design review moved to room 4. Send the slides to everyone the evening before the meeting."
+    },
+    {
+      "id": "bread",
+      "title": "Bread recipe",
+      "text": "Combine flour, water, yeast and salt. Let the dough rise, then bake the loaf until the crust is golden."
+    },
+    {
+      "id": "library",
+      "title": "Library hours",
+      "text": "The public library opens at nine in the morning and closes at six in the evening. Return borrowed books at the front desk."
+    },
+    {
+      "id": "identifier",
+      "title": "Maintenance ticket",
+      "text": "Device ZXQ-7491 failed its fan diagnostic. Replace the cooling fan and close maintenance ticket IR-8826."
+    },
+    {
+      "id": "screen",
+      "image": "screen.png",
+      "budget": 280
+    },
+    {
+      "id": "landscape",
+      "image": "photo.jpg",
+      "budget": 140
+    }
+  ],
+  "queries": [
+    {
+      "id": "travel-q",
+      "text": "Where are the plans for seeing the Buddha near Tokyo?",
+      "relevant": [
+        "travel"
+      ]
+    },
+    {
+      "id": "payment-q",
+      "text": "My bank card was rejected at checkout",
+      "relevant": [
+        "payment"
+      ]
+    },
+    {
+      "id": "meeting-q",
+      "text": "Which room was chosen after the presentation equipment stopped working?",
+      "relevant": [
+        "meeting"
+      ]
+    },
+    {
+      "id": "bread-q",
+      "text": "Instructions for baking a yeast loaf",
+      "relevant": [
+        "bread"
+      ]
+    },
+    {
+      "id": "image-q",
+      "text": "A sunny landscape with green hills and a tree",
+      "relevant": [
+        "landscape"
+      ]
+    },
+    {
+      "id": "screen-q",
+      "text": "A computer window with a sidebar and a red warning box",
+      "relevant": [
+        "screen"
+      ]
+    },
+    {
+      "id": "identifier-q",
+      "text": "ZXQ-7491",
+      "relevant": [
+        "identifier"
+      ]
+    },
+    {
+      "id": "absent-q",
+      "text": "An invoice for a submarine repair",
+      "relevant": []
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "binary_sha256": "d5d7f4cfbceb27232e32d168d390fc232a45222373d12b13ae52d99561ec8a06",
+  "runs": [
+    {
+      "name": "run",
+      "command": [
+        "/archive-source-v1/stage/usr/bin/embedding-probe",
+        "models/embeddinggemma-2-Q8_0.gguf",
+        "models/mmproj-embeddinggemma-2-Q8_0.gguf",
+        "6"
+      ],
+      "exit_code": 0,
+      "begin_ns": 38634246943491,
+      "end_ns": 38668753871893
+    },
+    {
+      "name": "query-only",
+      "command": [
+        "/archive-source-v1/stage/usr/bin/embedding-probe",
+        "models/embeddinggemma-2-Q8_0.gguf",
+        "models/mmproj-embeddinggemma-2-Q8_0.gguf",
+        "6",
+        "--text-only"
+      ],
+      "exit_code": 0,
+      "begin_ns": 38668754178652,
+      "end_ns": 38669883918786
+    }
+  ],
+  "scope": "Actual source-archive-built producer in owned Arch userspace; diagnostic correctness, no performance claim."
+}

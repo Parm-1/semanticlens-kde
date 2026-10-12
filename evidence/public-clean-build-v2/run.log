@@ -1,0 +1,2434 @@
+.github/workflows/build.yml: OK
+.gitignore: OK
+AGENTS.md: OK
+CMakeLists.txt: OK
+GOAL.md: OK
+LICENSE: OK
+LICENSES/Apache-2.0.txt: OK
+LICENSES/DigUp-MIT.txt: OK
+LICENSES/llama.cpp-MIT.txt: OK
+LICENSES/miniaudio-MIT-0.txt: OK
+LICENSES/nlohmann-json-MIT.txt: OK
+LICENSES/rotate-bits-MIT.txt: OK
+LICENSES/sha1-Public-Domain.txt: OK
+LICENSES/sha256-Public-Domain.txt: OK
+LICENSES/sheredom-Unlicense.txt: OK
+LICENSES/stb-image-MIT.txt: OK
+LICENSES/xxHash-BSD-2-Clause.txt: OK
+README.md: OK
+THIRD_PARTY_NOTICES.md: OK
+benchmark/LICENSE: OK
+benchmark/README.md: OK
+benchmark/SHA256SUMS: OK
+benchmark/corpus/d01.txt: OK
+benchmark/corpus/d02.txt: OK
+benchmark/corpus/d03.txt: OK
+benchmark/corpus/d04.txt: OK
+benchmark/corpus/d05.txt: OK
+benchmark/corpus/d06.txt: OK
+benchmark/corpus/d07.txt: OK
+benchmark/corpus/d08.txt: OK
+benchmark/corpus/d09.txt: OK
+benchmark/corpus/d10.txt: OK
+benchmark/corpus/d11.txt: OK
+benchmark/corpus/d12.txt: OK
+benchmark/corpus/d13.txt: OK
+benchmark/corpus/d14.txt: OK
+benchmark/corpus/d15.txt: OK
+benchmark/corpus/d16.txt: OK
+benchmark/corpus/i01.png: OK
+benchmark/corpus/i02.png: OK
+benchmark/corpus/i03.png: OK
+benchmark/corpus/i04.png: OK
+benchmark/corpus/i05.png: OK
+benchmark/corpus/i06.png: OK
+benchmark/corpus/i07.png: OK
+benchmark/corpus/i08.png: OK
+benchmark/corpus/p01.pdf: OK
+benchmark/corpus/p02.pdf: OK
+benchmark/corpus/p03.pdf: OK
+benchmark/corpus/p04.pdf: OK
+benchmark/queries.json: OK
+benchmark/source/i01.svg: OK
+benchmark/source/i02.svg: OK
+benchmark/source/i03.svg: OK
+benchmark/source/i04.svg: OK
+benchmark/source/i05.svg: OK
+benchmark/source/i06.svg: OK
+benchmark/source/i07.svg: OK
+benchmark/source/i08.svg: OK
+docs/BENCHMARK.md: OK
+docs/BUILD.md: OK
+docs/DEPENDENCIES.md: OK
+docs/ENGINE.md: OK
+docs/PUBLIC_SOURCE.md: OK
+docs/RELEASE.md: OK
+docs/RELEASE_V2.md: OK
+engine/CMakeLists.txt: OK
+evidence-source-licenses/GPL-2.0.txt: OK
+evidence-source-licenses/LGPL-2.0.txt: OK
+evidence-source-licenses/LGPL-2.1.txt: OK
+evidence-source-licenses/LGPL-3.0.txt: OK
+evidence-source-licenses/README.md: OK
+evidence-source-licenses/source-identifiers.json: OK
+evidence-source-licenses/sources.json: OK
+evidence/archive-install-v1/CMakeCache.txt: OK
+evidence/archive-install-v1/archive-SHA256SUMS: OK
+evidence/archive-install-v1/archive-package-receipt.json: OK
+evidence/archive-install-v1/assembly.log: OK
+evidence/archive-install-v1/default-runner/CMakeLists.txt: OK
+evidence/archive-install-v1/default-runner/installed_runner.cpp: OK
+evidence/archive-install-v1/install-owned.py: OK
+evidence/archive-install-v1/install-receipt.json: OK
+evidence/archive-install-v1/install.log: OK
+evidence/archive-install-v1/installed-target.log: OK
+evidence/archive-install-v1/native-command.json: OK
+evidence/archive-install-v1/native/app.log: OK
+evidence/archive-install-v1/native/app.png: OK
+evidence/archive-install-v1/native/results.json: OK
+evidence/archive-install-v1/native/runner.json: OK
+evidence/archive-install-v1/native/runner.log: OK
+evidence/archive-install-v1/native/service.log: OK
+evidence/archive-install-v1/observation.json: OK
+evidence/archive-install-v1/parity-driver.log: OK
+evidence/archive-install-v1/parity-evaluation.log: OK
+evidence/archive-install-v1/parity/query-only.jsonl: OK
+evidence/archive-install-v1/parity/query-only.log: OK
+evidence/archive-install-v1/parity/results.json: OK
+evidence/archive-install-v1/parity/run-time.json: OK
+evidence/archive-install-v1/parity/run.jsonl: OK
+evidence/archive-install-v1/parity/run.log: OK
+evidence/archive-install-v1/pins.sha256: OK
+evidence/archive-install-v1/remove-owned.py: OK
+evidence/archive-install-v1/remove-receipt.json: OK
+evidence/archive-install-v1/report.md: OK
+evidence/archive-install-v1/run-installed.py: OK
+evidence/archive-install-v1/run-parity.py: OK
+evidence/archive-install-v1/runtime-diff.patch: OK
+evidence/archive-install-v1/source-build-r2.log: OK
+evidence/archive-install-v1/source-build.log: OK
+evidence/baloo-baseline-v1/README.md: OK
+evidence/baloo-baseline-v1/daemon.log: OK
+evidence/baloo-baseline-v1/results.json: OK
+evidence/baloo-baseline-v1/session.log: OK
+evidence/clean-build-v1/build-components.log: OK
+evidence/clean-build-v1/checkout-commit.txt: OK
+evidence/clean-build-v1/checkout-status.txt: OK
+evidence/clean-build-v1/checkout.log: OK
+evidence/clean-build-v1/installed-versions.txt: OK
+evidence/clean-build-v1/packages-v3.log: OK
+evidence/clean-build-v1/pins.sha256: OK
+evidence/clean-build-v1/producer-parity/evaluation.log: OK
+evidence/clean-build-v1/producer-parity/query-only.jsonl: OK
+evidence/clean-build-v1/producer-parity/query-only.log: OK
+evidence/clean-build-v1/producer-parity/results.json: OK
+evidence/clean-build-v1/producer-parity/run-time.json: OK
+evidence/clean-build-v1/producer-parity/run.jsonl: OK
+evidence/clean-build-v1/producer-parity/run.log: OK
+evidence/clean-build-v1/producer-parity/run.py: OK
+evidence/clean-build-v1/receipt.json: OK
+evidence/clean-build-v1/report.md: OK
+evidence/clean-build-v1/runtime-setup.log: OK
+evidence/clean-build-v1/sandbox-control.log: OK
+evidence/clean-build-v2/binary-identity.json: OK
+evidence/clean-build-v2/candidate/bin/embedding-probe: OK
+evidence/clean-build-v2/candidate/bin/kde-index: OK
+evidence/clean-build-v2/candidate/bin/kde-index-cli: OK
+evidence/clean-build-v2/candidate/bin/kde-index-service: OK
+evidence/clean-build-v2/candidate/bin/libkde-index-runner.so: OK
+evidence/clean-build-v2/candidate/bin/ui-smoke: OK
+evidence/clean-build-v2/checkout-commit.txt: OK
+evidence/clean-build-v2/checkout-status.txt: OK
+evidence/clean-build-v2/font-and-versions.log: OK
+evidence/clean-build-v2/full-build.log: OK
+evidence/clean-build-v2/native-run.log: OK
+evidence/clean-build-v2/native/app.log: OK
+evidence/clean-build-v2/native/app.png: OK
+evidence/clean-build-v2/native/app.stdout: OK
+evidence/clean-build-v2/native/smoke.json: OK
+evidence/clean-build-v2/native/smoke.log: OK
+evidence/clean-build-v2/native/window-page.png: OK
+evidence/clean-build-v2/native/window-results.png: OK
+evidence/clean-build-v2/pins.sha256: OK
+evidence/clean-build-v2/producer-parity/evaluation.log: OK
+evidence/clean-build-v2/producer-parity/query-only.jsonl: OK
+evidence/clean-build-v2/producer-parity/query-only.log: OK
+evidence/clean-build-v2/producer-parity/results.json: OK
+evidence/clean-build-v2/producer-parity/run-time.json: OK
+evidence/clean-build-v2/producer-parity/run.jsonl: OK
+evidence/clean-build-v2/producer-parity/run.log: OK
+evidence/clean-build-v2/producer-parity/run.py: OK
+evidence/clean-build-v2/report.md: OK
+evidence/clean-build-v3/binary-identity.json: OK
+evidence/clean-build-v3/build.log: OK
+evidence/clean-build-v3/candidate/bin/embedding-probe: OK
+evidence/clean-build-v3/candidate/bin/kde-index: OK
+evidence/clean-build-v3/candidate/bin/kde-index-cli: OK
+evidence/clean-build-v3/candidate/bin/kde-index-runner.so: OK
+evidence/clean-build-v3/candidate/bin/kde-index-service: OK
+evidence/clean-build-v3/candidate/bin/ui-pixels: OK
+evidence/clean-build-v3/candidate/bin/ui-smoke: OK
+evidence/clean-build-v3/checkout-commit.txt: OK
+evidence/clean-build-v3/checkout-status.txt: OK
+evidence/clean-build-v3/font-and-versions.log: OK
+evidence/clean-build-v3/installed-inventory.sha256: OK
+evidence/clean-build-v3/native-run.log: OK
+evidence/clean-build-v3/native/app.log: OK
+evidence/clean-build-v3/native/app.png: OK
+evidence/clean-build-v3/native/app.stdout: OK
+evidence/clean-build-v3/native/smoke.json: OK
+evidence/clean-build-v3/native/smoke.log: OK
+evidence/clean-build-v3/native/window-page.png: OK
+evidence/clean-build-v3/native/window-premature.png: OK
+evidence/clean-build-v3/native/window-raster.png: OK
+evidence/clean-build-v3/native/window-results.png: OK
+evidence/clean-build-v3/page-pixels.json: OK
+evidence/clean-build-v3/page-pixels.log: OK
+evidence/clean-build-v3/parent-observation.json: OK
+evidence/clean-build-v3/pins.sha256: OK
+evidence/clean-build-v3/report.md: OK
+evidence/clean-build-v3/source/CMakeLists.txt: OK
+evidence/clean-build-v3/source/src/runner-v4/CMakeLists.txt: OK
+evidence/clean-build-v3/source/src/runner-v4/kde-index-runner.json: OK
+evidence/clean-build-v3/source/src/runner-v4/runner.cpp: OK
+evidence/clean-build-v3/source/src/ui/Main.qml: OK
+evidence/clean-build-v3/source/tools/ui_smoke.cpp: OK
+evidence/clean-build-v4/build.log: OK
+evidence/clean-build-v4/checkout-commit.txt: OK
+evidence/clean-build-v4/checkout-status.txt: OK
+evidence/clean-build-v4/kde-index-runner.so: OK
+evidence/clean-build-v4/parent-observation.json: OK
+evidence/clean-build-v4/pins.sha256: OK
+evidence/clean-build-v4/report.md: OK
+evidence/clean-build-v4/stage-comparison.json: OK
+evidence/clean-build-v5/build.log: OK
+evidence/clean-build-v5/parent-observation.json: OK
+evidence/clean-build-v5/pins.sha256: OK
+evidence/clean-build-v5/report.md: OK
+evidence/clean-build-v5/source-commit.txt: OK
+evidence/clean-build-v5/source-status.txt: OK
+evidence/clean-build-v5/stage-comparison.json: OK
+evidence/combined-native-v1/inputs/manual.pdf: OK
+evidence/combined-native-v1/inputs/payment.txt: OK
+evidence/combined-native-v1/inputs/picture.jpg: OK
+evidence/combined-native-v1/pins.sha256: OK
+evidence/combined-native-v1/raw/closure.json: OK
+evidence/combined-native-v1/raw/command.json: OK
+evidence/combined-native-v1/raw/observation.json: OK
+evidence/combined-native-v1/raw/post-executable-inventory.json: OK
+evidence/combined-native-v1/raw/run.log: OK
+evidence/combined-native-v1/raw/window-page.png: OK
+evidence/combined-native-v1/raw/window-premature.png: OK
+evidence/combined-native-v1/raw/window-raster.png: OK
+evidence/combined-native-v1/raw/window-results.png: OK
+evidence/combined-native-v1/report.md: OK
+evidence/combined-native-v1/ui_smoke.cpp: OK
+evidence/combined-storage-review-v1/candidate-pins.sha256: OK
+evidence/combined-storage-review-v1/helpers/CMakeLists.txt: OK
+evidence/combined-storage-review-v1/helpers/control.cpp: OK
+evidence/combined-storage-review-v1/helpers/descriptors.cpp: OK
+evidence/combined-storage-review-v1/integrated_lifecycle.py: OK
+evidence/combined-storage-review-v1/pins.sha256: OK
+evidence/combined-storage-review-v1/raw/caps/cancel.log: OK
+evidence/combined-storage-review-v1/raw/caps/directory.log: OK
+evidence/combined-storage-review-v1/raw/caps/entry.log: OK
+evidence/combined-storage-review-v1/raw/caps/independent-serialized-readback.json: OK
+evidence/combined-storage-review-v1/raw/caps/path.log: OK
+evidence/combined-storage-review-v1/raw/caps/results.json: OK
+evidence/combined-storage-review-v1/raw/caps/watch.log: OK
+evidence/combined-storage-review-v1/raw/descriptor-setup.txt: OK
+evidence/combined-storage-review-v1/raw/descriptors.json: OK
+evidence/combined-storage-review-v1/raw/lifecycle/results.json: OK
+evidence/combined-storage-review-v1/raw/lifecycle/service.log: OK
+evidence/combined-storage-review-v1/raw/namespace/callback-engine-interval.log: OK
+evidence/combined-storage-review-v1/raw/namespace/callback-positive-after.log: OK
+evidence/combined-storage-review-v1/raw/namespace/callback-positive-before.log: OK
+evidence/combined-storage-review-v1/raw/namespace/namespace.log: OK
+evidence/combined-storage-review-v1/raw/namespace/provider-metadata.jsonl: OK
+evidence/combined-storage-review-v1/raw/namespace/provider.log: OK
+evidence/combined-storage-review-v1/raw/namespace/results.json: OK
+evidence/combined-storage-review-v1/raw/namespace/service-0.log: OK
+evidence/combined-storage-review-v1/raw/namespace/service-1.log: OK
+evidence/combined-storage-review-v1/raw/watch-failure/results.json: OK
+evidence/combined-storage-review-v1/raw/watch-failure/service.log: OK
+evidence/combined-storage-review-v1/replay_caps.py: OK
+evidence/combined-storage-review-v1/report.md: OK
+evidence/combined-storage-review-v1/watch_failure.py: OK
+evidence/combined-ui-v1/pins.sha256: OK
+evidence/combined-ui-v1/raw/app.log: OK
+evidence/combined-ui-v1/raw/app.png: OK
+evidence/combined-ui-v1/raw/results.json: OK
+evidence/combined-ui-v1/raw/service.log: OK
+evidence/combined-ui-v1/report.md: OK
+evidence/combined-ui-v1/run.py: OK
+evidence/desktop-boundary-v2/SHA256SUMS: OK
+evidence/desktop-boundary-v2/analysis.json: OK
+evidence/desktop-boundary-v2/candidate/bin/kde-index-runner.so: OK
+evidence/desktop-boundary-v2/candidate/bin/libdesktop-layout-observer.so: OK
+evidence/desktop-boundary-v2/candidate/source/src/runner-v5/CMakeLists.txt: OK
+evidence/desktop-boundary-v2/candidate/source/src/runner-v5/kde-index-runner.json: OK
+evidence/desktop-boundary-v2/candidate/source/src/runner-v5/runner.cpp: OK
+evidence/desktop-boundary-v2/candidate/source/src/ui/Main.qml: OK
+evidence/desktop-boundary-v2/candidate/source/src/ui/backend.cpp: OK
+evidence/desktop-boundary-v2/candidate/source/src/ui/backend.h: OK
+evidence/desktop-boundary-v2/candidate/source/src/ui/main.cpp: OK
+evidence/desktop-boundary-v2/candidate/tools/desktop_layout_CMakeLists.txt: OK
+evidence/desktop-boundary-v2/candidate/tools/desktop_layout_freeze.py: OK
+evidence/desktop-boundary-v2/candidate/tools/desktop_layout_observer.cpp: OK
+evidence/desktop-boundary-v2/candidate/tools/desktop_layout_pair.py: OK
+evidence/desktop-boundary-v2/experiment.md: OK
+evidence/desktop-boundary-v2/inherited/clean-build-v4-pins.sha256: OK
+evidence/desktop-boundary-v2/inherited/clean-build-v4-report.md: OK
+evidence/desktop-boundary-v2/inherited/desktop-v1-SHA256SUMS: OK
+evidence/desktop-boundary-v2/inherited/desktop-v1-report.md: OK
+evidence/desktop-boundary-v2/inherited/runner-privacy-v1-SHA256SUMS: OK
+evidence/desktop-boundary-v2/inherited/runner-privacy-v1-report.md: OK
+evidence/desktop-boundary-v2/primary/RunCommand-v6.7.5.qml: OK
+evidence/desktop-boundary-v2/primary/appchooser-kde-v6.7.5.cpp: OK
+evidence/desktop-boundary-v2/primary/calculatorrunner-v6.7.5.cpp: OK
+evidence/desktop-boundary-v2/primary/installed-AppChooser.xml: OK
+evidence/desktop-boundary-v2/primary/installed-OpenURI.xml: OK
+evidence/desktop-boundary-v2/primary/installed-Request.xml: OK
+evidence/desktop-boundary-v2/primary/installed-ResultDelegate.qml: OK
+evidence/desktop-boundary-v2/primary/installed-ResultsView.qml: OK
+evidence/desktop-boundary-v2/primary/installed-ScrollView.qml: OK
+evidence/desktop-boundary-v2/primary/installed-kde-portals.conf: OK
+evidence/desktop-boundary-v2/primary/installed-kde.portal: OK
+evidence/desktop-boundary-v2/primary/kf-resultsmodel-v6.30.0.cpp: OK
+evidence/desktop-boundary-v2/primary/krunner-main-v6.7.5.cpp: OK
+evidence/desktop-boundary-v2/primary/krunner-view-v6.7.5.cpp: OK
+evidence/desktop-boundary-v2/primary/open-uri-v1.22.1.c: OK
+evidence/desktop-boundary-v2/primary/qdesktopunixservices-v6.12.0.cpp: OK
+evidence/desktop-boundary-v2/primary/qquickscrollview-v6.12.0.cpp: OK
+evidence/desktop-boundary-v2/primary/qquickwindow-v6.12.0.cpp: OK
+evidence/desktop-boundary-v2/primary/runnerresultsmodel-v6.30.0.cpp: OK
+evidence/desktop-boundary-v2/prior/v4-querybar-only.png: OK
+evidence/desktop-boundary-v2/prior/v5-forced-runner-current.json: OK
+evidence/desktop-boundary-v2/prior/v5-forced-runner-frame.png: OK
+evidence/desktop-boundary-v2/prior/v5-forced-runner-pre-geometry.json: OK
+evidence/desktop-boundary-v2/prior/v5-forced-runner-set-height.json: OK
+evidence/desktop-boundary-v2/prior/v5-forced-runner-set-list-width.json: OK
+evidence/desktop-boundary-v2/prior/v5-forced-runner-tooltip.json: OK
+evidence/desktop-boundary-v2/raw/app-observer/actual-open-signal.json: OK
+evidence/desktop-boundary-v2/raw/app-observer/app-source-36226794090545.json: OK
+evidence/desktop-boundary-v2/raw/app-observer/app-source-36228165924705.json: OK
+evidence/desktop-boundary-v2/raw/app-observer/app-source-36228345454214.json: OK
+evidence/desktop-boundary-v2/raw/app-observer/open-events.jsonl: OK
+evidence/desktop-boundary-v2/raw/app.log: OK
+evidence/desktop-boundary-v2/raw/build.log: OK
+evidence/desktop-boundary-v2/raw/config/mimeapps.list: OK
+evidence/desktop-boundary-v2/raw/configure.log: OK
+evidence/desktop-boundary-v2/raw/corpus/ordinary-layout-66442.txt: OK
+evidence/desktop-boundary-v2/raw/data/applications/desktop-boundary-text-opener.desktop: OK
+evidence/desktop-boundary-v2/raw/dbus-monitor.log: OK
+evidence/desktop-boundary-v2/raw/kde-index-service.log: OK
+evidence/desktop-boundary-v2/raw/libdesktop-layout-observer.so: OK
+evidence/desktop-boundary-v2/raw/outer.json: OK
+evidence/desktop-boundary-v2/raw/pair.py: OK
+evidence/desktop-boundary-v2/raw/results.json: OK
+evidence/desktop-boundary-v2/raw/runner-observer/builtin-completed-first-7ffc56755850.png: OK
+evidence/desktop-boundary-v2/raw/runner-observer/builtin-completed-second-7ffc56755850.png: OK
+evidence/desktop-boundary-v2/raw/runner-observer/builtin-completed.json: OK
+evidence/desktop-boundary-v2/raw/runner-observer/plugin-completed-first-7ffc56755850.png: OK
+evidence/desktop-boundary-v2/raw/runner-observer/plugin-completed-second-7ffc56755850.png: OK
+evidence/desktop-boundary-v2/raw/runner-observer/plugin-completed.json: OK
+evidence/desktop-boundary-v2/raw/runner.log: OK
+evidence/desktop-boundary-v2/raw/session.log: OK
+evidence/desktop-boundary-v2/raw/stock-plugin-list.txt: OK
+evidence/desktop-boundary-v2/report.md: OK
+evidence/desktop-integration-v1/SHA256SUMS: OK
+evidence/desktop-integration-v1/analysis.json: OK
+evidence/desktop-integration-v1/candidate/bin/kde-index: OK
+evidence/desktop-integration-v1/candidate/bin/kde-index-runner.so: OK
+evidence/desktop-integration-v1/candidate/bin/kde-index-service: OK
+evidence/desktop-integration-v1/candidate/bin/libdesktop-observer.so: OK
+evidence/desktop-integration-v1/candidate/bin/text-contract: OK
+evidence/desktop-integration-v1/candidate/source/src/runner-v4/CMakeLists.txt: OK
+evidence/desktop-integration-v1/candidate/source/src/runner-v4/kde-index-runner.json: OK
+evidence/desktop-integration-v1/candidate/source/src/runner-v4/runner.cpp: OK
+evidence/desktop-integration-v1/candidate/source/src/ui/Main.qml: OK
+evidence/desktop-integration-v1/candidate/source/src/ui/backend.cpp: OK
+evidence/desktop-integration-v1/candidate/source/src/ui/backend.h: OK
+evidence/desktop-integration-v1/candidate/source/src/ui/main.cpp: OK
+evidence/desktop-integration-v1/candidate/tools/desktop_integration.py: OK
+evidence/desktop-integration-v1/candidate/tools/desktop_integration_CMakeLists.txt: OK
+evidence/desktop-integration-v1/candidate/tools/desktop_integration_freeze.py: OK
+evidence/desktop-integration-v1/candidate/tools/desktop_integration_observer.cpp: OK
+evidence/desktop-integration-v1/candidate/tools/desktop_integration_text_contract.cpp: OK
+evidence/desktop-integration-v1/primary/RunCommand-v6.7.5.qml: OK
+evidence/desktop-integration-v1/primary/dolphin-main-v26.08.2.cpp: OK
+evidence/desktop-integration-v1/primary/dolphin-symbols.txt: OK
+evidence/desktop-integration-v1/primary/dolphinmainwindow-v26.08.2.cpp: OK
+evidence/desktop-integration-v1/primary/dolphintabwidget-v26.08.2.cpp: OK
+evidence/desktop-integration-v1/primary/dolphinview-v26.08.2.cpp: OK
+evidence/desktop-integration-v1/primary/dolphinview-v26.08.2.h: OK
+evidence/desktop-integration-v1/primary/installed-ResultDelegate.qml: OK
+evidence/desktop-integration-v1/primary/installed-ResultsView.qml: OK
+evidence/desktop-integration-v1/primary/installed-ToolTip.qml: OK
+evidence/desktop-integration-v1/primary/installed-kfileitem.h: OK
+evidence/desktop-integration-v1/primary/installed-querymatch.h: OK
+evidence/desktop-integration-v1/primary/kf-resultsmodel-v6.30.0.cpp: OK
+evidence/desktop-integration-v1/primary/krunner-main-v6.7.5.cpp: OK
+evidence/desktop-integration-v1/primary/krunner-view-v6.7.5.cpp: OK
+evidence/desktop-integration-v1/primary/packages.txt: OK
+evidence/desktop-integration-v1/primary/qdesktopunixservices-v6.12.0.cpp: OK
+evidence/desktop-integration-v1/primary/qt-autotext-boundary-experiment.json: OK
+evidence/desktop-integration-v1/primary/qtextdocument-v6.12.0.cpp: OK
+evidence/desktop-integration-v1/primary/querymatch-v6.30.0.cpp: OK
+evidence/desktop-integration-v1/primary/resultsmodel-v6.7.5.cpp: OK
+evidence/desktop-integration-v1/primary/runnerresultsmodel-v6.30.0.cpp: OK
+evidence/desktop-integration-v1/raw/observer-build.log: OK
+evidence/desktop-integration-v1/raw/observer-configure.log: OK
+evidence/desktop-integration-v1/raw/prior/run1/probe.py: OK
+evidence/desktop-integration-v1/raw/prior/run1/session.log: OK
+evidence/desktop-integration-v1/raw/prior/run2/probe.py: OK
+evidence/desktop-integration-v1/raw/prior/run2/session.log: OK
+evidence/desktop-integration-v1/raw/prior/run3/probe.py: OK
+evidence/desktop-integration-v1/raw/prior/run3/results.json: OK
+evidence/desktop-integration-v1/raw/prior/run4/libdesktop-observer.so: OK
+evidence/desktop-integration-v1/raw/prior/run4/probe.py: OK
+evidence/desktop-integration-v1/raw/prior/run4/results.json: OK
+evidence/desktop-integration-v1/raw/prior/run4/runner-before-reveal.json: OK
+evidence/desktop-integration-v1/raw/prior/run4/runner-current.json: OK
+evidence/desktop-integration-v1/raw/prior/run4/runner-reveal.json: OK
+evidence/desktop-integration-v1/raw/prior/run4/session.log: OK
+evidence/desktop-integration-v1/raw/prior/run5/probe.py: OK
+evidence/desktop-integration-v1/raw/prior/run5/results.json: OK
+evidence/desktop-integration-v1/raw/prior/run5/session.log: OK
+evidence/desktop-integration-v1/raw/prior/run6/probe.py: OK
+evidence/desktop-integration-v1/raw/prior/run6/results.json: OK
+evidence/desktop-integration-v1/raw/prior/run6/session.log: OK
+evidence/desktop-integration-v1/raw/prior/run7/probe.py: OK
+evidence/desktop-integration-v1/raw/prior/run7/results.json: OK
+evidence/desktop-integration-v1/raw/prior/run7/session.log: OK
+evidence/desktop-integration-v1/raw/run8/app-observer/app-before-actions.json: OK
+evidence/desktop-integration-v1/raw/run8/app-observer/app-errors-close.json: OK
+evidence/desktop-integration-v1/raw/run8/app-observer/app-errors-dialog.json: OK
+evidence/desktop-integration-v1/raw/run8/app-observer/app-errors-open.json: OK
+evidence/desktop-integration-v1/raw/run8/app-observer/app-errors.json: OK
+evidence/desktop-integration-v1/raw/run8/app-observer/app-initial.json: OK
+evidence/desktop-integration-v1/raw/run8/app-observer/app-open.json: OK
+evidence/desktop-integration-v1/raw/run8/app-observer/app-reveal.json: OK
+evidence/desktop-integration-v1/raw/run8/app-observer/openUrl-events.jsonl: OK
+evidence/desktop-integration-v1/raw/run8/app.log: OK
+evidence/desktop-integration-v1/raw/run8/canary.png: OK
+evidence/desktop-integration-v1/raw/run8/config/mimeapps.list: OK
+'evidence/desktop-integration-v1/raw/run8/corpus/<b>ERROR-77331.pdf': OK
+'evidence/desktop-integration-v1/raw/run8/corpus/<b>TITLE-77331.txt': OK
+evidence/desktop-integration-v1/raw/run8/data/applications/desktop-proof-open.desktop: OK
+evidence/desktop-integration-v1/raw/run8/dbus-monitor.log: OK
+evidence/desktop-integration-v1/raw/run8/dolphin-observer/app-reveal-target.json: OK
+evidence/desktop-integration-v1/raw/run8/dolphin-observer/close-app-reveal-target.json: OK
+evidence/desktop-integration-v1/raw/run8/dolphin-observer/close-runner-reveal-target.json: OK
+evidence/desktop-integration-v1/raw/run8/dolphin-observer/command.json: OK
+evidence/desktop-integration-v1/raw/run8/dolphin-observer/runner-reveal-target.json: OK
+evidence/desktop-integration-v1/raw/run8/kde-index-service.log: OK
+evidence/desktop-integration-v1/raw/run8/krunner.log: OK
+evidence/desktop-integration-v1/raw/run8/probe.py: OK
+evidence/desktop-integration-v1/raw/run8/results.json: OK
+evidence/desktop-integration-v1/raw/run8/runner-observer/runner-action-down-0.json: OK
+evidence/desktop-integration-v1/raw/run8/runner-observer/runner-action-selected-0.json: OK
+evidence/desktop-integration-v1/raw/run8/runner-observer/runner-before-reveal.json: OK
+evidence/desktop-integration-v1/raw/run8/runner-observer/runner-current.json: OK
+evidence/desktop-integration-v1/raw/run8/runner-observer/runner-frame.json: OK
+evidence/desktop-integration-v1/raw/run8/runner-observer/runner-frame.png: OK
+evidence/desktop-integration-v1/raw/run8/runner-observer/runner-hover.json: OK
+evidence/desktop-integration-v1/raw/run8/runner-observer/runner-initial.json: OK
+evidence/desktop-integration-v1/raw/run8/runner-observer/runner-reveal.json: OK
+evidence/desktop-integration-v1/raw/run8/runner-observer/runner-select-down-0.json: OK
+evidence/desktop-integration-v1/raw/run8/runner-observer/runner-selected-0.json: OK
+evidence/desktop-integration-v1/raw/run8/runner-observer/runner-tooltip.json: OK
+evidence/desktop-integration-v1/raw/run8/runner-observer/runner-visible-initial.json: OK
+evidence/desktop-integration-v1/raw/run8/runner.log: OK
+evidence/desktop-integration-v1/raw/run8/session.log: OK
+evidence/desktop-integration-v1/report.md: OK
+evidence/desktop-open-review-v1/SHA256SUMS: OK
+evidence/desktop-open-review-v1/check-output.json: OK
+evidence/desktop-open-review-v1/check_raw.py: OK
+evidence/desktop-open-review-v1/raw-audit.json: OK
+evidence/desktop-open-review-v1/report.md: OK
+evidence/desktop-open-v3/SHA256SUMS: OK
+evidence/desktop-open-v3/analysis.json: OK
+evidence/desktop-open-v3/candidate/bin/desktop-open-v3-gio: OK
+evidence/desktop-open-v3/candidate/bin/libdesktop-layout-observer.so: OK
+evidence/desktop-open-v3/candidate/bin/libdesktop-open-v3-observer.so: OK
+evidence/desktop-open-v3/candidate/inherited-tools/desktop_layout_CMakeLists.txt: OK
+evidence/desktop-open-v3/candidate/inherited-tools/desktop_layout_observer.cpp: OK
+evidence/desktop-open-v3/candidate/source/src/ui/Main.qml: OK
+evidence/desktop-open-v3/candidate/source/src/ui/backend.cpp: OK
+evidence/desktop-open-v3/candidate/source/src/ui/backend.h: OK
+evidence/desktop-open-v3/candidate/source/src/ui/main.cpp: OK
+evidence/desktop-open-v3/candidate/stage-bin/embedding-probe: OK
+evidence/desktop-open-v3/candidate/stage-bin/kde-index: OK
+evidence/desktop-open-v3/candidate/stage-bin/kde-index-cli: OK
+evidence/desktop-open-v3/candidate/stage-bin/kde-index-runner.so: OK
+evidence/desktop-open-v3/candidate/stage-bin/kde-index-service: OK
+evidence/desktop-open-v3/candidate/tools/desktop_open_v3.py: OK
+evidence/desktop-open-v3/candidate/tools/desktop_open_v3_CMakeLists.txt: OK
+evidence/desktop-open-v3/candidate/tools/desktop_open_v3_freeze.py: OK
+evidence/desktop-open-v3/candidate/tools/desktop_open_v3_gio.cpp: OK
+evidence/desktop-open-v3/candidate/tools/desktop_open_v3_observer.cpp: OK
+evidence/desktop-open-v3/candidate/tools/desktop_open_v3_run2.py: OK
+evidence/desktop-open-v3/experiment-repair2.md: OK
+evidence/desktop-open-v3/experiment.md: OK
+evidence/desktop-open-v3/inherited/clean-build-v5-pins.sha256: OK
+evidence/desktop-open-v3/inherited/clean-build-v5-report.md: OK
+evidence/desktop-open-v3/inherited/clean-build-v5-stage-comparison.json: OK
+evidence/desktop-open-v3/inherited/desktop-boundary-v2-SHA256SUMS: OK
+evidence/desktop-open-v3/inherited/desktop-boundary-v2-report.md: OK
+evidence/desktop-open-v3/native-binary-identities.json: OK
+evidence/desktop-open-v3/primary/Screen-v26.08.2.cpp: OK
+evidence/desktop-open-v3/primary/ScreenWindow-v26.08.2.cpp: OK
+evidence/desktop-open-v3/primary/TerminalDisplay-v26.08.2.cpp: OK
+evidence/desktop-open-v3/primary/TerminalDisplayAccessible-v26.08.2.cpp: OK
+evidence/desktop-open-v3/primary/TerminalDisplayAccessible-v26.08.2.h: OK
+evidence/desktop-open-v3/primary/appchooser-kde-v6.7.5.cpp: OK
+evidence/desktop-open-v3/primary/installed-AppChooser.xml: OK
+evidence/desktop-open-v3/primary/installed-OpenURI.xml: OK
+evidence/desktop-open-v3/primary/installed-Request.xml: OK
+evidence/desktop-open-v3/primary/installed-kde-portals.conf: OK
+evidence/desktop-open-v3/primary/installed-kde.portal: OK
+evidence/desktop-open-v3/primary/konsole-ldd.txt: OK
+evidence/desktop-open-v3/primary/konsole-main-v26.08.2.cpp: OK
+evidence/desktop-open-v3/primary/open-uri-v1.22.1.c: OK
+evidence/desktop-open-v3/primary/packages.txt: OK
+evidence/desktop-open-v3/primary/qdesktopunixservices-v6.12.0.cpp: OK
+evidence/desktop-open-v3/raw/build/build.log: OK
+evidence/desktop-open-v3/raw/build/configure.log: OK
+evidence/desktop-open-v3/raw/run1/app-observer.so: OK
+evidence/desktop-open-v3/raw/run1/app-observer/source-ready-39164224250062.json: OK
+evidence/desktop-open-v3/raw/run1/app.log: OK
+evidence/desktop-open-v3/raw/run1/calibration.log: OK
+evidence/desktop-open-v3/raw/run1/calibration/contrast.txt: OK
+evidence/desktop-open-v3/raw/run1/config/mimeapps.list: OK
+evidence/desktop-open-v3/raw/run1/corpus/reader.txt: OK
+evidence/desktop-open-v3/raw/run1/data/applications/desktop-source-consumer.desktop: OK
+evidence/desktop-open-v3/raw/run1/data/applications/mimeinfo.cache: OK
+evidence/desktop-open-v3/raw/run1/gio-before-open.json: OK
+evidence/desktop-open-v3/raw/run1/gio-inspect: OK
+evidence/desktop-open-v3/raw/run1/outer.json: OK
+evidence/desktop-open-v3/raw/run1/portal-monitor.log: OK
+evidence/desktop-open-v3/raw/run1/receiver-observer.so: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-39157526132595.json: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-39158332400735.json: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-561145fcb160.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-5611460acb30.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-5611460b7ea0.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-5611460c07c0.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-561146101970.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-5611461194c0.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-56114611f570.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-561146128250.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-56114612c820.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-56114612f110.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-56114613fcf0.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-56114615c2d0.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-561146164740.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-561146169170.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-5611461b6b80.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-5611463429d0.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-5611465d7680.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-5611466372b0.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-561146671080.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-561146674660.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-561146677660.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-56114667acc0.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-56114667d570.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-56114667fef0.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-561146681930.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-561146683ab0.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-561146687490.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-5611466897f0.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-56114668c3d0.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-56114668e730.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-561146691210.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-561146693570.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-5611466958d0.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-5611466983b0.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-56114669a810.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-56114669e170.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-5611466a4100.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-5611466aa6a0.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-5611466afd40.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-5611466b0320.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture-window-5611467145b0.png: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/calibration-capture.json: OK
+evidence/desktop-open-v3/raw/run1/receivers/8/identity.json: OK
+evidence/desktop-open-v3/raw/run1/results.json: OK
+evidence/desktop-open-v3/raw/run1/run.py: OK
+evidence/desktop-open-v3/raw/run1/service.log: OK
+evidence/desktop-open-v3/raw/run1/session.log: OK
+evidence/desktop-open-v3/raw/run2/app-observer.so: OK
+evidence/desktop-open-v3/raw/run2/app-observer/actual-open-signal.json: OK
+evidence/desktop-open-v3/raw/run2/app-observer/open-events.jsonl: OK
+evidence/desktop-open-v3/raw/run2/app-observer/source-ready-39971676559991.json: OK
+evidence/desktop-open-v3/raw/run2/app-observer/source-ready-39973303639512.json: OK
+evidence/desktop-open-v3/raw/run2/app-observer/source-ready-39973587886789.json: OK
+evidence/desktop-open-v3/raw/run2/app-observer/source-ready-39973840628704.json: OK
+evidence/desktop-open-v3/raw/run2/app.log: OK
+evidence/desktop-open-v3/raw/run2/calibration/contrast.txt: OK
+evidence/desktop-open-v3/raw/run2/config/mimeapps.list: OK
+evidence/desktop-open-v3/raw/run2/corpus/reader.txt: OK
+evidence/desktop-open-v3/raw/run2/data/applications/desktop-source-consumer.desktop: OK
+evidence/desktop-open-v3/raw/run2/data/applications/mimeinfo.cache: OK
+evidence/desktop-open-v3/raw/run2/gio-before-open.json: OK
+evidence/desktop-open-v3/raw/run2/gio-inspect: OK
+evidence/desktop-open-v3/raw/run2/outer.json: OK
+evidence/desktop-open-v3/raw/run2/portal-monitor.log: OK
+evidence/desktop-open-v3/raw/run2/receiver-observer.so: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f8ade320.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f8ae2e10.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f8ae8090.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f8af5880.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f8b32ef0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f8ba8090.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f8bb65f0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f8bbc2c0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f8bc37d0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f8be0ac0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f8beb650.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f8bf1730.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f8bf1fc0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f8bf73d0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f8e4a9d0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f8ff3850.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f905af50.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f9094a20.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f9097fd0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f909afa0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f909e5d0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f90a0e50.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f90a37a0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f90a51b0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f90a7300.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f90aacb0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f90acfe0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f90afb90.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f90b1ec0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f90b4970.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f90b6ca0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f90b8fd0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f90bba80.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f90bdeb0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f90c17e0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f90c7740.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f90cdcb0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f90d3320.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f90d3900.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-55a9f91a4900.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture-window-7ffba40016e0.png: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/actual-receiver-capture.json: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/identity.json: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/loaded-39975799153696.json: OK
+evidence/desktop-open-v3/raw/run2/receivers/109/loaded-39976048602615.json: OK
+evidence/desktop-open-v3/raw/run2/results.json: OK
+evidence/desktop-open-v3/raw/run2/run.py: OK
+evidence/desktop-open-v3/raw/run2/service.log: OK
+evidence/desktop-open-v3/raw/run2/session.log: OK
+evidence/desktop-open-v3/repair2-prelaunch.sha256: OK
+evidence/desktop-open-v3/report.md: OK
+evidence/embedding-review-v1/report.md: OK
+evidence/embedding-v1/SHA256SUMS: OK
+evidence/embedding-v1/binary-sha256.txt: OK
+evidence/embedding-v1/build-options.txt: OK
+evidence/embedding-v1/build.log: OK
+evidence/embedding-v1/candidate-sha256.txt: OK
+evidence/embedding-v1/candidate/probe/CMakeLists.txt: OK
+evidence/embedding-v1/candidate/probe/DigUp-LICENSE: OK
+evidence/embedding-v1/candidate/probe/NOTICE: OK
+evidence/embedding-v1/candidate/probe/README.md: OK
+evidence/embedding-v1/candidate/probe/image_sizing.h: OK
+evidence/embedding-v1/candidate/probe/main.cpp: OK
+evidence/embedding-v1/candidate/probe/sizing_check.cpp: OK
+evidence/embedding-v1/candidate/tools/embedding_evaluate.py: OK
+evidence/embedding-v1/candidate/tools/embedding_prepare.py: OK
+evidence/embedding-v1/candidate/tools/embedding_run.py: OK
+evidence/embedding-v1/candidate/tools/embedding_setup.sh: OK
+evidence/embedding-v1/candidate/tools/embedding_sizing_check.py: OK
+evidence/embedding-v1/closure.json: OK
+evidence/embedding-v1/evaluator.log: OK
+evidence/embedding-v1/host.json: OK
+evidence/embedding-v1/input-sha256.txt: OK
+evidence/embedding-v1/inputs/photo.jpg: OK
+evidence/embedding-v1/inputs/query-only.jsonl: OK
+evidence/embedding-v1/inputs/requests.jsonl: OK
+evidence/embedding-v1/inputs/retrieval.json: OK
+evidence/embedding-v1/inputs/screen.png: OK
+evidence/embedding-v1/inputs/sizing.jsonl: OK
+evidence/embedding-v1/inputs/texts.json: OK
+evidence/embedding-v1/inputs/vectors.json: OK
+evidence/embedding-v1/measurement-launch-failure.log: OK
+evidence/embedding-v1/model-sha256.txt: OK
+evidence/embedding-v1/query-only-time.json: OK
+evidence/embedding-v1/query-only.jsonl: OK
+evidence/embedding-v1/query-only.log: OK
+evidence/embedding-v1/report.md: OK
+evidence/embedding-v1/results.json: OK
+evidence/embedding-v1/run-time.json: OK
+evidence/embedding-v1/run.jsonl: OK
+evidence/embedding-v1/run.log: OK
+evidence/embedding-v1/setup-check.log: OK
+evidence/embedding-v1/sizing-results.json: OK
+evidence/embedding-v1/source/DigUp-LICENSE: OK
+evidence/embedding-v1/source/ImageSizing.swift: OK
+evidence/embedding-v1/source/ImageSizingTests.swift: OK
+evidence/embedding-v1/source/LlamaEmbedder.swift: OK
+evidence/embedding-v1/source/LlamaModels.swift: OK
+evidence/embedding-v1/source/Model.swift: OK
+evidence/embedding-v1/source/ModelFiles.swift: OK
+evidence/embedding-v1/source/ReferenceVectorTests.swift: OK
+evidence/embedding-v1/source/build-llama.sh: OK
+evidence/embedding-v1/source/llama.cpp-LICENSE: OK
+evidence/embedding-v1/source/llama.cpp-no-logits.patch: OK
+evidence/embedding-v1/source/make_reference_inputs.py: OK
+evidence/engine-review-v1/pins.sha256: OK
+evidence/engine-review-v1/report.md: OK
+evidence/engine-review-v2-portable/DELIVERY.md: OK
+evidence/engine-review-v2-portable/originals/evidence/embedding-review-v1/report.md: OK
+evidence/engine-review-v2-portable/originals/evidence/engine-review-v1/pins.sha256: OK
+evidence/engine-review-v2-portable/originals/evidence/engine-review-v1/report.md: OK
+evidence/engine-review-v2-portable/originals/evidence/engine-review-v2/pins.sha256: OK
+evidence/engine-review-v2-portable/originals/evidence/engine-review-v2/report.md: OK
+evidence/engine-review-v2-portable/originals/evidence/engine-v1/pins.sha256: OK
+evidence/engine-review-v2-portable/originals/evidence/engine-v2/pins.sha256: OK
+evidence/engine-review-v2-portable/pins.sha256: OK
+evidence/engine-review-v2-portable/receipts/local/embedding-review-v1/run-time.json: OK
+evidence/engine-review-v2-portable/receipts/local/embedding-review-v1/run.jsonl: OK
+evidence/engine-review-v2-portable/receipts/local/embedding-review-v1/run.log: OK
+evidence/engine-review-v2-portable/receipts/local/engine-review-lifecycle-v1/events.jsonl: OK
+evidence/engine-review-v2-portable/receipts/local/engine-review-lifecycle-v2/events.jsonl: OK
+evidence/engine-review-v2-portable/receipts/local/engine-review-startup-v1/events.jsonl: OK
+evidence/engine-review-v2-portable/receipts/local/engine-review-v1/closure.json: OK
+evidence/engine-review-v2-portable/receipts/local/engine-review-v1/lifecycle_controls-v2.py: OK
+evidence/engine-review-v2-portable/receipts/local/engine-review-v1/lifecycle_controls.py: OK
+evidence/engine-review-v2-portable/receipts/local/engine-review-v1/run_controls-v2.py: OK
+evidence/engine-review-v2-portable/receipts/local/engine-review-v1/run_controls.py: OK
+evidence/engine-review-v2-portable/receipts/local/engine-review-v1/startup_controls.py: OK
+evidence/engine-review-v2-portable/receipts/local/engine-review-v2-commit/events.jsonl: OK
+evidence/engine-review-v2-portable/receipts/local/engine-review-v2-index/actual-extracted-pages.txt: OK
+evidence/engine-review-v2-portable/receipts/local/engine-review-v2-index/events.jsonl: OK
+evidence/engine-review-v2-portable/receipts/local/engine-review-v2-recheck/closure.json: OK
+evidence/engine-review-v2-portable/receipts/local/engine-review-v2-recheck/commit_control.py: OK
+evidence/engine-review-v2-portable/receipts/local/engine-review-v2-recheck/events.jsonl: OK
+evidence/engine-review-v2-portable/receipts/local/engine-review-v2-recheck/index_reload_pdf.py: OK
+evidence/engine-review-v2-portable/receipts/local/engine-review-v2-recheck/recheck.py: OK
+evidence/engine-review-v2-portable/receipts/local/engine-review-v2/producer-requests.jsonl: OK
+evidence/engine-review-v2-portable/receipts/local/engine-review-v2/producer-responses.jsonl: OK
+evidence/engine-review-v2-portable/receipts/local/engine-review-v2/raw-controls.json: OK
+evidence/engine-review-v2/pins.sha256: OK
+evidence/engine-review-v2/report.md: OK
+evidence/engine-v1/bad-model-sha.log: OK
+evidence/engine-v1/bad-model.log: OK
+evidence/engine-v1/bad-probe-pin.log: OK
+evidence/engine-v1/candidate/bin/kde-index-cli: OK
+evidence/engine-v1/candidate/bin/kde-index-service: OK
+evidence/engine-v1/candidate/docs/ENGINE.md: OK
+evidence/engine-v1/candidate/engine/CMakeLists.txt: OK
+evidence/engine-v1/candidate/src/cli/main.cpp: OK
+evidence/engine-v1/candidate/src/core/engine.cpp: OK
+evidence/engine-v1/candidate/src/core/engine.h: OK
+evidence/engine-v1/candidate/src/service/main.cpp: OK
+evidence/engine-v1/candidate/tools/engine_integration.py: OK
+evidence/engine-v1/pins.sha256: OK
+evidence/engine-v1/report.md: OK
+evidence/engine-v1/results.json: OK
+evidence/engine-v1/service-0.log: OK
+evidence/engine-v1/service-1.log: OK
+evidence/engine-v1/service-2.log: OK
+evidence/engine-v2/candidate/bin/kde-index-cli: OK
+evidence/engine-v2/candidate/bin/kde-index-service: OK
+evidence/engine-v2/candidate/docs/ENGINE.md: OK
+evidence/engine-v2/candidate/engine/CMakeLists.txt: OK
+evidence/engine-v2/candidate/src/cli/main.cpp: OK
+evidence/engine-v2/candidate/src/core/engine.cpp: OK
+evidence/engine-v2/candidate/src/core/engine.h: OK
+evidence/engine-v2/candidate/src/service/main.cpp: OK
+evidence/engine-v2/candidate/tools/engine_integration.py: OK
+evidence/engine-v2/candidate/tools/engine_repair_controls.py: OK
+evidence/engine-v2/integration/bad-model-sha.log: OK
+evidence/engine-v2/integration/bad-model.log: OK
+evidence/engine-v2/integration/bad-probe-pin.log: OK
+evidence/engine-v2/integration/results.json: OK
+evidence/engine-v2/integration/service-0.log: OK
+evidence/engine-v2/integration/service-1.log: OK
+evidence/engine-v2/integration/service-2.log: OK
+evidence/engine-v2/pins.sha256: OK
+evidence/engine-v2/prior/status-lock-counterexample.json: OK
+evidence/engine-v2/repair/results.json: OK
+evidence/engine-v2/repair/service-0.log: OK
+evidence/engine-v2/repair/service-1.log: OK
+evidence/engine-v2/repair/service-2.log: OK
+evidence/engine-v2/repair/service-3.log: OK
+evidence/engine-v2/report.md: OK
+evidence/installed-integration-v2/app.log: OK
+evidence/installed-integration-v2/app.png: OK
+evidence/installed-integration-v2/bin/installed-runner: OK
+evidence/installed-integration-v2/corpus/manual.pdf: OK
+evidence/installed-integration-v2/corpus/payment.txt: OK
+evidence/installed-integration-v2/corpus/picture.jpg: OK
+evidence/installed-integration-v2/driver.log: OK
+evidence/installed-integration-v2/helpers/tools/installed_integration.py: OK
+evidence/installed-integration-v2/helpers/tools/installed_runner.cpp: OK
+evidence/installed-integration-v2/helpers/tools/installed_runner/CMakeLists.txt: OK
+evidence/installed-integration-v2/parent-check.json: OK
+evidence/installed-integration-v2/pins.sha256: OK
+evidence/installed-integration-v2/report.md: OK
+evidence/installed-integration-v2/results.json: OK
+evidence/installed-integration-v2/runner.json: OK
+evidence/installed-integration-v2/runner.log: OK
+evidence/installed-integration-v2/service.log: OK
+evidence/installed-integration-v2/stage-identity.json: OK
+evidence/local-root-v1/bin/local-root-baseline: OK
+evidence/local-root-v1/bin/local-root-metadata: OK
+evidence/local-root-v1/bin/local-root-resolution: OK
+evidence/local-root-v1/pins.sha256: OK
+evidence/local-root-v1/primary/fuse.rst: OK
+evidence/local-root-v1/primary/namei.c: OK
+evidence/local-root-v1/primary/ntfs3-frecord.c: OK
+evidence/local-root-v1/primary/ntfs3-fsntfs.c: OK
+evidence/local-root-v1/primary/ntfs3-inode.c: OK
+evidence/local-root-v1/primary/ntfs3-ntfs.h: OK
+evidence/local-root-v1/primary/ntfs3-xattr.c: OK
+evidence/local-root-v1/primary/openat2.2: OK
+evidence/local-root-v1/primary/proc.rst: OK
+evidence/local-root-v1/primary/proc_pid_mountinfo.5: OK
+evidence/local-root-v1/primary/sources.json: OK
+evidence/local-root-v1/primary/statx.2: OK
+evidence/local-root-v1/raw/baseline-empty.json: OK
+evidence/local-root-v1/raw/baseline-empty.log: OK
+evidence/local-root-v1/raw/baseline-empty2.json: OK
+evidence/local-root-v1/raw/baseline-empty2.log: OK
+evidence/local-root-v1/raw/metadata.jsonl: OK
+evidence/local-root-v1/raw/resolution.jsonl: OK
+evidence/local-root-v1/repair-v2/bin/local-root-controls: OK
+evidence/local-root-v1/repair-v2/bin/local-root-provider: OK
+evidence/local-root-v1/repair-v2/bin/local-root-service: OK
+evidence/local-root-v1/repair-v2/pins.sha256: OK
+evidence/local-root-v1/repair-v2/primary/ntfs3-super.c: OK
+evidence/local-root-v1/repair-v2/raw/caps-final-run.log: OK
+evidence/local-root-v1/repair-v2/raw/caps-final/cancel.log: OK
+evidence/local-root-v1/repair-v2/raw/caps-final/directory.log: OK
+evidence/local-root-v1/repair-v2/raw/caps-final/entry.log: OK
+evidence/local-root-v1/repair-v2/raw/caps-final/path.log: OK
+evidence/local-root-v1/repair-v2/raw/caps-final/results.json: OK
+evidence/local-root-v1/repair-v2/raw/caps-final/watch.log: OK
+evidence/local-root-v1/repair-v2/raw/caps-r2-run.log: OK
+evidence/local-root-v1/repair-v2/raw/caps-r2/cancel.log: OK
+evidence/local-root-v1/repair-v2/raw/caps-r2/directory.log: OK
+evidence/local-root-v1/repair-v2/raw/caps-r2/entry.log: OK
+evidence/local-root-v1/repair-v2/raw/caps-r2/path.log: OK
+evidence/local-root-v1/repair-v2/raw/caps-r2/results.json: OK
+evidence/local-root-v1/repair-v2/raw/caps-r2/watch.log: OK
+evidence/local-root-v1/repair-v2/raw/caps-run.log: OK
+evidence/local-root-v1/repair-v2/raw/caps/cancel.log: OK
+evidence/local-root-v1/repair-v2/raw/caps/directory.log: OK
+evidence/local-root-v1/repair-v2/raw/caps/entry.log: OK
+evidence/local-root-v1/repair-v2/raw/caps/path.log: OK
+evidence/local-root-v1/repair-v2/raw/caps/results.json: OK
+evidence/local-root-v1/repair-v2/raw/caps/watch.log: OK
+evidence/local-root-v1/repair-v2/raw/fd-pressure/responses.jsonl: OK
+evidence/local-root-v1/repair-v2/raw/fd-pressure/results.json: OK
+evidence/local-root-v1/repair-v2/raw/fd-pressure/stderr.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-accepted-run.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-accepted/bad-model-sha.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-accepted/bad-model.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-accepted/bad-probe-pin.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-accepted/results.json: OK
+evidence/local-root-v1/repair-v2/raw/integration-accepted/service-0.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-accepted/service-1.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-accepted/service-2.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-final-run.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-final/bad-model-sha.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-final/bad-model.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-final/bad-probe-pin.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-final/results.json: OK
+evidence/local-root-v1/repair-v2/raw/integration-final/service-0.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-final/service-1.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-final/service-2.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-r2-run.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-r2/bad-model-sha.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-r2/bad-model.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-r2/bad-probe-pin.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-r2/results.json: OK
+evidence/local-root-v1/repair-v2/raw/integration-r2/service-0.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-r2/service-1.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-r2/service-2.log: OK
+evidence/local-root-v1/repair-v2/raw/integration-run.log: OK
+evidence/local-root-v1/repair-v2/raw/integration/results.json: OK
+evidence/local-root-v1/repair-v2/raw/integration/service-0.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-final-run.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-final/callback-engine-interval.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-final/callback-positive-after.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-final/callback-positive-before.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-final/callbacks.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-final/namespace.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-final/provider-metadata.jsonl: OK
+evidence/local-root-v1/repair-v2/raw/namespace-final/provider.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-final/results.json: OK
+evidence/local-root-v1/repair-v2/raw/namespace-final/service-0.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-final/service-1.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r1-run.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r1/callback-engine-interval.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r1/callback-positive-after.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r1/callback-positive-before.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r1/callbacks.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r1/namespace.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r1/provider-metadata.jsonl: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r1/provider.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r1/results.json: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r1/service-0.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r1/service-1.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r2-run.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r2/callback-engine-interval.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r2/callback-positive-after.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r2/callback-positive-before.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r2/callbacks.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r2/namespace.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r2/provider-metadata.jsonl: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r2/provider.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r2/results.json: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r2/service-0.log: OK
+evidence/local-root-v1/repair-v2/raw/namespace-r2/service-1.log: OK
+evidence/local-root-v1/repair-v2/raw/permissions-run.log: OK
+evidence/local-root-v1/repair-v2/raw/permissions/closed.log: OK
+evidence/local-root-v1/repair-v2/raw/permissions/positive.log: OK
+evidence/local-root-v1/repair-v2/raw/permissions/recovery.log: OK
+evidence/local-root-v1/repair-v2/raw/permissions/results.json: OK
+evidence/local-root-v1/repair-v2/raw/provider-setup/callbacks2.log: OK
+evidence/local-root-v1/repair-v2/raw/provider-setup/callbacks3.log: OK
+evidence/local-root-v1/repair-v2/raw/provider-setup/callbacks4.log: OK
+evidence/local-root-v1/repair-v2/raw/provider-setup/callbacks5.log: OK
+evidence/local-root-v1/repair-v2/raw/provider-setup/daemon.log: OK
+evidence/local-root-v1/repair-v2/raw/provider-setup/daemon2.log: OK
+evidence/local-root-v1/repair-v2/raw/provider-setup/daemon3.log: OK
+evidence/local-root-v1/repair-v2/raw/provider-setup/daemon4.log: OK
+evidence/local-root-v1/repair-v2/raw/provider-setup/daemon5.log: OK
+evidence/local-root-v1/repair-v2/raw/raw-names-final-run.log: OK
+evidence/local-root-v1/repair-v2/raw/raw-names-final/responses.jsonl: OK
+evidence/local-root-v1/repair-v2/raw/raw-names-final/results.json: OK
+evidence/local-root-v1/repair-v2/raw/raw-names-final/stderr.log: OK
+evidence/local-root-v1/repair-v2/raw/raw-names-run.log: OK
+evidence/local-root-v1/repair-v2/raw/raw-names/responses.jsonl: OK
+evidence/local-root-v1/repair-v2/raw/raw-names/results.json: OK
+evidence/local-root-v1/repair-v2/raw/raw-names/stderr.log: OK
+evidence/local-root-v1/repair-v2/raw/watch-gap-run.log: OK
+evidence/local-root-v1/repair-v2/raw/watch-gap/results.json: OK
+evidence/local-root-v1/repair-v2/raw/watch-gap/service.log: OK
+evidence/local-root-v1/repair-v2/raw/watcher-control/accepted.log: OK
+evidence/local-root-v1/repair-v2/raw/watcher-control/candidate.log: OK
+evidence/local-root-v1/repair-v2/raw/watcher-control/results.json: OK
+evidence/local-root-v1/repair-v2/raw/watcher-run.log: OK
+evidence/local-root-v1/repair-v2/report.md: OK
+evidence/local-root-v1/repair-v2/results.json: OK
+evidence/local-root-v1/repair-v2/source/engine.cpp: OK
+evidence/local-root-v1/repair-v2/source/engine.h: OK
+evidence/local-root-v1/repair-v2/source/service.cpp: OK
+evidence/local-root-v1/repair-v2/tools/CMakeLists.txt: OK
+evidence/local-root-v1/repair-v2/tools/engine_integration.py: OK
+evidence/local-root-v1/repair-v2/tools/engine_repair_controls.py: OK
+evidence/local-root-v1/repair-v2/tools/local_root_baseline.cpp: OK
+evidence/local-root-v1/repair-v2/tools/local_root_caps.py: OK
+evidence/local-root-v1/repair-v2/tools/local_root_controls.cpp: OK
+evidence/local-root-v1/repair-v2/tools/local_root_metadata.cpp: OK
+evidence/local-root-v1/repair-v2/tools/local_root_names.py: OK
+evidence/local-root-v1/repair-v2/tools/local_root_namespace.py: OK
+evidence/local-root-v1/repair-v2/tools/local_root_permissions.py: OK
+evidence/local-root-v1/repair-v2/tools/local_root_provider.c: OK
+evidence/local-root-v1/repair-v2/tools/local_root_resolution.cpp: OK
+evidence/local-root-v1/repair-v2/tools/local_root_watch_gap.py: OK
+evidence/local-root-v1/repair-v2/tools/local_root_watcher.py: OK
+evidence/local-root-v1/repair-v3/bin/local-root-controls: OK
+evidence/local-root-v1/repair-v3/bin/local-root-service: OK
+evidence/local-root-v1/repair-v3/pins.sha256: OK
+evidence/local-root-v1/repair-v3/raw/initial-serialization-service.log: OK
+evidence/local-root-v1/repair-v3/raw/lifecycle-replay-run.log: OK
+evidence/local-root-v1/repair-v3/raw/lifecycle-replay/results.json: OK
+evidence/local-root-v1/repair-v3/raw/lifecycle-replay/service.log: OK
+evidence/local-root-v1/repair-v3/raw/lifecycle-run.log: OK
+evidence/local-root-v1/repair-v3/raw/lifecycle/results.json: OK
+evidence/local-root-v1/repair-v3/raw/lifecycle/service.log: OK
+evidence/local-root-v1/repair-v3/raw/uncertainty-final-run.log: OK
+evidence/local-root-v1/repair-v3/raw/uncertainty-final/EACCES/results.json: OK
+evidence/local-root-v1/repair-v3/raw/uncertainty-final/EACCES/service.log: OK
+evidence/local-root-v1/repair-v3/raw/uncertainty-final/EMFILE/results.json: OK
+evidence/local-root-v1/repair-v3/raw/uncertainty-final/EMFILE/service.log: OK
+evidence/local-root-v1/repair-v3/raw/uncertainty-final/results.json: OK
+evidence/local-root-v1/repair-v3/raw/uncertainty-replay-run.log: OK
+evidence/local-root-v1/repair-v3/raw/uncertainty-replay/EACCES/results.json: OK
+evidence/local-root-v1/repair-v3/raw/uncertainty-replay/EACCES/service.log: OK
+evidence/local-root-v1/repair-v3/raw/uncertainty-run.log: OK
+evidence/local-root-v1/repair-v3/report.md: OK
+evidence/local-root-v1/repair-v3/results.json: OK
+evidence/local-root-v1/repair-v3/source/engine.cpp: OK
+evidence/local-root-v1/repair-v3/source/engine.h: OK
+evidence/local-root-v1/repair-v3/source/service.cpp: OK
+evidence/local-root-v1/repair-v3/tools/CMakeLists.txt: OK
+evidence/local-root-v1/repair-v3/tools/build-original.cmake: OK
+evidence/local-root-v1/repair-v3/tools/controls.cpp: OK
+evidence/local-root-v1/repair-v3/tools/lifecycle.py: OK
+evidence/local-root-v1/repair-v3/tools/uncertainty.py: OK
+evidence/local-root-v1/repair-v4/bin/local-root-service: OK
+evidence/local-root-v1/repair-v4/pins.sha256: OK
+evidence/local-root-v1/repair-v4/primary/original-f3-helper.py: OK
+evidence/local-root-v1/repair-v4/primary/original-f3-results.json: OK
+evidence/local-root-v1/repair-v4/raw/build.log: OK
+evidence/local-root-v1/repair-v4/raw/configure.log: OK
+evidence/local-root-v1/repair-v4/raw/status-run.log: OK
+evidence/local-root-v1/repair-v4/raw/status/EACCES/results.json: OK
+evidence/local-root-v1/repair-v4/raw/status/EACCES/service.log: OK
+evidence/local-root-v1/repair-v4/raw/status/EMFILE/results.json: OK
+evidence/local-root-v1/repair-v4/raw/status/EMFILE/service.log: OK
+evidence/local-root-v1/repair-v4/raw/status/results.json: OK
+evidence/local-root-v1/repair-v4/report.md: OK
+evidence/local-root-v1/repair-v4/results.json: OK
+evidence/local-root-v1/repair-v4/source/engine.cpp: OK
+evidence/local-root-v1/repair-v4/source/engine.h: OK
+evidence/local-root-v1/repair-v4/source/service.cpp: OK
+evidence/local-root-v1/repair-v4/tools/CMakeLists.txt: OK
+evidence/local-root-v1/repair-v4/tools/build-original.cmake: OK
+evidence/local-root-v1/repair-v4/tools/status.py: OK
+evidence/local-root-v1/report.md: OK
+evidence/local-root-v1/results.json: OK
+evidence/local-root-v1/source/engine.cpp: OK
+evidence/local-root-v1/source/engine.h: OK
+evidence/local-root-v1/tools/CMakeLists.txt: OK
+evidence/local-root-v1/tools/local_root_baseline.cpp: OK
+evidence/local-root-v1/tools/local_root_metadata.cpp: OK
+evidence/local-root-v1/tools/local_root_resolution.cpp: OK
+evidence/public-clean-build-v1/archive-hash.txt: OK
+evidence/public-clean-build-v1/identity.json: OK
+evidence/public-clean-build-v1/pins.sha256: OK
+evidence/public-clean-build-v1/producer-hashes.txt: OK
+evidence/public-clean-build-v1/recovered-attempt-notes.md: OK
+evidence/public-clean-build-v1/report.md: OK
+evidence/public-clean-build-v1/run.log: OK
+evidence/public-clean-build-v1/run.sh: OK
+evidence/public-clean-build-v1/stage-manifest.json: OK
+evidence/public-clean-build-v1/tool-versions.txt: OK
+evidence/public-producer-parity-v1/pins.sha256: OK
+evidence/public-producer-parity-v1/raw/command.json: OK
+evidence/public-producer-parity-v1/raw/driver.log: OK
+evidence/public-producer-parity-v1/raw/evaluation-command-r2.json: OK
+evidence/public-producer-parity-v1/raw/evaluation-r2.log: OK
+evidence/public-producer-parity-v1/raw/evaluation.log: OK
+evidence/public-producer-parity-v1/raw/inputs/photo.jpg: OK
+evidence/public-producer-parity-v1/raw/inputs/query-only.jsonl: OK
+evidence/public-producer-parity-v1/raw/inputs/requests.jsonl: OK
+evidence/public-producer-parity-v1/raw/inputs/retrieval.json: OK
+evidence/public-producer-parity-v1/raw/inputs/screen.png: OK
+evidence/public-producer-parity-v1/raw/inputs/sizing.jsonl: OK
+evidence/public-producer-parity-v1/raw/inputs/texts.json: OK
+evidence/public-producer-parity-v1/raw/inputs/vectors.json: OK
+evidence/public-producer-parity-v1/raw/query-only.jsonl: OK
+evidence/public-producer-parity-v1/raw/query-only.log: OK
+evidence/public-producer-parity-v1/raw/results.json: OK
+evidence/public-producer-parity-v1/raw/run-time.json: OK
+evidence/public-producer-parity-v1/raw/run.jsonl: OK
+evidence/public-producer-parity-v1/raw/run.log: OK
+evidence/public-producer-parity-v1/raw/run.py: OK
+evidence/public-producer-parity-v1/report.md: OK
+evidence/public-source-export-v1/candidate/PUBLIC_SOURCE.md: OK
+evidence/public-source-export-v1/candidate/export_public_source_v1.py: OK
+evidence/public-source-export-v1/pins.sha256: OK
+evidence/public-source-export-v1/raw/receipt-repeat.json: OK
+evidence/public-source-export-v1/raw/receipt.json: OK
+evidence/public-source-export-v1/report.md: OK
+evidence/release-package-v1/SHA256SUMS: OK
+evidence/release-package-v1/package-receipt.json: OK
+evidence/release-package-v1/pins.sha256: OK
+evidence/release-package-v1/report.md: OK
+evidence/release-package-v2/SHA256SUMS: OK
+evidence/release-package-v2/package-receipt.json: OK
+evidence/release-package-v2/pins.sha256: OK
+evidence/release-package-v2/report.md: OK
+evidence/retrieval-review-v1/actual-pdf-pages.json: OK
+evidence/retrieval-review-v1/images-contact-sheet.png: OK
+evidence/retrieval-review-v1/originals/benchmark/LICENSE: OK
+evidence/retrieval-review-v1/originals/benchmark/README.md: OK
+evidence/retrieval-review-v1/originals/benchmark/SHA256SUMS: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/d01.txt: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/d02.txt: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/d03.txt: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/d04.txt: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/d05.txt: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/d06.txt: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/d07.txt: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/d08.txt: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/d09.txt: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/d10.txt: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/d11.txt: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/d12.txt: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/d13.txt: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/d14.txt: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/d15.txt: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/d16.txt: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/i01.png: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/i02.png: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/i03.png: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/i04.png: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/i05.png: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/i06.png: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/i07.png: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/i08.png: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/p01.pdf: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/p02.pdf: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/p03.pdf: OK
+evidence/retrieval-review-v1/originals/benchmark/corpus/p04.pdf: OK
+evidence/retrieval-review-v1/originals/benchmark/queries.json: OK
+evidence/retrieval-review-v1/originals/benchmark/source/i01.svg: OK
+evidence/retrieval-review-v1/originals/benchmark/source/i02.svg: OK
+evidence/retrieval-review-v1/originals/benchmark/source/i03.svg: OK
+evidence/retrieval-review-v1/originals/benchmark/source/i04.svg: OK
+evidence/retrieval-review-v1/originals/benchmark/source/i05.svg: OK
+evidence/retrieval-review-v1/originals/benchmark/source/i06.svg: OK
+evidence/retrieval-review-v1/originals/benchmark/source/i07.svg: OK
+evidence/retrieval-review-v1/originals/benchmark/source/i08.svg: OK
+evidence/retrieval-review-v1/originals/evidence/baloo-baseline-v1/README.md: OK
+evidence/retrieval-review-v1/originals/evidence/baloo-baseline-v1/results.json: OK
+evidence/retrieval-review-v1/originals/evidence/engine-review-v2/report.md: OK
+evidence/retrieval-review-v1/originals/evidence/engine-v2/candidate/src/core/engine.cpp: OK
+evidence/retrieval-review-v1/originals/evidence/engine-v2/candidate/src/core/engine.h: OK
+evidence/retrieval-review-v1/originals/evidence/retrieval-v1/baloo/daemon.log: OK
+evidence/retrieval-review-v1/originals/evidence/retrieval-v1/baloo/results.json: OK
+evidence/retrieval-review-v1/originals/evidence/retrieval-v1/baloo/session.log: OK
+evidence/retrieval-review-v1/originals/evidence/retrieval-v1/pins.sha256: OK
+evidence/retrieval-review-v1/originals/evidence/retrieval-v1/platform.json: OK
+evidence/retrieval-review-v1/originals/evidence/retrieval-v1/report.md: OK
+evidence/retrieval-review-v1/originals/evidence/retrieval-v1/score.json: OK
+evidence/retrieval-review-v1/originals/evidence/retrieval-v1/service/results.json: OK
+evidence/retrieval-review-v1/originals/evidence/retrieval-v1/service/service.log: OK
+evidence/retrieval-review-v1/originals/evidence/retrieval-v1/tools/baloo_baseline.py: OK
+evidence/retrieval-review-v1/originals/evidence/retrieval-v1/tools/retrieval_baloo.py: OK
+evidence/retrieval-review-v1/originals/evidence/retrieval-v1/tools/retrieval_score.py: OK
+evidence/retrieval-review-v1/originals/evidence/retrieval-v1/tools/retrieval_service.py: OK
+evidence/retrieval-review-v1/originals/local/baloo-source/src/lib/advancedqueryparser.cpp: OK
+evidence/retrieval-review-v1/originals/local/baloo-source/src/tools/baloosearch/main.cpp: OK
+evidence/retrieval-review-v1/pdf-pages-contact-sheet.png: OK
+evidence/retrieval-review-v1/pins.sha256: OK
+evidence/retrieval-review-v1/recompute.py: OK
+evidence/retrieval-review-v1/recomputed.json: OK
+evidence/retrieval-review-v1/report.md: OK
+evidence/retrieval-v1/baloo/daemon.log: OK
+evidence/retrieval-v1/baloo/results.json: OK
+evidence/retrieval-v1/baloo/session.log: OK
+evidence/retrieval-v1/pins.sha256: OK
+evidence/retrieval-v1/platform.json: OK
+evidence/retrieval-v1/report.md: OK
+evidence/retrieval-v1/score.json: OK
+evidence/retrieval-v1/service/results.json: OK
+evidence/retrieval-v1/service/service.log: OK
+evidence/retrieval-v1/tools/baloo_baseline.py: OK
+evidence/retrieval-v1/tools/retrieval_baloo.py: OK
+evidence/retrieval-v1/tools/retrieval_score.py: OK
+evidence/retrieval-v1/tools/retrieval_service.py: OK
+evidence/runner-discovery-v1/SHA256SUMS: OK
+evidence/runner-discovery-v1/candidate/CMakeLists.txt: OK
+evidence/runner-discovery-v1/candidate/helper-CMakeLists.txt: OK
+evidence/runner-discovery-v1/candidate/installed-runner-v2: OK
+evidence/runner-discovery-v1/candidate/installed_runner_v2.cpp: OK
+evidence/runner-discovery-v1/candidate/installed_runner_v2_service.py: OK
+evidence/runner-discovery-v1/candidate/kde-index-runner.json: OK
+evidence/runner-discovery-v1/candidate/kde-index-runner.so: OK
+evidence/runner-discovery-v1/candidate/runner.cpp: OK
+evidence/runner-discovery-v1/original/CMakeLists.txt: OK
+evidence/runner-discovery-v1/original/installed-runner: OK
+evidence/runner-discovery-v1/original/installed_runner.cpp: OK
+evidence/runner-discovery-v1/original/integration-results.json: OK
+evidence/runner-discovery-v1/original/libkde-index-runner.so: OK
+evidence/runner-discovery-v1/original/runner-v3-CMakeLists.txt: OK
+evidence/runner-discovery-v1/original/runner-v3-kde-index-runner.json: OK
+evidence/runner-discovery-v1/original/runner.json: OK
+evidence/runner-discovery-v1/original/runner.log: OK
+evidence/runner-discovery-v1/primary/inherited-runner-review-v3-report.md: OK
+evidence/runner-discovery-v1/primary/inherited-runner-v3-SHA256SUMS: OK
+evidence/runner-discovery-v1/primary/installed-kpluginmetadata.h: OK
+evidence/runner-discovery-v1/primary/kpluginmetadata-v6.30.0.cpp: OK
+evidence/runner-discovery-v1/primary/runnermanager-v6.30.0.cpp: OK
+evidence/runner-discovery-v1/receipts/clean-build-v2-pins.log: OK
+evidence/runner-discovery-v1/receipts/helper-build-final.log: OK
+evidence/runner-discovery-v1/receipts/helper-configure-final.log: OK
+evidence/runner-discovery-v1/receipts/identities.json: OK
+evidence/runner-discovery-v1/receipts/plugin-build-final.log: OK
+evidence/runner-discovery-v1/receipts/plugin-build.log: OK
+evidence/runner-discovery-v1/receipts/plugin-configure-final.log: OK
+evidence/runner-discovery-v1/receipts/plugin-configure.log: OK
+evidence/runner-discovery-v1/receipts/plugin-install-final.log: OK
+evidence/runner-discovery-v1/receipts/plugin-install.log: OK
+evidence/runner-discovery-v1/receipts/root-source-verification.log: OK
+evidence/runner-discovery-v1/receipts/runner-review-v3-pins.log: OK
+evidence/runner-discovery-v1/receipts/runner-v3-pins.log: OK
+evidence/runner-discovery-v1/receipts/service-run-v1/results.json: OK
+evidence/runner-discovery-v1/receipts/service-run-v1/service.log: OK
+evidence/runner-discovery-v1/receipts/service-run-v1/v3-derived-id.json: OK
+evidence/runner-discovery-v1/receipts/service-run-v1/v3-derived-id.stderr: OK
+evidence/runner-discovery-v1/receipts/service-run-v1/v4-original-helper.json: OK
+evidence/runner-discovery-v1/receipts/service-run-v1/v4-original-helper.stderr: OK
+evidence/runner-discovery-v1/receipts/service-run-v1/v4-stable-id.json: OK
+evidence/runner-discovery-v1/receipts/service-run-v1/v4-stable-id.stderr: OK
+evidence/runner-discovery-v1/receipts/service-run-v2/results.json: OK
+evidence/runner-discovery-v1/receipts/service-run-v2/service.log: OK
+evidence/runner-discovery-v1/receipts/service-run-v2/v3-derived-id.json: OK
+evidence/runner-discovery-v1/receipts/service-run-v2/v3-derived-id.stderr: OK
+evidence/runner-discovery-v1/receipts/service-run-v2/v4-original-helper.json: OK
+evidence/runner-discovery-v1/receipts/service-run-v2/v4-original-helper.stderr: OK
+evidence/runner-discovery-v1/receipts/service-run-v2/v4-stable-id.json: OK
+evidence/runner-discovery-v1/receipts/service-run-v2/v4-stable-id.stderr: OK
+evidence/runner-discovery-v1/receipts/source-delta.diff: OK
+evidence/runner-discovery-v1/receipts/v3-filename-id-positive.exit: OK
+evidence/runner-discovery-v1/receipts/v3-filename-id-positive.json: OK
+evidence/runner-discovery-v1/receipts/v3-filename-id-positive.stderr: OK
+evidence/runner-discovery-v1/receipts/v3-stable-id-negative.exit: OK
+evidence/runner-discovery-v1/receipts/v3-stable-id-negative.json: OK
+evidence/runner-discovery-v1/receipts/v3-stable-id-negative.stderr: OK
+evidence/runner-discovery-v1/receipts/v4-derived-id-negative.exit: OK
+evidence/runner-discovery-v1/receipts/v4-derived-id-negative.json: OK
+evidence/runner-discovery-v1/receipts/v4-derived-id-negative.stderr: OK
+evidence/runner-discovery-v1/receipts/v4-stable-id-positive.exit: OK
+evidence/runner-discovery-v1/receipts/v4-stable-id-positive.json: OK
+evidence/runner-discovery-v1/receipts/v4-stable-id-positive.stderr: OK
+evidence/runner-discovery-v1/report.md: OK
+evidence/runner-discovery-v1/results.json: OK
+evidence/runner-discovery-v1/root-source-pins.sha256: OK
+evidence/runner-privacy-review-v1/SHA256SUMS: OK
+evidence/runner-privacy-review-v1/analysis.json: OK
+evidence/runner-privacy-review-v1/build-v2.log: OK
+evidence/runner-privacy-review-v1/build.log: OK
+evidence/runner-privacy-review-v1/check.txt: OK
+evidence/runner-privacy-review-v1/closure-processes.txt: OK
+evidence/runner-privacy-review-v1/configure.log: OK
+evidence/runner-privacy-review-v1/consumer-binary: OK
+evidence/runner-privacy-review-v1/consumer-input.jsonl: OK
+evidence/runner-privacy-review-v1/consumer-run.json: OK
+evidence/runner-privacy-review-v1/consumer-v1.json: OK
+evidence/runner-privacy-review-v1/consumer-v1.stderr: OK
+evidence/runner-privacy-review-v1/consumer.json: OK
+evidence/runner-privacy-review-v1/consumer.stderr: OK
+evidence/runner-privacy-review-v1/helpers/CMakeLists.txt: OK
+evidence/runner-privacy-review-v1/helpers/check.py: OK
+evidence/runner-privacy-review-v1/helpers/consumer-v1.cpp: OK
+evidence/runner-privacy-review-v1/helpers/consumer.cpp: OK
+evidence/runner-privacy-review-v1/helpers/reused-manager.cpp: OK
+evidence/runner-privacy-review-v1/helpers/run-consumer.py: OK
+evidence/runner-privacy-review-v1/installed-Label.qml: OK
+evidence/runner-privacy-review-v1/manager-replay-run.json: OK
+evidence/runner-privacy-review-v1/manager-replay.jsonl: OK
+evidence/runner-privacy-review-v1/manager-replay.stderr: OK
+evidence/runner-privacy-review-v1/report.md: OK
+evidence/runner-privacy-v1/SHA256SUMS: OK
+evidence/runner-privacy-v1/build/build-controls.log: OK
+evidence/runner-privacy-v1/build/build-plugin.log: OK
+evidence/runner-privacy-v1/build/configure-controls.log: OK
+evidence/runner-privacy-v1/build/configure-plugin.log: OK
+evidence/runner-privacy-v1/candidate/CMakeLists.txt: OK
+evidence/runner-privacy-v1/candidate/kde-index-runner.json: OK
+evidence/runner-privacy-v1/candidate/kde-index-runner.so: OK
+evidence/runner-privacy-v1/candidate/runner.cpp: OK
+evidence/runner-privacy-v1/desktop-helper-affected.diff: OK
+evidence/runner-privacy-v1/helpers/controls-CMakeLists.txt: OK
+evidence/runner-privacy-v1/helpers/desktop_integration_observer.cpp: OK
+evidence/runner-privacy-v1/helpers/libdesktop-observer.so: OK
+evidence/runner-privacy-v1/helpers/runner_privacy_desktop.py: OK
+evidence/runner-privacy-v1/helpers/runner_privacy_desktop_v2.py: OK
+evidence/runner-privacy-v1/helpers/runner_privacy_manager.cpp: OK
+evidence/runner-privacy-v1/helpers/runner_privacy_native_verify.py: OK
+evidence/runner-privacy-v1/helpers/runner_privacy_verify.py: OK
+evidence/runner-privacy-v1/manager-check.txt: OK
+evidence/runner-privacy-v1/manager-v4.jsonl: OK
+evidence/runner-privacy-v1/manager-v4.stderr: OK
+evidence/runner-privacy-v1/manager-v5.jsonl: OK
+evidence/runner-privacy-v1/manager-v5.stderr: OK
+evidence/runner-privacy-v1/native-inherited-helper-identity.json: OK
+evidence/runner-privacy-v1/native-run1-check.txt: OK
+evidence/runner-privacy-v1/native-run1/app-observer/app-initial.json: OK
+evidence/runner-privacy-v1/native-run1/app.log: OK
+evidence/runner-privacy-v1/native-run1/canary.png: OK
+'evidence/runner-privacy-v1/native-run1/corpus/<b>ERROR-77331.pdf': OK
+'evidence/runner-privacy-v1/native-run1/corpus/<b>TITLE-77331.txt': OK
+evidence/runner-privacy-v1/native-run1/dolphin-observer/close-runner-reveal-target.json: OK
+evidence/runner-privacy-v1/native-run1/dolphin-observer/runner-reveal-target.json: OK
+evidence/runner-privacy-v1/native-run1/kde-index-service.log: OK
+evidence/runner-privacy-v1/native-run1/krunner.log: OK
+evidence/runner-privacy-v1/native-run1/probe.py: OK
+evidence/runner-privacy-v1/native-run1/results.json: OK
+evidence/runner-privacy-v1/native-run1/runner-observer/runner-before-reveal.json: OK
+evidence/runner-privacy-v1/native-run1/runner-observer/runner-current.json: OK
+evidence/runner-privacy-v1/native-run1/runner-observer/runner-frame.json: OK
+evidence/runner-privacy-v1/native-run1/runner-observer/runner-frame.png: OK
+evidence/runner-privacy-v1/native-run1/runner-observer/runner-hover.json: OK
+evidence/runner-privacy-v1/native-run1/runner-observer/runner-initial.json: OK
+evidence/runner-privacy-v1/native-run1/runner-observer/runner-reveal.json: OK
+evidence/runner-privacy-v1/native-run1/runner-observer/runner-select-down-0.json: OK
+evidence/runner-privacy-v1/native-run1/runner-observer/runner-selected-0.json: OK
+evidence/runner-privacy-v1/native-run1/runner-observer/runner-tooltip.json: OK
+evidence/runner-privacy-v1/native-run1/runner-observer/runner-visible-initial.json: OK
+evidence/runner-privacy-v1/native-run1/runner.log: OK
+evidence/runner-privacy-v1/native-run1/session.log: OK
+evidence/runner-privacy-v1/native-run2-check.txt: OK
+evidence/runner-privacy-v1/native-run2/app-observer/app-initial.json: OK
+evidence/runner-privacy-v1/native-run2/app.log: OK
+evidence/runner-privacy-v1/native-run2/canary.png: OK
+'evidence/runner-privacy-v1/native-run2/corpus/<b>ERROR-77331.pdf': OK
+'evidence/runner-privacy-v1/native-run2/corpus/<b>TITLE-77331.txt': OK
+evidence/runner-privacy-v1/native-run2/dolphin-observer/close-runner-reveal-target.json: OK
+evidence/runner-privacy-v1/native-run2/dolphin-observer/runner-reveal-target.json: OK
+evidence/runner-privacy-v1/native-run2/kde-index-service.log: OK
+evidence/runner-privacy-v1/native-run2/krunner.log: OK
+evidence/runner-privacy-v1/native-run2/probe.py: OK
+evidence/runner-privacy-v1/native-run2/results.json: OK
+evidence/runner-privacy-v1/native-run2/runner-observer/runner-before-reveal.json: OK
+evidence/runner-privacy-v1/native-run2/runner-observer/runner-current.json: OK
+evidence/runner-privacy-v1/native-run2/runner-observer/runner-frame.json: OK
+evidence/runner-privacy-v1/native-run2/runner-observer/runner-frame.png: OK
+evidence/runner-privacy-v1/native-run2/runner-observer/runner-hover.json: OK
+evidence/runner-privacy-v1/native-run2/runner-observer/runner-initial.json: OK
+evidence/runner-privacy-v1/native-run2/runner-observer/runner-pre-geometry.json: OK
+evidence/runner-privacy-v1/native-run2/runner-observer/runner-reveal.json: OK
+evidence/runner-privacy-v1/native-run2/runner-observer/runner-select-down-0.json: OK
+evidence/runner-privacy-v1/native-run2/runner-observer/runner-selected-0.json: OK
+evidence/runner-privacy-v1/native-run2/runner-observer/runner-set-height.json: OK
+evidence/runner-privacy-v1/native-run2/runner-observer/runner-set-list-width.json: OK
+evidence/runner-privacy-v1/native-run2/runner-observer/runner-tooltip.json: OK
+evidence/runner-privacy-v1/native-run2/runner-observer/runner-visible-initial.json: OK
+evidence/runner-privacy-v1/native-run2/runner.log: OK
+evidence/runner-privacy-v1/native-run2/session.log: OK
+evidence/runner-privacy-v1/original/desktop-integration-v1-SHA256SUMS: OK
+evidence/runner-privacy-v1/original/desktop-integration-v1-report.md: OK
+evidence/runner-privacy-v1/original/desktop_integration.py: OK
+evidence/runner-privacy-v1/original/runner-discovery-v1-SHA256SUMS: OK
+evidence/runner-privacy-v1/original/runner-v4.cpp: OK
+evidence/runner-privacy-v1/primary/installed-ResultDelegate.qml: OK
+evidence/runner-privacy-v1/primary/installed-ResultsView.qml: OK
+evidence/runner-privacy-v1/primary/installed-ToolTip.qml: OK
+evidence/runner-privacy-v1/primary/packages.txt: OK
+evidence/runner-privacy-v1/primary/qtextdocument-v6.12.0.cpp: OK
+evidence/runner-privacy-v1/primary/runnerresultsmodel-v6.30.0.cpp: OK
+evidence/runner-privacy-v1/report.md: OK
+evidence/runner-privacy-v1/results.json: OK
+evidence/runner-privacy-v1/root-source-pins.sha256: OK
+evidence/runner-privacy-v1/runner-v4-to-v5.diff: OK
+evidence/runner-privacy-v1/stage-identity.json: OK
+evidence/runner-review-v1/SHA256SUMS: OK
+evidence/runner-review-v1/report.md: OK
+evidence/runner-review-v2/SHA256SUMS: OK
+evidence/runner-review-v2/report.md: OK
+evidence/runner-review-v3/SHA256SUMS: OK
+evidence/runner-review-v3/report.md: OK
+evidence/runner-v1/SHA256SUMS: OK
+evidence/runner-v1/report.md: OK
+evidence/runner-v1/results.json: OK
+evidence/runner-v1/smoke.log: OK
+evidence/runner-v2/SHA256SUMS: OK
+evidence/runner-v2/actual-service.json: OK
+evidence/runner-v2/factory-smoke.log: OK
+evidence/runner-v2/manager-replay.jsonl: OK
+evidence/runner-v2/manager-replay.stderr: OK
+evidence/runner-v2/report.md: OK
+evidence/runner-v2/results.json: OK
+evidence/runner-v3/SHA256SUMS: OK
+evidence/runner-v3/actual-cold-service.json: OK
+evidence/runner-v3/factory-smoke.log: OK
+evidence/runner-v3/manager-replay.jsonl: OK
+evidence/runner-v3/manager-replay.stderr: OK
+evidence/runner-v3/report.md: OK
+evidence/runner-v3/results.json: OK
+evidence/runner-v3/service-pins.log: OK
+evidence/service-status-v1/candidate/CMakeLists.txt: OK
+evidence/service-status-v1/candidate/main.cpp: OK
+evidence/service-status-v1/pins.sha256: OK
+evidence/service-status-v1/raw/results.json: OK
+evidence/service-status-v1/raw/service.log: OK
+evidence/service-status-v1/report.md: OK
+evidence/service-status-v1/watch_failure.py: OK
+evidence/service-watch-v1/candidate/CMakeLists.txt: OK
+evidence/service-watch-v1/candidate/bin/service-original: OK
+evidence/service-watch-v1/candidate/bin/service-v2: OK
+evidence/service-watch-v1/candidate/src/service-v2/main.cpp: OK
+evidence/service-watch-v1/candidate/tools-watch_install_reconcile_v1.py: OK
+evidence/service-watch-v1/candidate/tools/watch_install_reconcile_v1.py: OK
+evidence/service-watch-v1/pins.sha256: OK
+evidence/service-watch-v1/report.md: OK
+evidence/service-watch-v1/results.json: OK
+evidence/ui-review-v1/CMakeLists.txt: OK
+evidence/ui-review-v1/actual-markup.json: OK
+evidence/ui-review-v1/actual-markup.log: OK
+evidence/ui-review-v1/actual-markup.png: OK
+evidence/ui-review-v1/build.log: OK
+evidence/ui-review-v1/candidate-pins-check.log: OK
+evidence/ui-review-v1/closure-v2.json: OK
+evidence/ui-review-v1/closure.json: OK
+evidence/ui-review-v1/dialog-final.json: OK
+evidence/ui-review-v1/dialog-final.log: OK
+evidence/ui-review-v1/dialog.json: OK
+evidence/ui-review-v1/dialog.log: OK
+evidence/ui-review-v1/harness.cpp: OK
+evidence/ui-review-v1/markup-final.json: OK
+evidence/ui-review-v1/markup-final.log: OK
+evidence/ui-review-v1/markup.png: OK
+evidence/ui-review-v1/model-check.log: OK
+evidence/ui-review-v1/peer-final.json: OK
+evidence/ui-review-v1/peer-final.log: OK
+evidence/ui-review-v1/peer.json: OK
+evidence/ui-review-v1/peer.log: OK
+evidence/ui-review-v1/pending-final.json: OK
+evidence/ui-review-v1/pending-final.log: OK
+evidence/ui-review-v1/pending.json: OK
+evidence/ui-review-v1/pending.log: OK
+evidence/ui-review-v1/pins-v2.sha256: OK
+evidence/ui-review-v1/pins.sha256: OK
+evidence/ui-review-v1/real-final.json: OK
+evidence/ui-review-v1/real-final.log: OK
+evidence/ui-review-v1/real.json: OK
+evidence/ui-review-v1/real.log: OK
+evidence/ui-review-v1/recovery-build.log: OK
+evidence/ui-review-v1/recovery-harness: OK
+evidence/ui-review-v1/recovery-harness.cpp: OK
+evidence/ui-review-v1/recovery.json: OK
+evidence/ui-review-v1/recovery.log: OK
+evidence/ui-review-v1/report-v2.md: OK
+evidence/ui-review-v1/report.md: OK
+evidence/ui-review-v1/review-harness: OK
+evidence/ui-review-v1/run-results.json: OK
+evidence/ui-review-v1/smoke-page.png: OK
+evidence/ui-review-v1/smoke-results.png: OK
+evidence/ui-review-v1/smoke.json: OK
+evidence/ui-review-v1/smoke.log: OK
+evidence/ui-review-v1/teardown-final.json: OK
+evidence/ui-review-v1/teardown-final.log: OK
+evidence/ui-review-v1/teardown.json: OK
+evidence/ui-review-v1/teardown.log: OK
+evidence/ui-review-v2/actual-markup.png: OK
+evidence/ui-review-v2/candidate-pins-check.log: OK
+evidence/ui-review-v2/check-closure.py: OK
+evidence/ui-review-v2/closure-unscoped.json: OK
+evidence/ui-review-v2/closure.json: OK
+evidence/ui-review-v2/exact-app-input.txt: OK
+evidence/ui-review-v2/exact-app-service.log: OK
+evidence/ui-review-v2/exact-app.json: OK
+evidence/ui-review-v2/exact-app.log: OK
+evidence/ui-review-v2/exact-app.png: OK
+evidence/ui-review-v2/exact-app.py: OK
+evidence/ui-review-v2/inputs/lifetime.txt: OK
+evidence/ui-review-v2/inputs/manual.pdf: OK
+evidence/ui-review-v2/inputs/markup.txt: OK
+evidence/ui-review-v2/inputs/recovery.txt: OK
+evidence/ui-review-v2/inputs/replacement.txt: OK
+evidence/ui-review-v2/interrupted-markup.json: OK
+evidence/ui-review-v2/interrupted-markup.log: OK
+evidence/ui-review-v2/interruption-closure.json: OK
+evidence/ui-review-v2/liveness.json: OK
+evidence/ui-review-v2/liveness.log: OK
+evidence/ui-review-v2/markup.json: OK
+evidence/ui-review-v2/markup.log: OK
+evidence/ui-review-v2/ownership-build.log: OK
+evidence/ui-review-v2/ownership-configure.log: OK
+evidence/ui-review-v2/ownership-harness: OK
+evidence/ui-review-v2/ownership-run.json: OK
+evidence/ui-review-v2/ownership.json: OK
+evidence/ui-review-v2/ownership.log: OK
+evidence/ui-review-v2/parent-clean-app.log: OK
+evidence/ui-review-v2/parent-clean-observation.json: OK
+evidence/ui-review-v2/parent-clean-window-page.png: OK
+evidence/ui-review-v2/phase-build.log: OK
+evidence/ui-review-v2/phase-configure.log: OK
+evidence/ui-review-v2/phase-harness: OK
+evidence/ui-review-v2/phase-run.json: OK
+evidence/ui-review-v2/phase.json: OK
+evidence/ui-review-v2/phase.log: OK
+evidence/ui-review-v2/pins.sha256: OK
+evidence/ui-review-v2/real.json: OK
+evidence/ui-review-v2/real.log: OK
+evidence/ui-review-v2/recovery.json: OK
+evidence/ui-review-v2/recovery.log: OK
+evidence/ui-review-v2/report.md: OK
+evidence/ui-review-v2/resume-controls.py: OK
+evidence/ui-review-v2/run-results.json: OK
+evidence/ui-review-v2/smoke-page.png: OK
+evidence/ui-review-v2/smoke-results.png: OK
+evidence/ui-review-v2/smoke.json: OK
+evidence/ui-review-v2/smoke.log: OK
+evidence/ui-review-v2/source/CMakeLists.txt: OK
+evidence/ui-review-v2/source/ownership.cpp: OK
+evidence/ui-review-v2/source/phase.cpp: OK
+evidence/ui-review-v2/surfaces.json: OK
+evidence/ui-review-v2/surfaces.log: OK
+evidence/ui-review-v2/surfaces.png: OK
+evidence/ui-review-v3/bin/ui-pixels: OK
+evidence/ui-review-v3/bin/ui-render: OK
+evidence/ui-review-v3/bin/ui-smoke: OK
+evidence/ui-review-v3/candidate-pins-check.log: OK
+evidence/ui-review-v3/check-closure.py: OK
+evidence/ui-review-v3/closure.json: OK
+evidence/ui-review-v3/inputs/manual.pdf: OK
+evidence/ui-review-v3/inputs/payment.txt: OK
+evidence/ui-review-v3/inputs/picture.jpg: OK
+evidence/ui-review-v3/installed-pins-check.log: OK
+evidence/ui-review-v3/installed/app.log: OK
+evidence/ui-review-v3/installed/binary-identity.json: OK
+evidence/ui-review-v3/installed/identity-check.json: OK
+evidence/ui-review-v3/installed/page-pixels.json: OK
+evidence/ui-review-v3/installed/parent-observation.json: OK
+evidence/ui-review-v3/installed/pixels-independent.json: OK
+evidence/ui-review-v3/installed/smoke.json: OK
+evidence/ui-review-v3/installed/smoke.log: OK
+evidence/ui-review-v3/installed/window-page.png: OK
+evidence/ui-review-v3/installed/window-premature.png: OK
+evidence/ui-review-v3/installed/window-raster.png: OK
+evidence/ui-review-v3/loading-negative-candidate.json: OK
+evidence/ui-review-v3/loading-negative-candidate.log: OK
+evidence/ui-review-v3/loading-negative-independent.json: OK
+evidence/ui-review-v3/loading-negative-independent.log: OK
+evidence/ui-review-v3/native-runs.json: OK
+evidence/ui-review-v3/parent-v2-blank-negative-candidate.json: OK
+evidence/ui-review-v3/parent-v2-blank-negative-candidate.log: OK
+evidence/ui-review-v3/parent-v2-blank-negative-independent.json: OK
+evidence/ui-review-v3/parent-v2-blank-negative-independent.log: OK
+evidence/ui-review-v3/parent-v2-blank.png: OK
+evidence/ui-review-v3/pins.sha256: OK
+evidence/ui-review-v3/pixel-runs.json: OK
+evidence/ui-review-v3/pixels-independent.py: OK
+evidence/ui-review-v3/render-loading.png: OK
+evidence/ui-review-v3/render-page.png: OK
+evidence/ui-review-v3/render-positive-candidate.json: OK
+evidence/ui-review-v3/render-positive-candidate.log: OK
+evidence/ui-review-v3/render-positive-independent.json: OK
+evidence/ui-review-v3/render-positive-independent.log: OK
+evidence/ui-review-v3/render-raster.png: OK
+evidence/ui-review-v3/render.json: OK
+evidence/ui-review-v3/render.log: OK
+evidence/ui-review-v3/report.md: OK
+evidence/ui-review-v3/run-native.py: OK
+evidence/ui-review-v3/run-pixels.py: OK
+evidence/ui-review-v3/smoke-page.png: OK
+evidence/ui-review-v3/smoke-positive-candidate.json: OK
+evidence/ui-review-v3/smoke-positive-candidate.log: OK
+evidence/ui-review-v3/smoke-positive-independent.json: OK
+evidence/ui-review-v3/smoke-positive-independent.log: OK
+evidence/ui-review-v3/smoke-premature.png: OK
+evidence/ui-review-v3/smoke-raster.png: OK
+evidence/ui-review-v3/smoke-results.png: OK
+evidence/ui-review-v3/smoke.json: OK
+evidence/ui-review-v3/smoke.log: OK
+evidence/ui-review-v3/source/Main.qml: OK
+evidence/ui-review-v3/source/backend.cpp: OK
+evidence/ui-review-v3/source/backend.h: OK
+evidence/ui-review-v3/source/main.cpp: OK
+evidence/ui-review-v3/source/ui_repair_pixels.cpp: OK
+evidence/ui-review-v3/source/ui_repair_render.cpp: OK
+evidence/ui-review-v3/source/ui_smoke.cpp: OK
+evidence/ui-review-v3/wrong-page-raster.png: OK
+evidence/ui-review-v3/wrong-page-source-negative-candidate.json: OK
+evidence/ui-review-v3/wrong-page-source-negative-candidate.log: OK
+evidence/ui-review-v3/wrong-page-source-negative-independent.json: OK
+evidence/ui-review-v3/wrong-page-source-negative-independent.log: OK
+evidence/ui-v1/candidate/CMakeLists.txt: OK
+evidence/ui-v1/candidate/bin/embedding-probe: OK
+evidence/ui-v1/candidate/bin/kde-index: OK
+evidence/ui-v1/candidate/bin/kde-index-service: OK
+evidence/ui-v1/candidate/bin/ui-smoke: OK
+evidence/ui-v1/candidate/docs/BUILD.md: OK
+evidence/ui-v1/candidate/packaging/org.kdeindex.Search.desktop: OK
+evidence/ui-v1/candidate/packaging/org.kdeindex.Search.metainfo.xml: OK
+evidence/ui-v1/candidate/src/ui/Main.qml: OK
+evidence/ui-v1/candidate/src/ui/backend.cpp: OK
+evidence/ui-v1/candidate/src/ui/backend.h: OK
+evidence/ui-v1/candidate/src/ui/main.cpp: OK
+evidence/ui-v1/candidate/tools/model_download.py: OK
+evidence/ui-v1/candidate/tools/ui_smoke.cpp: OK
+evidence/ui-v1/closure.json: OK
+evidence/ui-v1/installed-producer-parity/evaluation.log: OK
+evidence/ui-v1/installed-producer-parity/query-only.jsonl: OK
+evidence/ui-v1/installed-producer-parity/query-only.log: OK
+evidence/ui-v1/installed-producer-parity/results.json: OK
+evidence/ui-v1/installed-producer-parity/run-time.json: OK
+evidence/ui-v1/installed-producer-parity/run.jsonl: OK
+evidence/ui-v1/installed-producer-parity/run.log: OK
+evidence/ui-v1/installed/app.log: OK
+evidence/ui-v1/installed/app.png: OK
+evidence/ui-v1/installed/results.json: OK
+evidence/ui-v1/installed/window-page.png: OK
+evidence/ui-v1/installed/window-results.png: OK
+evidence/ui-v1/installed/window.log: OK
+evidence/ui-v1/native/results.json: OK
+evidence/ui-v1/native/window-page.png: OK
+evidence/ui-v1/native/window-results.png: OK
+evidence/ui-v1/native/window.log: OK
+evidence/ui-v1/pins.sha256: OK
+evidence/ui-v1/report.md: OK
+evidence/ui-v1/shutdown-counterexample/CMakeLists.txt: OK
+evidence/ui-v1/shutdown-counterexample/backend-before.cpp: OK
+evidence/ui-v1/shutdown-counterexample/before-app-v2.log: OK
+evidence/ui-v1/shutdown-counterexample/before-app-v2.png: OK
+evidence/ui-v1/shutdown-counterexample/before-app.log: OK
+evidence/ui-v1/shutdown-counterexample/before-pending.log: OK
+evidence/ui-v1/shutdown-counterexample/fixed.log: OK
+evidence/ui-v1/shutdown-counterexample/gui-before: OK
+evidence/ui-v1/shutdown-counterexample/original-app-backtrace.txt: OK
+evidence/ui-v1/shutdown-counterexample/original-app-repro.log: OK
+evidence/ui-v1/shutdown-counterexample/original-backtrace.txt: OK
+evidence/ui-v1/shutdown-counterexample/original-window.log: OK
+evidence/ui-v1/shutdown-counterexample/peer-control.cpp: OK
+evidence/ui-v2/candidate/bin/embedding-probe: OK
+evidence/ui-v2/candidate/bin/kde-index: OK
+evidence/ui-v2/candidate/bin/kde-index-service: OK
+evidence/ui-v2/candidate/bin/ui-liveness: OK
+evidence/ui-v2/candidate/bin/ui-recovery: OK
+evidence/ui-v2/candidate/bin/ui-repair: OK
+evidence/ui-v2/candidate/bin/ui-smoke: OK
+evidence/ui-v2/candidate/src/ui/Main.qml: OK
+evidence/ui-v2/candidate/src/ui/backend.cpp: OK
+evidence/ui-v2/candidate/src/ui/backend.h: OK
+evidence/ui-v2/candidate/src/ui/main.cpp: OK
+evidence/ui-v2/candidate/tools/model_download.py: OK
+evidence/ui-v2/candidate/tools/ui_repair_CMakeLists.txt: OK
+evidence/ui-v2/candidate/tools/ui_repair_harness.cpp: OK
+evidence/ui-v2/candidate/tools/ui_repair_liveness.cpp: OK
+evidence/ui-v2/candidate/tools/ui_repair_recovery.cpp: OK
+evidence/ui-v2/candidate/tools/ui_smoke.cpp: OK
+evidence/ui-v2/check-bin/ui-liveness-prior: OK
+evidence/ui-v2/check-bin/ui-repair-final2: OK
+evidence/ui-v2/check-src/ui-liveness-prior.cpp: OK
+evidence/ui-v2/check-src/ui-repair-final2.cpp: OK
+evidence/ui-v2/closure.json: OK
+evidence/ui-v2/inputs/lifetime.txt: OK
+evidence/ui-v2/inputs/manual.pdf: OK
+evidence/ui-v2/inputs/markup.txt: OK
+evidence/ui-v2/inputs/payment.txt: OK
+evidence/ui-v2/inputs/picture.jpg: OK
+evidence/ui-v2/inputs/recovery.txt: OK
+evidence/ui-v2/inputs/replacement.txt: OK
+evidence/ui-v2/pins.sha256: OK
+evidence/ui-v2/prior/helper-symlink-rejection.json: OK
+evidence/ui-v2/prior/liveness-main-thread-only.json: OK
+evidence/ui-v2/prior/recovery-phase-error.json: OK
+evidence/ui-v2/prior/surface-style-fetches.json: OK
+evidence/ui-v2/prior/surface-style-fetches.log: OK
+evidence/ui-v2/receipts/actual-markup.png: OK
+evidence/ui-v2/receipts/app-run.json: OK
+evidence/ui-v2/receipts/app.log: OK
+evidence/ui-v2/receipts/app.png: OK
+evidence/ui-v2/receipts/binary-identity.json: OK
+evidence/ui-v2/receipts/build.log: OK
+evidence/ui-v2/receipts/configure.log: OK
+evidence/ui-v2/receipts/controls-build.log: OK
+evidence/ui-v2/receipts/controls-configure.log: OK
+evidence/ui-v2/receipts/controls-run.json: OK
+evidence/ui-v2/receipts/dialog.json: OK
+evidence/ui-v2/receipts/dialog.log: OK
+evidence/ui-v2/receipts/liveness-run.json: OK
+evidence/ui-v2/receipts/liveness.json: OK
+evidence/ui-v2/receipts/liveness.log: OK
+evidence/ui-v2/receipts/markup.json: OK
+evidence/ui-v2/receipts/markup.log: OK
+evidence/ui-v2/receipts/model-check.log: OK
+evidence/ui-v2/receipts/peer.json: OK
+evidence/ui-v2/receipts/peer.log: OK
+evidence/ui-v2/receipts/pending.json: OK
+evidence/ui-v2/receipts/pending.log: OK
+evidence/ui-v2/receipts/predecessor-check.log: OK
+evidence/ui-v2/receipts/real.json: OK
+evidence/ui-v2/receipts/real.log: OK
+evidence/ui-v2/receipts/recovery-run.json: OK
+evidence/ui-v2/receipts/recovery-service.log: OK
+evidence/ui-v2/receipts/recovery.json: OK
+evidence/ui-v2/receipts/recovery.log: OK
+evidence/ui-v2/receipts/replacement-service.log: OK
+evidence/ui-v2/receipts/smoke-page.png: OK
+evidence/ui-v2/receipts/smoke-results.png: OK
+evidence/ui-v2/receipts/smoke-run.json: OK
+evidence/ui-v2/receipts/smoke.json: OK
+evidence/ui-v2/receipts/smoke.log: OK
+evidence/ui-v2/receipts/source-identity.json: OK
+evidence/ui-v2/receipts/surfaces-run.json: OK
+evidence/ui-v2/receipts/surfaces.json: OK
+evidence/ui-v2/receipts/surfaces.log: OK
+evidence/ui-v2/receipts/surfaces.png: OK
+evidence/ui-v2/receipts/teardown.json: OK
+evidence/ui-v2/receipts/teardown.log: OK
+evidence/ui-v2/report.md: OK
+evidence/ui-v3/candidate/bin/kde-index: OK
+evidence/ui-v3/candidate/bin/ui-pixels: OK
+evidence/ui-v3/candidate/bin/ui-render: OK
+evidence/ui-v3/candidate/bin/ui-smoke: OK
+evidence/ui-v3/candidate/src/ui/Main.qml: OK
+evidence/ui-v3/candidate/src/ui/backend.cpp: OK
+evidence/ui-v3/candidate/src/ui/backend.h: OK
+evidence/ui-v3/candidate/src/ui/main.cpp: OK
+evidence/ui-v3/candidate/tools/ui_repair_pixels.cpp: OK
+evidence/ui-v3/candidate/tools/ui_repair_pixels_CMakeLists.txt: OK
+evidence/ui-v3/candidate/tools/ui_repair_render.cpp: OK
+evidence/ui-v3/candidate/tools/ui_repair_render_CMakeLists.txt: OK
+evidence/ui-v3/candidate/tools/ui_smoke.cpp: OK
+evidence/ui-v3/closure.json: OK
+evidence/ui-v3/inputs/manual.pdf: OK
+evidence/ui-v3/pins.sha256: OK
+evidence/ui-v3/prior/exposure-gated-smoke: OK
+evidence/ui-v3/prior/exposure-gated-smoke.cpp: OK
+evidence/ui-v3/prior/exposure-gated.json: OK
+evidence/ui-v3/prior/exposure-gated.log: OK
+evidence/ui-v3/prior/parent-clean-app.log: OK
+evidence/ui-v3/prior/parent-clean-page.png: OK
+evidence/ui-v3/prior/parent-clean-smoke.json: OK
+evidence/ui-v3/prior/pixels-direct: OK
+evidence/ui-v3/prior/pixels-direct-smoke.json: OK
+evidence/ui-v3/prior/pixels-direct.cpp: OK
+evidence/ui-v3/prior/signal-only-render: OK
+evidence/ui-v3/prior/signal-only-render.cpp: OK
+evidence/ui-v3/prior/signal-only-render.json: OK
+evidence/ui-v3/prior/signal-only-smoke: OK
+evidence/ui-v3/prior/signal-only-smoke.cpp: OK
+evidence/ui-v3/prior/signal-only.json: OK
+evidence/ui-v3/receipts/build.log: OK
+evidence/ui-v3/receipts/configure.log: OK
+evidence/ui-v3/receipts/final-identity.json: OK
+evidence/ui-v3/receipts/pixels-build.log: OK
+evidence/ui-v3/receipts/pixels-configure.log: OK
+evidence/ui-v3/receipts/pixels-controlled-loading-negative.json: OK
+evidence/ui-v3/receipts/pixels-controlled-loading-negative.log: OK
+evidence/ui-v3/receipts/pixels-parent-blank-negative.json: OK
+evidence/ui-v3/receipts/pixels-parent-blank-negative.log: OK
+evidence/ui-v3/receipts/pixels-render.json: OK
+evidence/ui-v3/receipts/pixels-render.log: OK
+evidence/ui-v3/receipts/pixels-run.json: OK
+evidence/ui-v3/receipts/pixels-smoke.json: OK
+evidence/ui-v3/receipts/pixels-smoke.log: OK
+evidence/ui-v3/receipts/predecessor-check.log: OK
+evidence/ui-v3/receipts/render-build.log: OK
+evidence/ui-v3/receipts/render-configure.log: OK
+evidence/ui-v3/receipts/render-loading.png: OK
+evidence/ui-v3/receipts/render-page.png: OK
+evidence/ui-v3/receipts/render-raster.png: OK
+evidence/ui-v3/receipts/render-run.json: OK
+evidence/ui-v3/receipts/render.json: OK
+evidence/ui-v3/receipts/render.log: OK
+evidence/ui-v3/receipts/smoke-page.png: OK
+evidence/ui-v3/receipts/smoke-premature.png: OK
+evidence/ui-v3/receipts/smoke-raster.png: OK
+evidence/ui-v3/receipts/smoke-results.png: OK
+evidence/ui-v3/receipts/smoke-run.json: OK
+evidence/ui-v3/receipts/smoke.json: OK
+evidence/ui-v3/receipts/smoke.log: OK
+evidence/ui-v3/receipts/unchanged-backend-source.json: OK
+evidence/ui-v3/report.md: OK
+packaging/assemble_release.py: OK
+packaging/assemble_release_v2.py: OK
+packaging/export_public_source_v1.py: OK
+packaging/org.kdeindex.Search.desktop: OK
+packaging/org.kdeindex.Search.metainfo.xml: OK
+probe/CMakeLists.txt: OK
+probe/DigUp-LICENSE: OK
+probe/NOTICE: OK
+probe/README.md: OK
+probe/image_sizing.h: OK
+probe/main.cpp: OK
+probe/sizing_check.cpp: OK
+src/cli/main.cpp: OK
+src/core-v3/engine.cpp: OK
+src/core-v3/engine.h: OK
+src/core-v4/engine.cpp: OK
+src/core-v4/engine.h: OK
+src/core-v5/engine.cpp: OK
+src/core-v5/engine.h: OK
+src/core/engine.cpp: OK
+src/core/engine.h: OK
+src/runner-v2/CMakeLists.txt: OK
+src/runner-v2/kde-index-runner-v2.json: OK
+src/runner-v2/runner.cpp: OK
+src/runner-v3/CMakeLists.txt: OK
+src/runner-v3/kde-index-runner.json: OK
+src/runner-v3/runner.cpp: OK
+src/runner-v4/CMakeLists.txt: OK
+src/runner-v4/kde-index-runner.json: OK
+src/runner-v4/runner.cpp: OK
+src/runner-v5/CMakeLists.txt: OK
+src/runner-v5/kde-index-runner.json: OK
+src/runner-v5/runner.cpp: OK
+src/runner/CMakeLists.txt: OK
+src/runner/kde-index-runner.json: OK
+src/runner/runner.cpp: OK
+src/service-v2/main.cpp: OK
+src/service-v3/main.cpp: OK
+src/service/main.cpp: OK
+src/ui-v4/Main.qml: OK
+src/ui-v4/backend.cpp: OK
+src/ui-v4/backend.h: OK
+src/ui-v4/main.cpp: OK
+src/ui/Main.qml: OK
+src/ui/backend.cpp: OK
+src/ui/backend.h: OK
+src/ui/main.cpp: OK
+tools/baloo_baseline.py: OK
+tools/desktop_integration.py: OK
+tools/desktop_integration_CMakeLists.txt: OK
+tools/desktop_integration_freeze.py: OK
+tools/desktop_integration_observer.cpp: OK
+tools/desktop_integration_text_contract.cpp: OK
+tools/desktop_layout_CMakeLists.txt: OK
+tools/desktop_layout_freeze.py: OK
+tools/desktop_layout_observer.cpp: OK
+tools/desktop_layout_pair.py: OK
+tools/desktop_open_v3.py: OK
+tools/desktop_open_v3_CMakeLists.txt: OK
+tools/desktop_open_v3_freeze.py: OK
+tools/desktop_open_v3_gio.cpp: OK
+tools/desktop_open_v3_observer.cpp: OK
+tools/desktop_open_v3_run2.py: OK
+tools/embedding_evaluate.py: OK
+tools/embedding_prepare.py: OK
+tools/embedding_run.py: OK
+tools/embedding_setup.sh: OK
+tools/embedding_sizing_check.py: OK
+tools/engine_integration.py: OK
+tools/engine_repair_controls.py: OK
+tools/installed_integration.py: OK
+tools/installed_runner.cpp: OK
+tools/installed_runner/CMakeLists.txt: OK
+tools/installed_runner_v2.cpp: OK
+tools/installed_runner_v2/CMakeLists.txt: OK
+tools/installed_runner_v2_service.py: OK
+tools/local_root_baseline.cpp: OK
+tools/local_root_caps.py: OK
+tools/local_root_controls.cpp: OK
+tools/local_root_metadata.cpp: OK
+tools/local_root_names.py: OK
+tools/local_root_namespace.py: OK
+tools/local_root_permissions.py: OK
+tools/local_root_provider.c: OK
+tools/local_root_resolution.cpp: OK
+tools/local_root_v3_controls.cpp: OK
+tools/local_root_v3_lifecycle.py: OK
+tools/local_root_v3_uncertainty.py: OK
+tools/local_root_v4_status.py: OK
+tools/local_root_watch_gap.py: OK
+tools/local_root_watcher.py: OK
+tools/model_download.py: OK
+tools/retrieval_baloo.py: OK
+tools/retrieval_score.py: OK
+tools/retrieval_service.py: OK
+tools/runner-v2-actual-service/CMakeLists.txt: OK
+tools/runner-v2-replay-CMakeLists.txt: OK
+tools/runner-v2-replay/CMakeLists.txt: OK
+tools/runner_privacy/CMakeLists.txt: OK
+tools/runner_privacy_desktop.py: OK
+tools/runner_privacy_desktop_v2.py: OK
+tools/runner_privacy_manager.cpp: OK
+tools/runner_privacy_native_verify.py: OK
+tools/runner_privacy_verify.py: OK
+tools/runner_smoke.cpp: OK
+tools/runner_v2_actual_service.cpp: OK
+tools/runner_v2_manager_replay.cpp: OK
+tools/runner_v2_service_integration.py: OK
+tools/runner_v2_smoke.cpp: OK
+tools/runner_v2_verify.py: OK
+tools/runner_v3_actual_service.cpp: OK
+tools/runner_v3_actual_service/CMakeLists.txt: OK
+tools/runner_v3_manager_replay.cpp: OK
+tools/runner_v3_replay/CMakeLists.txt: OK
+tools/runner_v3_service_integration.py: OK
+tools/runner_v3_smoke.cpp: OK
+tools/runner_v3_verify.py: OK
+tools/runtime_setup.sh: OK
+tools/ui_repair_CMakeLists.txt: OK
+tools/ui_repair_harness.cpp: OK
+tools/ui_repair_liveness.cpp: OK
+tools/ui_repair_pixels.cpp: OK
+tools/ui_repair_recovery.cpp: OK
+tools/ui_repair_render.cpp: OK
+tools/ui_smoke.cpp: OK
+tools/watch_install_reconcile_v1.py: OK
+Cloning into 'vendor/llama.cpp'...
+CPU runtime source verified at 4d756bc72bf00a4aacf410ae15a2d315f3db400d plus the pinned no-logits patch.
+-- The C compiler identification is GNU 16.2.1
+-- The CXX compiler identification is GNU 16.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found OpenMP_C: -fopenmp (found version "5.2")
+-- Found OpenMP_CXX: -fopenmp (found version "5.2")
+-- Found OpenMP: TRUE (found version "5.2")
+-- llama.cpp version: 0.6.0-dev
+CMAKE_BUILD_TYPE=Release
+-- Found Git: /usr/bin/git (found version "2.56.0")
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/cc
+-- Warning: ccache not found - consider installing it for faster compilation or disable this warning with GGML_CCACHE=OFF
+-- CMAKE_SYSTEM_PROCESSOR: x86_64
+-- GGML_SYSTEM_ARCH: x86
+-- Found OpenMP_C: -fopenmp (found version "5.2")
+-- Found OpenMP_CXX: -fopenmp (found version "5.2")
+-- Including CPU backend
+-- x86 detected
+-- Adding CPU backend variant ggml-cpu: -msse4.2;-mf16c;-mfma;-mbmi2;-mavx;-mavx2 GGML_SSE42;GGML_F16C;GGML_FMA;GGML_BMI2;GGML_AVX;GGML_AVX2
+-- ggml version: 0.26.0
+-- ggml commit:  4d756bc
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_BINDIR got its value from CMAKE_INSTALL_BINDIR.  In most cases
+  this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_BINDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_BINDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:255 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v5/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_SBINDIR got its value from CMAKE_INSTALL_SBINDIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_SBINDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_SBINDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:258 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v5/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBDIR got its value from CMAKE_INSTALL_LIBDIR.  In most cases
+  this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:261 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v5/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v5/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_INCLUDEDIR got its value from CMAKE_INSTALL_INCLUDEDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_INCLUDEDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_INCLUDEDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:279 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v5/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LOCALSTATEDIR got its value from CMAKE_INSTALL_LOCALSTATEDIR.
+  In most cases this is unintended, check if you included GNUInstallDirs
+  before KDEInstallDirs.  Some third party modules include GNUInstallDirs too
+  so eg.  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If
+  you set CMAKE_INSTALL_LOCALSTATEDIR deliberately before including
+  KDEInstallDirs its recommended to use KDE_INSTALL_LOCALSTATEDIR instead to
+  suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:288 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v5/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_SHAREDSTATEDIR got its value from CMAKE_INSTALL_SHAREDSTATEDIR.
+  In most cases this is unintended, check if you included GNUInstallDirs
+  before KDEInstallDirs.  Some third party modules include GNUInstallDirs too
+  so eg.  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If
+  you set CMAKE_INSTALL_SHAREDSTATEDIR deliberately before including
+  KDEInstallDirs its recommended to use KDE_INSTALL_SHAREDSTATEDIR instead to
+  suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:291 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v5/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_DATAROOTDIR got its value from CMAKE_INSTALL_DATAROOTDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_DATAROOTDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_DATAROOTDIR instead to suppress this
+  message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:299 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v5/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_DATADIR got its value from CMAKE_INSTALL_DATADIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_DATADIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_DATADIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:304 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v5/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LOCALEDIR got its value from CMAKE_INSTALL_LOCALEDIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LOCALEDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LOCALEDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:332 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v5/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_MANDIR got its value from CMAKE_INSTALL_MANDIR.  In most cases
+  this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_MANDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_MANDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:357 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v5/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_INFODIR got its value from CMAKE_INSTALL_INFODIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_INFODIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_INFODIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:360 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v5/CMakeLists.txt:10 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_SYSCONFDIR got its value from CMAKE_INSTALL_SYSCONFDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_SYSCONFDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_SYSCONFDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:387 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  src/runner-v5/CMakeLists.txt:10 (include)
+
+
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.8") found components: Interpreter
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'Kirigamiplugin' is a dependency of 'kde-index', but the
+  link target it defines (KF6Kirigamiplugin) does not exist in the current
+  scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiPrivateplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6KirigamiPrivateplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiPolyfillplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6KirigamiPolyfillplugin) does not exist in
+  the current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiControlsplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6KirigamiControlsplugin) does not exist in
+  the current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiPlatformplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6::KirigamiPlatformplugin) does not exist in
+  the current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiDialogsplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6KirigamiDialogsplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiLayoutsplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6KirigamiLayoutsplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiFormsplugin' is a dependency of 'kde-index', but
+  the link target it defines (KF6KirigamiFormsplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiLayoutsPrivateplugin' is a dependency of
+  'kde-index', but the link target it defines
+  (KF6KirigamiLayoutsPrivateplugin) does not exist in the current scope.  The
+  plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiFormsPrivateTemplatesplugin' is a dependency of
+  'kde-index', but the link target it defines
+  (KF6KirigamiFormsPrivateTemplatesplugin) does not exist in the current
+  scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiFormsPrivateFlatplugin' is a dependency of
+  'kde-index', but the link target it defines
+  (KF6KirigamiFormsPrivateFlatplugin) does not exist in the current scope.
+  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KirigamiFormsPrivateCardsplugin' is a dependency of
+  'kde-index', but the link target it defines
+  (KF6KirigamiFormsPrivateCardsplugin) does not exist in the current scope.
+  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+CMake Warning at /usr/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:5021 (message):
+  The qml plugin 'KF6ConfigQmlplugin' is a dependency of 'kde-index', but the
+  link target it defines (KF6ConfigQmlplugin) does not exist in the current
+  scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (qt6_import_qml_plugins)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:832 (cmake_language)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:915 (_qt_internal_finalize_executable)
+  /usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:881:EVAL:1 (qt6_finalize_target)
+  CMakeLists.txt:DEFERRED
+
+
+-- Configuring done (3.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /public-clean-v2/source/build
+[1/185] Copying kde-index qml sources into build dir
+[2/185] Copying kde-index qml resources into build dir
+[3/185] Automatic MOC and UIC for target ggml-base
+[4/185] Automatic MOC and UIC for target vendor-hash
+[5/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-base.dir/ggml-base_autogen/mocs_compilation.cpp.o
+[6/185] Populating .qmlls.build.ini file at /public-clean-v2/source/build/.qt/.qmlls.build.ini
+[7/185] Running qmlimportscanner for kde-index
+[8/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.o
+[9/185] Building C object probe/llama-runtime/ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o
+[10/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o
+[11/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o
+[12/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o
+[13/185] Building C object probe/llama-runtime/ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o
+[14/185] Generating qt.conf part for kde-index
+[15/185] Generating qt.conf file
+[16/185] Building CXX object probe/llama-runtime/vendor/hash/CMakeFiles/vendor-hash.dir/vendor-hash_autogen/mocs_compilation.cpp.o
+[17/185] Building CXX object probe/llama-runtime/vendor/hash/CMakeFiles/vendor-hash.dir/hash.cpp.o
+[18/185] Building C object probe/llama-runtime/vendor/hash/CMakeFiles/vendor-hash.dir/xxhash/xxhash.c.o
+[19/185] Building CXX object probe/llama-runtime/vendor/hash/CMakeFiles/vendor-hash.dir/sha1/sha1.c.o
+[20/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend-meta.cpp.o
+[21/185] Building C object probe/llama-runtime/vendor/hash/CMakeFiles/vendor-hash.dir/sha256/sha256.c.o
+[22/185] Linking CXX static library probe/llama-runtime/vendor/hash/libvendor-hash.a
+[23/185] Automatic MOC and UIC for target kde-index-core
+[24/185] Building CXX object engine/CMakeFiles/kde-index-core.dir/kde-index-core_autogen/mocs_compilation.cpp.o
+[25/185] Automatic MOC and UIC for target kde-index
+[26/185] Running AUTOMOC file extraction for target kde-index
+[27/185] Running moc --collect-json for target kde-index
+[28/185] Automatic QML type registration for target kde-index
+[29/185] Running rcc for resource qmake_org_kde_kdeindex
+[30/185] Generating .rcc/qmlcache/kde-index_qmlcache_loader.cpp
+[31/185] Generating .rcc/qmlcache/kde-index_src_ui-v4_Main_qml.cpp, .rcc/qmlcache/kde-index_src_ui-v4_Main_qml.cpp.aotstats
+[32/185] Running rcc for resource kde-index_raw_qml_0
+[33/185] Automatic MOC and UIC for target kde-index-cli
+[34/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o
+[35/185] Automatic MOC and UIC for target kde-index-runner
+[36/185] Building CXX object CMakeFiles/kde-index.dir/kde-index_autogen/mocs_compilation.cpp.o
+[37/185] Building CXX object CMakeFiles/kde-index.dir/src/ui-v4/main.cpp.o
+[38/185] Building C object probe/llama-runtime/ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o
+[39/185] Linking CXX static library probe/llama-runtime/ggml/src/libggml-base.a
+[40/185] Automatic MOC and UIC for target ggml-cpu
+[41/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu_autogen/mocs_compilation.cpp.o
+[42/185] Building CXX object CMakeFiles/kde-index.dir/kde-index_qmltyperegistrations.cpp.o
+[43/185] Building C object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o
+[44/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o
+[45/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/hbm.cpp.o
+[46/185] Building CXX object CMakeFiles/kde-index.dir/src/ui-v4/backend.cpp.o
+[47/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/traits.cpp.o
+[48/185] Building C object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/quants.c.o
+[49/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o
+[50/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o
+[51/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/tiled/tiled-kernel.cpp.o
+[52/185] Building CXX object engine/CMakeFiles/kde-index-core.dir/__/src/core-v5/engine.cpp.o
+[53/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/binary-ops.cpp.o
+[54/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/vec.cpp.o
+[55/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/unary-ops.cpp.o
+[56/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/tiled/tiled.cpp.o
+[57/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/repack.cpp.o
+[58/185] Building C object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/quants.c.o
+[59/185] Linking CXX static library engine/libkde-index-core.a
+[60/185] Automatic MOC and UIC for target kde-index-service
+[61/185] Building CXX object CMakeFiles/kde-index.dir/.qt/rcc/qrc_qmake_org_kde_kdeindex.cpp.o
+[62/185] Building CXX object CMakeFiles/kde-index.dir/.rcc/qmlcache/kde-index_qmlcache_loader.cpp.o
+[63/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/repack.cpp.o
+[64/185] Building CXX object CMakeFiles/kde-index.dir/.qt/rcc/qrc_kde-index_raw_qml_0.cpp.o
+[65/185] Building CXX object engine/CMakeFiles/kde-index-service.dir/kde-index-service_autogen/mocs_compilation.cpp.o
+[66/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/llamafile/sgemm.cpp.o
+[67/185] Building CXX object engine/CMakeFiles/kde-index-cli.dir/kde-index-cli_autogen/mocs_compilation.cpp.o
+[68/185] Building CXX object CMakeFiles/kde-index.dir/.rcc/qmlcache/kde-index_src_ui-v4_Main_qml.cpp.o
+[69/185] Building CXX object src/runner-v5/CMakeFiles/kde-index-runner.dir/kde-index-runner_autogen/mocs_compilation.cpp.o
+[70/185] Building CXX object engine/CMakeFiles/kde-index-cli.dir/__/src/cli/main.cpp.o
+[71/185] Linking CXX executable bin/kde-index
+[72/185] Linking CXX executable bin/kde-index-cli
+[73/185] Building CXX object src/runner-v5/CMakeFiles/kde-index-runner.dir/runner.cpp.o
+[74/185] Building CXX object engine/CMakeFiles/kde-index-service.dir/__/src/service-v3/main.cpp.o
+[75/185] Linking CXX shared module src/runner-v5/kde-index-runner.so
+[76/185] Linking CXX executable bin/kde-index-service
+[77/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o
+[78/185] Linking CXX static library probe/llama-runtime/ggml/src/libggml-cpu.a
+[79/185] Automatic MOC and UIC for target ggml
+[80/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml.dir/ggml_autogen/mocs_compilation.cpp.o
+[81/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml.dir/ggml-backend-dl.cpp.o
+[82/185] Building CXX object probe/llama-runtime/ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o
+[83/185] Linking CXX static library probe/llama-runtime/ggml/src/libggml.a
+[84/185] Automatic MOC and UIC for target llama
+[85/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/Unity/unity_7_cxx.cxx.o
+[86/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/Unity/unity_9_cxx.cxx.o
+[87/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/Unity/unity_6_cxx.cxx.o
+[88/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/Unity/unity_8_cxx.cxx.o
+[89/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/Unity/unity_5_cxx.cxx.o
+[90/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/Unity/unity_4_cxx.cxx.o
+[91/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/Unity/unity_2_cxx.cxx.o
+[92/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/Unity/unity_3_cxx.cxx.o
+[93/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama.cpp.o
+[94/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-arch.cpp.o
+[95/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/Unity/unity_0_cxx.cxx.o
+[96/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-adapter.cpp.o
+[97/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/Unity/unity_1_cxx.cxx.o
+[98/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-cparams.cpp.o
+[99/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-chat.cpp.o
+[100/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-batch.cpp.o
+[101/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-hparams.cpp.o
+[102/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-impl.cpp.o
+[103/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-io.cpp.o
+[104/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-context.cpp.o
+[105/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-kv-cache-iswa.cpp.o
+[106/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-graph.cpp.o
+[107/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-grammar.cpp.o
+[108/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-kv-cache-dsa.cpp.o
+[109/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-kv-cache-dsa-iswa.cpp.o
+[110/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-kv-cache-msa.cpp.o
+[111/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-memory.cpp.o
+[112/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-kv-cache.cpp.o
+[113/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-memory-hybrid.cpp.o
+[114/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-memory-hybrid-iswa.cpp.o
+[115/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-mmap.cpp.o
+[116/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-memory-recurrent.cpp.o
+[117/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-kv-cache-dsv4.cpp.o
+[118/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-memory-hybrid-idx.cpp.o
+[119/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-model-saver.cpp.o
+[120/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-quant.cpp.o
+[121/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-model-loader.cpp.o
+[122/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/unicode-data.cpp.o
+[123/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-sampler.cpp.o
+[124/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-model.cpp.o
+[125/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/llama-vocab.cpp.o
+[126/185] Building CXX object probe/llama-runtime/src/CMakeFiles/llama.dir/unicode.cpp.o
+[127/185] Linking CXX static library probe/llama-runtime/src/libllama.a
+[128/185] Automatic MOC and UIC for target mtmd
+[129/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/mtmd_autogen/mocs_compilation.cpp.o
+[130/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/mtmd-audio.cpp.o
+[131/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/mtmd-image.cpp.o
+[132/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/mtmd.cpp.o
+[133/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/cogvlm.cpp.o
+[134/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/mtmd-helper-gen.cpp.o
+[135/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/conformer.cpp.o
+[136/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/deepseek4v.cpp.o
+[137/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/dots3note.cpp.o
+[138/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/dotsocr.cpp.o
+[139/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/exaone4_5.cpp.o
+[140/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/gemma4a.cpp.o
+[141/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/gemma4v.cpp.o
+[142/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/gemma4ua.cpp.o
+[143/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/gemma4uv.cpp.o
+[144/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/glm4v.cpp.o
+[145/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/granite-speech.cpp.o
+[146/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/hunyuanvl.cpp.o
+[147/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/granite4-vision.cpp.o
+[148/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/internvl.cpp.o
+[149/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/kimivl.cpp.o
+[150/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/kimik25.cpp.o
+[151/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/nemotron-v2-vl.cpp.o
+[152/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/mtmd-helper.cpp.o
+[153/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/muse-glimmer.cpp.o
+[154/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/llama4.cpp.o
+[155/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/llava.cpp.o
+[156/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/minicpmv.cpp.o
+[157/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/paddleocr.cpp.o
+[158/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/pixtral.cpp.o
+[159/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/qwen2vl.cpp.o
+[160/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/minimax-m3.cpp.o
+[161/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/qwen3vl.cpp.o
+[162/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/ling3vl.cpp.o
+[163/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/clip.cpp.o
+[164/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/mimovl.cpp.o
+[165/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/qwen3a.cpp.o
+[166/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/qwen3tts-spkenc.cpp.o
+[167/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/mimo-audio.cpp.o
+[168/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/pockettts-seanet.cpp.o
+[169/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/pockettts-spkenc.cpp.o
+[170/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/qwen3tts-gen.cpp.o
+[171/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/pockettts-gen.cpp.o
+[172/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/step3vl.cpp.o
+[173/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/siglip.cpp.o
+[174/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/whisper-enc.cpp.o
+[175/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/deepseekocr.cpp.o
+[176/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/deepseekocr2.cpp.o
+[177/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/mobilenetv5.cpp.o
+[178/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/youtuvl.cpp.o
+[179/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/yasa2.cpp.o
+[180/185] Building CXX object probe/llama-runtime/tools/mtmd/CMakeFiles/mtmd.dir/models/parakeet.cpp.o
+[181/185] Linking CXX static library probe/llama-runtime/tools/mtmd/libmtmd.a
+[182/185] Automatic MOC and UIC for target embedding-probe
+[183/185] Building CXX object probe/CMakeFiles/embedding-probe.dir/embedding-probe_autogen/mocs_compilation.cpp.o
+[184/185] Building CXX object probe/CMakeFiles/embedding-probe.dir/main.cpp.o
+[185/185] Linking CXX executable bin/embedding-probe
+-- Install configuration: "Release"
+-- Installing: /public-clean-v2/stage/usr/bin/embedding-probe
+-- Set non-toolchain portion of runtime path of "/public-clean-v2/stage/usr/bin/embedding-probe" to "$ORIGIN:$ORIGIN/../lib"
+-- Installing: /public-clean-v2/stage/usr/bin/kde-index-service
+-- Set non-toolchain portion of runtime path of "/public-clean-v2/stage/usr/bin/kde-index-service" to "$ORIGIN:$ORIGIN/../lib"
+-- Installing: /public-clean-v2/stage/usr/bin/kde-index-cli
+-- Set non-toolchain portion of runtime path of "/public-clean-v2/stage/usr/bin/kde-index-cli" to "$ORIGIN:$ORIGIN/../lib"
+-- Installing: /public-clean-v2/stage/usr/lib/qt6/plugins/kf6/krunner/kde-index-runner.so
+-- Set non-toolchain portion of runtime path of "/public-clean-v2/stage/usr/lib/qt6/plugins/kf6/krunner/kde-index-runner.so" to "$ORIGIN:$ORIGIN/../lib"
+-- Installing: /public-clean-v2/stage/usr/bin/kde-index
+-- Set non-toolchain portion of runtime path of "/public-clean-v2/stage/usr/bin/kde-index" to "$ORIGIN:$ORIGIN/../lib"
+-- Installing: /public-clean-v2/stage/usr/share/kde-index/model_download.py
+-- Installing: /public-clean-v2/stage/usr/share/applications/org.kdeindex.Search.desktop
+-- Installing: /public-clean-v2/stage/usr/share/metainfo/org.kdeindex.Search.metainfo.xml
+-- Installing: /public-clean-v2/stage/usr/share/licenses/kde-index/LICENSE
+-- Installing: /public-clean-v2/stage/usr/share/licenses/kde-index/THIRD_PARTY_NOTICES.md
+-- Up-to-date: /public-clean-v2/stage/usr/share/licenses/kde-index
+-- Installing: /public-clean-v2/stage/usr/share/licenses/kde-index/Apache-2.0.txt
+-- Installing: /public-clean-v2/stage/usr/share/licenses/kde-index/DigUp-MIT.txt
+-- Installing: /public-clean-v2/stage/usr/share/licenses/kde-index/llama.cpp-MIT.txt
+-- Installing: /public-clean-v2/stage/usr/share/licenses/kde-index/miniaudio-MIT-0.txt
+-- Installing: /public-clean-v2/stage/usr/share/licenses/kde-index/nlohmann-json-MIT.txt
+-- Installing: /public-clean-v2/stage/usr/share/licenses/kde-index/rotate-bits-MIT.txt
+-- Installing: /public-clean-v2/stage/usr/share/licenses/kde-index/sha1-Public-Domain.txt
+-- Installing: /public-clean-v2/stage/usr/share/licenses/kde-index/sha256-Public-Domain.txt
+-- Installing: /public-clean-v2/stage/usr/share/licenses/kde-index/sheredom-Unlicense.txt
+-- Installing: /public-clean-v2/stage/usr/share/licenses/kde-index/stb-image-MIT.txt
+-- Installing: /public-clean-v2/stage/usr/share/licenses/kde-index/xxHash-BSD-2-Clause.txt

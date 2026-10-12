@@ -1,0 +1,137 @@
+{
+  "known_pid_checks": [
+    {
+      "pid": 775641,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 775719,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 775814,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 776542,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 776824,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 776880,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 776967,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 776970,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 782217,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 782259,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 782345,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 782367,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 782592,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 782595,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    },
+    {
+      "pid": 799164,
+      "state": "absent",
+      "start_ticks": null,
+      "closed": true
+    }
+  ],
+  "remaining_scoped_native_processes": [
+    {
+      "pid": 828532,
+      "argv": [
+        "/home/parm/Documents/KDE Index/build-ui-v3/bin/ui-smoke",
+        "/home/parm/Documents/KDE Index/evidence/engine-v2/candidate/bin/kde-index-service",
+        "/home/parm/Documents/KDE Index/evidence/ui-v1/candidate/bin/embedding-probe",
+        "/home/parm/Documents/KDE Index/models",
+        "/home/parm/Documents/KDE Index/local/ui-v3-smoke-final/data",
+        "/home/parm/Documents/KDE Index/local/ui-v3-smoke-final/service.sock",
+        "/home/parm/Documents/KDE Index/local/ui-v3-smoke-final/corpus",
+        "/home/parm/Documents/KDE Index/local/ui-v3-smoke-final/smoke"
+      ]
+    },
+    {
+      "pid": 828549,
+      "argv": [
+        "/home/parm/Documents/KDE Index/evidence/engine-v2/candidate/bin/kde-index-service",
+        "--data-dir",
+        "/home/parm/Documents/KDE Index/local/ui-v3-smoke-final/data",
+        "--socket",
+        "/home/parm/Documents/KDE Index/local/ui-v3-smoke-final/service.sock",
+        "--probe",
+        "/home/parm/Documents/KDE Index/evidence/ui-v1/candidate/bin/embedding-probe",
+        "--probe-sha256",
+        "c532522e19a3619c1b938c91d0e4b1373ae7f07c31fd4383fbb27d993bc0e78f",
+        "--text-model",
+        "/home/parm/Documents/KDE Index/models/embeddinggemma-2-Q8_0.gguf",
+        "--image-model",
+        "/home/parm/Documents/KDE Index/models/mmproj-embeddinggemma-2-Q8_0.gguf"
+      ]
+    }
+  ],
+  "remaining_owned_socket_paths": [],
+  "observed_rasters": [
+    {
+      "path": "/tmp/ui-smoke-geUTTT/1.png",
+      "exists": false,
+      "directory_exists": false
+    }
+  ],
+  "real_model_partials": [],
+  "scope": "completed review native helpers/exact GUI and both independent harnesses; absent/exited-zombie PIDs are closed, not active; no child agents; interruption inventory preserved separately"
+}

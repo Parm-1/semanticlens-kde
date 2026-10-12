@@ -1,0 +1,30 @@
+{
+    "events": [
+        {
+            "event": "first-start",
+            "message": "Ready",
+            "ready": true
+        },
+        {
+            "disconnected": true,
+            "event": "owned-service-shutdown"
+        },
+        {
+            "connected": false,
+            "event": "after-retry-bound",
+            "message": "Unable to connect to the search service. Restart the application to retry.",
+            "socket_exists": false
+        },
+        {
+            "event": "fresh-backend-recovery",
+            "message": "Ready",
+            "ready": true
+        },
+        {
+            "event": "completion",
+            "harness_expectations": true,
+            "socket_exists": false
+        }
+    ],
+    "mode": "real"
+}

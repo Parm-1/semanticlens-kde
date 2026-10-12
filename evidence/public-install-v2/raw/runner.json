@@ -1,0 +1,48 @@
+{
+    "discovered": [
+        {
+            "file": "/usr/lib/qt6/plugins/kf6/krunner/kde-index-runner.so",
+            "id": "kde-index-runner",
+            "valid": true
+        }
+    ],
+    "finished": true,
+    "library_paths": [
+        "/usr/lib/qt6/plugins",
+        "/public-install-v2/default-runner-build"
+    ],
+    "matches": [
+        {
+            "data": {
+                "kind": "text",
+                "page": 0,
+                "path": "/public-install-v2/installed-target/corpus/payment.txt"
+            },
+            "relevance": 1,
+            "subtext": "Contact the bank when a credit card is declined. Receipt reference CARD-39312. ",
+            "text": "payment.txt"
+        },
+        {
+            "data": {
+                "kind": "pdf",
+                "page": 2,
+                "path": "/public-install-v2/installed-target/corpus/manual.pdf"
+            },
+            "relevance": 0.8681468955966763,
+            "subtext": "Page 2 · Maintenance serial PDF-10299 belongs to the cooling system.",
+            "text": "manual.pdf"
+        },
+        {
+            "data": {
+                "kind": "image",
+                "page": 0,
+                "path": "/public-install-v2/installed-target/corpus/picture.jpg"
+            },
+            "relevance": 0.8509069172031007,
+            "subtext": "/public-install-v2/installed-target/corpus/picture.jpg",
+            "text": "picture.jpg"
+        }
+    ],
+    "off_main_thread": true,
+    "pass": true
+}

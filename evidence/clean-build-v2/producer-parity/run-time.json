@@ -1,0 +1,13 @@
+{
+  "command": [
+    "local/stage-v2/usr/bin/embedding-probe",
+    "models/embeddinggemma-2-Q8_0.gguf",
+    "models/mmproj-embeddinggemma-2-Q8_0.gguf",
+    "6"
+  ],
+  "binary_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+  "exit_code": 0,
+  "elapsed_seconds": 25.95773991200258,
+  "peak_rss_kib": 1343996,
+  "scope": "One producer child in fresh Arch userspace sharing host kernel and CPU. Concurrent engineering work may affect timing. Frozen upstream inputs unchanged."
+}

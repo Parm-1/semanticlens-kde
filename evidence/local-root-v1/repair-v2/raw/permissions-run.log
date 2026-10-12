@@ -1,0 +1,1 @@
+{"outcome": "pass", "checks": 4, "closure": {"processes_closed": true, "known_worker_pids": [132152, 132170, 132224, 132240], "workers_closed": true, "source_permission_restored": true}}

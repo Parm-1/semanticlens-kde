@@ -1,0 +1,12 @@
+[  0%] Built target phase_autogen_timestamp_deps
+[  0%] Built target ownership_autogen_timestamp_deps
+[ 10%] Automatic MOC and UIC for target phase
+[ 20%] Automatic MOC and UIC for target ownership
+[ 20%] Built target ownership_autogen
+[ 60%] Built target ownership
+[ 60%] Built target phase_autogen
+[ 70%] Building CXX object CMakeFiles/phase.dir/phase_autogen/mocs_compilation.cpp.o
+[ 80%] Building CXX object CMakeFiles/phase.dir/phase.cpp.o
+[ 90%] Building CXX object CMakeFiles/phase.dir/home/parm/Documents/KDE_Index/evidence/ui-v2/candidate/src/ui/backend.cpp.o
+[100%] Linking CXX executable phase
+[100%] Built target phase

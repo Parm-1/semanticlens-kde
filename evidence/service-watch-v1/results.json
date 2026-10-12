@@ -1,0 +1,542 @@
+{
+  "outcome": "pass",
+  "checks": {
+    "actual_root_watch_absent_at_creation_both": true,
+    "actual_root_watch_present_after_both": true,
+    "original_did_not_automatically_index": true,
+    "original_explicit_scan_body_positive": true,
+    "candidate_automatically_indexed_body": true,
+    "candidate_idle_revision_stable": true,
+    "all_processes_and_sockets_closed": true
+  },
+  "cases": [
+    {
+      "name": "original",
+      "binary_sha256": "717f97ce74e8c74e45821e6271e58ecb457b281acdb8a5815136d7dbf73e6eb1",
+      "probe_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+      "before": {
+        "clock_ns": 12262257529225,
+        "root_inode": 8285196,
+        "root_watch_installed": false,
+        "raw": {}
+      },
+      "creation_clock_ns": [
+        12262257531750,
+        12262257632550
+      ],
+      "after": {
+        "clock_ns": 12266273283658,
+        "root_inode": 8285196,
+        "root_watch_installed": true,
+        "raw": {
+          "6": "pos:\t0\nflags:\t02000000\nmnt_id:\t19\nino:\t115\ninotify wd:2 ino:7e6c0d sdev:1c mask:cc6 ignored_mask:0 fhandle-bytes:14 fhandle-type:4d f_handle:0d6c7e00000000000101000000000000e5390000\ninotify wd:1 ino:7e6c0c sdev:1c mask:7c4 ignored_mask:0 fhandle-bytes:14 fhandle-type:4d f_handle:0c6c7e00000000000101000000000000e5390000\n"
+        }
+      },
+      "pre_scan_status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 1,
+        "indexed": 1,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 1,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "/home/parm/Documents/KDE Index/local/build-own/service-watch-v1/original-root"
+          }
+        ],
+        "segments": 1,
+        "total": 1,
+        "watch_error": ""
+      },
+      "pre_scan_search": {
+        "generation": 2,
+        "id": "145",
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 1,
+        "ok": true,
+        "protocol": 1,
+        "results": [
+          {
+            "exact": false,
+            "kind": "text",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 0,
+            "path": "/home/parm/Documents/KDE Index/local/build-own/service-watch-v1/original-root/source.txt",
+            "score": 0.7111374531991458,
+            "semantic_score": 0.5980616925823502,
+            "term_match": false,
+            "text": "ORIGINAL-OWNED-92111 initial source content",
+            "title": "source.txt",
+            "warning": ""
+          }
+        ]
+      },
+      "pre_scan_body_positive": false,
+      "explicit_scan_search": {
+        "generation": 3,
+        "id": "151",
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 2,
+        "ok": true,
+        "protocol": 1,
+        "results": [
+          {
+            "exact": true,
+            "kind": "text",
+            "match_scope": "text",
+            "match_type": "literal",
+            "page": 0,
+            "path": "/home/parm/Documents/KDE Index/local/build-own/service-watch-v1/original-root/auto.txt",
+            "score": 1,
+            "semantic_score": 0.7839541470096253,
+            "term_match": true,
+            "text": "WATCH-INSTALL-RECONCILE-60431 automatically discovered file body",
+            "title": "auto.txt",
+            "warning": ""
+          },
+          {
+            "exact": false,
+            "kind": "text",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 0,
+            "path": "/home/parm/Documents/KDE Index/local/build-own/service-watch-v1/original-root/source.txt",
+            "score": 0.7111374531991458,
+            "semantic_score": 0.5980616925823502,
+            "term_match": false,
+            "text": "ORIGINAL-OWNED-92111 initial source content",
+            "title": "source.txt",
+            "warning": ""
+          }
+        ]
+      },
+      "after_explicit": {
+        "clock_ns": 12266604017541,
+        "root_inode": 8285196,
+        "root_watch_installed": true,
+        "raw": {
+          "6": "pos:\t0\nflags:\t02000000\nmnt_id:\t19\nino:\t115\ninotify wd:3 ino:7e6c34 sdev:1c mask:cc6 ignored_mask:0 fhandle-bytes:14 fhandle-type:4d f_handle:346c7e00000000000101000000000000e6390000\ninotify wd:2 ino:7e6c0d sdev:1c mask:cc6 ignored_mask:0 fhandle-bytes:14 fhandle-type:4d f_handle:0d6c7e00000000000101000000000000e5390000\ninotify wd:1 ino:7e6c0c sdev:1c mask:7c4 ignored_mask:0 fhandle-bytes:14 fhandle-type:4d f_handle:0c6c7e00000000000101000000000000e5390000\n"
+        }
+      },
+      "idle_before": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 2,
+        "indexed": 2,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 2,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "/home/parm/Documents/KDE Index/local/build-own/service-watch-v1/original-root"
+          }
+        ],
+        "segments": 2,
+        "total": 2,
+        "watch_error": ""
+      },
+      "idle_after": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 2,
+        "indexed": 2,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 2,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "/home/parm/Documents/KDE Index/local/build-own/service-watch-v1/original-root"
+          }
+        ],
+        "segments": 2,
+        "total": 2,
+        "watch_error": ""
+      },
+      "child_pids_before_shutdown": [],
+      "shutdown": {
+        "accepted": true,
+        "id": "154",
+        "ok": true,
+        "protocol": 1
+      },
+      "closure": {
+        "service_exit": 0,
+        "children_absent": true,
+        "socket_absent": true
+      }
+    },
+    {
+      "name": "service-v2",
+      "binary_sha256": "57d2156f751f2cc830757225d9a6884dbb3fb255af05cc979de2436dd4e580bd",
+      "probe_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+      "before": {
+        "clock_ns": 12278533101134,
+        "root_inode": 8285310,
+        "root_watch_installed": false,
+        "raw": {}
+      },
+      "creation_clock_ns": [
+        12278533103268,
+        12278533184662
+      ],
+      "after": {
+        "clock_ns": 12279176132282,
+        "root_inode": 8285310,
+        "root_watch_installed": true,
+        "raw": {
+          "6": "pos:\t0\nflags:\t02000000\nmnt_id:\t19\nino:\t115\ninotify wd:3 ino:7e6c90 sdev:1c mask:cc6 ignored_mask:0 fhandle-bytes:14 fhandle-type:4d f_handle:906c7e00000000000101000000000000e7390000\ninotify wd:2 ino:7e6c7e sdev:1c mask:7c4 ignored_mask:0 fhandle-bytes:14 fhandle-type:4d f_handle:7e6c7e00000000000101000000000000e6390000\ninotify wd:1 ino:7e6c7f sdev:1c mask:cc6 ignored_mask:0 fhandle-bytes:14 fhandle-type:4d f_handle:7f6c7e00000000000101000000000000e6390000\n"
+        }
+      },
+      "pre_scan_status": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 2,
+        "indexed": 2,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 2,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "/home/parm/Documents/KDE Index/local/build-own/service-watch-v1/service-v2-root"
+          }
+        ],
+        "segments": 2,
+        "total": 2,
+        "watch_error": ""
+      },
+      "pre_scan_search": {
+        "generation": 2,
+        "id": "96",
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 2,
+        "ok": true,
+        "protocol": 1,
+        "results": [
+          {
+            "exact": true,
+            "kind": "text",
+            "match_scope": "text",
+            "match_type": "literal",
+            "page": 0,
+            "path": "/home/parm/Documents/KDE Index/local/build-own/service-watch-v1/service-v2-root/auto.txt",
+            "score": 1,
+            "semantic_score": 0.7839541470096253,
+            "term_match": true,
+            "text": "WATCH-INSTALL-RECONCILE-60431 automatically discovered file body",
+            "title": "auto.txt",
+            "warning": ""
+          },
+          {
+            "exact": false,
+            "kind": "text",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 0,
+            "path": "/home/parm/Documents/KDE Index/local/build-own/service-watch-v1/service-v2-root/source.txt",
+            "score": 0.7111374531991458,
+            "semantic_score": 0.5980616925823502,
+            "term_match": false,
+            "text": "ORIGINAL-OWNED-92111 initial source content",
+            "title": "source.txt",
+            "warning": ""
+          }
+        ]
+      },
+      "pre_scan_body_positive": true,
+      "explicit_scan_search": null,
+      "after_explicit": {
+        "clock_ns": 12279241489557,
+        "root_inode": 8285310,
+        "root_watch_installed": true,
+        "raw": {
+          "6": "pos:\t0\nflags:\t02000000\nmnt_id:\t19\nino:\t115\ninotify wd:3 ino:7e6c90 sdev:1c mask:cc6 ignored_mask:0 fhandle-bytes:14 fhandle-type:4d f_handle:906c7e00000000000101000000000000e7390000\ninotify wd:2 ino:7e6c7e sdev:1c mask:7c4 ignored_mask:0 fhandle-bytes:14 fhandle-type:4d f_handle:7e6c7e00000000000101000000000000e6390000\ninotify wd:1 ino:7e6c7f sdev:1c mask:cc6 ignored_mask:0 fhandle-bytes:14 fhandle-type:4d f_handle:7f6c7e00000000000101000000000000e6390000\n"
+        }
+      },
+      "idle_before": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 2,
+        "indexed": 2,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 2,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "/home/parm/Documents/KDE Index/local/build-own/service-watch-v1/service-v2-root"
+          }
+        ],
+        "segments": 2,
+        "total": 2,
+        "watch_error": ""
+      },
+      "idle_after": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 2,
+        "indexed": 2,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 2,
+        "ready": true,
+        "recovery_attempt": 1,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "/home/parm/Documents/KDE Index/local/build-own/service-watch-v1/service-v2-root"
+          }
+        ],
+        "segments": 2,
+        "total": 2,
+        "watch_error": ""
+      },
+      "child_pids_before_shutdown": [],
+      "shutdown": {
+        "accepted": true,
+        "id": "99",
+        "ok": true,
+        "protocol": 1
+      },
+      "closure": {
+        "service_exit": 0,
+        "children_absent": true,
+        "socket_absent": true
+      }
+    }
+  ]
+}

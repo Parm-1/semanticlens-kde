@@ -1,0 +1,4 @@
+[1/4] Automatic MOC for target kde-index-runner
+[2/4] Building CXX object CMakeFiles/kde-index-runner.dir/kde-index-runner_autogen/mocs_compilation.cpp.o
+[3/4] Building CXX object CMakeFiles/kde-index-runner.dir/runner.cpp.o
+[4/4] Linking CXX shared module kde-index-runner.so

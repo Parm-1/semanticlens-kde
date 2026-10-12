@@ -1,0 +1,1 @@
+NATIVE-LAYOUT-66442 plain owned text for stock geometry and source opening.

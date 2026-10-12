@@ -1,0 +1,31 @@
+{
+  "binary_sha256": "45181fa5c03d19c561bc6fd37cbd00e9493f08ab751fcd75844206797447165a",
+  "runs": [
+    {
+      "name": "run",
+      "command": [
+        "/public-clean-v1/stage/usr/bin/embedding-probe",
+        "/public-parity-v1/models/embeddinggemma-2-Q8_0.gguf",
+        "/public-parity-v1/models/mmproj-embeddinggemma-2-Q8_0.gguf",
+        "6"
+      ],
+      "exit_code": 0,
+      "begin_ns": 16944631262236,
+      "end_ns": 16970455779695
+    },
+    {
+      "name": "query-only",
+      "command": [
+        "/public-clean-v1/stage/usr/bin/embedding-probe",
+        "/public-parity-v1/models/embeddinggemma-2-Q8_0.gguf",
+        "/public-parity-v1/models/mmproj-embeddinggemma-2-Q8_0.gguf",
+        "6",
+        "--text-only"
+      ],
+      "exit_code": 0,
+      "begin_ns": 16970455786438,
+      "end_ns": 16971571457360
+    }
+  ],
+  "scope": "Actual source-archive-built producer in owned Arch userspace; diagnostic correctness, no performance claim."
+}

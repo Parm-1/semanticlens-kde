@@ -1,0 +1,18 @@
+{
+  "remaining_review_native_processes": [],
+  "other_project_native_processes_left_untouched": [],
+  "remaining_review_sockets": [],
+  "recorded_temp_rasters": [
+    {
+      "path": "/tmp/ui-render-HmRCLk/1.png",
+      "exists": false,
+      "directory_exists": false
+    },
+    {
+      "path": "/tmp/ui-smoke-IUcAdX/1.png",
+      "exists": false,
+      "directory_exists": false
+    }
+  ],
+  "scope": "review-owned prefixes/native helpers; retained evidence raster copies are intentional; separate parent/author jobs untouched; no children delegated"
+}

@@ -1,0 +1,43 @@
+[ 16%] Built target review_qmlimportscan
+[ 16%] Built target review_autogen_timestamp_deps
+[ 33%] Automatic MOC and UIC for target review
+[ 33%] Built target review_autogen
+[ 50%] Building CXX object CMakeFiles/review.dir/review.cpp.o
+/home/parm/Documents/KDE Index/local/ui-review-v1/review.cpp: In function ‘int main(int, char**)’:
+/home/parm/Documents/KDE Index/local/ui-review-v1/review.cpp:36:104: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   36 |    QString corpus=own+"/markup-corpus";QDir().mkpath(corpus);QFile file(corpus+"/markup.txt");file.open(QIODevice::WriteOnly);file.write(QString("<b>MARKUP-CANARY</b><img src='http://127.0.0.1:%1/actual-service-canary.png'>").arg(http.serverPort()).toUtf8());file.close();
+      |                                                                                               ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qdir.h:11,
+                 from /usr/include/qt6/QtCore/qtemporarydir.h:9,
+                 from /usr/include/qt6/QtCore/QTemporaryDir:1,
+                 from /home/parm/Documents/KDE Index/local/ui-review-v1/../../evidence/ui-v1/candidate/src/ui/backend.h:9,
+                 from /home/parm/Documents/KDE Index/local/ui-review-v1/review.cpp:1:
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/local/ui-review-v1/review.cpp:81:93: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   81 |    if(pending){QDir().mkpath(own+"/renderer");QFile fake(own+"/renderer/pdftoppm");fake.open(QIODevice::WriteOnly);fake.write("#!/usr/bin/python3\nimport os,time\nopen(os.path.join(os.path.dirname(__file__),'preview.pid'),'w').write(str(os.getpid()))\ntime.sleep(60)\n");fake.close();fake.setPermissions(QFile::ReadOwner|QFile::WriteOwner|QFile::ExeOwner);QFile::remove(own+"/renderer/preview.pid");qputenv("PATH",(own+"/renderer:").toUtf8()+qgetenv("PATH"));}
+      |                                                                                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/local/ui-review-v1/review.cpp:82:46: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   82 |    QFile script(paths.downloader);script.open(QIODevice::WriteOnly);script.write("import os,time\nopen(os.path.join(os.path.dirname(__file__),'download.pid'),'w').write(str(os.getpid()))\ntime.sleep(60)\n");script.close();
+      |                                   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/local/ui-review-v1/review.cpp:88:27: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   88 |    QFile p(pidfile);p.open(QIODevice::ReadOnly);auto pid=p.readAll().toLongLong();record("after-destructor",{{"download_pid",double(pid)},{"download_alive",pid>0&&::kill(pid,0)==0},{"preview_exists",QFileInfo::exists(preview)}});outcome&=pid>0&&::kill(pid,0)!=0&&!QFileInfo::exists(preview);
+      |                     ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/parm/Documents/KDE Index/local/ui-review-v1/review.cpp:89:59: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   89 |    if(pending){QFile p(own+"/renderer/preview.pid");p.open(QIODevice::ReadOnly);auto pid=p.readAll().toLongLong();record("pending-preview-after-destructor",{{"pid",double(pid)},{"alive",pid>0&&::kill(pid,0)==0}});outcome&=pid>0&&::kill(pid,0)!=0;}
+      |                                                     ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+[ 66%] Linking CXX executable review
+[100%] Built target review

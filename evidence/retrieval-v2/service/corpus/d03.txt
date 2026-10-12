@@ -1,0 +1,1 @@
+The camera stores photographs on a removable memory card. Before erasing the card, copy the pictures to a second drive and verify that the copies open. Reference CAM-25816.

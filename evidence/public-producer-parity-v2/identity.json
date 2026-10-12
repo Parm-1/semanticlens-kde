@@ -1,0 +1,35 @@
+{
+  "producer_sha256": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+  "producer_path": "local/clean-arch-v1/root.x86_64/public-clean-v2/stage/usr/bin/embedding-probe",
+  "producer_hash_receipt": "evidence/public-clean-build-v2/producer-hashes.txt",
+  "source_archive_sha256": "6faeb1ed7df43834eef73702265ae7a298c8e9c53b2f5c5b0b6fe865cbfcd928",
+  "source_commit": "5beacaebb65427478e7e2dd820c8cbea64cf13ea",
+  "runtime_revision": "4d756bc72bf00a4aacf410ae15a2d315f3db400d",
+  "runtime_patch_sha256": "33c8c4812a4307aef3f398e5ba622edcc54ef421054edd98ca0f71906b9a2d7e",
+  "model": {
+    "name": "google/embeddinggemma-2",
+    "revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+    "weights_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135",
+    "weights_bytes": 309855456,
+    "mmproj_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+    "mmproj_bytes": 554821024
+  },
+  "source_identity_receipts": {
+    "clean_build_identity": "evidence/public-clean-build-v2/identity.json",
+    "extracted_source_check": "evidence/public-clean-build-v2/extracted-source-check.json",
+    "candidate_source_hashes": "evidence/public-clean-build-v2/candidate-source-hashes.txt",
+    "stage_manifest": "evidence/public-clean-build-v2/stage-manifest.json"
+  },
+  "producer_info_line_sha256": "14919043c65505b89e332b1a164e66418c03b604cee1f503e82887a86fdb26a1",
+  "observed_info": {
+    "backend": "CPU",
+    "dimension": 768,
+    "model": "google/embeddinggemma-2",
+    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+    "pipeline": "digup-vectors1-linux-cpu-probe1",
+    "runtime": "llama.cpp-b11461+no-logits",
+    "max_tokens": 2048
+  },
+  "model_usage": "unknown",
+  "package_elapsed_scope": "Whole setup/run/validation elapsed unknown. run-time.json records two diagnostic request intervals, not a performance benchmark. No RSS collected."
+}

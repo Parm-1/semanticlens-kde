@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=KDE Index
+Comment=Find local documents and images by what they contain
+Exec=kde-index
+Icon=system-search
+Terminal=false
+Categories=Utility;FileTools;Qt;KDE;
+Keywords=search;semantic;files;documents;images;

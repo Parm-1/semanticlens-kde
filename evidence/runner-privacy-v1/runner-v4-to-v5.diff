@@ -1,0 +1,43 @@
+--- src/runner-v4/runner.cpp	2026-10-11 22:03:43.064085855 -0400
++++ src/runner-v5/runner.cpp	2026-10-12 01:57:47.529722383 -0400
+@@ -108,6 +108,18 @@
+     if (text.size() > maxChars) text = text.left(maxChars - 1) + QChar(0x2026);
+     return text;
+ }
++
++// Milou forwards these fields to Plasma ToolTip labels using AutoText and strips
++// ASCII ampersands for mnemonics. Keep source passages readable without letting
++// Qt recognize HTML tags/entities. This is presentation only: IDs, URLs and
++// action data retain the original source strings.
++QString displayText(QString text)
++{
++    text.replace(QLatin1Char('<'), QChar(0xff1c));
++    text.replace(QLatin1Char('>'), QChar(0xff1e));
++    text.replace(QLatin1Char('&'), QChar(0xff06));
++    return text;
++}
+ }
+ 
+ class KDEIndexRunner final : public KRunner::AbstractRunner
+@@ -169,8 +181,8 @@
+                 return;
+             }
+             diagnostic.setId(matchId);
+-            diagnostic.setText(title);
+-            diagnostic.setSubtext(subtext);
++            diagnostic.setText(displayText(title));
++            diagnostic.setSubtext(displayText(subtext));
+             diagnostic.setIconName(QStringLiteral("dialog-information"));
+             diagnostic.setRelevance(0.2);
+             diagnostic.setData(QVariantMap{{QStringLiteral("setup"), setup}});
+@@ -216,8 +228,8 @@
+             if (detail.isEmpty()) detail = path;
+             KRunner::QueryMatch match(this);
+             match.setId(path + QLatin1Char('#') + QString::number(page));
+-            match.setText(displayTitle);
+-            match.setSubtext(detail);
++            match.setText(displayText(displayTitle));
++            match.setSubtext(displayText(detail));
+             match.setIconName(kind == QStringLiteral("pdf") ? QStringLiteral("application-pdf") : QStringLiteral("text-x-generic"));
+             // `score` is the producer ranking score: exact hits are 1; semantic_score remains a separate dot diagnostic.
+             // Map the producer contract range monotonically into KRunner relevance [0,1].

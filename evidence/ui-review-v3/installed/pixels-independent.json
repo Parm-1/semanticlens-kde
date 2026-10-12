@@ -1,0 +1,35 @@
+{
+  "raw_report": "evidence/ui-review-v3/installed/smoke.json",
+  "source_raster": "evidence/ui-review-v3/installed/window-raster.png",
+  "capture": "evidence/ui-review-v3/installed/window-page.png",
+  "declared_rect": [
+    566,
+    165,
+    405,
+    523
+  ],
+  "observed_nearby_white_bounds": [
+    566,
+    165,
+    404,
+    524
+  ],
+  "paper_edge_correction": true,
+  "evaluated_rect": [
+    566,
+    165,
+    404,
+    524
+  ],
+  "source_ink_pixels": 755,
+  "source_ink_witness": [
+    45,
+    38,
+    223,
+    14
+  ],
+  "mean_gray_error": 0.30738889728667523,
+  "ink_correlation": 0.8009406919048709,
+  "pass": true,
+  "method": "Pillow bilinear source resize; NumPy independent gray/ink Pearson calculation; no offset/content/correlation search; inherited thresholds 20 ink, MAE<=10, corr>=.65; fixture-specific"
+}

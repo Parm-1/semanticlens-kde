@@ -1,0 +1,78 @@
+--- tools/desktop_integration.py	2026-10-12 01:59:43.088304876 -0400
++++ tools/runner_privacy_desktop.py	2026-10-12 02:04:10.145591046 -0400
+@@ -9,7 +9,7 @@
+  out=a.output.resolve();stage=a.stage.resolve();assert not out.exists();out.mkdir(parents=True)
+  for n in ['home','config','cache','data','runtime','runner-observer','app-observer','dolphin-observer']: (out/n).mkdir()
+  (out/'runtime').chmod(0o700)
+- shutil.copy2(__file__,out/'probe.py');shutil.copy2(P/'build-desktop-integration-v1/build/libdesktop-observer.so',out/'libdesktop-observer.so')
++ shutil.copy2(__file__,out/'probe.py');shutil.copy2(P/'local/build-own/runner-privacy-v1/libdesktop-observer.so',out/'libdesktop-observer.so')
+  cmd=['bwrap','--ro-bind','/','/','--tmpfs','/home','--tmpfs','/root','--tmpfs','/run','--tmpfs','/tmp','--unshare-pid','--unshare-net','--proc','/proc','--dev','/dev','--bind',str(out),'/tmp/work','--ro-bind',str(stage),'/tmp/stage','--ro-bind',str(P/'models'),'/tmp/models','--ro-bind',os.environ['XDG_RUNTIME_DIR']+'/'+os.environ['WAYLAND_DISPLAY'],'/tmp/work/runtime/wayland-0','--clearenv']
+  for k,v in {'PATH':'/tmp/work/bin:/tmp/stage/bin:/usr/bin:/bin','HOME':'/tmp/work/home','XDG_CONFIG_HOME':'/tmp/work/config','XDG_CACHE_HOME':'/tmp/work/cache','XDG_DATA_HOME':'/tmp/work/data','XDG_RUNTIME_DIR':'/tmp/work/runtime','XDG_DATA_DIRS':'/tmp/stage/share:/usr/share','QT_PLUGIN_PATH':'/tmp/stage/lib/qt6/plugins:/usr/lib/qt6/plugins','WAYLAND_DISPLAY':'wayland-0','QT_QPA_PLATFORM':'wayland','QT_QUICK_BACKEND':'software','LANG':'C.UTF-8','XDG_CURRENT_DESKTOP':'KDE','XDG_SESSION_TYPE':'wayland','DESKTOP_SESSION':'plasma','KDE_INDEX_SOCKET':'/tmp/work/service-relay.sock'}.items():cmd+=['--setenv',k,v]
+  cmd+=['dbus-run-session','--','python','/tmp/work/probe.py','--session']
+@@ -37,7 +37,8 @@
+  def log_message(self,*a):pass
+ http=http.server.ThreadingHTTPServer(('127.0.0.1',0),HTTP);ht=threading.Thread(target=http.serve_forever,daemon=True);ht.start();port=http.server_port
+ corpus=O/'corpus';corpus.mkdir();title='<b>TITLE-77331.txt';source=corpus/title
+-source.write_text(f'DESKTOP-77331 <img src="http://127.0.0.1:{port}/passage" /> ' + 'Synthetic owned passage. '*20)
++source.write_text(f'DESKTOP-77331 <img src="http://127.0.0.1:{port}/passage" /> &lt;ENTITY&gt; R&D A & B ' + 'Synthetic owned passage. '*20)
++display_title=title.translate(str.maketrans({'<':'＜','>':'＞','&':'＆'}))
+ (corpus/'<b>ERROR-77331.pdf').write_bytes(b'invalid owned PDF')
+ report['sources']={str(f):sha(f) for f in corpus.iterdir()};report['stage_binary_sha256']={str(f):sha(f) for f in [Path('/tmp/stage/bin/kde-index-service'),Path('/tmp/stage/bin/embedding-probe'),Path('/tmp/stage/bin/kde-index'),Path('/tmp/stage/lib/qt6/plugins/kf6/krunner/kde-index-runner.so'),Path('/usr/bin/krunner'),Path('/usr/bin/dolphin')]}
+ service=spawn(['/tmp/stage/bin/kde-index-service','--socket','/tmp/work/service.sock','--data-dir','/tmp/work/index','--probe','/tmp/stage/bin/embedding-probe','--probe-sha256',sha('/tmp/stage/bin/embedding-probe'),'--text-model','/tmp/models/embeddinggemma-2-Q8_0.gguf','--image-model','/tmp/models/mmproj-embeddinggemma-2-Q8_0.gguf'])
+@@ -94,7 +95,7 @@
+  rs=observe('runner','runner-initial');aps=observe('app','app-initial');report['initial_result_nodes']={'runner':find_nodes(rs,lambda n:'TITLE-77331' in n.get('text','') or 'DESKTOP-77331' in n.get('text','')),'app':find_nodes(aps,lambda n:'TITLE-77331' in n.get('text','') or 'DESKTOP-77331' in n.get('text',''))}
+  lists=find_nodes(rs,lambda n:n.get('count',0)>0 and n.get('currentIndex') is not None );report['runner_lists']=lists
+  if lists:
+-  delegates=find_nodes(rs,lambda n:n.get('displayText')==title and 'ResultDelegate' in n['class'])
++  delegates=find_nodes(rs,lambda n:n.get('displayText')==display_title and 'ResultDelegate' in n['class'])
+   report['runner_source_delegates']=delegates
+   if delegates and lists[0]['currentIndex']!=delegates[0]['index']:
+    window=find_nodes(rs,lambda n:n['class']=='View')[0]
+@@ -102,28 +103,15 @@
+     observe('runner','runner-select-down-'+str(i),'key',node=window['node'],key=16777237);time.sleep(.1)
+     selected=observe('runner','runner-selected-'+str(i));selected_lists=find_nodes(selected,lambda n:n['class'].startswith('ResultsView') and n.get('count',0)>0)
+     if selected_lists and selected_lists[0]['currentIndex']==delegates[0]['index']:break
+- time.sleep(.3);rs=observe('runner','runner-current');sub=find_nodes(rs,lambda n:n.get('text','').startswith('DESKTOP-77331 <img') and n.get('effective_visible') and n.get('textFormat')=='PlainText' and n.get('width',0)>0);report['runner_subtext_nodes']=sub
++ time.sleep(.3);rs=observe('runner','runner-current');sub=find_nodes(rs,lambda n:n.get('text','').startswith('DESKTOP-77331 ＜img') and n.get('effective_visible') and n.get('textFormat')=='PlainText' and n.get('width',0)>0);report['runner_subtext_nodes']=sub
+  if sub:observe('runner','runner-hover','hover',node=sub[0]['node']);time.sleep(1.5);report['runner_after_hover']=observe('runner','runner-tooltip');observe('runner','runner-frame','capture')
+- # Open the actual indexed UI error dialog, retaining source-derived path/error.
+- buttons=find_nodes(aps,lambda n:n.get('text')=='View errors and warnings…')
+- if buttons:observe('app','app-errors-open','invoke',node=buttons[0]['node'],method='clicked');time.sleep(.3);report['app_error_nodes']=find_nodes(observe('app','app-errors'),lambda n:'ERROR-77331' in n.get('text','') or 'extractor failed' in n.get('text',''))
+- report['privacy_gets_after_visible_consumers']=list(gets)
+- # Actual native action dispatch; Dolphin selection read only after async directory load.
+- if buttons:
+-  errors=find_nodes(observe('app','app-errors-dialog'),lambda n:n.get('title')=='Files needing attention')
+-  if errors:observe('app','app-errors-close','invoke',node=errors[0]['node'],method='close')
+- aps=observe('app','app-before-actions')
+- reveals=find_nodes(aps,lambda n:n.get('text')=='Show in Dolphin' and n.get('effective_visible'))
+- if reveals:
+-  report['app_reveal_invocation']=observe('app','app-reveal','invoke',node=reveals[0]['node'],method='clicked')['success'];time.sleep(2)
+-  ds=observe('dolphin','app-reveal-target');report['app_reveal_target']=find_nodes(ds,lambda n:n['class']=='DolphinView')
+- if report.get('app_reveal_target'):
+-  ds=observe('dolphin','close-app-reveal-target');os.kill(ds['snapshot']['pid'],15);time.sleep(.5)
++ urllib.request.urlopen(f'http://127.0.0.1:{port}/positive-after-hover').read();report['privacy_gets_after_visible_consumers']=list(gets)
++ # Runner display repair affected action: original source is still selected in Dolphin.
+  if lists:
+   subprocess.run(['/usr/bin/qdbus6','org.kde.krunner','/App','org.kde.krunner.App.querySingleRunner','kde-index-runner','find DESKTOP-77331'],timeout=5,stdout=subprocess.DEVNULL);time.sleep(1)
+   rs=observe('runner','runner-before-reveal');lists=find_nodes(rs,lambda n:n.get('count',0)>0 and n.get('currentIndex') is not None )
+   if lists:
+-   delegates=find_nodes(rs,lambda n:n.get('displayText')==title and 'ResultDelegate' in n['class']);report['runner_action_source_delegates']=delegates
++   delegates=find_nodes(rs,lambda n:n.get('displayText')==display_title and 'ResultDelegate' in n['class']);report['runner_action_source_delegates']=delegates
+    if not delegates:raise RuntimeError('actual owned source delegate missing')
+    window=find_nodes(rs,lambda n:n['class']=='View')[0]
+    for i in range(3):
+@@ -136,14 +124,6 @@
+    report['runner_reveal_target']=find_nodes(observe('dolphin','runner-reveal-target'),lambda n:n['class']=='DolphinView')
+  if report.get('runner_reveal_target'):
+   ds=observe('dolphin','close-runner-reveal-target');os.kill(ds['snapshot']['pid'],15);time.sleep(.5)
+- opens=find_nodes(aps,lambda n:n.get('text')=='Open file' and n.get('effective_visible'))
+- if opens:
+-  portal=spawn(['/usr/bin/dbus-monitor','--session',"interface='org.freedesktop.portal.OpenURI'","interface='org.freedesktop.portal.Request'"]);time.sleep(.1)
+-  report['app_open_invocation']=observe('app','app-open','invoke',node=opens[0]['node'],method='clicked')['success'];time.sleep(1)
+-  try:report['app_open_target']=find_nodes(observe('dolphin','app-open-target'),lambda n:n['class']=='DolphinView')
+-  except TimeoutError:report['app_open_target_boundary']='No newly observed Dolphin consumer within bounded wait; open not qualified'
+-  report['app_open_api_events']=[json.loads(line) for line in (O/'app-observer/openUrl-events.jsonl').read_text().splitlines()] if (O/'app-observer/openUrl-events.jsonl').exists() else []
+-  report['app_open_controlled_association']=(O/'config/mimeapps.list').read_text()
+  report['status']='frontends-observed';req('shutdown');service.wait(timeout=15)
+ except Exception as e:report['error']=repr(e)
+ finally:

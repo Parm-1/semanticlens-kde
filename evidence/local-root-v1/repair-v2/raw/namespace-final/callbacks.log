@@ -1,0 +1,11 @@
+getattr /provider.txt
+open /provider.txt
+getattr /provider.txt
+read /provider.txt
+read /provider.txt
+getattr /provider.txt
+getattr /provider.txt
+open /provider.txt
+getattr /provider.txt
+read /provider.txt
+read /provider.txt

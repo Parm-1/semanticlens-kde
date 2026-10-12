@@ -1,0 +1,12 @@
+{
+  "clock": "time.monotonic_ns",
+  "observation_ns": 17897760870559,
+  "exact_target_executables": [
+    "/home/parm/Documents/KDE Index/local/build-integrated-v7/bin/kde-index-service",
+    "/home/parm/Documents/KDE Index/local/build-integrated-v8/bin/kde-index-service",
+    "/home/parm/Documents/KDE Index/local/build-integrated-v8/bin/ui-smoke",
+    "/home/parm/Documents/KDE Index/local/installed-host-v3/stage/usr/bin/embedding-probe"
+  ],
+  "matches": [],
+  "scope": "One post-review executable inventory; not an exhaustive short-lived process profiler."
+}

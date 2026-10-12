@@ -1,0 +1,22 @@
+{
+  "GPL-2.0.txt": {
+    "url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt",
+    "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6",
+    "bytes": 17984
+  },
+  "LGPL-2.0.txt": {
+    "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.0.txt",
+    "sha256": "cc535c21133c895b56b374c8a1dc1eb948d99003ed2b47372069456b62f42b24",
+    "bytes": 25270
+  },
+  "LGPL-2.1.txt": {
+    "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt",
+    "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95",
+    "bytes": 26419
+  },
+  "LGPL-3.0.txt": {
+    "url": "https://www.gnu.org/licenses/lgpl-3.0.txt",
+    "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118",
+    "bytes": 7652
+  }
+}

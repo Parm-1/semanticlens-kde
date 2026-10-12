@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.24)
+project(KDEIndexRunnerV3Replay LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(Qt6 REQUIRED COMPONENTS Core Network)
+find_package(KF6Runner REQUIRED)
+find_package(KF6CoreAddons REQUIRED)
+add_executable(runner-v3-manager-replay ../runner_v3_manager_replay.cpp)
+target_link_libraries(runner-v3-manager-replay PRIVATE Qt6::Core Qt6::Network KF6::Runner KF6::CoreAddons)

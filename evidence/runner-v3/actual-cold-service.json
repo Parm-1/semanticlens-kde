@@ -1,0 +1,793 @@
+{
+  "service_sha256": "f41633a233a61a4592ae5350b8659401d6fbaf5c8cd4c8d73fffe2c1ed282d12",
+  "probe_sha256": "f34469aa625f5000a7a3bb24a04b3c0cc91cf63ddb4e4a17fdbbf0fa1f49a9bf",
+  "model_sha256": {
+    "embeddinggemma-2-Q8_0.gguf": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135",
+    "mmproj-embeddinggemma-2-Q8_0.gguf": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f"
+  },
+  "thread_count": 6,
+  "marker": "RUNNER-V3-COLD-IDENTIFIER-81356",
+  "runs": [
+    {
+      "label": "warm-before-first-idle",
+      "process_elapsed_ms": 161.401,
+      "exit_code": 0,
+      "result": {
+        "elapsed_ms": 55,
+        "main_timer_ticks": 5,
+        "matches": [
+          {
+            "data": {
+              "kind": "text",
+              "page": 0,
+              "path": "<workspace>/local/runner-v3-retry2/runtime/corpus/cold-result.txt"
+            },
+            "relevance": 1,
+            "subtext": "RUNNER-V3-COLD-IDENTIFIER-81356: exact path through two cold producer reloads and a warm query. ",
+            "text": "cold-result.txt"
+          }
+        ],
+        "pass": true,
+        "reset_observed": false,
+        "reset_to_final_observation_ms": 0,
+        "runner_on_main_thread": false
+      },
+      "stderr": "",
+      "children_after": [
+        {
+          "pid": 603314,
+          "exe": "<workspace>/build-probe/embedding-probe"
+        }
+      ]
+    },
+    {
+      "label": "cold-query-1",
+      "process_elapsed_ms": 1887.76,
+      "exit_code": 0,
+      "result": {
+        "elapsed_ms": 1862,
+        "main_timer_ticks": 186,
+        "matches": [
+          {
+            "data": {
+              "kind": "text",
+              "page": 0,
+              "path": "<workspace>/local/runner-v3-retry2/runtime/corpus/cold-result.txt"
+            },
+            "relevance": 1,
+            "subtext": "RUNNER-V3-COLD-IDENTIFIER-81356: exact path through two cold producer reloads and a warm query. ",
+            "text": "cold-result.txt"
+          }
+        ],
+        "pass": true,
+        "reset_observed": false,
+        "reset_to_final_observation_ms": 0,
+        "runner_on_main_thread": false
+      },
+      "stderr": "",
+      "children_after": [
+        {
+          "pid": 603530,
+          "exe": "<workspace>/build-probe/embedding-probe"
+        }
+      ]
+    },
+    {
+      "label": "warm-after-cold-1",
+      "process_elapsed_ms": 93.287,
+      "exit_code": 0,
+      "result": {
+        "elapsed_ms": 60,
+        "main_timer_ticks": 6,
+        "matches": [
+          {
+            "data": {
+              "kind": "text",
+              "page": 0,
+              "path": "<workspace>/local/runner-v3-retry2/runtime/corpus/cold-result.txt"
+            },
+            "relevance": 1,
+            "subtext": "RUNNER-V3-COLD-IDENTIFIER-81356: exact path through two cold producer reloads and a warm query. ",
+            "text": "cold-result.txt"
+          }
+        ],
+        "pass": true,
+        "reset_observed": false,
+        "reset_to_final_observation_ms": 0,
+        "runner_on_main_thread": false
+      },
+      "stderr": "",
+      "children_after": [
+        {
+          "pid": 603530,
+          "exe": "<workspace>/build-probe/embedding-probe"
+        }
+      ]
+    },
+    {
+      "label": "cold-query-2",
+      "process_elapsed_ms": 1793.485,
+      "exit_code": 0,
+      "result": {
+        "elapsed_ms": 1765,
+        "main_timer_ticks": 176,
+        "matches": [
+          {
+            "data": {
+              "kind": "text",
+              "page": 0,
+              "path": "<workspace>/local/runner-v3-retry2/runtime/corpus/cold-result.txt"
+            },
+            "relevance": 1,
+            "subtext": "RUNNER-V3-COLD-IDENTIFIER-81356: exact path through two cold producer reloads and a warm query. ",
+            "text": "cold-result.txt"
+          }
+        ],
+        "pass": true,
+        "reset_observed": false,
+        "reset_to_final_observation_ms": 0,
+        "runner_on_main_thread": false
+      },
+      "stderr": "",
+      "children_after": [
+        {
+          "pid": 603606,
+          "exe": "<workspace>/build-probe/embedding-probe"
+        }
+      ]
+    },
+    {
+      "label": "warm-after-cold-2",
+      "process_elapsed_ms": 79.781,
+      "exit_code": 0,
+      "result": {
+        "elapsed_ms": 54,
+        "main_timer_ticks": 5,
+        "matches": [
+          {
+            "data": {
+              "kind": "text",
+              "page": 0,
+              "path": "<workspace>/local/runner-v3-retry2/runtime/corpus/cold-result.txt"
+            },
+            "relevance": 1,
+            "subtext": "RUNNER-V3-COLD-IDENTIFIER-81356: exact path through two cold producer reloads and a warm query. ",
+            "text": "cold-result.txt"
+          }
+        ],
+        "pass": true,
+        "reset_observed": false,
+        "reset_to_final_observation_ms": 0,
+        "runner_on_main_thread": false
+      },
+      "stderr": "",
+      "children_after": [
+        {
+          "pid": 603606,
+          "exe": "<workspace>/build-probe/embedding-probe"
+        }
+      ]
+    },
+    {
+      "label": "cold-reset",
+      "process_elapsed_ms": 300.933,
+      "exit_code": 0,
+      "result": {
+        "elapsed_ms": 259,
+        "main_timer_ticks": 25,
+        "matches": [],
+        "pass": true,
+        "reset_observed": true,
+        "reset_to_final_observation_ms": 150,
+        "runner_on_main_thread": false
+      },
+      "stderr": "",
+      "children_after": []
+    }
+  ],
+  "checks": [
+    {
+      "name": "pinned-input-kde-index-service",
+      "pass": true,
+      "detail": {
+        "expected": "f41633a233a61a4592ae5350b8659401d6fbaf5c8cd4c8d73fffe2c1ed282d12"
+      }
+    },
+    {
+      "name": "pinned-input-embedding-probe",
+      "pass": true,
+      "detail": {
+        "expected": "f34469aa625f5000a7a3bb24a04b3c0cc91cf63ddb4e4a17fdbbf0fa1f49a9bf"
+      }
+    },
+    {
+      "name": "pinned-input-embeddinggemma-2-Q8_0.gguf",
+      "pass": true,
+      "detail": {
+        "expected": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+      }
+    },
+    {
+      "name": "pinned-input-mmproj-embeddinggemma-2-Q8_0.gguf",
+      "pass": true,
+      "detail": {
+        "expected": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f"
+      }
+    },
+    {
+      "name": "service-producer-identity",
+      "pass": true,
+      "detail": {
+        "backend": "CPU",
+        "byte_order": "little",
+        "dimension": 768,
+        "dtype": "float32",
+        "engine_pipeline": "kde-index-segments-1800-v2-image140-ocr32",
+        "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+        "max_tokens": 2048,
+        "model": "google/embeddinggemma-2",
+        "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+        "pipeline": "digup-vectors1-linux-cpu-probe1",
+        "producer_sha256": "f34469aa625f5000a7a3bb24a04b3c0cc91cf63ddb4e4a17fdbbf0fa1f49a9bf",
+        "runtime": "llama.cpp-b11461+no-logits",
+        "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+      }
+    },
+    {
+      "name": "selected-synthetic-root",
+      "pass": true,
+      "detail": {
+        "request": {
+          "id": "240",
+          "op": "add_root",
+          "path": "<workspace>/local/runner-v3-retry2/runtime/corpus"
+        },
+        "response": {
+          "accepted": true,
+          "id": "240",
+          "ok": true,
+          "protocol": 1
+        },
+        "cli_exit": 0
+      }
+    },
+    {
+      "name": "scan-accepted",
+      "pass": true,
+      "detail": {
+        "request": {
+          "id": "241",
+          "op": "scan"
+        },
+        "response": {
+          "accepted": true,
+          "id": "241",
+          "ok": true,
+          "protocol": 1
+        },
+        "cli_exit": 0
+      }
+    },
+    {
+      "name": "one-synthetic-file-indexed",
+      "pass": true,
+      "detail": {
+        "busy": false,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-segments-1800-v2-image140-ocr32",
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "f34469aa625f5000a7a3bb24a04b3c0cc91cf63ddb4e4a17fdbbf0fa1f49a9bf",
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 1,
+        "indexed": 1,
+        "model_ready": true,
+        "paused": false,
+        "progress": 1,
+        "ready": true,
+        "roots": [
+          {
+            "exclusions": [],
+            "path": "<workspace>/local/runner-v3-retry2/runtime/corpus"
+          }
+        ],
+        "segments": 1,
+        "total": 1,
+        "watch_error": ""
+      }
+    },
+    {
+      "name": "warm-before-first-idle-exact-hit",
+      "pass": true,
+      "detail": {
+        "runner": {
+          "elapsed_ms": 55,
+          "main_timer_ticks": 5,
+          "matches": [
+            {
+              "data": {
+                "kind": "text",
+                "page": 0,
+                "path": "<workspace>/local/runner-v3-retry2/runtime/corpus/cold-result.txt"
+              },
+              "relevance": 1,
+              "subtext": "RUNNER-V3-COLD-IDENTIFIER-81356: exact path through two cold producer reloads and a warm query. ",
+              "text": "cold-result.txt"
+            }
+          ],
+          "pass": true,
+          "reset_observed": false,
+          "reset_to_final_observation_ms": 0,
+          "runner_on_main_thread": false
+        }
+      }
+    },
+    {
+      "name": "idle-before-cold-1-observed-producer-unload",
+      "pass": true,
+      "detail": {
+        "before": [
+          {
+            "pid": 603314,
+            "exe": "<workspace>/build-probe/embedding-probe"
+          }
+        ],
+        "after": [],
+        "idle_ms": 10240.857
+      }
+    },
+    {
+      "name": "cold-query-1-exact-hit",
+      "pass": true,
+      "detail": {
+        "runner": {
+          "elapsed_ms": 1862,
+          "main_timer_ticks": 186,
+          "matches": [
+            {
+              "data": {
+                "kind": "text",
+                "page": 0,
+                "path": "<workspace>/local/runner-v3-retry2/runtime/corpus/cold-result.txt"
+              },
+              "relevance": 1,
+              "subtext": "RUNNER-V3-COLD-IDENTIFIER-81356: exact path through two cold producer reloads and a warm query. ",
+              "text": "cold-result.txt"
+            }
+          ],
+          "pass": true,
+          "reset_observed": false,
+          "reset_to_final_observation_ms": 0,
+          "runner_on_main_thread": false
+        }
+      }
+    },
+    {
+      "name": "warm-after-cold-1-exact-hit",
+      "pass": true,
+      "detail": {
+        "runner": {
+          "elapsed_ms": 60,
+          "main_timer_ticks": 6,
+          "matches": [
+            {
+              "data": {
+                "kind": "text",
+                "page": 0,
+                "path": "<workspace>/local/runner-v3-retry2/runtime/corpus/cold-result.txt"
+              },
+              "relevance": 1,
+              "subtext": "RUNNER-V3-COLD-IDENTIFIER-81356: exact path through two cold producer reloads and a warm query. ",
+              "text": "cold-result.txt"
+            }
+          ],
+          "pass": true,
+          "reset_observed": false,
+          "reset_to_final_observation_ms": 0,
+          "runner_on_main_thread": false
+        }
+      }
+    },
+    {
+      "name": "idle-before-cold-2-observed-producer-unload",
+      "pass": true,
+      "detail": {
+        "before": [
+          {
+            "pid": 603530,
+            "exe": "<workspace>/build-probe/embedding-probe"
+          }
+        ],
+        "after": [],
+        "idle_ms": 10239.623
+      }
+    },
+    {
+      "name": "cold-query-2-exact-hit",
+      "pass": true,
+      "detail": {
+        "runner": {
+          "elapsed_ms": 1765,
+          "main_timer_ticks": 176,
+          "matches": [
+            {
+              "data": {
+                "kind": "text",
+                "page": 0,
+                "path": "<workspace>/local/runner-v3-retry2/runtime/corpus/cold-result.txt"
+              },
+              "relevance": 1,
+              "subtext": "RUNNER-V3-COLD-IDENTIFIER-81356: exact path through two cold producer reloads and a warm query. ",
+              "text": "cold-result.txt"
+            }
+          ],
+          "pass": true,
+          "reset_observed": false,
+          "reset_to_final_observation_ms": 0,
+          "runner_on_main_thread": false
+        }
+      }
+    },
+    {
+      "name": "warm-after-cold-2-exact-hit",
+      "pass": true,
+      "detail": {
+        "runner": {
+          "elapsed_ms": 54,
+          "main_timer_ticks": 5,
+          "matches": [
+            {
+              "data": {
+                "kind": "text",
+                "page": 0,
+                "path": "<workspace>/local/runner-v3-retry2/runtime/corpus/cold-result.txt"
+              },
+              "relevance": 1,
+              "subtext": "RUNNER-V3-COLD-IDENTIFIER-81356: exact path through two cold producer reloads and a warm query. ",
+              "text": "cold-result.txt"
+            }
+          ],
+          "pass": true,
+          "reset_observed": false,
+          "reset_to_final_observation_ms": 0,
+          "runner_on_main_thread": false
+        }
+      }
+    },
+    {
+      "name": "idle-before-cold-reset-observed-producer-unload",
+      "pass": true,
+      "detail": {
+        "before": [
+          {
+            "pid": 603606,
+            "exe": "<workspace>/build-probe/embedding-probe"
+          }
+        ],
+        "after": [],
+        "idle_ms": 10136.086
+      }
+    },
+    {
+      "name": "cold-reset-reset-no-stale-results",
+      "pass": true,
+      "detail": {
+        "runner": {
+          "elapsed_ms": 259,
+          "main_timer_ticks": 25,
+          "matches": [],
+          "pass": true,
+          "reset_observed": true,
+          "reset_to_final_observation_ms": 150,
+          "runner_on_main_thread": false
+        },
+        "children_after": []
+      }
+    }
+  ],
+  "service_pid": 603116,
+  "startup_retry_count": 1,
+  "service_identity": {
+    "backend": "CPU",
+    "byte_order": "little",
+    "dimension": 768,
+    "dtype": "float32",
+    "engine_pipeline": "kde-index-segments-1800-v2-image140-ocr32",
+    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+    "max_tokens": 2048,
+    "model": "google/embeddinggemma-2",
+    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+    "pipeline": "digup-vectors1-linux-cpu-probe1",
+    "producer_sha256": "f34469aa625f5000a7a3bb24a04b3c0cc91cf63ddb4e4a17fdbbf0fa1f49a9bf",
+    "runtime": "llama.cpp-b11461+no-logits",
+    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+  },
+  "initial_status": {
+    "busy": false,
+    "current": "",
+    "error": "",
+    "errors": 0,
+    "failures": [],
+    "identity": {
+      "backend": "CPU",
+      "byte_order": "little",
+      "dimension": 768,
+      "dtype": "float32",
+      "engine_pipeline": "kde-index-segments-1800-v2-image140-ocr32",
+      "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+      "max_tokens": 2048,
+      "model": "google/embeddinggemma-2",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "pipeline": "digup-vectors1-linux-cpu-probe1",
+      "producer_sha256": "f34469aa625f5000a7a3bb24a04b3c0cc91cf63ddb4e4a17fdbbf0fa1f49a9bf",
+      "runtime": "llama.cpp-b11461+no-logits",
+      "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+    },
+    "index_revision": 0,
+    "indexed": 0,
+    "model_ready": true,
+    "paused": false,
+    "progress": 0,
+    "ready": true,
+    "roots": [],
+    "segments": 0,
+    "total": 0,
+    "watch_error": ""
+  },
+  "indexed_status": {
+    "busy": false,
+    "current": "",
+    "error": "",
+    "errors": 0,
+    "failures": [],
+    "identity": {
+      "backend": "CPU",
+      "byte_order": "little",
+      "dimension": 768,
+      "dtype": "float32",
+      "engine_pipeline": "kde-index-segments-1800-v2-image140-ocr32",
+      "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+      "max_tokens": 2048,
+      "model": "google/embeddinggemma-2",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "pipeline": "digup-vectors1-linux-cpu-probe1",
+      "producer_sha256": "f34469aa625f5000a7a3bb24a04b3c0cc91cf63ddb4e4a17fdbbf0fa1f49a9bf",
+      "runtime": "llama.cpp-b11461+no-logits",
+      "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+    },
+    "index_revision": 1,
+    "indexed": 1,
+    "model_ready": true,
+    "paused": false,
+    "progress": 1,
+    "ready": true,
+    "roots": [
+      {
+        "exclusions": [],
+        "path": "<workspace>/local/runner-v3-retry2/runtime/corpus"
+      }
+    ],
+    "segments": 1,
+    "total": 1,
+    "watch_error": ""
+  },
+  "idle_before_cold_1": {
+    "label": "idle-before-cold-1",
+    "before_children": [
+      {
+        "pid": 603314,
+        "exe": "<workspace>/build-probe/embedding-probe"
+      }
+    ],
+    "after_children": [],
+    "observed_idle_ms": 10240.857,
+    "status": {
+      "busy": false,
+      "current": "",
+      "error": "",
+      "errors": 0,
+      "failures": [],
+      "identity": {
+        "backend": "CPU",
+        "byte_order": "little",
+        "dimension": 768,
+        "dtype": "float32",
+        "engine_pipeline": "kde-index-segments-1800-v2-image140-ocr32",
+        "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+        "max_tokens": 2048,
+        "model": "google/embeddinggemma-2",
+        "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+        "pipeline": "digup-vectors1-linux-cpu-probe1",
+        "producer_sha256": "f34469aa625f5000a7a3bb24a04b3c0cc91cf63ddb4e4a17fdbbf0fa1f49a9bf",
+        "runtime": "llama.cpp-b11461+no-logits",
+        "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+      },
+      "index_revision": 1,
+      "indexed": 1,
+      "model_ready": true,
+      "paused": false,
+      "progress": 1,
+      "ready": true,
+      "roots": [
+        {
+          "exclusions": [],
+          "path": "<workspace>/local/runner-v3-retry2/runtime/corpus"
+        }
+      ],
+      "segments": 1,
+      "total": 1,
+      "watch_error": ""
+    }
+  },
+  "idle_before_cold_2": {
+    "label": "idle-before-cold-2",
+    "before_children": [
+      {
+        "pid": 603530,
+        "exe": "<workspace>/build-probe/embedding-probe"
+      }
+    ],
+    "after_children": [],
+    "observed_idle_ms": 10239.623,
+    "status": {
+      "busy": false,
+      "current": "",
+      "error": "",
+      "errors": 0,
+      "failures": [],
+      "identity": {
+        "backend": "CPU",
+        "byte_order": "little",
+        "dimension": 768,
+        "dtype": "float32",
+        "engine_pipeline": "kde-index-segments-1800-v2-image140-ocr32",
+        "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+        "max_tokens": 2048,
+        "model": "google/embeddinggemma-2",
+        "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+        "pipeline": "digup-vectors1-linux-cpu-probe1",
+        "producer_sha256": "f34469aa625f5000a7a3bb24a04b3c0cc91cf63ddb4e4a17fdbbf0fa1f49a9bf",
+        "runtime": "llama.cpp-b11461+no-logits",
+        "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+      },
+      "index_revision": 1,
+      "indexed": 1,
+      "model_ready": true,
+      "paused": false,
+      "progress": 1,
+      "ready": true,
+      "roots": [
+        {
+          "exclusions": [],
+          "path": "<workspace>/local/runner-v3-retry2/runtime/corpus"
+        }
+      ],
+      "segments": 1,
+      "total": 1,
+      "watch_error": ""
+    }
+  },
+  "idle_before_cold_reset": {
+    "label": "idle-before-cold-reset",
+    "before_children": [
+      {
+        "pid": 603606,
+        "exe": "<workspace>/build-probe/embedding-probe"
+      }
+    ],
+    "after_children": [],
+    "observed_idle_ms": 10136.086,
+    "status": {
+      "busy": false,
+      "current": "",
+      "error": "",
+      "errors": 0,
+      "failures": [],
+      "identity": {
+        "backend": "CPU",
+        "byte_order": "little",
+        "dimension": 768,
+        "dtype": "float32",
+        "engine_pipeline": "kde-index-segments-1800-v2-image140-ocr32",
+        "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+        "max_tokens": 2048,
+        "model": "google/embeddinggemma-2",
+        "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+        "pipeline": "digup-vectors1-linux-cpu-probe1",
+        "producer_sha256": "f34469aa625f5000a7a3bb24a04b3c0cc91cf63ddb4e4a17fdbbf0fa1f49a9bf",
+        "runtime": "llama.cpp-b11461+no-logits",
+        "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+      },
+      "index_revision": 1,
+      "indexed": 1,
+      "model_ready": true,
+      "paused": false,
+      "progress": 1,
+      "ready": true,
+      "roots": [
+        {
+          "exclusions": [],
+          "path": "<workspace>/local/runner-v3-retry2/runtime/corpus"
+        }
+      ],
+      "segments": 1,
+      "total": 1,
+      "watch_error": ""
+    }
+  },
+  "final_status": {
+    "busy": false,
+    "current": "",
+    "error": "",
+    "errors": 0,
+    "failures": [],
+    "identity": {
+      "backend": "CPU",
+      "byte_order": "little",
+      "dimension": 768,
+      "dtype": "float32",
+      "engine_pipeline": "kde-index-segments-1800-v2-image140-ocr32",
+      "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+      "max_tokens": 2048,
+      "model": "google/embeddinggemma-2",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "pipeline": "digup-vectors1-linux-cpu-probe1",
+      "producer_sha256": "f34469aa625f5000a7a3bb24a04b3c0cc91cf63ddb4e4a17fdbbf0fa1f49a9bf",
+      "runtime": "llama.cpp-b11461+no-logits",
+      "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+    },
+    "index_revision": 1,
+    "indexed": 1,
+    "model_ready": true,
+    "paused": false,
+    "progress": 1,
+    "ready": true,
+    "roots": [
+      {
+        "exclusions": [],
+        "path": "<workspace>/local/runner-v3-retry2/runtime/corpus"
+      }
+    ],
+    "segments": 1,
+    "total": 1,
+    "watch_error": ""
+  },
+  "shutdown": {
+    "request": {
+      "id": "248",
+      "op": "shutdown"
+    },
+    "response": {
+      "accepted": true,
+      "id": "248",
+      "ok": true,
+      "protocol": 1
+    },
+    "cli_exit": 0
+  },
+  "resource_closure": {
+    "service_exit_code": 0,
+    "service_pid_absent": true,
+    "socket_absent": true,
+    "known_probe_children_absent": true,
+    "known_child_pids": [
+      603314,
+      603530,
+      603606
+    ],
+    "remaining_children": []
+  }
+}

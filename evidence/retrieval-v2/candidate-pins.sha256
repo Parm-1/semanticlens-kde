@@ -1,0 +1,11 @@
+28c0d5ddf0ab20608ef527dd891cb023ecd2194690b9f281b95533dacd202ebe  /public-clean-v2/stage/usr/bin/kde-index-service
+fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0  /public-clean-v2/stage/usr/bin/embedding-probe
+2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135  /models/embeddinggemma-2-Q8_0.gguf
+c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f  /models/mmproj-embeddinggemma-2-Q8_0.gguf
+6faeb1ed7df43834eef73702265ae7a298c8e9c53b2f5c5b0b6fe865cbfcd928  /public-clean-v2/source.tar.gz
+b34c4f347b5aa446a8bec377d2eebb860d521122a61581414a313431bed247a3  /public-clean-v2/workspace/tools/retrieval_service.py
+1b45cd6170aed29975c0472fe388c8359bd17e241de299dcf4ac17e3bcc59770  /public-clean-v2/workspace/tools/retrieval_score.py
+2fdb07dba3b3191a7073b7fa1443e58c542fa3c03e3275d429e54058c8996872  /public-clean-v2/workspace/benchmark/SHA256SUMS
+94e26bb12c164c28927643d67c9a6351b4f65ccf5a6d2e30881f550b2148f815  /public-clean-v2/workspace/benchmark/queries.json
+b2284df09dc184e76a11338b6f766c4de979925494c1f182fb196e1a283a8280  /public-clean-v2/workspace/evidence/retrieval-v1/baloo/results.json
+f24375a7150bff99104645249eba58fadf13537b44aecbd685725a2f050e8147  /public-clean-v2/workspace/evidence/public-clean-build-v2/producer-hashes.txt

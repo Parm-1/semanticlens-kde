@@ -1,0 +1,17 @@
+{
+  "scope": "parent-reported fresh-userspace installed-v2 observation; screenshot and log directly inspected; no native rerun",
+  "parent_reported_commit": "dd18a81",
+  "parent_reported_producer_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+  "copied_artifacts": [
+    {
+      "source": "local/clean-arch-v1/root.x86_64/checkout/local/native-clean-v2/window-page.png",
+      "snapshot": "parent-clean-window-page.png",
+      "sha256": "04bd22f2f1ccc131dbfcc4dd81d2445dbc6d2b689fbd11d1b5fa9eb43f690801"
+    },
+    {
+      "source": "local/clean-arch-v1/root.x86_64/checkout/local/native-clean-v2/app.log",
+      "snapshot": "parent-clean-app.log",
+      "sha256": "771e01b01125645aab3207374e5594f868f8194c2c561edbc9d523728687f83c"
+    }
+  ]
+}

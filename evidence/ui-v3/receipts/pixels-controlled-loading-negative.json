@@ -1,0 +1,32 @@
+{
+    "bounded_paper_edge_correction": false,
+    "capture": "/home/parm/Documents/KDE Index/local/ui-v3-render-readback/render-loading.png",
+    "declared_painted_rect": [
+        593,
+        186,
+        351,
+        454
+    ],
+    "ink_reference_pixels": 543,
+    "ink_witness_correlation": 0,
+    "mean_absolute_gray_error": 233.57343398973356,
+    "nearby_white_bounds": [
+        1537,
+        1073,
+        -1537,
+        -1073
+    ],
+    "painted_rect": [
+        593,
+        186,
+        351,
+        454
+    ],
+    "pass": false,
+    "reference_raster": "/home/parm/Documents/KDE Index/local/ui-v3-render-readback/render-raster.png",
+    "thresholds": {
+        "maximum_gray_mae": 10,
+        "minimum_ink_correlation": 0.65,
+        "minimum_ink_pixels": 20
+    }
+}

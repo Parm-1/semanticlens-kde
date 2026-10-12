@@ -1,0 +1,705 @@
+signal time=1791789517.544497 sender=org.freedesktop.DBus -> destination=:1.1 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+   string ":1.1"
+signal time=1791789517.544570 sender=org.freedesktop.DBus -> destination=:1.1 serial=4 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameLost
+   string ":1.1"
+method return time=1791789517.688295 sender=org.freedesktop.DBus -> destination=:1.2 serial=1 reply_serial=1
+   string ":1.2"
+method return time=1791789517.746573 sender=org.freedesktop.DBus -> destination=:1.3 serial=1 reply_serial=1
+   string ":1.3"
+method return time=1791789517.748177 sender=org.freedesktop.DBus -> destination=:1.3 serial=3 reply_serial=2
+method return time=1791789517.748203 sender=org.freedesktop.DBus -> destination=:1.3 serial=4 reply_serial=3
+error time=1791789517.748255 sender=org.freedesktop.DBus -> destination=:1.3 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=4
+   string "Could not get owner of name 'org.freedesktop.impl.portal.PermissionStore': no such name"
+method return time=1791789517.748522 sender=org.freedesktop.DBus -> destination=:1.3 serial=6 reply_serial=5
+method return time=1791789517.748536 sender=org.freedesktop.DBus -> destination=:1.3 serial=7 reply_serial=6
+method return time=1791789517.766674 sender=org.freedesktop.DBus -> destination=:1.4 serial=1 reply_serial=1
+   string ":1.4"
+method return time=1791789517.767060 sender=org.freedesktop.DBus -> destination=:1.3 serial=9 reply_serial=7
+   uint32 1
+method return time=1791789517.767076 sender=org.freedesktop.DBus -> destination=:1.4 serial=4 reply_serial=2
+   uint32 1
+method return time=1791789517.767961 sender=org.freedesktop.DBus -> destination=:1.3 serial=11 reply_serial=8
+   string ":1.4"
+method return time=1791789517.769167 sender=:1.4 -> destination=:1.3 serial=3 reply_serial=9
+   array [
+      dict entry(
+         string "version"
+         variant             uint32 2
+      )
+   ]
+method return time=1791789517.769621 sender=org.freedesktop.DBus -> destination=:1.3 serial=12 reply_serial=10
+error time=1791789517.769642 sender=org.freedesktop.DBus -> destination=:1.3 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=11
+   string "Could not get owner of name 'org.freedesktop.portal.Documents': no such name"
+method return time=1791789517.769679 sender=org.freedesktop.DBus -> destination=:1.3 serial=14 reply_serial=12
+method return time=1791789517.769714 sender=org.freedesktop.DBus -> destination=:1.3 serial=15 reply_serial=13
+method return time=1791789517.805153 sender=org.freedesktop.DBus -> destination=:1.5 serial=1 reply_serial=1
+   string ":1.5"
+method return time=1791789517.805443 sender=org.freedesktop.DBus -> destination=:1.5 serial=3 reply_serial=2
+method return time=1791789517.805585 sender=org.freedesktop.DBus -> destination=:1.5 serial=4 reply_serial=3
+   string ":1.4"
+method return time=1791789517.805605 sender=org.freedesktop.DBus -> destination=:1.5 serial=5 reply_serial=4
+method return time=1791789517.805610 sender=org.freedesktop.DBus -> destination=:1.5 serial=6 reply_serial=5
+method return time=1791789517.805615 sender=org.freedesktop.DBus -> destination=:1.5 serial=7 reply_serial=6
+   uint32 2
+method return time=1791789517.805712 sender=org.freedesktop.DBus -> destination=:1.5 serial=8 reply_serial=7
+   string ":1.4"
+method return time=1791789517.806002 sender=:1.4 -> destination=:1.5 serial=4 reply_serial=8
+   array [
+      dict entry(
+         string "version"
+         variant             uint32 2
+      )
+   ]
+method return time=1791789517.806451 sender=org.freedesktop.DBus -> destination=:1.5 serial=9 reply_serial=9
+method return time=1791789517.806599 sender=org.freedesktop.DBus -> destination=:1.3 serial=17 reply_serial=14
+   uint32 1
+method return time=1791789517.806620 sender=org.freedesktop.DBus -> destination=:1.5 serial=11 reply_serial=10
+   uint32 1
+method return time=1791789517.807586 sender=org.freedesktop.DBus -> destination=:1.5 serial=14 reply_serial=11
+   uint32 1
+error time=1791789517.807621 sender=org.freedesktop.DBus -> destination=:1.3 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=15
+   string "Could not get owner of name 'org.freedesktop.portal.Documents': no such name"
+method return time=1791789517.821536 sender=org.freedesktop.DBus -> destination=:1.6 serial=1 reply_serial=1
+   string ":1.6"
+method return time=1791789517.821764 sender=org.freedesktop.DBus -> destination=:1.6 serial=3 reply_serial=2
+method return time=1791789517.821800 sender=org.freedesktop.DBus -> destination=:1.6 serial=4 reply_serial=3
+   string ":1.4"
+method return time=1791789517.821813 sender=org.freedesktop.DBus -> destination=:1.6 serial=5 reply_serial=4
+method return time=1791789517.821833 sender=org.freedesktop.DBus -> destination=:1.6 serial=6 reply_serial=5
+method return time=1791789517.821839 sender=org.freedesktop.DBus -> destination=:1.6 serial=7 reply_serial=6
+   uint32 2
+method return time=1791789517.821944 sender=org.freedesktop.DBus -> destination=:1.6 serial=8 reply_serial=7
+   string ":1.4"
+method return time=1791789517.822181 sender=:1.4 -> destination=:1.6 serial=5 reply_serial=8
+   array [
+      dict entry(
+         string "version"
+         variant             uint32 2
+      )
+   ]
+method return time=1791789517.822480 sender=org.freedesktop.DBus -> destination=:1.6 serial=9 reply_serial=9
+method return time=1791789517.822568 sender=org.freedesktop.DBus -> destination=:1.6 serial=11 reply_serial=10
+   uint32 1
+method return time=1791789517.823335 sender=org.freedesktop.DBus -> destination=:1.6 serial=14 reply_serial=11
+   uint32 1
+error time=1791789517.823946 sender=org.freedesktop.DBus -> destination=:1.3 error_name=org.freedesktop.DBus.Error.NoReply reply_serial=16
+   string "Message recipient disconnected from message bus without replying"
+method return time=1791789517.824415 sender=org.freedesktop.DBus -> destination=:1.3 serial=25 reply_serial=17
+error time=1791789517.824445 sender=org.freedesktop.DBus -> destination=:1.3 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=18
+   string "Could not get owner of name 'org.freedesktop.impl.portal.desktop.gtk': no such name"
+method return time=1791789517.824458 sender=org.freedesktop.DBus -> destination=:1.3 serial=27 reply_serial=19
+method return time=1791789517.824484 sender=org.freedesktop.DBus -> destination=:1.3 serial=28 reply_serial=20
+method return time=1791789517.958665 sender=org.freedesktop.DBus -> destination=:1.7 serial=1 reply_serial=1
+   string ":1.7"
+method return time=1791789517.965422 sender=org.freedesktop.DBus -> destination=:1.7 serial=3 reply_serial=2
+method return time=1791789517.965563 sender=org.freedesktop.DBus -> destination=:1.7 serial=4 reply_serial=3
+method return time=1791789517.965599 sender=org.freedesktop.DBus -> destination=:1.7 serial=5 reply_serial=4
+method return time=1791789517.965683 sender=org.freedesktop.DBus -> destination=:1.7 serial=6 reply_serial=5
+method return time=1791789517.965703 sender=org.freedesktop.DBus -> destination=:1.7 serial=7 reply_serial=6
+method return time=1791789517.965716 sender=org.freedesktop.DBus -> destination=:1.7 serial=8 reply_serial=7
+method return time=1791789517.965738 sender=org.freedesktop.DBus -> destination=:1.7 serial=9 reply_serial=8
+method return time=1791789518.024127 sender=org.freedesktop.DBus -> destination=:1.8 serial=1 reply_serial=1
+   string ":1.8"
+method return time=1791789518.037946 sender=org.freedesktop.DBus -> destination=:1.9 serial=1 reply_serial=1
+   string ":1.9"
+method return time=1791789518.038121 sender=org.freedesktop.DBus -> destination=:1.9 serial=3 reply_serial=2
+method return time=1791789518.038185 sender=org.freedesktop.DBus -> destination=:1.9 serial=5 reply_serial=3
+   uint32 1
+method return time=1791789518.038978 sender=org.freedesktop.DBus -> destination=:1.9 serial=6 reply_serial=4
+error time=1791789518.039017 sender=org.freedesktop.DBus -> destination=:1.9 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=5
+   string "Could not get owner of name 'org.gnome.SessionManager': no such name"
+method return time=1791789518.055095 sender=:1.9 -> destination=:1.8 serial=6 reply_serial=2
+   string "unix:path=/tmp/work/runtime/at-spi/bus"
+method return time=1791789518.076603 sender=org.freedesktop.DBus -> destination=:1.7 serial=10 reply_serial=9
+error time=1791789518.076639 sender=org.freedesktop.DBus -> destination=:1.7 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=10
+   string "Could not get owner of name 'org.gtk.Settings': no such name"
+method return time=1791789518.076669 sender=org.freedesktop.DBus -> destination=:1.7 serial=12 reply_serial=11
+method return time=1791789518.076678 sender=org.freedesktop.DBus -> destination=:1.7 serial=13 reply_serial=12
+error time=1791789518.084399 sender=org.freedesktop.DBus -> destination=:1.7 error_name=org.freedesktop.DBus.Error.ServiceUnknown reply_serial=13
+   string "The name org.gtk.Settings was not provided by any .service files"
+method return time=1791789518.084447 sender=org.freedesktop.DBus -> destination=:1.7 serial=15 reply_serial=14
+error time=1791789518.084484 sender=org.freedesktop.DBus -> destination=:1.7 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=15
+   string "Could not get owner of name 'org.gnome.SessionManager': no such name"
+method return time=1791789518.084507 sender=org.freedesktop.DBus -> destination=:1.7 serial=17 reply_serial=16
+method return time=1791789518.084524 sender=org.freedesktop.DBus -> destination=:1.7 serial=18 reply_serial=17
+error time=1791789518.084563 sender=org.freedesktop.DBus -> destination=:1.7 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=18
+   string "Could not get owner of name 'org.gnome.SessionManager': no such name"
+method return time=1791789518.084755 sender=org.freedesktop.DBus -> destination=:1.7 serial=20 reply_serial=19
+method return time=1791789518.084776 sender=org.freedesktop.DBus -> destination=:1.7 serial=21 reply_serial=20
+method return time=1791789518.084790 sender=org.freedesktop.DBus -> destination=:1.7 serial=22 reply_serial=21
+method return time=1791789518.084937 sender=org.freedesktop.DBus -> destination=:1.7 serial=23 reply_serial=22
+error time=1791789518.085062 sender=org.freedesktop.DBus -> destination=:1.7 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=23
+   string "Could not get owner of name 'org.freedesktop.ScreenSaver': no such name"
+method return time=1791789518.085085 sender=org.freedesktop.DBus -> destination=:1.7 serial=25 reply_serial=24
+method return time=1791789518.085091 sender=org.freedesktop.DBus -> destination=:1.7 serial=26 reply_serial=25
+error time=1791789518.085104 sender=org.freedesktop.DBus -> destination=:1.7 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=26
+   string "Could not get owner of name 'org.freedesktop.ScreenSaver': no such name"
+method return time=1791789518.085533 sender=org.freedesktop.DBus -> destination=:1.7 serial=28 reply_serial=27
+method return time=1791789518.085560 sender=org.freedesktop.DBus -> destination=:1.7 serial=29 reply_serial=28
+method return time=1791789518.085621 sender=org.freedesktop.DBus -> destination=:1.7 serial=30 reply_serial=29
+method return time=1791789518.085654 sender=org.freedesktop.DBus -> destination=:1.7 serial=31 reply_serial=30
+method return time=1791789518.086343 sender=org.freedesktop.DBus -> destination=:1.3 serial=35 reply_serial=21
+   uint32 1
+method return time=1791789518.086355 sender=org.freedesktop.DBus -> destination=:1.7 serial=33 reply_serial=31
+   uint32 1
+method return time=1791789518.087069 sender=org.freedesktop.DBus -> destination=:1.3 serial=37 reply_serial=22
+   string ":1.7"
+error time=1791789518.087271 sender=org.freedesktop.DBus -> destination=:1.7 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=32
+   string "Could not get owner of name 'org.gtk.Settings': no such name"
+method return time=1791789518.087295 sender=:1.7 -> destination=:1.3 serial=33 reply_serial=23
+   array [
+      dict entry(
+         string "disable-printing"
+         variant             boolean false
+      )
+      dict entry(
+         string "disable-save-to-disk"
+         variant             boolean false
+      )
+      dict entry(
+         string "disable-application-handlers"
+         variant             boolean false
+      )
+      dict entry(
+         string "disable-location"
+         variant             boolean true
+      )
+      dict entry(
+         string "disable-camera"
+         variant             boolean false
+      )
+      dict entry(
+         string "disable-microphone"
+         variant             boolean false
+      )
+      dict entry(
+         string "disable-sound-output"
+         variant             boolean false
+      )
+   ]
+method return time=1791789518.087502 sender=org.freedesktop.DBus -> destination=:1.3 serial=38 reply_serial=24
+error time=1791789518.087535 sender=org.freedesktop.DBus -> destination=:1.3 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=25
+   string "Could not get owner of name 'org.freedesktop.impl.portal.desktop.kde': no such name"
+method return time=1791789518.087556 sender=org.freedesktop.DBus -> destination=:1.3 serial=40 reply_serial=26
+method return time=1791789518.087562 sender=org.freedesktop.DBus -> destination=:1.3 serial=41 reply_serial=27
+method return time=1791789518.144658 sender=org.freedesktop.DBus -> destination=:1.10 serial=1 reply_serial=1
+   string ":1.10"
+method return time=1791789518.173584 sender=org.freedesktop.DBus -> destination=:1.3 serial=43 reply_serial=28
+   uint32 1
+method return time=1791789518.173618 sender=org.freedesktop.DBus -> destination=:1.10 serial=4 reply_serial=9
+   uint32 1
+error time=1791789518.174385 sender=org.freedesktop.DBus -> destination=:1.10 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=12
+   string "Could not get owner of name 'org.freedesktop.ScreenSaver': no such name"
+method return time=1791789518.174413 sender=org.freedesktop.DBus -> destination=:1.3 serial=45 reply_serial=29
+   string ":1.10"
+error time=1791789518.174786 sender=org.freedesktop.DBus -> destination=:1.10 error_name=org.freedesktop.DBus.Error.ServiceUnknown reply_serial=13
+   string "The name org.freedesktop.ScreenSaver was not provided by any .service files"
+error time=1791789518.174843 sender=org.freedesktop.DBus -> destination=:1.10 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=16
+   string "Could not get owner of name 'org.kde.KWin': no such name"
+error time=1791789518.174967 sender=org.freedesktop.DBus -> destination=:1.10 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=19
+   string "Could not get owner of name 'org.kde.KWin': no such name"
+error time=1791789518.175431 sender=org.freedesktop.DBus -> destination=:1.10 error_name=org.freedesktop.DBus.Error.ServiceUnknown reply_serial=26
+   string "The name org.kde.KWin was not provided by any .service files"
+error time=1791789518.175780 sender=org.freedesktop.DBus -> destination=:1.10 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=31
+   string "Could not get owner of name 'org.a11y.Bus': no such name"
+error time=1791789518.175880 sender=org.freedesktop.DBus -> destination=:1.10 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=32
+   string "Could not get owner of name 'org.a11y.Bus': no such name"
+method return time=1791789518.175976 sender=org.freedesktop.DBus -> destination=:1.10 serial=12 reply_serial=34
+   boolean false
+error time=1791789518.176067 sender=org.freedesktop.DBus -> destination=:1.10 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=37
+   string "Could not get owner of name 'org.a11y.Bus': no such name"
+method return time=1791789518.177308 sender=:1.10 -> destination=:1.3 serial=39 reply_serial=30
+   array [
+   ]
+method return time=1791789518.190154 sender=org.freedesktop.DBus -> destination=:1.3 serial=46 reply_serial=31
+method return time=1791789518.190175 sender=org.freedesktop.DBus -> destination=:1.3 serial=47 reply_serial=32
+method return time=1791789518.190181 sender=org.freedesktop.DBus -> destination=:1.3 serial=48 reply_serial=33
+method return time=1791789518.190187 sender=org.freedesktop.DBus -> destination=:1.3 serial=49 reply_serial=34
+method return time=1791789518.190199 sender=org.freedesktop.DBus -> destination=:1.3 serial=50 reply_serial=35
+method return time=1791789518.190210 sender=org.freedesktop.DBus -> destination=:1.3 serial=51 reply_serial=36
+method return time=1791789518.190215 sender=org.freedesktop.DBus -> destination=:1.3 serial=52 reply_serial=37
+method return time=1791789518.190221 sender=org.freedesktop.DBus -> destination=:1.3 serial=53 reply_serial=38
+method return time=1791789518.190226 sender=org.freedesktop.DBus -> destination=:1.3 serial=54 reply_serial=39
+method return time=1791789518.190249 sender=org.freedesktop.DBus -> destination=:1.3 serial=55 reply_serial=40
+method return time=1791789518.191622 sender=org.freedesktop.DBus -> destination=:1.3 serial=56 reply_serial=41
+error time=1791789518.191645 sender=org.freedesktop.DBus -> destination=:1.3 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=42
+   string "Could not get owner of name 'com.feralinteractive.GameMode': no such name"
+method return time=1791789518.191733 sender=org.freedesktop.DBus -> destination=:1.3 serial=58 reply_serial=43
+method return time=1791789518.191758 sender=org.freedesktop.DBus -> destination=:1.3 serial=59 reply_serial=44
+error time=1791789518.191789 sender=org.freedesktop.DBus -> destination=:1.3 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=45
+   string "Could not get owner of name 'com.feralinteractive.GameMode': no such name"
+method return time=1791789518.192118 sender=org.freedesktop.DBus -> destination=:1.3 serial=61 reply_serial=46
+method return time=1791789518.192147 sender=org.freedesktop.DBus -> destination=:1.3 serial=62 reply_serial=47
+method return time=1791789518.192173 sender=org.freedesktop.DBus -> destination=:1.3 serial=63 reply_serial=48
+   uint32 2
+method return time=1791789518.192280 sender=org.freedesktop.DBus -> destination=:1.3 serial=64 reply_serial=49
+   string ":1.10"
+method return time=1791789518.192479 sender=:1.10 -> destination=:1.3 serial=45 reply_serial=50
+   array [
+      dict entry(
+         string "version"
+         variant             uint32 1
+      )
+   ]
+method return time=1791789518.192623 sender=org.freedesktop.DBus -> destination=:1.3 serial=65 reply_serial=51
+method return time=1791789518.192642 sender=org.freedesktop.DBus -> destination=:1.3 serial=66 reply_serial=52
+method return time=1791789518.192671 sender=org.freedesktop.DBus -> destination=:1.3 serial=67 reply_serial=53
+   uint32 2
+method return time=1791789518.192764 sender=org.freedesktop.DBus -> destination=:1.3 serial=68 reply_serial=54
+   string ":1.7"
+method return time=1791789518.193023 sender=:1.7 -> destination=:1.3 serial=34 reply_serial=55
+   array [
+      dict entry(
+         string "version"
+         variant             uint32 0
+      )
+   ]
+method return time=1791789518.193287 sender=org.freedesktop.DBus -> destination=:1.3 serial=69 reply_serial=56
+method return time=1791789518.193306 sender=org.freedesktop.DBus -> destination=:1.3 serial=70 reply_serial=57
+method return time=1791789518.193331 sender=org.freedesktop.DBus -> destination=:1.3 serial=71 reply_serial=58
+   uint32 2
+method return time=1791789518.193442 sender=org.freedesktop.DBus -> destination=:1.3 serial=72 reply_serial=59
+   string ":1.10"
+method return time=1791789518.193614 sender=:1.10 -> destination=:1.3 serial=46 reply_serial=60
+   array [
+   ]
+method return time=1791789518.193848 sender=org.freedesktop.DBus -> destination=:1.3 serial=73 reply_serial=61
+method return time=1791789518.193867 sender=org.freedesktop.DBus -> destination=:1.3 serial=74 reply_serial=62
+method return time=1791789518.193881 sender=org.freedesktop.DBus -> destination=:1.3 serial=75 reply_serial=63
+   uint32 2
+method return time=1791789518.193981 sender=org.freedesktop.DBus -> destination=:1.3 serial=76 reply_serial=64
+   string ":1.10"
+method return time=1791789518.194180 sender=:1.10 -> destination=:1.3 serial=47 reply_serial=65
+   array [
+   ]
+method return time=1791789518.194428 sender=org.freedesktop.DBus -> destination=:1.3 serial=77 reply_serial=66
+method return time=1791789518.194454 sender=org.freedesktop.DBus -> destination=:1.3 serial=78 reply_serial=67
+method return time=1791789518.194476 sender=org.freedesktop.DBus -> destination=:1.3 serial=79 reply_serial=68
+   uint32 2
+method return time=1791789518.194582 sender=org.freedesktop.DBus -> destination=:1.3 serial=80 reply_serial=69
+   string ":1.10"
+method return time=1791789518.194761 sender=:1.10 -> destination=:1.3 serial=48 reply_serial=70
+   array [
+   ]
+method return time=1791789518.195000 sender=org.freedesktop.DBus -> destination=:1.3 serial=81 reply_serial=71
+error time=1791789518.195068 sender=org.freedesktop.DBus -> destination=:1.3 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=72
+   string "Could not get owner of name 'org.freedesktop.impl.portal.desktop.plasmanotify': no such name"
+method return time=1791789518.195090 sender=org.freedesktop.DBus -> destination=:1.3 serial=83 reply_serial=73
+method return time=1791789518.195101 sender=org.freedesktop.DBus -> destination=:1.3 serial=84 reply_serial=74
+error time=1791789518.195339 sender=org.freedesktop.DBus -> destination=:1.3 error_name=org.freedesktop.DBus.Error.ServiceUnknown reply_serial=75
+   string "The name org.freedesktop.impl.portal.desktop.plasmanotify was not provided by any .service files"
+error time=1791789518.195454 sender=org.freedesktop.DBus -> destination=:1.3 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=76
+   string "Could not get owner of name 'org.freedesktop.impl.portal.desktop.plasmanotify': no such name"
+method return time=1791789518.195658 sender=org.freedesktop.DBus -> destination=:1.3 serial=87 reply_serial=77
+method return time=1791789518.195690 sender=org.freedesktop.DBus -> destination=:1.3 serial=88 reply_serial=78
+method return time=1791789518.195717 sender=org.freedesktop.DBus -> destination=:1.3 serial=89 reply_serial=79
+   uint32 2
+method return time=1791789518.195854 sender=org.freedesktop.DBus -> destination=:1.3 serial=90 reply_serial=80
+   string ":1.10"
+method return time=1791789518.196032 sender=:1.10 -> destination=:1.3 serial=49 reply_serial=81
+   array [
+      dict entry(
+         string "version"
+         variant             uint32 3
+      )
+   ]
+method return time=1791789518.216489 sender=org.freedesktop.DBus -> destination=:1.3 serial=91 reply_serial=82
+method return time=1791789518.216594 sender=org.freedesktop.DBus -> destination=:1.3 serial=92 reply_serial=83
+method return time=1791789518.216616 sender=org.freedesktop.DBus -> destination=:1.3 serial=93 reply_serial=84
+   uint32 2
+method return time=1791789518.216732 sender=org.freedesktop.DBus -> destination=:1.3 serial=94 reply_serial=85
+   string ":1.10"
+method return time=1791789518.216984 sender=:1.10 -> destination=:1.3 serial=50 reply_serial=86
+   array [
+      dict entry(
+         string "version"
+         variant             uint32 2
+      )
+   ]
+method return time=1791789518.217406 sender=org.freedesktop.DBus -> destination=:1.3 serial=95 reply_serial=87
+method return time=1791789518.217423 sender=org.freedesktop.DBus -> destination=:1.3 serial=96 reply_serial=88
+method return time=1791789518.217449 sender=org.freedesktop.DBus -> destination=:1.3 serial=97 reply_serial=89
+   uint32 2
+method return time=1791789518.217642 sender=org.freedesktop.DBus -> destination=:1.3 serial=98 reply_serial=90
+   string ":1.10"
+method return time=1791789518.217915 sender=:1.10 -> destination=:1.3 serial=51 reply_serial=91
+   array [
+   ]
+method return time=1791789518.218564 sender=org.freedesktop.DBus -> destination=:1.11 serial=1 reply_serial=1
+   string ":1.11"
+method return time=1791789518.218745 sender=org.freedesktop.DBus -> destination=:1.11 serial=4 reply_serial=2
+   uint32 1
+method return time=1791789518.219075 sender=org.freedesktop.DBus -> destination=:1.3 serial=101 reply_serial=92
+method return time=1791789518.219106 sender=org.freedesktop.DBus -> destination=:1.3 serial=102 reply_serial=93
+method return time=1791789518.219148 sender=org.freedesktop.DBus -> destination=:1.3 serial=103 reply_serial=94
+   uint32 2
+method return time=1791789518.219258 sender=org.freedesktop.DBus -> destination=:1.3 serial=104 reply_serial=95
+   string ":1.10"
+method return time=1791789518.219711 sender=:1.10 -> destination=:1.3 serial=52 reply_serial=96
+   array [
+   ]
+method return time=1791789518.219957 sender=org.freedesktop.DBus -> destination=:1.3 serial=105 reply_serial=97
+method return time=1791789518.219978 sender=org.freedesktop.DBus -> destination=:1.3 serial=106 reply_serial=98
+method return time=1791789518.220008 sender=org.freedesktop.DBus -> destination=:1.3 serial=107 reply_serial=99
+   uint32 2
+method return time=1791789518.220150 sender=org.freedesktop.DBus -> destination=:1.3 serial=108 reply_serial=100
+   string ":1.10"
+method return time=1791789518.220322 sender=:1.10 -> destination=:1.3 serial=53 reply_serial=101
+   array [
+   ]
+method return time=1791789518.220543 sender=org.freedesktop.DBus -> destination=:1.3 serial=109 reply_serial=102
+method return time=1791789518.220561 sender=org.freedesktop.DBus -> destination=:1.3 serial=110 reply_serial=103
+method return time=1791789518.220592 sender=org.freedesktop.DBus -> destination=:1.3 serial=111 reply_serial=104
+   uint32 2
+method return time=1791789518.220708 sender=org.freedesktop.DBus -> destination=:1.3 serial=112 reply_serial=105
+   string ":1.10"
+method return time=1791789518.220887 sender=:1.10 -> destination=:1.3 serial=54 reply_serial=106
+   array [
+   ]
+method return time=1791789518.221848 sender=org.freedesktop.DBus -> destination=:1.3 serial=113 reply_serial=107
+error time=1791789518.221871 sender=org.freedesktop.DBus -> destination=:1.3 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=108
+   string "Could not get owner of name 'org.freedesktop.impl.portal.desktop.kwallet': no such name"
+method return time=1791789518.221882 sender=org.freedesktop.DBus -> destination=:1.3 serial=115 reply_serial=109
+method return time=1791789518.221888 sender=org.freedesktop.DBus -> destination=:1.3 serial=116 reply_serial=110
+method return time=1791789518.222164 sender=org.freedesktop.DBus -> destination=:1.3 serial=117 reply_serial=112
+method return time=1791789518.222403 sender=org.freedesktop.DBus -> destination=:1.3 serial=118 reply_serial=113
+method return time=1791789518.222416 sender=org.freedesktop.DBus -> destination=:1.3 serial=119 reply_serial=114
+   uint32 2
+method return time=1791789518.222530 sender=org.freedesktop.DBus -> destination=:1.3 serial=120 reply_serial=115
+   string ":1.10"
+method return time=1791789518.222801 sender=:1.10 -> destination=:1.3 serial=55 reply_serial=116
+   array [
+      dict entry(
+         string "version"
+         variant             uint32 2
+      )
+   ]
+method return time=1791789518.223102 sender=org.freedesktop.DBus -> destination=:1.3 serial=121 reply_serial=117
+method return time=1791789518.223123 sender=org.freedesktop.DBus -> destination=:1.3 serial=122 reply_serial=118
+method return time=1791789518.223159 sender=org.freedesktop.DBus -> destination=:1.3 serial=123 reply_serial=119
+   uint32 2
+method return time=1791789518.223293 sender=org.freedesktop.DBus -> destination=:1.3 serial=124 reply_serial=120
+   string ":1.10"
+method return time=1791789518.223510 sender=:1.10 -> destination=:1.3 serial=56 reply_serial=121
+   array [
+      dict entry(
+         string "SupportedLauncherTypes"
+         variant             uint32 3
+      )
+      dict entry(
+         string "version"
+         variant             uint32 1
+      )
+   ]
+method return time=1791789518.223786 sender=org.freedesktop.DBus -> destination=:1.3 serial=125 reply_serial=122
+method return time=1791789518.223804 sender=org.freedesktop.DBus -> destination=:1.3 serial=126 reply_serial=123
+method return time=1791789518.223825 sender=org.freedesktop.DBus -> destination=:1.3 serial=127 reply_serial=124
+   uint32 2
+method return time=1791789518.223917 sender=org.freedesktop.DBus -> destination=:1.3 serial=128 reply_serial=125
+   string ":1.10"
+method return time=1791789518.224104 sender=:1.10 -> destination=:1.3 serial=57 reply_serial=126
+   array [
+      dict entry(
+         string "AvailableCursorModes"
+         variant             uint32 7
+      )
+      dict entry(
+         string "AvailableSourceTypes"
+         variant             uint32 7
+      )
+      dict entry(
+         string "version"
+         variant             uint32 5
+      )
+   ]
+method return time=1791789518.224394 sender=org.freedesktop.DBus -> destination=:1.3 serial=129 reply_serial=127
+method return time=1791789518.224408 sender=org.freedesktop.DBus -> destination=:1.3 serial=130 reply_serial=128
+method return time=1791789518.224439 sender=org.freedesktop.DBus -> destination=:1.3 serial=131 reply_serial=129
+   uint32 2
+method return time=1791789518.224520 sender=org.freedesktop.DBus -> destination=:1.3 serial=132 reply_serial=130
+   string ":1.10"
+method return time=1791789518.224685 sender=:1.10 -> destination=:1.3 serial=58 reply_serial=131
+   array [
+      dict entry(
+         string "AvailableDeviceTypes"
+         variant             uint32 7
+      )
+      dict entry(
+         string "version"
+         variant             uint32 2
+      )
+   ]
+method return time=1791789518.224906 sender=org.freedesktop.DBus -> destination=:1.3 serial=133 reply_serial=132
+method return time=1791789518.224939 sender=org.freedesktop.DBus -> destination=:1.3 serial=134 reply_serial=133
+method return time=1791789518.224964 sender=org.freedesktop.DBus -> destination=:1.3 serial=135 reply_serial=134
+   uint32 2
+method return time=1791789518.225050 sender=org.freedesktop.DBus -> destination=:1.3 serial=136 reply_serial=135
+   string ":1.10"
+method return time=1791789518.225209 sender=:1.10 -> destination=:1.3 serial=59 reply_serial=136
+   array [
+      dict entry(
+         string "version"
+         variant             uint32 1
+      )
+   ]
+method return time=1791789518.225476 sender=org.freedesktop.DBus -> destination=:1.3 serial=137 reply_serial=137
+method return time=1791789518.225512 sender=org.freedesktop.DBus -> destination=:1.3 serial=138 reply_serial=138
+method return time=1791789518.225524 sender=org.freedesktop.DBus -> destination=:1.3 serial=139 reply_serial=139
+   uint32 2
+method return time=1791789518.225617 sender=org.freedesktop.DBus -> destination=:1.3 serial=140 reply_serial=140
+   string ":1.10"
+method return time=1791789518.225789 sender=:1.10 -> destination=:1.3 serial=60 reply_serial=141
+   array [
+      dict entry(
+         string "SupportedCapabilities"
+         variant             uint32 7
+      )
+      dict entry(
+         string "version"
+         variant             uint32 2
+      )
+   ]
+method return time=1791789518.226041 sender=org.freedesktop.DBus -> destination=:1.3 serial=141 reply_serial=142
+method return time=1791789518.226070 sender=org.freedesktop.DBus -> destination=:1.3 serial=142 reply_serial=143
+method return time=1791789518.226095 sender=org.freedesktop.DBus -> destination=:1.3 serial=143 reply_serial=144
+   uint32 2
+method return time=1791789518.226183 sender=org.freedesktop.DBus -> destination=:1.3 serial=144 reply_serial=145
+   string ":1.10"
+method return time=1791789518.226345 sender=:1.10 -> destination=:1.3 serial=61 reply_serial=146
+   array [
+      dict entry(
+         string "version"
+         variant             uint32 1
+      )
+   ]
+method return time=1791789518.236518 sender=org.freedesktop.DBus -> destination=:1.3 serial=146 reply_serial=147
+   uint32 1
+error time=1791789518.237662 sender=org.freedesktop.DBus -> destination=:1.3 error_name=org.freedesktop.DBus.Error.ServiceUnknown reply_serial=148
+   string "The name :1.5 was not provided by any .service files"
+error time=1791789518.237813 sender=org.freedesktop.DBus -> destination=:1.3 error_name=org.freedesktop.DBus.Error.ServiceUnknown reply_serial=149
+   string "The name :1.6 was not provided by any .service files"
+method return time=1791789518.237992 sender=:1.3 -> destination=:1.2 serial=150 reply_serial=2
+   variant       uint32 2
+method return time=1791789518.238009 sender=:1.3 -> destination=:1.10 serial=151 reply_serial=2
+   variant       uint32 2
+method return time=1791789518.238073 sender=org.freedesktop.DBus -> destination=:1.3 serial=149 reply_serial=152
+   array [
+      dict entry(
+         string "ProcessID"
+         variant             uint32 88
+      )
+      dict entry(
+         string "UnixUserID"
+         variant             uint32 1000
+      )
+      dict entry(
+         string "UnixGroupIDs"
+         variant             array [
+               uint32 1000
+               uint32 65534
+               uint32 65534
+            ]
+      )
+      dict entry(
+         string "ProcessFD"
+         variant             file descriptor
+                  inode: 1066122
+                  type:       )
+   ]
+method return time=1791789518.251324 sender=org.freedesktop.DBus -> destination=:1.3 serial=150 reply_serial=153
+   array [
+      dict entry(
+         string "ProcessID"
+         variant             uint32 88
+      )
+      dict entry(
+         string "UnixUserID"
+         variant             uint32 1000
+      )
+      dict entry(
+         string "UnixGroupIDs"
+         variant             array [
+               uint32 1000
+               uint32 65534
+               uint32 65534
+            ]
+      )
+      dict entry(
+         string "ProcessFD"
+         variant             file descriptor
+                  inode: 1066122
+                  type:       )
+   ]
+method return time=1791789518.251776 sender=:1.3 -> destination=:1.10 serial=154 reply_serial=38
+error time=1791789518.251787 sender=:1.3 -> destination=:1.10 error_name=org.freedesktop.portal.Error.Failed reply_serial=62
+   string "Could not register app ID: Connection already associated with an application ID"
+method return time=1791789518.283520 sender=org.freedesktop.DBus -> destination=:1.12 serial=1 reply_serial=1
+   string ":1.12"
+method return time=1791789518.283804 sender=:1.3 -> destination=:1.12 serial=156 reply_serial=2
+   variant       uint32 2
+error time=1791789518.296382 sender=org.freedesktop.DBus -> destination=:1.2 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=10
+   string "Could not get owner of name 'org.a11y.Bus': no such name"
+error time=1791789518.296511 sender=org.freedesktop.DBus -> destination=:1.2 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=11
+   string "Could not get owner of name 'org.a11y.Bus': no such name"
+method return time=1791789518.296644 sender=org.freedesktop.DBus -> destination=:1.2 serial=5 reply_serial=13
+   boolean false
+error time=1791789518.296780 sender=org.freedesktop.DBus -> destination=:1.2 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=16
+   string "Could not get owner of name 'org.a11y.Bus': no such name"
+method return time=1791789518.311506 sender=org.freedesktop.DBus -> destination=:1.2 serial=7 reply_serial=21
+   string ":1.3"
+method return time=1791789518.311665 sender=org.freedesktop.DBus -> destination=:1.2 serial=8 reply_serial=24
+   string ":1.3"
+method return time=1791789518.312622 sender=org.freedesktop.DBus -> destination=:1.2 serial=9 reply_serial=25
+   boolean false
+method return time=1791789518.335612 sender=org.freedesktop.DBus -> destination=:1.12 serial=4 reply_serial=10
+   uint32 1
+method return time=1791789518.335972 sender=org.freedesktop.DBus -> destination=:1.12 serial=5 reply_serial=11
+   uint32 4
+method return time=1791789518.336067 sender=org.freedesktop.DBus -> destination=:1.12 serial=6 reply_serial=12
+   uint32 4
+method return time=1791789518.336249 sender=org.freedesktop.DBus -> destination=:1.3 serial=153 reply_serial=111
+   uint32 1
+method return time=1791789518.336264 sender=org.freedesktop.DBus -> destination=:1.12 serial=8 reply_serial=13
+   uint32 1
+method return time=1791789518.337047 sender=org.freedesktop.DBus -> destination=:1.3 serial=155 reply_serial=158
+   string ":1.12"
+method return time=1791789518.337553 sender=org.freedesktop.DBus -> destination=:1.12 serial=10 reply_serial=14
+   uint32 1
+method return time=1791789518.337773 sender=org.freedesktop.DBus -> destination=:1.12 serial=12 reply_serial=15
+   uint32 1
+error time=1791789518.338297 sender=org.freedesktop.DBus -> destination=:1.12 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=17
+   string "Could not get owner of name 'org.a11y.Bus': no such name"
+error time=1791789518.338460 sender=org.freedesktop.DBus -> destination=:1.12 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=18
+   string "Could not get owner of name 'org.a11y.Bus': no such name"
+method return time=1791789518.338618 sender=org.freedesktop.DBus -> destination=:1.12 serial=15 reply_serial=20
+   boolean false
+error time=1791789518.338793 sender=org.freedesktop.DBus -> destination=:1.12 error_name=org.freedesktop.DBus.Error.NameHasNoOwner reply_serial=23
+   string "Could not get owner of name 'org.a11y.Bus': no such name"
+method return time=1791789518.340935 sender=:1.12 -> destination=:1.3 serial=27 reply_serial=157
+   array [
+      dict entry(
+         string "version"
+         variant             uint32 0
+      )
+   ]
+method return time=1791789518.340980 sender=:1.12 -> destination=:1.3 serial=28 reply_serial=159
+   array [
+      dict entry(
+         string "version"
+         variant             uint32 0
+      )
+   ]
+method return time=1791789518.341041 sender=org.freedesktop.DBus -> destination=:1.3 serial=158 reply_serial=160
+   array [
+      dict entry(
+         string "ProcessID"
+         variant             uint32 100
+      )
+      dict entry(
+         string "UnixUserID"
+         variant             uint32 1000
+      )
+      dict entry(
+         string "UnixGroupIDs"
+         variant             array [
+               uint32 1000
+               uint32 65534
+               uint32 65534
+            ]
+      )
+      dict entry(
+         string "ProcessFD"
+         variant             file descriptor
+                  inode: 1070475
+                  type:       )
+   ]
+method return time=1791789518.341491 sender=org.freedesktop.DBus -> destination=:1.3 serial=159 reply_serial=161
+   array [
+      dict entry(
+         string "ProcessID"
+         variant             uint32 100
+      )
+      dict entry(
+         string "UnixUserID"
+         variant             uint32 1000
+      )
+      dict entry(
+         string "UnixGroupIDs"
+         variant             array [
+               uint32 1000
+               uint32 65534
+               uint32 65534
+            ]
+      )
+      dict entry(
+         string "ProcessFD"
+         variant             file descriptor
+                  inode: 1070475
+                  type:       )
+   ]
+method return time=1791789518.341922 sender=:1.3 -> destination=:1.12 serial=162 reply_serial=24
+method return time=1791789518.693993 sender=org.freedesktop.DBus -> destination=:1.3 serial=160 reply_serial=163
+   array [
+      dict entry(
+         string "ProcessID"
+         variant             uint32 40
+      )
+      dict entry(
+         string "UnixUserID"
+         variant             uint32 1000
+      )
+      dict entry(
+         string "UnixGroupIDs"
+         variant             array [
+               uint32 1000
+               uint32 65534
+               uint32 65534
+            ]
+      )
+      dict entry(
+         string "ProcessFD"
+         variant             file descriptor
+                  inode: 1078014
+                  type:       )
+   ]
+method return time=1791789518.694574 sender=:1.7 -> destination=:1.3 serial=35 reply_serial=164
+   array [
+   ]
+error time=1791789518.695084 sender=org.freedesktop.DBus -> destination=:1.10 error_name=org.freedesktop.DBus.Error.ServiceUnknown reply_serial=63
+   string "The name org.kde.KWin was not provided by any .service files"
+error time=1791789518.695331 sender=org.freedesktop.DBus -> destination=:1.10 error_name=org.freedesktop.DBus.Error.ServiceUnknown reply_serial=64
+   string "The name org.kde.KWin was not provided by any .service files"
+method return time=1791789518.695475 sender=:1.10 -> destination=:1.3 serial=65 reply_serial=165
+   array [
+      dict entry(
+         string "org.kde.TabletMode"
+         array [
+            dict entry(
+               string "available"
+               variant                   boolean false
+            )
+            dict entry(
+               string "enabled"
+               variant                   boolean false
+            )
+         ]
+      )
+   ]
+method return time=1791789518.695640 sender=:1.3 -> destination=:1.2 serial=166 reply_serial=28
+   array [
+      dict entry(
+         string "org.kde.TabletMode"
+         array [
+            dict entry(
+               string "enabled"
+               variant                   boolean false
+            )
+            dict entry(
+               string "available"
+               variant                   boolean false
+            )
+         ]
+      )
+   ]
+error time=1791789518.712178 sender=:1.3 -> destination=:1.2 error_name=org.freedesktop.portal.Error.Failed reply_serial=29
+   string "Could not register app ID: Connection already associated with an application ID"

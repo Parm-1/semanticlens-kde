@@ -1,0 +1,13 @@
+{
+  "KPlugin": {
+    "Id": "kde-index-runner-v2",
+    "Name": "KDE Index",
+    "Description": "Search selected folders by meaning and content",
+    "Version": "0.1",
+    "License": "GPL-3.0-or-later",
+    "EnabledByDefault": true
+  },
+  "X-Plasma-Runner-Min-Letter-Count": 2,
+  "X-Plasma-Runner-Weak-Results": true,
+  "X-Plasma-Runner-Unique-Results": false
+}

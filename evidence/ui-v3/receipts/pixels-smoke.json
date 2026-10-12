@@ -1,0 +1,32 @@
+{
+    "bounded_paper_edge_correction": true,
+    "capture": "/home/parm/Documents/KDE Index/local/ui-v3-smoke-readback/smoke-page.png",
+    "declared_painted_rect": [
+        568,
+        168,
+        400,
+        518
+    ],
+    "ink_reference_pixels": 652,
+    "ink_witness_correlation": 0.9318208672321124,
+    "mean_absolute_gray_error": 0.17172297297297298,
+    "nearby_white_bounds": [
+        567,
+        168,
+        400,
+        518
+    ],
+    "painted_rect": [
+        567,
+        168,
+        400,
+        518
+    ],
+    "pass": true,
+    "reference_raster": "/home/parm/Documents/KDE Index/local/ui-v3-smoke-readback/smoke-raster.png",
+    "thresholds": {
+        "maximum_gray_mae": 10,
+        "minimum_ink_correlation": 0.65,
+        "minimum_ink_pixels": 20
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "events": [
+        {
+            "event": "real-service-ready",
+            "ready": true
+        },
+        {
+            "event": "actual-source-indexed",
+            "http_fetches": 0,
+            "indexed": true,
+            "roots": [
+                {
+                    "exclusions": [
+                    ],
+                    "path": "/home/parm/Documents/KDE Index/local/ui-review-v1/markup-corpus"
+                }
+            ]
+        },
+        {
+            "event": "http-resource-request",
+            "raw": "GET /actual-service-canary.png HTTP/1.1\r\nHost: 127.0.0.1:44491\r\nConnection: Keep-Alive\r\nAccept-Encoding: zstd, br, gzip, deflate\r\nAccept-Language: en,*\r\nUser-Agent: Mozilla/5.0\r\n\r\n"
+        },
+        {
+            "event": "actual-search-rendered",
+            "http_fetches": 1,
+            "results": [
+                {
+                    "exact": true,
+                    "kind": "text",
+                    "page": 0,
+                    "path": "/home/parm/Documents/KDE Index/local/ui-review-v1/markup-corpus/markup.txt",
+                    "score": 1,
+                    "semantic_score": 0.8024843766006525,
+                    "text": "<b>MARKUP-CANARY</b><img src='http://127.0.0.1:44491/actual-service-canary.png'>",
+                    "title": "markup.txt",
+                    "warning": ""
+                }
+            ]
+        },
+        {
+            "event": "window-capture",
+            "saved": true
+        },
+        {
+            "event": "completion",
+            "harness_expectations": true,
+            "socket_exists": false
+        }
+    ],
+    "mode": "markup"
+}

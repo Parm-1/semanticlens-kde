@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.24)
+project(RunnerPrivacyControls LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(Qt6 REQUIRED COMPONENTS Core Gui Network)
+find_package(KF6Runner REQUIRED)
+find_package(KF6CoreAddons REQUIRED)
+add_executable(runner-privacy-manager ../runner_privacy_manager.cpp)
+target_link_libraries(runner-privacy-manager PRIVATE Qt6::Core Qt6::Gui Qt6::Network KF6::Runner KF6::CoreAddons)

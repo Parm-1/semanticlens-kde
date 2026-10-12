@@ -1,0 +1,77 @@
+{
+  "outcome": "confirmed missing provider contract and enumeration bound; production policy undecided",
+  "categories": {
+    "unchanged_engine_enumeration_controls": 1,
+    "observer_setup_failures_retained": 1,
+    "actual_kernel_statx_controls": 3,
+    "actual_kernel_openat2_controls": 4,
+    "real_virtual_provider_controls": 0,
+    "production_repairs": 0
+  },
+  "enumeration_result": {
+    "reply": {
+      "accepted": true
+    },
+    "state": {
+      "busy": false,
+      "current": "",
+      "error": "",
+      "errors": 0,
+      "failures": [],
+      "identity": {
+        "backend": "CPU",
+        "byte_order": "little",
+        "dimension": 768,
+        "dtype": "float32",
+        "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+        "extractors": {
+          "pdfinfo": "pdfinfo version 26.05.0",
+          "pdftoppm": "pdftoppm version 26.05.0",
+          "pdftotext": "pdftotext version 26.08.0",
+          "tesseract": "tesseract 5.5.3"
+        },
+        "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+        "max_tokens": 2048,
+        "model": "google/embeddinggemma-2",
+        "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+        "pipeline": "digup-vectors1-linux-cpu-probe1",
+        "producer_sha256": "f34469aa625f5000a7a3bb24a04b3c0cc91cf63ddb4e4a17fdbbf0fa1f49a9bf",
+        "representation": 3,
+        "runtime": "llama.cpp-b11461+no-logits",
+        "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+      },
+      "index_revision": 0,
+      "indexed": 0,
+      "model_ready": true,
+      "paused": false,
+      "phase": "ready",
+      "progress": 0,
+      "ready": true,
+      "recovery_attempt": 1,
+      "roots": [
+        {
+          "exclusions": [],
+          "path": "/home/parm/Documents/KDE Index/local/build-own/local-root-v1/baseline-empty"
+        }
+      ],
+      "segments": 0,
+      "total": 0
+    },
+    "wall_ms": 455,
+    "watch_count": 10006,
+    "watch_directories": 10006,
+    "watch_files": 0
+  },
+  "scope": "owned btrfs tree; unchanged core real CPU producer initializes but no content or embeddings; no Wayland/UI/native filesystem provider fixture",
+  "producer_sha256": "f34469aa625f5000a7a3bb24a04b3c0cc91cf63ddb4e4a17fdbbf0fa1f49a9bf",
+  "core_sha256": "b997ee10c5211476fccf985100adee61b9733194a3deaa023aba09e39024ddb3",
+  "resource_closure": {
+    "all_direct_control_handles_terminal": true,
+    "known_control_process_or_worker_remaining": false,
+    "sockets_created": 0,
+    "mounts_created": 0,
+    "threads_closed_by_engine_destructor": true
+  },
+  "wall_time_scope": "455ms add_root plus enumeration in diagnostic consumer; initialization outside interval; no whole-package elapsed measurement",
+  "usage": "implementation/review token and billing metrics unavailable; no independent review commissioned in shared capacity"
+}

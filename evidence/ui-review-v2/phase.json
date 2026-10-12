@@ -1,0 +1,296 @@
+{
+    "events": [
+        {
+            "event": "raw-request",
+            "id": "ui-1",
+            "op": "status"
+        },
+        {
+            "event": "raw-reply",
+            "id": "ui-1",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "error": "",
+                "index_revision": 2,
+                "indexed": 0,
+                "model_ready": true,
+                "phase": "ready",
+                "ready": true,
+                "roots": [
+                ]
+            }
+        },
+        {
+            "event": "raw-request",
+            "id": "ui-2",
+            "kind": "",
+            "limit": 20,
+            "op": "search",
+            "text": "current"
+        },
+        {
+            "event": "raw-reply",
+            "id": "ui-2",
+            "index_revision": 2,
+            "ok": true,
+            "protocol": 1,
+            "results": [
+                {
+                    "kind": "text",
+                    "page": 0,
+                    "path": "/home/parm/Documents/KDE Index/local/ui-review-v2-phase/source.txt",
+                    "text": "current literal passage",
+                    "title": "source.txt"
+                }
+            ]
+        },
+        {
+            "event": "current-ready-positive",
+            "ready": true,
+            "results": 1
+        },
+        {
+            "event": "raw-request",
+            "id": "ui-3",
+            "kind": "",
+            "limit": 20,
+            "op": "search",
+            "text": "in-flight"
+        },
+        {
+            "event": "raw-request",
+            "id": "ui-4",
+            "op": "status"
+        },
+        {
+            "event": "raw-reply",
+            "id": "ui-4",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "error": "",
+                "index_revision": 2,
+                "indexed": 0,
+                "model_ready": true,
+                "phase": "failed",
+                "ready": false,
+                "roots": [
+                ]
+            }
+        },
+        {
+            "event": "ready-false-model-true",
+            "ready": false,
+            "results": 0
+        },
+        {
+            "event": "raw-reply",
+            "id": "ui-3",
+            "index_revision": 2,
+            "ok": true,
+            "protocol": 1,
+            "results": [
+                {
+                    "kind": "text",
+                    "page": 0,
+                    "path": "/home/parm/Documents/KDE Index/local/ui-review-v2-phase/source.txt",
+                    "text": "current literal passage",
+                    "title": "source.txt"
+                }
+            ]
+        },
+        {
+            "event": "raw-request",
+            "id": "ui-5",
+            "op": "cancel",
+            "target": "ui-3"
+        },
+        {
+            "accepted": true,
+            "event": "raw-reply",
+            "id": "ui-5",
+            "ok": true,
+            "protocol": 1
+        },
+        {
+            "event": "raw-request",
+            "id": "ui-6",
+            "op": "status"
+        },
+        {
+            "event": "raw-reply",
+            "id": "ui-6",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "error": "",
+                "index_revision": 2,
+                "indexed": 0,
+                "model_ready": true,
+                "phase": "failed",
+                "ready": false,
+                "roots": [
+                ]
+            }
+        },
+        {
+            "event": "late-inflight-success-after-readiness-loss",
+            "results": 0
+        },
+        {
+            "event": "raw-request",
+            "id": "ui-7",
+            "op": "status"
+        },
+        {
+            "event": "raw-reply",
+            "id": "ui-7",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "error": "",
+                "index_revision": 2,
+                "indexed": 0,
+                "model_ready": false,
+                "phase": "failed",
+                "ready": true,
+                "roots": [
+                ]
+            }
+        },
+        {
+            "event": "ready-true-model-false",
+            "ready": false,
+            "results": 0
+        },
+        {
+            "event": "raw-request",
+            "id": "ui-8",
+            "op": "status"
+        },
+        {
+            "event": "raw-reply",
+            "id": "ui-8",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "error": "",
+                "index_revision": 2,
+                "indexed": 0,
+                "model_ready": true,
+                "phase": "ready",
+                "ready": true,
+                "roots": [
+                ]
+            }
+        },
+        {
+            "event": "raw-request",
+            "id": "ui-9",
+            "kind": "",
+            "limit": 20,
+            "op": "search",
+            "text": "in-flight"
+        },
+        {
+            "event": "readiness-restored-current-query",
+            "query": "in-flight",
+            "ready": true
+        },
+        {
+            "event": "wipe-invalidates-immediately",
+            "results": 0
+        },
+        {
+            "event": "raw-request",
+            "id": "ui-10",
+            "op": "cancel",
+            "target": "ui-9"
+        },
+        {
+            "accepted": true,
+            "event": "raw-reply",
+            "id": "ui-10",
+            "ok": true,
+            "protocol": 1
+        },
+        {
+            "event": "raw-request",
+            "id": "ui-11",
+            "op": "wipe"
+        },
+        {
+            "accepted": true,
+            "event": "raw-reply",
+            "id": "ui-11",
+            "ok": true,
+            "protocol": 1,
+            "ready": false,
+            "recovery_error": "model byte size mismatch",
+            "removed": true
+        },
+        {
+            "event": "raw-request",
+            "id": "ui-12",
+            "op": "status"
+        },
+        {
+            "event": "raw-reply",
+            "id": "ui-12",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "error": "model byte size mismatch",
+                "index_revision": 2,
+                "indexed": 0,
+                "model_ready": false,
+                "phase": "failed",
+                "ready": false,
+                "roots": [
+                ]
+            }
+        },
+        {
+            "event": "raw-request",
+            "id": "ui-13",
+            "op": "status"
+        },
+        {
+            "event": "raw-reply",
+            "id": "ui-13",
+            "ok": true,
+            "protocol": 1,
+            "status": {
+                "busy": false,
+                "error": "model byte size mismatch",
+                "index_revision": 2,
+                "indexed": 0,
+                "model_ready": false,
+                "phase": "failed",
+                "ready": false,
+                "roots": [
+                ]
+            }
+        },
+        {
+            "event": "failed-verification-removal-ack-and-current-status",
+            "message": "model byte size mismatch",
+            "ready": false,
+            "results": 0,
+            "status_count": 7,
+            "wipes": 1
+        },
+        {
+            "event": "completion",
+            "expectations": true,
+            "socket_exists": false
+        }
+    ]
+}

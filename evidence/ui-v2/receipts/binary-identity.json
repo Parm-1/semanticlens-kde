@@ -1,0 +1,9 @@
+{
+  "kde-index": true,
+  "ui-smoke": true,
+  "ui-repair": true,
+  "ui-recovery": true,
+  "ui-liveness": true,
+  "kde-index-service": true,
+  "embedding-probe": true
+}

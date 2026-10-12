@@ -1,0 +1,1446 @@
+{
+  "scope": "frozen authored synthetic corpus v1, native queries as typed",
+  "version": "baloo 6.30.0",
+  "queries": [
+    {
+      "query": "rules about owning a pet in rented accommodation",
+      "hits": [],
+      "elapsed_ms": 14.932891001080861,
+      "stderr": "Elapsed: 0.162417 msecs",
+      "id": "s01"
+    },
+    {
+      "query": "getting my money back for a faulty purchase",
+      "hits": [],
+      "elapsed_ms": 24.19497200025944,
+      "stderr": "Elapsed: 0.146907 msecs",
+      "id": "s02"
+    },
+    {
+      "query": "saving holiday pictures before wiping their storage",
+      "hits": [],
+      "elapsed_ms": 13.643885999044869,
+      "stderr": "Elapsed: 0.154161 msecs",
+      "id": "s03"
+    },
+    {
+      "query": "why did my credit card get rejected at checkout",
+      "hits": [],
+      "elapsed_ms": 14.466388998698676,
+      "stderr": "Elapsed: 0.158609 msecs",
+      "id": "s04"
+    },
+    {
+      "query": "what should I take to the upcoming puncture repair class",
+      "hits": [],
+      "elapsed_ms": 13.441393999528373,
+      "stderr": "Elapsed: 0.125737 msecs",
+      "id": "s05"
+    },
+    {
+      "query": "preventing young vegetables from freezing overnight",
+      "hits": [],
+      "elapsed_ms": 14.600441998481983,
+      "stderr": "Elapsed: 0.12177 msecs",
+      "id": "s06"
+    },
+    {
+      "query": "wifi box is completely dark after electricity went off",
+      "hits": [],
+      "elapsed_ms": 14.637992997450056,
+      "stderr": "Elapsed: 0.122341 msecs",
+      "id": "s07"
+    },
+    {
+      "query": "breakfast prepared the night before without an oven",
+      "hits": [],
+      "elapsed_ms": 13.303443996846909,
+      "stderr": "Elapsed: 0.132451 msecs",
+      "id": "s08"
+    },
+    {
+      "query": "safely cleaning a clogged cooling component",
+      "hits": [],
+      "elapsed_ms": 13.576539000496268,
+      "stderr": "Elapsed: 0.120157 msecs",
+      "id": "s09"
+    },
+    {
+      "query": "step free access for a person with reduced mobility",
+      "hits": [],
+      "elapsed_ms": 13.002695002796827,
+      "stderr": "Elapsed: 0.112643 msecs",
+      "id": "s10"
+    },
+    {
+      "query": "keeping a borrowed book for longer",
+      "hits": [],
+      "elapsed_ms": 13.14633600122761,
+      "stderr": "Elapsed: 0.133172 msecs",
+      "id": "s11"
+    },
+    {
+      "query": "leaving a suitcase somewhere during a train stop",
+      "hits": [],
+      "elapsed_ms": 13.979470000776928,
+      "stderr": "Elapsed: 0.149623 msecs",
+      "id": "s12"
+    },
+    {
+      "query": "green vertical columns getting taller from left to right",
+      "hits": [],
+      "elapsed_ms": 11.85331500164466,
+      "stderr": "Elapsed: 0.126018 msecs",
+      "id": "s13"
+    },
+    {
+      "query": "red bars steadily decreasing across a graph",
+      "hits": [],
+      "elapsed_ms": 13.448336998408195,
+      "stderr": "Elapsed: 0.15882 msecs",
+      "id": "s14"
+    },
+    {
+      "query": "an error dialog about an unsuccessful card payment",
+      "hits": [],
+      "elapsed_ms": 13.31001500147977,
+      "stderr": "Elapsed: 0.147258 msecs",
+      "id": "s15"
+    },
+    {
+      "query": "a successful checkout screen with a green tick",
+      "hits": [],
+      "elapsed_ms": 14.376310002262471,
+      "stderr": "Elapsed: 0.206531 msecs",
+      "id": "s16"
+    },
+    {
+      "query": "settings showing automatic copies turned off and an old backup",
+      "hits": [],
+      "elapsed_ms": 14.50979099899996,
+      "stderr": "Elapsed: 0.125507 msecs",
+      "id": "s17"
+    },
+    {
+      "query": "backup settings with a green on switch and a copy from today",
+      "hits": [],
+      "elapsed_ms": 18.51624700066168,
+      "stderr": "Elapsed: 0.141718 msecs",
+      "id": "s18"
+    },
+    {
+      "query": "a timeline with staggered colored horizontal work stages",
+      "hits": [],
+      "elapsed_ms": 17.615998000110267,
+      "stderr": "Elapsed: 0.187744 msecs",
+      "id": "s19"
+    },
+    {
+      "query": "a circular budget chart split into colored slices",
+      "hits": [],
+      "elapsed_ms": 15.944341001159046,
+      "stderr": "Elapsed: 0.198144 msecs",
+      "id": "s20"
+    },
+    {
+      "query": "TEN-49271",
+      "hits": [
+        {
+          "id": "794ab93eb8a784",
+          "file": "d01.txt"
+        }
+      ],
+      "elapsed_ms": 14.53577999927802,
+      "stderr": "Elapsed: 0.164431 msecs",
+      "id": "e01"
+    },
+    {
+      "query": "RET-81342",
+      "hits": [
+        {
+          "id": "794aba3eb8a784",
+          "file": "d02.txt"
+        }
+      ],
+      "elapsed_ms": 13.81207399754203,
+      "stderr": "Elapsed: 0.161695 msecs",
+      "id": "e02"
+    },
+    {
+      "query": "CAM-25816",
+      "hits": [
+        {
+          "id": "794abb3eb8a784",
+          "file": "d03.txt"
+        }
+      ],
+      "elapsed_ms": 16.142675998708,
+      "stderr": "Elapsed: 0.159201 msecs",
+      "id": "e03"
+    },
+    {
+      "query": "PAY-70193",
+      "hits": [
+        {
+          "id": "794abc3eb8a784",
+          "file": "d04.txt"
+        }
+      ],
+      "elapsed_ms": 18.13629000025685,
+      "stderr": "Elapsed: 0.163238 msecs",
+      "id": "e04"
+    },
+    {
+      "query": "CLG-57260",
+      "hits": [
+        {
+          "id": "794ac93eb8a784",
+          "file": "p01.pdf"
+        }
+      ],
+      "elapsed_ms": 13.664275000337511,
+      "stderr": "Elapsed: 0.168468 msecs",
+      "id": "e05"
+    },
+    {
+      "query": "BAK-84319",
+      "hits": [],
+      "elapsed_ms": 14.834154000709532,
+      "stderr": "Elapsed: 0.127861 msecs",
+      "id": "e06"
+    },
+    {
+      "query": "prior written consent",
+      "hits": [
+        {
+          "id": "794ab93eb8a784",
+          "file": "d01.txt"
+        }
+      ],
+      "elapsed_ms": 12.629040000319947,
+      "stderr": "Elapsed: 0.167467 msecs",
+      "id": "l01"
+    },
+    {
+      "query": "purchase receipt",
+      "hits": [
+        {
+          "id": "794aba3eb8a784",
+          "file": "d02.txt"
+        }
+      ],
+      "elapsed_ms": 12.674466001044493,
+      "stderr": "Elapsed: 0.15858 msecs",
+      "id": "l02"
+    },
+    {
+      "query": "removable memory card",
+      "hits": [
+        {
+          "id": "794abb3eb8a784",
+          "file": "d03.txt"
+        }
+      ],
+      "elapsed_ms": 15.43427700016764,
+      "stderr": "Elapsed: 0.176794 msecs",
+      "id": "l03"
+    },
+    {
+      "query": "spending limit",
+      "hits": [
+        {
+          "id": "794abc3eb8a784",
+          "file": "d04.txt"
+        }
+      ],
+      "elapsed_ms": 14.122610999038443,
+      "stderr": "Elapsed: 0.181893 msecs",
+      "id": "l04"
+    },
+    {
+      "query": "charged laptop",
+      "hits": [
+        {
+          "id": "794abd3eb8a784",
+          "file": "d05.txt"
+        }
+      ],
+      "elapsed_ms": 14.475105999736115,
+      "stderr": "Elapsed: 0.160093 msecs",
+      "id": "l05"
+    },
+    {
+      "query": "tomato seedlings",
+      "hits": [
+        {
+          "id": "794abe3eb8a784",
+          "file": "d06.txt"
+        }
+      ],
+      "elapsed_ms": 12.472955000703223,
+      "stderr": "Elapsed: 0.152468 msecs",
+      "id": "l06"
+    },
+    {
+      "query": "blocked filter",
+      "hits": [
+        {
+          "id": "794ac93eb8a784",
+          "file": "p01.pdf"
+        }
+      ],
+      "elapsed_ms": 12.303265000809915,
+      "stderr": "Elapsed: 0.142659 msecs",
+      "id": "l07"
+    },
+    {
+      "query": "staffed lockers",
+      "hits": [
+        {
+          "id": "794acc3eb8a784",
+          "file": "p04.pdf"
+        }
+      ],
+      "elapsed_ms": 12.304747000598582,
+      "stderr": "Elapsed: 0.158659 msecs",
+      "id": "l08"
+    },
+    {
+      "query": "a medical report describing a fractured ankle",
+      "hits": [],
+      "elapsed_ms": 14.15380000253208,
+      "stderr": "Elapsed: 0.1535 msecs",
+      "id": "n01"
+    },
+    {
+      "query": "a photograph of a giraffe beside a river",
+      "hits": [],
+      "elapsed_ms": 12.700103998213308,
+      "stderr": "Elapsed: 0.135446 msecs",
+      "id": "n02"
+    },
+    {
+      "query": "instructions for changing the oil in a motorboat",
+      "hits": [],
+      "elapsed_ms": 11.979453000094509,
+      "stderr": "Elapsed: 0.13288 msecs",
+      "id": "n03"
+    }
+  ],
+  "sampled_peak_rss_kib": 69848,
+  "rss_scope": "50ms /proc sum of daemon/live-descendant resident KiB; shared pages counted per process; sampled peak",
+  "content_status": [
+    {
+      "file": "d01.txt",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "d02.txt",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "d03.txt",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "d04.txt",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "d05.txt",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "d06.txt",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "d07.txt",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "d08.txt",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "d09.txt",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "d10.txt",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "d11.txt",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "d12.txt",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "d13.txt",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "d14.txt",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "d15.txt",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "d16.txt",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "i01.png",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "i02.png",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "i03.png",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "i04.png",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "i05.png",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "i06.png",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "i07.png",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "i08.png",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "p01.pdf",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "p02.pdf",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "p03.pdf",
+      "indexing": "content",
+      "status": "done"
+    },
+    {
+      "file": "p04.pdf",
+      "indexing": "content",
+      "status": "done"
+    }
+  ],
+  "indexing": {
+    "begin_ns": 24380431737846,
+    "end_ns": 24386798759496,
+    "elapsed_seconds": 6.36702165
+  },
+  "extracted_terms": {
+    "d01.txt": "794ab93eb8a784 1052288900 7948985 <corpus>/d01.txt\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tLine Count: 1\n\nInternal Info\nFile Name Terms: Fd01 Ftxt \nXAttr Terms: \nPlain Text Terms: 49271 animals any be by carpets consent damage domestic for from keep manager may must only paid prior property reference residents ten tenant the to with written \nProperty Terms: Mplain Mtext T5 T8 X20-1 \nlineCount: 1\n",
+    "d02.txt": "794aba3eb8a784 1052288900 7948986 <corpus>/d02.txt\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tLine Count: 1\n\nInternal Info\nFile Name Terms: Fd02 Ftxt \nXAttr Terms: \nPlain Text Terms: 81342 and bring can card damaged days desk exchange it or original payment product purchase receipt reference ret return service staff the thirty to within \nProperty Terms: Mplain Mtext T5 T8 X20-1 \nlineCount: 1\n",
+    "d03.txt": "794abb3eb8a784 1052288900 7948987 <corpus>/d03.txt\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tLine Count: 1\n\nInternal Info\nFile Name Terms: Fd03 Ftxt \nXAttr Terms: \nPlain Text Terms: 25816 a and before cam camera card copies copy drive erasing memory on open photographs pictures reference removable second stores that the to verify \nProperty Terms: Mplain Mtext T5 T8 X20-1 \nlineCount: 1\n",
+    "d04.txt": "794abc3eb8a784 1052288900 7948988 <corpus>/d04.txt\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tLine Count: 1\n\nInternal Info\nFile Name Terms: Fd04 Ftxt \nXAttr Terms: \nPlain Text Terms: 70193 a account and been blocked card check declined for has issuer limit never pay pin reference send shop spending telephone temporarily the to transaction whether your \nProperty Terms: Mplain Mtext T5 T8 X20-1 \nlineCount: 1\n",
+    "d05.txt": "794abd3eb8a784 1052288900 7948989 <corpus>/d05.txt\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tLine Count: 1\n\nInternal Info\nFile Name Terms: Fd05 Ftxt \nXAttr Terms: \nPlain Text Terms: 61427 a afternoon at begins bicycle bring charged covers day east evt hall in laptop monday nine on participants punctures reference repairing session should the two workshop \nProperty Terms: Mplain Mtext T5 T8 X20-1 \nlineCount: 1\n",
+    "d06.txt": "794abe3eb8a784 1052288900 7948990 <corpus>/d06.txt\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tLine Count: 1\n\nInternal Info\nFile Name Terms: Fd06 Ftxt \nXAttr Terms: \nPlain Text Terms: 35082 a avoid before cold covering drape during fabric foliage gdn morning next night over plants plastic protect reference remove sealing seedlings sunset the to tomato under wet \nProperty Terms: Mplain Mtext T5 T8 X20-1 \nlineCount: 1\n",
+    "d07.txt": "794abf3eb8a784 1052288900 7948991 <corpus>/d07.txt\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tLine Count: 1\n\nInternal Info\nFile Name Terms: Fd07 Ftxt \nXAttr Terms: \nPlain Text Terms: 98614 a access adapter after and before check has internet interruption its lights minutes net no outlet power reconnect reference router testing the two wait wall wireless \nProperty Terms: Mplain Mtext T5 T8 X20-1 \nlineCount: 1\n",
+    "d08.txt": "794ac03eb8a784 1052288900 7948992 <corpus>/d08.txt\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tLine Count: 1\n\nInternal Info\nFile Name Terms: Fd08 Ftxt \nXAttr Terms: \nPlain Text Terms: 12745 a add and before berries breakfast combine cooking eating fod in it jar just leave milk morning no oats overnight reference refrigerator requires the this with \nProperty Terms: Mplain Mtext T5 T8 X20-1 \nlineCount: 1\n",
+    "d09.txt": "794ac13eb8a784 1052288900 7948993 <corpus>/d09.txt\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tLine Count: 1\n\nInternal Info\nFile Name Terms: Fd09 Ftxt \nXAttr Terms: \nPlain Text Terms: basement because bicycles clear corridors do evacuation for in keep leave may must not rack residents routes stay the them \nProperty Terms: Mplain Mtext T5 T8 X20-1 \nlineCount: 1\n",
+    "d10.txt": "794ac23eb8a784 1052288900 7948994 <corpus>/d10.txt\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tLine Count: 1\n\nInternal Info\nFile Name Terms: Fd10 Ftxt \nXAttr Terms: \nPlain Text Terms: a ago agree an authorize cost customer days does estimate for more must not offers products purchased quoted repair shop than the thirty to \nProperty Terms: Mplain Mtext T5 T8 X20-1 \nlineCount: 1\n",
+    "d11.txt": "794ac33eb8a784 1052288900 7948995 <corpus>/d11.txt\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tLine Count: 1\n\nInternal Info\nFile Name Terms: Fd11 Ftxt \nXAttr Terms: \nPlain Text Terms: a adapter and battery be blinking camera charged charging finished green has indicator is it means orange should supplied the underway with \nProperty Terms: Mplain Mtext T5 T8 X20-1 \nlineCount: 1\n",
+    "d12.txt": "794ac43eb8a784 1052288900 7948996 <corpus>/d12.txt\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tLine Count: 1\n\nInternal Info\nFile Name Terms: Fd12 Ftxt \nXAttr Terms: \nPlain Text Terms: a allow appear arrive business canceled card contact credit days does for if it may merchant not number on order refund several shop statement the to with \nProperty Terms: Mplain Mtext T5 T8 X20-1 \nlineCount: 1\n",
+    "d13.txt": "794ac53eb8a784 1052288900 7948997 <corpus>/d13.txt\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tLine Count: 1\n\nInternal Info\nFile Name Terms: Fd13 Ftxt \nXAttr Terms: \nPlain Text Terms: a adjusting and attendees computer cycling did gears hall held in last need not the topic was west workshop year \nProperty Terms: Mplain Mtext T5 T8 X20-1 \nlineCount: 1\n",
+    "d14.txt": "794ac63eb8a784 1052288900 7948998 <corpus>/d14.txt\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tLine Count: 1\n\nInternal Info\nFile Name Terms: Fd14 Ftxt \nXAttr Terms: \nPlain Text Terms: and avoid bright during early hot in leaves moisture need plants soil steady sunlight the tomato water weather wetting \nProperty Terms: Mplain Mtext T5 T8 X20-1 \nlineCount: 1\n",
+    "d15.txt": "794ac73eb8a784 1052288900 7948999 <corpus>/d15.txt\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tLine Count: 1\n\nInternal Info\nFile Name Terms: Fd15 Ftxt \nXAttr Terms: \nPlain Text Terms: a and but cable cannot check connect flashing has internet light network notice outage power provider red router the to with \nProperty Terms: Mplain Mtext T5 T8 X20-1 \nlineCount: 1\n",
+    "d16.txt": "794ac83eb8a784 1052288900 7949000 <corpus>/d16.txt\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tLine Count: 1\n\nInternal Info\nFile Name Terms: Fd16 Ftxt \nXAttr Terms: \nPlain Text Terms: a and bake biscuits butter flour golden hot in mix oat oats oven place rounds shape small them to until with \nProperty Terms: Mplain Mtext T5 T8 X20-1 \nlineCount: 1\n",
+    "i01.png": "794acd3eb8a784 1052288900 7949005 <corpus>/i01.png\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tWidth: 700\n\t\tHeight: 700\n\nInternal Info\nFile Name Terms: Fi01 Fpng \nXAttr Terms: \nPlain Text Terms: \nProperty Terms: Mimage Mpng T4 X26-700 X27-700 \nheight: 700\nwidth: 700\n",
+    "i02.png": "794ace3eb8a784 1052288900 7949006 <corpus>/i02.png\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tWidth: 700\n\t\tHeight: 700\n\nInternal Info\nFile Name Terms: Fi02 Fpng \nXAttr Terms: \nPlain Text Terms: \nProperty Terms: Mimage Mpng T4 X26-700 X27-700 \nheight: 700\nwidth: 700\n",
+    "i03.png": "794acf3eb8a784 1052288900 7949007 <corpus>/i03.png\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tWidth: 700\n\t\tHeight: 700\n\nInternal Info\nFile Name Terms: Fi03 Fpng \nXAttr Terms: \nPlain Text Terms: \nProperty Terms: Mimage Mpng T4 X26-700 X27-700 \nheight: 700\nwidth: 700\n",
+    "i04.png": "794ad03eb8a784 1052288900 7949008 <corpus>/i04.png\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tWidth: 700\n\t\tHeight: 700\n\nInternal Info\nFile Name Terms: Fi04 Fpng \nXAttr Terms: \nPlain Text Terms: \nProperty Terms: Mimage Mpng T4 X26-700 X27-700 \nwidth: 700\nheight: 700\n",
+    "i05.png": "794ad13eb8a784 1052288900 7949009 <corpus>/i05.png\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tWidth: 700\n\t\tHeight: 700\n\nInternal Info\nFile Name Terms: Fi05 Fpng \nXAttr Terms: \nPlain Text Terms: \nProperty Terms: Mimage Mpng T4 X26-700 X27-700 \nwidth: 700\nheight: 700\n",
+    "i06.png": "794ad23eb8a784 1052288900 7949010 <corpus>/i06.png\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tWidth: 700\n\t\tHeight: 700\n\nInternal Info\nFile Name Terms: Fi06 Fpng \nXAttr Terms: \nPlain Text Terms: \nProperty Terms: Mimage Mpng T4 X26-700 X27-700 \nheight: 700\nwidth: 700\n",
+    "i07.png": "794ad33eb8a784 1052288900 7949011 <corpus>/i07.png\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tWidth: 700\n\t\tHeight: 700\n\nInternal Info\nFile Name Terms: Fi07 Fpng \nXAttr Terms: \nPlain Text Terms: \nProperty Terms: Mimage Mpng T4 X26-700 X27-700 \nwidth: 700\nheight: 700\n",
+    "i08.png": "794ad43eb8a784 1052288900 7949012 <corpus>/i08.png\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tWidth: 700\n\t\tHeight: 700\n\nInternal Info\nFile Name Terms: Fi08 Fpng \nXAttr Terms: \nPlain Text Terms: \nProperty Terms: Mimage Mpng T4 X26-700 X27-700 \nheight: 700\nwidth: 700\n",
+    "p01.pdf": "794ac93eb8a784 1052288900 7949001 <corpus>/p01.pdf\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tPage Count: 2\n\nInternal Info\nFile Name Terms: Fp01 Fpdf \nXAttr Terms: \nPlain Text Terms: 57260 a allow and are before beside blocked clg code cool cooling desk emergency equipment filter front gloves housing inventory labels maintenance off procedure pump removing spare stored switch the to wear \nProperty Terms: Mapplication Mpdf T5 X18-2 \npageCount: 2\n",
+    "p02.pdf": "794aca3eb8a784 1052288900 7949002 <corpus>/p02.pdf\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tPage Count: 2\n\nInternal Info\nFile Name Terms: Fp02 Fpdf \nXAttr Terms: \nPlain Text Terms: access an at beside can desk elevator enter every exhibition floor gallery guide in morning museum opens ramp reaches south ten the through ticket using visitor visitors wheelchairs \nProperty Terms: Mapplication Mpdf T5 X18-2 \npageCount: 2\n",
+    "p03.pdf": "794acb3eb8a784 1052288900 7949003 <corpus>/p03.pdf\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tPage Count: 2\n\nInternal Info\nFile Name Terms: Fp03 Fpdf \nXAttr Terms: \nPlain Text Terms: a an another be before borrowing by can cannot card date due extended for identification is item library loans membership needed new online policy reader renewed requested the \nProperty Terms: Mapplication Mpdf T5 X18-2 \npageCount: 2\n",
+    "p04.pdf": "794acc3eb8a784 1052288900 7949004 <corpus>/p04.pdf\n\tMtime: 1791774733 2026-10-11T23:12:13\n\tCtime: 1791774733 2026-10-11T23:12:13\n\tCached properties:\n\t\tPage Count: 2\n\nInternal Info\nFile Name Terms: Fp04 Fpdf \nXAttr Terms: \nPlain Text Terms: are at bags before can closes collect counter eight evening in kiosk leave lockers luggage near notes platform sold staffed station storage the three tickets travel travelers \nProperty Terms: Mapplication Mpdf T5 X18-2 \npageCount: 2\n"
+  },
+  "warm_repeats": [
+    {
+      "repeat": 0,
+      "id": "s01",
+      "elapsed_ms": 13.434350999887101
+    },
+    {
+      "repeat": 0,
+      "id": "s02",
+      "elapsed_ms": 16.22146400040947
+    },
+    {
+      "repeat": 0,
+      "id": "s03",
+      "elapsed_ms": 15.094014001078904
+    },
+    {
+      "repeat": 0,
+      "id": "s04",
+      "elapsed_ms": 13.60698600183241
+    },
+    {
+      "repeat": 0,
+      "id": "s05",
+      "elapsed_ms": 12.772600999596762
+    },
+    {
+      "repeat": 0,
+      "id": "s06",
+      "elapsed_ms": 14.620030000514816
+    },
+    {
+      "repeat": 0,
+      "id": "s07",
+      "elapsed_ms": 11.204999998881249
+    },
+    {
+      "repeat": 0,
+      "id": "s08",
+      "elapsed_ms": 12.897156000690302
+    },
+    {
+      "repeat": 0,
+      "id": "s09",
+      "elapsed_ms": 13.033392999204807
+    },
+    {
+      "repeat": 0,
+      "id": "s10",
+      "elapsed_ms": 18.450483003107365
+    },
+    {
+      "repeat": 0,
+      "id": "s11",
+      "elapsed_ms": 14.610021000407869
+    },
+    {
+      "repeat": 0,
+      "id": "s12",
+      "elapsed_ms": 12.971627002116293
+    },
+    {
+      "repeat": 0,
+      "id": "s13",
+      "elapsed_ms": 15.875500001129694
+    },
+    {
+      "repeat": 0,
+      "id": "s14",
+      "elapsed_ms": 14.272112999606179
+    },
+    {
+      "repeat": 0,
+      "id": "s15",
+      "elapsed_ms": 12.195680999866454
+    },
+    {
+      "repeat": 0,
+      "id": "s16",
+      "elapsed_ms": 11.61917300123605
+    },
+    {
+      "repeat": 0,
+      "id": "s17",
+      "elapsed_ms": 11.471423000330105
+    },
+    {
+      "repeat": 0,
+      "id": "s18",
+      "elapsed_ms": 11.679285998980049
+    },
+    {
+      "repeat": 0,
+      "id": "s19",
+      "elapsed_ms": 13.075593000394292
+    },
+    {
+      "repeat": 0,
+      "id": "s20",
+      "elapsed_ms": 13.725400000112131
+    },
+    {
+      "repeat": 0,
+      "id": "e01",
+      "elapsed_ms": 11.073952999140602
+    },
+    {
+      "repeat": 0,
+      "id": "e02",
+      "elapsed_ms": 13.684862999070901
+    },
+    {
+      "repeat": 0,
+      "id": "e03",
+      "elapsed_ms": 11.215982001886005
+    },
+    {
+      "repeat": 0,
+      "id": "e04",
+      "elapsed_ms": 13.828215000103228
+    },
+    {
+      "repeat": 0,
+      "id": "e05",
+      "elapsed_ms": 14.75486400158843
+    },
+    {
+      "repeat": 0,
+      "id": "e06",
+      "elapsed_ms": 13.063770002190722
+    },
+    {
+      "repeat": 0,
+      "id": "l01",
+      "elapsed_ms": 12.357767998764757
+    },
+    {
+      "repeat": 0,
+      "id": "l02",
+      "elapsed_ms": 11.982148000242887
+    },
+    {
+      "repeat": 0,
+      "id": "l03",
+      "elapsed_ms": 12.574325999594294
+    },
+    {
+      "repeat": 0,
+      "id": "l04",
+      "elapsed_ms": 15.409370000270428
+    },
+    {
+      "repeat": 0,
+      "id": "l05",
+      "elapsed_ms": 15.89741199859418
+    },
+    {
+      "repeat": 0,
+      "id": "l06",
+      "elapsed_ms": 12.612769001862034
+    },
+    {
+      "repeat": 0,
+      "id": "l07",
+      "elapsed_ms": 12.278467002033722
+    },
+    {
+      "repeat": 0,
+      "id": "l08",
+      "elapsed_ms": 12.793300000339514
+    },
+    {
+      "repeat": 0,
+      "id": "n01",
+      "elapsed_ms": 15.215113999147434
+    },
+    {
+      "repeat": 0,
+      "id": "n02",
+      "elapsed_ms": 14.007022000441793
+    },
+    {
+      "repeat": 0,
+      "id": "n03",
+      "elapsed_ms": 13.110708998283371
+    },
+    {
+      "repeat": 1,
+      "id": "s01",
+      "elapsed_ms": 13.203043999965303
+    },
+    {
+      "repeat": 1,
+      "id": "s02",
+      "elapsed_ms": 14.084779002587311
+    },
+    {
+      "repeat": 1,
+      "id": "s03",
+      "elapsed_ms": 12.014920001092833
+    },
+    {
+      "repeat": 1,
+      "id": "s04",
+      "elapsed_ms": 10.943395998765482
+    },
+    {
+      "repeat": 1,
+      "id": "s05",
+      "elapsed_ms": 14.347514999826672
+    },
+    {
+      "repeat": 1,
+      "id": "s06",
+      "elapsed_ms": 15.05572199675953
+    },
+    {
+      "repeat": 1,
+      "id": "s07",
+      "elapsed_ms": 16.118289000587538
+    },
+    {
+      "repeat": 1,
+      "id": "s08",
+      "elapsed_ms": 15.063949002069421
+    },
+    {
+      "repeat": 1,
+      "id": "s09",
+      "elapsed_ms": 12.142421001044568
+    },
+    {
+      "repeat": 1,
+      "id": "s10",
+      "elapsed_ms": 12.983849999727681
+    },
+    {
+      "repeat": 1,
+      "id": "s11",
+      "elapsed_ms": 14.455038999585668
+    },
+    {
+      "repeat": 1,
+      "id": "s12",
+      "elapsed_ms": 13.881314000173006
+    },
+    {
+      "repeat": 1,
+      "id": "s13",
+      "elapsed_ms": 19.158962000801694
+    },
+    {
+      "repeat": 1,
+      "id": "s14",
+      "elapsed_ms": 16.288520997477463
+    },
+    {
+      "repeat": 1,
+      "id": "s15",
+      "elapsed_ms": 12.535173002106603
+    },
+    {
+      "repeat": 1,
+      "id": "s16",
+      "elapsed_ms": 13.543016000767238
+    },
+    {
+      "repeat": 1,
+      "id": "s17",
+      "elapsed_ms": 14.290518000052543
+    },
+    {
+      "repeat": 1,
+      "id": "s18",
+      "elapsed_ms": 12.306851000175811
+    },
+    {
+      "repeat": 1,
+      "id": "s19",
+      "elapsed_ms": 12.29119100025855
+    },
+    {
+      "repeat": 1,
+      "id": "s20",
+      "elapsed_ms": 15.065270999912173
+    },
+    {
+      "repeat": 1,
+      "id": "e01",
+      "elapsed_ms": 11.789614000008442
+    },
+    {
+      "repeat": 1,
+      "id": "e02",
+      "elapsed_ms": 12.09709500108147
+    },
+    {
+      "repeat": 1,
+      "id": "e03",
+      "elapsed_ms": 45.308925000426825
+    },
+    {
+      "repeat": 1,
+      "id": "e04",
+      "elapsed_ms": 17.957823001779616
+    },
+    {
+      "repeat": 1,
+      "id": "e05",
+      "elapsed_ms": 15.857616999710444
+    },
+    {
+      "repeat": 1,
+      "id": "e06",
+      "elapsed_ms": 12.5169780003489
+    },
+    {
+      "repeat": 1,
+      "id": "l01",
+      "elapsed_ms": 11.702448999130866
+    },
+    {
+      "repeat": 1,
+      "id": "l02",
+      "elapsed_ms": 15.04197599933832
+    },
+    {
+      "repeat": 1,
+      "id": "l03",
+      "elapsed_ms": 14.052247999643441
+    },
+    {
+      "repeat": 1,
+      "id": "l04",
+      "elapsed_ms": 27.20310199947562
+    },
+    {
+      "repeat": 1,
+      "id": "l05",
+      "elapsed_ms": 11.293797997495858
+    },
+    {
+      "repeat": 1,
+      "id": "l06",
+      "elapsed_ms": 14.208322001650231
+    },
+    {
+      "repeat": 1,
+      "id": "l07",
+      "elapsed_ms": 14.597807999962242
+    },
+    {
+      "repeat": 1,
+      "id": "l08",
+      "elapsed_ms": 13.710491999518126
+    },
+    {
+      "repeat": 1,
+      "id": "n01",
+      "elapsed_ms": 12.864254000305664
+    },
+    {
+      "repeat": 1,
+      "id": "n02",
+      "elapsed_ms": 12.288235997402808
+    },
+    {
+      "repeat": 1,
+      "id": "n03",
+      "elapsed_ms": 12.325617000897182
+    },
+    {
+      "repeat": 2,
+      "id": "s01",
+      "elapsed_ms": 14.004557000589557
+    },
+    {
+      "repeat": 2,
+      "id": "s02",
+      "elapsed_ms": 11.540995001269039
+    },
+    {
+      "repeat": 2,
+      "id": "s03",
+      "elapsed_ms": 12.866768000094453
+    },
+    {
+      "repeat": 2,
+      "id": "s04",
+      "elapsed_ms": 13.310636997630354
+    },
+    {
+      "repeat": 2,
+      "id": "s05",
+      "elapsed_ms": 15.446339999471093
+    },
+    {
+      "repeat": 2,
+      "id": "s06",
+      "elapsed_ms": 17.942844999197405
+    },
+    {
+      "repeat": 2,
+      "id": "s07",
+      "elapsed_ms": 15.038028999697417
+    },
+    {
+      "repeat": 2,
+      "id": "s08",
+      "elapsed_ms": 16.58477000091807
+    },
+    {
+      "repeat": 2,
+      "id": "s09",
+      "elapsed_ms": 11.07504500032519
+    },
+    {
+      "repeat": 2,
+      "id": "s10",
+      "elapsed_ms": 12.141408999013947
+    },
+    {
+      "repeat": 2,
+      "id": "s11",
+      "elapsed_ms": 11.735863001376856
+    },
+    {
+      "repeat": 2,
+      "id": "s12",
+      "elapsed_ms": 11.241258998779813
+    },
+    {
+      "repeat": 2,
+      "id": "s13",
+      "elapsed_ms": 15.428104998136405
+    },
+    {
+      "repeat": 2,
+      "id": "s14",
+      "elapsed_ms": 14.082605001021875
+    },
+    {
+      "repeat": 2,
+      "id": "s15",
+      "elapsed_ms": 11.747013999411138
+    },
+    {
+      "repeat": 2,
+      "id": "s16",
+      "elapsed_ms": 12.827835002099164
+    },
+    {
+      "repeat": 2,
+      "id": "s17",
+      "elapsed_ms": 13.652912999532418
+    },
+    {
+      "repeat": 2,
+      "id": "s18",
+      "elapsed_ms": 11.28951000282541
+    },
+    {
+      "repeat": 2,
+      "id": "s19",
+      "elapsed_ms": 11.702810999850044
+    },
+    {
+      "repeat": 2,
+      "id": "s20",
+      "elapsed_ms": 13.31963399934466
+    },
+    {
+      "repeat": 2,
+      "id": "e01",
+      "elapsed_ms": 12.764525999955367
+    },
+    {
+      "repeat": 2,
+      "id": "e02",
+      "elapsed_ms": 12.106693000532687
+    },
+    {
+      "repeat": 2,
+      "id": "e03",
+      "elapsed_ms": 12.827243997890037
+    },
+    {
+      "repeat": 2,
+      "id": "e04",
+      "elapsed_ms": 12.344382001174381
+    },
+    {
+      "repeat": 2,
+      "id": "e05",
+      "elapsed_ms": 15.362261001428124
+    },
+    {
+      "repeat": 2,
+      "id": "e06",
+      "elapsed_ms": 11.772703001042828
+    },
+    {
+      "repeat": 2,
+      "id": "l01",
+      "elapsed_ms": 12.206111001432873
+    },
+    {
+      "repeat": 2,
+      "id": "l02",
+      "elapsed_ms": 14.254789999540662
+    },
+    {
+      "repeat": 2,
+      "id": "l03",
+      "elapsed_ms": 13.649125998199452
+    },
+    {
+      "repeat": 2,
+      "id": "l04",
+      "elapsed_ms": 23.907760001748102
+    },
+    {
+      "repeat": 2,
+      "id": "l05",
+      "elapsed_ms": 11.973872999078594
+    },
+    {
+      "repeat": 2,
+      "id": "l06",
+      "elapsed_ms": 12.874092000856763
+    },
+    {
+      "repeat": 2,
+      "id": "l07",
+      "elapsed_ms": 15.151622999837855
+    },
+    {
+      "repeat": 2,
+      "id": "l08",
+      "elapsed_ms": 13.529900999856181
+    },
+    {
+      "repeat": 2,
+      "id": "n01",
+      "elapsed_ms": 12.135266999393934
+    },
+    {
+      "repeat": 2,
+      "id": "n02",
+      "elapsed_ms": 12.397201997373486
+    },
+    {
+      "repeat": 2,
+      "id": "n03",
+      "elapsed_ms": 11.939738000364741
+    },
+    {
+      "repeat": 3,
+      "id": "s01",
+      "elapsed_ms": 11.626686002273345
+    },
+    {
+      "repeat": 3,
+      "id": "s02",
+      "elapsed_ms": 12.027272998238914
+    },
+    {
+      "repeat": 3,
+      "id": "s03",
+      "elapsed_ms": 12.16640699931304
+    },
+    {
+      "repeat": 3,
+      "id": "s04",
+      "elapsed_ms": 13.703649001399754
+    },
+    {
+      "repeat": 3,
+      "id": "s05",
+      "elapsed_ms": 12.84212300015497
+    },
+    {
+      "repeat": 3,
+      "id": "s06",
+      "elapsed_ms": 14.378153002326144
+    },
+    {
+      "repeat": 3,
+      "id": "s07",
+      "elapsed_ms": 14.013214000442531
+    },
+    {
+      "repeat": 3,
+      "id": "s08",
+      "elapsed_ms": 11.284320000413572
+    },
+    {
+      "repeat": 3,
+      "id": "s09",
+      "elapsed_ms": 13.211219000368146
+    },
+    {
+      "repeat": 3,
+      "id": "s10",
+      "elapsed_ms": 12.140566999732982
+    },
+    {
+      "repeat": 3,
+      "id": "s11",
+      "elapsed_ms": 12.521806998847751
+    },
+    {
+      "repeat": 3,
+      "id": "s12",
+      "elapsed_ms": 14.688128998386674
+    },
+    {
+      "repeat": 3,
+      "id": "s13",
+      "elapsed_ms": 13.019858000916429
+    },
+    {
+      "repeat": 3,
+      "id": "s14",
+      "elapsed_ms": 11.568346002604812
+    },
+    {
+      "repeat": 3,
+      "id": "s15",
+      "elapsed_ms": 14.202180002030218
+    },
+    {
+      "repeat": 3,
+      "id": "s16",
+      "elapsed_ms": 11.295772001176374
+    },
+    {
+      "repeat": 3,
+      "id": "s17",
+      "elapsed_ms": 12.133554002502933
+    },
+    {
+      "repeat": 3,
+      "id": "s18",
+      "elapsed_ms": 12.936381001054542
+    },
+    {
+      "repeat": 3,
+      "id": "s19",
+      "elapsed_ms": 13.411596999503672
+    },
+    {
+      "repeat": 3,
+      "id": "s20",
+      "elapsed_ms": 14.460969003266655
+    },
+    {
+      "repeat": 3,
+      "id": "e01",
+      "elapsed_ms": 11.200762000953546
+    },
+    {
+      "repeat": 3,
+      "id": "e02",
+      "elapsed_ms": 14.998514998296741
+    },
+    {
+      "repeat": 3,
+      "id": "e03",
+      "elapsed_ms": 24.488897000992438
+    },
+    {
+      "repeat": 3,
+      "id": "e04",
+      "elapsed_ms": 18.57997800107114
+    },
+    {
+      "repeat": 3,
+      "id": "e05",
+      "elapsed_ms": 17.995334001170704
+    },
+    {
+      "repeat": 3,
+      "id": "e06",
+      "elapsed_ms": 33.92354400057229
+    },
+    {
+      "repeat": 3,
+      "id": "l01",
+      "elapsed_ms": 19.804078998276964
+    },
+    {
+      "repeat": 3,
+      "id": "l02",
+      "elapsed_ms": 31.94587899997714
+    },
+    {
+      "repeat": 3,
+      "id": "l03",
+      "elapsed_ms": 22.72413399987272
+    },
+    {
+      "repeat": 3,
+      "id": "l04",
+      "elapsed_ms": 19.836651998048183
+    },
+    {
+      "repeat": 3,
+      "id": "l05",
+      "elapsed_ms": 24.786620000668336
+    },
+    {
+      "repeat": 3,
+      "id": "l06",
+      "elapsed_ms": 26.450852001289604
+    },
+    {
+      "repeat": 3,
+      "id": "l07",
+      "elapsed_ms": 24.476544000208378
+    },
+    {
+      "repeat": 3,
+      "id": "l08",
+      "elapsed_ms": 21.058928999991622
+    },
+    {
+      "repeat": 3,
+      "id": "n01",
+      "elapsed_ms": 16.53107899983297
+    },
+    {
+      "repeat": 3,
+      "id": "n02",
+      "elapsed_ms": 15.079237000463763
+    },
+    {
+      "repeat": 3,
+      "id": "n03",
+      "elapsed_ms": 14.42055299776257
+    },
+    {
+      "repeat": 4,
+      "id": "s01",
+      "elapsed_ms": 14.547974002198316
+    },
+    {
+      "repeat": 4,
+      "id": "s02",
+      "elapsed_ms": 11.782289999246132
+    },
+    {
+      "repeat": 4,
+      "id": "s03",
+      "elapsed_ms": 13.279609000164783
+    },
+    {
+      "repeat": 4,
+      "id": "s04",
+      "elapsed_ms": 13.202864000049885
+    },
+    {
+      "repeat": 4,
+      "id": "s05",
+      "elapsed_ms": 13.648675001604715
+    },
+    {
+      "repeat": 4,
+      "id": "s06",
+      "elapsed_ms": 12.37186399885104
+    },
+    {
+      "repeat": 4,
+      "id": "s07",
+      "elapsed_ms": 14.032860999577679
+    },
+    {
+      "repeat": 4,
+      "id": "s08",
+      "elapsed_ms": 13.233571000455413
+    },
+    {
+      "repeat": 4,
+      "id": "s09",
+      "elapsed_ms": 13.219314998423215
+    },
+    {
+      "repeat": 4,
+      "id": "s10",
+      "elapsed_ms": 13.501637000445044
+    },
+    {
+      "repeat": 4,
+      "id": "s11",
+      "elapsed_ms": 15.175679000094533
+    },
+    {
+      "repeat": 4,
+      "id": "s12",
+      "elapsed_ms": 12.561711999296676
+    },
+    {
+      "repeat": 4,
+      "id": "s13",
+      "elapsed_ms": 12.428270998498192
+    },
+    {
+      "repeat": 4,
+      "id": "s14",
+      "elapsed_ms": 12.408302998665022
+    },
+    {
+      "repeat": 4,
+      "id": "s15",
+      "elapsed_ms": 18.706187001953367
+    },
+    {
+      "repeat": 4,
+      "id": "s16",
+      "elapsed_ms": 15.630558002158068
+    },
+    {
+      "repeat": 4,
+      "id": "s17",
+      "elapsed_ms": 16.66803799889749
+    },
+    {
+      "repeat": 4,
+      "id": "s18",
+      "elapsed_ms": 16.615358003036818
+    },
+    {
+      "repeat": 4,
+      "id": "s19",
+      "elapsed_ms": 16.976901002635714
+    },
+    {
+      "repeat": 4,
+      "id": "s20",
+      "elapsed_ms": 18.953031998535153
+    },
+    {
+      "repeat": 4,
+      "id": "e01",
+      "elapsed_ms": 19.519993002177216
+    },
+    {
+      "repeat": 4,
+      "id": "e02",
+      "elapsed_ms": 15.193733001069631
+    },
+    {
+      "repeat": 4,
+      "id": "e03",
+      "elapsed_ms": 13.068339001620188
+    },
+    {
+      "repeat": 4,
+      "id": "e04",
+      "elapsed_ms": 14.395877002243651
+    },
+    {
+      "repeat": 4,
+      "id": "e05",
+      "elapsed_ms": 14.642090998677304
+    },
+    {
+      "repeat": 4,
+      "id": "e06",
+      "elapsed_ms": 13.006301996938419
+    },
+    {
+      "repeat": 4,
+      "id": "l01",
+      "elapsed_ms": 12.846280002122512
+    },
+    {
+      "repeat": 4,
+      "id": "l02",
+      "elapsed_ms": 16.057765002187807
+    },
+    {
+      "repeat": 4,
+      "id": "l03",
+      "elapsed_ms": 21.34021100209793
+    },
+    {
+      "repeat": 4,
+      "id": "l04",
+      "elapsed_ms": 18.023717999312794
+    },
+    {
+      "repeat": 4,
+      "id": "l05",
+      "elapsed_ms": 17.991144999541575
+    },
+    {
+      "repeat": 4,
+      "id": "l06",
+      "elapsed_ms": 15.997441001672996
+    },
+    {
+      "repeat": 4,
+      "id": "l07",
+      "elapsed_ms": 12.920250002935063
+    },
+    {
+      "repeat": 4,
+      "id": "l08",
+      "elapsed_ms": 12.261044998012949
+    },
+    {
+      "repeat": 4,
+      "id": "n01",
+      "elapsed_ms": 12.824759000068298
+    },
+    {
+      "repeat": 4,
+      "id": "n02",
+      "elapsed_ms": 13.666828999703284
+    },
+    {
+      "repeat": 4,
+      "id": "n03",
+      "elapsed_ms": 12.233642999490257
+    }
+  ],
+  "warm_p95_ms": 22.72413399987272,
+  "latency_scope": "native CLI spawn through decoded results; 5 ordered repeats of all37; no host cache flush; no model-unload cold phase applies to Baloo",
+  "index_size_bytes": 139264,
+  "daemon_closed": true,
+  "daemon_exit_code": -15,
+  "sandbox_closed": true,
+  "sandbox_exit_code": 0,
+  "elapsed_seconds": 10.089541149001889,
+  "corpus_inventory_sha256": "2fdb07dba3b3191a7073b7fa1443e58c542fa3c03e3275d429e54058c8996872",
+  "isolation": "read-only host root; only owned sandbox writable; separate PID/network namespace and session bus"
+}

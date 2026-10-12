@@ -1,0 +1,29 @@
+{
+  "removed_paths": [
+    "/usr/bin/embedding-probe",
+    "/usr/bin/kde-index-service",
+    "/usr/bin/kde-index-cli",
+    "/usr/bin/kde-index",
+    "/usr/share/kde-index/model_download.py",
+    "/usr/share/applications/org.kdeindex.Search.desktop",
+    "/usr/share/metainfo/org.kdeindex.Search.metainfo.xml",
+    "/usr/share/licenses/kde-index/LICENSE",
+    "/usr/share/licenses/kde-index/THIRD_PARTY_NOTICES.md",
+    "/usr/share/licenses/kde-index/Apache-2.0.txt",
+    "/usr/share/licenses/kde-index/DigUp-MIT.txt",
+    "/usr/share/licenses/kde-index/llama.cpp-MIT.txt",
+    "/usr/share/licenses/kde-index/miniaudio-MIT-0.txt",
+    "/usr/share/licenses/kde-index/nlohmann-json-MIT.txt",
+    "/usr/share/licenses/kde-index/rotate-bits-MIT.txt",
+    "/usr/share/licenses/kde-index/sha1-Public-Domain.txt",
+    "/usr/share/licenses/kde-index/sha256-Public-Domain.txt",
+    "/usr/share/licenses/kde-index/sheredom-Unlicense.txt",
+    "/usr/share/licenses/kde-index/stb-image-MIT.txt",
+    "/usr/share/licenses/kde-index/xxHash-BSD-2-Clause.txt",
+    "/usr/lib/qt6/plugins/kf6/krunner/kde-index-runner.so"
+  ],
+  "count": 21,
+  "hashes_verified_before_removal": true,
+  "all_absent_after": true,
+  "scope": "Exact initially absent owned-bootstrap files only; no host or dependency removals"
+}

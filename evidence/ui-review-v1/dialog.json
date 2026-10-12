@@ -1,0 +1,27 @@
+{
+    "events": [
+        {
+            "event": "dialog-rendered",
+            "path": "/tmp/review-hkpxbM/1.png",
+            "rendered": true
+        },
+        {
+            "event": "immediately-after-close-invocation",
+            "file_exists": true,
+            "preview_url": "file:///tmp/review-hkpxbM/1.png",
+            "visible": true
+        },
+        {
+            "cleaned": true,
+            "event": "after-closed-phase",
+            "file_exists": false,
+            "visible": false
+        },
+        {
+            "event": "completion",
+            "harness_expectations": true,
+            "socket_exists": false
+        }
+    ],
+    "mode": "dialog"
+}

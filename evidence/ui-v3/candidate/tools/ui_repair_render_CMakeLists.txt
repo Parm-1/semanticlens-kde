@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.24)
+project(UIRenderPhase LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(Qt6 REQUIRED COMPONENTS Gui Core Widgets Qml Quick Network)
+qt_standard_project_setup()
+qt_add_executable(ui-render ../../tools/ui_repair_render.cpp ../../src/ui/backend.cpp ../../src/ui/backend.h)
+target_include_directories(ui-render PRIVATE ../../src/ui)
+target_link_libraries(ui-render PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets Qt6::Qml Qt6::Quick Qt6::Network)

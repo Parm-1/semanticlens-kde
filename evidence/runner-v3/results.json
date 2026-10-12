@@ -1,0 +1,71 @@
+{
+  "version": "runner-v3",
+  "successor_of": "evidence/runner-v2",
+  "review": {
+    "report": "evidence/runner-review-v2/report.md",
+    "sha256": "d7558c6a9552ea9ef523b6693218cf1dad6f24e69f095e4ede15dfc9fad7fc51",
+    "v2_parser_and_error_repair": "reviewer replay found the previous 21 affected cases passing; their receipts remain unchanged"
+  },
+  "candidate": {
+    "source": "src/runner-v3/runner.cpp",
+    "module_target_and_file": "kde-index-runner / libkde-index-runner.so",
+    "public_kplugin_id": "kde-index-runner",
+    "metadata_version": "0.1",
+    "license": "GPL-3.0-or-later",
+    "reply_budget_ms": 8000,
+    "context_validity_poll_ms": 30,
+    "prefix": "lowercase find "
+  },
+  "service_under_test": {
+    "binary": "evidence/engine-v1/candidate/bin/kde-index-service",
+    "sha256": "f41633a233a61a4592ae5350b8659401d6fbaf5c8cd4c8d73fffe2c1ed282d12",
+    "pin_check": "all pins.sha256 entries verified immediately before run; verification output in service-pins.log",
+    "producer_sha256": "f34469aa625f5000a7a3bb24a04b3c0cc91cf63ddb4e4a17fdbbf0fa1f49a9bf",
+    "text_model_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135",
+    "image_model_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f"
+  },
+  "validation": {
+    "standalone_plugin_configure_build": "pass",
+    "native_factory_metadata_load": "pass; plugin metadata carries stable ID, Version 0.1 and GPL-3.0-or-later",
+    "RunnerManager_raw_protocol_and_row_replay": "26 cases passed; evidence/runner-v3/manager-replay.jsonl and tools/runner_v3_verify.py",
+    "replay_timeout": {"elapsed_ms": 8005, "main_timer_ticks": 800, "result": "connected timeout diagnostic, setup false"},
+    "replay_context_reset": {"peer_close_ms": 25, "results_after_reset": 0, "observation_after_reset_ms": 100},
+    "actual_frozen_service_runs": [
+      {"label": "warm-before-first-idle", "native_elapsed_ms": 55, "result": "exact hit, relevance 1"},
+      {"label": "cold-query-1", "producer_absent_before": true, "observed_idle_ms": 10240.857, "native_elapsed_ms": 1862, "result": "exact hit, relevance 1, no retry"},
+      {"label": "warm-after-cold-1", "native_elapsed_ms": 60, "result": "exact hit, relevance 1"},
+      {"label": "cold-query-2", "producer_absent_before": true, "observed_idle_ms": 10239.623, "native_elapsed_ms": 1765, "result": "exact hit, relevance 1, no retry"},
+      {"label": "warm-after-cold-2", "native_elapsed_ms": 54, "result": "exact hit, relevance 1"},
+      {"label": "cold-reset", "producer_absent_before": true, "observed_idle_ms": 10136.086, "reset_requested_ms": 105, "total_native_observation_ms": 259, "stale_results": 0}
+    ],
+    "actual_service_dataset": "one explicitly selected synthetic text file containing RUNNER-V3-COLD-IDENTIFIER-81356; no personal paths",
+    "actual_service_receipt": "evidence/runner-v3/actual-cold-service.json",
+    "cold_claim": "The exact frozen service producer was observed absent for over 10 seconds before each cold case. Both single pasted native queries completed inside the 8-second adapter bound. This demonstrates these tested cold starts only.",
+    "warm_target_claim": "three warm observations were 54-60 ms in this host run; this is not p95 or target acceptance"
+  },
+  "closure": {
+    "frozen_service_exit_code": 0,
+    "service_pid_absent": true,
+    "socket_absent": true,
+    "all_three_spawned_probe_children_absent": true,
+    "all_fixture_peers_closed": true,
+    "isolated_xdg": "build-runner-v3/xdg",
+    "desktop_configuration_or_actions_used": false
+  },
+  "limits": [
+    "No installed Plasma/KRunner discovery session or live desktop was exercised.",
+    "Cold coverage is two exact text queries against one frozen service binary, model identity and synthetic root; it is not a general cold-start distribution or semantic benchmark.",
+    "The warm measurements are three samples, not the frozen-corpus warm p95 target.",
+    "Cancellation is a cold native RunnerManager reset observation and separate fixture peer-close replay, not a live typing race.",
+    "No open, reveal or Okular action was activated; no image/PDF search or game claim is made."
+  ],
+  "measurement_scope": {
+    "native_cold_query_intervals_ms": [1862, 1765],
+    "native_warm_query_intervals_ms": [55, 60, 54],
+    "native_cold_reset_total_observation_ms": 259,
+    "native_protocol_timeout_interval_ms": 8005,
+    "implementation_total_elapsed": "not measured from task start",
+    "model_or_tool_token_usage": "not exposed to this worker",
+    "independent_review_usage": "not exposed; parent will reassign the same reviewer"
+  }
+}

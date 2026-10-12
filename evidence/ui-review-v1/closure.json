@@ -1,0 +1,67 @@
+{
+  "owned_socket_exists": {
+    "/home/parm/Documents/KDE Index/local/ui-review-v1/peer.sock": false,
+    "/home/parm/Documents/KDE Index/local/ui-review-v1/real.sock": false,
+    "/home/parm/Documents/KDE Index/local/ui-review-v1/markup.sock": false,
+    "/home/parm/Documents/KDE Index/local/ui-review-v1/teardown.sock": false,
+    "/home/parm/Documents/KDE Index/local/ui-review-v1/pending.sock": false,
+    "/home/parm/Documents/KDE Index/local/ui-review-v1/dialog.sock": false,
+    "/home/parm/Documents/KDE Index/local/ui-review-v1/smoke.sock": false
+  },
+  "helper_pid_checks": [
+    {
+      "kind": "download",
+      "pid": 634957,
+      "alive": false
+    },
+    {
+      "kind": "download",
+      "pid": 635754,
+      "alive": false
+    },
+    {
+      "kind": "pending-renderer",
+      "pid": 635755,
+      "alive": false
+    },
+    {
+      "kind": "download",
+      "pid": 642093,
+      "alive": false
+    },
+    {
+      "kind": "download",
+      "pid": 642116,
+      "alive": false
+    },
+    {
+      "kind": "pending-renderer",
+      "pid": 642117,
+      "alive": false
+    }
+  ],
+  "observed_preview_paths": [
+    {
+      "path": "/tmp/review-UkZgZj/1.png",
+      "exists": false,
+      "directory_exists": false
+    },
+    {
+      "path": "/tmp/review-geWYgZ/1.png",
+      "exists": false,
+      "directory_exists": false
+    },
+    {
+      "path": "/tmp/review-hkpxbM/1.png",
+      "exists": false,
+      "directory_exists": false
+    },
+    {
+      "path": "/tmp/review-tnEJrn/1.png",
+      "exists": false,
+      "directory_exists": false
+    }
+  ],
+  "remaining_review_or_frozen_service_producer_processes": [],
+  "scope": "review-owned subprocesses and exact staged service/producer paths; no process termination during inventory; helper invocations completed; no children delegated"
+}

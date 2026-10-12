@@ -1,0 +1,9 @@
+# Fresh Arch userspace component build v1
+
+CPU producer, engine-v2 service and runner-v3 compiled from clean Git checkout a8eef7bda3896186d8a2661a7fdf2ed57498c711. The public pinned runtime helper revalidated existing fetched source; no prior build tree or host development libraries were inherited. `build-components.log` ends at successful target linking; actual candidate executable hashes are in receipt.json.
+
+The official Arch 2026.10.01 bootstrap checksum matched archlinux.org. Dependency installation occurred only inside an owned, unprivileged bwrap root. No host package/configuration transaction occurred. Package inventory and final successful transaction log are retained. Single-UID namespace hooks cannot create system-user ownership/ACLs; their warnings are preserved. This is a fresh userspace sharing the target kernel/CPU, not a booted clean KDE desktop.
+
+The newly compiled producer ef3959c8fb9c47995211cbda64f6faeb274f15210dda4d0def99f1d6b9139ee2 replayed all unchanged evidence/embedding-v1/inputs. All eight upstream raw-dot comparisons pass >=0.999, minimum0.9997917117943279; two wrong framing/budget controls fail, four malformed requests have no vectors, and recovery/text-only query pass. Raw producer replies and evaluator output are frozen here. Timing/RSS are diagnostic whole-child scopes under concurrent engineering work, not a release performance benchmark.
+
+The checkout's UI is blocked by independent review and was deliberately not built/staged. This evidence supports source compatibility and producer parity only. It does not accept installed binaries, service runtime behavior in this userspace, desktop discovery/actions, frontend/privacy repairs, arbitrary distro compatibility, or publication. No native process/socket remains from this package. Later integrated build/install work must use a linked successor.

@@ -1,0 +1,28 @@
+-- Install configuration: "Release"
+-- Installing: /usr/bin/embedding-probe
+-- Set non-toolchain portion of runtime path of "/usr/bin/embedding-probe" to "$ORIGIN:$ORIGIN/../lib"
+-- Installing: /usr/bin/kde-index-service
+-- Set non-toolchain portion of runtime path of "/usr/bin/kde-index-service" to "$ORIGIN:$ORIGIN/../lib"
+-- Installing: /usr/bin/kde-index-cli
+-- Set non-toolchain portion of runtime path of "/usr/bin/kde-index-cli" to "$ORIGIN:$ORIGIN/../lib"
+-- Installing: /usr/lib/qt6/plugins/kf6/krunner/kde-index-runner.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/qt6/plugins/kf6/krunner/kde-index-runner.so" to "$ORIGIN:$ORIGIN/../lib"
+-- Installing: /usr/bin/kde-index
+-- Set non-toolchain portion of runtime path of "/usr/bin/kde-index" to "$ORIGIN:$ORIGIN/../lib"
+-- Installing: /usr/share/kde-index/model_download.py
+-- Installing: /usr/share/applications/org.kdeindex.Search.desktop
+-- Installing: /usr/share/metainfo/org.kdeindex.Search.metainfo.xml
+-- Installing: /usr/share/licenses/kde-index/LICENSE
+-- Installing: /usr/share/licenses/kde-index/THIRD_PARTY_NOTICES.md
+-- Up-to-date: /usr/share/licenses/kde-index
+-- Installing: /usr/share/licenses/kde-index/Apache-2.0.txt
+-- Installing: /usr/share/licenses/kde-index/DigUp-MIT.txt
+-- Installing: /usr/share/licenses/kde-index/llama.cpp-MIT.txt
+-- Installing: /usr/share/licenses/kde-index/miniaudio-MIT-0.txt
+-- Installing: /usr/share/licenses/kde-index/nlohmann-json-MIT.txt
+-- Installing: /usr/share/licenses/kde-index/rotate-bits-MIT.txt
+-- Installing: /usr/share/licenses/kde-index/sha1-Public-Domain.txt
+-- Installing: /usr/share/licenses/kde-index/sha256-Public-Domain.txt
+-- Installing: /usr/share/licenses/kde-index/sheredom-Unlicense.txt
+-- Installing: /usr/share/licenses/kde-index/stb-image-MIT.txt
+-- Installing: /usr/share/licenses/kde-index/xxHash-BSD-2-Clause.txt

@@ -1,0 +1,1349 @@
+{
+  "identities": {
+    "delivery_manifest": "e9ba420b1013eaf3b68763f4df01df8256d590ce271bca5e7414f53d8e1f663c",
+    "candidate_report": "2e27a5a6cf6a39af04402595dc7bbdd37e259306918dc08c682692589f1cf799",
+    "service_raw": "56c4403e6b2851966b598a0206c2ed11b7e4bc4d04fa29a2626a4c75b2ed0e23",
+    "Baloo_raw": "b2284df09dc184e76a11338b6f766c4de979925494c1f182fb196e1a283a8280",
+    "candidate_inputs": [
+      {
+        "recorded_path": "/public-clean-v2/stage/usr/bin/kde-index-service",
+        "sha256": "28c0d5ddf0ab20608ef527dd891cb023ecd2194690b9f281b95533dacd202ebe"
+      },
+      {
+        "recorded_path": "/public-clean-v2/stage/usr/bin/embedding-probe",
+        "sha256": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0"
+      },
+      {
+        "recorded_path": "/models/embeddinggemma-2-Q8_0.gguf",
+        "sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+      },
+      {
+        "recorded_path": "/models/mmproj-embeddinggemma-2-Q8_0.gguf",
+        "sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f"
+      },
+      {
+        "recorded_path": "/public-clean-v2/source.tar.gz",
+        "sha256": "6faeb1ed7df43834eef73702265ae7a298c8e9c53b2f5c5b0b6fe865cbfcd928"
+      },
+      {
+        "recorded_path": "/public-clean-v2/workspace/tools/retrieval_service.py",
+        "sha256": "b34c4f347b5aa446a8bec377d2eebb860d521122a61581414a313431bed247a3"
+      },
+      {
+        "recorded_path": "/public-clean-v2/workspace/tools/retrieval_score.py",
+        "sha256": "1b45cd6170aed29975c0472fe388c8359bd17e241de299dcf4ac17e3bcc59770"
+      },
+      {
+        "recorded_path": "/public-clean-v2/workspace/benchmark/SHA256SUMS",
+        "sha256": "2fdb07dba3b3191a7073b7fa1443e58c542fa3c03e3275d429e54058c8996872"
+      },
+      {
+        "recorded_path": "/public-clean-v2/workspace/benchmark/queries.json",
+        "sha256": "94e26bb12c164c28927643d67c9a6351b4f65ccf5a6d2e30881f550b2148f815"
+      },
+      {
+        "recorded_path": "/public-clean-v2/workspace/evidence/retrieval-v1/baloo/results.json",
+        "sha256": "b2284df09dc184e76a11338b6f766c4de979925494c1f182fb196e1a283a8280"
+      },
+      {
+        "recorded_path": "/public-clean-v2/workspace/evidence/public-clean-build-v2/producer-hashes.txt",
+        "sha256": "f24375a7150bff99104645249eba58fadf13537b44aecbd685725a2f050e8147"
+      }
+    ],
+    "pin_counts": {
+      "delivery": 6,
+      "benchmark": 39,
+      "candidate_inputs": 11
+    },
+    "runtime_identity": {
+      "backend": "CPU",
+      "byte_order": "little",
+      "dimension": 768,
+      "dtype": "float32",
+      "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+      "extractors": {
+        "pdfinfo": "pdfinfo version 26.08.0",
+        "pdftoppm": "pdftoppm version 26.08.0",
+        "pdftotext": "pdftotext version 26.08.0",
+        "tesseract": "tesseract 5.5.3"
+      },
+      "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+      "max_tokens": 2048,
+      "model": "google/embeddinggemma-2",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "pipeline": "digup-vectors1-linux-cpu-probe1",
+      "producer_sha256": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+      "representation": 3,
+      "runtime": "llama.cpp-b11461+no-logits",
+      "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+    }
+  },
+  "service": {
+    "counts": {
+      "semantic": {
+        "n": 20,
+        "first": 17,
+        "top5": 20
+      },
+      "exact": {
+        "n": 6,
+        "first": 6,
+        "top5": 6
+      },
+      "literal": {
+        "n": 8,
+        "first": 8,
+        "top5": 8
+      },
+      "semantic:document": {
+        "n": 8,
+        "first": 6,
+        "top5": 8
+      },
+      "semantic:pdf": {
+        "n": 4,
+        "first": 4,
+        "top5": 4
+      },
+      "semantic:image": {
+        "n": 8,
+        "first": 7,
+        "top5": 8
+      }
+    },
+    "rows": [
+      {
+        "id": "s01",
+        "group": "semantic",
+        "modality": "document",
+        "rank": 1,
+        "files": [
+          "d01.txt",
+          "d09.txt",
+          "p04.pdf",
+          "p01.pdf",
+          "p03.pdf"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "s02",
+        "group": "semantic",
+        "modality": "document",
+        "rank": 2,
+        "files": [
+          "d12.txt",
+          "d02.txt",
+          "d10.txt",
+          "i03.png",
+          "i04.png"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "s03",
+        "group": "semantic",
+        "modality": "document",
+        "rank": 1,
+        "files": [
+          "d03.txt",
+          "p01.pdf",
+          "i05.png",
+          "i06.png",
+          "d09.txt"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "s04",
+        "group": "semantic",
+        "modality": "document",
+        "rank": 2,
+        "files": [
+          "i03.png",
+          "d04.txt",
+          "i04.png",
+          "d12.txt",
+          "d07.txt"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "s05",
+        "group": "semantic",
+        "modality": "document",
+        "rank": 1,
+        "files": [
+          "d05.txt",
+          "d13.txt",
+          "d10.txt",
+          "p01.pdf",
+          "i08.png"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "s06",
+        "group": "semantic",
+        "modality": "document",
+        "rank": 1,
+        "files": [
+          "d06.txt",
+          "d08.txt",
+          "d14.txt",
+          "d09.txt",
+          "i06.png"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "s07",
+        "group": "semantic",
+        "modality": "document",
+        "rank": 1,
+        "files": [
+          "d07.txt",
+          "d15.txt",
+          "i05.png",
+          "i06.png",
+          "d11.txt"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "s08",
+        "group": "semantic",
+        "modality": "document",
+        "rank": 1,
+        "files": [
+          "d08.txt",
+          "d16.txt",
+          "d06.txt",
+          "i06.png",
+          "i05.png"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "s09",
+        "group": "semantic",
+        "modality": "pdf",
+        "rank": 1,
+        "files": [
+          "p01.pdf",
+          "d03.txt",
+          "d10.txt",
+          "d14.txt",
+          "d05.txt"
+        ],
+        "returned": 5,
+        "correct_page": true
+      },
+      {
+        "id": "s10",
+        "group": "semantic",
+        "modality": "pdf",
+        "rank": 1,
+        "files": [
+          "p02.pdf",
+          "i05.png",
+          "i06.png",
+          "d09.txt",
+          "p04.pdf"
+        ],
+        "returned": 5,
+        "correct_page": true
+      },
+      {
+        "id": "s11",
+        "group": "semantic",
+        "modality": "pdf",
+        "rank": 1,
+        "files": [
+          "p03.pdf",
+          "d10.txt",
+          "p01.pdf",
+          "i06.png",
+          "d09.txt"
+        ],
+        "returned": 5,
+        "correct_page": true
+      },
+      {
+        "id": "s12",
+        "group": "semantic",
+        "modality": "pdf",
+        "rank": 1,
+        "files": [
+          "p04.pdf",
+          "d09.txt",
+          "p01.pdf",
+          "i06.png",
+          "i05.png"
+        ],
+        "returned": 5,
+        "correct_page": true
+      },
+      {
+        "id": "s13",
+        "group": "semantic",
+        "modality": "image",
+        "rank": 1,
+        "files": [
+          "i01.png",
+          "i02.png",
+          "i07.png",
+          "i06.png",
+          "i04.png"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "s14",
+        "group": "semantic",
+        "modality": "image",
+        "rank": 1,
+        "files": [
+          "i02.png",
+          "i01.png",
+          "i03.png",
+          "i07.png",
+          "i08.png"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "s15",
+        "group": "semantic",
+        "modality": "image",
+        "rank": 1,
+        "files": [
+          "i03.png",
+          "d04.txt",
+          "i04.png",
+          "d12.txt",
+          "d02.txt"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "s16",
+        "group": "semantic",
+        "modality": "image",
+        "rank": 1,
+        "files": [
+          "i04.png",
+          "i06.png",
+          "i03.png",
+          "i01.png",
+          "i05.png"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "s17",
+        "group": "semantic",
+        "modality": "image",
+        "rank": 2,
+        "files": [
+          "i06.png",
+          "i05.png",
+          "d03.txt",
+          "d10.txt",
+          "p01.pdf"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "s18",
+        "group": "semantic",
+        "modality": "image",
+        "rank": 1,
+        "files": [
+          "i06.png",
+          "i05.png",
+          "p01.pdf",
+          "d03.txt",
+          "d10.txt"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "s19",
+        "group": "semantic",
+        "modality": "image",
+        "rank": 1,
+        "files": [
+          "i07.png",
+          "d10.txt",
+          "i08.png",
+          "i01.png",
+          "i02.png"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "s20",
+        "group": "semantic",
+        "modality": "image",
+        "rank": 1,
+        "files": [
+          "i08.png",
+          "i07.png",
+          "i02.png",
+          "i01.png",
+          "d10.txt"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "e01",
+        "group": "exact",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "d01.txt",
+          "d10.txt",
+          "i05.png",
+          "d06.txt",
+          "d04.txt"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "e02",
+        "group": "exact",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "d02.txt",
+          "i05.png",
+          "d10.txt",
+          "d08.txt",
+          "d06.txt"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "e03",
+        "group": "exact",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "d03.txt",
+          "d10.txt",
+          "i05.png",
+          "d08.txt",
+          "p01.pdf"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "e04",
+        "group": "exact",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "d04.txt",
+          "p03.pdf",
+          "i03.png",
+          "i05.png",
+          "i04.png"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "e05",
+        "group": "exact",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "p01.pdf",
+          "d06.txt",
+          "i05.png",
+          "d10.txt",
+          "d03.txt"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "e06",
+        "group": "exact",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "i05.png",
+          "d10.txt",
+          "i06.png",
+          "d08.txt",
+          "p01.pdf"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "l01",
+        "group": "literal",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "d01.txt",
+          "d10.txt",
+          "d03.txt",
+          "i04.png",
+          "i05.png"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "l02",
+        "group": "literal",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "d02.txt",
+          "i04.png",
+          "d10.txt",
+          "d12.txt",
+          "p04.pdf"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "l03",
+        "group": "literal",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "d03.txt",
+          "p03.pdf",
+          "i06.png",
+          "i05.png",
+          "p01.pdf"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "l04",
+        "group": "literal",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "d04.txt",
+          "i08.png",
+          "d10.txt",
+          "i02.png",
+          "i01.png"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "l05",
+        "group": "literal",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "d05.txt",
+          "d11.txt",
+          "d10.txt",
+          "i06.png",
+          "d07.txt"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "l06",
+        "group": "literal",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "d06.txt",
+          "d14.txt",
+          "i02.png",
+          "i01.png",
+          "d08.txt"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "l07",
+        "group": "literal",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "p01.pdf",
+          "d04.txt",
+          "i03.png",
+          "i05.png",
+          "i06.png"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "l08",
+        "group": "literal",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "p04.pdf",
+          "p01.pdf",
+          "i06.png",
+          "d09.txt",
+          "i05.png"
+        ],
+        "returned": 5,
+        "correct_page": null
+      },
+      {
+        "id": "n01",
+        "group": "no_relevant",
+        "modality": "mixed",
+        "rank": null,
+        "files": [
+          "d10.txt",
+          "d08.txt",
+          "d07.txt",
+          "d05.txt",
+          "d03.txt"
+        ],
+        "returned": 5,
+        "correct_page": null,
+        "contradictory_no_match_fields": [
+          {
+            "exact": false,
+            "kind": "text",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 0,
+            "path": "d10.txt",
+            "score": 0.6966804855789905,
+            "semantic_score": 0.565574124896608,
+            "term_match": false,
+            "text": "The shop offers a repair estimate for products purchased more than thirty days ago. An estimate does not authorize the repair; the customer must agree to the quoted cost.\n",
+            "title": "d10.txt",
+            "warning": "",
+            "file": "d10.txt"
+          },
+          {
+            "exact": false,
+            "kind": "text",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 0,
+            "path": "d08.txt",
+            "score": 0.6924492304124099,
+            "semantic_score": 0.5560656863200222,
+            "term_match": false,
+            "text": "Combine oats with milk in a jar and leave it in the refrigerator overnight. Add berries just before eating. This breakfast requires no cooking in the morning. Reference FOD-12745.\n",
+            "title": "d08.txt",
+            "warning": "",
+            "file": "d08.txt"
+          },
+          {
+            "exact": false,
+            "kind": "text",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 0,
+            "path": "d07.txt",
+            "score": 0.6912734666031634,
+            "semantic_score": 0.5534235204565467,
+            "term_match": false,
+            "text": "The wireless router has no lights after a power interruption. Check the wall outlet, reconnect its power adapter, and wait two minutes before testing internet access. Reference NET-98614.\n",
+            "title": "d07.txt",
+            "warning": "",
+            "file": "d07.txt"
+          },
+          {
+            "exact": false,
+            "kind": "text",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 0,
+            "path": "d05.txt",
+            "score": 0.6867847209087232,
+            "semantic_score": 0.543336451480277,
+            "term_match": false,
+            "text": "A two-day workshop begins at nine on Monday in the east hall. Participants should bring a charged laptop. The afternoon session covers repairing bicycle punctures. Reference EVT-61427.\n",
+            "title": "d05.txt",
+            "warning": "",
+            "file": "d05.txt"
+          },
+          {
+            "exact": false,
+            "kind": "text",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 0,
+            "path": "d03.txt",
+            "score": 0.6844331329160638,
+            "semantic_score": 0.5380519840810423,
+            "term_match": false,
+            "text": "The camera stores photographs on a removable memory card. Before erasing the card, copy the pictures to a second drive and verify that the copies open. Reference CAM-25816.\n",
+            "title": "d03.txt",
+            "warning": "",
+            "file": "d03.txt"
+          }
+        ]
+      },
+      {
+        "id": "n02",
+        "group": "no_relevant",
+        "modality": "mixed",
+        "rank": null,
+        "files": [
+          "d03.txt",
+          "p02.pdf",
+          "i06.png",
+          "i02.png",
+          "p01.pdf"
+        ],
+        "returned": 5,
+        "correct_page": null,
+        "contradictory_no_match_fields": [
+          {
+            "exact": false,
+            "kind": "text",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 0,
+            "path": "d03.txt",
+            "score": 0.6977654495197348,
+            "semantic_score": 0.5680122461117636,
+            "term_match": false,
+            "text": "The camera stores photographs on a removable memory card. Before erasing the card, copy the pictures to a second drive and verify that the copies open. Reference CAM-25816.\n",
+            "title": "d03.txt",
+            "warning": "",
+            "file": "d03.txt"
+          },
+          {
+            "exact": false,
+            "kind": "pdf",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 1,
+            "path": "p02.pdf",
+            "score": 0.6933939273293509,
+            "semantic_score": 0.5581886007401143,
+            "term_match": false,
+            "text": "Visitor guide\nThe gallery opens at ten in the morning.",
+            "title": "p02.pdf",
+            "warning": "",
+            "file": "p02.pdf"
+          },
+          {
+            "exact": false,
+            "kind": "image",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 0,
+            "path": "i06.png",
+            "score": 0.6878538757062841,
+            "semantic_score": 0.5457390465309755,
+            "term_match": false,
+            "text": "Backup settings\n\nAutomatic backup ()\n\nStatus: Enabled\n\nLast copy: Today",
+            "title": "i06.png",
+            "warning": "",
+            "file": "i06.png"
+          },
+          {
+            "exact": false,
+            "kind": "image",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 0,
+            "path": "i02.png",
+            "score": 0.6871580577612109,
+            "semantic_score": 0.5441754106993503,
+            "term_match": false,
+            "text": "",
+            "title": "i02.png",
+            "warning": "",
+            "file": "i02.png"
+          },
+          {
+            "exact": false,
+            "kind": "pdf",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 1,
+            "path": "p01.pdf",
+            "score": 0.6862809548618136,
+            "semantic_score": 0.5422043929478957,
+            "term_match": false,
+            "text": "Equipment inventory\nSpare labels are stored beside the front desk.",
+            "title": "p01.pdf",
+            "warning": "",
+            "file": "p01.pdf"
+          }
+        ]
+      },
+      {
+        "id": "n03",
+        "group": "no_relevant",
+        "modality": "mixed",
+        "rank": null,
+        "files": [
+          "p01.pdf",
+          "d14.txt",
+          "d03.txt",
+          "d08.txt",
+          "d10.txt"
+        ],
+        "returned": 5,
+        "correct_page": null,
+        "contradictory_no_match_fields": [
+          {
+            "exact": false,
+            "kind": "pdf",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 2,
+            "path": "p01.pdf",
+            "score": 0.734852601780104,
+            "semantic_score": 0.6513541613036045,
+            "term_match": false,
+            "text": "Emergency cooling procedure\nSwitch off the pump before removing a blocked filter.\nWear gloves and allow the housing to cool.\nMaintenance code CLG-57260.",
+            "title": "p01.pdf",
+            "warning": "",
+            "file": "p01.pdf"
+          },
+          {
+            "exact": false,
+            "kind": "text",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 0,
+            "path": "d14.txt",
+            "score": 0.7041319619608309,
+            "semantic_score": 0.5823190156423166,
+            "term_match": false,
+            "text": "Tomato plants need steady moisture during hot weather. Water the soil early and avoid wetting leaves in bright sunlight.\n",
+            "title": "d14.txt",
+            "warning": "",
+            "file": "d14.txt"
+          },
+          {
+            "exact": false,
+            "kind": "text",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 0,
+            "path": "d03.txt",
+            "score": 0.7039696008360411,
+            "semantic_score": 0.5819541591821147,
+            "term_match": false,
+            "text": "The camera stores photographs on a removable memory card. Before erasing the card, copy the pictures to a second drive and verify that the copies open. Reference CAM-25816.\n",
+            "title": "d03.txt",
+            "warning": "",
+            "file": "d03.txt"
+          },
+          {
+            "exact": false,
+            "kind": "text",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 0,
+            "path": "d08.txt",
+            "score": 0.7026235876764315,
+            "semantic_score": 0.5789294105088348,
+            "term_match": false,
+            "text": "Combine oats with milk in a jar and leave it in the refrigerator overnight. Add berries just before eating. This breakfast requires no cooking in the morning. Reference FOD-12745.\n",
+            "title": "d08.txt",
+            "warning": "",
+            "file": "d08.txt"
+          },
+          {
+            "exact": false,
+            "kind": "text",
+            "match_scope": "segment",
+            "match_type": "semantic",
+            "page": 0,
+            "path": "d10.txt",
+            "score": 0.6975792974167264,
+            "semantic_score": 0.5675939267791607,
+            "term_match": false,
+            "text": "The shop offers a repair estimate for products purchased more than thirty days ago. An estimate does not authorize the repair; the customer must agree to the quoted cost.\n",
+            "title": "d10.txt",
+            "warning": "",
+            "file": "d10.txt"
+          }
+        ]
+      }
+    ],
+    "source_page_associations": 185,
+    "tier_rows": {
+      "literal": 14,
+      "terms": 0,
+      "semantic": 171
+    }
+  },
+  "Baloo": {
+    "counts": {
+      "semantic": {
+        "n": 20,
+        "first": 0,
+        "top5": 0
+      },
+      "exact": {
+        "n": 6,
+        "first": 5,
+        "top5": 5
+      },
+      "literal": {
+        "n": 8,
+        "first": 8,
+        "top5": 8
+      },
+      "semantic:document": {
+        "n": 8,
+        "first": 0,
+        "top5": 0
+      },
+      "semantic:pdf": {
+        "n": 4,
+        "first": 0,
+        "top5": 0
+      },
+      "semantic:image": {
+        "n": 8,
+        "first": 0,
+        "top5": 0
+      }
+    },
+    "rows": [
+      {
+        "id": "s01",
+        "group": "semantic",
+        "modality": "document",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "s02",
+        "group": "semantic",
+        "modality": "document",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "s03",
+        "group": "semantic",
+        "modality": "document",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "s04",
+        "group": "semantic",
+        "modality": "document",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "s05",
+        "group": "semantic",
+        "modality": "document",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "s06",
+        "group": "semantic",
+        "modality": "document",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "s07",
+        "group": "semantic",
+        "modality": "document",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "s08",
+        "group": "semantic",
+        "modality": "document",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "s09",
+        "group": "semantic",
+        "modality": "pdf",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "s10",
+        "group": "semantic",
+        "modality": "pdf",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "s11",
+        "group": "semantic",
+        "modality": "pdf",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "s12",
+        "group": "semantic",
+        "modality": "pdf",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "s13",
+        "group": "semantic",
+        "modality": "image",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "s14",
+        "group": "semantic",
+        "modality": "image",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "s15",
+        "group": "semantic",
+        "modality": "image",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "s16",
+        "group": "semantic",
+        "modality": "image",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "s17",
+        "group": "semantic",
+        "modality": "image",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "s18",
+        "group": "semantic",
+        "modality": "image",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "s19",
+        "group": "semantic",
+        "modality": "image",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "s20",
+        "group": "semantic",
+        "modality": "image",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "e01",
+        "group": "exact",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "d01.txt"
+        ],
+        "returned": 1
+      },
+      {
+        "id": "e02",
+        "group": "exact",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "d02.txt"
+        ],
+        "returned": 1
+      },
+      {
+        "id": "e03",
+        "group": "exact",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "d03.txt"
+        ],
+        "returned": 1
+      },
+      {
+        "id": "e04",
+        "group": "exact",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "d04.txt"
+        ],
+        "returned": 1
+      },
+      {
+        "id": "e05",
+        "group": "exact",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "p01.pdf"
+        ],
+        "returned": 1
+      },
+      {
+        "id": "e06",
+        "group": "exact",
+        "modality": "mixed",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "l01",
+        "group": "literal",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "d01.txt"
+        ],
+        "returned": 1
+      },
+      {
+        "id": "l02",
+        "group": "literal",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "d02.txt"
+        ],
+        "returned": 1
+      },
+      {
+        "id": "l03",
+        "group": "literal",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "d03.txt"
+        ],
+        "returned": 1
+      },
+      {
+        "id": "l04",
+        "group": "literal",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "d04.txt"
+        ],
+        "returned": 1
+      },
+      {
+        "id": "l05",
+        "group": "literal",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "d05.txt"
+        ],
+        "returned": 1
+      },
+      {
+        "id": "l06",
+        "group": "literal",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "d06.txt"
+        ],
+        "returned": 1
+      },
+      {
+        "id": "l07",
+        "group": "literal",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "p01.pdf"
+        ],
+        "returned": 1
+      },
+      {
+        "id": "l08",
+        "group": "literal",
+        "modality": "mixed",
+        "rank": 1,
+        "files": [
+          "p04.pdf"
+        ],
+        "returned": 1
+      },
+      {
+        "id": "n01",
+        "group": "no_relevant",
+        "modality": "mixed",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "n02",
+        "group": "no_relevant",
+        "modality": "mixed",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      },
+      {
+        "id": "n03",
+        "group": "no_relevant",
+        "modality": "mixed",
+        "rank": null,
+        "files": [],
+        "returned": 0
+      }
+    ],
+    "source_page_associations": 0,
+    "tier_rows": {
+      "literal": 0,
+      "terms": 0,
+      "semantic": 0
+    }
+  },
+  "service_times": {
+    "warm_count": 185,
+    "nearest_rank_ordinal": 176,
+    "p95_ms": 47.236093,
+    "index_seconds": 22.565951967,
+    "reported_sampled_RSS_KiB": 1183568,
+    "reported_pre_shutdown_index_bytes": 1412976,
+    "cold": [
+      {
+        "id": "s01",
+        "begin_ns": 18680074252852,
+        "end_ns": 18681781959981,
+        "elapsed_ms": 1707.707129,
+        "producer_absent_before": true
+      },
+      {
+        "id": "s09",
+        "begin_ns": 18691988323041,
+        "end_ns": 18694329685127,
+        "elapsed_ms": 2341.362086,
+        "producer_absent_before": true
+      },
+      {
+        "id": "s13",
+        "begin_ns": 18704611435509,
+        "end_ns": 18706914284157,
+        "elapsed_ms": 2302.848648,
+        "producer_absent_before": true
+      }
+    ]
+  },
+  "Baloo_times": {
+    "warm_count": 185,
+    "nearest_rank_ordinal": 176,
+    "p95_ms": 22.72413399987272,
+    "index_seconds": 6.36702165,
+    "reported_sampled_RSS_KiB": 69848,
+    "reported_pre_shutdown_index_bytes": 139264,
+    "cold": []
+  },
+  "post_shutdown_database": {
+    "sha256": "edfddbc6d3661209a2337b9b6c5cd75818948c6319300d5d52d95b83a7ff779b",
+    "bytes": 237568,
+    "files": 28,
+    "pages": 32,
+    "vectors": 38,
+    "vector_bytes_each": 3072,
+    "scope": "closed read-only corroboration; different storage endpoint from reported pre-shutdown DB/WAL sum"
+  },
+  "actual_pdf_pages": {
+    "p01.pdf": {
+      "1": "Equipment inventory\nSpare labels are stored beside the front desk.\n\n\f",
+      "2": "Emergency cooling procedure\nSwitch off the pump before removing a blocked filter.\nWear gloves and allow the housing to cool.\nMaintenance code CLG-57260.\n\n\f"
+    },
+    "p02.pdf": {
+      "1": "Visitor guide\nThe gallery opens at ten in the morning.\n\n\f",
+      "2": "Museum access\nVisitors using wheelchairs can enter through the south ramp.\nAn elevator beside the ticket desk reaches every exhibition floor.\n\n\f"
+    },
+    "p03.pdf": {
+      "1": "Library membership\nIdentification is needed for a new borrowing card.\n\n\f",
+      "2": "Borrowing policy\nLoans can be extended online before the due date.\nAn item requested by another reader cannot be renewed.\n\n\f"
+    },
+    "p04.pdf": {
+      "1": "Travel notes\nTickets are sold at the station kiosk.\n\n\f",
+      "2": "Luggage storage\nTravelers can leave bags in staffed lockers near platform three.\nCollect luggage before the counter closes at eight in the evening.\n\n\f"
+    }
+  },
+  "inner_namespace_closure": {
+    "service_exit": 0,
+    "all_known_pids_absent": true,
+    "socket_absent": true
+  },
+  "Baloo_content_controls": {
+    "text_pdf_nonempty": 20,
+    "PNG_empty": 8
+  }
+}

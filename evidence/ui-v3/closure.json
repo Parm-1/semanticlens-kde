@@ -1,0 +1,19 @@
+{
+  "active_owned_native_processes": [],
+  "owned_sockets": [],
+  "preview_files": [
+    {
+      "file": "/tmp/ui-smoke-AROCir/1.png",
+      "exists": false
+    },
+    {
+      "file": "/tmp/ui-render-PbIZyH/1.png",
+      "exists": false
+    },
+    {
+      "file": "/tmp/ui-render-esyGnY/1.png",
+      "exists": false
+    }
+  ],
+  "scope": "UI-v3 own synthetic/native resources only; parent install/review processes are not owned or stopped. All native build/run sessions completed. Retained source rasters/captures are evidence copies, not temporary preview files."
+}

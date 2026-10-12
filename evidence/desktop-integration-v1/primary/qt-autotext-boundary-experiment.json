@@ -1,0 +1,50 @@
+[
+    {
+        "proposed_display": "＜b＞TITLE-77331.txt",
+        "proposed_qt_mightBeRichText": false,
+        "raw": "<b>TITLE-77331.txt",
+        "raw_qt_mightBeRichText": true,
+        "stock_tooltip_qt_mightBeRichText": false,
+        "stock_tooltip_text": "＜b＞TITLE-77331.txt"
+    },
+    {
+        "proposed_display": "DESKTOP-77331 ＜img src=\"http://127.0.0.1:1/passage\" /＞",
+        "proposed_qt_mightBeRichText": false,
+        "raw": "DESKTOP-77331 <img src=\"http://127.0.0.1:1/passage\" />",
+        "raw_qt_mightBeRichText": true,
+        "stock_tooltip_qt_mightBeRichText": false,
+        "stock_tooltip_text": "DESKTOP-77331 ＜img src=\"http://127.0.0.1:1/passage\" /＞"
+    },
+    {
+        "proposed_display": "＜!DOCTYPE html＞＜img src=x＞",
+        "proposed_qt_mightBeRichText": false,
+        "raw": "<!DOCTYPE html><img src=x>",
+        "raw_qt_mightBeRichText": true,
+        "stock_tooltip_qt_mightBeRichText": false,
+        "stock_tooltip_text": "＜!DOCTYPE html＞＜img src=x＞"
+    },
+    {
+        "proposed_display": "＜?xml version='1.0'?＞＜img src=x＞",
+        "proposed_qt_mightBeRichText": false,
+        "raw": "<?xml version='1.0'?><img src=x>",
+        "raw_qt_mightBeRichText": true,
+        "stock_tooltip_qt_mightBeRichText": false,
+        "stock_tooltip_text": "＜?xml version='1.0'?＞＜img src=x＞"
+    },
+    {
+        "proposed_display": "＆lt;img src=x＆gt;",
+        "proposed_qt_mightBeRichText": false,
+        "raw": "&lt;img src=x&gt;",
+        "raw_qt_mightBeRichText": true,
+        "stock_tooltip_qt_mightBeRichText": false,
+        "stock_tooltip_text": "＆lt;img src=x＆gt;"
+    },
+    {
+        "proposed_display": "ordinary A＆B report",
+        "proposed_qt_mightBeRichText": false,
+        "raw": "ordinary A&B report",
+        "raw_qt_mightBeRichText": false,
+        "stock_tooltip_qt_mightBeRichText": false,
+        "stock_tooltip_text": "ordinary A＆B report"
+    }
+]

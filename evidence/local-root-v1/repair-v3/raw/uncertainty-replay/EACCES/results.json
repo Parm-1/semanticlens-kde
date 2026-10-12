@@ -1,0 +1,11 @@
+{
+  "events": [],
+  "closure": {
+    "service_exit": 2,
+    "socket_absent": true,
+    "workers_absent": true,
+    "known_workers": [],
+    "permissions_restored": true,
+    "private_limit_closed_with_process": true
+  }
+}

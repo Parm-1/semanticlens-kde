@@ -1,0 +1,1 @@
+PASS: 11 native fixture cases; 22 display fields; 10 original source URLs/action maps; 11 raw-rich controls; ordinary ampersand and entity readability controls; all peers closed

@@ -1,0 +1,1 @@
+A merchant may refund a canceled order. Allow several business days for the credit to appear on the card statement; contact the shop with the order number if it does not arrive.

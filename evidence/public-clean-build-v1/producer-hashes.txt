@@ -1,0 +1,4 @@
+45181fa5c03d19c561bc6fd37cbd00e9493f08ab751fcd75844206797447165a  usr/bin/embedding-probe
+ce376854f9e00f610a3b5969c11c3056d699bf010d539ea3e99a3011aa1bfde7  usr/bin/kde-index-service
+a627ba11ba6903182768ebb10d384dbef38a7fca13dcd482f80308a437adcc3c  usr/bin/kde-index
+a626737f2e6988437cc2c15d25bffcd76cdfc780588557033ef4efc8dc3fb32d  usr/lib/qt6/plugins/kf6/krunner/kde-index-runner.so

@@ -1,0 +1,6 @@
+{
+  "backend.h": true,
+  "backend.cpp": true,
+  "main.cpp": true,
+  "Main.qml": false
+}

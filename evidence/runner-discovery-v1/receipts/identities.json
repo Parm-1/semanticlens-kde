@@ -1,0 +1,25 @@
+{
+  "runner_cpp_v3_sha256": "92909e658246b7cb022f50df9999283e9ce99cf2399f717fe29d14631a5b88eb",
+  "runner_cpp_v4_sha256": "92909e658246b7cb022f50df9999283e9ce99cf2399f717fe29d14631a5b88eb",
+  "packages": "kcoreaddons 6.30.0-2\nkrunner 6.30.0-1\nqt6-base 6.12.0-2",
+  "cpu_service_sha256": "3176fa48374a69e35b2b6b064e68dc86baf852dfd73d49c66716c569fe575845",
+  "cpu_probe_sha256": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+  "model_sha256": {
+    "embeddinggemma-2-Q8_0.gguf": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135",
+    "mmproj-embeddinggemma-2-Q8_0.gguf": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f"
+  },
+  "shared_libraries": {
+    "libKF6CoreAddons.so.6": {
+      "resolved": "/usr/lib/libKF6CoreAddons.so.6.30.0",
+      "sha256": "af863f6bbf1bc9596907ef9202e02d7267d5154c95673e9e0b99d1819d12a5ec"
+    },
+    "libKF6Runner.so.6": {
+      "resolved": "/usr/lib/libKF6Runner.so.6.30.0",
+      "sha256": "58e4667e3ce03c06e5a7e8f70aa8a3105fecfb8282a358ec02742bf7d15c11e7"
+    },
+    "libQt6Core.so.6": {
+      "resolved": "/usr/lib/libQt6Core.so.6.12.0",
+      "sha256": "36762b1cd4abdb0b33ada3de9f55c4268fcf844e834ea831e31d8af13db33017"
+    }
+  }
+}

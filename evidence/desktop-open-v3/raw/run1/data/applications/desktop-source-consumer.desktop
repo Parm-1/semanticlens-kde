@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Owned source reader
+Exec=/usr/bin/konsole --separate --nofork --hold -e /usr/bin/cat %f
+MimeType=text/plain;
+NoDisplay=false
+Terminal=false

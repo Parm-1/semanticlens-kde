@@ -1,0 +1,415 @@
+{
+  "argv": [
+    "/usr/bin/konsole",
+    "--separate",
+    "--nofork",
+    "--hold",
+    "-e",
+    "/usr/bin/cat",
+    "/tmp/work/corpus/reader.txt"
+  ],
+  "command": {
+    "id": "loaded-39976048602615",
+    "op": "snapshot"
+  },
+  "elapsed_ns": 286466115,
+  "executable": "/usr/bin/konsole",
+  "pid": 109,
+  "terminals": [
+    {
+      "accessible_cpp_type": "N7Konsole25TerminalDisplayAccessibleE",
+      "accessible_name": "",
+      "accessible_role": 129,
+      "accessible_valid": true,
+      "accessible_value": "Amber maps ride quiet lanterns 59317428.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "actual_native_text": "Amber maps ride quiet lanterns 59317428.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "character_count": 3080,
+      "class": "Konsole::TerminalDisplay",
+      "cursor_position": 110,
+      "height": 423,
+      "object": "55a9f8ff0750",
+      "screen_rect_x": 0,
+      "screen_rect_y": 46,
+      "text_interface_present": true,
+      "visible": true,
+      "width": 911
+    }
+  ],
+  "windows": [
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QComboBoxPrivateContainer",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QComboBoxPrivateContainer",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QComboBoxPrivateContainer",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "Konsole::MainWindow",
+      "height": 469,
+      "title": "~ : cat",
+      "visible": true,
+      "width": 911,
+      "window_exposed": true
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 30,
+      "title": "",
+      "visible": false,
+      "width": 100,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    },
+    {
+      "class": "QMenu",
+      "height": 480,
+      "title": "",
+      "visible": false,
+      "width": 640,
+      "window_exposed": false
+    }
+  ],
+  "actual_process": {
+    "pid": 109,
+    "executable": "/usr/bin/konsole",
+    "argv": "/usr/bin/konsole --separate --nofork --hold -e /usr/bin/cat /tmp/work/corpus/reader.txt ",
+    "startticks": "3997401",
+    "loaded_konsole_maps": [
+      "7ffbb9000000-7ffbb907e000 r--p 00000000 00:1c 1622077                    /usr/lib/libkonsoleprivate.so.26.08.2",
+      "7ffbb907e000-7ffbb9219000 r-xp 0007e000 00:1c 1622077                    /usr/lib/libkonsoleprivate.so.26.08.2",
+      "7ffbb9219000-7ffbb9279000 r--p 00219000 00:1c 1622077                    /usr/lib/libkonsoleprivate.so.26.08.2",
+      "7ffbb9279000-7ffbb928d000 r--p 00278000 00:1c 1622077                    /usr/lib/libkonsoleprivate.so.26.08.2",
+      "7ffbb928d000-7ffbb9291000 rw-p 0028c000 00:1c 1622077                    /usr/lib/libkonsoleprivate.so.26.08.2",
+      "7ffbb92ec000-7ffbb9309000 r--p 00000000 00:1c 1622076                    /usr/lib/libkonsoleapp.so.26.08.2",
+      "7ffbb9309000-7ffbb9347000 r-xp 0001d000 00:1c 1622076                    /usr/lib/libkonsoleapp.so.26.08.2",
+      "7ffbb9347000-7ffbb9354000 r--p 0005b000 00:1c 1622076                    /usr/lib/libkonsoleapp.so.26.08.2",
+      "7ffbb9354000-7ffbb9359000 r--p 00068000 00:1c 1622076                    /usr/lib/libkonsoleapp.so.26.08.2",
+      "7ffbb9359000-7ffbb935b000 rw-p 0006d000 00:1c 1622076                    /usr/lib/libkonsoleapp.so.26.08.2",
+      "7ffbb935b000-7ffbb9366000 r--p 00000000 00:1c 8232827                    /tmp/work/receiver-observer.so",
+      "7ffbb9366000-7ffbb936e000 r-xp 0000b000 00:1c 8232827                    /tmp/work/receiver-observer.so",
+      "7ffbb936e000-7ffbb9372000 r--p 00013000 00:1c 8232827                    /tmp/work/receiver-observer.so",
+      "7ffbb9372000-7ffbb9373000 r--p 00016000 00:1c 8232827                    /tmp/work/receiver-observer.so",
+      "7ffbb9373000-7ffbb9374000 rw-p 00017000 00:1c 8232827                    /tmp/work/receiver-observer.so"
+    ]
+  }
+}

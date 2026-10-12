@@ -1,0 +1,7 @@
+cmake 4.4.4-1
+ninja 1.13.2-3
+gcc 16.2.1+r23+gd564253eb6c8-1
+qt6-base 6.12.0-2
+kirigami 6.30.0-1
+ki18n 6.30.0-1
+extra-cmake-modules 6.30.0-1

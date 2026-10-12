@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/parm/Documents/KDE Index/tools/local_root_v3_uncertainty.py", line 82, in <module>
+    for kind in ['EACCES','EMFILE']:run(kind)
+                                    ~~~^^^^^^
+  File "/home/parm/Documents/KDE Index/tools/local_root_v3_uncertainty.py", line 41, in run
+    assert c;wait(lambda s:s['ready']);req('add_root',path=str(root));wait(lambda s:not s['busy'] and s['indexed']==2)
+           ^
+AssertionError

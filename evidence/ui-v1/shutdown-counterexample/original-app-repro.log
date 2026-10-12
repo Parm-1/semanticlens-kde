@@ -1,0 +1,5 @@
+qrc:/qt/qml/org/kde/breeze/TextArea.qml:92:9: Unable to assign TextArea_QMLTYPE_133 to QQuickTextInput
+qrc:/qt/qml/org/kde/breeze/TextArea.qml:92:9: Unable to assign TextArea_QMLTYPE_133 to QQuickTextInput
+Listening "/tmp/kde-index-ui-exit-repro"
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc

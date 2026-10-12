@@ -1,0 +1,8 @@
+{
+  "candidate/bin/embedding-probe": "3dd4ddd9a133e9861ec834a2434121f99872b2ac94b1b211690a620357408414",
+  "candidate/bin/kde-index": "7463cd891a76c9a3a765fdd887aa0e1b5d8ca95b5287b7aabef279a862c7e760",
+  "candidate/bin/kde-index-cli": "6773a256b55b7c1e555727097d8e3be5db69e84e705d7ca4caf05929ffdfd086",
+  "candidate/bin/kde-index-service": "3176fa48374a69e35b2b6b064e68dc86baf852dfd73d49c66716c569fe575845",
+  "candidate/bin/libkde-index-runner.so": "717060cd87d9007fc0a994d681c34528a410528f78430ee0060cb6740ed54e2b",
+  "candidate/bin/ui-smoke": "a377b7d57bb85b93c6dfd3a584eb67a6b23f83e3d572575a8454ba3df58c0901"
+}

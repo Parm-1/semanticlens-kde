@@ -1,0 +1,32 @@
+{
+    "bounded_paper_edge_correction": true,
+    "capture": "local/clean-arch-v1/root.x86_64/checkout/local/native-clean-v3/window-page.png",
+    "declared_painted_rect": [
+        566,
+        165,
+        405,
+        523
+    ],
+    "ink_reference_pixels": 678,
+    "ink_witness_correlation": 0.8182114022585212,
+    "mean_absolute_gray_error": 0.27028380318947925,
+    "nearby_white_bounds": [
+        566,
+        165,
+        404,
+        524
+    ],
+    "painted_rect": [
+        566,
+        165,
+        404,
+        524
+    ],
+    "pass": true,
+    "reference_raster": "local/clean-arch-v1/root.x86_64/checkout/local/native-clean-v3/window-raster.png",
+    "thresholds": {
+        "maximum_gray_mae": 10,
+        "minimum_ink_correlation": 0.65,
+        "minimum_ink_pixels": 20
+    }
+}
