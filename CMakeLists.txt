@@ -17,7 +17,7 @@ if(KDE_INDEX_BUILD_PROBE)
     # Link the embedded runtime without installing its development SDK.
     add_subdirectory(probe EXCLUDE_FROM_ALL)
     add_custom_target(kde-index-cpu-worker ALL DEPENDS embedding-probe semanticlens-film-tokenizer semanticlens-film-worker)
-    install(TARGETS embedding-probe RUNTIME DESTINATION bin)
+    install(TARGETS embedding-probe semanticlens-film-tokenizer semanticlens-film-worker RUNTIME DESTINATION bin)
 endif()
 if(KDE_INDEX_BUILD_ENGINE)
     add_subdirectory(engine)
