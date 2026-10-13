@@ -1,0 +1,17 @@
+{
+  "schema_version": "semanticlens.film.manifest/1",
+  "film_id": "film:crossing",
+  "edition_id": "edition:crossing:test-1",
+  "display_title": "The Crossing — authored fixture",
+  "year": null,
+  "sources": [
+    {
+      "source_id": "source:crossing:subs",
+      "relative_path": "crossing/crossing.vtt",
+      "sha256": "182b7c6cb384d5f91eddb5978f72f54c2ed8c0a13d2a0aad4d9e221a6a52ca14",
+      "source_kind": "subtitle",
+      "language": "mul",
+      "edition_relation": "exact_edition"
+    }
+  ]
+}

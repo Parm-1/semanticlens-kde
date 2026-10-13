@@ -1,0 +1,438 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "semanticlens.film.analysis/1"
+    },
+    "analysis_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9:._-]*$"
+    },
+    "supersedes": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._-]*$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "film_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9:._-]*$"
+    },
+    "edition_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9:._-]*$"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "generation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "origin": {
+          "enum": [
+            "imported_llm",
+            "human_curated",
+            "authored_fixture"
+          ]
+        },
+        "provider": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 256
+        },
+        "model_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 256
+        },
+        "model_revision": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 256
+        },
+        "prompt_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "settings": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "temperature": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 2
+            },
+            "seed": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            },
+            "max_output_tokens": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 1
+            }
+          },
+          "required": [
+            "temperature",
+            "seed",
+            "max_output_tokens"
+          ]
+        }
+      },
+      "required": [
+        "origin",
+        "provider",
+        "model_id",
+        "model_revision",
+        "prompt_sha256",
+        "settings"
+      ]
+    },
+    "input_sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      },
+      "minItems": 1,
+      "maxItems": 32
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/claim"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1000
+      },
+      "minItems": 0,
+      "maxItems": 16
+    },
+    "not_observable": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 160
+      },
+      "minItems": 0,
+      "maxItems": 16,
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "analysis_id",
+    "supersedes",
+    "film_id",
+    "edition_id",
+    "created_at",
+    "generation",
+    "input_sources",
+    "claims",
+    "limitations",
+    "not_observable"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:semanticlens:film:analysis:1",
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._-]*$"
+        },
+        "source_revision": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "source_kind": {
+          "enum": [
+            "subtitle",
+            "screenplay",
+            "synopsis",
+            "reference",
+            "curated_note"
+          ]
+        },
+        "language": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 35
+        },
+        "normalization_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "coverage": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "enum": [
+                "full",
+                "partial"
+              ]
+            },
+            "unit_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 128,
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9:._-]*$"
+              },
+              "minItems": 1,
+              "maxItems": 100000,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "kind",
+            "unit_ids"
+          ]
+        }
+      },
+      "required": [
+        "source_id",
+        "source_revision",
+        "source_kind",
+        "language",
+        "normalization_version",
+        "coverage"
+      ]
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._-]*$"
+        },
+        "source_revision": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "unit_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._-]*$"
+        },
+        "start_codepoint": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end_codepoint": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "quote": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "role": {
+          "enum": [
+            "supports",
+            "contradicts"
+          ]
+        }
+      },
+      "required": [
+        "source_id",
+        "source_revision",
+        "unit_id",
+        "start_codepoint",
+        "end_codepoint",
+        "quote",
+        "role"
+      ]
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "claim_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._-]*$"
+        },
+        "facet": {
+          "enum": [
+            "synopsis",
+            "central_tension",
+            "theme",
+            "psychology",
+            "relationship",
+            "narrative_structure",
+            "emotional_trajectory",
+            "motif",
+            "aesthetics",
+            "conceptual_observation"
+          ]
+        },
+        "scope": {
+          "enum": [
+            "film",
+            "sequence",
+            "scene",
+            "character"
+          ]
+        },
+        "basis": {
+          "enum": [
+            "source_observation",
+            "source_interpretation",
+            "unverified_prior"
+          ]
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "minItems": 0,
+          "maxItems": 12,
+          "uniqueItems": true
+        },
+        "spoiler_level": {
+          "enum": [
+            "none",
+            "mild",
+            "major",
+            "unknown"
+          ]
+        },
+        "alternative_group": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9:._-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          },
+          "minItems": 0,
+          "maxItems": 16
+        }
+      },
+      "required": [
+        "claim_id",
+        "facet",
+        "scope",
+        "basis",
+        "text",
+        "keywords",
+        "spoiler_level",
+        "alternative_group",
+        "evidence"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "basis": {
+                "const": "unverified_prior"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "evidence": {
+                "maxItems": 0
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "evidence": {
+                "minItems": 1,
+                "contains": {
+                  "properties": {
+                    "role": {
+                      "const": "supports"
+                    }
+                  },
+                  "required": [
+                    "role"
+                  ]
+                },
+                "minContains": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "description": "Proposed structural import contract; runtime identity, coverage and evidence semantics are mandatory."
+}

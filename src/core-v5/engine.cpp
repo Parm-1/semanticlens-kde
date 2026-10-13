@@ -1,4 +1,5 @@
 #include "engine.h"
+#include "../film-v1/worker_qualification.h"
 #include <cmath>
 #include <cstring>
 #include <stdexcept>
@@ -224,8 +225,10 @@ Engine::~Engine(){
 }
 QStringList Engine::watchPaths(){
     std::lock_guard<std::mutex> lock(snapshotMutex);
-    return watched;
+    return watched+filmWatched;
 }
+QJsonObject Engine::filmStatus(){std::lock_guard<std::mutex> lock(snapshotMutex);return filmSnapshot;}
+void Engine::filmChanged(){std::lock_guard<std::mutex> lock(mutex);filmEpoch++;}
 QJsonObject Engine::status(){
     std::lock_guard<std::mutex> lock(snapshotMutex);
     auto result=snapshot;
@@ -235,6 +238,7 @@ QJsonObject Engine::status(){
 }
 void Engine::disconnect(QString owner){
     std::lock_guard<std::mutex> lock(mutex);
+    filmDisconnected.insert(owner);wake.notify_one();
     if(activeOwner==owner)disconnected.insert(owner);for(const auto &task:queue)if(task.owner==owner)canceled.remove(key(owner,task.request.value("id").toString()));queue.erase(std::remove_if(queue.begin(),queue.end(),[&](const Task &t){return t.owner==owner;}),queue.end());
 }
 void Engine::submit(QJsonObject r, QString owner, Reply reply) {
@@ -249,13 +253,20 @@ void Engine::submit(QJsonObject r, QString owner, Reply reply) {
     }
     if(queue.size()>=256) { reply({{"ok",false},{"error","service queue full"}}); return; }
     // Ingress is intent only. Validation and cancellation precede committed state changes.
-    queue.push_back({r,owner,reply,generation.load()});
+    bool cancelAccepted=false;
+    if(r.value("op")=="film_cancel_job"&&r.size()==3&&r.value("job_id").isString()){
+        QString job=r.value("job_id").toString();
+        if(filmJobOwners.value(job)==owner&&!filmJobCanceled.contains(job)){filmJobCanceled.insert(job);cancelAccepted=true;}
+    }
+    queue.push_back({r,owner,reply,generation.load(),filmEpoch.load(),cancelAccepted});
     wake.notify_one();
 }
 bool Engine::validLocked(const Task &task) {
     return !stop && !canceled.contains(key(task.owner,task.request.value("id").toString()))
         && !disconnected.contains(task.owner)
-        && (task.request.value("op").toString()!="search" || task.generation==generation);
+        && (task.request.value("op").toString()!="search" || task.generation==generation)
+        && (!QStringList{"film_search","film_evidence","film_navigation","film_sidecar_digest"}.contains(task.request.value("op").toString()) || task.filmEpoch==filmEpoch.load())
+        && (!task.request.value("op").toString().startsWith("film_") || !filmDisconnected.contains(task.owner));
 }
 bool Engine::valid(const Task &task) { std::lock_guard<std::mutex> lock(mutex); return validLocked(task); }
 void Engine::commitControl(Task &task, const std::function<void()> &changes) {
@@ -273,11 +284,11 @@ void Engine::commitControl(Task &task, const std::function<void()> &changes) {
 }
 void Engine::servicePending() {
     for(int count=0;count<256 && !stop;count++) {
-        Task task;
+        Task task;RequestFrame parent;
         { std::lock_guard<std::mutex> lock(mutex); if(queue.empty()) return;
-          task=queue.front(); queue.pop_front(); activeOwner=task.owner;
-          activeId=task.request.value("id").toString(); activeCommitted=false; }
-        handle(task);
+          task=queue.front(); queue.pop_front();parent={activeOwner,activeId,activeCommitted,filmTask};activeOwner=task.owner;
+          activeId=task.request.value("id").toString(); activeCommitted=false;filmTask=nullptr; }
+        handle(task,parent);
     }
 }
 QSqlQuery Engine::sql(QString statement,QVariantList values){
@@ -374,11 +385,30 @@ void Engine::closeProducer(){
             }
         }
     }
+    // A failed bounded wait is not proof of model release. Retain the handle
+    // so a later handover cannot load another model while this one still lives.
+    if(producer->state()!=QProcess::NotRunning)return;
     producer.reset();
-    producerBuffer.clear();
+    producerBuffer.clear();refreshQueryStatus();
 }
+void Engine::closeTokenizer(){if(tokenizer){tokenizer->closeWriteChannel();if(!tokenizer->waitForFinished(500)){tokenizer->kill();tokenizer->waitForFinished(5000);}tokenizer.reset();}tokenizerBuffer.clear();}
+QJsonObject Engine::tokenize(QJsonObject request){
+ if(!tokenizer){if(opt.filmTokenizer.isEmpty()||digest(opt.filmTokenizer)!=opt.filmTokenizerSha.toLatin1())fail("film tokenizer missing/unverified");if(digest(opt.textModel,309855456)!="2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135")fail("film tokenizer model mismatch");tokenizer=std::make_unique<QProcess>();tokenizer->setProcessChannelMode(QProcess::SeparateChannels);tokenizer->start(opt.filmTokenizer,{opt.textModel});if(!tokenizer->waitForStarted(5000)){closeTokenizer();fail("film tokenizer start failed");}}
+ QString id=QUuid::createUuid().toString(QUuid::WithoutBraces);request["id"]=id;auto bytes=QJsonDocument(request).toJson(QJsonDocument::Compact)+"\n";if(bytes.size()>65536)fail("token_limit: tokenizer request byte limit");tokenizer->write(bytes);QElapsedTimer t;t.start();while(!tokenizerBuffer.contains('\n')){tokenizer->waitForReadyRead(50);tokenizerBuffer+=tokenizer->readAllStandardOutput();tokenizer->readAllStandardError();if(stop||t.elapsed()>15000||tokenizerBuffer.size()>65536||tokenizer->state()==QProcess::NotRunning){closeTokenizer();fail("film tokenizer timeout/exit");}}int n=tokenizerBuffer.indexOf('\n');QJsonParseError err;auto doc=QJsonDocument::fromJson(tokenizerBuffer.left(n),&err);tokenizerBuffer.remove(0,n+1);auto r=doc.object();if(err.error!=QJsonParseError::NoError||!doc.isObject()||r["id"]!=id||!r["ok"].isBool()||!r["ok"].toBool()){closeTokenizer();fail("film tokenizer protocol failure");}return r;
+}
+int Engine::filmCount(QByteArray bytes,std::function<bool()> valid){if(!valid())fail("canceled");if(bytes.contains('\0')||QString::fromUtf8(bytes).toUtf8()!=bytes)fail("film text must be strict UTF-8");auto r=tokenize({{"op","count"},{"text",QString::fromUtf8(bytes)}});double n=r["token_count"].toDouble(-1);if(!r["token_count"].isDouble()||n<0||n!=std::floor(n)||n>INT_MAX||r["utf8_sha256"].toString().toLatin1()!=QCryptographicHash::hash(bytes,QCryptographicHash::Sha256).toHex()){closeTokenizer();fail("film tokenizer count mismatch");}if(!valid())fail("canceled");return int(n);}
+void Engine::initializeFilm(){
+ closeTokenizer();QString unavailable;QJsonObject fid=identity;fid["film_representation"]=1;fid["normalization"]="semanticlens-film-units/1";fid["formatter"]="legacy-texts-exact/1";fid["chunker"]="whole-units-count640-overlap90cp/1";fid["facet_renderer"]="claim-text/1";fid["tokenizer_sha256"]=opt.filmTokenizerSha;
+ try{if(opt.filmTokenizer.isEmpty()||!QDir::isAbsolutePath(opt.filmTokenizer)||!QRegularExpression("^[a-f0-9]{64}$").match(opt.filmTokenizerSha).hasMatch())fail("film tokenizer absent/unverified; file search remains available");auto info=tokenize({{"op","info"}})["info"].toObject();if(info["runtime"]!="llama.cpp-b11461+no-logits"||info["tokenizer"]!="semanticlens-film-tokenizer/1"||info["vocab_only"]!=true||info["add_special"]!=true||info["parse_special"]!=true)fail("film tokenizer identity mismatch");fid["tokenizer"]=info;}catch(const std::exception&e){unavailable=QString::fromUtf8(e.what());closeTokenizer();}
+ if(unavailable.isEmpty()&&(!opt.filmWorker.isEmpty()||!opt.filmWorkerSha.isEmpty()))try{ensureFilmWorker();fid["film_worker_sha256"]=opt.filmWorkerSha;fid["film_worker"]=filmWorkerInfo;}catch(const std::exception &e){unavailable=QString::fromUtf8(e.what());workerFailure(unavailable);}
+ film->initialize(fid,unavailable);refreshFilm();
+}
+void Engine::refreshFilm(){if(!film)return;if(!filmWorkerError.isEmpty())film->initialize({},"Film worker disabled: "+filmWorkerError);QJsonObject s;QStringList paths;try{s=film->status();paths=film->watchPaths();}catch(const std::exception&e){film->initialize({},"Film storage disabled: "+QString::fromUtf8(e.what()));s=film->status();}auto active=film->activeJobs();{std::lock_guard<std::mutex> lock(mutex);for(auto i=filmJobOwners.begin();i!=filmJobOwners.end();)if(!active.contains(i.key())){filmJobCanceled.remove(i.key());i=filmJobOwners.erase(i);}else ++i;}s["model_ready"]=s["model_ready"].toBool()&&operational;{std::lock_guard<std::mutex> lock(snapshotMutex);filmSnapshot=s;filmWatched=paths;}refreshQueryStatus();}
 QJsonObject Engine::embed(QJsonObject request){
     try {
+    // File embedding/query fallback uses the actual selected legacy producer.
+    try{closeFilmWorker(true);}catch(const std::exception &e){workerFailure(QString::fromUtf8(e.what()));}
+    if(filmWorker&&filmWorker->state()!=QProcess::NotRunning)fail("film worker did not exit; legacy model handover withheld");
     if(!producer){
             if(digest(opt.textModel,309855456)!="2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"||digest(opt.imageModel,554821024)!="c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f")fail("model SHA256 mismatch");
             if(digest(opt.probe)!=opt.probeSha.toLatin1())fail("unverified producer binary: hash changed before reload");
@@ -473,6 +503,7 @@ void Engine::openDatabase() {
     auto p=sql("SELECT value FROM meta WHERE key='paused'"); paused=p.next()&&p.value(0).toString()=="1";
 }
 void Engine::setFailure(QString error) {
+    closeFilmWorker(false);if(!filmTicket.isEmpty()){filmTicketReady=true;filmTicketVector.clear();filmTicketError=error;}
     closeProducer(); operational=false; scan={};
     { std::lock_guard<std::mutex> lock(mutex); generation++; }
     std::lock_guard<std::mutex> lock(snapshotMutex); watched.clear();
@@ -480,12 +511,13 @@ void Engine::setFailure(QString error) {
     snapshot["current"]=""; snapshot["error"]=error; snapshot["phase"]="failed";
 }
 void Engine::initialize() {
+    closeFilmWorker(false);filmTicket.clear();filmTicketVector.clear();filmTicketError.clear();filmTicketReady=false;filmTicketCanceled=false;filmWorkerError.clear();filmWorkerInfo={};
     operational=false; closeProducer();
     { std::lock_guard<std::mutex> lock(snapshotMutex); snapshot["ready"]=false; snapshot["model_ready"]=false;
       snapshot["error"]=""; snapshot["phase"]="verifying"; snapshot["recovery_attempt"]=snapshot.value("recovery_attempt").toInt()+1; }
     try {
         auto info=embed({{"op","info"}}); if(!info.value("ok").toBool()) fail("producer info failed");
-        identity=info.value("info").toObject(); identity.remove("load_seconds");
+        legacyProducerInfo=info.value("info").toObject();identity=legacyProducerInfo; identity.remove("load_seconds");
         if(identity.value("dimension").toInt()!=768||identity.value("max_tokens").toInt()!=2048||identity.value("backend")!="CPU"||identity.value("pipeline")!="digup-vectors1-linux-cpu-probe1"||identity.value("model")!="google/embeddinggemma-2"||identity.value("model_revision")!="bfcd298762cc34d0357ece5ebdd31791a3a374d8"||identity.value("runtime")!="llama.cpp-b11461+no-logits") fail("producer identity mismatch");
         identity["text_sha256"]="2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135";
         identity["image_sha256"]="c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f";
@@ -493,7 +525,7 @@ void Engine::initialize() {
         identity["engine_pipeline"]="kde-index-full-pages-v3-segments1800-image140-ocr32";
         identity["representation"]=3; identity["extractors"]=extractorIdentity();
         identity["dtype"]="float32"; identity["byte_order"]=QSysInfo::ByteOrder==QSysInfo::LittleEndian?"little":"big";
-        openDatabase(); purgeInadmissibleRows(); operational=true;
+        openDatabase(); purgeInadmissibleRows(); operational=true;initializeFilm();
         { std::lock_guard<std::mutex> lock(snapshotMutex); snapshot["ready"]=true; snapshot["model_ready"]=true; snapshot["error"]=""; snapshot["phase"]="ready"; }
         refresh();
     } catch(const std::exception &error) { setFailure(QString::fromUtf8(error.what())); throw; }
@@ -525,19 +557,64 @@ QJsonObject Engine::wipe(Task &task) {
     } catch(const std::exception &error) { setFailure(QString::fromUtf8(error.what())); return {{"accepted",true},{"removed",removed},{"ready",false},{"recovery_error",QString::fromUtf8(error.what())}}; }
 }
 void Engine::loop() {
+    FilmCallbacks callbacks;
+    callbacks.stopping=[this]{return stop.load();};callbacks.paused=[this]{return paused.load();};callbacks.epoch=[this]{return filmEpoch.load();};callbacks.bump=[this]{filmEpoch++;};
+    callbacks.ownerAlive=[this](QString owner){std::lock_guard<std::mutex> lock(mutex);return !filmDisconnected.contains(owner);};
+    callbacks.registerJob=[this](QString owner,QString id){filmJobOwners[id]=owner;};
+    callbacks.jobCanceled=[this](QString owner,QString id){std::lock_guard<std::mutex> lock(mutex);return filmJobOwners.value(id)==owner&&filmJobCanceled.contains(id);};
+    callbacks.promote=[this](QString owner,QString id,quint64 epoch,std::function<void()> changes){std::lock_guard<std::mutex> lock(mutex);if(stop||paused||filmDisconnected.contains(owner)||filmJobOwners.value(id)!=owner||filmJobCanceled.contains(id)||epoch!=filmEpoch.load())fail("canceled");changes();filmJobOwners.remove(id);filmJobCanceled.remove(id);};
+    callbacks.linearize=[this](std::function<void()> changes){std::lock_guard<std::mutex> lock(mutex);if(stop||(filmTask&&!validLocked(*filmTask)))fail("canceled");changes();if(filmTask&&QStringList{"film_add_collection","film_set_exclusions","film_remove_collection","film_remove_analysis","film_import_manifest","film_import_analysis","film_reconcile","film_cancel_job"}.contains(filmTask->request["op"].toString()))activeCommitted=true;};
+    callbacks.admitRoot=[this](QString path){if(path!=QDir::cleanPath(path)||beneath(path,QDir::cleanPath(opt.data)))fail("invalid film collection root");auto held=localPath(path);struct stat st{};if(::fstat(held.value,&st)!=0||!S_ISDIR(st.st_mode))fail("film collection must be a local directory");};
+    callbacks.snapshot=[this](QString root,QJsonArray exclusions,QString relative,QString expected,std::function<bool()> valid){
+        QString path=QDir(root).filePath(relative);if(!beneath(path,root)||path==root||beneath(path,QDir::cleanPath(opt.data)))fail("film path not authorized");
+        for(auto part:relative.split('/'))if(part.startsWith('.')||part.toLower().startsWith("build-")||QSet<QString>{"node_modules","build","dist","target","vendor","cache","__pycache__","credentials","secrets","private_keys","venv","passwords","cmakefiles","_build"}.contains(part.toLower()))fail("film path not authorized");
+        for(auto p:exclusions)if(beneath(relative,p.toString()))fail("film path excluded");
+        auto held=std::make_shared<LocalFd>(localPath(path));struct stat st{};if(::fstat(held->value,&st)!=0||!S_ISREG(st.st_mode)||st.st_size>32*1024*1024)fail("film source type/size rejected");
+        FilmLease lease;lease.path=path;lease.directory=std::make_shared<QTemporaryDir>(opt.data+"/film-extract-XXXXXX");if(!lease.directory->isValid())fail("film snapshot creation failed");if(!QFile::setPermissions(lease.directory->path(),QFileDevice::ReadOwner|QFileDevice::WriteOwner|QFileDevice::ExeOwner))fail("film snapshot directory protection failed");QString suffix=QFileInfo(path).suffix().toLower();lease.copy=lease.directory->filePath("input."+suffix);QFile dest(lease.copy);if(!dest.open(QIODevice::WriteOnly|QIODevice::NewOnly))fail("film snapshot write failed");
+        auto reader=readableFd(*held,false);QFile source;if(!source.open(reader.value,QIODevice::ReadOnly,QFileDevice::AutoCloseHandle))fail("film held read failed");reader.release();
+        while(!source.atEnd()){if(!valid()||stop)fail("canceled");auto bytes=source.read(64*1024);if(bytes.isEmpty()&&source.error()!=QFileDevice::NoError)fail("film read failed");lease.bytes+=bytes;if(lease.bytes.size()>32*1024*1024)fail("film source exceeds32MiB");if(dest.write(bytes)!=bytes.size())fail("film snapshot write failed");}
+        lease.sha=QString::fromLatin1(QCryptographicHash::hash(lease.bytes,QCryptographicHash::Sha256).toHex());if(!expected.isEmpty()&&lease.sha!=expected)fail("source_changed: source SHA256 mismatch");
+        // QFile writes may be buffered. close() ignores flush errors, so verify
+        // completion and the destination itself before extraction/navigation.
+        if(!dest.flush()||dest.error()!=QFileDevice::NoError)fail("film snapshot flush failed");
+        dest.close();if(dest.error()!=QFileDevice::NoError)fail("film snapshot close failed");
+        QFile copied(lease.copy);if(!copied.open(QIODevice::ReadOnly))fail("film snapshot readback failed");QCryptographicHash copiedHash(QCryptographicHash::Sha256);qint64 copiedSize=0;
+        while(!copied.atEnd()){if(!valid()||stop)fail("canceled");auto b=copied.read(64*1024);if(b.isEmpty()&&copied.error()!=QFileDevice::NoError)fail("film snapshot readback failed");copiedSize+=b.size();if(copiedSize>lease.bytes.size())fail("film snapshot readback size mismatch");copiedHash.addData(b);}
+        if(copied.error()!=QFileDevice::NoError||copiedSize!=lease.bytes.size()||copiedHash.result().toHex()!=lease.sha.toLatin1())fail("film snapshot readback identity mismatch");
+        copied.close();if(copied.error()!=QFileDevice::NoError)fail("film snapshot readback close failed");
+        lease.reauthorize=[held,path,st,sha=lease.sha,valid]{if(!valid())fail("canceled");auto current=localPath(path);struct stat now{};if(::fstat(current.value,&now)!=0||!S_ISREG(now.st_mode)||now.st_dev!=st.st_dev||now.st_ino!=st.st_ino||digestHeld(current)!=sha.toLatin1())fail("source_changed: source replaced/edited");if(!valid())fail("canceled");};return lease;
+    };
+    callbacks.count=[this](QByteArray bytes,std::function<bool()> valid){return filmCount(bytes,valid);};
+
+    callbacks.query=[this](QString text,std::function<bool()> valid){return queryVector(text,false,valid);};
+    callbacks.begin=[this](QByteArray bytes,std::function<bool()> valid){return beginFilmVector(bytes,valid);};
+    callbacks.poll=[this](QString ticket,std::function<bool()> valid){return pollFilmVector(ticket,valid);};
+    callbacks.discard=[this](QString ticket){discardFilmVector(ticket);};
+    callbacks.workerCapabilities=[this]{return workerCapabilities();};
+    film=std::make_unique<FilmStore>(opt.data,callbacks);
     try {
-        for(const auto &name:QDir(opt.data).entryList(QDir::Dirs|QDir::NoDotAndDotDot)) if(QRegularExpression("^extract-[A-Za-z0-9]{6}$").match(name).hasMatch()&&!QFileInfo(opt.data+"/"+name).isSymLink()) if(!QDir(opt.data+"/"+name).removeRecursively()) fail("cannot remove interrupted extraction snapshot");
+        for(const auto &name:QDir(opt.data).entryList(QDir::Dirs|QDir::NoDotAndDotDot)) if(QRegularExpression("^(extract|film-extract)-[A-Za-z0-9]{6}$").match(name).hasMatch()&&!QFileInfo(opt.data+"/"+name).isSymLink()) if(!QDir(opt.data+"/"+name).removeRecursively()) fail("cannot remove interrupted extraction snapshot");
         initialize(); if(!paused) startScan();
     } catch(const std::exception &error) { setFailure(QString::fromUtf8(error.what())); }
     while(!stop) {
         try {
             servicePending();
+            // Canceled tickets are reclaimed outside control/promotion mutexes.
+            if(filmTicketCanceled&&!filmTicket.isEmpty())try{pollFilmTicket();if(filmTicketReady){filmTicket.clear();filmTicketVector.clear();filmTicketError.clear();filmTicketReady=false;filmTicketCanceled=false;}}catch(const std::exception &e){workerFailure(QString::fromUtf8(e.what()));filmTicket.clear();filmTicketCanceled=false;}
+            QSet<QString> lost;{std::lock_guard<std::mutex> lock(mutex);lost=filmDisconnected;filmDisconnected.clear();}if(!lost.isEmpty()){try{for(auto owner:lost)film->disconnect(owner);}catch(const std::exception&e){film->initialize({},"Film storage disabled: "+QString::fromUtf8(e.what()));}refreshFilm();}
+            if(film->pending()&&!paused){try{film->step();}catch(const std::exception&e){film->initialize({},"Film storage disabled: "+QString::fromUtf8(e.what()));}refreshFilm();
+                // One complete film step has returned. Service controls again
+                // before one eligible legacy step; never pump from a film job.
+                servicePending();
+                if(operational&&scan.generation&&!paused&&!stop)scanStep();
+                if(!filmTicket.isEmpty()&&!filmTicketReady){std::unique_lock<std::mutex> lock(mutex);wake.wait_for(lock,std::chrono::milliseconds(10),[this]{return stop||!queue.empty()||!filmDisconnected.empty();});}
+                continue;}
             if(operational && scan.generation && !paused) { scanStep(); continue; }
             std::unique_lock<std::mutex> lock(mutex);
-            if(!wake.wait_for(lock,std::chrono::seconds(10),[this]{return stop||!queue.empty();})) { lock.unlock(); closeProducer(); }
+            if(!wake.wait_for(lock,std::chrono::seconds(10),[this]{return stop||!queue.empty()||!filmDisconnected.empty();})) { lock.unlock();try{closeFilmWorker(true);}catch(const std::exception &e){workerFailure(QString::fromUtf8(e.what()));}closeProducer();closeTokenizer();refreshQueryStatus(); }
         } catch(const std::exception &error) { setFailure(QString::fromUtf8(error.what())); }
     }
-    closeProducer(); closeDatabase();
+    closeFilmWorker(false);closeTokenizer();film.reset();closeProducer(); closeDatabase();
 }
 QString Engine::rootFor(QString path){
     auto rr=roots();
@@ -902,12 +979,21 @@ void Engine::indexFile(QString path,quint64 gen){
         }
     }
 }
-void Engine::handle(Task task) {
+void Engine::handle(Task task,RequestFrame parent) {
+    // Legacy indexFile may pump requests at its existing boundaries. Preserve
+    // any caller's admission frame even on exceptions; no waits occur here.
+    auto restore=qScopeGuard([this,&task,parent]{
+        std::lock_guard<std::mutex> lock(mutex);
+        canceled.remove(key(task.owner,task.request.value("id").toString()));
+        if(parent.owner!=task.owner)disconnected.remove(task.owner);
+        activeOwner=parent.owner;activeId=parent.id;activeCommitted=parent.committed;filmTask=parent.filmTask;
+    });
     QJsonObject result;
     try {
         QString op=task.request.value("op").toString();
         if(!valid(task)) fail("canceled");
-        if(op=="wipe") result=wipe(task);
+        if(op.startsWith("film_")){filmTask=&task;result=film->handle(task.request,task.owner,[this,&task]{return valid(task);});filmTask=nullptr;if(task.filmCancelAccepted&&result.value("ok").toBool(true))result["accepted"]=true;if(QStringList{"film_search","film_evidence","film_navigation","film_sidecar_digest"}.contains(op)){result["film_epoch"]=QString::number(task.filmEpoch);if(result.contains("navigation")){auto nav=result["navigation"].toObject();nav["film_epoch"]=QString::number(task.filmEpoch);result["navigation"]=nav;}}refreshFilm();}
+        else if(op=="wipe") result=wipe(task);
         else {
             if(!operational) {
                 if(op!="scan"&&op!="resume") fail(status().value("error").toString());
@@ -920,7 +1006,7 @@ void Engine::handle(Task task) {
                 QString kind=task.request.value("kind").toString();
                 if(!kind.isEmpty()&&!QSet<QString>{"text","pdf","image"}.contains(kind)) fail("unknown kind");
                 int limit=task.request.value("limit").toInt(20); if(limit<1||limit>50) fail("limit must be 1..50");
-                auto vector=vectorBlob(embed({{"op","query"},{"text",text}}));
+                auto vector=queryVector(text,true,[this,&task]{return valid(task);});
                 if(!valid(task)) fail("canceled");
                 QSet<qint64> fts;
                 QStringList tokens; for(QString token:text.split(QRegularExpression("\\s+"),Qt::SkipEmptyParts)) { token.replace('"',"\"\""); tokens<<"\""+token+"\""; }
@@ -988,8 +1074,124 @@ void Engine::handle(Task task) {
             } else if(op=="scan") { startScan(&task); result["accepted"]=true; }
             else fail("unknown operation");
         }
+        if((op=="search"||op=="film_search")&&result.value("ok").toBool(true)){result["query_producer"]=currentQueryProvider;recordQueryProvider();}
         if(operational) refresh();
     } catch(const std::exception &error) { result={{"ok",false},{"error",QString::fromUtf8(error.what())}}; }
     task.reply(result);
-    { std::lock_guard<std::mutex> lock(mutex); canceled.remove(key(task.owner,task.request.value("id").toString())); disconnected.remove(task.owner); activeOwner.clear(); activeId.clear(); activeCommitted=false; }
+}
+
+bool Engine::compatibleWorkerQueries()const{
+    return !opt.filmWorker.isEmpty()&&filmWorkerError.isEmpty()&&!qualifiedFilmWorkerSha().isEmpty()&&opt.filmWorkerSha==qualifiedFilmWorkerSha()&&qualifiedFilmWorkerBudget(opt.threads)&&!filmWorkerInfo.isEmpty()&&opt.probeSha=="fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0";
+}
+QJsonObject Engine::workerCapabilities()const{
+    bool configured=!opt.filmWorker.isEmpty()||!opt.filmWorkerSha.isEmpty();
+    return {{"configured",configured},{"supported",!configured||(!filmWorkerInfo.isEmpty()&&filmWorkerError.isEmpty())},{"resident",configured?bool(filmWorker&&filmWorker->state()!=QProcess::NotRunning):bool(producer&&producer->state()!=QProcess::NotRunning)},{"protocol",configured?"semanticlens-film-worker/1":"embedding-probe-json-lines/1"},{"legacy_queries_qualified",compatibleWorkerQueries()},{"cache_enabled",false},{"threads_total",opt.threads},{"foreground_threads",configured?1:opt.threads},{"background_threads",configured?qMax(1,opt.threads-1):0},{"allocation",configured&&opt.threads>=2?"reserved-foreground/1":"serial/1"},{"error",filmWorkerError}};
+}
+QJsonObject Engine::queryProvenance(bool shared,bool legacy)const{
+    bool qualifiedShared=shared&&!qualifiedFilmWorkerSha().isEmpty()&&opt.filmWorkerSha==qualifiedFilmWorkerSha()&&qualifiedFilmWorkerBudget(opt.threads)&&filmWorkerError.isEmpty()&&!filmWorkerInfo.isEmpty();
+    if((shared&&!qualifiedShared)||(!shared&&opt.probeSha!="fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0")){
+        QJsonObject configured{{"threads_total",opt.threads},{"text_sha256","2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"}};
+        if(!shared)configured["image_sha256"]="c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f";
+        QJsonObject p{{"mode",shared?"selected_worker":"selected_legacy"},{"qualification","unqualified"},{"executable",shared?opt.filmWorker:opt.probe},{"sha256",shared?opt.filmWorkerSha:opt.probeSha},{"protocol",shared?"semanticlens-film-worker/1":"embedding-probe-json-lines/1"},{"command",shared?(legacy?"legacy_query":"film_query"):(legacy?"query":"texts")},{"dimension",768},{"ephemeral",true},{"declared_info",shared?filmWorkerInfo:legacyProducerInfo},{"configured",configured}};
+        // A declared protocol signature is not implementation/math evidence.
+        // Worker math requires exact observed hash AND independently qualified
+        // actual budget. A custom selected legacy producer likewise has only
+        // observed path/hash/command/vector ABI here. Claims/config stay separate.
+        for(QString k:{"model","model_revision","text_sha256","runtime","preprocessing","context_tokens","batch_tokens","ubatch_tokens","sequences","pooling","threads_total","foreground_threads","background_threads","allocation"})p[k]=QJsonValue();
+        if(shared)p["reference_producer_sha256"]=QJsonValue();
+        return p;
+    }
+    QJsonObject p{{"mode",shared?"shared_worker":"accepted_legacy"},{"executable",shared?opt.filmWorker:opt.probe},{"sha256",shared?opt.filmWorkerSha:opt.probeSha},{"protocol",shared?"semanticlens-film-worker/1":"embedding-probe-json-lines/1"},{"model","google/embeddinggemma-2"},{"model_revision","bfcd298762cc34d0357ece5ebdd31791a3a374d8"},{"text_sha256","2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"},{"runtime","llama.cpp-b11461+no-logits"},{"preprocessing",legacy?"legacy-query-clip2048-eos/1":"film-query-strict2048/1"},{"context_tokens",2048},{"batch_tokens",2048},{"ubatch_tokens",2048},{"sequences",16},{"pooling","mean"},{"dimension",768},{"threads_total",opt.threads},{"foreground_threads",shared?1:opt.threads},{"background_threads",shared?qMax(1,opt.threads-1):0},{"allocation",shared&&opt.threads>=2?"reserved-foreground/1":"serial/1"},{"ephemeral",true}};
+    if(shared)p["reference_producer_sha256"]="fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0";return p;
+}
+void Engine::refreshQueryStatus(){
+    auto caps=workerCapabilities();bool resident=false;
+    if(!lastQueryProvider.isEmpty()){if(lastQueryProvider["mode"]=="shared_worker"||lastQueryProvider["mode"]=="selected_worker")resident=filmWorker&&filmWorker->state()!=QProcess::NotRunning;else resident=producer&&producer->state()!=QProcess::NotRunning;}
+    std::lock_guard<std::mutex> lock(snapshotMutex);
+    for(auto target:{&snapshot,&filmSnapshot}){(*target)["query_producer"]=lastQueryProvider.isEmpty()?QJsonValue():QJsonValue(lastQueryProvider);(*target)["query_provider_state"]=lastQueryProvider.isEmpty()?"no_successful_query":resident?"last_success_resident":"last_success_not_resident";(*target)["query_execution"]=caps;}
+}
+void Engine::recordQueryProvider(){lastQueryProvider=currentQueryProvider;refreshQueryStatus();}
+QJsonObject Engine::workerCall(QJsonObject r){
+    if(!filmWorker||filmWorker->state()==QProcess::NotRunning)fail("film_unavailable: worker not running");
+    QString id=QUuid::createUuid().toString(QUuid::WithoutBraces);r["id"]=id;auto bytes=QJsonDocument(r).toJson(QJsonDocument::Compact)+"\n";if(bytes.size()>65536)fail("token_limit: worker request byte limit");
+    if(filmWorker->write(bytes)!=bytes.size())fail("film_unavailable: worker write failed");QElapsedTimer timer;timer.start();
+    while(!filmWorkerBuffer.contains('\n')){filmWorker->waitForReadyRead(20);filmWorkerBuffer+=filmWorker->readAllStandardOutput();filmWorker->readAllStandardError();if(stop||timer.elapsed()>90000||filmWorkerBuffer.size()>128*1024||filmWorker->state()==QProcess::NotRunning)fail("film_unavailable: worker timeout/exit");}
+    int n=filmWorkerBuffer.indexOf('\n');QJsonParseError e;auto d=QJsonDocument::fromJson(filmWorkerBuffer.left(n),&e);filmWorkerBuffer.remove(0,n+1);auto reply=d.object();
+    if(e.error!=QJsonParseError::NoError||!d.isObject()||reply["id"]!=id||!reply["ok"].isBool())fail("film_unavailable: worker protocol mismatch");
+    QStringList allowed{"id","ok"};
+    if(!reply["ok"].toBool()){
+        allowed<<"error"<<"error_code";
+        if(!reply["error"].isString()||!reply["error_code"].isString())fail("film_unavailable: invalid worker error");
+    }else{
+        auto op=r["op"].toString();
+        if(op=="info")allowed<<"info";
+        else if(op=="film_query"||op=="legacy_query")allowed<<"vector";
+        else if(op=="film_begin")allowed<<"accepted"<<"ticket";
+        else if(op=="film_cancel")allowed<<"accepted";
+        else if(op=="film_poll"){
+            allowed<<"ready";
+            if(!reply["ready"].isBool())fail("film_unavailable: invalid poll reply");
+            if(reply["ready"].toBool()){
+                if(reply.contains("error"))allowed<<"error"<<"error_code";else allowed<<"vector";
+            }
+        }else fail("film_unavailable: unknown worker response operation");
+    }
+    if(reply.size()!=allowed.size())fail("film_unavailable: contradictory worker response fields");
+    for(auto i=reply.begin();i!=reply.end();++i)if(!allowed.contains(i.key()))fail("film_unavailable: unknown worker response field");
+    if(!reply["ok"].toBool())fail(reply["error_code"]=="token_limit"?"token_limit: "+reply["error"].toString():"film_unavailable: "+reply["error"].toString());return reply;
+}
+void Engine::ensureFilmWorker(){
+    if(!filmWorkerError.isEmpty())fail("film_unavailable: "+filmWorkerError);
+    if(filmWorker&&filmWorker->state()!=QProcess::NotRunning)return;
+    if(!filmTicket.isEmpty()&&!filmTicketReady)fail("film_unavailable: worker exited during active ticket");
+    filmWorkerBuffer.clear();
+    if(opt.filmWorker.isEmpty()||!QDir::isAbsolutePath(opt.filmWorker)||!QRegularExpression("^[a-f0-9]{64}$").match(opt.filmWorkerSha).hasMatch()||digest(opt.filmWorker)!=opt.filmWorkerSha.toLatin1())fail("film_unavailable: film worker absent/unverified");
+    if(digest(opt.textModel,309855456)!="2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135")fail("film_unavailable: worker model mismatch");
+    // Exactly one full model owner: fa is closed before the successor loads.
+    closeProducer();if(producer&&producer->state()!=QProcess::NotRunning)fail("film_unavailable: legacy producer did not exit; shared model handover withheld");filmWorker=std::make_unique<QProcess>();filmWorker->setProcessChannelMode(QProcess::SeparateChannels);filmWorker->start(opt.filmWorker,{opt.textModel,QString::number(opt.threads)});if(!filmWorker->waitForStarted(5000))fail("film_unavailable: worker start failed");
+    auto info=workerCall({{"op","info"}})["info"].toObject();
+    QJsonObject required{{"protocol","semanticlens-film-worker/1"},{"model","google/embeddinggemma-2"},{"model_revision","bfcd298762cc34d0357ece5ebdd31791a3a374d8"},{"runtime","llama.cpp-b11461+no-logits"},{"dimension",768},{"max_tokens",2048},{"context_tokens",2048},{"batch_tokens",2048},{"ubatch_tokens",2048},{"sequences",16},{"kv_unified",true},{"pooling","mean"},{"backend","CPU"},{"threads_total",opt.threads},{"foreground_threads",1},{"background_threads",qMax(1,opt.threads-1)},{"allocation",opt.threads==1?"serial/1":"reserved-foreground/1"},{"reference_producer_sha256","fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0"},{"legacy_preprocessing","legacy-query-clip2048-eos/1"},{"film_preprocessing","film-query-strict2048/1"}};
+    for(auto i=required.begin();i!=required.end();++i)if(info.value(i.key())!=i.value())fail("film_unavailable: worker identity mismatch "+i.key());if(info.size()!=required.size())fail("film_unavailable: unknown worker identity field");filmWorkerInfo=info;refreshQueryStatus();
+}
+void Engine::pollFilmTicket(){
+    if(filmTicket.isEmpty()||filmTicketReady)return;
+    if(filmTicketCanceled){auto r=workerCall({{"op","film_cancel"},{"ticket",filmTicket}});if(!r["accepted"].isBool())fail("film_unavailable: invalid cancel reply");}
+    auto r=workerCall({{"op","film_poll"},{"ticket",filmTicket}});if(!r["ready"].isBool())fail("film_unavailable: invalid poll reply");if(!r["ready"].toBool())return;
+    filmTicketReady=true;if(r.contains("error")){if(!r["error"].isString()||!r["error_code"].isString())fail("film_unavailable: invalid ticket error");filmTicketError=r["error"].toString();if(filmTicketError!="canceled"||r["error_code"]!="canceled"||!filmTicketCanceled)fail("film_unavailable: "+filmTicketError);}else filmTicketVector=vectorBlob(r);
+}
+void Engine::drainFilmTicket(){
+    while(!filmTicket.isEmpty()&&!filmTicketReady){pollFilmTicket();if(!filmTicketReady){filmWorker->waitForReadyRead(10);if(stop)fail("stopping");}}
+}
+void Engine::closeFilmWorker(bool drain){
+    if(!filmWorker)return;
+    if(drain&&!filmTicket.isEmpty()&&!filmTicketReady)drainFilmTicket();
+    if(filmWorker->state()!=QProcess::NotRunning){filmWorker->closeWriteChannel();if(!filmWorker->waitForFinished(1500)){filmWorker->terminate();if(!filmWorker->waitForFinished(1500)){filmWorker->kill();filmWorker->waitForFinished(5000);}}}
+    if(filmWorker->state()!=QProcess::NotRunning)return;
+    filmWorker.reset();filmWorkerBuffer.clear();refreshQueryStatus();
+}
+void Engine::workerFailure(QString error){
+    filmWorkerError=error;if(!filmTicket.isEmpty()){filmTicketReady=true;filmTicketVector.clear();filmTicketError=error;}closeFilmWorker(false);refreshQueryStatus();
+}
+QString Engine::beginFilmVector(QByteArray bytes,std::function<bool()> valid){
+    if(!valid())fail("canceled");if(!operational)fail("film_unavailable: model verification unavailable");if(!filmTicket.isEmpty())fail("film_unavailable: previous ticket not reclaimed");int count=filmCount(bytes,valid);if(count>2048)fail("token_limit: formatted input exceeds2048 tokens");
+    filmTicketVector.clear();filmTicketError.clear();filmTicketCanceled=false;filmTicketReady=false;
+    if(QJsonDocument(QJsonObject{{"op","texts"},{"texts",QJsonArray{QString::fromUtf8(bytes)}}}).toJson(QJsonDocument::Compact).size()>65500)fail("token_limit: producer request byte limit");
+    if(opt.filmWorker.isEmpty()&&opt.filmWorkerSha.isEmpty()){
+        auto r=embed({{"op","texts"},{"texts",QJsonArray{QString::fromUtf8(bytes)}}});auto v=r["vectors"].toArray();if(!r["ok"].toBool()||v.size()!=1)fail("film producer vector protocol mismatch");filmTicketVector=vectorBlob({{"ok",true},{"vector",v[0]}});filmTicketReady=true;filmTicket="legacy-"+QUuid::createUuid().toString(QUuid::WithoutBraces);return filmTicket;
+    }
+    try{ensureFilmWorker();auto r=workerCall({{"op","film_begin"},{"text",QString::fromUtf8(bytes)}});if(r["accepted"]!=QJsonValue(true)||!r["ticket"].isString()||r["ticket"].toString().isEmpty()||r["ticket"].toString().size()>128)fail("film_unavailable: invalid begin reply");filmTicket=r["ticket"].toString();return filmTicket;}catch(const std::exception &e){workerFailure(QString::fromUtf8(e.what()));throw;}
+}
+QJsonObject Engine::pollFilmVector(QString ticket,std::function<bool()> valid){
+    if(!valid())fail("canceled");if(ticket.isEmpty()||ticket!=filmTicket)fail("film_unavailable: mismatched embedding ticket");
+    try{pollFilmTicket();}catch(const std::exception &e){workerFailure(QString::fromUtf8(e.what()));throw;}
+    if(!filmTicketReady)return {{"ready",false}};QString error=filmTicketError;auto vector=filmTicketVector;filmTicket.clear();filmTicketVector.clear();filmTicketError.clear();filmTicketReady=false;filmTicketCanceled=false;
+    if(!error.isEmpty())fail(error=="canceled"?"canceled":"film_unavailable: "+error);if(!valid())fail("canceled");return {{"ready",true},{"vector",QString::fromLatin1(vector.toBase64())}};
+}
+void Engine::discardFilmVector(QString ticket){if(ticket==filmTicket&&!ticket.isEmpty())filmTicketCanceled=true;}
+QByteArray Engine::queryVector(QString text,bool legacy,std::function<bool()> valid){
+    if(!valid())fail("canceled");if(!operational)fail("film_unavailable: model verification unavailable");QString formatted="task: search result | query: "+text;
+    if(!legacy&&filmCount(formatted.toUtf8(),valid)>2048)fail("token_limit: formatted input exceeds2048 tokens");
+    bool shared=(!opt.filmWorker.isEmpty()||!opt.filmWorkerSha.isEmpty())&&(!legacy||compatibleWorkerQueries());
+    if(shared){try{ensureFilmWorker();auto r=workerCall({{"op",legacy?"legacy_query":"film_query"},{"text",legacy?text:formatted}});auto blob=vectorBlob(r);if(!valid())fail("canceled");currentQueryProvider=queryProvenance(true,legacy);return blob;}catch(const std::exception &e){QString m=QString::fromUtf8(e.what());if(m=="canceled"||m.startsWith("token_limit"))throw;workerFailure(m);if(!legacy)throw;}}
+    QJsonObject response=legacy?embed({{"op","query"},{"text",text}}):embed({{"op","texts"},{"texts",QJsonArray{formatted}}});QByteArray blob;if(legacy)blob=vectorBlob(response);else{auto v=response["vectors"].toArray();if(!response["ok"].toBool()||v.size()!=1)fail("film vector protocol mismatch");blob=vectorBlob({{"ok",true},{"vector",v[0]}});}if(!valid())fail("canceled");currentQueryProvider=queryProvenance(false,legacy);return blob;
 }

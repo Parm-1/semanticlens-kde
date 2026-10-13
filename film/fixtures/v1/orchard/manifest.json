@@ -1,0 +1,17 @@
+{
+  "schema_version": "semanticlens.film.manifest/1",
+  "film_id": "film:orchard",
+  "edition_id": "edition:orchard:test-1",
+  "display_title": "Clockwork Orchard — authored fixture",
+  "year": null,
+  "sources": [
+    {
+      "source_id": "source:orchard:subs",
+      "relative_path": "orchard/orchard.srt",
+      "sha256": "be60b62b04f169b91239905ac98f0b1d958d237456602eaededf7686c9c02249",
+      "source_kind": "subtitle",
+      "language": "en",
+      "edition_relation": "exact_edition"
+    }
+  ]
+}

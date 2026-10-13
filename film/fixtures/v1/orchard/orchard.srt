@@ -1,0 +1,11 @@
+1
+00:00:01,000 --> 00:00:03,250
+The orchard must be perfect.
+
+2
+00:00:03,000 --> 00:00:06,000
+CLOCK-7320: You uprooted the trees to straighten their shadows.
+
+3
+00:00:07,000 --> 00:00:10,000
+I cannot let one crooked branch remain.

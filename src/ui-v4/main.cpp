@@ -1,4 +1,5 @@
 #include "backend.h"
+#include "film_backend.h"
 #include <QApplication>
 #include <KIconTheme>
 #include <QQmlApplicationEngine>
@@ -41,15 +42,20 @@ int main(int argc, char **argv) {
     option("capture", "Save a window image and exit (validation)", "");
     option("capture-delay", "Milliseconds before saving a validation window image", "2000");
     option("query", "Initial search text", "");
+    parser.addOption(QCommandLineOption("film-view", "Open the offline film-pilot view"));
     parser.process(app);
     auto absolute = [&parser](const QString &name) { return QFileInfo(parser.value(name)).absoluteFilePath(); };
     Backend backend({parser.value("socket"), absolute("service"), absolute("probe"),
                      absolute("models"), absolute("data-dir"), absolute("downloader")});
+    FilmBackend filmBackend(parser.value("socket"), absolute("data-dir"));
     backend.setQuery(parser.value("query"));
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextProperty("backend", &backend);
+    engine.rootContext()->setContextProperty("filmBackend", &filmBackend);
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreationFailed, &app, [] { QCoreApplication::exit(1); }, Qt::QueuedConnection);
     engine.loadFromModule("org.kde.kdeindex", "Main");
+    if (parser.isSet("film-view") && !engine.rootObjects().isEmpty())
+        engine.rootObjects().first()->setProperty("filmMode", true);
     if (!parser.value("capture").isEmpty()) {
         bool validDelay = false;
         const auto captureDelay = parser.value("capture-delay").toInt(&validDelay);

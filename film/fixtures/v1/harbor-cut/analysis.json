@@ -1,0 +1,67 @@
+{
+  "schema_version": "semanticlens.film.analysis/1",
+  "analysis_id": "analysis:harbor-cut:1",
+  "supersedes": null,
+  "film_id": "film:harbor",
+  "edition_id": "edition:harbor:alternate-cut",
+  "created_at": "2026-10-12T23:22:00Z",
+  "generation": {
+    "origin": "authored_fixture",
+    "provider": null,
+    "model_id": null,
+    "model_revision": null,
+    "prompt_sha256": null,
+    "settings": {
+      "temperature": null,
+      "seed": null,
+      "max_output_tokens": null
+    }
+  },
+  "input_sources": [
+    {
+      "source_id": "source:harbor-cut:script",
+      "source_revision": "bb1a42911fcbc9d7580de67191ad07e6d406051d9b4b13ae113106e7fc3202f7",
+      "source_kind": "screenplay",
+      "language": "en",
+      "normalization_version": "semanticlens-film-units/1",
+      "coverage": {
+        "kind": "partial",
+        "unit_ids": [
+          "line-5"
+        ]
+      }
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "claim:recognition-resentment",
+      "facet": "central_tension",
+      "scope": "scene",
+      "basis": "source_interpretation",
+      "text": "The alternate scene suggests resentment leading to withdrawal of help. It contradicts the first draft and must remain tied to this edition.",
+      "keywords": [],
+      "spoiler_level": "major",
+      "alternative_group": null,
+      "evidence": [
+        {
+          "source_id": "source:harbor-cut:script",
+          "source_revision": "bb1a42911fcbc9d7580de67191ad07e6d406051d9b4b13ae113106e7fc3202f7",
+          "unit_id": "line-5",
+          "start_codepoint": 0,
+          "end_codepoint": 49,
+          "quote": "MARA: Let them wait. I am taking the boat inland.",
+          "role": "supports"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Authored synthetic excerpt; not a real film or an LLM generation.",
+    "Coverage refers only to the cited supplied units, not a feature-length film."
+  ],
+  "not_observable": [
+    "finished-film cinematography",
+    "score",
+    "acting"
+  ]
+}
