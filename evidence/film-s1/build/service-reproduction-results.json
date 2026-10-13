@@ -1,0 +1,308 @@
+{
+  "checks": [
+    {
+      "check": "legacy ready with unchanged producer",
+      "passed": true
+    },
+    {
+      "check": "film enabled",
+      "passed": true
+    },
+    {
+      "check": "manifest harbor",
+      "passed": true
+    },
+    {
+      "check": "manifest harbor-cut",
+      "passed": true
+    },
+    {
+      "check": "manifest orchard",
+      "passed": true
+    },
+    {
+      "check": "manifest crossing",
+      "passed": true
+    },
+    {
+      "check": "manifest archive",
+      "passed": true
+    },
+    {
+      "check": "manifest parcel-pdf",
+      "passed": true
+    },
+    {
+      "check": "analysis harbor",
+      "passed": true
+    },
+    {
+      "check": "analysis harbor-cut",
+      "passed": true
+    },
+    {
+      "check": "analysis orchard",
+      "passed": true
+    },
+    {
+      "check": "analysis crossing",
+      "passed": true
+    },
+    {
+      "check": "six distinct editions",
+      "passed": true
+    },
+    {
+      "check": "four analyses",
+      "passed": true
+    },
+    {
+      "check": "literal film literal-subtitle",
+      "passed": true
+    },
+    {
+      "check": "source literal literal-subtitle",
+      "passed": true
+    },
+    {
+      "check": "literal film analysis-only-literal",
+      "passed": true
+    },
+    {
+      "check": "analysis literal not source exact",
+      "passed": true
+    },
+    {
+      "check": "literal film vtt-source-literal",
+      "passed": true
+    },
+    {
+      "check": "source literal vtt-source-literal",
+      "passed": true
+    },
+    {
+      "check": "literal film cross-unit-quote",
+      "passed": true
+    },
+    {
+      "check": "source literal cross-unit-quote",
+      "passed": true
+    },
+    {
+      "check": "literal film pdf-page-identifier",
+      "passed": true
+    },
+    {
+      "check": "source literal pdf-page-identifier",
+      "passed": true
+    },
+    {
+      "check": "server default hide",
+      "passed": true
+    },
+    {
+      "check": "evidence default hide",
+      "passed": true
+    },
+    {
+      "check": "explicit source reveal",
+      "passed": true
+    },
+    {
+      "check": "navigation deny hidden",
+      "passed": true
+    },
+    {
+      "check": "navigation hash-bound copy",
+      "passed": true
+    },
+    {
+      "check": "navigation release cleanup",
+      "passed": true
+    },
+    {
+      "check": "wrong source revision rejected",
+      "passed": true
+    },
+    {
+      "check": "cross-edition anchor rejected",
+      "passed": true
+    },
+    {
+      "check": "traversal rejected",
+      "passed": true
+    },
+    {
+      "check": "symlink rejected",
+      "passed": true
+    },
+    {
+      "check": "contradictory raw quote fails",
+      "passed": true
+    },
+    {
+      "check": "failed analysis leaves sources",
+      "passed": true
+    },
+    {
+      "check": "public anchored analysis reference reveals",
+      "passed": true
+    },
+    {
+      "check": "declared provenance exact and unreviewed",
+      "passed": true
+    },
+    {
+      "check": "anchorless prior accepted",
+      "passed": true
+    },
+    {
+      "check": "prior reference has no invented source",
+      "passed": true
+    },
+    {
+      "check": "prior default hide",
+      "passed": true
+    },
+    {
+      "check": "prior reveal honest label",
+      "passed": true
+    },
+    {
+      "check": "prior navigation rejected",
+      "passed": true
+    },
+    {
+      "check": "prior fabricated source reference rejected",
+      "passed": true
+    },
+    {
+      "check": "contradictory oversized raw offset fails",
+      "passed": true
+    },
+    {
+      "check": "nullable-string-positive",
+      "passed": true
+    },
+    {
+      "check": "wrong-model-object",
+      "passed": true
+    },
+    {
+      "check": "wrong-provider-bool",
+      "passed": true
+    },
+    {
+      "check": "wrong-seed-number",
+      "passed": true
+    },
+    {
+      "check": "adapter v3 ingestion hours-overflow",
+      "passed": true
+    },
+    {
+      "check": "adapter v3 ingestion ms-rounding",
+      "passed": true
+    },
+    {
+      "check": "adapter v3 ingestion trailing-tokens",
+      "passed": true
+    },
+    {
+      "check": "adapter v3 ingestion vtt-junk",
+      "passed": true
+    },
+    {
+      "check": "adapter v3 ingestion max-ms",
+      "passed": true
+    },
+    {
+      "check": "SQLite exact max timestamp retained",
+      "passed": true
+    },
+    {
+      "check": "duplicate analysis same bytes idempotent",
+      "passed": true
+    },
+    {
+      "check": "same analysis ID changed bytes fails",
+      "passed": true
+    },
+    {
+      "check": "structurally valid misleading interpretation retained unreviewed",
+      "passed": true
+    },
+    {
+      "check": "misleading lexical match not source proof",
+      "passed": true
+    },
+    {
+      "check": "negation remains explicitly uncalibrated suggestion",
+      "passed": true
+    },
+    {
+      "check": "declared superseding analysis promotes atomically",
+      "passed": true
+    },
+    {
+      "check": "repeated claims do not add rank votes",
+      "passed": true
+    },
+    {
+      "check": "superseded analysis evidence inaccessible",
+      "passed": true
+    },
+    {
+      "check": "no-answer control no false literal claim",
+      "passed": true
+    },
+    {
+      "check": "idempotent unchanged import",
+      "passed": true
+    },
+    {
+      "check": "changed source withdraws dependent analysis",
+      "passed": true
+    },
+    {
+      "check": "stale evidence rejected",
+      "passed": true
+    },
+    {
+      "check": "collection removal empties active film content",
+      "passed": true
+    },
+    {
+      "check": "legacy still ready",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "elapsed_seconds": 22.322329714996158,
+  "service_exit": 0,
+  "process_closed": true,
+  "argv": [
+    "/workspace/semanticlens/local/film-open-qualified-preparation-v1/stage/usr/bin/kde-index-service",
+    "--data-dir",
+    "/workspace/semanticlens/local/film-service-reproduction-v1/run/data",
+    "--socket",
+    "/workspace/semanticlens/local/film-service-reproduction-v1/run/service.sock",
+    "--probe",
+    "/workspace/semanticlens/local/film-open-qualified-preparation-v1/stage/usr/bin/embedding-probe",
+    "--probe-sha256",
+    "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+    "--text-model",
+    "/workspace/semanticlens/models/embeddinggemma-2-Q8_0.gguf",
+    "--image-model",
+    "/workspace/semanticlens/models/mmproj-embeddinggemma-2-Q8_0.gguf",
+    "--threads",
+    "2",
+    "--film-tokenizer",
+    "/workspace/semanticlens/local/film-open-qualified-preparation-v1/stage/usr/bin/semanticlens-film-tokenizer",
+    "--film-tokenizer-sha256",
+    "bca52b5f2945f2959b7493f3cd6d48f0cbce35547d6e215b95b555f643659a1b"
+  ],
+  "service_sha256_at_launch": "a59a737bb7e27bcd593d237e36ab113742f566dadd25418d316f1ffebb28f6e3",
+  "probe_sha256": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+  "tokenizer_sha256": "bca52b5f2945f2959b7493f3cd6d48f0cbce35547d6e215b95b555f643659a1b"
+}

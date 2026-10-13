@@ -1,0 +1,49 @@
+{
+  "existing_target": {
+    "attempted_output": "existing-target-sentinel",
+    "entries_after": [
+      "KEEP"
+    ],
+    "entries_before": [
+      "KEEP"
+    ],
+    "reason": "output already exists",
+    "rejected": true,
+    "returncode": 1,
+    "sentinel_sha256_after": "713fe149c51c719ee6e8ea6e3e877f63c346e2cd238ab4a085c5b42d91eb8932",
+    "sentinel_sha256_before": "713fe149c51c719ee6e8ea6e3e877f63c346e2cd238ab4a085c5b42d91eb8932"
+  },
+  "legitimate_fresh_child": {
+    "binary_payloads": 0,
+    "native_stage_files_in_public_tree": 0,
+    "native_tar_archives_in_public_tree": 0,
+    "path": "candidate",
+    "private_tar_sha256": "753a22834d617caf46cf437a8afed046ade7c8a633d26e2c48d3f293dc61b53f",
+    "public_derivative_files": 155,
+    "readback_hash_mode_uid_gid_mtime_all_match": true,
+    "receipt_items_equal_v3": true,
+    "repeat_assembly_byte_identical": true,
+    "returncode": 0,
+    "screenshots": 9,
+    "selected_original_files": 155,
+    "status": "pass",
+    "text_or_structured_records": 146
+  },
+  "scope": "single-writer local filesystem fixture; no race-freedom claim",
+  "symlink_ancestor_escape": {
+    "attempted_output": "redirect/fresh-child",
+    "escaped_child_created": false,
+    "link_target": "../film-delivery-export-v4-outside-test",
+    "outside_entries_after": [
+      "KEEP"
+    ],
+    "outside_entries_before": [
+      "KEEP"
+    ],
+    "outside_sentinel_sha256_after": "ed28a2554a29f7e3bdca41163478166f96e5966528900dc3b82d98371b9837ef",
+    "outside_sentinel_sha256_before": "ed28a2554a29f7e3bdca41163478166f96e5966528900dc3b82d98371b9837ef",
+    "reason": "output must be a direct child",
+    "rejected": true,
+    "returncode": 1
+  }
+}

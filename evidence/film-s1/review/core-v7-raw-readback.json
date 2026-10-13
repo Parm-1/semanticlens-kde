@@ -1,0 +1,1906 @@
+{
+  "references-before": [
+    {
+      "label": "positive_source",
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "566c865e-13df-4658-b58a-ffb639db8c96",
+        "edition_id": "edition:tiny",
+        "end_codepoint": 20,
+        "film_id": "film:tiny",
+        "reference_kind": "source",
+        "source_id": "source:tiny",
+        "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+        "start_codepoint": 0,
+        "unit_id": "line-1"
+      },
+      "reply": {
+        "evidence": {
+          "analysis_text": null,
+          "cue_end_ms": null,
+          "cue_start_ms": null,
+          "edition_id": "edition:tiny",
+          "edition_relation": "exact_edition",
+          "film_id": "film:tiny",
+          "kind": "text",
+          "language": "en",
+          "limited": false,
+          "page": null,
+          "reference": {
+            "analysis_id": null,
+            "claim_id": null,
+            "collection_id": "566c865e-13df-4658-b58a-ffb639db8c96",
+            "edition_id": "edition:tiny",
+            "end_codepoint": 20,
+            "film_id": "film:tiny",
+            "reference_kind": "source",
+            "source_id": "source:tiny",
+            "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+            "start_codepoint": 0,
+            "unit_id": "line-1"
+          },
+          "reference_kind": "source",
+          "relative_path": "tiny.txt",
+          "source_excerpt": "SNAPSHOT-WITNESS-420",
+          "source_kind": "screenplay",
+          "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+          "spoiler_redacted": false,
+          "unit_id": "line-1",
+          "unit_text": "SNAPSHOT-WITNESS-420 is a tiny source."
+        },
+        "film_epoch": "3",
+        "film_revision": "2",
+        "id": "lifecycle-140103024974816-105",
+        "ok": true,
+        "protocol": 1
+      }
+    },
+    {
+      "label": "analysis_bool",
+      "reference": {
+        "analysis_id": true,
+        "claim_id": null,
+        "collection_id": "566c865e-13df-4658-b58a-ffb639db8c96",
+        "edition_id": "edition:tiny",
+        "end_codepoint": 20,
+        "film_id": "film:tiny",
+        "reference_kind": "source",
+        "source_id": "source:tiny",
+        "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+        "start_codepoint": 0,
+        "unit_id": "line-1"
+      },
+      "reply": {
+        "evidence": {
+          "analysis_text": null,
+          "cue_end_ms": null,
+          "cue_start_ms": null,
+          "edition_id": "edition:tiny",
+          "edition_relation": "exact_edition",
+          "film_id": "film:tiny",
+          "kind": "text",
+          "language": "en",
+          "limited": false,
+          "page": null,
+          "reference": {
+            "analysis_id": true,
+            "claim_id": null,
+            "collection_id": "566c865e-13df-4658-b58a-ffb639db8c96",
+            "edition_id": "edition:tiny",
+            "end_codepoint": 20,
+            "film_id": "film:tiny",
+            "reference_kind": "source",
+            "source_id": "source:tiny",
+            "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+            "start_codepoint": 0,
+            "unit_id": "line-1"
+          },
+          "reference_kind": "source",
+          "relative_path": "tiny.txt",
+          "source_excerpt": "SNAPSHOT-WITNESS-420",
+          "source_kind": "screenplay",
+          "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+          "spoiler_redacted": false,
+          "unit_id": "line-1",
+          "unit_text": "SNAPSHOT-WITNESS-420 is a tiny source."
+        },
+        "film_epoch": "3",
+        "film_revision": "2",
+        "id": "lifecycle-140103024974816-106",
+        "ok": true,
+        "protocol": 1
+      }
+    },
+    {
+      "label": "analysis_number",
+      "reference": {
+        "analysis_id": 7,
+        "claim_id": null,
+        "collection_id": "566c865e-13df-4658-b58a-ffb639db8c96",
+        "edition_id": "edition:tiny",
+        "end_codepoint": 20,
+        "film_id": "film:tiny",
+        "reference_kind": "source",
+        "source_id": "source:tiny",
+        "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+        "start_codepoint": 0,
+        "unit_id": "line-1"
+      },
+      "reply": {
+        "evidence": {
+          "analysis_text": null,
+          "cue_end_ms": null,
+          "cue_start_ms": null,
+          "edition_id": "edition:tiny",
+          "edition_relation": "exact_edition",
+          "film_id": "film:tiny",
+          "kind": "text",
+          "language": "en",
+          "limited": false,
+          "page": null,
+          "reference": {
+            "analysis_id": 7,
+            "claim_id": null,
+            "collection_id": "566c865e-13df-4658-b58a-ffb639db8c96",
+            "edition_id": "edition:tiny",
+            "end_codepoint": 20,
+            "film_id": "film:tiny",
+            "reference_kind": "source",
+            "source_id": "source:tiny",
+            "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+            "start_codepoint": 0,
+            "unit_id": "line-1"
+          },
+          "reference_kind": "source",
+          "relative_path": "tiny.txt",
+          "source_excerpt": "SNAPSHOT-WITNESS-420",
+          "source_kind": "screenplay",
+          "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+          "spoiler_redacted": false,
+          "unit_id": "line-1",
+          "unit_text": "SNAPSHOT-WITNESS-420 is a tiny source."
+        },
+        "film_epoch": "3",
+        "film_revision": "2",
+        "id": "lifecycle-140103024974816-107",
+        "ok": true,
+        "protocol": 1
+      }
+    },
+    {
+      "label": "analysis_object",
+      "reference": {
+        "analysis_id": {},
+        "claim_id": null,
+        "collection_id": "566c865e-13df-4658-b58a-ffb639db8c96",
+        "edition_id": "edition:tiny",
+        "end_codepoint": 20,
+        "film_id": "film:tiny",
+        "reference_kind": "source",
+        "source_id": "source:tiny",
+        "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+        "start_codepoint": 0,
+        "unit_id": "line-1"
+      },
+      "reply": {
+        "evidence": {
+          "analysis_text": null,
+          "cue_end_ms": null,
+          "cue_start_ms": null,
+          "edition_id": "edition:tiny",
+          "edition_relation": "exact_edition",
+          "film_id": "film:tiny",
+          "kind": "text",
+          "language": "en",
+          "limited": false,
+          "page": null,
+          "reference": {
+            "analysis_id": {},
+            "claim_id": null,
+            "collection_id": "566c865e-13df-4658-b58a-ffb639db8c96",
+            "edition_id": "edition:tiny",
+            "end_codepoint": 20,
+            "film_id": "film:tiny",
+            "reference_kind": "source",
+            "source_id": "source:tiny",
+            "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+            "start_codepoint": 0,
+            "unit_id": "line-1"
+          },
+          "reference_kind": "source",
+          "relative_path": "tiny.txt",
+          "source_excerpt": "SNAPSHOT-WITNESS-420",
+          "source_kind": "screenplay",
+          "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+          "spoiler_redacted": false,
+          "unit_id": "line-1",
+          "unit_text": "SNAPSHOT-WITNESS-420 is a tiny source."
+        },
+        "film_epoch": "3",
+        "film_revision": "2",
+        "id": "lifecycle-140103024974816-108",
+        "ok": true,
+        "protocol": 1
+      }
+    },
+    {
+      "label": "analysis_array",
+      "reference": {
+        "analysis_id": [],
+        "claim_id": null,
+        "collection_id": "566c865e-13df-4658-b58a-ffb639db8c96",
+        "edition_id": "edition:tiny",
+        "end_codepoint": 20,
+        "film_id": "film:tiny",
+        "reference_kind": "source",
+        "source_id": "source:tiny",
+        "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+        "start_codepoint": 0,
+        "unit_id": "line-1"
+      },
+      "reply": {
+        "evidence": {
+          "analysis_text": null,
+          "cue_end_ms": null,
+          "cue_start_ms": null,
+          "edition_id": "edition:tiny",
+          "edition_relation": "exact_edition",
+          "film_id": "film:tiny",
+          "kind": "text",
+          "language": "en",
+          "limited": false,
+          "page": null,
+          "reference": {
+            "analysis_id": [],
+            "claim_id": null,
+            "collection_id": "566c865e-13df-4658-b58a-ffb639db8c96",
+            "edition_id": "edition:tiny",
+            "end_codepoint": 20,
+            "film_id": "film:tiny",
+            "reference_kind": "source",
+            "source_id": "source:tiny",
+            "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+            "start_codepoint": 0,
+            "unit_id": "line-1"
+          },
+          "reference_kind": "source",
+          "relative_path": "tiny.txt",
+          "source_excerpt": "SNAPSHOT-WITNESS-420",
+          "source_kind": "screenplay",
+          "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+          "spoiler_redacted": false,
+          "unit_id": "line-1",
+          "unit_text": "SNAPSHOT-WITNESS-420 is a tiny source."
+        },
+        "film_epoch": "3",
+        "film_revision": "2",
+        "id": "lifecycle-140103024974816-109",
+        "ok": true,
+        "protocol": 1
+      }
+    },
+    {
+      "label": "claim_wrong_type",
+      "reference": {
+        "analysis_id": null,
+        "claim_id": true,
+        "collection_id": "566c865e-13df-4658-b58a-ffb639db8c96",
+        "edition_id": "edition:tiny",
+        "end_codepoint": 20,
+        "film_id": "film:tiny",
+        "reference_kind": "source",
+        "source_id": "source:tiny",
+        "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+        "start_codepoint": 0,
+        "unit_id": "line-1"
+      },
+      "reply": {
+        "evidence": {
+          "analysis_text": null,
+          "cue_end_ms": null,
+          "cue_start_ms": null,
+          "edition_id": "edition:tiny",
+          "edition_relation": "exact_edition",
+          "film_id": "film:tiny",
+          "kind": "text",
+          "language": "en",
+          "limited": false,
+          "page": null,
+          "reference": {
+            "analysis_id": null,
+            "claim_id": true,
+            "collection_id": "566c865e-13df-4658-b58a-ffb639db8c96",
+            "edition_id": "edition:tiny",
+            "end_codepoint": 20,
+            "film_id": "film:tiny",
+            "reference_kind": "source",
+            "source_id": "source:tiny",
+            "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+            "start_codepoint": 0,
+            "unit_id": "line-1"
+          },
+          "reference_kind": "source",
+          "relative_path": "tiny.txt",
+          "source_excerpt": "SNAPSHOT-WITNESS-420",
+          "source_kind": "screenplay",
+          "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+          "spoiler_redacted": false,
+          "unit_id": "line-1",
+          "unit_text": "SNAPSHOT-WITNESS-420 is a tiny source."
+        },
+        "film_epoch": "3",
+        "film_revision": "2",
+        "id": "lifecycle-140103024974816-110",
+        "ok": true,
+        "protocol": 1
+      }
+    },
+    {
+      "label": "claim_without_analysis",
+      "reference": {
+        "analysis_id": null,
+        "claim_id": "claim:invented",
+        "collection_id": "566c865e-13df-4658-b58a-ffb639db8c96",
+        "edition_id": "edition:tiny",
+        "end_codepoint": 20,
+        "film_id": "film:tiny",
+        "reference_kind": "source",
+        "source_id": "source:tiny",
+        "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+        "start_codepoint": 0,
+        "unit_id": "line-1"
+      },
+      "reply": {
+        "evidence": {
+          "analysis_text": null,
+          "cue_end_ms": null,
+          "cue_start_ms": null,
+          "edition_id": "edition:tiny",
+          "edition_relation": "exact_edition",
+          "film_id": "film:tiny",
+          "kind": "text",
+          "language": "en",
+          "limited": false,
+          "page": null,
+          "reference": {
+            "analysis_id": null,
+            "claim_id": "claim:invented",
+            "collection_id": "566c865e-13df-4658-b58a-ffb639db8c96",
+            "edition_id": "edition:tiny",
+            "end_codepoint": 20,
+            "film_id": "film:tiny",
+            "reference_kind": "source",
+            "source_id": "source:tiny",
+            "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+            "start_codepoint": 0,
+            "unit_id": "line-1"
+          },
+          "reference_kind": "source",
+          "relative_path": "tiny.txt",
+          "source_excerpt": "SNAPSHOT-WITNESS-420",
+          "source_kind": "screenplay",
+          "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+          "spoiler_redacted": false,
+          "unit_id": "line-1",
+          "unit_text": "SNAPSHOT-WITNESS-420 is a tiny source."
+        },
+        "film_epoch": "3",
+        "film_revision": "2",
+        "id": "lifecycle-140103024974816-111",
+        "ok": true,
+        "protocol": 1
+      }
+    },
+    {
+      "label": "empty_span",
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "566c865e-13df-4658-b58a-ffb639db8c96",
+        "edition_id": "edition:tiny",
+        "end_codepoint": 0,
+        "film_id": "film:tiny",
+        "reference_kind": "source",
+        "source_id": "source:tiny",
+        "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+        "start_codepoint": 0,
+        "unit_id": "line-1"
+      },
+      "reply": {
+        "evidence": {
+          "analysis_text": null,
+          "cue_end_ms": null,
+          "cue_start_ms": null,
+          "edition_id": "edition:tiny",
+          "edition_relation": "exact_edition",
+          "film_id": "film:tiny",
+          "kind": "text",
+          "language": "en",
+          "limited": false,
+          "page": null,
+          "reference": {
+            "analysis_id": null,
+            "claim_id": null,
+            "collection_id": "566c865e-13df-4658-b58a-ffb639db8c96",
+            "edition_id": "edition:tiny",
+            "end_codepoint": 0,
+            "film_id": "film:tiny",
+            "reference_kind": "source",
+            "source_id": "source:tiny",
+            "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+            "start_codepoint": 0,
+            "unit_id": "line-1"
+          },
+          "reference_kind": "source",
+          "relative_path": "tiny.txt",
+          "source_excerpt": "",
+          "source_kind": "screenplay",
+          "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+          "spoiler_redacted": false,
+          "unit_id": "line-1",
+          "unit_text": "SNAPSHOT-WITNESS-420 is a tiny source."
+        },
+        "film_epoch": "3",
+        "film_revision": "2",
+        "id": "lifecycle-140103024974816-112",
+        "ok": true,
+        "protocol": 1
+      }
+    },
+    {
+      "label": "reversed_span",
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "566c865e-13df-4658-b58a-ffb639db8c96",
+        "edition_id": "edition:tiny",
+        "end_codepoint": 1,
+        "film_id": "film:tiny",
+        "reference_kind": "source",
+        "source_id": "source:tiny",
+        "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+        "start_codepoint": 2,
+        "unit_id": "line-1"
+      },
+      "reply": {
+        "error": "invalid evidence range",
+        "error_code": "invalid_request",
+        "film_epoch": "3",
+        "id": "lifecycle-140103024974816-113",
+        "ok": false,
+        "protocol": 1
+      }
+    }
+  ],
+  "references-after": [
+    {
+      "label": "positive_source",
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "60d4582a-7a9a-4b8c-8029-22449e31b5bd",
+        "edition_id": "edition:tiny",
+        "end_codepoint": 20,
+        "film_id": "film:tiny",
+        "reference_kind": "source",
+        "source_id": "source:tiny",
+        "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+        "start_codepoint": 0,
+        "unit_id": "line-1"
+      },
+      "reply": {
+        "evidence": {
+          "analysis_text": null,
+          "cue_end_ms": null,
+          "cue_start_ms": null,
+          "edition_id": "edition:tiny",
+          "edition_relation": "exact_edition",
+          "film_id": "film:tiny",
+          "kind": "text",
+          "language": "en",
+          "limited": false,
+          "page": null,
+          "reference": {
+            "analysis_id": null,
+            "claim_id": null,
+            "collection_id": "60d4582a-7a9a-4b8c-8029-22449e31b5bd",
+            "edition_id": "edition:tiny",
+            "end_codepoint": 20,
+            "film_id": "film:tiny",
+            "reference_kind": "source",
+            "source_id": "source:tiny",
+            "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+            "start_codepoint": 0,
+            "unit_id": "line-1"
+          },
+          "reference_kind": "source",
+          "relative_path": "tiny.txt",
+          "source_excerpt": "SNAPSHOT-WITNESS-420",
+          "source_kind": "screenplay",
+          "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+          "spoiler_redacted": false,
+          "unit_id": "line-1",
+          "unit_text": "SNAPSHOT-WITNESS-420 is a tiny source."
+        },
+        "film_epoch": "3",
+        "film_revision": "2",
+        "id": "lifecycle-140052768840672-140",
+        "ok": true,
+        "protocol": 1
+      }
+    },
+    {
+      "label": "analysis_bool",
+      "reference": {
+        "analysis_id": true,
+        "claim_id": null,
+        "collection_id": "60d4582a-7a9a-4b8c-8029-22449e31b5bd",
+        "edition_id": "edition:tiny",
+        "end_codepoint": 20,
+        "film_id": "film:tiny",
+        "reference_kind": "source",
+        "source_id": "source:tiny",
+        "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+        "start_codepoint": 0,
+        "unit_id": "line-1"
+      },
+      "reply": {
+        "error": "analysis_id must be null or an identifier",
+        "error_code": "invalid_request",
+        "film_epoch": "3",
+        "id": "lifecycle-140052768840672-141",
+        "ok": false,
+        "protocol": 1
+      }
+    },
+    {
+      "label": "analysis_number",
+      "reference": {
+        "analysis_id": 7,
+        "claim_id": null,
+        "collection_id": "60d4582a-7a9a-4b8c-8029-22449e31b5bd",
+        "edition_id": "edition:tiny",
+        "end_codepoint": 20,
+        "film_id": "film:tiny",
+        "reference_kind": "source",
+        "source_id": "source:tiny",
+        "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+        "start_codepoint": 0,
+        "unit_id": "line-1"
+      },
+      "reply": {
+        "error": "analysis_id must be null or an identifier",
+        "error_code": "invalid_request",
+        "film_epoch": "3",
+        "id": "lifecycle-140052768840672-142",
+        "ok": false,
+        "protocol": 1
+      }
+    },
+    {
+      "label": "analysis_object",
+      "reference": {
+        "analysis_id": {},
+        "claim_id": null,
+        "collection_id": "60d4582a-7a9a-4b8c-8029-22449e31b5bd",
+        "edition_id": "edition:tiny",
+        "end_codepoint": 20,
+        "film_id": "film:tiny",
+        "reference_kind": "source",
+        "source_id": "source:tiny",
+        "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+        "start_codepoint": 0,
+        "unit_id": "line-1"
+      },
+      "reply": {
+        "error": "analysis_id must be null or an identifier",
+        "error_code": "invalid_request",
+        "film_epoch": "3",
+        "id": "lifecycle-140052768840672-143",
+        "ok": false,
+        "protocol": 1
+      }
+    },
+    {
+      "label": "analysis_array",
+      "reference": {
+        "analysis_id": [],
+        "claim_id": null,
+        "collection_id": "60d4582a-7a9a-4b8c-8029-22449e31b5bd",
+        "edition_id": "edition:tiny",
+        "end_codepoint": 20,
+        "film_id": "film:tiny",
+        "reference_kind": "source",
+        "source_id": "source:tiny",
+        "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+        "start_codepoint": 0,
+        "unit_id": "line-1"
+      },
+      "reply": {
+        "error": "analysis_id must be null or an identifier",
+        "error_code": "invalid_request",
+        "film_epoch": "3",
+        "id": "lifecycle-140052768840672-144",
+        "ok": false,
+        "protocol": 1
+      }
+    },
+    {
+      "label": "claim_wrong_type",
+      "reference": {
+        "analysis_id": null,
+        "claim_id": true,
+        "collection_id": "60d4582a-7a9a-4b8c-8029-22449e31b5bd",
+        "edition_id": "edition:tiny",
+        "end_codepoint": 20,
+        "film_id": "film:tiny",
+        "reference_kind": "source",
+        "source_id": "source:tiny",
+        "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+        "start_codepoint": 0,
+        "unit_id": "line-1"
+      },
+      "reply": {
+        "error": "claim_id must be null or an identifier",
+        "error_code": "invalid_request",
+        "film_epoch": "3",
+        "id": "lifecycle-140052768840672-145",
+        "ok": false,
+        "protocol": 1
+      }
+    },
+    {
+      "label": "claim_without_analysis",
+      "reference": {
+        "analysis_id": null,
+        "claim_id": "claim:invented",
+        "collection_id": "60d4582a-7a9a-4b8c-8029-22449e31b5bd",
+        "edition_id": "edition:tiny",
+        "end_codepoint": 20,
+        "film_id": "film:tiny",
+        "reference_kind": "source",
+        "source_id": "source:tiny",
+        "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+        "start_codepoint": 0,
+        "unit_id": "line-1"
+      },
+      "reply": {
+        "error": "analysis_id and claim_id must be paired",
+        "error_code": "invalid_request",
+        "film_epoch": "3",
+        "id": "lifecycle-140052768840672-146",
+        "ok": false,
+        "protocol": 1
+      }
+    },
+    {
+      "label": "empty_span",
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "60d4582a-7a9a-4b8c-8029-22449e31b5bd",
+        "edition_id": "edition:tiny",
+        "end_codepoint": 0,
+        "film_id": "film:tiny",
+        "reference_kind": "source",
+        "source_id": "source:tiny",
+        "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+        "start_codepoint": 0,
+        "unit_id": "line-1"
+      },
+      "reply": {
+        "error": "source span must be nonempty and ordered",
+        "error_code": "invalid_request",
+        "film_epoch": "3",
+        "id": "lifecycle-140052768840672-147",
+        "ok": false,
+        "protocol": 1
+      }
+    },
+    {
+      "label": "reversed_span",
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "60d4582a-7a9a-4b8c-8029-22449e31b5bd",
+        "edition_id": "edition:tiny",
+        "end_codepoint": 1,
+        "film_id": "film:tiny",
+        "reference_kind": "source",
+        "source_id": "source:tiny",
+        "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+        "start_codepoint": 2,
+        "unit_id": "line-1"
+      },
+      "reply": {
+        "error": "source span must be nonempty and ordered",
+        "error_code": "invalid_request",
+        "film_epoch": "3",
+        "id": "lifecycle-140052768840672-148",
+        "ok": false,
+        "protocol": 1
+      }
+    }
+  ],
+  "reference_positive_evidence": [
+    {
+      "request": {
+        "id": "lifecycle-140052768840672-139",
+        "op": "film_evidence",
+        "reference": {
+          "analysis_id": null,
+          "claim_id": null,
+          "collection_id": "60d4582a-7a9a-4b8c-8029-22449e31b5bd",
+          "edition_id": "edition:tiny",
+          "end_codepoint": 20,
+          "film_id": "film:tiny",
+          "reference_kind": "source",
+          "source_id": "source:tiny",
+          "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+          "start_codepoint": 0,
+          "unit_id": "line-1"
+        },
+        "expected_film_revision": "2",
+        "spoiler_policy": "allow"
+      },
+      "reply": {
+        "evidence": {
+          "analysis_text": null,
+          "cue_end_ms": null,
+          "cue_start_ms": null,
+          "edition_id": "edition:tiny",
+          "edition_relation": "exact_edition",
+          "film_id": "film:tiny",
+          "kind": "text",
+          "language": "en",
+          "limited": false,
+          "page": null,
+          "reference": {
+            "analysis_id": null,
+            "claim_id": null,
+            "collection_id": "60d4582a-7a9a-4b8c-8029-22449e31b5bd",
+            "edition_id": "edition:tiny",
+            "end_codepoint": 20,
+            "film_id": "film:tiny",
+            "reference_kind": "source",
+            "source_id": "source:tiny",
+            "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+            "start_codepoint": 0,
+            "unit_id": "line-1"
+          },
+          "reference_kind": "source",
+          "relative_path": "tiny.txt",
+          "source_excerpt": "SNAPSHOT-WITNESS-420",
+          "source_kind": "screenplay",
+          "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+          "spoiler_redacted": false,
+          "unit_id": "line-1",
+          "unit_text": "SNAPSHOT-WITNESS-420 is a tiny source."
+        },
+        "film_epoch": "3",
+        "film_revision": "2",
+        "id": "lifecycle-140052768840672-139",
+        "ok": true,
+        "protocol": 1
+      }
+    },
+    {
+      "request": {
+        "id": "lifecycle-140052768840672-140",
+        "op": "film_evidence",
+        "reference": {
+          "analysis_id": null,
+          "claim_id": null,
+          "collection_id": "60d4582a-7a9a-4b8c-8029-22449e31b5bd",
+          "edition_id": "edition:tiny",
+          "end_codepoint": 20,
+          "film_id": "film:tiny",
+          "reference_kind": "source",
+          "source_id": "source:tiny",
+          "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+          "start_codepoint": 0,
+          "unit_id": "line-1"
+        },
+        "expected_film_revision": "2",
+        "spoiler_policy": "allow"
+      },
+      "reply": {
+        "evidence": {
+          "analysis_text": null,
+          "cue_end_ms": null,
+          "cue_start_ms": null,
+          "edition_id": "edition:tiny",
+          "edition_relation": "exact_edition",
+          "film_id": "film:tiny",
+          "kind": "text",
+          "language": "en",
+          "limited": false,
+          "page": null,
+          "reference": {
+            "analysis_id": null,
+            "claim_id": null,
+            "collection_id": "60d4582a-7a9a-4b8c-8029-22449e31b5bd",
+            "edition_id": "edition:tiny",
+            "end_codepoint": 20,
+            "film_id": "film:tiny",
+            "reference_kind": "source",
+            "source_id": "source:tiny",
+            "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+            "start_codepoint": 0,
+            "unit_id": "line-1"
+          },
+          "reference_kind": "source",
+          "relative_path": "tiny.txt",
+          "source_excerpt": "SNAPSHOT-WITNESS-420",
+          "source_kind": "screenplay",
+          "source_revision": "6f20c3a5c3b07a28cd89c65a81a24efae89b715ac80aaaf2dd82c7dcf9425473",
+          "spoiler_redacted": false,
+          "unit_id": "line-1",
+          "unit_text": "SNAPSHOT-WITNESS-420 is a tiny source."
+        },
+        "film_epoch": "3",
+        "film_revision": "2",
+        "id": "lifecycle-140052768840672-140",
+        "ok": true,
+        "protocol": 1
+      }
+    },
+    {
+      "request": {
+        "id": "lifecycle-140052768840672-162",
+        "op": "film_evidence",
+        "reference": {
+          "analysis_id": "analysis:harbor:1",
+          "claim_id": "claim:uncredited-duty",
+          "collection_id": "60d4582a-7a9a-4b8c-8029-22449e31b5bd",
+          "edition_id": "edition:harbor:draft-1",
+          "end_codepoint": 66,
+          "film_id": "film:harbor",
+          "reference_kind": "source",
+          "source_id": "source:harbor:script",
+          "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+          "start_codepoint": 0,
+          "unit_id": "line-6"
+        },
+        "expected_film_revision": "4",
+        "spoiler_policy": "allow"
+      },
+      "reply": {
+        "evidence": {
+          "analysis_text": "ANALYSIS-ONLY-K7: The exchange suggests continuing public service without recognition. Mara separates helping strangers from being publicly thanked. This is a reading of the supplied exchange only.",
+          "basis": "source_interpretation",
+          "coverage": [
+            {
+              "coverage": {
+                "kind": "partial",
+                "unit_ids": [
+                  "line-6"
+                ]
+              },
+              "language": "en",
+              "normalization_version": "semanticlens-film-units/1",
+              "source_id": "source:harbor:script",
+              "source_kind": "screenplay",
+              "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217"
+            }
+          ],
+          "created_at": "2026-10-12T23:22:00Z",
+          "cue_end_ms": null,
+          "cue_start_ms": null,
+          "edition_id": "edition:harbor:draft-1",
+          "edition_relation": "exact_edition",
+          "facet": "central_tension",
+          "film_id": "film:harbor",
+          "generation": {
+            "model_id": null,
+            "model_revision": null,
+            "origin": "authored_fixture",
+            "prompt_sha256": null,
+            "provider": null,
+            "settings": {
+              "max_output_tokens": null,
+              "seed": null,
+              "temperature": null
+            }
+          },
+          "kind": "dialogue",
+          "language": "en",
+          "limitations": [
+            "Authored synthetic excerpt; not a real film or an LLM generation.",
+            "Coverage refers only to the cited supplied units, not a feature-length film."
+          ],
+          "limited": false,
+          "not_observable": [
+            "finished-film cinematography",
+            "score",
+            "acting"
+          ],
+          "origin": "authored_fixture",
+          "page": null,
+          "reference": {
+            "analysis_id": "analysis:harbor:1",
+            "claim_id": "claim:uncredited-duty",
+            "collection_id": "60d4582a-7a9a-4b8c-8029-22449e31b5bd",
+            "edition_id": "edition:harbor:draft-1",
+            "end_codepoint": 66,
+            "film_id": "film:harbor",
+            "reference_kind": "source",
+            "source_id": "source:harbor:script",
+            "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+            "start_codepoint": 0,
+            "unit_id": "line-6"
+          },
+          "reference_kind": "source",
+          "relative_path": "harbor/harbor.txt",
+          "scope": "scene",
+          "semantic_review": "unreviewed",
+          "source_excerpt": "MARA: I will bring the boat tomorrow, even if they never thank me.",
+          "source_kind": "screenplay",
+          "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+          "spoiler_redacted": false,
+          "unit_id": "line-6",
+          "unit_text": "MARA: I will bring the boat tomorrow, even if they never thank me."
+        },
+        "film_epoch": "5",
+        "film_revision": "4",
+        "id": "lifecycle-140052768840672-162",
+        "ok": true,
+        "protocol": 1
+      }
+    },
+    {
+      "request": {
+        "id": "lifecycle-140052768840672-169",
+        "op": "film_evidence",
+        "reference": {
+          "analysis_id": "analysis:reference-prior",
+          "claim_id": "claim:reference-prior",
+          "collection_id": "60d4582a-7a9a-4b8c-8029-22449e31b5bd",
+          "edition_id": "edition:harbor:draft-1",
+          "film_id": "film:harbor",
+          "reference_kind": "analysis_only"
+        },
+        "expected_film_revision": "5",
+        "spoiler_policy": "allow"
+      },
+      "reply": {
+        "evidence": {
+          "analysis_text": "REFERENCE-PRIOR-519 is an unverified prior control.",
+          "basis": "unverified_prior",
+          "coverage": [
+            {
+              "coverage": {
+                "kind": "partial",
+                "unit_ids": [
+                  "line-6"
+                ]
+              },
+              "language": "en",
+              "normalization_version": "semanticlens-film-units/1",
+              "source_id": "source:harbor:script",
+              "source_kind": "screenplay",
+              "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217"
+            }
+          ],
+          "created_at": "2026-10-12T23:22:00Z",
+          "edition_id": "edition:harbor:draft-1",
+          "facet": "central_tension",
+          "film_id": "film:harbor",
+          "generation": {
+            "model_id": null,
+            "model_revision": null,
+            "origin": "authored_fixture",
+            "prompt_sha256": null,
+            "provider": null,
+            "settings": {
+              "max_output_tokens": null,
+              "seed": null,
+              "temperature": null
+            }
+          },
+          "label": "Unverified prior; no source anchor",
+          "limitations": [
+            "Authored synthetic excerpt; not a real film or an LLM generation.",
+            "Coverage refers only to the cited supplied units, not a feature-length film."
+          ],
+          "not_observable": [
+            "finished-film cinematography",
+            "score",
+            "acting"
+          ],
+          "origin": "authored_fixture",
+          "reference": {
+            "analysis_id": "analysis:reference-prior",
+            "claim_id": "claim:reference-prior",
+            "collection_id": "60d4582a-7a9a-4b8c-8029-22449e31b5bd",
+            "edition_id": "edition:harbor:draft-1",
+            "film_id": "film:harbor",
+            "reference_kind": "analysis_only"
+          },
+          "reference_kind": "analysis_only",
+          "scope": "scene",
+          "semantic_review": "unreviewed",
+          "source_excerpt": null,
+          "spoiler_redacted": false,
+          "unit_text": null
+        },
+        "film_epoch": "7",
+        "film_revision": "5",
+        "id": "lifecycle-140052768840672-169",
+        "ok": true,
+        "protocol": 1
+      }
+    }
+  ],
+  "isolation_independent": {
+    "film_full_rows_same_after_legacy_wipe": true,
+    "legacy_full_rows_same_after_film_recreate": true,
+    "normal_vector_bytes": 3072,
+    "normal_vector_sha256": "b6a30e058dcc8b043bff923069852e868baa1fc5c4f08f46b238afd488a1fd28",
+    "normal_vector_norm": 1.0000000259937256,
+    "corruptions": {
+      "size": {
+        "bytes": 3068,
+        "sha256": "97d8bb0a5595b97046bf86e971b1ccd5a3bdb9b3d639515da72f666756b4f558",
+        "nan_first_float": false,
+        "all_zero": false,
+        "reply": {
+          "error": "corrupt film vector size",
+          "error_code": "film_unavailable",
+          "film_epoch": "1",
+          "id": "lifecycle-140507819387280-108",
+          "ok": false,
+          "protocol": 1
+        },
+        "status_ready": true,
+        "legacy_full_rows_equal": true
+      },
+      "nonfinite": {
+        "bytes": 3072,
+        "sha256": "e0ce38f01424e67261a3b3bd9deb37121e312fd4245f90b3c1002097334275b8",
+        "nan_first_float": true,
+        "all_zero": false,
+        "reply": {
+          "error": "corrupt nonfinite film vector",
+          "error_code": "film_unavailable",
+          "film_epoch": "1",
+          "id": "lifecycle-140507819387280-112",
+          "ok": false,
+          "protocol": 1
+        },
+        "status_ready": true,
+        "legacy_full_rows_equal": true
+      },
+      "normalization": {
+        "bytes": 3072,
+        "sha256": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293",
+        "nan_first_float": false,
+        "all_zero": true,
+        "reply": {
+          "error": "corrupt unnormalized film vector",
+          "error_code": "film_unavailable",
+          "film_epoch": "1",
+          "id": "lifecycle-140507819387280-116",
+          "ok": false,
+          "protocol": 1
+        },
+        "status_ready": true,
+        "legacy_full_rows_equal": true
+      }
+    },
+    "identity_mismatch_legacy_same": true
+  },
+  "seeded_boundary_independent": {
+    "recipe_count": 126,
+    "at_count": 127,
+    "actual_positive_reply_reserialized_bytes": 350915,
+    "actual_above_reply": {
+      "error": "film response byte limit",
+      "error_code": "limit_exceeded",
+      "id": "lifecycle-140246053028560-76",
+      "ok": false,
+      "protocol": 1
+    },
+    "source_recovery_result_count": 50,
+    "edition_bound": {
+      "at": {
+        "done": 1,
+        "error": "",
+        "job_id": "e2c90c3f-b83f-45b5-a83b-87fd6f1509e7",
+        "kind": "manifest",
+        "stage": "committed",
+        "state": "complete",
+        "total": 1
+      },
+      "above": {
+        "done": 0,
+        "error": "edition limit exceeded",
+        "job_id": "aadf79ef-df6a-4d55-9e25-15bf80e495c5",
+        "kind": "manifest",
+        "stage": "snapshot",
+        "state": "failed",
+        "total": 0
+      },
+      "counts": {
+        "analyses": 52,
+        "claims": 52,
+        "editions": 128,
+        "errors": 2,
+        "passages": 128,
+        "sources": 128,
+        "units": 640,
+        "vectors": 180
+      }
+    },
+    "anchors": {
+      "at": {
+        "done": 1,
+        "error": "",
+        "job_id": "46b20b69-dad5-4c62-9109-03c22d38bf59",
+        "kind": "analysis",
+        "stage": "committed",
+        "state": "complete",
+        "total": 1
+      },
+      "above": {
+        "done": 0,
+        "error": "analysis.claims[0].evidence: too many items",
+        "job_id": "d013d7b0-58c3-4ee8-8c82-4a23a14ebbb1",
+        "kind": "analysis",
+        "stage": "snapshot",
+        "state": "failed",
+        "total": 0
+      }
+    }
+  },
+  "ipc_independent": {
+    "ingress": {
+      "at_bytes": 65536,
+      "at_reply": [
+        {
+          "id": "ingress-at",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "collections": [],
+            "counts": {
+              "analyses": 0,
+              "claims": 0,
+              "editions": 0,
+              "errors": 0,
+              "passages": 0,
+              "sources": 0,
+              "units": 0,
+              "vectors": 0
+            },
+            "coverage": {
+              "active_sources": 0,
+              "expected_sources": 0,
+              "limited": false,
+              "watch_complete": true
+            },
+            "error": "",
+            "film_epoch": "1",
+            "film_revision": "0",
+            "jobs": [],
+            "model_ready": true,
+            "paused": false,
+            "phase": "ready",
+            "ready": true,
+            "warnings": [],
+            "watch_error": ""
+          }
+        }
+      ],
+      "above_bytes": 65537,
+      "above_peer_closed": true
+    },
+    "client_success_count": 64,
+    "client_rejections": [
+      {
+        "error": "invalid request, duplicate outstanding id, or client limit",
+        "id": "client-64",
+        "ok": false,
+        "protocol": 1
+      }
+    ],
+    "queue_rejection_count": 63,
+    "queue_rejection_errors": [
+      "service queue full"
+    ],
+    "queue_after_release_reply_count": 256,
+    "queue_after_release_success_count": 255,
+    "queue_after_release_failures": [
+      {
+        "error": "canceled",
+        "id": "q-0-0",
+        "ok": false,
+        "protocol": 1
+      }
+    ],
+    "owner_cancel": [
+      {
+        "accepted": true,
+        "id": "owned-cancel",
+        "ok": true,
+        "protocol": 1
+      }
+    ],
+    "wrong_owner_cancel": [
+      {
+        "accepted": false,
+        "id": "wrong-cancel",
+        "ok": true,
+        "protocol": 1
+      }
+    ]
+  },
+  "snapshot_fd_final": {
+    "snapshot_positive_phase": {
+      "job_id": "13478c1a-6745-4f0b-8762-42472e9904bc",
+      "source_stat": {
+        "dev": 29,
+        "ino": 8870957,
+        "sha": "353dad7d170761b073dc0d0e5e49ca95e97995990ea99789e2ae6d318bc8caac"
+      },
+      "staging_files": [
+        {
+          "path": "/workspace/semanticlens/local/film-store-v3/snapshot-fd-v2/snapshot-data/film-extract-wQqBlh/input.json",
+          "bytes": 449
+        },
+        {
+          "path": "/workspace/semanticlens/local/film-store-v3/snapshot-fd-v2/snapshot-data/film-extract-GhqoWf/input.txt",
+          "bytes": 0
+        }
+      ],
+      "status": {
+        "busy": true,
+        "collections": [
+          {
+            "collection_id": "2b82a206-2f46-4d64-9e0e-1f4c13e2522d",
+            "exclusions": [],
+            "path": "/workspace/semanticlens/local/film-store-v3/snapshot-fd-v2/corpus"
+          }
+        ],
+        "counts": {
+          "analyses": 0,
+          "claims": 0,
+          "editions": 0,
+          "errors": 0,
+          "passages": 0,
+          "sources": 0,
+          "units": 0,
+          "vectors": 0
+        },
+        "coverage": {
+          "active_sources": 0,
+          "expected_sources": 0,
+          "limited": false,
+          "watch_complete": true
+        },
+        "error": "",
+        "film_epoch": "2",
+        "film_revision": "1",
+        "jobs": [
+          {
+            "done": 0,
+            "error": "",
+            "error_code": "",
+            "job_id": "d40d2147-5121-441c-b0cb-6f255238e1a5",
+            "kind": "reconcile",
+            "stage": "admission",
+            "state": "pending",
+            "total": 0,
+            "warnings": []
+          },
+          {
+            "done": 0,
+            "error": "",
+            "error_code": "",
+            "job_id": "13478c1a-6745-4f0b-8762-42472e9904bc",
+            "kind": "manifest",
+            "stage": "admission",
+            "state": "running",
+            "total": 0,
+            "warnings": []
+          }
+        ],
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "ready": true,
+        "warnings": [],
+        "watch_error": ""
+      },
+      "stack": "/proc/1092562/fd/4(read+0x183) [0x7fe2aa0eaba3]\n/usr/lib/libQt6Core.so.6(+0x108c9a) [0x7fe2a9708c9a]\n/usr/lib/libQt6Core.so.6(_ZN13QFSFileEngine4readEPcx+0x258) [0x7fe2a97446e8]\n/usr/lib/libQt6Core.so.6(_ZN11QFileDevice8readDataEPcx+0x9f) [0x7fe2a97372ef]\n/usr/lib/libQt6Core.so.6(_ZN16QIODevicePrivate4readEPcxb+0x3f3) [0x7fe2a97451c3]\n/usr/lib/libQt6Core.so.6(_ZN9QIODevice4readEx+0xb0) [0x7fe2a97480d0]\n/workspace/semanticlens/local/film-store-build-v3/kde-index-service(+0x61514) [0x55a854967514]\n/workspace/semanticlens/local/film-store-build-v3/kde-index-service(+0x61f4f) [0x55a854967f4f]\n/workspace/semanticlens/local/film-store-build-v3/kde-index-service(+0x808dc) [0x55a8549868dc]\n/workspace/semanticlens/local/film-store-build-v3/kde-index-service(+0xa14d4) [0x55a8549a74d4]\n/workspace/semanticlens/local/film-store-build-v3/kde-index-service(+0x66d04) [0x55a85496cd04]\n/usr/lib/libstdc++.so.6(+0xea859) [0x7fe2a92ea859]\n/usr/lib/libc.so.6(+0x98042) [0x7fe2a8e98042]\n/usr/lib/libc.so.6(+0x12072c) [0x7fe2a8f2072c]\n",
+      "witness": "pid=1092563 fd=26 phase=authorized-source-read-before-copy-completion\n",
+      "held_source_fd": {
+        "fd": 26,
+        "path": "/workspace/semanticlens/local/film-store-v3/snapshot-fd-v2/corpus/form-source.txt",
+        "dev": 29,
+        "ino": 8870957,
+        "bytes": 43,
+        "sha256": "353dad7d170761b073dc0d0e5e49ca95e97995990ea99789e2ae6d318bc8caac"
+      },
+      "actual_job_sql": [
+        "running",
+        "parse",
+        0,
+        0
+      ]
+    },
+    "snapshot_kill_phase": {
+      "job_id": "0d89102c-041c-45c2-b3b1-22617bb0cfdb",
+      "status": {
+        "busy": true,
+        "collections": [
+          {
+            "collection_id": "8e8c3d84-4b93-4077-a902-6237b0b4109c",
+            "exclusions": [],
+            "path": "/workspace/semanticlens/local/film-store-v3/snapshot-fd-v2/corpus"
+          }
+        ],
+        "counts": {
+          "analyses": 0,
+          "claims": 0,
+          "editions": 0,
+          "errors": 0,
+          "passages": 0,
+          "sources": 0,
+          "units": 0,
+          "vectors": 0
+        },
+        "coverage": {
+          "active_sources": 0,
+          "expected_sources": 0,
+          "limited": false,
+          "watch_complete": true
+        },
+        "error": "",
+        "film_epoch": "7",
+        "film_revision": "4",
+        "jobs": [
+          {
+            "done": 0,
+            "error": "",
+            "error_code": "",
+            "job_id": "0d89102c-041c-45c2-b3b1-22617bb0cfdb",
+            "kind": "manifest",
+            "stage": "admission",
+            "state": "running",
+            "total": 0,
+            "warnings": []
+          },
+          {
+            "done": 0,
+            "error": "",
+            "error_code": "",
+            "job_id": "49593b85-67f9-4a4b-a24d-106a3263f223",
+            "kind": "reconcile",
+            "stage": "committed",
+            "state": "complete",
+            "total": 0,
+            "warnings": []
+          },
+          {
+            "done": 0,
+            "error": "",
+            "error_code": "",
+            "job_id": "d40d2147-5121-441c-b0cb-6f255238e1a5",
+            "kind": "reconcile",
+            "stage": "committed",
+            "state": "complete",
+            "total": 0,
+            "warnings": []
+          },
+          {
+            "done": 1,
+            "error": "",
+            "error_code": "",
+            "job_id": "13478c1a-6745-4f0b-8762-42472e9904bc",
+            "kind": "manifest",
+            "stage": "committed",
+            "state": "complete",
+            "total": 1,
+            "warnings": []
+          }
+        ],
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "ready": true,
+        "warnings": [],
+        "watch_error": ""
+      },
+      "stack": "/proc/1092562/fd/4(read+0x183) [0x7fe2aa0eaba3]\n/usr/lib/libQt6Core.so.6(+0x108c9a) [0x7fe2a9708c9a]\n/usr/lib/libQt6Core.so.6(_ZN13QFSFileEngine4readEPcx+0x258) [0x7fe2a97446e8]\n/usr/lib/libQt6Core.so.6(_ZN11QFileDevice8readDataEPcx+0x9f) [0x7fe2a97372ef]\n/usr/lib/libQt6Core.so.6(_ZN16QIODevicePrivate4readEPcxb+0x3f3) [0x7fe2a97451c3]\n/usr/lib/libQt6Core.so.6(_ZN9QIODevice4readEx+0xb0) [0x7fe2a97480d0]\n/workspace/semanticlens/local/film-store-build-v3/kde-index-service(+0x61514) [0x55a854967514]\n/workspace/semanticlens/local/film-store-build-v3/kde-index-service(+0x61f4f) [0x55a854967f4f]\n/workspace/semanticlens/local/film-store-build-v3/kde-index-service(+0x808dc) [0x55a8549868dc]\n/workspace/semanticlens/local/film-store-build-v3/kde-index-service(+0xa14d4) [0x55a8549a74d4]\n/workspace/semanticlens/local/film-store-build-v3/kde-index-service(+0x66d04) [0x55a85496cd04]\n/usr/lib/libstdc++.so.6(+0xea859) [0x7fe2a92ea859]\n/usr/lib/libc.so.6(+0x98042) [0x7fe2a8e98042]\n/usr/lib/libc.so.6(+0x12072c) [0x7fe2a8f2072c]\n",
+      "witness": "pid=1092563 fd=26 phase=authorized-source-read-before-copy-completion\n",
+      "held_source_fd": {
+        "fd": 26,
+        "path": "/workspace/semanticlens/local/film-store-v3/snapshot-fd-v2/corpus/form-source-kill.txt",
+        "dev": 29,
+        "ino": 8870993,
+        "bytes": 51,
+        "sha256": "4ff74af524baa91aa9d4866e361576ea8347eb739aa43901445b418aeef3bc33"
+      },
+      "actual_job_sql": [
+        "running",
+        "parse",
+        0,
+        0
+      ]
+    },
+    "snapshot_recovery": {
+      "job": {
+        "done": 0,
+        "error": "service interrupted before promotion",
+        "job_id": "0d89102c-041c-45c2-b3b1-22617bb0cfdb",
+        "kind": "manifest",
+        "stage": "parse",
+        "state": "interrupted",
+        "total": 0
+      },
+      "remaining_copies": [],
+      "status": {
+        "busy": false,
+        "collections": [
+          {
+            "collection_id": "8e8c3d84-4b93-4077-a902-6237b0b4109c",
+            "exclusions": [],
+            "path": "/workspace/semanticlens/local/film-store-v3/snapshot-fd-v2/corpus"
+          }
+        ],
+        "counts": {
+          "analyses": 0,
+          "claims": 0,
+          "editions": 0,
+          "errors": 0,
+          "passages": 0,
+          "sources": 0,
+          "units": 0,
+          "vectors": 0
+        },
+        "coverage": {
+          "active_sources": 0,
+          "expected_sources": 0,
+          "limited": false,
+          "watch_complete": true
+        },
+        "error": "",
+        "film_epoch": "1",
+        "film_revision": "4",
+        "jobs": [
+          {
+            "done": 0,
+            "error": "service interrupted before promotion",
+            "error_code": "invalid_import",
+            "job_id": "0d89102c-041c-45c2-b3b1-22617bb0cfdb",
+            "kind": "manifest",
+            "stage": "parse",
+            "state": "interrupted",
+            "total": 0,
+            "warnings": []
+          },
+          {
+            "done": 0,
+            "error": "",
+            "error_code": "",
+            "job_id": "49593b85-67f9-4a4b-a24d-106a3263f223",
+            "kind": "reconcile",
+            "stage": "committed",
+            "state": "complete",
+            "total": 0,
+            "warnings": []
+          },
+          {
+            "done": 0,
+            "error": "",
+            "error_code": "",
+            "job_id": "d40d2147-5121-441c-b0cb-6f255238e1a5",
+            "kind": "reconcile",
+            "stage": "committed",
+            "state": "complete",
+            "total": 0,
+            "warnings": []
+          },
+          {
+            "done": 1,
+            "error": "",
+            "error_code": "",
+            "job_id": "13478c1a-6745-4f0b-8762-42472e9904bc",
+            "kind": "manifest",
+            "stage": "committed",
+            "state": "complete",
+            "total": 1,
+            "warnings": []
+          }
+        ],
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "ready": true,
+        "warnings": [],
+        "watch_error": ""
+      }
+    }
+  },
+  "vector_final_only": {
+    "vector_phase": {
+      "producer_pid": 1080184,
+      "producer_sha": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+      "job_id": "ea6a5aa2-dfe0-43ab-b190-e3ad91bf6fca",
+      "status": {
+        "busy": true,
+        "collections": [
+          {
+            "collection_id": "856ccc9f-b97d-4a53-9235-d254c221fb3c",
+            "exclusions": [],
+            "path": "/workspace/semanticlens/local/film-store-v3/lifecycle-missing-v5/corpus"
+          }
+        ],
+        "counts": {
+          "analyses": 0,
+          "claims": 0,
+          "editions": 1,
+          "errors": 0,
+          "passages": 1,
+          "sources": 1,
+          "units": 5,
+          "vectors": 1
+        },
+        "coverage": {
+          "active_sources": 1,
+          "expected_sources": 1,
+          "limited": false,
+          "watch_complete": true
+        },
+        "error": "",
+        "film_epoch": "5",
+        "film_revision": "2",
+        "jobs": [
+          {
+            "done": 0,
+            "error": "",
+            "error_code": "",
+            "job_id": "ea6a5aa2-dfe0-43ab-b190-e3ad91bf6fca",
+            "kind": "manifest",
+            "stage": "parse",
+            "state": "running",
+            "total": 0,
+            "warnings": []
+          },
+          {
+            "done": 0,
+            "error": "",
+            "error_code": "",
+            "job_id": "866f373e-ed45-4dbc-871b-6ed902a3825f",
+            "kind": "reconcile",
+            "stage": "committed",
+            "state": "complete",
+            "total": 0,
+            "warnings": []
+          },
+          {
+            "done": 1,
+            "error": "",
+            "error_code": "",
+            "job_id": "b468ed1c-5dbe-4e45-986b-276a23f4afed",
+            "kind": "manifest",
+            "stage": "committed",
+            "state": "complete",
+            "total": 1,
+            "warnings": []
+          },
+          {
+            "done": 0,
+            "error": "",
+            "error_code": "",
+            "job_id": "9bba7e4c-573e-4396-b5ca-515281dee521",
+            "kind": "reconcile",
+            "stage": "committed",
+            "state": "complete",
+            "total": 0,
+            "warnings": []
+          }
+        ],
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "ready": true,
+        "warnings": [],
+        "watch_error": ""
+      },
+      "actual_job_sql": [
+        "running",
+        "embed",
+        0,
+        0
+      ],
+      "gdb_stack": "Reading symbols from /workspace/semanticlens/local/release-rc2-stage-v1/usr/bin/embedding-probe...\n\nThis GDB supports auto-downloading debuginfo from the following URLs:\n  <https://debuginfod.archlinux.org>\nEnable debuginfod for this session? (y or [n]) [answered N; input not from terminal]\nDebuginfod has been disabled.\nTo make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.\n(No debugging symbols found in /workspace/semanticlens/local/release-rc2-stage-v1/usr/bin/embedding-probe)\nAttaching to program: /workspace/semanticlens/local/release-rc2-stage-v1/usr/bin/embedding-probe, process 1080184\n[New LWP 1080188 (id 2)]\n[Thread debugging using libthread_db enabled]\nUsing host libthread_db library \"/usr/lib/libthread_db.so.1\".\n[Switching to thread 1 (Thread 0x7f6a09756240 (LWP 1080184))]\n0x00007f6a090a08f2 in ?? () from /usr/lib/libc.so.6\n(gdb) (gdb) (gdb) Breakpoint 1 at 0x55656fbe88b9\n(gdb) Breakpoint 2 at 0x55656fbe86df\n(gdb) Breakpoint 3 at 0x55656fbe8230\n(gdb) Breakpoint 4 at 0x55656fbe84a8\n(gdb) Breakpoint 5 at 0x55656fbe7c6d\n(gdb) Breakpoint 6 at 0x55656fbe78cd\n(gdb) Breakpoint 7 at 0x55656fbe7f71\n(gdb) Breakpoint 8 at 0x55656fbe74d4\n(gdb) Breakpoint 9 at 0x55656fbe945e\n(gdb) Breakpoint 10 at 0x55656fbe8b0d\n(gdb) Breakpoint 11 at 0x55656fbe977e\n(gdb) Breakpoint 12 at 0x55656fbe8fc6\n(gdb) >>>>>>(gdb) Continuing.\n[Switching to thread 2 (Thread 0x7f6a08fff6c0 (LWP 1080188))]\nVECTOR_WORK_BODY pc=0x55656fbe8b0d \n=> 0x55656fbe8b0d <_ZN12_GLOBAL__N_115tinyBLAS_Q0_AVXI10block_q8_0S1_fE7gemm4xNILi2EEEvllll+461>:\tor     %r15,%rdx\n   0x55656fbe8b10 <_ZN12_GLOBAL__N_115tinyBLAS_Q0_AVXI10block_q8_0S1_fE7gemm4xNILi2EEEvllll+464>:\tmovzwl (%r10,%rax,1),%r15d\n   0x55656fbe8b15 <_ZN12_GLOBAL__N_115tinyBLAS_Q0_AVXI10block_q8_0S1_fE7gemm4xNILi2EEEvllll+469>:\tvpmaddwd %ymm3,%ymm9,%ymm3\n   0x55656fbe8b19 <_ZN12_GLOBAL__N_115tinyBLAS_Q0_AVXI10block_q8_0S1_fE7gemm4xNILi2EEEvllll+473>:\tvcvtdq2ps %ymm3,%ymm3\n\nThread 2 (Thread 0x7f6a08fff6c0 (LWP 1080188) \"embedding-probe\"):\n#0  0x000055656fbe8b0d in void (anonymous namespace)::tinyBLAS_Q0_AVX<block_q8_0, block_q8_0, float>::gemm4xN<2>(long, long, long, long) ()\n#1  0x000055656fbfb46b in (anonymous namespace)::tinyBLAS_Q0_AVX<block_q8_0, block_q8_0, float>::mnpack(long, long, long, long) ()\n#2  0x000055656fbfe2e8 in llamafile_sgemm ()\n#3  0x000055656fb451d7 in ggml_compute_forward_mul_mat ()\n#4  0x000055656fb47168 in ggml_graph_compute_thread.isra ()\n#5  0x00007f6a097a8d77 in ?? () from /usr/lib/libgomp.so.1\n#6  0x00007f6a09098042 in ?? () from /usr/lib/libc.so.6\n#7  0x00007f6a0912072c in ?? () from /usr/lib/libc.so.6\n\nThread 1 (Thread 0x7f6a09756240 (LWP 1080184) \"embedding-probe\"):\n#0  0x000055656fbe8b0d in void (anonymous namespace)::tinyBLAS_Q0_AVX<block_q8_0, block_q8_0, float>::gemm4xN<2>(long, long, long, long) ()\n#1  0x000055656fbfb46b in (anonymous namespace)::tinyBLAS_Q0_AVX<block_q8_0, block_q8_0, float>::mnpack(long, long, long, long) ()\n#2  0x000055656fbfe2e8 in llamafile_sgemm ()\n#3  0x000055656fb451d7 in ggml_compute_forward_mul_mat ()\n#4  0x000055656fb47168 in ggml_graph_compute_thread.isra ()\n#5  0x00007f6a0979e949 in GOMP_parallel () from /usr/lib/libgomp.so.1\n#6  0x000055656fb48da5 in ggml_graph_compute ()\n#7  0x000055656faf9f15 in ggml_backend_cpu_graph_compute(ggml_backend*, ggml_cgraph*) ()\n#8  0x000055656fc2927b in ggml_backend_sched_graph_compute_async ()\n#9  0x000055656f75bf8b in llama_context::graph_compute(ggml_cgraph*, bool) ()\n#10 0x000055656f762afe in llama_context::process_ubatch(llama_ubatch const&, llm_graph_type, llama_memory_context_i*, ggml_status&) ()\n#11 0x000055656f76a462 in llama_context::encode(llama_batch_ext const&) ()\n#12 0x000055656f722ef7 in Embedder::run() ()\n#13 0x000055656f72a33c in Embedder::texts(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) ()\n#14 0x000055656f6de636 in main ()\n(gdb) ",
+      "actual_texts_dispatch": {
+        "id": "b16a9e2e-c08c-4a64-9158-a77bf939cac3",
+        "op": "texts",
+        "texts": [
+          "title: Authored vector-work | text: VECTOR-WORK-821 is processed by the actual model."
+        ]
+      }
+    },
+    "vector_kill_phase": {
+      "gdb_stack": "Reading symbols from /workspace/semanticlens/local/release-rc2-stage-v1/usr/bin/embedding-probe...\n\nThis GDB supports auto-downloading debuginfo from the following URLs:\n  <https://debuginfod.archlinux.org>\nEnable debuginfod for this session? (y or [n]) [answered N; input not from terminal]\nDebuginfod has been disabled.\nTo make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.\n(No debugging symbols found in /workspace/semanticlens/local/release-rc2-stage-v1/usr/bin/embedding-probe)\nAttaching to program: /workspace/semanticlens/local/release-rc2-stage-v1/usr/bin/embedding-probe, process 1080184\n[New LWP 1080188 (id 2)]\n[Thread debugging using libthread_db enabled]\nUsing host libthread_db library \"/usr/lib/libthread_db.so.1\".\n[Switching to thread 1 (Thread 0x7f6a09756240 (LWP 1080184))]\n0x00007f6a090a08f2 in ?? () from /usr/lib/libc.so.6\n(gdb) (gdb) (gdb) Breakpoint 1 at 0x55656fbe88b9\n(gdb) Breakpoint 2 at 0x55656fbe86df\n(gdb) Breakpoint 3 at 0x55656fbe8230\n(gdb) Breakpoint 4 at 0x55656fbe84a8\n(gdb) Breakpoint 5 at 0x55656fbe7c6d\n(gdb) Breakpoint 6 at 0x55656fbe78cd\n(gdb) Breakpoint 7 at 0x55656fbe7f71\n(gdb) Breakpoint 8 at 0x55656fbe74d4\n(gdb) Breakpoint 9 at 0x55656fbe945e\n(gdb) Breakpoint 10 at 0x55656fbe8b0d\n(gdb) Breakpoint 11 at 0x55656fbe977e\n(gdb) Breakpoint 12 at 0x55656fbe8fc6\n(gdb) >>>>>>(gdb) Continuing.\n[Switching to thread 2 (Thread 0x7f6a08fff6c0 (LWP 1080188))]\nVECTOR_WORK_BODY pc=0x55656fbe8b0d \n=> 0x55656fbe8b0d <_ZN12_GLOBAL__N_115tinyBLAS_Q0_AVXI10block_q8_0S1_fE7gemm4xNILi2EEEvllll+461>:\tor     %r15,%rdx\n   0x55656fbe8b10 <_ZN12_GLOBAL__N_115tinyBLAS_Q0_AVXI10block_q8_0S1_fE7gemm4xNILi2EEEvllll+464>:\tmovzwl (%r10,%rax,1),%r15d\n   0x55656fbe8b15 <_ZN12_GLOBAL__N_115tinyBLAS_Q0_AVXI10block_q8_0S1_fE7gemm4xNILi2EEEvllll+469>:\tvpmaddwd %ymm3,%ymm9,%ymm3\n   0x55656fbe8b19 <_ZN12_GLOBAL__N_115tinyBLAS_Q0_AVXI10block_q8_0S1_fE7gemm4xNILi2EEEvllll+473>:\tvcvtdq2ps %ymm3,%ymm3\n\nThread 2 (Thread 0x7f6a08fff6c0 (LWP 1080188) \"embedding-probe\"):\n#0  0x000055656fbe8b0d in void (anonymous namespace)::tinyBLAS_Q0_AVX<block_q8_0, block_q8_0, float>::gemm4xN<2>(long, long, long, long) ()\n#1  0x000055656fbfb46b in (anonymous namespace)::tinyBLAS_Q0_AVX<block_q8_0, block_q8_0, float>::mnpack(long, long, long, long) ()\n#2  0x000055656fbfe2e8 in llamafile_sgemm ()\n#3  0x000055656fb451d7 in ggml_compute_forward_mul_mat ()\n#4  0x000055656fb47168 in ggml_graph_compute_thread.isra ()\n#5  0x00007f6a097a8d77 in ?? () from /usr/lib/libgomp.so.1\n#6  0x00007f6a09098042 in ?? () from /usr/lib/libc.so.6\n#7  0x00007f6a0912072c in ?? () from /usr/lib/libc.so.6\n\nThread 1 (Thread 0x7f6a09756240 (LWP 1080184) \"embedding-probe\"):\n#0  0x000055656fbe8b0d in void (anonymous namespace)::tinyBLAS_Q0_AVX<block_q8_0, block_q8_0, float>::gemm4xN<2>(long, long, long, long) ()\n#1  0x000055656fbfb46b in (anonymous namespace)::tinyBLAS_Q0_AVX<block_q8_0, block_q8_0, float>::mnpack(long, long, long, long) ()\n#2  0x000055656fbfe2e8 in llamafile_sgemm ()\n#3  0x000055656fb451d7 in ggml_compute_forward_mul_mat ()\n#4  0x000055656fb47168 in ggml_graph_compute_thread.isra ()\n#5  0x00007f6a0979e949 in GOMP_parallel () from /usr/lib/libgomp.so.1\n#6  0x000055656fb48da5 in ggml_graph_compute ()\n#7  0x000055656faf9f15 in ggml_backend_cpu_graph_compute(ggml_backend*, ggml_cgraph*) ()\n#8  0x000055656fc2927b in ggml_backend_sched_graph_compute_async ()\n#9  0x000055656f75bf8b in llama_context::graph_compute(ggml_cgraph*, bool) ()\n#10 0x000055656f762afe in llama_context::process_ubatch(llama_ubatch const&, llm_graph_type, llama_memory_context_i*, ggml_status&) ()\n#11 0x000055656f76a462 in llama_context::encode(llama_batch_ext const&) ()\n#12 0x000055656f722ef7 in Embedder::run() ()\n#13 0x000055656f72a33c in Embedder::texts(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) ()\n#14 0x000055656f6de636 in main ()\n(gdb) (gdb) Continuing.\n(gdb) (gdb) VECTOR_WORK_BODY pc=0x55656fbe8b0d \n=> 0x55656fbe8b0d <_ZN12_GLOBAL__N_115tinyBLAS_Q0_AVXI10block_q8_0S1_fE7gemm4xNILi2EEEvllll+461>:\tor     %r15,%rdx\n   0x55656fbe8b10 <_ZN12_GLOBAL__N_115tinyBLAS_Q0_AVXI10block_q8_0S1_fE7gemm4xNILi2EEEvllll+464>:\tmovzwl (%r10,%rax,1),%r15d\n   0x55656fbe8b15 <_ZN12_GLOBAL__N_115tinyBLAS_Q0_AVXI10block_q8_0S1_fE7gemm4xNILi2EEEvllll+469>:\tvpmaddwd %ymm3,%ymm9,%ymm3\n   0x55656fbe8b19 <_ZN12_GLOBAL__N_115tinyBLAS_Q0_AVXI10block_q8_0S1_fE7gemm4xNILi2EEEvllll+473>:\tvcvtdq2ps %ymm3,%ymm3\n\nThread 2 (Thread 0x7f6a08fff6c0 (LWP 1080188) \"embedding-probe\"):\n#0  0x000055656fbe8b0d in void (anonymous namespace)::tinyBLAS_Q0_AVX<block_q8_0, block_q8_0, float>::gemm4xN<2>(long, long, long, long) ()\n#1  0x000055656fbfb46b in (anonymous namespace)::tinyBLAS_Q0_AVX<block_q8_0, block_q8_0, float>::mnpack(long, long, long, long) ()\n#2  0x000055656fbfe2e8 in llamafile_sgemm ()\n#3  0x000055656fb451d7 in ggml_compute_forward_mul_mat ()\n#4  0x000055656fb47168 in ggml_graph_compute_thread.isra ()\n#5  0x00007f6a097a8d77 in ?? () from /usr/lib/libgomp.so.1\n#6  0x00007f6a09098042 in ?? () from /usr/lib/libc.so.6\n#7  0x00007f6a0912072c in ?? () from /usr/lib/libc.so.6\n\nThread 1 (Thread 0x7f6a09756240 (LWP 1080184) \"embedding-probe\"):\n#0  0x000055656fbe8b0d in void (anonymous namespace)::tinyBLAS_Q0_AVX<block_q8_0, block_q8_0, float>::gemm4xN<2>(long, long, long, long) ()\n#1  0x000055656fbfb46b in (anonymous namespace)::tinyBLAS_Q0_AVX<block_q8_0, block_q8_0, float>::mnpack(long, long, long, long) ()\n#2  0x000055656fbfe2e8 in llamafile_sgemm ()\n#3  0x000055656fb451d7 in ggml_compute_forward_mul_mat ()\n#4  0x000055656fb47168 in ggml_graph_compute_thread.isra ()\n#5  0x00007f6a0979e949 in GOMP_parallel () from /usr/lib/libgomp.so.1\n#6  0x000055656fb48da5 in ggml_graph_compute ()\n#7  0x000055656faf9f15 in ggml_backend_cpu_graph_compute(ggml_backend*, ggml_cgraph*) ()\n#8  0x000055656fc2927b in ggml_backend_sched_graph_compute_async ()\n#9  0x000055656f75bf8b in llama_context::graph_compute(ggml_cgraph*, bool) ()\n#10 0x000055656f762afe in llama_context::process_ubatch(llama_ubatch const&, llm_graph_type, llama_memory_context_i*, ggml_status&) ()\n#11 0x000055656f76a462 in llama_context::encode(llama_batch_ext const&) ()\n#12 0x000055656f722ef7 in Embedder::run() ()\n#13 0x000055656f72a33c in Embedder::texts(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) ()\n#14 0x000055656f6de636 in main ()\n",
+      "job_id": "1df99c9b-ea90-4197-849e-eb0026b4e972",
+      "actual_job_sql": [
+        "running",
+        "embed",
+        0,
+        0
+      ],
+      "actual_texts_dispatch": {
+        "id": "b56a4d06-62d0-4125-9487-50c1816dfa14",
+        "op": "texts",
+        "texts": [
+          "title: Authored vector-kill | text: VECTOR-KILL-822 is processed by the actual model."
+        ]
+      }
+    },
+    "vector_failure": {
+      "job": {
+        "done": 0,
+        "error": "producer timeout or exit",
+        "job_id": "1df99c9b-ea90-4197-849e-eb0026b4e972",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "failed",
+        "total": 0
+      },
+      "status": {
+        "busy": true,
+        "current": "",
+        "error": "",
+        "errors": 0,
+        "failures": [],
+        "identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.05.0",
+            "pdftoppm": "pdftoppm version 26.05.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+        },
+        "index_revision": 0,
+        "indexed": 0,
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "progress": 0,
+        "ready": true,
+        "recovery_attempt": 2,
+        "roots": [],
+        "scan_directories": 0,
+        "scan_entries": 0,
+        "scan_error": "",
+        "scan_path_bytes": 0,
+        "scan_skipped_names": 0,
+        "scan_skipped_providers": 0,
+        "scan_warnings": [],
+        "segments": 0,
+        "total": 0,
+        "watch_error": ""
+      },
+      "film_status": {
+        "busy": true,
+        "collections": [
+          {
+            "collection_id": "856ccc9f-b97d-4a53-9235-d254c221fb3c",
+            "exclusions": [],
+            "path": "/workspace/semanticlens/local/film-store-v3/lifecycle-missing-v5/corpus"
+          }
+        ],
+        "counts": {
+          "analyses": 0,
+          "claims": 0,
+          "editions": 2,
+          "errors": 1,
+          "passages": 2,
+          "sources": 2,
+          "units": 6,
+          "vectors": 2
+        },
+        "coverage": {
+          "active_sources": 2,
+          "expected_sources": 2,
+          "limited": false,
+          "watch_complete": true
+        },
+        "error": "",
+        "film_epoch": "8",
+        "film_revision": "3",
+        "jobs": [
+          {
+            "done": 0,
+            "error": "",
+            "error_code": "",
+            "job_id": "0e8f5da4-00a3-4c40-b0bc-0021c6716b87",
+            "kind": "reconcile",
+            "stage": "admission",
+            "state": "pending",
+            "total": 0,
+            "warnings": []
+          },
+          {
+            "done": 0,
+            "error": "producer timeout or exit",
+            "error_code": "invalid_import",
+            "job_id": "1df99c9b-ea90-4197-849e-eb0026b4e972",
+            "kind": "manifest",
+            "stage": "embed",
+            "state": "failed",
+            "total": 0,
+            "warnings": []
+          },
+          {
+            "done": 0,
+            "error": "",
+            "error_code": "",
+            "job_id": "31734ec6-de40-4d74-862a-e7c7426badf6",
+            "kind": "reconcile",
+            "stage": "committed",
+            "state": "complete",
+            "total": 0,
+            "warnings": []
+          },
+          {
+            "done": 1,
+            "error": "",
+            "error_code": "",
+            "job_id": "ea6a5aa2-dfe0-43ab-b190-e3ad91bf6fca",
+            "kind": "manifest",
+            "stage": "committed",
+            "state": "complete",
+            "total": 1,
+            "warnings": []
+          },
+          {
+            "done": 0,
+            "error": "",
+            "error_code": "",
+            "job_id": "866f373e-ed45-4dbc-871b-6ed902a3825f",
+            "kind": "reconcile",
+            "stage": "committed",
+            "state": "complete",
+            "total": 0,
+            "warnings": []
+          },
+          {
+            "done": 1,
+            "error": "",
+            "error_code": "",
+            "job_id": "b468ed1c-5dbe-4e45-986b-276a23f4afed",
+            "kind": "manifest",
+            "stage": "committed",
+            "state": "complete",
+            "total": 1,
+            "warnings": []
+          },
+          {
+            "done": 0,
+            "error": "",
+            "error_code": "",
+            "job_id": "9bba7e4c-573e-4396-b5ca-515281dee521",
+            "kind": "reconcile",
+            "stage": "committed",
+            "state": "complete",
+            "total": 0,
+            "warnings": []
+          }
+        ],
+        "model_ready": true,
+        "paused": false,
+        "phase": "ready",
+        "ready": true,
+        "warnings": [],
+        "watch_error": ""
+      }
+    }
+  },
+  "original_instrumented_wall_times": {
+    "reference_original": {
+      "elapsed_seconds": 7.048653482008376,
+      "scope": "before exact reference source countercases; before records original acceptances without labeling them desired",
+      "phase_limit": null
+    },
+    "reference_repaired": {
+      "elapsed_seconds": 9.22119285800727,
+      "scope": "after exact reference source countercases; before records original acceptances without labeling them desired",
+      "phase_limit": null
+    },
+    "application_bounds": {
+      "elapsed_seconds": 27.402392288000556,
+      "scope": "Application admission byte/collection/source/claim/job boundary controls; authored aliases and padded files are boundary-only, not capacity or corpus quality.",
+      "phase_limit": null
+    },
+    "seeded_edition_reply_bounds": {
+      "elapsed_seconds": 22.064202204011963,
+      "scope": "Explicitly seeded127-edition boundary plus valid oversized legal metadata reply; no full-scale capacity/performance/quality claim.",
+      "phase_limit": null
+    },
+    "transport_flood_cancel": {
+      "elapsed_seconds": 6.635705000007874,
+      "scope": "Actual transport buffer/client outstanding/held worker queue admission and owner cancel; no performance or general flood resilience claim.",
+      "phase_limit": null
+    },
+    "snapshot_formation": {
+      "elapsed_seconds": 21.444832270004554,
+      "scope": "Actual held source FD/file identity at independently armed copy formation, positive release then kill/restart. Vector work is separately retained in lifecycle-missing-v5.",
+      "phase_limit": null
+    },
+    "executing_vector": {
+      "elapsed_seconds": 22.23548615600157,
+      "scope": "Independently armed snapshot formation and actual vector arithmetic; no GUI/global ptrace or timing",
+      "phase_limit": "Only vector section qualified here; source kill replaced by snapshot-fd-v2"
+    },
+    "wipe_recreate_corruption": {
+      "elapsed_seconds": 47.93040512800508,
+      "scope": "Disposable explicit legacy wipe / film remove-recreate / same-binary reopen and stored ABI/identity corruption. No installed reinstall or arbitrary semantic vector detection.",
+      "phase_limit": null
+    }
+  },
+  "author_closure_record": {
+    "all_original_service_groups_serialized_empty": true,
+    "checked_owned_groups": [
+      1056935,
+      1068038,
+      1072517,
+      1072621,
+      1072726,
+      1075162,
+      1075374,
+      1075475,
+      1075821,
+      1076954,
+      1077022,
+      1077140,
+      1078687,
+      1078797,
+      1078885,
+      1080015,
+      1080131,
+      1080181,
+      1080997,
+      1083259,
+      1083853,
+      1084022,
+      1084289,
+      1087096,
+      1088529,
+      1091644,
+      1092563,
+      1092918,
+      1093195,
+      1093428
+    ],
+    "live_group_members": [],
+    "live_matching_owned_debuggers": [],
+    "runtime_owner_after_checked_delivery": "parent; no live author handles"
+  },
+  "limits": [
+    "raw fields recomputed; checker flags not acceptance",
+    "superseded lifecycle snapshot sections excluded",
+    "seeded rows are boundary-only",
+    "no independent runtime or timing"
+  ]
+}

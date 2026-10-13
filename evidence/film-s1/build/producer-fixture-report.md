@@ -1,0 +1,5 @@
+# Freshly built embedding producer reference check
+
+The producer b6f46c925d22721961b9e49d83db175b0a4adff12ba7f8371693a47441da7f86 built from the separate source checkout ran the original frozen requests and evaluator unchanged. All eight original reference-vector dot thresholds >=0.999 passed, both semantic negatives stayed below parity, four malformed controls returned errors without vectors, and query recovery/text-only controls passed. This qualifies those reference inputs, not the rebuilt film worker or new concurrency/latency measurements. The original historical actual vector bytes also match on these eight vectors; that is a stored-run comparison rather than a new execution of the historic binary.
+
+Both producer subprocesses exited zero and the evaluator exited zero; no owned live handle remains. No UI, service, index, personal folder or Baloo state was touched. Source/model/request paths are private local execution references; public delivery will use a disclosed sanitized derivative.

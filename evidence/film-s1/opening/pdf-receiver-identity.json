@@ -1,0 +1,417 @@
+{
+    "argv": [
+        "/usr/bin/okular",
+        "--page",
+        "2",
+        "/tmp/test/work/index/film-extract-UFYJvj/input.pdf"
+    ],
+    "association_producer": "actual forwarded Document(QWidget*) C1 argument",
+    "captures": [
+    ],
+    "constructor_hook_events": [
+        {
+            "actual_qobject_parent": "0",
+            "actual_widget_argument": "55603c19e620",
+            "document": "55603c1aaed0",
+            "event": "real_constructor_forwarded",
+            "monotonic_ns": 101601677663283,
+            "resolved_address": "7f07ba335bc0",
+            "resolved_module": "/usr/lib/libOkular6Core.so.4",
+            "resolved_module_base": "7f07ba2a5000",
+            "resolved_offset": 592832,
+            "resolved_symbol": "_ZN6Okular8DocumentC2EP7QWidget",
+            "symbol": "_ZN6Okular8DocumentC1EP7QWidget"
+        }
+    ],
+    "environment": {
+        "DBUS_SESSION_BUS_ADDRESS": "unix:path=/tmp/dbus-3eAWF8CguR,guid=b5a8773f41bd1ad25929fe626ace1ded",
+        "DISPLAY": null,
+        "HOME": "/tmp/test/home",
+        "WAYLAND_DISPLAY": "semanticlens-test",
+        "XDG_CACHE_HOME": "/tmp/test/cache",
+        "XDG_CONFIG_HOME": "/tmp/test/config",
+        "XDG_CURRENT_DESKTOP": "KDE",
+        "XDG_DATA_HOME": "/tmp/test/data",
+        "XDG_RUNTIME_DIR": "/tmp/test/runtime",
+        "XDG_SESSION_TYPE": "wayland"
+    },
+    "executable": "/usr/bin/okular",
+    "pid": 191,
+    "platform_name": "wayland",
+    "pre_capture_phase": {
+        "capture_depth": 0,
+        "documents": [
+            {
+                "class": "Okular::Document",
+                "current_page_index_zero_based": 1,
+                "current_url": "file:///tmp/test/work/index/film-extract-UFYJvj/input.pdf",
+                "is_opened": true,
+                "local_file": "/tmp/test/work/index/film-extract-UFYJvj/input.pdf",
+                "object": "55603c1aaed0",
+                "owner_widget": "55603c19e620",
+                "owner_window": "55603c174630",
+                "page_count": 2,
+                "selected_page_text_cache": "",
+                "visible_page_rects": [
+                ]
+            }
+        ],
+        "elapsed_ns": 423028,
+        "pageviews": [
+            {
+                "canvas_height": 590,
+                "canvas_visible": true,
+                "canvas_width": 759,
+                "capture_paint_events": 0,
+                "class": "PageView",
+                "document": "55603c1aaed0",
+                "first_capture_pre_phase": null,
+                "last_natural_paint_phase": {
+                },
+                "natural_paint_events": 0,
+                "object": "55603c5cc6f0",
+                "owner_widget": "55603c19e620",
+                "owner_window": "55603c174630",
+                "visible": true,
+                "window_exposed": false
+            }
+        ],
+        "windows": [
+            {
+                "class": "QMenu",
+                "height": 30,
+                "object": "55603cb43250",
+                "title": "",
+                "visible": false,
+                "width": 100,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 30,
+                "object": "55603cb3c4d0",
+                "title": "",
+                "visible": false,
+                "width": 100,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 480,
+                "object": "55603c6b14a0",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "Shell",
+                "height": 666,
+                "object": "55603c174630",
+                "title": "Parcel — authored screenplay fixture [*]",
+                "visible": true,
+                "width": 960,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 480,
+                "object": "55603c73e800",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 480,
+                "object": "55603c61cea0",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 480,
+                "object": "55603c91d370",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "SignaturePanel",
+                "height": 480,
+                "object": "55603c459cf0",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 480,
+                "object": "55603cbf4d50",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 30,
+                "object": "55603c5d6a90",
+                "title": "",
+                "visible": false,
+                "width": 100,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 30,
+                "object": "55603cb6e5d0",
+                "title": "",
+                "visible": false,
+                "width": 100,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 480,
+                "object": "55603c73b9c0",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "Layers",
+                "height": 480,
+                "object": "55603c4710c0",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 480,
+                "object": "55603cae3750",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 480,
+                "object": "55603c6b5660",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 480,
+                "object": "55603c8a7cd0",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 480,
+                "object": "55603c619960",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 30,
+                "object": "55603c41bcb0",
+                "title": "",
+                "visible": false,
+                "width": 100,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 480,
+                "object": "55603cae5040",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 480,
+                "object": "55603c905780",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 480,
+                "object": "55603c84b5e0",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 30,
+                "object": "55603cb51520",
+                "title": "",
+                "visible": false,
+                "width": 100,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 30,
+                "object": "55603cb41480",
+                "title": "",
+                "visible": false,
+                "width": 100,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 480,
+                "object": "55603c6ef7a0",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 480,
+                "object": "55603c1468a0",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 30,
+                "object": "55603cb8bd70",
+                "title": "",
+                "visible": false,
+                "width": 100,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 480,
+                "object": "55603c6bbf70",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "TOC",
+                "height": 480,
+                "object": "55603c1a8460",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "QComboBoxPrivateContainer",
+                "height": 30,
+                "object": "55603cb686c0",
+                "title": "",
+                "visible": false,
+                "width": 100,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 30,
+                "object": "55603c168c20",
+                "title": "",
+                "visible": false,
+                "width": 100,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 30,
+                "object": "55603cb445c0",
+                "title": "",
+                "visible": false,
+                "width": 100,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 480,
+                "object": "55603c172690",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 30,
+                "object": "55603c2e9ed0",
+                "title": "",
+                "visible": false,
+                "width": 100,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 30,
+                "object": "55603c6b9aa0",
+                "title": "",
+                "visible": false,
+                "width": 100,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 30,
+                "object": "55603cb42db0",
+                "title": "",
+                "visible": false,
+                "width": 100,
+                "window_exposed": false
+            },
+            {
+                "class": "QMenu",
+                "height": 480,
+                "object": "55603c852d30",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            },
+            {
+                "class": "Purpose::Menu",
+                "height": 480,
+                "object": "55603c6403a0",
+                "title": "",
+                "visible": false,
+                "width": 640,
+                "window_exposed": false
+            }
+        ]
+    },
+    "window_captures": [
+    ]
+}

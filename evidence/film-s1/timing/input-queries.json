@@ -1,0 +1,65 @@
+[
+  {
+    "id": "literal-subtitle",
+    "query": "CLOCK-7320",
+    "expected_film_id": "film:orchard",
+    "expected_edition_id": "edition:orchard:test-1",
+    "expected_lane": "source",
+    "expected_match": "literal"
+  },
+  {
+    "id": "analysis-only-literal",
+    "query": "ANALYSIS-ONLY-K7",
+    "expected_film_id": "film:harbor",
+    "expected_edition_id": "edition:harbor:draft-1",
+    "expected_lane": "analysis",
+    "expected_match": "literal"
+  },
+  {
+    "id": "vtt-source-literal",
+    "query": "The bridgekeeper comes home.",
+    "expected_film_id": "film:crossing",
+    "expected_edition_id": "edition:crossing:test-1",
+    "expected_lane": "source",
+    "expected_match": "literal"
+  },
+  {
+    "id": "cross-unit-quote",
+    "query": "The copper seal is broken.\nGUARD: The blue envelope is missing.",
+    "expected_film_id": "film:archive",
+    "expected_edition_id": "edition:archive:test-1",
+    "expected_lane": "source",
+    "expected_match": "literal"
+  },
+  {
+    "id": "pdf-page-identifier",
+    "query": "PARC-20942",
+    "expected_film_id": "film:parcel-pdf",
+    "expected_edition_id": "edition:parcel-pdf:test-1",
+    "expected_lane": "source",
+    "expected_page": 2,
+    "expected_match": "literal"
+  },
+  {
+    "id": "concept-uncredited-help",
+    "query": "helping people after losing public recognition",
+    "expected_film_id": "film:harbor",
+    "expected_edition_id": "edition:harbor:draft-1",
+    "expected_lane": "either",
+    "expected_match": "suggestion"
+  },
+  {
+    "id": "concept-perfection",
+    "query": "destroying something alive in pursuit of perfection",
+    "expected_film_id": "film:orchard",
+    "expected_edition_id": "edition:orchard:test-1",
+    "expected_lane": "either",
+    "expected_match": "suggestion"
+  },
+  {
+    "id": "negative-spaceflight",
+    "query": "lunar flight telemetry QUASAR-9817",
+    "expected_film_id": null,
+    "expected_match": "negative-observation"
+  }
+]

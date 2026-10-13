@@ -1,0 +1,17 @@
+{
+  "schema_version": "semanticlens.film.manifest/1",
+  "film_id": "film:parcel-pdf",
+  "edition_id": "edition:parcel-pdf:test-1",
+  "display_title": "Parcel — authored PDF fixture",
+  "year": null,
+  "sources": [
+    {
+      "source_id": "source:parcel-pdf:script",
+      "relative_path": "parcel-pdf/parcel.pdf",
+      "sha256": "ed2cd03fbed382f055f781de69886492a7bf8cc50f83e531b6146d9c87a19b3f",
+      "source_kind": "screenplay",
+      "language": "en",
+      "edition_relation": "draft_companion"
+    }
+  ]
+}

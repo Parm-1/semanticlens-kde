@@ -1,0 +1,392 @@
+{
+  "scope": "Actual model API pointers, attributable controlled coexisting Context/kernel executions and released vectors; not simultaneous physical instructions/race freedom",
+  "budgets": [
+    {
+      "budget": 2,
+      "loader": [
+        {
+          "phase": "model-load-entry",
+          "path": "/workspace/semanticlens/models/embeddinggemma-2-Q8_0.gguf",
+          "base": 94458688380928,
+          "clock_ns": 93215212697982,
+          "thread": 1,
+          "ptid": [
+            1309030,
+            1309030,
+            0
+          ]
+        },
+        {
+          "phase": "model-load-return",
+          "rax": 94458755124240,
+          "path": "/workspace/semanticlens/models/embeddinggemma-2-Q8_0.gguf",
+          "clock_ns": 93215966278446,
+          "thread": 1,
+          "ptid": [
+            1309030,
+            1309030,
+            0
+          ]
+        }
+      ],
+      "inits": [
+        {
+          "phase": "context-init-entry",
+          "model": 94458755124240,
+          "clock_ns": 93215966779452,
+          "thread": 1,
+          "ptid": [
+            1309030,
+            1309030,
+            0
+          ]
+        },
+        {
+          "phase": "context-init-entry",
+          "model": 94458755124240,
+          "clock_ns": 93215973571030,
+          "thread": 1,
+          "ptid": [
+            1309030,
+            1309030,
+            0
+          ]
+        },
+        {
+          "phase": "context-init-return",
+          "rax": 94458755823184,
+          "model": 94458755124240,
+          "clock_ns": 93215973206171,
+          "thread": 1,
+          "ptid": [
+            1309030,
+            1309030,
+            0
+          ]
+        },
+        {
+          "phase": "context-init-return",
+          "rax": 94458755026496,
+          "model": 94458755124240,
+          "clock_ns": 93215980692190,
+          "thread": 1,
+          "ptid": [
+            1309030,
+            1309030,
+            0
+          ]
+        }
+      ],
+      "frames": [
+        {
+          "role": "bg",
+          "entry": {
+            "self": 94458760145328,
+            "context": 94458755026496,
+            "cancel": 140722818134920,
+            "input_sha256": "db855ceb782be8703b46ae79c6fdfaf6e26b21ffa1ca9ba91b76d90a40a11bca",
+            "clock_ns": 93305572102025,
+            "thread": 2,
+            "ptid": [
+              1309030,
+              1309173,
+              0
+            ]
+          },
+          "before": {
+            "pc": 94458692605977,
+            "rva": 4225049,
+            "clock_ns": 93305623420931,
+            "instruction": "=> 0x55e8e0d19819 <_ZN12_GLOBAL__N_115tinyBLAS_Q0_AVXI10block_q8_0S1_fE7gemm4xNILi2EEEvllll+537>:\tvfmadd231ps %ymm3,%ymm4,%ymm14\n"
+          },
+          "after": {
+            "pc": 94458692605982,
+            "rva": 4225054,
+            "clock_ns": 93305632793490,
+            "instruction": "=> 0x55e8e0d1981e <_ZN12_GLOBAL__N_115tinyBLAS_Q0_AVXI10block_q8_0S1_fE7gemm4xNILi2EEEvllll+542>:\tvpsignb %ymm7,%ymm1,%ymm3\n"
+          }
+        },
+        {
+          "role": "fg",
+          "entry": {
+            "self": 94458754959824,
+            "context": 94458755823184,
+            "cancel": 0,
+            "input_sha256": "90677ccc127375018de69f9c891dba0876a3c344ceb85e043d8a06b9ba8fa6b4",
+            "clock_ns": 93305653010556,
+            "thread": 1,
+            "ptid": [
+              1309030,
+              1309030,
+              0
+            ]
+          },
+          "before": {
+            "pc": 94458692605977,
+            "rva": 4225049,
+            "clock_ns": 93305680417262,
+            "instruction": "=> 0x55e8e0d19819 <_ZN12_GLOBAL__N_115tinyBLAS_Q0_AVXI10block_q8_0S1_fE7gemm4xNILi2EEEvllll+537>:\tvfmadd231ps %ymm3,%ymm4,%ymm14\n"
+          },
+          "after": {
+            "pc": 94458692605982,
+            "rva": 4225054,
+            "clock_ns": 93305693830247,
+            "instruction": "=> 0x55e8e0d1981e <_ZN12_GLOBAL__N_115tinyBLAS_Q0_AVXI10block_q8_0S1_fE7gemm4xNILi2EEEvllll+542>:\tvpsignb %ymm7,%ymm1,%ymm3\n"
+          }
+        }
+      ],
+      "ticket": "film-63478e54-4729618c-5937e5dd-8bbf8f51-",
+      "request_ids": [
+        "ctx-2-2",
+        "ctx-2-3"
+      ],
+      "vectors": [
+        {
+          "role": "fg",
+          "actual_id": "ctx-2-3",
+          "reference_id": "fa-2-23",
+          "vector_sha256": "0663df574c956b45064cc8e6c871357ea153c5d73f75a0ec1f47da0f0d85e98c",
+          "input_sha256": "90677ccc127375018de69f9c891dba0876a3c344ceb85e043d8a06b9ba8fa6b4"
+        },
+        {
+          "role": "bg",
+          "actual_id": "ctx-2-4",
+          "reference_id": "fa-2-26",
+          "vector_sha256": "b53671dd63b1198e2bd495a070466c22742e495b665b7d4fe957b028101e80ad",
+          "input_sha256": "db855ceb782be8703b46ae79c6fdfaf6e26b21ffa1ca9ba91b76d90a40a11bca"
+        }
+      ],
+      "correction": {
+        "actual_trigger": "generic12FMA traps fire during warmup and secondary threads; narrow traps to actual request actors, no inferior writes",
+        "owned_gdb_pid": 1309009,
+        "command": "python exec(open('/workspace/semanticlens/local/film-store-v4/context-runtime-v3/math_phase_repair.py').read())\n",
+        "observer_correction_sha256": "8e985f55076094612c3e6ee7378dd08efab9bc00db793dec6d16f9b8fb30a29b",
+        "clock_ns": 93305072250921,
+        "stdin_target": "pipe:[7181408]"
+      }
+    },
+    {
+      "budget": 6,
+      "loader": [
+        {
+          "phase": "model-load-entry",
+          "path": "/workspace/semanticlens/models/embeddinggemma-2-Q8_0.gguf",
+          "base": 94185613529088,
+          "clock_ns": 93322127615871,
+          "thread": 1,
+          "ptid": [
+            1309309,
+            1309309,
+            0
+          ]
+        },
+        {
+          "phase": "model-load-return",
+          "rax": 94186415197200,
+          "path": "/workspace/semanticlens/models/embeddinggemma-2-Q8_0.gguf",
+          "clock_ns": 93322835229906,
+          "thread": 1,
+          "ptid": [
+            1309309,
+            1309309,
+            0
+          ]
+        }
+      ],
+      "inits": [
+        {
+          "phase": "context-init-entry",
+          "model": 94186415197200,
+          "clock_ns": 93322835527358,
+          "thread": 1,
+          "ptid": [
+            1309309,
+            1309309,
+            0
+          ]
+        },
+        {
+          "phase": "context-init-entry",
+          "model": 94186415197200,
+          "clock_ns": 93322840468393,
+          "thread": 1,
+          "ptid": [
+            1309309,
+            1309309,
+            0
+          ]
+        },
+        {
+          "phase": "context-init-return",
+          "rax": 94186415896144,
+          "model": 94186415197200,
+          "clock_ns": 93322840239361,
+          "thread": 1,
+          "ptid": [
+            1309309,
+            1309309,
+            0
+          ]
+        },
+        {
+          "phase": "context-init-return",
+          "rax": 94186415099456,
+          "model": 94186415197200,
+          "clock_ns": 93322845623242,
+          "thread": 1,
+          "ptid": [
+            1309309,
+            1309309,
+            0
+          ]
+        }
+      ],
+      "frames": [
+        {
+          "role": "bg",
+          "entry": {
+            "self": 94186420218288,
+            "context": 94186415099456,
+            "cancel": 140731910493864,
+            "input_sha256": "db855ceb782be8703b46ae79c6fdfaf6e26b21ffa1ca9ba91b76d90a40a11bca",
+            "clock_ns": 93366907590086,
+            "thread": 6,
+            "ptid": [
+              1309309,
+              1309447,
+              0
+            ]
+          },
+          "before": {
+            "pc": 94185617754137,
+            "rva": 4225049,
+            "clock_ns": 93366936552999,
+            "instruction": "=> 0x55a94c4a0819 <_ZN12_GLOBAL__N_115tinyBLAS_Q0_AVXI10block_q8_0S1_fE7gemm4xNILi2EEEvllll+537>:\tvfmadd231ps %ymm3,%ymm4,%ymm14\n"
+          },
+          "after": {
+            "pc": 94185617754142,
+            "rva": 4225054,
+            "clock_ns": 93366948478286,
+            "instruction": "=> 0x55a94c4a081e <_ZN12_GLOBAL__N_115tinyBLAS_Q0_AVXI10block_q8_0S1_fE7gemm4xNILi2EEEvllll+542>:\tvpsignb %ymm7,%ymm1,%ymm3\n"
+          }
+        },
+        {
+          "role": "fg",
+          "entry": {
+            "self": 94186415032784,
+            "context": 94186415896144,
+            "cancel": 0,
+            "input_sha256": "90677ccc127375018de69f9c891dba0876a3c344ceb85e043d8a06b9ba8fa6b4",
+            "clock_ns": 93366968517427,
+            "thread": 1,
+            "ptid": [
+              1309309,
+              1309309,
+              0
+            ]
+          },
+          "before": {
+            "pc": 94185617754137,
+            "rva": 4225049,
+            "clock_ns": 93366994863972,
+            "instruction": "=> 0x55a94c4a0819 <_ZN12_GLOBAL__N_115tinyBLAS_Q0_AVXI10block_q8_0S1_fE7gemm4xNILi2EEEvllll+537>:\tvfmadd231ps %ymm3,%ymm4,%ymm14\n"
+          },
+          "after": {
+            "pc": 94185617754142,
+            "rva": 4225054,
+            "clock_ns": 93367008968091,
+            "instruction": "=> 0x55a94c4a081e <_ZN12_GLOBAL__N_115tinyBLAS_Q0_AVXI10block_q8_0S1_fE7gemm4xNILi2EEEvllll+542>:\tvpsignb %ymm7,%ymm1,%ymm3\n"
+          }
+        }
+      ],
+      "ticket": "film-49095e30-9f237b46-25d79018-cfc83c14-",
+      "request_ids": [
+        "ctx-6-2",
+        "ctx-6-3"
+      ],
+      "vectors": [
+        {
+          "role": "fg",
+          "actual_id": "ctx-6-3",
+          "reference_id": "fa-6-23",
+          "vector_sha256": "0663df574c956b45064cc8e6c871357ea153c5d73f75a0ec1f47da0f0d85e98c",
+          "input_sha256": "90677ccc127375018de69f9c891dba0876a3c344ceb85e043d8a06b9ba8fa6b4"
+        },
+        {
+          "role": "bg",
+          "actual_id": "ctx-6-4",
+          "reference_id": "fa-6-26",
+          "vector_sha256": "b53671dd63b1198e2bd495a070466c22742e495b665b7d4fe957b028101e80ad",
+          "input_sha256": "db855ceb782be8703b46ae79c6fdfaf6e26b21ffa1ca9ba91b76d90a40a11bca"
+        }
+      ],
+      "correction": {
+        "actual_trigger": "apply same narrowed request-actor FMA observer to distinct6-budget process after warmup traps inspected",
+        "owned_gdb_pid": 1309288,
+        "command": "python exec(open('/workspace/semanticlens/local/film-store-v4/context-runtime-v3/math_phase_repair.py').read())\n",
+        "observer_correction_sha256": "8e985f55076094612c3e6ee7378dd08efab9bc00db793dec6d16f9b8fb30a29b",
+        "clock_ns": 93366486922610
+      }
+    }
+  ],
+  "closure": [
+    {
+      "gdb_pid": 1309009,
+      "gdb_exit": 0,
+      "inferior_normal_exit": true,
+      "remaining_group": []
+    },
+    {
+      "gdb_pid": 1309288,
+      "gdb_exit": 0,
+      "inferior_normal_exit": true,
+      "remaining_group": []
+    }
+  ],
+  "wrapper": {
+    "argv": [
+      "/usr/bin/bwrap",
+      "--unshare-user",
+      "--unshare-net",
+      "--ro-bind",
+      "/",
+      "/",
+      "--bind",
+      "/workspace/semanticlens/local/film-store-v4/context-runtime-v3",
+      "/workspace/semanticlens/local/film-store-v4/context-runtime-v3",
+      "--tmpfs",
+      "/run",
+      "--proc",
+      "/proc",
+      "--dev",
+      "/dev",
+      "--clearenv",
+      "--setenv",
+      "PATH",
+      "/usr/bin",
+      "--setenv",
+      "LANG",
+      "C.UTF-8",
+      "--setenv",
+      "HOME",
+      "/workspace/semanticlens/local/film-store-v4/context-runtime-v3",
+      "--setenv",
+      "PYTHONDONTWRITEBYTECODE",
+      "1",
+      "/usr/bin/python3",
+      "/workspace/semanticlens/local/film-store-v4/context-runtime-v3/run.py",
+      "--output",
+      "/workspace/semanticlens/local/film-store-v4/context-runtime-v3/run",
+      "--worker",
+      "/workspace/semanticlens/local/film-store-v4/candidate-preparation-v3/bin/semanticlens-film-worker",
+      "--model",
+      "/workspace/semanticlens/models/embeddinggemma-2-Q8_0.gguf",
+      "--reference-records",
+      "/workspace/semanticlens/local/film-store-v4/vector-runtime-v1/run/records.json"
+    ],
+    "start_ns": 93213442068500,
+    "pid": 1309006,
+    "exit": 0,
+    "end_ns": 93383676678135
+  }
+}

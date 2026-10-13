@@ -1,0 +1,25 @@
+[
+  {
+    "argv": [
+      "/workspace/semanticlens/local/film-public-install-repair-v1/stage/usr/bin/embedding-probe",
+      "/workspace/semanticlens/models/embeddinggemma-2-Q8_0.gguf",
+      "/workspace/semanticlens/models/mmproj-embeddinggemma-2-Q8_0.gguf",
+      "6"
+    ],
+    "request_sha256": "49ef6cc1bb86e4044ad3ed262d0b898e586f6d2a798715c7e71f5b94c6c0cf21",
+    "exit_code": 0,
+    "elapsed_seconds": 20.817900697
+  },
+  {
+    "argv": [
+      "/workspace/semanticlens/local/film-public-install-repair-v1/stage/usr/bin/embedding-probe",
+      "/workspace/semanticlens/models/embeddinggemma-2-Q8_0.gguf",
+      "/workspace/semanticlens/models/mmproj-embeddinggemma-2-Q8_0.gguf",
+      "6",
+      "--text-only"
+    ],
+    "request_sha256": "ed1f58f85e9aebb8f23f89a89e004017ad28abfabe31072ad4ed7d0227f07d16",
+    "exit_code": 0,
+    "elapsed_seconds": 0.865733591
+  }
+]

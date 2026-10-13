@@ -1,0 +1,766 @@
+{
+  "search": [
+    {
+      "id": "film-ui-3",
+      "connection": 0,
+      "marker_ns": 101565312592086,
+      "request_ns": 101565835487546,
+      "reply_ns": 101565947284565,
+      "selected_index": 0,
+      "list_current_index": 0,
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "ae19e5f6-b061-46a9-88d0-fcbef6e3ce17",
+        "edition_id": "edition:harbor:draft-1",
+        "end_codepoint": 49,
+        "film_id": "film:harbor",
+        "reference_kind": "source",
+        "source_id": "source:harbor:script",
+        "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+        "start_codepoint": 6,
+        "unit_id": "line-3"
+      },
+      "epoch": "4",
+      "revision": "3"
+    },
+    {
+      "id": "film-ui-49",
+      "connection": 0,
+      "marker_ns": 101594040974950,
+      "request_ns": 101594779403450,
+      "reply_ns": 101594886686028,
+      "selected_index": 0,
+      "list_current_index": 0,
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "ae19e5f6-b061-46a9-88d0-fcbef6e3ce17",
+        "edition_id": "edition:parcel-pdf:test-1",
+        "end_codepoint": 15,
+        "film_id": "film:parcel-pdf",
+        "reference_kind": "source",
+        "source_id": "source:parcel-pdf:script",
+        "source_revision": "ed2cd03fbed382f055f781de69886492a7bf8cc50f83e531b6146d9c87a19b3f",
+        "start_codepoint": 5,
+        "unit_id": "page-2-line-3"
+      },
+      "epoch": "4",
+      "revision": "3"
+    },
+    {
+      "id": "film-ui-66",
+      "connection": 0,
+      "marker_ns": 101604427960220,
+      "request_ns": 101605007019028,
+      "reply_ns": 101605119986238,
+      "selected_index": 0,
+      "list_current_index": 0,
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "ae19e5f6-b061-46a9-88d0-fcbef6e3ce17",
+        "edition_id": "edition:harbor:draft-1",
+        "end_codepoint": 49,
+        "film_id": "film:harbor",
+        "reference_kind": "source",
+        "source_id": "source:harbor:script",
+        "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+        "start_codepoint": 6,
+        "unit_id": "line-3"
+      },
+      "epoch": "4",
+      "revision": "3"
+    }
+  ],
+  "reveal": [
+    {
+      "id": "film-ui-8",
+      "connection": 0,
+      "marker_ns": 101569165761095,
+      "request_ns": 101569373229363,
+      "reply_ns": 101569375718582,
+      "selected_index": 0,
+      "list_current_index": 0,
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "ae19e5f6-b061-46a9-88d0-fcbef6e3ce17",
+        "edition_id": "edition:harbor:draft-1",
+        "end_codepoint": 49,
+        "film_id": "film:harbor",
+        "reference_kind": "source",
+        "source_id": "source:harbor:script",
+        "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+        "start_codepoint": 6,
+        "unit_id": "line-3"
+      },
+      "epoch": "4",
+      "revision": "3",
+      "excerpt": "They erased my name from the rescue report.",
+      "page": null
+    },
+    {
+      "id": "film-ui-53",
+      "connection": 0,
+      "marker_ns": 101597667411738,
+      "request_ns": 101597869889167,
+      "reply_ns": 101597872320988,
+      "selected_index": 0,
+      "list_current_index": 0,
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "ae19e5f6-b061-46a9-88d0-fcbef6e3ce17",
+        "edition_id": "edition:parcel-pdf:test-1",
+        "end_codepoint": 15,
+        "film_id": "film:parcel-pdf",
+        "reference_kind": "source",
+        "source_id": "source:parcel-pdf:script",
+        "source_revision": "ed2cd03fbed382f055f781de69886492a7bf8cc50f83e531b6146d9c87a19b3f",
+        "start_codepoint": 5,
+        "unit_id": "page-2-line-3"
+      },
+      "epoch": "4",
+      "revision": "3",
+      "excerpt": "PARC-20942",
+      "page": 2
+    },
+    {
+      "id": "film-ui-70",
+      "connection": 0,
+      "marker_ns": 101607706861183,
+      "request_ns": 101607903243687,
+      "reply_ns": 101607905625594,
+      "selected_index": 0,
+      "list_current_index": 0,
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "ae19e5f6-b061-46a9-88d0-fcbef6e3ce17",
+        "edition_id": "edition:harbor:draft-1",
+        "end_codepoint": 49,
+        "film_id": "film:harbor",
+        "reference_kind": "source",
+        "source_id": "source:harbor:script",
+        "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+        "start_codepoint": 6,
+        "unit_id": "line-3"
+      },
+      "epoch": "4",
+      "revision": "3",
+      "excerpt": "They erased my name from the rescue report.",
+      "page": null
+    }
+  ],
+  "open": [
+    {
+      "selected_index": 0,
+      "list_current_index": 0,
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "ae19e5f6-b061-46a9-88d0-fcbef6e3ce17",
+        "edition_id": "edition:harbor:draft-1",
+        "end_codepoint": 49,
+        "film_id": "film:harbor",
+        "reference_kind": "source",
+        "source_id": "source:harbor:script",
+        "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+        "start_codepoint": 6,
+        "unit_id": "line-3"
+      },
+      "epoch": "4",
+      "revision": "3",
+      "navigation_id": "film-ui-13",
+      "input_node": "555a052190d0"
+    },
+    {
+      "selected_index": 0,
+      "list_current_index": 0,
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "ae19e5f6-b061-46a9-88d0-fcbef6e3ce17",
+        "edition_id": "edition:harbor:draft-1",
+        "end_codepoint": 49,
+        "film_id": "film:harbor",
+        "reference_kind": "source",
+        "source_id": "source:harbor:script",
+        "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+        "start_codepoint": 6,
+        "unit_id": "line-3"
+      },
+      "epoch": "4",
+      "revision": "3",
+      "navigation_id": "film-ui-17",
+      "input_node": "555a052190d0"
+    },
+    {
+      "selected_index": 0,
+      "list_current_index": 0,
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "ae19e5f6-b061-46a9-88d0-fcbef6e3ce17",
+        "edition_id": "edition:harbor:draft-1",
+        "end_codepoint": 49,
+        "film_id": "film:harbor",
+        "reference_kind": "source",
+        "source_id": "source:harbor:script",
+        "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+        "start_codepoint": 6,
+        "unit_id": "line-3"
+      },
+      "epoch": "4",
+      "revision": "3",
+      "navigation_id": "film-ui-22",
+      "input_node": "555a052190d0"
+    },
+    {
+      "selected_index": 0,
+      "list_current_index": 0,
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "ae19e5f6-b061-46a9-88d0-fcbef6e3ce17",
+        "edition_id": "edition:harbor:draft-1",
+        "end_codepoint": 49,
+        "film_id": "film:harbor",
+        "reference_kind": "source",
+        "source_id": "source:harbor:script",
+        "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+        "start_codepoint": 6,
+        "unit_id": "line-3"
+      },
+      "epoch": "4",
+      "revision": "3",
+      "navigation_id": "film-ui-27",
+      "input_node": "555a052190d0"
+    },
+    {
+      "selected_index": 0,
+      "list_current_index": 0,
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "ae19e5f6-b061-46a9-88d0-fcbef6e3ce17",
+        "edition_id": "edition:harbor:draft-1",
+        "end_codepoint": 49,
+        "film_id": "film:harbor",
+        "reference_kind": "source",
+        "source_id": "source:harbor:script",
+        "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+        "start_codepoint": 6,
+        "unit_id": "line-3"
+      },
+      "epoch": "4",
+      "revision": "3",
+      "navigation_id": "film-ui-32",
+      "input_node": "555a052190d0"
+    },
+    {
+      "selected_index": 0,
+      "list_current_index": 0,
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "ae19e5f6-b061-46a9-88d0-fcbef6e3ce17",
+        "edition_id": "edition:harbor:draft-1",
+        "end_codepoint": 49,
+        "film_id": "film:harbor",
+        "reference_kind": "source",
+        "source_id": "source:harbor:script",
+        "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+        "start_codepoint": 6,
+        "unit_id": "line-3"
+      },
+      "epoch": "4",
+      "revision": "3",
+      "navigation_id": "film-ui-37",
+      "input_node": "555a052190d0"
+    },
+    {
+      "selected_index": 0,
+      "list_current_index": 0,
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "ae19e5f6-b061-46a9-88d0-fcbef6e3ce17",
+        "edition_id": "edition:harbor:draft-1",
+        "end_codepoint": 49,
+        "film_id": "film:harbor",
+        "reference_kind": "source",
+        "source_id": "source:harbor:script",
+        "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+        "start_codepoint": 6,
+        "unit_id": "line-3"
+      },
+      "epoch": "4",
+      "revision": "3",
+      "navigation_id": "film-ui-41",
+      "input_node": "555a052190d0"
+    },
+    {
+      "selected_index": 0,
+      "list_current_index": 0,
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "ae19e5f6-b061-46a9-88d0-fcbef6e3ce17",
+        "edition_id": "edition:parcel-pdf:test-1",
+        "end_codepoint": 15,
+        "film_id": "film:parcel-pdf",
+        "reference_kind": "source",
+        "source_id": "source:parcel-pdf:script",
+        "source_revision": "ed2cd03fbed382f055f781de69886492a7bf8cc50f83e531b6146d9c87a19b3f",
+        "start_codepoint": 5,
+        "unit_id": "page-2-line-3"
+      },
+      "epoch": "4",
+      "revision": "3",
+      "navigation_id": "film-ui-57",
+      "input_node": "555a052190d0"
+    },
+    {
+      "selected_index": 0,
+      "list_current_index": 0,
+      "reference": {
+        "analysis_id": null,
+        "claim_id": null,
+        "collection_id": "ae19e5f6-b061-46a9-88d0-fcbef6e3ce17",
+        "edition_id": "edition:harbor:draft-1",
+        "end_codepoint": 49,
+        "film_id": "film:harbor",
+        "reference_kind": "source",
+        "source_id": "source:harbor:script",
+        "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+        "start_codepoint": 6,
+        "unit_id": "line-3"
+      },
+      "epoch": "4",
+      "revision": "3",
+      "navigation_id": "film-ui-74",
+      "input_node": "555a052190d0"
+    }
+  ],
+  "negative": [
+    {
+      "branch": "original_path",
+      "delta": {
+        "snapshot_path": [
+          "/tmp/test/work/index/film-extract-WaXRGI/input.txt",
+          "/tmp/test/work/corpus/harbor/harbor.txt"
+        ]
+      },
+      "release": [
+        {
+          "id": "film-ui-14",
+          "connection": 0,
+          "token": "b5bd7db7-4d70-4e4b-a039-9140c67b874a",
+          "released": true
+        }
+      ],
+      "message": "Source copy is no longer valid.",
+      "token": "b5bd7db7-4d70-4e4b-a039-9140c67b874a"
+    },
+    {
+      "branch": "stale_epoch",
+      "delta": {
+        "film_epoch": [
+          "4",
+          "-1"
+        ]
+      },
+      "release": [
+        {
+          "id": "film-ui-19",
+          "connection": 0,
+          "token": "a2c23ffe-b92e-4825-bac6-6052d40070b5",
+          "released": true
+        }
+      ],
+      "message": "Source copy is no longer valid.",
+      "token": "a2c23ffe-b92e-4825-bac6-6052d40070b5"
+    },
+    {
+      "branch": "source_revision",
+      "delta": {
+        "source_revision": [
+          "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+          "0000000000000000000000000000000000000000000000000000000000000000"
+        ]
+      },
+      "release": [
+        {
+          "id": "film-ui-24",
+          "connection": 0,
+          "token": "a1544141-4fda-417b-af49-a623fb2b01fd",
+          "released": true
+        }
+      ],
+      "message": "Source copy is no longer valid.",
+      "token": "a1544141-4fda-417b-af49-a623fb2b01fd"
+    },
+    {
+      "branch": "action",
+      "delta": {
+        "action": [
+          "open",
+          "reveal"
+        ]
+      },
+      "release": [
+        {
+          "id": "film-ui-28",
+          "connection": 0,
+          "token": "9c64bc10-fd68-47d2-b6c0-c4879551cea0",
+          "released": true
+        }
+      ],
+      "message": "Source copy is no longer valid.",
+      "token": "9c64bc10-fd68-47d2-b6c0-c4879551cea0"
+    },
+    {
+      "branch": "page",
+      "delta": {
+        "page": [
+          null,
+          2
+        ]
+      },
+      "release": [
+        {
+          "id": "film-ui-33",
+          "connection": 0,
+          "token": "b36128cc-c374-4c10-a5d5-5dede31720da",
+          "released": true
+        }
+      ],
+      "message": "Source copy is no longer valid.",
+      "token": "b36128cc-c374-4c10-a5d5-5dede31720da"
+    },
+    {
+      "branch": "nullable_zero",
+      "delta": {
+        "page": [
+          null,
+          0
+        ]
+      },
+      "release": [
+        {
+          "id": "film-ui-38",
+          "connection": 0,
+          "token": "ed2df213-d0b3-41e3-85b9-c7600c28cc7d",
+          "released": true
+        }
+      ],
+      "message": "Source copy is no longer valid.",
+      "token": "ed2df213-d0b3-41e3-85b9-c7600c28cc7d"
+    }
+  ],
+  "text": [
+    {
+      "cleanup": "selection_change",
+      "pid": 177,
+      "argv": "/usr/bin/konsole --separate --nofork --hold -e /usr/bin/cat /tmp/test/work/index/film-extract-kWuSCb/input.txt ",
+      "copy": {
+        "path": "/tmp/test/work/index/film-extract-kWuSCb/input.txt",
+        "exists": true,
+        "sha256": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+        "size": 229,
+        "mode": "0o400",
+        "directory_mode": "0o700",
+        "inode": 9084918,
+        "device": 29,
+        "symlink": false
+      },
+      "release": [
+        {
+          "id": "film-ui-46",
+          "connection": 0,
+          "token": "a54ef664-4cb2-4acc-9b4b-0e64fd68754a",
+          "released": true
+        }
+      ],
+      "normalized_bytes": 229
+    },
+    {
+      "cleanup": "disconnect",
+      "pid": 227,
+      "argv": "/usr/bin/konsole --separate --nofork --hold -e /usr/bin/cat /tmp/test/work/index/film-extract-zKpfdB/input.txt ",
+      "copy": {
+        "path": "/tmp/test/work/index/film-extract-zKpfdB/input.txt",
+        "exists": true,
+        "sha256": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+        "size": 229,
+        "mode": "0o400",
+        "directory_mode": "0o700",
+        "inode": 9085207,
+        "device": 29,
+        "symlink": false
+      },
+      "release": [],
+      "normalized_bytes": 229
+    }
+  ],
+  "contrast": {
+    "bytes": 41,
+    "text": "Violet rails hold calm beacons 78162044.\n"
+  },
+  "pdf": [
+    {
+      "pid": "89",
+      "hook": {
+        "actual_qobject_parent": "0",
+        "actual_widget_argument": "556699c03210",
+        "document": "556699beb930",
+        "event": "real_constructor_forwarded",
+        "monotonic_ns": 101518210344199,
+        "resolved_address": "7fa50ad35bc0",
+        "resolved_module": "/usr/lib/libOkular6Core.so.4",
+        "resolved_module_base": "7fa50aca5000",
+        "resolved_offset": 592832,
+        "resolved_symbol": "_ZN6Okular8DocumentC2EP7QWidget",
+        "symbol": "_ZN6Okular8DocumentC1EP7QWidget"
+      },
+      "document": "556699beb930",
+      "view": "55669a00dc50",
+      "window": "556699bab000",
+      "page": 1,
+      "natural_phase_ns": 36815166,
+      "pre_capture_ns": 99540191,
+      "natural_paints": 6,
+      "capture_paints_delta": 2,
+      "ocr": "INT. PARCEL ROOM - MORNING\nADA: Every parcel has a number.\n"
+    },
+    {
+      "pid": "191",
+      "hook": {
+        "actual_qobject_parent": "0",
+        "actual_widget_argument": "55603c19e620",
+        "document": "55603c1aaed0",
+        "event": "real_constructor_forwarded",
+        "monotonic_ns": 101601677663283,
+        "resolved_address": "7f07ba335bc0",
+        "resolved_module": "/usr/lib/libOkular6Core.so.4",
+        "resolved_module_base": "7f07ba2a5000",
+        "resolved_offset": 592832,
+        "resolved_symbol": "_ZN6Okular8DocumentC2EP7QWidget",
+        "symbol": "_ZN6Okular8DocumentC1EP7QWidget"
+      },
+      "document": "55603c1aaed0",
+      "view": "55603c5cc6f0",
+      "window": "55603c174630",
+      "page": 2,
+      "natural_phase_ns": 76025945,
+      "pre_capture_ns": 77047293,
+      "natural_paints": 5,
+      "capture_paints_delta": 2,
+      "ocr": "EXT. QUIET PLATFORM - EVENING\nADA: PARC-20942 belongs to the last passenger.\n"
+    }
+  ],
+  "pdf_copy": {
+    "copy": {
+      "path": "/tmp/test/work/index/film-extract-UFYJvj/input.pdf",
+      "exists": true,
+      "sha256": "ed2cd03fbed382f055f781de69886492a7bf8cc50f83e531b6146d9c87a19b3f",
+      "size": 1919,
+      "mode": "0o400",
+      "directory_mode": "0o700",
+      "inode": 9085076,
+      "device": 29,
+      "symlink": false
+    },
+    "release": [
+      {
+        "id": "film-ui-62",
+        "connection": 0,
+        "token": "44662ae0-3b2f-45b6-9429-198b407edc56",
+        "released": true
+      }
+    ]
+  },
+  "portal_fd_inodes": [
+    9084918,
+    9085207
+  ],
+  "derived": [
+    {
+      "label": "unexposed-capture-only-PDF",
+      "scope": "derived serialized evaluator contradiction; not observed altered native state",
+      "accepted": false
+    },
+    {
+      "label": "historical-only-search",
+      "scope": "derived serialized evaluator contradiction; not observed altered native state",
+      "accepted": false
+    },
+    {
+      "label": "historical-only-reveal",
+      "scope": "derived serialized evaluator contradiction; not observed altered native state",
+      "accepted": false
+    },
+    {
+      "label": "wrong-selected-reference-reveal",
+      "scope": "derived serialized evaluator contradiction; not observed altered native state",
+      "accepted": false
+    },
+    {
+      "label": "historical-only-search",
+      "scope": "derived serialized evaluator contradiction; not observed altered native state",
+      "accepted": false
+    },
+    {
+      "label": "historical-only-reveal",
+      "scope": "derived serialized evaluator contradiction; not observed altered native state",
+      "accepted": false
+    },
+    {
+      "label": "wrong-selected-reference-reveal",
+      "scope": "derived serialized evaluator contradiction; not observed altered native state",
+      "accepted": false
+    },
+    {
+      "label": "unexposed-capture-only-PDF",
+      "scope": "derived serialized evaluator contradiction; not observed altered native state",
+      "accepted": false
+    },
+    {
+      "label": "historical-only-search",
+      "scope": "derived serialized evaluator contradiction; not observed altered native state",
+      "accepted": false
+    },
+    {
+      "label": "historical-only-reveal",
+      "scope": "derived serialized evaluator contradiction; not observed altered native state",
+      "accepted": false
+    },
+    {
+      "label": "wrong-selected-reference-reveal",
+      "scope": "derived serialized evaluator contradiction; not observed altered native state",
+      "accepted": false
+    }
+  ],
+  "closure": {
+    "owned_exits": [
+      {
+        "pid": 68,
+        "exit": -15
+      },
+      {
+        "pid": 89,
+        "exit": -15
+      },
+      {
+        "pid": 128,
+        "exit": 0
+      },
+      {
+        "pid": 154,
+        "exit": -15
+      },
+      {
+        "pid": 155,
+        "exit": -15
+      }
+    ],
+    "relay_threads_closed": true,
+    "accept_thread_closed": true,
+    "receiver_closure": [
+      {
+        "pid": 68,
+        "status": "already_closed"
+      },
+      {
+        "pid": 89,
+        "status": "already_closed"
+      },
+      {
+        "pid": 177,
+        "status": "owned_receiver_signaled",
+        "identity": {
+          "exe": "/usr/bin/konsole",
+          "startticks": "10159049"
+        }
+      },
+      {
+        "pid": 191,
+        "status": "owned_receiver_signaled",
+        "identity": {
+          "exe": "/usr/bin/okular",
+          "startticks": "10160101"
+        }
+      },
+      {
+        "pid": 227,
+        "status": "owned_receiver_signaled",
+        "identity": {
+          "exe": "/usr/bin/konsole",
+          "startticks": "10161108"
+        }
+      }
+    ],
+    "namespace_processes_pending_outer_exit": [
+      {
+        "pid": 1,
+        "argv": "bwrap --unshare-user --unshare-pid --unshare-net --die-with-parent --ro-bind / / --tmpfs /home --tmpfs /root --tmpfs /run/user --tmpfs /tmp --bind /workspace/semanticlens/local/film-open-qualified-runtime-v2/attempt2 /tmp/test --ro-bind /workspace/semanticlens/local/film-open-qualified-preparation-v1/stage/usr /tmp/test/stage --ro-bind /workspace/semanticlens/models /tmp/test/models --ro-bind /workspace/semanticlens/local/film-open-qualified-preparation-v1/stage/usr/bin/semanticlens-film-worker /tmp/test/film-worker --dev /dev --proc /proc --clearenv --setenv PATH /usr/bin:/bin --setenv LANG C.UTF-8 --setenv HOME /tmp/test/home --setenv XDG_CONFIG_HOME /tmp/test/config --setenv XDG_CACHE_HOME /tmp/test/cache --setenv XDG_DATA_HOME /tmp/test/data --setenv XDG_STATE_HOME /tmp/test/state --setenv XDG_RUNTIME_DIR /tmp/test/runtime --setenv XDG_SESSION_TYPE wayland --setenv XDG_CURRENT_DESKTOP KDE --setenv QT_QPA_PLATFORM wayland --setenv XDG_DATA_DIRS /tmp/test/stage/share:/usr/share --setenv QT_PLUGIN_PATH /tmp/test/stage/lib/qt6/plugins:/usr/lib/qt6/plugins --setenv QT_QUICK_BACKEND software --setenv LIBGL_ALWAYS_SOFTWARE 1 --setenv DESKTOP_SESSION plasma --setenv G_MESSAGES_DEBUG xdg-desktop-portal dbus-run-session -- kwin_wayland --virtual --width 1440 --height 1000 --socket semanticlens-test --no-lockscreen --no-global-shortcuts --no-kactivities --exit-with-session /tmp/test/session.sh "
+      },
+      {
+        "pid": 2,
+        "argv": "dbus-run-session -- kwin_wayland --virtual --width 1440 --height 1000 --socket semanticlens-test --no-lockscreen --no-global-shortcuts --no-kactivities --exit-with-session /tmp/test/session.sh "
+      },
+      {
+        "pid": 3,
+        "argv": "dbus-daemon --nofork --print-address 4 --session "
+      },
+      {
+        "pid": 4,
+        "argv": "kwin_wayland --virtual --width 1440 --height 1000 --socket semanticlens-test --no-lockscreen --no-global-shortcuts --no-kactivities --exit-with-session /tmp/test/session.sh "
+      },
+      {
+        "pid": 8,
+        "argv": "/usr/bin/python3 /tmp/test/work/run.py --package /tmp/test/work --session --film-worker /tmp/test/film-worker --film-worker-sha256 dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5 "
+      },
+      {
+        "pid": 18,
+        "argv": "/usr/lib/xdg-desktop-portal "
+      },
+      {
+        "pid": 24,
+        "argv": "/usr/lib/xdg-permission-store "
+      },
+      {
+        "pid": 37,
+        "argv": "/usr/lib/xdg-desktop-portal-gtk "
+      },
+      {
+        "pid": 45,
+        "argv": "/usr/lib/at-spi-bus-launcher "
+      },
+      {
+        "pid": 51,
+        "argv": "/usr/bin/dbus-broker-launch --config-file=/usr/share/defaults/at-spi2/accessibility.conf --scope user "
+      },
+      {
+        "pid": 52,
+        "argv": "dbus-broker --log 10 --controller 9 --machine-id 066634151ce344af8e5b856484a3ac44 --max-bytes 100000000000000 --max-fds 6400000 --max-matches 5000000000 "
+      },
+      {
+        "pid": 58,
+        "argv": "/usr/lib/xdg-desktop-portal-kde "
+      },
+      {
+        "pid": 67,
+        "argv": "/usr/bin/ksecretd "
+      },
+      {
+        "pid": 108,
+        "argv": "/usr/bin/kwalletd6 "
+      }
+    ],
+    "socket_paths_absent": true,
+    "copy_paths_remaining": []
+  }
+}

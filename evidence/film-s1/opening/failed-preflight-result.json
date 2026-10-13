@@ -1,0 +1,12 @@
+{
+  "default": "film-source-consumer.desktop",
+  "fallback_to_all": false,
+  "choices": [
+    {
+      "id": "film-source-consumer.desktop",
+      "executable": "/usr/bin/konsole",
+      "commandline": "/usr/bin/konsole --separate --nofork --hold -e /usr/bin/cat %f",
+      "should_show": true
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Service reproduction check
+
+The public reproduction helper required explicit prior opt-in after the adopted default-exclusion policy. A one-field observer repair adds include_unverified_prior:true to its actual exploratory search; production code and original immutable results are unchanged. The corrected helper ran against the qualified a59/fa/bca stage with an owned copied corpus and private data/socket: 69 existing controls passed, service exit0 and process_closed=true. Actual stage-executable census after exit found no remaining actors. This is a serial service/API reproduction check, not shared-worker latency, UI or real-film-quality evidence. No user index, GUI, Baloo or installed rc2 was modified.

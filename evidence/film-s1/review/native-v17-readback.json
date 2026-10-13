@@ -1,0 +1,294 @@
+{
+  "scope": "dedicated native QtTest helper; no standalone app startup or source opening proof",
+  "packet_files": 122,
+  "relay_event_categories": {
+    "request_received": 268,
+    "request_forwarded": 268,
+    "reply_forwarded": 265,
+    "successful_reply_held": 1,
+    "held_successful_reply_delivered_after_fresh_reply": 1,
+    "proxy_socket_error": 2,
+    "request_without_reply": 2
+  },
+  "successful_query_provider_events": 23,
+  "source_rpc": {
+    "clock": "CLOCK_MONOTONIC via time.monotonic_ns()",
+    "pass": true,
+    "matching_film_evidence_rpc_count": 1,
+    "expected_film_id": "film:orchard",
+    "expected_relative_path": "orchard/orchard.srt",
+    "expected_payload_substring": "CLOCK-7320",
+    "expected_cue_start_ms": 3000,
+    "app_peer_pid": 14,
+    "request_id": "film-ui-52",
+    "reply_id": "film-ui-52",
+    "peer": {
+      "pid": 14,
+      "uid": 1000,
+      "gid": 1000,
+      "exe": "/tmp/test/project/local/film-ui-controls-v17/repair-3/build/film-ui-controls"
+    },
+    "connection": 1,
+    "request_start_mono_ns": 99889953246825,
+    "reply_mono_ns": 99889957239584,
+    "raw_request": "{\"expected_film_revision\":\"11\",\"id\":\"film-ui-52\",\"op\":\"film_evidence\",\"reference\":{\"analysis_id\":null,\"claim_id\":null,\"collection_id\":\"9572b25c-c4b5-45c2-9cff-2d1a43869676\",\"edition_id\":\"edition:orchard:test-1\",\"end_codepoint\":10,\"film_id\":\"film:orchard\",\"reference_kind\":\"source\",\"source_id\":\"source:orchard:subs\",\"source_revision\":\"be60b62b04f169b91239905ac98f0b1d958d237456602eaededf7686c9c02249\",\"start_codepoint\":0,\"unit_id\":\"cue-2\"},\"spoiler_policy\":\"allow\"}\n",
+    "raw_reply": "{\"evidence\":{\"analysis_text\":null,\"cue_end_ms\":6000,\"cue_start_ms\":3000,\"edition_id\":\"edition:orchard:test-1\",\"edition_relation\":\"exact_edition\",\"film_id\":\"film:orchard\",\"kind\":\"dialogue\",\"language\":\"en\",\"limited\":false,\"page\":null,\"reference\":{\"analysis_id\":null,\"claim_id\":null,\"collection_id\":\"9572b25c-c4b5-45c2-9cff-2d1a43869676\",\"edition_id\":\"edition:orchard:test-1\",\"end_codepoint\":10,\"film_id\":\"film:orchard\",\"reference_kind\":\"source\",\"source_id\":\"source:orchard:subs\",\"source_revision\":\"be60b62b04f169b91239905ac98f0b1d958d237456602eaededf7686c9c02249\",\"start_codepoint\":0,\"unit_id\":\"cue-2\"},\"reference_kind\":\"source\",\"relative_path\":\"orchard/orchard.srt\",\"source_excerpt\":\"CLOCK-7320\",\"source_kind\":\"subtitle\",\"source_revision\":\"be60b62b04f169b91239905ac98f0b1d958d237456602eaededf7686c9c02249\",\"spoiler_redacted\":false,\"unit_id\":\"cue-2\",\"unit_text\":\"CLOCK-7320: You uprooted the trees to straighten their shadows.\"},\"film_epoch\":\"12\",\"film_revision\":\"11\",\"id\":\"film-ui-52\",\"ok\":true,\"protocol\":1}\n"
+  },
+  "unicode_evidence": {
+    "analysis_text": null,
+    "cue_end_ms": 8000,
+    "cue_start_ms": 4500,
+    "edition_id": "edition:crossing:test-1",
+    "edition_relation": "exact_edition",
+    "film_id": "film:crossing",
+    "kind": "dialogue",
+    "language": "mul",
+    "limited": false,
+    "page": null,
+    "reference": {
+      "analysis_id": null,
+      "claim_id": null,
+      "collection_id": "9572b25c-c4b5-45c2-9cff-2d1a43869676",
+      "edition_id": "edition:crossing:test-1",
+      "end_codepoint": 34,
+      "film_id": "film:crossing",
+      "reference_kind": "source",
+      "source_id": "source:crossing:subs",
+      "source_revision": "182b7c6cb384d5f91eddb5978f72f54c2ed8c0a13d2a0aad4d9e221a6a52ca14",
+      "start_codepoint": 11,
+      "unit_id": "cue-2"
+    },
+    "reference_kind": "source",
+    "relative_path": "crossing/crossing.vtt",
+    "source_excerpt": "I kept a place for you.",
+    "source_kind": "subtitle",
+    "source_revision": "182b7c6cb384d5f91eddb5978f72f54c2ed8c0a13d2a0aad4d9e221a6a52ca14",
+    "spoiler_redacted": false,
+    "unit_id": "cue-2",
+    "unit_text": "Café 👩‍🚒: I kept a place for you."
+  },
+  "pdf_evidence": {
+    "analysis_text": null,
+    "cue_end_ms": null,
+    "cue_start_ms": null,
+    "edition_id": "edition:parcel-pdf:test-1",
+    "edition_relation": "draft_companion",
+    "film_id": "film:parcel-pdf",
+    "kind": "dialogue",
+    "language": "en",
+    "limited": false,
+    "page": 2,
+    "reference": {
+      "analysis_id": null,
+      "claim_id": null,
+      "collection_id": "9572b25c-c4b5-45c2-9cff-2d1a43869676",
+      "edition_id": "edition:parcel-pdf:test-1",
+      "end_codepoint": 15,
+      "film_id": "film:parcel-pdf",
+      "reference_kind": "source",
+      "source_id": "source:parcel-pdf:script",
+      "source_revision": "ed2cd03fbed382f055f781de69886492a7bf8cc50f83e531b6146d9c87a19b3f",
+      "start_codepoint": 5,
+      "unit_id": "page-2-line-3"
+    },
+    "reference_kind": "source",
+    "relative_path": "parcel-pdf/parcel.pdf",
+    "source_excerpt": "PARC-20942",
+    "source_kind": "screenplay",
+    "source_revision": "ed2cd03fbed382f055f781de69886492a7bf8cc50f83e531b6146d9c87a19b3f",
+    "spoiler_redacted": false,
+    "unit_id": "page-2-line-3",
+    "unit_text": "ADA: PARC-20942 belongs to the last passenger."
+  },
+  "analysis_evidence": {
+    "analysis_text": "ANALYSIS-ONLY-K7: The exchange suggests continuing public service without recognition. Mara separates helping strangers from being publicly thanked. This is a reading of the supplied exchange only.",
+    "basis": "source_interpretation",
+    "coverage": [
+      {
+        "coverage": {
+          "kind": "partial",
+          "unit_ids": [
+            "line-6"
+          ]
+        },
+        "language": "en",
+        "normalization_version": "semanticlens-film-units/1",
+        "source_id": "source:harbor:script",
+        "source_kind": "screenplay",
+        "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217"
+      }
+    ],
+    "created_at": "2026-10-12T23:22:00Z",
+    "cue_end_ms": null,
+    "cue_start_ms": null,
+    "edition_id": "edition:harbor:draft-1",
+    "edition_relation": "exact_edition",
+    "facet": "central_tension",
+    "film_id": "film:harbor",
+    "generation": {
+      "model_id": null,
+      "model_revision": null,
+      "origin": "authored_fixture",
+      "prompt_sha256": null,
+      "provider": null,
+      "settings": {
+        "max_output_tokens": null,
+        "seed": null,
+        "temperature": null
+      }
+    },
+    "kind": "dialogue",
+    "language": "en",
+    "limitations": [
+      "Authored synthetic excerpt; not a real film or an LLM generation.",
+      "Coverage refers only to the cited supplied units, not a feature-length film."
+    ],
+    "limited": false,
+    "not_observable": [
+      "finished-film cinematography",
+      "score",
+      "acting"
+    ],
+    "origin": "authored_fixture",
+    "page": null,
+    "reference": {
+      "analysis_id": "analysis:harbor:1",
+      "claim_id": "claim:uncredited-duty",
+      "collection_id": "9572b25c-c4b5-45c2-9cff-2d1a43869676",
+      "edition_id": "edition:harbor:draft-1",
+      "end_codepoint": 66,
+      "film_id": "film:harbor",
+      "reference_kind": "source",
+      "source_id": "source:harbor:script",
+      "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+      "start_codepoint": 0,
+      "unit_id": "line-6"
+    },
+    "reference_kind": "source",
+    "relative_path": "harbor/harbor.txt",
+    "scope": "scene",
+    "semantic_review": "unreviewed",
+    "source_excerpt": "MARA: I will bring the boat tomorrow, even if they never thank me.",
+    "source_kind": "screenplay",
+    "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+    "spoiler_redacted": false,
+    "unit_id": "line-6",
+    "unit_text": "MARA: I will bring the boat tomorrow, even if they never thank me."
+  },
+  "prior_evidence": {
+    "analysis_text": "PRIOR-LANTERN-616 is an imported unverified interpretation. <img src=\"http://127.0.0.1:38449/hostile\">",
+    "basis": "unverified_prior",
+    "coverage": [
+      {
+        "coverage": {
+          "kind": "partial",
+          "unit_ids": [
+            "line-6"
+          ]
+        },
+        "language": "en",
+        "normalization_version": "semanticlens-film-units/1",
+        "source_id": "source:harbor:script",
+        "source_kind": "screenplay",
+        "source_revision": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217"
+      }
+    ],
+    "created_at": "2026-10-12T23:22:00Z",
+    "edition_id": "edition:harbor:draft-1",
+    "facet": "central_tension",
+    "film_id": "film:harbor",
+    "generation": {
+      "model_id": null,
+      "model_revision": null,
+      "origin": "authored_fixture",
+      "prompt_sha256": null,
+      "provider": null,
+      "settings": {
+        "max_output_tokens": null,
+        "seed": null,
+        "temperature": null
+      }
+    },
+    "label": "Unverified prior; no source anchor",
+    "limitations": [
+      "Authored synthetic excerpt; not a real film or an LLM generation.",
+      "Coverage refers only to the cited supplied units, not a feature-length film."
+    ],
+    "not_observable": [
+      "finished-film cinematography",
+      "score",
+      "acting"
+    ],
+    "origin": "authored_fixture",
+    "reference": {
+      "analysis_id": "analysis:harbor:ui-prior",
+      "claim_id": "claim:harbor:ui-prior",
+      "collection_id": "9572b25c-c4b5-45c2-9cff-2d1a43869676",
+      "edition_id": "edition:harbor:draft-1",
+      "film_id": "film:harbor",
+      "reference_kind": "analysis_only"
+    },
+    "reference_kind": "analysis_only",
+    "scope": "scene",
+    "semantic_review": "unreviewed",
+    "source_excerpt": null,
+    "spoiler_redacted": false,
+    "unit_text": null
+  },
+  "prior_query_ids": [
+    "film-ui-62",
+    "film-ui-63",
+    "film-ui-67"
+  ],
+  "u02_actual_query_ids": [
+    "film-ui-79",
+    "1"
+  ],
+  "u02_job": "39e444ab-6729-4a14-ac04-76cc08e96be6",
+  "u02_heartbeat": {
+    "ticks": 52,
+    "max_gap_ms": 109.201642
+  },
+  "late_reply_ids": [
+    "film-ui-81",
+    "film-ui-82",
+    "film-ui-83"
+  ],
+  "late_raw_reply_sha256": "5e5e2345615cc94842b2a4a053f484adee1349fee8a7b26d02bc32ef53c5278e",
+  "restart_pids": [
+    11,
+    188
+  ],
+  "closure": {
+    "outer_exit": 0,
+    "UI_exit": 0,
+    "services_exit": 0,
+    "groups_empty": true,
+    "omitted_inode": [
+      {
+        "path": "runtime/at-spi/bus",
+        "mode": "0o140755",
+        "reason": "non-regular runtime inode; not a replay artifact"
+      }
+    ]
+  },
+  "F19": "status dialog before U02 contains completed/error-empty jobs and no warnings; nonempty dialog error/warning positive pending",
+  "F19_first_later_error_status": {
+    "sequence": 239,
+    "request_id": "film-ui-86",
+    "reply_mono_ns": 99968635781566
+  },
+  "F19_first_later_warning_status": {
+    "sequence": 261,
+    "request_id": "film-ui-101",
+    "reply_mono_ns": 99977964645284
+  },
+  "visual_scope": "11 original window captures inspected; ASCII selected Unicode excerpt, raw combining/ZWJ unit retained; model properties do not prove all scrolled pixels",
+  "functional_seconds": {
+    "helper": 112.048,
+    "inner": 113.09584387,
+    "outer": 114.991883167
+  },
+  "usage_cost": "unknown",
+  "reference_count": 142
+}

@@ -1,0 +1,13 @@
+{
+  "manifest_categories": {
+    "local/film-open-qualified-runtime-v1/SHA256SUMS": 13,
+    "local/film-open-qualified-runtime-v1/attempt1-files.sha256": 47,
+    "local/film-open-qualified-runtime-v1/attempt2-files.sha256": 402,
+    "local/film-auto-worker-runtime-v1/SHA256SUMS": 144,
+    "local/film-status-positive-v4/SHA256SUMS": 33,
+    "local/film-status-positive-scope-v1/SHA256SUMS": 3
+  },
+  "unique_references": 656,
+  "verified": true,
+  "scope": "original frozen packet/source/raw pins; reviewer read/hash only"
+}

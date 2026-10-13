@@ -1,0 +1,42 @@
+{
+  "app_sha256": "31e87f64e63febcfe099cd68a1acc73eefacd31b77151bd74c18d41509152abe",
+  "attempt1_outer_sha256": "bdd29204524772d1d7786411ea04fda39c9ae3138b91d4ef96e1ecf1c836702c",
+  "attempt1_session_sha256": "025343e8d5a19efbc1d63611d2d381aaf25a004922ad6598ebadc8732da1b0d0",
+  "attempt2_capture_sha256": "1a8a70e5af624df3773c348ec9928e2ce0921c10cc7f4dd6878bc888ec50517c",
+  "attempt2_outer_sha256": "3ace795370182565912d3517e4b1b6426dc07055e699c0272dca1a67310e1b82",
+  "attempt2_session_sha256": "6559d3f36c3936531a8cef036ace0dab51958dd6d99e31ab22a2b0e83dc8f3c1",
+  "attempt2_stagepins_sha256": "e518c8d525e983d75c90808600a72ed0560444c33182abfe30e016c09e5cd31f",
+  "capture": {
+    "path": "/tmp/test/app-capture.png",
+    "sha256": "1a8a70e5af624df3773c348ec9928e2ce0921c10cc7f4dd6878bc888ec50517c",
+    "size": 64517
+  },
+  "service_process": {
+    "argv": "/tmp/test/stage/bin/kde-index-service --data-dir /tmp/test/profile/data --socket /tmp/test/profile/service.sock --probe /tmp/test/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /tmp/test/models/embeddinggemma-2-Q8_0.gguf --image-model /tmp/test/models/mmproj-embeddinggemma-2-Q8_0.gguf --film-tokenizer /tmp/test/stage/bin/semanticlens-film-tokenizer --film-tokenizer-sha256 bca52b5f2945f2959b7493f3cd6d48f0cbce35547d6e215b95b555f643659a1b --film-worker /tmp/test/stage/bin/semanticlens-film-worker --film-worker-sha256 dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5",
+    "exe": "/tmp/test/stage/bin/kde-index-service",
+    "pid": 65,
+    "ppid": 1,
+    "sha256": "a59a737bb7e27bcd593d237e36ab113742f566dadd25418d316f1ffebb28f6e3",
+    "startticks": "10191901"
+  },
+  "service_sha256": "a59a737bb7e27bcd593d237e36ab113742f566dadd25418d316f1ffebb28f6e3",
+  "stage_pins_sha256": "e518c8d525e983d75c90808600a72ed0560444c33182abfe30e016c09e5cd31f",
+  "tokenizer_process": {
+    "argv": "/tmp/test/stage/bin/semanticlens-film-tokenizer /tmp/test/models/embeddinggemma-2-Q8_0.gguf",
+    "exe": "/tmp/test/stage/bin/semanticlens-film-tokenizer",
+    "pid": 107,
+    "ppid": 65,
+    "sha256": "bca52b5f2945f2959b7493f3cd6d48f0cbce35547d6e215b95b555f643659a1b",
+    "startticks": "10192150"
+  },
+  "tokenizer_sha256": "bca52b5f2945f2959b7493f3cd6d48f0cbce35547d6e215b95b555f643659a1b",
+  "worker_process": {
+    "argv": "/tmp/test/stage/bin/semanticlens-film-worker /tmp/test/models/embeddinggemma-2-Q8_0.gguf 6",
+    "exe": "/tmp/test/stage/bin/semanticlens-film-worker",
+    "pid": 111,
+    "ppid": 65,
+    "sha256": "dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5",
+    "startticks": "10192252"
+  },
+  "worker_sha256": "dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5"
+}

@@ -22,6 +22,7 @@ source, sanitized records and hashes; those hashes do not substitute for binarie
 | --- | --- |
 | Source identity and references | Explicit work/edition/source IDs, source hashes, Unicode codepoint anchors, paired analysis/claim IDs and nonempty spans. Malformed and stale references reject without returning evidence. |
 | Ingestion and interpretation | SRT/VTT/text/Markdown/PDF controls, strict schema and token limits, duplicate/superseding imports, separate source/analysis lanes and literal-source precedence. Interpretations remain contestable; prior interpretations require explicit opt-in. |
+| Ranking and negative controls | Raw source/analysis replies distinguish source literals from interpretation matches. Repeated anchored claims do not add lane votes; misleading interpretations remain unreviewed. Negation and no-answer queries can return suggestions with an explicit absence-calibration warning. These are controls, not retrieval-quality success. |
 | Privacy and lifecycle | Selected-root/descriptor checks, traversal and source-swap controls, atomic promotion, interruption/recovery, isolated ENOSPC, derived-vector corruption, wipe/reimport and film-database failure isolation. These are bounded controls, not all possible races or forensic erasure. |
 | Worker correctness | 146 exact vector-byte comparisons across two and six threads; separate shared-model/context, executing-cancellation/reuse and publication-race controls. Transport pending states are not substituted for actual model execution. |
 | Full-source coverage | All 512 passage vectors match their own stored input rows; all 2,048 physical source lines are covered, including the final unit. Text/image indexing progresses before film completion. Instrumented duration is not quiet throughput. |
@@ -59,8 +60,11 @@ redistributable [pilot fixtures](../film/fixtures/v1/README.md) for reproduction
 Preserve the existing producer when opening an existing file index; binary or
 representation changes require an explicit compatible profile or rebuild.
 
-The evidence export is a disclosed public subset with original and derivative
-hashes. Sanitized paths are not original execution paths. Full internal immutable
+The [public evidence](../evidence/film-s1/README.md) contains a disclosed subset
+with original and derivative hashes, independent reports, raw API replies and
+isolated native captures. Verify its delivered files with
+`(cd evidence/film-s1 && sha256sum --check SHA256SUMS)`.
+Sanitized paths are not original execution paths. Full internal immutable
 records retain failure attempts, source pins, raw results and reviewed scope
 corrections; excluded model weights, indexes and large observer dumps are not
 represented as publicly replayable artifacts.
@@ -70,7 +74,7 @@ No test may silently fall back to a personal desktop. Hosted CI checks a clean
 build, staged installation and model-free offscreen startup; it does not replace
 model-backed target evidence.
 
-The next research phase is the separately authorized
-[S2 comparison](FILM_QUALITY_PLAN.md). S1 does not establish a benefit from LLM
+The proposed [S2 comparison](FILM_QUALITY_PLAN.md) requires separate authorization.
+S1 does not establish a benefit from LLM
 analysis, calibrated no-answer behavior, playback alignment, cloud enrichment,
 10,000-film capacity or a new release. Stop at this review boundary.

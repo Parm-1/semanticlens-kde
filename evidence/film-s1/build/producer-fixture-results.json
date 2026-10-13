@@ -1,0 +1,457 @@
+{
+  "reference_made_with": "llama.cpp b11461",
+  "parity": [
+    {
+      "name": "query",
+      "cosine": 0.9999194031731116,
+      "dot": 0.9999193770424153,
+      "norm": 1.000000003788847,
+      "pass_threshold": true
+    },
+    {
+      "name": "query-bn",
+      "cosine": 0.999929578383413,
+      "dot": 0.9999295409092257,
+      "norm": 0.9999999774589242,
+      "pass_threshold": true
+    },
+    {
+      "name": "query-ar",
+      "cosine": 0.9999212211949063,
+      "dot": 0.9999211795088857,
+      "norm": 0.9999999707384867,
+      "pass_threshold": true
+    },
+    {
+      "name": "document",
+      "cosine": 0.999791778842563,
+      "dot": 0.9997917117943279,
+      "norm": 0.9999999695014747,
+      "pass_threshold": true
+    },
+    {
+      "name": "document-long",
+      "cosine": 0.999921351551035,
+      "dot": 0.9999213993386322,
+      "norm": 1.0000000273761833,
+      "pass_threshold": true
+    },
+    {
+      "name": "screen-280",
+      "cosine": 0.9999367621652742,
+      "dot": 0.9999367966948262,
+      "norm": 1.0000000430796605,
+      "pass_threshold": true
+    },
+    {
+      "name": "photo-140",
+      "cosine": 0.9999274854275775,
+      "dot": 0.9999274649217246,
+      "norm": 1.0000000159532105,
+      "pass_threshold": true
+    },
+    {
+      "name": "frame-70",
+      "cosine": 0.9999130783619887,
+      "dot": 0.9999130245782671,
+      "norm": 0.9999999935597682,
+      "pass_threshold": true
+    }
+  ],
+  "negatives": [
+    {
+      "name": "negative-unprompted-query",
+      "cosine": 0.923620581727172,
+      "below_parity_threshold": true
+    },
+    {
+      "name": "negative-screen-budget70",
+      "cosine": 0.9515784682632673,
+      "below_parity_threshold": true
+    }
+  ],
+  "error_cases": [
+    {
+      "name": "negative-invalid-budget",
+      "ok": false,
+      "error": "unsupported image budget",
+      "vector_absent": true
+    },
+    {
+      "name": "negative-missing-file",
+      "ok": false,
+      "error": "unreadable image or wrong media type",
+      "vector_absent": true
+    },
+    {
+      "name": "negative-wrong-budget-type",
+      "ok": false,
+      "error": "[json.exception.type_error.302] type must be number, but is string",
+      "vector_absent": true
+    },
+    {
+      "name": "negative-missing-text",
+      "ok": false,
+      "error": "[json.exception.out_of_range.403] key 'text' not found",
+      "vector_absent": true
+    }
+  ],
+  "recovery_query_cosine": 0.9999183428125172,
+  "retrieval": [
+    {
+      "id": "travel-q",
+      "relevant": [
+        "travel"
+      ],
+      "scores": [
+        [
+          "travel",
+          0.7661097582294752
+        ],
+        [
+          "meeting",
+          0.5782734915776844
+        ],
+        [
+          "library",
+          0.5678192530895368
+        ],
+        [
+          "screen",
+          0.5653213683969405
+        ],
+        [
+          "identifier",
+          0.533646688302945
+        ],
+        [
+          "landscape",
+          0.5327582206527323
+        ],
+        [
+          "bread",
+          0.4792848053601314
+        ],
+        [
+          "payment",
+          0.47055949222663507
+        ]
+      ],
+      "rank": 1,
+      "seconds": 0.025648698
+    },
+    {
+      "id": "payment-q",
+      "relevant": [
+        "payment"
+      ],
+      "scores": [
+        [
+          "payment",
+          0.8445191172386104
+        ],
+        [
+          "identifier",
+          0.5873876055165398
+        ],
+        [
+          "screen",
+          0.5865780429111523
+        ],
+        [
+          "library",
+          0.524197066101395
+        ],
+        [
+          "bread",
+          0.5151451721035617
+        ],
+        [
+          "travel",
+          0.49322388725344796
+        ],
+        [
+          "meeting",
+          0.48392028985615776
+        ],
+        [
+          "landscape",
+          0.48336706852703387
+        ]
+      ],
+      "rank": 1,
+      "seconds": 0.020942576
+    },
+    {
+      "id": "meeting-q",
+      "relevant": [
+        "meeting"
+      ],
+      "scores": [
+        [
+          "meeting",
+          0.7645035347253725
+        ],
+        [
+          "identifier",
+          0.6225813883451993
+        ],
+        [
+          "screen",
+          0.5963974298311779
+        ],
+        [
+          "library",
+          0.5770017013449835
+        ],
+        [
+          "travel",
+          0.5680438956253059
+        ],
+        [
+          "payment",
+          0.5528172867419832
+        ],
+        [
+          "landscape",
+          0.5199309579909875
+        ],
+        [
+          "bread",
+          0.5198089917818232
+        ]
+      ],
+      "rank": 1,
+      "seconds": 0.025804993
+    },
+    {
+      "id": "bread-q",
+      "relevant": [
+        "bread"
+      ],
+      "scores": [
+        [
+          "bread",
+          0.8089256162247884
+        ],
+        [
+          "screen",
+          0.5929382976663085
+        ],
+        [
+          "identifier",
+          0.5718319609124899
+        ],
+        [
+          "library",
+          0.5572246852855802
+        ],
+        [
+          "landscape",
+          0.5374563680756558
+        ],
+        [
+          "travel",
+          0.5348265087181588
+        ],
+        [
+          "meeting",
+          0.5342436147755764
+        ],
+        [
+          "payment",
+          0.5056338408366211
+        ]
+      ],
+      "rank": 1,
+      "seconds": 0.020809004
+    },
+    {
+      "id": "image-q",
+      "relevant": [
+        "landscape"
+      ],
+      "scores": [
+        [
+          "landscape",
+          0.7747603226019618
+        ],
+        [
+          "screen",
+          0.5828996173975421
+        ],
+        [
+          "travel",
+          0.5411189668735781
+        ],
+        [
+          "library",
+          0.5372765251879279
+        ],
+        [
+          "identifier",
+          0.5360685734046304
+        ],
+        [
+          "bread",
+          0.5315398220693716
+        ],
+        [
+          "meeting",
+          0.5011491362612638
+        ],
+        [
+          "payment",
+          0.4860511478283717
+        ]
+      ],
+      "rank": 1,
+      "seconds": 0.022834637
+    },
+    {
+      "id": "screen-q",
+      "relevant": [
+        "screen"
+      ],
+      "scores": [
+        [
+          "screen",
+          0.6716567490633354
+        ],
+        [
+          "identifier",
+          0.6041428744912339
+        ],
+        [
+          "payment",
+          0.5618543227820285
+        ],
+        [
+          "landscape",
+          0.5413181083360209
+        ],
+        [
+          "library",
+          0.5368944867554503
+        ],
+        [
+          "meeting",
+          0.5340975680510398
+        ],
+        [
+          "bread",
+          0.5312165748139006
+        ],
+        [
+          "travel",
+          0.5202070795809158
+        ]
+      ],
+      "rank": 1,
+      "seconds": 0.025142392
+    },
+    {
+      "id": "identifier-q",
+      "relevant": [
+        "identifier"
+      ],
+      "scores": [
+        [
+          "identifier",
+          0.7929944094836555
+        ],
+        [
+          "screen",
+          0.5983503733896355
+        ],
+        [
+          "library",
+          0.5922855442222132
+        ],
+        [
+          "payment",
+          0.5823855138594713
+        ],
+        [
+          "meeting",
+          0.5707002556721463
+        ],
+        [
+          "landscape",
+          0.5635426339667522
+        ],
+        [
+          "bread",
+          0.5518696908168718
+        ],
+        [
+          "travel",
+          0.5459326505384154
+        ]
+      ],
+      "rank": 1,
+      "seconds": 0.020002081
+    },
+    {
+      "id": "absent-q",
+      "relevant": [],
+      "scores": [
+        [
+          "identifier",
+          0.6223720043572223
+        ],
+        [
+          "screen",
+          0.577111665557763
+        ],
+        [
+          "library",
+          0.5047329444124972
+        ],
+        [
+          "travel",
+          0.5010955756480728
+        ],
+        [
+          "bread",
+          0.4891069248042981
+        ],
+        [
+          "meeting",
+          0.48283607526610633
+        ],
+        [
+          "payment",
+          0.48020377755429483
+        ],
+        [
+          "landscape",
+          0.4670789716312435
+        ]
+      ],
+      "rank": null,
+      "seconds": 0.021858325
+    }
+  ],
+  "retrieval_semantic_image": {
+    "queries": 6,
+    "top1": 6,
+    "top5": 6
+  },
+  "info": {
+    "backend": "CPU",
+    "dimension": 768,
+    "load_seconds": 2.859098119,
+    "max_tokens": 2048,
+    "model": "google/embeddinggemma-2",
+    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+    "pipeline": "digup-vectors1-linux-cpu-probe1",
+    "runtime": "llama.cpp-b11461+no-logits"
+  },
+  "request_count": 28,
+  "notes": [
+    "Diagnostic synthetic corpus; no release retrieval/Baloo benchmark or abstention proof.",
+    "Seconds use C++ steady_clock around request execution; load_seconds includes model/media warmup and two text warmups. RSS uses Linux resource.getrusage for the sole child in a fresh Python runner."
+  ],
+  "text_only_query_cosine": 0.9999183428125172
+}

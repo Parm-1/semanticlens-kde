@@ -1,0 +1,8 @@
+{
+  "scope": "Parent supplement beyond the export155: all300 original request/reply objects from the corrected serial69-control run, literal path substitution only. Not shared-worker qualification or a model-free result.",
+  "original": "local/film-service-reproduction-v1/run/runner-records.json",
+  "original_sha256": "dc7728650abe3e3439ac30f843de5c42c2fb9fc49898a7c99f6600803f279144",
+  "derivative": "build/service-reproduction-full-api-records.json",
+  "derivative_sha256": "4bf9b17ea7865a43d14844dc5f6128bf814c813e65b7561487183b194d63e54f",
+  "request_reply_pairs": 300
+}

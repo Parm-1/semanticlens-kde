@@ -1,0 +1,11 @@
+# Worker-enabled dedicated KDE native controls
+
+The accepted native helper (774234...) loads current production Main.qml, FilmPage.qml and film backend; source hashes match its frozen repair-3 build. The ordinary backend differs only by optional-worker launch integration, which this explicit-service harness does not use. This is native QtTest validation, not a standalone31 app-launch claim.
+
+All79 established native checks pass against a59 service/dff worker at budget2. Explicit worker path/hash and expected service SHA cross the separate KWin display/private D-Bus/profile/read-only mounts. Actual service argv and successful query_producer replies identify the selected worker. Both controlled service launches use the same arguments. query-provider-readback.json indexes successful reply events (including deliberately held/delivered events), not a unique-query or causal-order count. No host display/clipboard/personal session is bound.
+
+Checks cover source/hybrid and literal/interpretation distinction, prior controls, Unicode/PDF locators, keyboard reveal, normal/720x520 layout, status/errors, stale replies, controlled restart/reconnect and app/RunnerManager overlap during indexing. The one-shot relay/late-reply repairs are unchanged. Raw replies, phase proofs, helper checks and captures are retained. Parent inspected source-revealed.png and narrow.png: text and compact controls render legibly. This is isolated KDE evidence, not personal-desktop validation.
+
+Root27057 exits0; UI helper0 and both services0, empty owned groups and upstream socket absent. Outer namespace0, dedicated Wayland socket removed/environment valid/closed true. Only regular files are archived. omitted-runtime-inodes.json records the residual accessibility-bus socket inode from the closed namespace; not every runtime inode is claimed absent. Models are not copied. Read-only snapshot bytes were verified after the non-regular inode copy refusal.
+
+Real standalone app source-opening and auto-worker startup remain separate. Earlier9e partial attempts are preserved. No general race/real-film quality/whole-S1/release claim follows. Model/binary/helper arguments are in run summaries. Usage/cost is unknown.

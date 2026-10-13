@@ -1,0 +1,176 @@
+{
+  "scope": "actual pending-call joins and successful stdio flush endpoints, not math/kernel/quiet latency",
+  "fragments": 12654,
+  "lines": 12654,
+  "incomplete": false,
+  "actor_tid_sets": [
+    {
+      "pid": 1287116,
+      "fd": 11,
+      "direction": "request",
+      "pipe": "pipe:[7055298]",
+      "tids": [
+        1287117
+      ]
+    },
+    {
+      "pid": 1287118,
+      "fd": 1,
+      "direction": "output",
+      "pipe": "pipe:[7055299]",
+      "tids": [
+        1287118
+      ]
+    },
+    {
+      "pid": 1287116,
+      "fd": 17,
+      "direction": "request",
+      "pipe": "pipe:[7055308]",
+      "tids": [
+        1287117
+      ]
+    },
+    {
+      "pid": 1287124,
+      "fd": 1,
+      "direction": "output",
+      "pipe": "pipe:[7055309]",
+      "tids": [
+        1287124
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "source_units": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "formatted_sha256": "171239656a828e6b8854275d89aae659c9a5cb13b22b64d4627f8f62046b4756",
+      "bytes": 2270,
+      "helper_tokens": 567,
+      "background_uuid": "937843e0-c134-47a7-9e08-e71c473448ef",
+      "query_uuid": "eae4a260-5004-41e2-ab45-627124391461",
+      "client_id": "cause-95",
+      "client_send_ns": 91199480526498,
+      "background_reply_flush_ns": 91201103866351,
+      "query_request_ns": 91201123517966,
+      "query_reply_flush_ns": 91201174553679,
+      "client_parsed_ns": 91201201486700,
+      "service": 1287116,
+      "probe": 1287118,
+      "background_vector": {
+        "sha256": "a41ceb2e154f6667e2bf62d2b3a09773554590195336768106d04609eccde5ce",
+        "norm": 0.999999969359434
+      },
+      "query_vector": {
+        "sha256": "295c63755947d93f1b6361240ddfee69c5335bda393f8d98fe5ea4ab924dda11",
+        "norm": 1.0000000438704992
+      },
+      "measured": {
+        "remaining_background_ms": 1623.339853,
+        "dispatch_wait_ms": 1642.991468,
+        "query_pipe_interval_ms": 51.035713,
+        "post_reply_ms": 26.933021
+      },
+      "after_background_flush_ms": 19.651615
+    },
+    {
+      "source_units": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "formatted_sha256": "117e518e74b5469a6b2df6fc40c67574d9eae4d6365320b0f9015138da027f53",
+      "bytes": 2270,
+      "helper_tokens": 567,
+      "background_uuid": "0be1f86b-fa01-47e3-a807-3a97871005f1",
+      "query_uuid": "f4db858c-3226-44c2-8ccb-2c25e685a841",
+      "client_id": "cause-96",
+      "client_send_ns": 91201617615212,
+      "background_reply_flush_ns": 91203000570787,
+      "query_request_ns": 91203017082557,
+      "query_reply_flush_ns": 91203068657839,
+      "client_parsed_ns": 91203098903801,
+      "service": 1287116,
+      "probe": 1287118,
+      "background_vector": {
+        "sha256": "849bbc7bc7656c60b0ae07fbcf72ce852043c801db093c19ba202ece0fc6f4c6",
+        "norm": 1.000000018626504
+      },
+      "query_vector": {
+        "sha256": "8542dd1c3842093f2e8780d9d0339f4f42c448893b76de3e9e39dc8d5412ae6d",
+        "norm": 1.000000014960984
+      },
+      "measured": {
+        "remaining_background_ms": 1382.955575,
+        "dispatch_wait_ms": 1399.467345,
+        "query_pipe_interval_ms": 51.575282,
+        "post_reply_ms": 30.245962
+      },
+      "after_background_flush_ms": 16.51177
+    },
+    {
+      "source_units": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "formatted_sha256": "0bfdb8d1c44bd099abfb1926abfda8e3d2cdf4a37ee4ef7567b3fb12669a1696",
+      "bytes": 2272,
+      "helper_tokens": 569,
+      "background_uuid": "055a53b8-562a-40c8-b9dc-62abc626a114",
+      "query_uuid": "2fa8cc43-b359-47d9-857f-6ca15b2c0ec9",
+      "client_id": "cause-97",
+      "client_send_ns": 91203484210897,
+      "background_reply_flush_ns": 91204912036027,
+      "query_request_ns": 91204935544709,
+      "query_reply_flush_ns": 91204979583752,
+      "client_parsed_ns": 91205008738626,
+      "service": 1287116,
+      "probe": 1287118,
+      "background_vector": {
+        "sha256": "c0114dbf2d0cf0a94b1ee32998975784fd66baa59562cb7700f26fbe09f7a3fb",
+        "norm": 0.9999999966681313
+      },
+      "query_vector": {
+        "sha256": "c57aa21351b36eda0acbe5f2dfecfd7b2491df394aebf895ec65b1891dd4351d",
+        "norm": 0.9999999532630701
+      },
+      "measured": {
+        "remaining_background_ms": 1427.82513,
+        "dispatch_wait_ms": 1451.333812,
+        "query_pipe_interval_ms": 44.039043,
+        "post_reply_ms": 29.154874
+      },
+      "after_background_flush_ms": 23.508682
+    }
+  ],
+  "closure": {
+    "exit": 0,
+    "remaining_group": [],
+    "wall_seconds": 26.74040629900992,
+    "usage_cost": "unknown"
+  },
+  "invalid_attempts": [
+    {
+      "status": "failed_or_unqualified",
+      "error": "RuntimeError('no positive observer capture')",
+      "exit": 0,
+      "remaining_group": [],
+      "wall_seconds": 9.542685164007707
+    },
+    {
+      "status": "failed_or_unqualified",
+      "error": "AssertionError(('missing/duplicate actual output', 'fd7a6cab-bfde-4d72-a0f7-4c5311f8afb6'))",
+      "exit": 0,
+      "remaining_group": [],
+      "wall_seconds": 10.394871340991813
+    }
+  ]
+}
