@@ -48,7 +48,7 @@ the service, whose database persists the complete model/pipeline/runtime identit
 An incompatible identity is refused and requires deliberate index rebuilding;
 existing vectors are never silently mixed with a new producer.
 
-The redesigned development interface also installs `semanticlens-media` beside
+The redesigned interface also installs `semanticlens-media` beside
 the app. It renders local thumbnail and preview snapshots in separate processes;
 copying only the GUI executable will omit this helper. Media cancellation uses
 Linux process-group pidfds and requires kernel 6.9 or newer. On older kernels,

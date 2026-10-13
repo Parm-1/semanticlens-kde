@@ -9,7 +9,7 @@ file. Search runs locally and complements KDE’s existing Baloo index.
 
 ![SemanticLens search workspace with thumbnails and a matching PDF preview](docs/images/search-workspace.png)
 
-The development interface follows KDE's system colors. The screenshots use
+The interface follows KDE's system colors. The screenshots use
 synthetic documents and images; your selected folders appear in the same layout.
 
 ## Features
@@ -60,14 +60,14 @@ The executable remains `kde-index`, and the KRunner plugin ID remains
 
 ## Release status
 
-**[v0.1.0-rc1 is published](https://github.com/Parm-1/semanticlens-kde/releases/tag/v0.1.0-rc1).**
-The search-first redesign described above is a development change; the rc1
-downloads retain the earlier interface. Build this branch to try the redesign.
+**Latest prerelease: [v0.1.0-rc2](https://github.com/Parm-1/semanticlens-kde/releases/tag/v0.1.0-rc2).**
+This release includes the search-first workspace, thumbnails and side preview.
 Source and Arch CPU runtime archives, checksums and provenance receipts are
-available on the release page. The [hosted CPU build and installation checks](https://github.com/Parm-1/semanticlens-kde/actions/runs/38314493646)
-passed; all five downloaded assets were verified against the assembled files.
+available on the release page. The [redesign build and installation checks](https://github.com/Parm-1/semanticlens-kde/actions/runs/38323543814)
+passed, alongside [native interaction and media checks](evidence/redesign-ui-v1/report.md).
 The native archive requires compatible system libraries and the recorded CPU
-instructions; it is not a self-contained installer. Other distributions and GPU
+instructions; it is not a self-contained installer. Thumbnail and preview
+rendering requires **Linux 6.9 or newer**. Other distributions and GPU
 backends remain unvalidated.
 
 On a fixed, authored 28-file corpus, semantic top-five recall was 20/20, compared

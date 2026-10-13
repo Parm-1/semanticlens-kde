@@ -1152,3 +1152,41 @@ push internal root history. No merge or replacement release is authorized by thi
 request. rc1 and earlier sealed evidence remain unchanged. All parent and child
 build/runtime/tool handles are terminal; no watcher/model/helper process needs
 resuming. The owner carries final packaging/CI repairs and delivery.
+
+### Redesign delivered — 2026-10-12
+
+The new human redesign request is implemented, target-validated and delivered.
+Public PR https://github.com/Parm-1/semanticlens-kde/pull/1 is open at
+1b457bea4753d32d305f7be2916dbabc132f318d. Both exact-head hosted runs passed
+(clean CPU build, installation, offline interface startup):38323497611 and
+38323543814. Their API readbacks are local/redesign-hosted-ci-{push,pr}-v1.json.
+
+Local candidate local/redesign-candidate-v1 contains source/native archives,
+checksums and original receipts, assembled from root8a4af85f23d5d0cf18f91176c2b83bb2456126b7.
+All2102 public source files match that archive. Repeated assemblies produced
+byte-identical archives and receipts; all22 native runtime/notice hashes match
+the tested stage. Extracted compiled GUI startup passed in an empty disposable
+profile (local/redesign-package-startup-v1), without downloads or indexing. The
+existing validated CPU producer was reused exactly; no new inference or ranking
+claim is made. Rendered screenshots are under docs/images.
+
+Implementation, native validation, independent media review, packaging and CI
+are complete. No parent/child runtime, shell or watch handle remains live. The
+first-release goal remains complete; no new persisted goal was inferred. There
+is no unanswered engineering question. The remaining external action is merging
+the reviewable PR and publishing a successor release if the human requests it.
+No merge, live-session installation or rc1 replacement has been performed.
+This checkpoint is internal delivery bookkeeping; the tested public source and
+frozen evidence/archive files remain unchanged.
+
+### rc2 publication authorized — 2026-10-12
+
+Actual trigger: the human explicitly requested merging PR1 and publishing the
+redesigned SemanticLens as v0.1.0-rc2. That authorization supersedes the previous
+merge/release boundary for this exact candidate. PR1 merged at public commit
+6d1e581cd8b2ce7ab58188db8b97af68a752b026 after both exact-head checks passed.
+The validated code and frozen evidence are unchanged. rc2 documentation and
+AppStream metadata are updated; local metadata validators pass. Next: assemble
+rc2 from this metadata-only successor and the accepted22-file stage, verify its
+complete source mapping to the public tag, publish and download-check all assets.
+rc1 stays immutable. Owner is this thread; no new persisted goal was created.
