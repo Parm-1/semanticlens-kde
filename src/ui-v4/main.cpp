@@ -4,6 +4,9 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QQuickWindow>
+#include <QQuickStyle>
+#include <QImageReader>
+#include <QIcon>
 #include <QCommandLineParser>
 #include <QStandardPaths>
 #include <QDir>
@@ -12,8 +15,15 @@
 
 int main(int argc, char **argv) {
     KIconTheme::initTheme();
+    // Follow the desktop's controls and palette, while allowing Qt's explicit
+    // style override for accessibility, development and other desktops.
+    if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE"))
+        QQuickStyle::setStyle("org.kde.desktop");
+    QImageReader::setAllocationLimit(64);
     QApplication app(argc, argv);
     app.setApplicationName("kde-index"); app.setApplicationDisplayName("SemanticLens for KDE"); app.setApplicationVersion("0.1.0");
+    app.setDesktopFileName("org.kdeindex.Search");
+    app.setWindowIcon(QIcon::fromTheme("system-search"));
     QCommandLineParser parser; parser.addHelpOption(); parser.addVersionOption();
     const auto data = QStandardPaths::writableLocation(QStandardPaths::AppLocalDataLocation);
     const auto bin = QCoreApplication::applicationDirPath();

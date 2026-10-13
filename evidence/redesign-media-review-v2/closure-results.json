@@ -1,0 +1,61 @@
+{
+  "exit": 0,
+  "observed_processes": [
+    {
+      "pid": 609928,
+      "start_ticks": "5650129",
+      "ppid": 609927,
+      "pgid": 609926
+    },
+    {
+      "pid": 609930,
+      "start_ticks": "5650155",
+      "ppid": 609928,
+      "pgid": 609930
+    },
+    {
+      "pid": 609932,
+      "start_ticks": "5650174",
+      "ppid": 609928,
+      "pgid": 609932
+    },
+    {
+      "pid": 609933,
+      "start_ticks": "5650175",
+      "ppid": 609932,
+      "pgid": 609932
+    },
+    {
+      "pid": 609941,
+      "start_ticks": "5650187",
+      "ppid": 609928,
+      "pgid": 609941
+    },
+    {
+      "pid": 609942,
+      "start_ticks": "5650188",
+      "ppid": 609941,
+      "pgid": 609941
+    },
+    {
+      "pid": 610002,
+      "start_ticks": "5650585",
+      "ppid": 609928,
+      "pgid": 610002
+    },
+    {
+      "pid": 610003,
+      "start_ticks": "5650586",
+      "ppid": 610002,
+      "pgid": 610002
+    },
+    {
+      "pid": 610004,
+      "start_ticks": "5650586",
+      "ppid": 610003,
+      "pgid": 610002
+    }
+  ],
+  "live_observed_processes": [],
+  "remaining_temp_entries": []
+}

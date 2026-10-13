@@ -1,4 +1,5 @@
 #include "backend.h"
+#include "media_group.h"
 #include <QCoreApplication>
 #include <QDesktopServices>
 #include <QDir>
@@ -12,6 +13,43 @@
 #include <sys/socket.h>
 #include <signal.h>
 #include <unistd.h>
+#include <sys/prctl.h>
+#include <QSet>
+#include <QThread>
+#include <QSocketNotifier>
+
+struct MediaJob : QObject {
+    QProcess process;
+    QTimer timeout;
+    std::shared_ptr<QTemporaryDir> directory = std::make_shared<QTemporaryDir>(QDir::tempPath() + "/semanticlens-media-XXXXXX");
+    QVariantMap result;
+    QString key;
+    quint64 sequence = 0;
+    bool preview = false, canceled = false;
+    std::shared_ptr<MediaGroup> group;
+    int identitySocket[2] {-1, -1};
+    QSocketNotifier *identityNotifier = nullptr;
+    QString unavailableReason;
+    ~MediaJob() override { for (auto fd : identitySocket) if (fd >= 0) ::close(fd); }
+    void receiveIdentity(bool wait = false) {
+        if (identitySocket[0] < 0) return;
+        if (wait) { struct pollfd ready {identitySocket[0], POLLIN, 0}; ::poll(&ready, 1, 1000); }
+        bool unsupported = false; group = receiveMediaGroup(identitySocket[0], &unsupported);
+        if (identityNotifier) identityNotifier->setEnabled(false);
+        acknowledgeMediaGroup(identitySocket[0], bool(group) && !canceled);
+        for (auto &fd : identitySocket) { if (fd >= 0) ::close(fd); fd = -1; }
+        if (!group) unavailableReason = unsupported ? "Local media previews require Linux 6.9 or newer with pidfd process-group signaling." : "Unable to establish safe local media cleanup.";
+        if (canceled && group) group->signal(SIGKILL);
+    }
+    explicit MediaJob(QObject *parent) : QObject(parent) { timeout.setSingleShot(true); }
+    void cancel() {
+        canceled = true; timeout.stop();
+        if (group) group->signal(SIGKILL);
+    }
+};
+static bool beneath(const QString &path, const QString &root) {
+    return root == "/" ? path.startsWith('/') : path == root || path.startsWith(root + "/");
+}
 
 QString Backend::indexingNotice() const {
     if (!m_status.value("scan_error").toString().isEmpty())
@@ -39,20 +77,6 @@ QVariantList Backend::failures() const {
 }
 
 Backend::Backend(AppPaths paths, QObject *parent) : QObject(parent), m_paths(std::move(paths)) {
-    m_previewTimeout.setSingleShot(true);
-    connect(&m_previewTimeout, &QTimer::timeout, this, [this] {
-        m_preview.kill(); m_previewMessage = "Page preview timed out."; emit previewChanged();
-    });
-    connect(&m_preview, &QProcess::finished, this, [this](int code, auto state) {
-        m_previewTimeout.stop();
-        if (code == 0 && state == QProcess::NormalExit && QFileInfo::exists(m_previewOutput)) {
-            m_previewUrl = QUrl::fromLocalFile(m_previewOutput); m_previewMessage.clear();
-        } else if (m_previewMessage == "Rendering page…") m_previewMessage = "Page preview unavailable. The extracted passage is shown below.";
-        emit previewChanged();
-    });
-    connect(&m_preview, &QProcess::errorOccurred, this, [this](auto) {
-        m_previewTimeout.stop(); m_previewMessage = "Page preview unavailable. Check that pdftoppm is installed."; emit previewChanged();
-    });
     m_poll.setInterval(1000);
     m_debounce.setSingleShot(true);
     m_debounce.setInterval(250);
@@ -108,13 +132,25 @@ Backend::~Backend() {
     // Disconnect while every callback's state is still alive.
     m_socket.disconnect(this);
     m_download.disconnect(this);
-    m_preview.disconnect(this);
-    m_poll.stop(); m_debounce.stop(); m_retry.stop(); m_previewTimeout.stop();
+
+    m_poll.stop(); m_debounce.stop(); m_retry.stop();
     m_socket.abort();
     if (m_download.state() != QProcess::NotRunning) {
         m_download.kill(); m_download.waitForFinished(1000);
     }
-    closePreview();
+    closePreview(); clearThumbnails();
+    for (auto job : m_mediaJobs) {
+        job->process.disconnect(this);
+        // A starting child is blocked before exec until descriptor adoption.
+        // Reject that gate during shutdown, rather than waiting for GUI events.
+        job->cancel();
+        if (!job->group) job->receiveIdentity(true);
+        if (job->group) job->group->signal(SIGKILL);
+        job->process.waitForFinished(1000);
+        if (job->group) { QThread::msleep(25); job->group->signal(SIGKILL); }
+        delete job;
+    }
+    m_mediaJobs.clear();
 }
 
 // Linux process start ticks bind ownership across PID reuse. Zombies have exited.
@@ -212,26 +248,27 @@ void Backend::receive() {
             m_statusId.clear();
             if (reply.value("ok").toBool()) {
                 const bool wasBusy = busy(), wasReady = modelReady();
-                const auto previousRevision = m_status.value("index_revision");
+                const auto previousRevision = m_status.value("index_revision"), previousRoots = m_status.value("roots");
                 m_status = reply.value("status").toObject();
                 const bool indexChanged = !previousRevision.isUndefined() && previousRevision != m_status.value("index_revision");
-                if (indexChanged || (wasReady && !modelReady())) invalidateResults();
+                const bool rootsChanged = previousRoots.isArray() && previousRoots != m_status.value("roots");
+                if (indexChanged || rootsChanged || (wasReady && !modelReady())) invalidateResults();
                 m_poll.setInterval(busy() ? 500 : 2000);
                 m_message = m_status.value("error").toString();
                 if (m_message.isEmpty()) m_message = !modelReady() ? (m_status.value("phase").toString() == "verifying" ? "Verifying search service…" : "Search service is not ready. Use Retry search to try again.") : busy() ? "Indexing selected folders…" : paused() ? "Indexing paused" : "Ready";
-                if ((indexChanged || (wasBusy && !busy()) || (!wasReady && modelReady())) && !m_query.trimmed().isEmpty()) m_debounce.start();
+                if ((indexChanged || rootsChanged || (wasBusy && !busy()) || (!wasReady && modelReady())) && !m_query.trimmed().isEmpty()) m_debounce.start();
                 emit changed();
             } else { m_message = reply.value("error").toString(); emit changed(); }
         } else if (id == m_searchId) {
-            m_searchId.clear();
+            m_searchId.clear(); closePreview();
             if (reply.value("ok").toBool()) {
                 const auto observed = reply.value("index_revision"), known = m_status.value("index_revision");
                 if (observed.isDouble() && known.isDouble() && observed.toDouble() < known.toDouble()) {
                     m_results.clear(); m_debounce.start();
-                } else m_results = reply.value("results").toArray().toVariantList();
+                } else m_results = reply.value("results").toArray().toVariantList().mid(0, 20);
             }
             else { m_results.clear(); m_message = reply.value("error").toString(); emit changed(); }
-            emit resultsChanged();
+            prepareThumbnails(); emit resultsChanged(); emit changed();
         } else if (!reply.value("ok").toBool() && reply.value("error").toString() != "canceled") {
             m_message = reply.value("error").toString(); emit changed();
         } else if (reply.value("accepted").toBool()) {
@@ -243,14 +280,14 @@ void Backend::receive() {
 
 void Backend::invalidateResults() {
     if (!m_searchId.isEmpty()) send("cancel", {{"target", m_searchId}});
-    m_searchId.clear(); m_results.clear(); emit resultsChanged();
+    m_searchId.clear(); m_results.clear(); closePreview(); clearThumbnails(); emit resultsChanged(); emit changed();
 }
 void Backend::setQuery(const QString &text) { if (m_query == text) return; m_query = text; invalidateResults(); m_debounce.start(); emit changed(); }
 void Backend::setKind(const QString &kind) { if (m_kind == kind) return; m_kind = kind; invalidateResults(); m_debounce.start(); emit changed(); }
 void Backend::search() {
-    if (m_query.trimmed().isEmpty() || !connected() || !modelReady()) return;
+    if (m_query.trimmed().isEmpty() || !connected() || !modelReady()) { emit changed(); return; }
     if (m_query.trimmed().size() > 2048) { m_message = "Search text must be at most 2048 characters."; emit changed(); return; }
-    m_searchId = send("search", {{"text", m_query.trimmed()}, {"kind", m_kind}, {"limit", 20}});
+    m_searchId = send("search", {{"text", m_query.trimmed()}, {"kind", m_kind}, {"limit", 20}}); emit changed();
 }
 void Backend::control(const QString &op, QJsonObject args) { invalidateResults(); send(op, args); }
 void Backend::addRoot(const QUrl &url) {
@@ -285,26 +322,134 @@ void Backend::reveal(const QString &path) {
     if (!QStandardPaths::findExecutable("dolphin").isEmpty()) QProcess::startDetached("dolphin", {"--select", path});
     else QDesktopServices::openUrl(localUrl(QFileInfo(path).absolutePath()));
 }
+QString Backend::resultKey(const QVariantMap &result) const {
+    return QString::fromLatin1(QCryptographicHash::hash(QJsonDocument(QJsonObject::fromVariantMap(result)).toJson(QJsonDocument::Compact), QCryptographicHash::Sha256).toHex());
+}
+bool Backend::currentLocalResult(const QVariantMap &result) const {
+    // Membership compares the complete service-produced row, including page and kind.
+    bool current = false;
+    for (const auto &value : m_results) if (value.toMap() == result) { current = true; break; }
+    if (!current || !modelReady()) return false;
+    const auto path = result.value("path").toString();
+    if (!QDir::isAbsolutePath(path) || QDir::cleanPath(path) != path || path.contains(QChar(char16_t(0)))
+        || path.toUtf8().size() > 4096 || QString::fromUtf8(path.toUtf8()) != path || beneath(path, QDir::cleanPath(m_paths.data))) return false;
+    QVariantMap selected;
+    for (const auto &value : roots()) {
+        const auto root = value.toMap(); const auto prefix = root.value("path").toString();
+        if (!prefix.isEmpty() && beneath(path, prefix) && prefix.size() > selected.value("path").toString().size()) selected = root;
+    }
+    const auto root = selected.value("path").toString();
+    if (root.isEmpty() || path == root) return false;
+    const auto relative = path.mid(root == "/" ? 1 : root.size() + 1);
+    for (const auto &value : selected.value("exclusions").toList()) if (beneath(relative, value.toString())) return false;
+    return true; // Actual descriptor/mount admission occurs in the helper before any source read.
+}
+QUrl Backend::thumbnailUrl(const QVariantMap &result) const {
+    return currentLocalResult(result) ? m_thumbnails.value(resultKey(result)) : QUrl();
+}
+void Backend::clearThumbnails() {
+    ++m_thumbnailSequence; m_thumbnailQueue.clear();
+    if (m_thumbnail) m_thumbnail->cancel();
+    m_thumbnails.clear(); m_thumbnailDirectories.clear(); ++m_thumbnailRevision; emit thumbnailsChanged();
+}
+void Backend::prepareThumbnails() {
+    clearThumbnails();
+    for (const auto &value : m_results.mid(0, 20)) {
+        const auto result = value.toMap(); const auto kind = result.value("kind").toString();
+        if (currentLocalResult(result) && (kind == "image" || (kind == "pdf" && result.value("page").toInt() > 0))) m_thumbnailQueue.append(result);
+    }
+    nextThumbnail();
+}
+void Backend::nextThumbnail() {
+    if (m_thumbnail || m_thumbnailQueue.isEmpty()) return;
+    const auto result = m_thumbnailQueue.takeFirst().toMap();
+    if (!currentLocalResult(result)) { nextThumbnail(); return; }
+    startMedia(result, false);
+}
 void Backend::closePreview() {
-    m_previewTimeout.stop();
-    if (m_preview.state() != QProcess::NotRunning) { m_preview.kill(); m_preview.waitForFinished(1000); }
-    if (!m_previewOutput.isEmpty()) QFile::remove(m_previewOutput);
-    m_previewOutput.clear(); m_previewUrl = QUrl(); m_previewMessage.clear(); emit previewChanged();
+    ++m_previewSequence; m_pendingPreview.clear();
+    if (m_preview) m_preview->cancel();
+    m_previewDirectory.reset(); m_previewUrl = QUrl(); m_previewMessage.clear(); emit previewChanged();
 }
 void Backend::previewResult(const QVariantMap &result) {
     closePreview();
-    const auto path = result.value("path").toString();
-    if (result.value("kind").toString() == "image") { m_previewUrl = localUrl(path); emit previewChanged(); return; }
-    const auto page = result.value("page").toInt();
-    if (result.value("kind").toString() != "pdf" || page < 1) return;
-    const auto renderer = QStandardPaths::findExecutable("pdftoppm");
-    if (renderer.isEmpty() || !m_previewDirectory.isValid()) {
-        m_previewMessage = "Page preview unavailable. Check that pdftoppm is installed."; emit previewChanged(); return;
+    if (!currentLocalResult(result)) return;
+    const auto kind = result.value("kind").toString();
+    if (kind != "image" && (kind != "pdf" || result.value("page").toInt() < 1)) return;
+    m_pendingPreview = result; m_previewMessage = kind == "pdf" ? "Rendering page…" : "Loading preview…"; emit previewChanged();
+    startPreview();
+}
+void Backend::startPreview() {
+    if (m_preview || m_pendingPreview.isEmpty()) return;
+    const auto result = m_pendingPreview; m_pendingPreview.clear();
+    if (currentLocalResult(result)) startMedia(result, true);
+}
+void Backend::startMedia(const QVariantMap &result, bool preview) {
+    auto job = new MediaJob(this); job->result = result; job->key = resultKey(result); job->preview = preview;
+    job->sequence = preview ? m_previewSequence : m_thumbnailSequence;
+    m_mediaJobs.append(job);
+    if (preview) m_preview = job; else m_thumbnail = job;
+    auto finish = [this, job](bool success) {
+        job->timeout.stop();
+        if (!job->group) job->receiveIdentity();
+        const auto group = job->group;
+        if (group) group->signal(SIGKILL);
+        // Recheck after signal delivery: a renderer may have been in fork when
+        // the first cancellation signal was sent. This pass never blocks the UI.
+        QTimer::singleShot(25, QCoreApplication::instance(), [group] { if (group) group->signal(SIGKILL); });
+        const bool valid = !job->canceled && job->sequence == (job->preview ? m_previewSequence : m_thumbnailSequence) && currentLocalResult(job->result);
+        const auto output = job->directory->filePath("render.png");
+        if (job->preview) {
+            m_preview = nullptr;
+            if (valid) {
+                if (success && QFileInfo::exists(output)) { m_previewDirectory = job->directory; m_previewUrl = QUrl::fromLocalFile(output); m_previewMessage.clear(); }
+                else m_previewMessage = job->unavailableReason.isEmpty() ? "Preview unavailable. The indexed passage is shown below." : job->unavailableReason;
+                emit previewChanged();
+            }
+        } else {
+            m_thumbnail = nullptr;
+            if (valid && success && QFileInfo::exists(output)) {
+                m_thumbnailDirectories.append(job->directory); m_thumbnails.insert(job->key, QUrl::fromLocalFile(output));
+                ++m_thumbnailRevision; emit thumbnailsChanged();
+            }
+        }
+        m_mediaJobs.removeOne(job); job->deleteLater();
+        if (job->preview) startPreview(); else nextThumbnail();
+    };
+
+    connect(&job->process, &QProcess::finished, this, [finish](int code, auto state) { finish(code == 0 && state == QProcess::NormalExit); });
+    connect(&job->process, &QProcess::errorOccurred, this, [finish](auto error) { if (error == QProcess::FailedToStart) finish(false); });
+    connect(&job->timeout, &QTimer::timeout, this, [this, job] {
+        if (job->preview && job->sequence == m_previewSequence && !job->canceled) {
+            m_previewMessage = "Preview timed out. The indexed passage is shown below."; emit previewChanged();
+        }
+        job->cancel();
+    });
+    if (!job->directory->isValid()) { finish(false); return; }
+    QJsonObject request = QJsonObject::fromVariantMap(result); request.insert("pixels", preview ? 1600 : 320);
+    for (const auto &value : roots()) {
+        const auto root = value.toMap();
+        if (beneath(result.value("path").toString(), root.value("path").toString())) {
+            request.insert("root", root.value("path").toString()); request.insert("exclusions", QJsonArray::fromVariantList(root.value("exclusions").toList())); break;
+        }
     }
-    const auto prefix = m_previewDirectory.filePath(QString::number(++m_previewSequence));
-    m_previewOutput = prefix + ".png"; m_previewMessage = "Rendering page…";
-    m_preview.start(renderer, {"-f", QString::number(page), "-l", QString::number(page), "-singlefile", "-scale-to", "1600", "-png", path, prefix});
-    m_previewTimeout.start(30000); emit previewChanged();
+    // Private descriptor transport, created before fork. Unsupported kernels
+    // stop the child before exec/render; there is no numerical group fallback.
+    if (::socketpair(AF_UNIX, SOCK_SEQPACKET | SOCK_CLOEXEC | SOCK_NONBLOCK, 0, job->identitySocket) != 0) {
+        job->unavailableReason = "Unable to establish safe local media cleanup."; finish(false); return;
+    }
+    job->identityNotifier = new QSocketNotifier(job->identitySocket[0], QSocketNotifier::Read, job);
+    connect(job->identityNotifier, &QSocketNotifier::activated, this, [job] { job->receiveIdentity(); });
+    const pid_t owner = ::getpid();
+    const int identityReader = job->identitySocket[0], identityWriter = job->identitySocket[1];
+    job->process.setChildProcessModifier([owner, identityReader, identityWriter] {
+        ::close(identityReader);
+        if (::setpgid(0, 0) != 0 || ::prctl(PR_SET_PDEATHSIG, SIGKILL) != 0 || ::getppid() != owner || !sendOwnMediaGroup(identityWriter)) ::_exit(126);
+        ::close(identityWriter);
+    });
+    job->process.setStandardOutputFile(QProcess::nullDevice()); job->process.setStandardErrorFile(QProcess::nullDevice());
+    job->process.start(QDir(QCoreApplication::applicationDirPath()).filePath("semanticlens-media"), {job->directory->path()});
+    job->process.write(QJsonDocument(request).toJson(QJsonDocument::Compact)); job->process.closeWriteChannel(); job->timeout.start(30000);
 }
 void Backend::downloadModel() {
     if (downloading()) return;

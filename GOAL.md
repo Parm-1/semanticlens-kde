@@ -1109,3 +1109,46 @@ completion bookkeeping only. No automatic continuation or further project
 implementation is authorized by an active goal; a new human request owns any
 next scope. All prior requests are handled and no process/tool/child handles
 need resuming.
+
+## Search-first redesign — 2026-10-12
+
+Actual trigger: new human request to redesign SemanticLens to DigUp-level polish,
+with a search-first layout, thumbnails and side preview while remaining native KDE.
+The first-release goal and publication requests are already complete. This is new
+implementation work, not an automatic continuation or authorization to replace rc1.
+
+Owner is this thread. Main.qml has a redesigned search workspace, grid/list filters,
+side preview, narrow-window preview and separate Settings. The first actual
+Wayland/service run passed selected-folder indexing, matching PDF-page rendering,
+preview cleanup and deletion refresh. Its rendered capture exposed spacing issues;
+those have been repaired and await the next target capture. The new media helper
+uses asynchronous local snapshots, selected-root checks and render limits. Its
+cancellation controls found a descendant-process race; the same author is repairing
+it before delivery and independent review. No search/core or frozen benchmark
+semantics are changed. rc1 and all prior sealed evidence remain immutable.
+
+Next: finish current media repair/review, build the combined candidate, run the
+rendered interaction checks (including images, settings, narrow layout and source
+text), then deliver the verified redesign with screenshots and build instructions.
+Parent build handle71735 and thumbnail author are live at this checkpoint; parent
+owns the KDE desktop test and Main.qml author is available for visual corrections.
+
+### Redesign acceptance checkpoint — 2026-10-12
+
+Actual trigger remains the new human search-first redesign request. Previous
+release, branding, publication and README requests are complete. The new native
+interface is implemented and accepted on the scoped current desktop evidence:
+37 interaction checks pass with zero QML warnings, ten PDF render/deletion checks
+pass, and the compiled staged app renders successfully. Exact source/stage pins
+and captures are in evidence/redesign-ui-v1; the media identity/lifetime repair
+passed uninvolved review in evidence/redesign-media-review-v2. The redesign uses
+KDE desktop controls and system colors; Settings holds administration. Core,
+service, producer, ranking and KRunner source/IDs are unchanged. Linux6.9+ is now
+required for media cancellation; unsupported media leaves text search available.
+
+Next action: assemble the local development candidate and deliver a public feature
+branch/PR with hosted CI. The public checkout has its own release history; do not
+push internal root history. No merge or replacement release is authorized by this
+request. rc1 and earlier sealed evidence remain unchanged. All parent and child
+build/runtime/tool handles are terminal; no watcher/model/helper process needs
+resuming. The owner carries final packaging/CI repairs and delivery.

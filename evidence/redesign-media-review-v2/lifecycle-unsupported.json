@@ -1,0 +1,27 @@
+{
+    "checks": [
+        {
+            "name": "text-search-remains-ready",
+            "pass": true
+        },
+        {
+            "name": "unsupported-preview-explained",
+            "pass": true
+        },
+        {
+            "name": "unsupported-thumbnail-empty",
+            "pass": true
+        },
+        {
+            "name": "renderer-not-started",
+            "pass": true
+        }
+    ],
+    "destructor_ms": 0,
+    "elapsed_ms": 291,
+    "exit": 0,
+    "mode": "unsupported",
+    "phase_processes": [
+    ],
+    "preview_message": "Local media previews require Linux 6.9 or newer with pidfd process-group signaling."
+}

@@ -5,6 +5,7 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QQuickWindow>
+#include <QQuickStyle>
 #include <QQuickItem>
 #include <QFileInfo>
 #include <QImage>
@@ -17,6 +18,7 @@
 
 int main(int argc, char **argv) {
     KIconTheme::initTheme();
+    QQuickStyle::setStyle("org.kde.desktop");
     QApplication app(argc, argv);
     if (argc != 8) { fprintf(stderr, "ui-smoke SERVICE PROBE MODELS DATA SOCKET CORPUS OUTPUT\n"); return 2; }
     auto absolute = [](const char *arg) { return QFileInfo(QString::fromLocal8Bit(arg)).absoluteFilePath(); };
@@ -28,7 +30,7 @@ int main(int argc, char **argv) {
     if (!window) return 2;
     const auto corpus = absolute(argv[6]), output = absolute(argv[7]);
     QString previewFile;
-    QTimer closeObservation; closeObservation.setSingleShot(true); closeObservation.setInterval(90000);
+
     int phase = 0; bool added = false, passed = false;
     QJsonArray checks, observations;
     std::atomic<quint64> sceneFrames{0};
@@ -70,10 +72,9 @@ int main(int argc, char **argv) {
             const auto result = backend.results().first().toMap();
             if (!check("exact-pdf-page-result", result.value("kind").toString() == "pdf" && result.value("page").toInt() == 2, {{"result", QJsonObject::fromVariantMap(result)}})) { app.exit(1); return; }
             if (!check("target-results-window-capture", window->grabWindow().save(output + "-results.png"))) { app.exit(1); return; }
-            auto preview = window->findChild<QObject *>("resultPreview");
-            if (!check("preview-dialog-found", preview != nullptr)) { app.exit(1); return; }
-            preview->setProperty("selectedResult", result);
-            QMetaObject::invokeMethod(preview, "open"); phase = 2;
+            auto preview = window->findChild<QQuickItem *>("previewPanel");
+            if (!check("inline-preview-found", preview && preview->isVisible())) { app.exit(1); return; }
+            QMetaObject::invokeMethod(window, "chooseResult", Q_ARG(QVariant, 0)); phase = 2;
         } else if (phase == 2 && !backend.previewUrl().isEmpty()) {
             const auto file = backend.previewUrl().toLocalFile();
             if (previewFile.isEmpty()) {
@@ -116,13 +117,10 @@ int main(int argc, char **argv) {
             rendered["painted_pixel_count"] = painted.width()*painted.height();
             const bool saved = capture.save(output + "-page.png");
             if (!check("target-page-window-capture", saved && ink >= 10 && white > .9*painted.width()*painted.height(), rendered)) { app.exit(1); return; }
-            auto dialog = window->findChild<QObject *>("resultPreview");
-            QObject::connect(dialog, SIGNAL(closed()), &closeObservation, SLOT(stop()));
-            closeObservation.start();
-            QMetaObject::invokeMethod(dialog, "close");
+            QMetaObject::invokeMethod(window, "clearSelection");
             phase = 5;
-        } else if (phase == 5 && !closeObservation.isActive() && !window->findChild<QObject *>("resultPreview")->property("visible").toBool() && backend.previewUrl().isEmpty()) {
-            if (!check("preview-temporary-file-removed", !QFileInfo::exists(previewFile), {{"closed_signal_observed", !closeObservation.isActive()}, {"url_empty", backend.previewUrl().isEmpty()}, {"file", previewFile}, {"file_exists", QFileInfo::exists(previewFile)}})) { app.exit(1); return; }
+        } else if (phase == 5 && window->property("selectedIndex").toInt() == -1 && backend.previewUrl().isEmpty()) {
+            if (!check("preview-temporary-file-removed", !QFileInfo::exists(previewFile), {{"url_empty", backend.previewUrl().isEmpty()}, {"file", previewFile}, {"file_exists", QFileInfo::exists(previewFile)}})) { app.exit(1); return; }
             backend.setQuery("new-query");
             if (!check("previous-results-cleared-immediately", backend.results().isEmpty())) { app.exit(1); return; }
             backend.setQuery("PDF-10299"); phase = 3;

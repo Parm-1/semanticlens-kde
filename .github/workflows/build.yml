@@ -13,7 +13,7 @@ jobs:
       - name: Install documented dependencies in the disposable container
         run: >-
           pacman -Syu --noconfirm --needed git cmake ninja python qt6-base
-          qt6-declarative kirigami krunner kiconthemes extra-cmake-modules
+          qt6-declarative kirigami qqc2-desktop-style breeze krunner kiconthemes extra-cmake-modules
           poppler tesseract tesseract-data-eng desktop-file-utils appstream
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
       - name: Verify frozen demo inputs and Python helpers
@@ -33,8 +33,17 @@ jobs:
           DESTDIR="$PWD/stage" cmake --install build --prefix /usr
           test -x stage/usr/bin/kde-index
           test -x stage/usr/bin/kde-index-service
+          test -x stage/usr/bin/semanticlens-media
           test -x stage/usr/bin/embedding-probe
           test -f stage/usr/lib/qt6/plugins/kf6/krunner/kde-index-runner.so
           test -f stage/usr/share/licenses/kde-index/stb-image-MIT.txt
           test ! -d stage/usr/include
           test ! -f stage/usr/lib/libllama.a
+      - name: Load the native interface without downloads or user data
+        run: |
+          mkdir -p ci-profile
+          QT_QPA_PLATFORM=offscreen timeout 15s build/bin/kde-index \
+            --models "$PWD/ci-profile/models" --data-dir "$PWD/ci-profile/data" \
+            --socket "$PWD/ci-profile/search.sock" \
+            --capture "$PWD/ci-profile/window.png"
+          test -s ci-profile/window.png

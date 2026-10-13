@@ -1,0 +1,8 @@
+{
+  "initial_combined_controls_exit": 1,
+  "successful_group_and_lifecycle_runs": true,
+  "backend_launch_failure": "FileNotFoundError: backend-controls executable not yet present; reviewer started dependent run before build83349 completed",
+  "candidate_backend_run_started": false,
+  "build_completed_exit": 0,
+  "all_four_rebuilt_executables_match_delivery_v2": true
+}

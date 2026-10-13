@@ -1,0 +1,158 @@
+{
+    "checks": [
+        {
+            "name": "model-and-service-ready",
+            "pass": true
+        },
+        {
+            "name": "selected-synthetic-root-indexed",
+            "pass": true
+        },
+        {
+            "name": "real-results",
+            "pass": true
+        },
+        {
+            "name": "matching-pdf-page-in-results",
+            "pass": true
+        },
+        {
+            "name": "inline-pdf-preview-loaded",
+            "pass": true
+        },
+        {
+            "name": "pdf-thumbnail-loaded",
+            "pass": true
+        },
+        {
+            "name": "all-media-thumbnails-complete",
+            "pass": true
+        },
+        {
+            "name": "grid-pdf-render-capture",
+            "pass": true
+        },
+        {
+            "name": "list-toggle",
+            "pass": true
+        },
+        {
+            "name": "list-render-capture",
+            "pass": true
+        },
+        {
+            "name": "grid-toggle",
+            "pass": true
+        },
+        {
+            "name": "images-filter-click",
+            "pass": true
+        },
+        {
+            "name": "images-filter-result",
+            "pass": true
+        },
+        {
+            "name": "search-shortcut-focus",
+            "pass": true
+        },
+        {
+            "name": "keyboard-result-selection",
+            "pass": true
+        },
+        {
+            "name": "image-thumbnail-and-preview-loaded",
+            "pass": true
+        },
+        {
+            "name": "old-pdf-preview-removed",
+            "pass": true
+        },
+        {
+            "name": "images-render-capture",
+            "pass": true
+        },
+        {
+            "name": "preview-hide-cleans-url",
+            "pass": true
+        },
+        {
+            "name": "preview-show-renders-again",
+            "pass": true
+        },
+        {
+            "name": "narrow-preview-visible",
+            "pass": true
+        },
+        {
+            "name": "narrow-render-capture",
+            "pass": true
+        },
+        {
+            "name": "settings-button",
+            "pass": true
+        },
+        {
+            "name": "settings-opens",
+            "pass": true
+        },
+        {
+            "name": "settings-render-capture",
+            "pass": true
+        },
+        {
+            "name": "all-filter-click",
+            "pass": true
+        },
+        {
+            "name": "literal-source-result",
+            "pass": true
+        },
+        {
+            "name": "literal-source-rendering",
+            "pass": true
+        },
+        {
+            "name": "source-markup-no-network",
+            "pass": true
+        },
+        {
+            "name": "document-render-capture",
+            "pass": true
+        },
+        {
+            "name": "stale-selection-and-preview-cleared",
+            "pass": true
+        },
+        {
+            "name": "actual-extraction-failure-recorded",
+            "pass": true
+        },
+        {
+            "name": "main-indexing-issue-visible",
+            "pass": true
+        },
+        {
+            "name": "main-indexing-details-click",
+            "pass": true
+        },
+        {
+            "name": "indexing-details-open",
+            "pass": true
+        },
+        {
+            "name": "indexing-error-render-capture",
+            "pass": true
+        },
+        {
+            "name": "qml-runtime-clean",
+            "pass": true
+        }
+    ],
+    "network_fetches": 0,
+    "pass": true,
+    "qml_warnings": [
+    ],
+    "window_height": 780,
+    "window_width": 1180
+}

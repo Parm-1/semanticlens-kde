@@ -1,0 +1,15 @@
+{
+  "candidate_sha256": {
+    "backend.h": "37c6336473d3d840db5c2fbfbb5dce56df10eb1b84fa2dd9100f4fe04e38a701",
+    "backend.cpp": "9125a393bf9287a4b61a77d8220b90cb5b975658acbca785f20100bca9441b68",
+    "media_main.cpp": "d5033395cc186ef55628053e05f2d54344e5e718fd9ef386cada21f9d06cecab",
+    "media_group.h": "b469dd7619799dae6cfe90e1e58a59eaf546f175fa547bbe48e9106e0102cfa0"
+  },
+  "all_canonical_sources_equal_delivery": true,
+  "all_review_sources_equal_delivery": true,
+  "all_four_rebuilt_executables_equal_delivery": true,
+  "delivery_manifest_sha256": "8c16d053834d083b858bcdf0a4914d7d8b4666818eb02ed5a036a4ecc37d89c8",
+  "delivery_manifest_entries": 29,
+  "v1_review_report_sha256": "1c9d3397d262980087299f182b6c3df20762d496a8d1c8d269bdc62480ed2097",
+  "host_kernel": "7.2.7-1-cachyos-bore"
+}

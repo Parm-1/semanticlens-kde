@@ -1,0 +1,100 @@
+[
+  {
+    "mode": "before-start",
+    "exit": 0,
+    "observed_processes": [
+      {
+        "pid": 608670,
+        "start_ticks": "5643536",
+        "ppid": 608669,
+        "pgid": 608663
+      },
+      {
+        "pid": 608674,
+        "start_ticks": "5643574",
+        "ppid": 608670,
+        "pgid": 608674
+      },
+      {
+        "pid": 608676,
+        "start_ticks": "5643616",
+        "ppid": 608670,
+        "pgid": 608676
+      },
+      {
+        "pid": 608677,
+        "start_ticks": "5643618",
+        "ppid": 608670,
+        "pgid": 608677
+      },
+      {
+        "pid": 608678,
+        "start_ticks": "5643619",
+        "ppid": 608677,
+        "pgid": 608677
+      }
+    ],
+    "live_observed_processes": [],
+    "remaining_temp_entries": []
+  },
+  {
+    "mode": "destructor",
+    "exit": 0,
+    "observed_processes": [
+      {
+        "pid": 608686,
+        "start_ticks": "5643643",
+        "ppid": 608669,
+        "pgid": 608663
+      },
+      {
+        "pgid": 608688,
+        "pid": 608689,
+        "ppid": 608688,
+        "start_ticks": "5643674"
+      },
+      {
+        "pgid": 608688,
+        "pid": 608690,
+        "ppid": 608689,
+        "start_ticks": "5643675"
+      },
+      {
+        "pgid": 608688,
+        "pid": 608688,
+        "ppid": 608686,
+        "start_ticks": "5643673"
+      }
+    ],
+    "live_observed_processes": [],
+    "remaining_temp_entries": []
+  },
+  {
+    "mode": "destructor-starting",
+    "exit": 0,
+    "observed_processes": [
+      {
+        "pid": 608691,
+        "start_ticks": "5643694",
+        "ppid": 608669,
+        "pgid": 608663
+      }
+    ],
+    "live_observed_processes": [],
+    "remaining_temp_entries": []
+  },
+  {
+    "mode": "unsupported",
+    "exit": 0,
+    "observed_processes": [
+      {
+        "pid": 608695,
+        "start_ticks": "5643743",
+        "ppid": 608669,
+        "pgid": 608663
+      }
+    ],
+    "live_observed_processes": [],
+    "remaining_temp_entries": []
+  }
+]

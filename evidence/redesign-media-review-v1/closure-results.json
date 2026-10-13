@@ -1,0 +1,73 @@
+{
+  "exit": 0,
+  "observed_processes": [
+    {
+      "pid": 583781,
+      "start_ticks": "5485842",
+      "ppid": 583779,
+      "pgid": 583563
+    },
+    {
+      "pid": 583785,
+      "start_ticks": "5485876",
+      "ppid": 583781,
+      "pgid": 583785
+    },
+    {
+      "pid": 583786,
+      "start_ticks": "5485877",
+      "ppid": 583785,
+      "pgid": 583785
+    },
+    {
+      "pid": 583793,
+      "start_ticks": "5485890",
+      "ppid": 583781,
+      "pgid": 583793
+    },
+    {
+      "pid": 583794,
+      "start_ticks": "5485896",
+      "ppid": 583781,
+      "pgid": 583794
+    },
+    {
+      "pid": 583795,
+      "start_ticks": "5485897",
+      "ppid": 583794,
+      "pgid": 583794
+    },
+    {
+      "pid": 583834,
+      "start_ticks": "5486075",
+      "ppid": 583781,
+      "pgid": 583834
+    },
+    {
+      "pid": 583883,
+      "start_ticks": "5486279",
+      "ppid": 583781,
+      "pgid": 583883
+    },
+    {
+      "pid": 583885,
+      "start_ticks": "5486286",
+      "ppid": 583781,
+      "pgid": 583885
+    },
+    {
+      "pid": 583888,
+      "start_ticks": "5486288",
+      "ppid": 583887,
+      "pgid": 583885
+    },
+    {
+      "pid": 583887,
+      "start_ticks": "5486287",
+      "ppid": 583885,
+      "pgid": 583885
+    }
+  ],
+  "live_observed_processes": [],
+  "remaining_temp_entries": []
+}

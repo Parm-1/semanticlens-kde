@@ -1,0 +1,27 @@
+{
+    "checks": [
+        {
+            "name": "text-search-remains-ready",
+            "pass": true
+        },
+        {
+            "name": "cancel-before-start-clears",
+            "pass": true
+        },
+        {
+            "name": "canceled-no-late-preview",
+            "pass": true
+        },
+        {
+            "name": "success-after-early-cancel",
+            "pass": true
+        }
+    ],
+    "destructor_ms": 27,
+    "elapsed_ms": 833,
+    "exit": 0,
+    "mode": "before-start",
+    "phase_processes": [
+    ],
+    "preview_message": ""
+}
