@@ -1,0 +1,116 @@
+{
+  "manifest_checks": [
+    {
+      "manifest": "local/film-store-v3/SHA256SUMS",
+      "sha256": "d31ebd107eaa88ddf0b24ef2c90a86a2ccd331d3ef56973ab287cc60b11cf995",
+      "entries": 5,
+      "match": true
+    },
+    {
+      "manifest": "local/film-store-v3/EVIDENCE.sha256",
+      "sha256": "1a7787c0e03cb141823078c29f25fe52622b12a5530fd6134e2e43ce05819d1c",
+      "entries": 781,
+      "match": true
+    }
+  ],
+  "source_and_binary_pin_count": 19,
+  "source_and_binary_pins_match": true,
+  "source_delta_readback": [
+    {
+      "path": "src/core-v5/engine.cpp",
+      "unchanged": true,
+      "previous_sha256": "e70460ffe8980f2300a26dba7184a8cf047e8be2546ce45106438e0a6c9f7298",
+      "current_sha256": "e70460ffe8980f2300a26dba7184a8cf047e8be2546ce45106438e0a6c9f7298"
+    },
+    {
+      "path": "src/core-v5/engine.h",
+      "unchanged": true,
+      "previous_sha256": "eeb053dd9f3efb8a422ce643a6b9e1c145eaab70a99dd32fe284bc9724cb49a4",
+      "current_sha256": "eeb053dd9f3efb8a422ce643a6b9e1c145eaab70a99dd32fe284bc9724cb49a4"
+    },
+    {
+      "path": "src/film-v1/store.cpp",
+      "unchanged": false,
+      "previous_sha256": "dea319ba5a496d261f362595ca11bbcc4992e5134dfa1c2789c7c03824e40a8c",
+      "current_sha256": "f55031021133e08eab484522285a181749bfee5fbe250581217b91fca9e02556"
+    },
+    {
+      "path": "src/film-v1/store.h",
+      "unchanged": true,
+      "previous_sha256": "c88ccbe92b6938afe4f341c4bcc16c848f8f3ff16d5c5e4dcdd9050642d2f18b",
+      "current_sha256": "c88ccbe92b6938afe4f341c4bcc16c848f8f3ff16d5c5e4dcdd9050642d2f18b"
+    },
+    {
+      "path": "src/film-v1/schema.cpp",
+      "unchanged": true,
+      "previous_sha256": "839a2e730e51177fc06dadc1b34602ce6b3e616cf6faa91d27eba87c32f8f037",
+      "current_sha256": "839a2e730e51177fc06dadc1b34602ce6b3e616cf6faa91d27eba87c32f8f037"
+    },
+    {
+      "path": "src/film-v1/schema.h",
+      "unchanged": true,
+      "previous_sha256": "5ae8ab7d78883e7d821308b3f24ee1e61374644d2116ee289a67d44c6dda7d7b",
+      "current_sha256": "5ae8ab7d78883e7d821308b3f24ee1e61374644d2116ee289a67d44c6dda7d7b"
+    },
+    {
+      "path": "src/film-v1/adapters.cpp",
+      "unchanged": true,
+      "previous_sha256": "b7ed891f4f9cd3b37a03fa58983f99e162932357d0388709967a0697b60704ff",
+      "current_sha256": "b7ed891f4f9cd3b37a03fa58983f99e162932357d0388709967a0697b60704ff"
+    },
+    {
+      "path": "src/film-v1/adapters.h",
+      "unchanged": true,
+      "previous_sha256": "3ce9cf71820cf07063c4577326eb0c04ad4aac8c9b8e9b963b94f9577063bac1",
+      "current_sha256": "3ce9cf71820cf07063c4577326eb0c04ad4aac8c9b8e9b963b94f9577063bac1"
+    },
+    {
+      "path": "src/service-v3/main.cpp",
+      "unchanged": true,
+      "previous_sha256": "a4d0fc05b4d3eeeb8f337f844e0d2f3a5bf854e26a5a96d89a3a911c6a59afd5",
+      "current_sha256": "a4d0fc05b4d3eeeb8f337f844e0d2f3a5bf854e26a5a96d89a3a911c6a59afd5"
+    },
+    {
+      "path": "src/film-v1/tokenizer.cpp",
+      "unchanged": true,
+      "previous_sha256": "ecdc0290017903c6f3950d33e766e053caf3e507d3f0938f6e612ac0067b369c",
+      "current_sha256": "ecdc0290017903c6f3950d33e766e053caf3e507d3f0938f6e612ac0067b369c"
+    },
+    {
+      "path": "engine/CMakeLists.txt",
+      "unchanged": true,
+      "previous_sha256": "9c29fae75af7596fdb7e8e71e3aaf91d907d88096b9cc965c2dc8cbbf65a1e3b",
+      "current_sha256": "9c29fae75af7596fdb7e8e71e3aaf91d907d88096b9cc965c2dc8cbbf65a1e3b"
+    },
+    {
+      "path": "probe/CMakeLists.txt",
+      "unchanged": true,
+      "previous_sha256": "19b1164e446dc2d0b0276da1d7e74fbf0cac1ce9385fd2f13c6be7a4cb169811",
+      "current_sha256": "19b1164e446dc2d0b0276da1d7e74fbf0cac1ce9385fd2f13c6be7a4cb169811"
+    },
+    {
+      "path": "probe/main.cpp",
+      "unchanged": true,
+      "previous_sha256": "92b17b4ec33b5a85737383e505543359188ea90c6f7aeea637f77b4303df0c8a",
+      "current_sha256": "92b17b4ec33b5a85737383e505543359188ea90c6f7aeea637f77b4303df0c8a"
+    },
+    {
+      "path": "film/schemas/analysis.schema.json",
+      "unchanged": true,
+      "previous_sha256": "6b9b8c42bfc60c4db28359e9aa437dede1d293ccbb0294fea5671cc7ad37edeb",
+      "current_sha256": "6b9b8c42bfc60c4db28359e9aa437dede1d293ccbb0294fea5671cc7ad37edeb"
+    },
+    {
+      "path": "film/schemas/film_manifest.schema.json",
+      "unchanged": true,
+      "previous_sha256": "df97971499f11166b3a1733521c6973d8e9e4f432ecbb6272ddac5f8dda34535",
+      "current_sha256": "df97971499f11166b3a1733521c6973d8e9e4f432ecbb6272ddac5f8dda34535"
+    }
+  ],
+  "source_pins_sha256": "54c2dbf5702709451df0f049d88b8e83c01723ba1b94895083983ba5e7062ed6",
+  "v5_report_sha256": "6f97c0838f410755a800db36370d7503a63df22a821eb3bceec4f2945ddbf642",
+  "reviewer_runtime_runs": 0,
+  "reviewer_owned_live_handles": [],
+  "usage": "unknown",
+  "timing_scope": "no measured interval; original per-run instrumented wall times retained separately"
+}

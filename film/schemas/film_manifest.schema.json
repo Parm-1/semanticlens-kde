@@ -1,0 +1,100 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "semanticlens.film.manifest/1"
+    },
+    "film_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9:._-]*$"
+    },
+    "edition_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9:._-]*$"
+    },
+    "display_title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "year": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1800,
+      "maximum": 3000
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9:._-]*$"
+          },
+          "relative_path": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "source_kind": {
+            "enum": [
+              "subtitle",
+              "screenplay",
+              "synopsis",
+              "reference",
+              "curated_note"
+            ]
+          },
+          "language": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 35
+          },
+          "edition_relation": {
+            "enum": [
+              "exact_edition",
+              "draft_companion",
+              "unknown"
+            ]
+          }
+        },
+        "required": [
+          "source_id",
+          "relative_path",
+          "sha256",
+          "source_kind",
+          "language",
+          "edition_relation"
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 32
+    }
+  },
+  "required": [
+    "schema_version",
+    "film_id",
+    "edition_id",
+    "display_title",
+    "year",
+    "sources"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:semanticlens:film:manifest:1",
+  "description": "Collection-root-relative associations. Paths require runtime policy validation; schema validity alone is not authorization."
+}

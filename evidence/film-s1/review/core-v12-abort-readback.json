@@ -1,0 +1,272 @@
+{
+  "scope": "actual protocol-induced math abort and same-context recovery before EOF, not generalized racefreedom/quietlatency",
+  "budgets": [
+    {
+      "budget": 2,
+      "context": {
+        "self": 94563648223664,
+        "context": 94563643104832,
+        "cancel": 140730911183304
+      },
+      "abort_thread": [
+        1312333,
+        1312892,
+        0
+      ],
+      "reuse_thread": [
+        1312333,
+        1312893,
+        0
+      ],
+      "tickets": [
+        "film-292fa001-1cbd9830-e99ff160-c8fecfca-",
+        "film-b62cc24d-c7210575-871d1653-bc4e35e8-",
+        "film-88924d5c-88f97524-11153a22-52dffc80-"
+      ],
+      "input_sha256": "db855ceb782be8703b46ae79c6fdfaf6e26b21ffa1ca9ba91b76d90a40a11bca",
+      "callback0_ns": 93782753195018,
+      "bad0_ns": 93782817975426,
+      "cancel1_ns": 93782838543396,
+      "callback_steps": [
+        {
+          "rva": 423763,
+          "eax": 1,
+          "clock_ns": 93782859704196
+        },
+        {
+          "rva": 423765,
+          "eax": 1,
+          "clock_ns": 93782880377936
+        },
+        {
+          "rva": 423768,
+          "eax": 1,
+          "clock_ns": 93782900425534
+        }
+      ],
+      "return_to_cpu_rva": 3556593,
+      "abort_encode2_ns": 93782940665324,
+      "reuse_encode0_ns": 93798498233455,
+      "eof_ns": 93798533794784,
+      "invalid_replies": [
+        {
+          "error": "unknown field unknown",
+          "error_code": "invalid_request",
+          "id": "ctx-2-6",
+          "ok": false
+        },
+        {
+          "error": "invalid ticket",
+          "error_code": "invalid_request",
+          "id": "ctx-2-7",
+          "ok": false
+        },
+        {
+          "error": "unknown ticket",
+          "error_code": "invalid_request",
+          "id": "ctx-2-8",
+          "ok": false
+        },
+        {
+          "error": "invalid id",
+          "error_code": "invalid_request",
+          "id": false,
+          "ok": false
+        }
+      ],
+      "terminal": [
+        {
+          "error": "canceled",
+          "error_code": "canceled",
+          "id": "ctx-2-12",
+          "ok": true,
+          "ready": true
+        }
+      ],
+      "vectors": [
+        {
+          "ticket": "film-292fa001-1cbd9830-e99ff160-c8fecfca-",
+          "actual_id": "ctx-2-4",
+          "reference_id": "fa-2-26",
+          "vector_sha256": "b53671dd63b1198e2bd495a070466c22742e495b665b7d4fe957b028101e80ad"
+        },
+        {
+          "ticket": "film-88924d5c-88f97524-11153a22-52dffc80-",
+          "actual_id": "ctx-2-767",
+          "reference_id": "fa-2-26",
+          "vector_sha256": "b53671dd63b1198e2bd495a070466c22742e495b665b7d4fe957b028101e80ad"
+        }
+      ]
+    },
+    {
+      "budget": 6,
+      "context": {
+        "self": 94370987321776,
+        "context": 94370982202944,
+        "cancel": 140737395413944
+      },
+      "abort_thread": [
+        1312937,
+        1312969,
+        0
+      ],
+      "reuse_thread": [
+        1312937,
+        1312975,
+        0
+      ],
+      "tickets": [
+        "film-6e2e39d4-a60f2b8-6e31dc0a-ae3c69-",
+        "film-18252007-5684d925-df196275-829c783f-",
+        "film-f305539d-572f1940-3cf68ae4-e14a9acf-"
+      ],
+      "input_sha256": "db855ceb782be8703b46ae79c6fdfaf6e26b21ffa1ca9ba91b76d90a40a11bca",
+      "callback0_ns": 93816317717649,
+      "bad0_ns": 93816350610873,
+      "cancel1_ns": 93816370941495,
+      "callback_steps": [
+        {
+          "rva": 423763,
+          "eax": 1,
+          "clock_ns": 93816391823358
+        },
+        {
+          "rva": 423765,
+          "eax": 1,
+          "clock_ns": 93816412137500
+        },
+        {
+          "rva": 423768,
+          "eax": 1,
+          "clock_ns": 93816432297029
+        }
+      ],
+      "return_to_cpu_rva": 3556593,
+      "abort_encode2_ns": 93816472717249,
+      "reuse_encode0_ns": 93820516986215,
+      "eof_ns": 93820544903597,
+      "invalid_replies": [
+        {
+          "error": "unknown field unknown",
+          "error_code": "invalid_request",
+          "id": "ctx-6-6",
+          "ok": false
+        },
+        {
+          "error": "invalid ticket",
+          "error_code": "invalid_request",
+          "id": "ctx-6-7",
+          "ok": false
+        },
+        {
+          "error": "unknown ticket",
+          "error_code": "invalid_request",
+          "id": "ctx-6-8",
+          "ok": false
+        },
+        {
+          "error": "invalid id",
+          "error_code": "invalid_request",
+          "id": false,
+          "ok": false
+        }
+      ],
+      "terminal": [
+        {
+          "error": "canceled",
+          "error_code": "canceled",
+          "id": "ctx-6-12",
+          "ok": true,
+          "ready": true
+        }
+      ],
+      "vectors": [
+        {
+          "ticket": "film-6e2e39d4-a60f2b8-6e31dc0a-ae3c69-",
+          "actual_id": "ctx-6-4",
+          "reference_id": "fa-6-26",
+          "vector_sha256": "b53671dd63b1198e2bd495a070466c22742e495b665b7d4fe957b028101e80ad"
+        },
+        {
+          "ticket": "film-f305539d-572f1940-3cf68ae4-e14a9acf-",
+          "actual_id": "ctx-6-207",
+          "reference_id": "fa-6-26",
+          "vector_sha256": "b53671dd63b1198e2bd495a070466c22742e495b665b7d4fe957b028101e80ad"
+        }
+      ]
+    }
+  ],
+  "closure": [
+    {
+      "gdb_pid": 1312283,
+      "gdb_exit": 0,
+      "inferior_normal_exit": true,
+      "remaining_group": []
+    },
+    {
+      "gdb_pid": 1312916,
+      "gdb_exit": 0,
+      "inferior_normal_exit": true,
+      "remaining_group": []
+    }
+  ],
+  "known_pid_closure": {
+    "known_pids": [
+      1312227,
+      1312283,
+      1312916,
+      1312333,
+      1312937,
+      1312937
+    ],
+    "present_pids": [],
+    "wrapper_exit": 0,
+    "clock_ns": 93921654185139
+  },
+  "wrapper": {
+    "argv": [
+      "/usr/bin/bwrap",
+      "--unshare-user",
+      "--unshare-net",
+      "--ro-bind",
+      "/",
+      "/",
+      "--bind",
+      "/workspace/semanticlens/local/film-store-v4/abort-runtime-v2",
+      "/workspace/semanticlens/local/film-store-v4/abort-runtime-v2",
+      "--tmpfs",
+      "/run",
+      "--proc",
+      "/proc",
+      "--dev",
+      "/dev",
+      "--clearenv",
+      "--setenv",
+      "PATH",
+      "/usr/bin",
+      "--setenv",
+      "LANG",
+      "C.UTF-8",
+      "--setenv",
+      "HOME",
+      "/workspace/semanticlens/local/film-store-v4/abort-runtime-v2",
+      "--setenv",
+      "PYTHONDONTWRITEBYTECODE",
+      "1",
+      "/usr/bin/python3",
+      "/workspace/semanticlens/local/film-store-v4/abort-runtime-v2/run.py",
+      "--output",
+      "/workspace/semanticlens/local/film-store-v4/abort-runtime-v2/run",
+      "--worker",
+      "/workspace/semanticlens/local/film-store-v4/candidate-preparation-v3/bin/semanticlens-film-worker",
+      "--model",
+      "/workspace/semanticlens/models/embeddinggemma-2-Q8_0.gguf",
+      "--reference-records",
+      "/workspace/semanticlens/local/film-store-v4/vector-runtime-v1/run/records.json"
+    ],
+    "start_ns": 93764033548076,
+    "pid": 1312227,
+    "exit": 0,
+    "end_ns": 93820767194795
+  }
+}

@@ -1,0 +1,7 @@
+2ef5f1ea3620b44389bee79569f0fcbe7c984dce82029f5f818bda73401ffe93  local/film-review-v4/candidate-manifest-check.log
+1d74ccdcfe91e0ab54494da9472294d062de4e7f6b30b1742d626f0d906bd442  local/film-review-v4/check_raw.py
+dfca7d4fc765a88540d318fdcfba7edd3081d84f0ae62d739ff73beff285146e  local/film-review-v4/identity-check.json
+cf4438c2445f6261a608437e5349e64c625d0b09fd32ed6dbab8bf16769789e2  local/film-review-v4/raw-checks.json
+660fc514f4342c031535d07733f9e91f9e1bfaa84cd871999446c76a1ffd2456  local/film-review-v4/report.md
+8c7467419264495c0a8fb305f62fd48f1b0e4421294a4372b9b8ab04b635e42c  local/film-review-v4/results.json
+6a78a413c095c070ea613e214ba15a2b23eaeb3c9caaadef8f3a338cd78c94db  local/film-review-v4/selected-records.json

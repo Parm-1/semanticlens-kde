@@ -1,0 +1,12 @@
+{
+  "database_path": "run/data/film.sqlite",
+  "query": "SELECT id,kind,state,stage,error FROM jobs WHERE id=?",
+  "job_id": "c4b58a59-afe0-4ca4-9905-3d44ce793967",
+  "row": [
+    "c4b58a59-afe0-4ca4-9905-3d44ce793967",
+    "manifest",
+    "failed",
+    "snapshot",
+    "film_manifest: missing schema_version"
+  ]
+}

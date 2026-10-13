@@ -1,0 +1,1521 @@
+{
+  "namespace_exit": 1,
+  "bound_seconds": 160,
+  "process_group_after": [],
+  "dedicated_socket_removed": true,
+  "session_environment": {
+    "WAYLAND_DISPLAY": "semanticlens-test",
+    "DISPLAY": null,
+    "XDG_RUNTIME_DIR": "/tmp/test/runtime",
+    "HOME": "/tmp/test/home",
+    "XDG_CONFIG_HOME": "/tmp/test/config",
+    "XDG_CACHE_HOME": "/tmp/test/cache",
+    "XDG_DATA_HOME": "/tmp/test/data",
+    "XDG_STATE_HOME": "/tmp/test/state",
+    "XDG_SESSION_TYPE": "wayland",
+    "XDG_CURRENT_DESKTOP": "KDE",
+    "QT_QPA_PLATFORM": "wayland",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/tmp/dbus-G2o8sozkYQ,guid=d9d1eabc7f5d4e274b8b23df6ace1f0c",
+    "dedicated_socket": "/tmp/test/runtime/semanticlens-test",
+    "socket_inode": 9085410
+  },
+  "inner": {
+    "scope": "dedicated real app31 autostart; no manually started service",
+    "started_ns": 101831790119888,
+    "passed": false,
+    "checks": [
+      {
+        "name": "dedicated display and private profile",
+        "passed": true,
+        "detail": {
+          "WAYLAND_DISPLAY": "semanticlens-test",
+          "DISPLAY": null,
+          "XDG_RUNTIME_DIR": "/tmp/test/runtime",
+          "HOME": "/tmp/test/home",
+          "XDG_CONFIG_HOME": "/tmp/test/config",
+          "XDG_CACHE_HOME": "/tmp/test/cache",
+          "XDG_DATA_HOME": "/tmp/test/data",
+          "XDG_STATE_HOME": "/tmp/test/state",
+          "XDG_SESSION_TYPE": "wayland",
+          "XDG_CURRENT_DESKTOP": "KDE",
+          "QT_QPA_PLATFORM": "wayland"
+        }
+      },
+      {
+        "name": "private DBus address",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "isolated KWin socket",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "no personal home/run-user/input/GPU binding",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "all approved stage pins match",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "app launched adjacent service itself",
+        "passed": true,
+        "detail": [
+          {
+            "pid": 9,
+            "ppid": 8,
+            "startticks": "10183181",
+            "exe": "/tmp/test/stage/bin/kde-index",
+            "argv": "/tmp/test/stage/bin/kde-index --socket /tmp/test/profile/service.sock --data-dir /tmp/test/profile/data --models /tmp/test/models --capture /tmp/test/app-capture.png --capture-delay 90000 --film-view",
+            "sha256": "31e87f64e63febcfe099cd68a1acc73eefacd31b77151bd74c18d41509152abe"
+          },
+          {
+            "pid": 61,
+            "ppid": 1,
+            "startticks": "10183770",
+            "exe": "/tmp/test/stage/bin/kde-index-service",
+            "argv": "/tmp/test/stage/bin/kde-index-service --data-dir /tmp/test/profile/data --socket /tmp/test/profile/service.sock --probe /tmp/test/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /tmp/test/models/embeddinggemma-2-Q8_0.gguf --image-model /tmp/test/models/mmproj-embeddinggemma-2-Q8_0.gguf --film-tokenizer /tmp/test/stage/bin/semanticlens-film-tokenizer --film-tokenizer-sha256 bca52b5f2945f2959b7493f3cd6d48f0cbce35547d6e215b95b555f643659a1b --film-worker /tmp/test/stage/bin/semanticlens-film-worker --film-worker-sha256 dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5",
+            "sha256": "a59a737bb7e27bcd593d237e36ab113742f566dadd25418d316f1ffebb28f6e3"
+          },
+          {
+            "pid": 110,
+            "ppid": 61,
+            "startticks": "10184270",
+            "exe": "/tmp/test/stage/bin/semanticlens-film-tokenizer",
+            "argv": "/tmp/test/stage/bin/semanticlens-film-tokenizer /tmp/test/models/embeddinggemma-2-Q8_0.gguf",
+            "sha256": "bca52b5f2945f2959b7493f3cd6d48f0cbce35547d6e215b95b555f643659a1b"
+          },
+          {
+            "pid": 111,
+            "ppid": 61,
+            "startticks": "10184375",
+            "exe": "/tmp/test/stage/bin/semanticlens-film-worker",
+            "argv": "/tmp/test/stage/bin/semanticlens-film-worker /tmp/test/models/embeddinggemma-2-Q8_0.gguf 6",
+            "sha256": "dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5"
+          }
+        ]
+      },
+      {
+        "name": "service became model ready",
+        "passed": true,
+        "detail": {
+          "id": "auto-status-101844920511127",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {
+              "backend": "CPU",
+              "byte_order": "little",
+              "dimension": 768,
+              "dtype": "float32",
+              "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+              "extractors": {
+                "pdfinfo": "pdfinfo version 26.08.0",
+                "pdftoppm": "pdftoppm version 26.08.0",
+                "pdftotext": "pdftotext version 26.08.0",
+                "tesseract": "tesseract 5.5.3"
+              },
+              "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+              "max_tokens": 2048,
+              "model": "google/embeddinggemma-2",
+              "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+              "pipeline": "digup-vectors1-linux-cpu-probe1",
+              "producer_sha256": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+              "representation": 3,
+              "runtime": "llama.cpp-b11461+no-logits",
+              "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+            },
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": true,
+            "paused": false,
+            "phase": "ready",
+            "progress": 0,
+            "query_execution": {
+              "allocation": "reserved-foreground/1",
+              "background_threads": 5,
+              "cache_enabled": false,
+              "configured": true,
+              "error": "",
+              "foreground_threads": 1,
+              "legacy_queries_qualified": true,
+              "protocol": "semanticlens-film-worker/1",
+              "resident": true,
+              "supported": true,
+              "threads_total": 6
+            },
+            "query_producer": null,
+            "query_provider_state": "no_successful_query",
+            "ready": true,
+            "recovery_attempt": 1,
+            "roots": [],
+            "scan_directories": 0,
+            "scan_entries": 0,
+            "scan_error": "",
+            "scan_path_bytes": 0,
+            "scan_skipped_names": 0,
+            "scan_skipped_providers": 0,
+            "scan_warnings": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "name": "film service status available",
+        "passed": true,
+        "detail": {
+          "id": "auto-film_status-101844920766178",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "collections": [],
+            "counts": {
+              "analyses": 0,
+              "claims": 0,
+              "editions": 0,
+              "errors": 0,
+              "passages": 0,
+              "sources": 0,
+              "units": 0,
+              "vectors": 0
+            },
+            "coverage": {
+              "active_sources": 0,
+              "expected_sources": 0,
+              "limited": false,
+              "watch_complete": true
+            },
+            "error": "",
+            "film_epoch": "1",
+            "film_revision": "0",
+            "jobs": [],
+            "model_ready": true,
+            "paused": false,
+            "phase": "ready",
+            "query_execution": {
+              "allocation": "reserved-foreground/1",
+              "background_threads": 5,
+              "cache_enabled": false,
+              "configured": true,
+              "error": "",
+              "foreground_threads": 1,
+              "legacy_queries_qualified": true,
+              "protocol": "semanticlens-film-worker/1",
+              "resident": true,
+              "supported": true,
+              "threads_total": 6
+            },
+            "query_producer": null,
+            "query_provider_state": "no_successful_query",
+            "ready": true,
+            "warnings": [],
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "name": "known film query uses selected shared worker",
+        "passed": true,
+        "detail": {
+          "allocation": "reserved-foreground/1",
+          "background_threads": 5,
+          "batch_tokens": 2048,
+          "context_tokens": 2048,
+          "dimension": 768,
+          "ephemeral": true,
+          "executable": "/tmp/test/stage/bin/semanticlens-film-worker",
+          "foreground_threads": 1,
+          "mode": "shared_worker",
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pooling": "mean",
+          "preprocessing": "film-query-strict2048/1",
+          "protocol": "semanticlens-film-worker/1",
+          "reference_producer_sha256": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+          "runtime": "llama.cpp-b11461+no-logits",
+          "sequences": 16,
+          "sha256": "dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135",
+          "threads_total": 6,
+          "ubatch_tokens": 2048
+        }
+      },
+      {
+        "name": "query execution records default six-thread budget",
+        "passed": true,
+        "detail": {
+          "allocation": "reserved-foreground/1",
+          "background_threads": 5,
+          "batch_tokens": 2048,
+          "context_tokens": 2048,
+          "dimension": 768,
+          "ephemeral": true,
+          "executable": "/tmp/test/stage/bin/semanticlens-film-worker",
+          "foreground_threads": 1,
+          "mode": "shared_worker",
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pooling": "mean",
+          "preprocessing": "film-query-strict2048/1",
+          "protocol": "semanticlens-film-worker/1",
+          "reference_producer_sha256": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+          "runtime": "llama.cpp-b11461+no-logits",
+          "sequences": 16,
+          "sha256": "dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135",
+          "threads_total": 6,
+          "ubatch_tokens": 2048
+        }
+      },
+      {
+        "name": "actual adjacent service identity and argv",
+        "passed": true,
+        "detail": {
+          "pid": 61,
+          "ppid": 1,
+          "startticks": "10183770",
+          "exe": "/tmp/test/stage/bin/kde-index-service",
+          "argv": "/tmp/test/stage/bin/kde-index-service --data-dir /tmp/test/profile/data --socket /tmp/test/profile/service.sock --probe /tmp/test/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /tmp/test/models/embeddinggemma-2-Q8_0.gguf --image-model /tmp/test/models/mmproj-embeddinggemma-2-Q8_0.gguf --film-tokenizer /tmp/test/stage/bin/semanticlens-film-tokenizer --film-tokenizer-sha256 bca52b5f2945f2959b7493f3cd6d48f0cbce35547d6e215b95b555f643659a1b --film-worker /tmp/test/stage/bin/semanticlens-film-worker --film-worker-sha256 dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5",
+          "sha256": "a59a737bb7e27bcd593d237e36ab113742f566dadd25418d316f1ffebb28f6e3"
+        }
+      },
+      {
+        "name": "actual worker process identity and budget argv",
+        "passed": true,
+        "detail": {
+          "pid": 111,
+          "ppid": 61,
+          "startticks": "10184375",
+          "exe": "/tmp/test/stage/bin/semanticlens-film-worker",
+          "argv": "/tmp/test/stage/bin/semanticlens-film-worker /tmp/test/models/embeddinggemma-2-Q8_0.gguf 6",
+          "sha256": "dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5"
+        }
+      },
+      {
+        "name": "actual tokenizer process identity",
+        "passed": true,
+        "detail": {
+          "pid": 110,
+          "ppid": 61,
+          "startticks": "10184270",
+          "exe": "/tmp/test/stage/bin/semanticlens-film-tokenizer",
+          "argv": "/tmp/test/stage/bin/semanticlens-film-tokenizer /tmp/test/models/embeddinggemma-2-Q8_0.gguf",
+          "sha256": "bca52b5f2945f2959b7493f3cd6d48f0cbce35547d6e215b95b555f643659a1b"
+        }
+      },
+      {
+        "name": "real app window capture saved",
+        "passed": false,
+        "detail": {
+          "exists": false,
+          "size": null,
+          "sha256": null
+        }
+      }
+    ],
+    "events": [
+      {
+        "request": {
+          "id": "auto-status-101837864788290",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101837864788290",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101838117981525",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101838117981525",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101838372063579",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101838372063579",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101838625719568",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101838625719568",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101838880361878",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101838880361878",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101839143851090",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101839143851090",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101839403462231",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101839403462231",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101839662913390",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101839662913390",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101839923464255",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101839923464255",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101840185839584",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101840185839584",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101840445503575",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101840445503575",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101840704841110",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101840704841110",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101840964100016",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101840964100016",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101841235866714",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101841235866714",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101841502046224",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101841502046224",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101841761479620",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101841761479620",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101842026523928",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101842026523928",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101842286131733",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101842286131733",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101842545628919",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101842545628919",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "scan_warnings": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101842810079055",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101842810079055",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "scan_warnings": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101843073666753",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101843073666753",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "scan_warnings": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101843337268618",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101843337268618",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "scan_warnings": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101843601024994",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101843601024994",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "scan_warnings": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101843871347556",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101843871347556",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "query_execution": {
+              "allocation": "reserved-foreground/1",
+              "background_threads": 5,
+              "cache_enabled": false,
+              "configured": true,
+              "error": "",
+              "foreground_threads": 1,
+              "legacy_queries_qualified": false,
+              "protocol": "semanticlens-film-worker/1",
+              "resident": false,
+              "supported": false,
+              "threads_total": 6
+            },
+            "query_producer": null,
+            "query_provider_state": "no_successful_query",
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "scan_warnings": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101844133968059",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101844133968059",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "query_execution": {
+              "allocation": "reserved-foreground/1",
+              "background_threads": 5,
+              "cache_enabled": false,
+              "configured": true,
+              "error": "",
+              "foreground_threads": 1,
+              "legacy_queries_qualified": false,
+              "protocol": "semanticlens-film-worker/1",
+              "resident": false,
+              "supported": false,
+              "threads_total": 6
+            },
+            "query_producer": null,
+            "query_provider_state": "no_successful_query",
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "scan_warnings": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101844396242047",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101844396242047",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "query_execution": {
+              "allocation": "reserved-foreground/1",
+              "background_threads": 5,
+              "cache_enabled": false,
+              "configured": true,
+              "error": "",
+              "foreground_threads": 1,
+              "legacy_queries_qualified": false,
+              "protocol": "semanticlens-film-worker/1",
+              "resident": false,
+              "supported": false,
+              "threads_total": 6
+            },
+            "query_producer": null,
+            "query_provider_state": "no_successful_query",
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "scan_warnings": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101844658651861",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101844658651861",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {},
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": false,
+            "paused": false,
+            "phase": "verifying",
+            "progress": 0,
+            "query_execution": {
+              "allocation": "reserved-foreground/1",
+              "background_threads": 5,
+              "cache_enabled": false,
+              "configured": true,
+              "error": "",
+              "foreground_threads": 1,
+              "legacy_queries_qualified": true,
+              "protocol": "semanticlens-film-worker/1",
+              "resident": true,
+              "supported": true,
+              "threads_total": 6
+            },
+            "query_producer": null,
+            "query_provider_state": "no_successful_query",
+            "ready": false,
+            "recovery_attempt": 1,
+            "roots": [],
+            "scan_warnings": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-status-101844920511127",
+          "op": "status"
+        },
+        "reply": {
+          "id": "auto-status-101844920511127",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "current": "",
+            "error": "",
+            "errors": 0,
+            "failures": [],
+            "identity": {
+              "backend": "CPU",
+              "byte_order": "little",
+              "dimension": 768,
+              "dtype": "float32",
+              "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+              "extractors": {
+                "pdfinfo": "pdfinfo version 26.08.0",
+                "pdftoppm": "pdftoppm version 26.08.0",
+                "pdftotext": "pdftotext version 26.08.0",
+                "tesseract": "tesseract 5.5.3"
+              },
+              "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+              "max_tokens": 2048,
+              "model": "google/embeddinggemma-2",
+              "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+              "pipeline": "digup-vectors1-linux-cpu-probe1",
+              "producer_sha256": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+              "representation": 3,
+              "runtime": "llama.cpp-b11461+no-logits",
+              "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+            },
+            "index_revision": 0,
+            "indexed": 0,
+            "model_ready": true,
+            "paused": false,
+            "phase": "ready",
+            "progress": 0,
+            "query_execution": {
+              "allocation": "reserved-foreground/1",
+              "background_threads": 5,
+              "cache_enabled": false,
+              "configured": true,
+              "error": "",
+              "foreground_threads": 1,
+              "legacy_queries_qualified": true,
+              "protocol": "semanticlens-film-worker/1",
+              "resident": true,
+              "supported": true,
+              "threads_total": 6
+            },
+            "query_producer": null,
+            "query_provider_state": "no_successful_query",
+            "ready": true,
+            "recovery_attempt": 1,
+            "roots": [],
+            "scan_directories": 0,
+            "scan_entries": 0,
+            "scan_error": "",
+            "scan_path_bytes": 0,
+            "scan_skipped_names": 0,
+            "scan_skipped_providers": 0,
+            "scan_warnings": [],
+            "segments": 0,
+            "total": 0,
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-film_status-101844920766178",
+          "op": "film_status"
+        },
+        "reply": {
+          "id": "auto-film_status-101844920766178",
+          "ok": true,
+          "protocol": 1,
+          "status": {
+            "busy": false,
+            "collections": [],
+            "counts": {
+              "analyses": 0,
+              "claims": 0,
+              "editions": 0,
+              "errors": 0,
+              "passages": 0,
+              "sources": 0,
+              "units": 0,
+              "vectors": 0
+            },
+            "coverage": {
+              "active_sources": 0,
+              "expected_sources": 0,
+              "limited": false,
+              "watch_complete": true
+            },
+            "error": "",
+            "film_epoch": "1",
+            "film_revision": "0",
+            "jobs": [],
+            "model_ready": true,
+            "paused": false,
+            "phase": "ready",
+            "query_execution": {
+              "allocation": "reserved-foreground/1",
+              "background_threads": 5,
+              "cache_enabled": false,
+              "configured": true,
+              "error": "",
+              "foreground_threads": 1,
+              "legacy_queries_qualified": true,
+              "protocol": "semanticlens-film-worker/1",
+              "resident": true,
+              "supported": true,
+              "threads_total": 6
+            },
+            "query_producer": null,
+            "query_provider_state": "no_successful_query",
+            "ready": true,
+            "warnings": [],
+            "watch_error": ""
+          }
+        }
+      },
+      {
+        "request": {
+          "id": "auto-film_search-101844920878440",
+          "op": "film_search",
+          "text": "quiet platform PARC-20942",
+          "mode": "hybrid",
+          "limit": 5
+        },
+        "reply": {
+          "embedding_identity": {
+            "backend": "CPU",
+            "byte_order": "little",
+            "chunker": "whole-units-count640-overlap90cp/1",
+            "dimension": 768,
+            "dtype": "float32",
+            "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+            "extractors": {
+              "pdfinfo": "pdfinfo version 26.08.0",
+              "pdftoppm": "pdftoppm version 26.08.0",
+              "pdftotext": "pdftotext version 26.08.0",
+              "tesseract": "tesseract 5.5.3"
+            },
+            "facet_renderer": "claim-text/1",
+            "film_representation": 1,
+            "film_worker": {
+              "allocation": "reserved-foreground/1",
+              "backend": "CPU",
+              "background_threads": 5,
+              "batch_tokens": 2048,
+              "context_tokens": 2048,
+              "dimension": 768,
+              "film_preprocessing": "film-query-strict2048/1",
+              "foreground_threads": 1,
+              "kv_unified": true,
+              "legacy_preprocessing": "legacy-query-clip2048-eos/1",
+              "max_tokens": 2048,
+              "model": "google/embeddinggemma-2",
+              "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+              "pooling": "mean",
+              "protocol": "semanticlens-film-worker/1",
+              "reference_producer_sha256": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+              "runtime": "llama.cpp-b11461+no-logits",
+              "sequences": 16,
+              "threads_total": 6,
+              "ubatch_tokens": 2048
+            },
+            "film_worker_sha256": "dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5",
+            "formatter": "legacy-texts-exact/1",
+            "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "normalization": "semanticlens-film-units/1",
+            "pipeline": "digup-vectors1-linux-cpu-probe1",
+            "producer_sha256": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+            "representation": 3,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135",
+            "tokenizer": {
+              "add_special": true,
+              "parse_special": true,
+              "runtime": "llama.cpp-b11461+no-logits",
+              "tokenizer": "semanticlens-film-tokenizer/1",
+              "vocab_only": true
+            },
+            "tokenizer_sha256": "bca52b5f2945f2959b7493f3cd6d48f0cbce35547d6e215b95b555f643659a1b"
+          },
+          "film_epoch": "1",
+          "film_revision": "0",
+          "id": "auto-film_search-101844920878440",
+          "include_unverified_prior": false,
+          "limited": false,
+          "ok": true,
+          "protocol": 1,
+          "query_producer": {
+            "allocation": "reserved-foreground/1",
+            "background_threads": 5,
+            "batch_tokens": 2048,
+            "context_tokens": 2048,
+            "dimension": 768,
+            "ephemeral": true,
+            "executable": "/tmp/test/stage/bin/semanticlens-film-worker",
+            "foreground_threads": 1,
+            "mode": "shared_worker",
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pooling": "mean",
+            "preprocessing": "film-query-strict2048/1",
+            "protocol": "semanticlens-film-worker/1",
+            "reference_producer_sha256": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+            "runtime": "llama.cpp-b11461+no-logits",
+            "sequences": 16,
+            "sha256": "dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5",
+            "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135",
+            "threads_total": 6,
+            "ubatch_tokens": 2048
+          },
+          "ranking_version": "semanticlens-film-rrf/2",
+          "results": [],
+          "warnings": [
+            "Ranked suggestions; not a calibrated absence test. Ranking may remain spoiler-informed when text is hidden."
+          ]
+        }
+      }
+    ],
+    "owned": [],
+    "package_usage": "unknown",
+    "app_spawn": {
+      "pid": 9,
+      "argv": [
+        "/tmp/test/stage/bin/kde-index",
+        "--socket",
+        "/tmp/test/profile/service.sock",
+        "--data-dir",
+        "/tmp/test/profile/data",
+        "--models",
+        "/tmp/test/models",
+        "--capture",
+        "/tmp/test/app-capture.png",
+        "--capture-delay",
+        "90000",
+        "--film-view"
+      ],
+      "expected_sha256": "31e87f64e63febcfe099cd68a1acc73eefacd31b77151bd74c18d41509152abe"
+    },
+    "service_process": {
+      "pid": 61,
+      "ppid": 1,
+      "startticks": "10183770",
+      "exe": "/tmp/test/stage/bin/kde-index-service",
+      "argv": "/tmp/test/stage/bin/kde-index-service --data-dir /tmp/test/profile/data --socket /tmp/test/profile/service.sock --probe /tmp/test/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /tmp/test/models/embeddinggemma-2-Q8_0.gguf --image-model /tmp/test/models/mmproj-embeddinggemma-2-Q8_0.gguf --film-tokenizer /tmp/test/stage/bin/semanticlens-film-tokenizer --film-tokenizer-sha256 bca52b5f2945f2959b7493f3cd6d48f0cbce35547d6e215b95b555f643659a1b --film-worker /tmp/test/stage/bin/semanticlens-film-worker --film-worker-sha256 dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5",
+      "sha256": "a59a737bb7e27bcd593d237e36ab113742f566dadd25418d316f1ffebb28f6e3"
+    },
+    "worker_process": {
+      "pid": 111,
+      "ppid": 61,
+      "startticks": "10184375",
+      "exe": "/tmp/test/stage/bin/semanticlens-film-worker",
+      "argv": "/tmp/test/stage/bin/semanticlens-film-worker /tmp/test/models/embeddinggemma-2-Q8_0.gguf 6",
+      "sha256": "dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5"
+    },
+    "tokenizer_process": {
+      "pid": 110,
+      "ppid": 61,
+      "startticks": "10184270",
+      "exe": "/tmp/test/stage/bin/semanticlens-film-tokenizer",
+      "argv": "/tmp/test/stage/bin/semanticlens-film-tokenizer /tmp/test/models/embeddinggemma-2-Q8_0.gguf",
+      "sha256": "bca52b5f2945f2959b7493f3cd6d48f0cbce35547d6e215b95b555f643659a1b"
+    },
+    "error": "RuntimeError(\"real app window capture saved: {'exists': False, 'size': None, 'sha256': None}\")",
+    "processes_after_failure_cleanup": [],
+    "child_exit": -15,
+    "finished_ns": 101880831561168
+  },
+  "closed": true,
+  "passed": false
+}

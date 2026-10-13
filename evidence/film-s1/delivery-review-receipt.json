@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "original": "local/film-review-delivery-v19/report.md",
+      "original_sha256": "33821522f2c519e5cfe46c63ff77e2ed34191fae032da056f0093e990d4ed69c",
+      "derivative": "reports/independent/delivery-v19.md",
+      "derivative_sha256": "33821522f2c519e5cfe46c63ff77e2ed34191fae032da056f0093e990d4ed69c",
+      "scope": "literal path derivative of sealed v19 review; scopes unchanged"
+    },
+    {
+      "original": "local/film-review-delivery-v19/coverage-readback.json",
+      "original_sha256": "1da9812cc0cfc43af7d4865a6d40de04cbc5731825fdc8d40379791026cbf116",
+      "derivative": "review/delivery-v19-coverage-readback.json",
+      "derivative_sha256": "d8c97036ec9b9745eec024f0b65de35a7adce72df76bce43732414ad919f559c",
+      "scope": "literal path derivative of sealed v19 review; scopes unchanged"
+    }
+  ]
+}

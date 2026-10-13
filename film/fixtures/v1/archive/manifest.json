@@ -1,0 +1,17 @@
+{
+  "schema_version": "semanticlens.film.manifest/1",
+  "film_id": "film:archive",
+  "edition_id": "edition:archive:test-1",
+  "display_title": "Parcel Ledger — authored fixture",
+  "year": null,
+  "sources": [
+    {
+      "source_id": "source:archive:script",
+      "relative_path": "archive/archive.md",
+      "sha256": "d326503d0849f13b7ce64def7dceb6ffe5c35313f92868663b61fe6dd1f58993",
+      "source_kind": "screenplay",
+      "language": "en",
+      "edition_relation": "exact_edition"
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "opening": {
+    "app": "31e87f64e63febcfe099cd68a1acc73eefacd31b77151bd74c18d41509152abe",
+    "worker": {
+      "path": "/tmp/test/film-worker",
+      "sha256": "dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5"
+    },
+    "query_ids": [
+      "film-ui-3",
+      "film-ui-49",
+      "film-ui-66"
+    ],
+    "open_api": [
+      {
+        "actual_url": "file:///tmp/test/work/index/film-extract-kWuSCb/input.txt",
+        "after_call_elapsed_ns": 25350797798,
+        "before_call_elapsed_ns": 25337153512,
+        "focus_window": "SemanticLens for KDE",
+        "last_input_serial": 0,
+        "local_file": "/tmp/test/work/index/film-extract-kWuSCb/input.txt",
+        "pid": 155,
+        "return_accepted": true
+      },
+      {
+        "actual_url": "file:///tmp/test/work/index/film-extract-zKpfdB/input.txt",
+        "after_call_elapsed_ns": 45987296883,
+        "before_call_elapsed_ns": 45980492879,
+        "focus_window": "",
+        "last_input_serial": 0,
+        "local_file": "/tmp/test/work/index/film-extract-zKpfdB/input.txt",
+        "pid": 155,
+        "return_accepted": true
+      }
+    ],
+    "negative_copy_removal": [
+      "original_path",
+      "stale_epoch",
+      "source_revision",
+      "action",
+      "page",
+      "nullable_zero"
+    ],
+    "receiver_pids": [
+      68,
+      89,
+      177,
+      191,
+      227
+    ]
+  },
+  "auto": {
+    "app_spawn": {
+      "pid": 9,
+      "argv": [
+        "/tmp/test/stage/bin/kde-index",
+        "--socket",
+        "/tmp/test/profile/service.sock",
+        "--data-dir",
+        "/tmp/test/profile/data",
+        "--models",
+        "/tmp/test/models",
+        "--capture",
+        "/tmp/test/app-capture.png",
+        "--capture-delay",
+        "65000",
+        "--film-view"
+      ],
+      "expected_sha256": "31e87f64e63febcfe099cd68a1acc73eefacd31b77151bd74c18d41509152abe"
+    },
+    "service": {
+      "pid": 65,
+      "ppid": 1,
+      "startticks": "10191901",
+      "exe": "/tmp/test/stage/bin/kde-index-service",
+      "argv": "/tmp/test/stage/bin/kde-index-service --data-dir /tmp/test/profile/data --socket /tmp/test/profile/service.sock --probe /tmp/test/stage/bin/embedding-probe --probe-sha256 fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0 --text-model /tmp/test/models/embeddinggemma-2-Q8_0.gguf --image-model /tmp/test/models/mmproj-embeddinggemma-2-Q8_0.gguf --film-tokenizer /tmp/test/stage/bin/semanticlens-film-tokenizer --film-tokenizer-sha256 bca52b5f2945f2959b7493f3cd6d48f0cbce35547d6e215b95b555f643659a1b --film-worker /tmp/test/stage/bin/semanticlens-film-worker --film-worker-sha256 dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5",
+      "sha256": "a59a737bb7e27bcd593d237e36ab113742f566dadd25418d316f1ffebb28f6e3"
+    },
+    "worker": {
+      "pid": 111,
+      "ppid": 65,
+      "startticks": "10192252",
+      "exe": "/tmp/test/stage/bin/semanticlens-film-worker",
+      "argv": "/tmp/test/stage/bin/semanticlens-film-worker /tmp/test/models/embeddinggemma-2-Q8_0.gguf 6",
+      "sha256": "dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5"
+    },
+    "tokenizer": {
+      "pid": 107,
+      "ppid": 65,
+      "startticks": "10192150",
+      "exe": "/tmp/test/stage/bin/semanticlens-film-tokenizer",
+      "argv": "/tmp/test/stage/bin/semanticlens-film-tokenizer /tmp/test/models/embeddinggemma-2-Q8_0.gguf",
+      "sha256": "bca52b5f2945f2959b7493f3cd6d48f0cbce35547d6e215b95b555f643659a1b"
+    },
+    "query": {
+      "request": {
+        "id": "auto-film_search-101923566632064",
+        "op": "film_search",
+        "text": "quiet platform PARC-20942",
+        "mode": "hybrid",
+        "limit": 5
+      },
+      "reply": {
+        "embedding_identity": {
+          "backend": "CPU",
+          "byte_order": "little",
+          "chunker": "whole-units-count640-overlap90cp/1",
+          "dimension": 768,
+          "dtype": "float32",
+          "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+          "extractors": {
+            "pdfinfo": "pdfinfo version 26.08.0",
+            "pdftoppm": "pdftoppm version 26.08.0",
+            "pdftotext": "pdftotext version 26.08.0",
+            "tesseract": "tesseract 5.5.3"
+          },
+          "facet_renderer": "claim-text/1",
+          "film_representation": 1,
+          "film_worker": {
+            "allocation": "reserved-foreground/1",
+            "backend": "CPU",
+            "background_threads": 5,
+            "batch_tokens": 2048,
+            "context_tokens": 2048,
+            "dimension": 768,
+            "film_preprocessing": "film-query-strict2048/1",
+            "foreground_threads": 1,
+            "kv_unified": true,
+            "legacy_preprocessing": "legacy-query-clip2048-eos/1",
+            "max_tokens": 2048,
+            "model": "google/embeddinggemma-2",
+            "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+            "pooling": "mean",
+            "protocol": "semanticlens-film-worker/1",
+            "reference_producer_sha256": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+            "runtime": "llama.cpp-b11461+no-logits",
+            "sequences": 16,
+            "threads_total": 6,
+            "ubatch_tokens": 2048
+          },
+          "film_worker_sha256": "dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5",
+          "formatter": "legacy-texts-exact/1",
+          "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+          "max_tokens": 2048,
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "normalization": "semanticlens-film-units/1",
+          "pipeline": "digup-vectors1-linux-cpu-probe1",
+          "producer_sha256": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+          "representation": 3,
+          "runtime": "llama.cpp-b11461+no-logits",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135",
+          "tokenizer": {
+            "add_special": true,
+            "parse_special": true,
+            "runtime": "llama.cpp-b11461+no-logits",
+            "tokenizer": "semanticlens-film-tokenizer/1",
+            "vocab_only": true
+          },
+          "tokenizer_sha256": "bca52b5f2945f2959b7493f3cd6d48f0cbce35547d6e215b95b555f643659a1b"
+        },
+        "film_epoch": "1",
+        "film_revision": "0",
+        "id": "auto-film_search-101923566632064",
+        "include_unverified_prior": false,
+        "limited": false,
+        "ok": true,
+        "protocol": 1,
+        "query_producer": {
+          "allocation": "reserved-foreground/1",
+          "background_threads": 5,
+          "batch_tokens": 2048,
+          "context_tokens": 2048,
+          "dimension": 768,
+          "ephemeral": true,
+          "executable": "/tmp/test/stage/bin/semanticlens-film-worker",
+          "foreground_threads": 1,
+          "mode": "shared_worker",
+          "model": "google/embeddinggemma-2",
+          "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+          "pooling": "mean",
+          "preprocessing": "film-query-strict2048/1",
+          "protocol": "semanticlens-film-worker/1",
+          "reference_producer_sha256": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+          "runtime": "llama.cpp-b11461+no-logits",
+          "sequences": 16,
+          "sha256": "dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5",
+          "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135",
+          "threads_total": 6,
+          "ubatch_tokens": 2048
+        },
+        "ranking_version": "semanticlens-film-rrf/2",
+        "results": [],
+        "warnings": [
+          "Ranked suggestions; not a calibrated absence test. Ranking may remain spoiler-informed when text is hidden."
+        ]
+      }
+    },
+    "capture": {
+      "path": "/tmp/test/app-capture.png",
+      "sha256": "1a8a70e5af624df3773c348ec9928e2ce0921c10cc7f4dd6878bc888ec50517c",
+      "size": 64517
+    },
+    "child_exit": 0,
+    "remaining": [],
+    "outer": {
+      "namespace_exit": 0,
+      "bound_seconds": 150,
+      "process_group_after": [],
+      "dedicated_socket_removed": true,
+      "session_environment": {
+        "WAYLAND_DISPLAY": "semanticlens-test",
+        "DISPLAY": null,
+        "XDG_RUNTIME_DIR": "/tmp/test/runtime",
+        "HOME": "/tmp/test/home",
+        "XDG_CONFIG_HOME": "/tmp/test/config",
+        "XDG_CACHE_HOME": "/tmp/test/cache",
+        "XDG_DATA_HOME": "/tmp/test/data",
+        "XDG_STATE_HOME": "/tmp/test/state",
+        "XDG_SESSION_TYPE": "wayland",
+        "XDG_CURRENT_DESKTOP": "KDE",
+        "QT_QPA_PLATFORM": "wayland",
+        "DBUS_SESSION_BUS_ADDRESS": "unix:path=/tmp/dbus-HhcyTVF1re,guid=3c23c76e6e35bee808dc18656ace1f7f",
+        "dedicated_socket": "/tmp/test/runtime/semanticlens-test",
+        "socket_inode": 9085627
+      },
+      "closed": true,
+      "passed": true
+    },
+    "elapsed_scope_seconds": 65.663249597,
+    "package_usage": "unknown"
+  }
+}

@@ -35,6 +35,8 @@ jobs:
           test -x stage/usr/bin/kde-index-service
           test -x stage/usr/bin/semanticlens-media
           test -x stage/usr/bin/embedding-probe
+          test -x stage/usr/bin/semanticlens-film-tokenizer
+          test -x stage/usr/bin/semanticlens-film-worker
           test -f stage/usr/lib/qt6/plugins/kf6/krunner/kde-index-runner.so
           test -f stage/usr/share/licenses/kde-index/stb-image-MIT.txt
           test ! -d stage/usr/include
@@ -47,3 +49,12 @@ jobs:
             --socket "$PWD/ci-profile/search.sock" \
             --capture "$PWD/ci-profile/window.png"
           test -s ci-profile/window.png
+      - name: Load the offline film view in the isolated CI profile
+        run: |
+          mkdir -p ci-film-profile
+          QT_QPA_PLATFORM=offscreen timeout 15s build/bin/kde-index --film-view \
+            --models "$PWD/ci-film-profile/models" --service /usr/bin/false \
+            --probe /usr/bin/false --data-dir "$PWD/ci-film-profile/data" \
+            --socket "$PWD/ci-film-profile/search.sock" \
+            --capture "$PWD/ci-film-profile/window.png"
+          test -s ci-film-profile/window.png

@@ -1,0 +1,212 @@
+{
+  "scope": "Explicit selected frozen production sources to public207 and4b; source equivalence only, not native compilation from either commit or complete toolchain equivalence. Each original remains pinned by its prior frozen package.",
+  "rows": [
+    {
+      "path": "engine/CMakeLists.txt",
+      "original": "local/film-store-v4/private-candidate-v1/source/engine/CMakeLists.txt",
+      "original_sha256": "9c29fae75af7596fdb7e8e71e3aaf91d907d88096b9cc965c2dc8cbbf65a1e3b",
+      "207_sha256": "9c29fae75af7596fdb7e8e71e3aaf91d907d88096b9cc965c2dc8cbbf65a1e3b",
+      "4b_sha256": "9c29fae75af7596fdb7e8e71e3aaf91d907d88096b9cc965c2dc8cbbf65a1e3b",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "film/schemas/analysis.schema.json",
+      "original": "local/film-store-v3/candidate/source/film/schemas/analysis.schema.json",
+      "original_sha256": "6b9b8c42bfc60c4db28359e9aa437dede1d293ccbb0294fea5671cc7ad37edeb",
+      "207_sha256": "6b9b8c42bfc60c4db28359e9aa437dede1d293ccbb0294fea5671cc7ad37edeb",
+      "4b_sha256": "6b9b8c42bfc60c4db28359e9aa437dede1d293ccbb0294fea5671cc7ad37edeb",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "film/schemas/film_manifest.schema.json",
+      "original": "local/film-store-v3/candidate/source/film/schemas/film_manifest.schema.json",
+      "original_sha256": "df97971499f11166b3a1733521c6973d8e9e4f432ecbb6272ddac5f8dda34535",
+      "207_sha256": "df97971499f11166b3a1733521c6973d8e9e4f432ecbb6272ddac5f8dda34535",
+      "4b_sha256": "df97971499f11166b3a1733521c6973d8e9e4f432ecbb6272ddac5f8dda34535",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "probe/CMakeLists.txt",
+      "original": "local/film-store-v4/private-candidate-v1/source/probe/CMakeLists.txt",
+      "original_sha256": "82f9f8d00ebc36498261499c64477ed63e3e4925d6e77d1ec903dcc278114e16",
+      "207_sha256": "82f9f8d00ebc36498261499c64477ed63e3e4925d6e77d1ec903dcc278114e16",
+      "4b_sha256": "82f9f8d00ebc36498261499c64477ed63e3e4925d6e77d1ec903dcc278114e16",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "probe/main.cpp",
+      "original": "local/film-store-v3/candidate/source/probe/main.cpp",
+      "original_sha256": "92b17b4ec33b5a85737383e505543359188ea90c6f7aeea637f77b4303df0c8a",
+      "207_sha256": "92b17b4ec33b5a85737383e505543359188ea90c6f7aeea637f77b4303df0c8a",
+      "4b_sha256": "92b17b4ec33b5a85737383e505543359188ea90c6f7aeea637f77b4303df0c8a",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "src/core-v5/engine.cpp",
+      "original": "local/film-store-v4/private-candidate-v1/source/src/core-v5/engine.cpp",
+      "original_sha256": "cbd039798cddd6292672d58685ec5ee3c608784def8cc5136ecc260dbd4aa21e",
+      "207_sha256": "cbd039798cddd6292672d58685ec5ee3c608784def8cc5136ecc260dbd4aa21e",
+      "4b_sha256": "cbd039798cddd6292672d58685ec5ee3c608784def8cc5136ecc260dbd4aa21e",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "src/core-v5/engine.h",
+      "original": "local/film-store-v4/private-candidate-v1/source/src/core-v5/engine.h",
+      "original_sha256": "2ddba14f8628997907aa5f892958a8cdbc5685d948bb0772a3b62c68b4977e2a",
+      "207_sha256": "2ddba14f8628997907aa5f892958a8cdbc5685d948bb0772a3b62c68b4977e2a",
+      "4b_sha256": "2ddba14f8628997907aa5f892958a8cdbc5685d948bb0772a3b62c68b4977e2a",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "src/film-v1/adapters.cpp",
+      "original": "local/film-store-v3/candidate/source/src/film-v1/adapters.cpp",
+      "original_sha256": "b7ed891f4f9cd3b37a03fa58983f99e162932357d0388709967a0697b60704ff",
+      "207_sha256": "b7ed891f4f9cd3b37a03fa58983f99e162932357d0388709967a0697b60704ff",
+      "4b_sha256": "b7ed891f4f9cd3b37a03fa58983f99e162932357d0388709967a0697b60704ff",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "src/film-v1/adapters.h",
+      "original": "local/film-store-v3/candidate/source/src/film-v1/adapters.h",
+      "original_sha256": "3ce9cf71820cf07063c4577326eb0c04ad4aac8c9b8e9b963b94f9577063bac1",
+      "207_sha256": "3ce9cf71820cf07063c4577326eb0c04ad4aac8c9b8e9b963b94f9577063bac1",
+      "4b_sha256": "3ce9cf71820cf07063c4577326eb0c04ad4aac8c9b8e9b963b94f9577063bac1",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "src/film-v1/schema.cpp",
+      "original": "local/film-store-v3/candidate/source/src/film-v1/schema.cpp",
+      "original_sha256": "839a2e730e51177fc06dadc1b34602ce6b3e616cf6faa91d27eba87c32f8f037",
+      "207_sha256": "839a2e730e51177fc06dadc1b34602ce6b3e616cf6faa91d27eba87c32f8f037",
+      "4b_sha256": "839a2e730e51177fc06dadc1b34602ce6b3e616cf6faa91d27eba87c32f8f037",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "src/film-v1/schema.h",
+      "original": "local/film-store-v3/candidate/source/src/film-v1/schema.h",
+      "original_sha256": "5ae8ab7d78883e7d821308b3f24ee1e61374644d2116ee289a67d44c6dda7d7b",
+      "207_sha256": "5ae8ab7d78883e7d821308b3f24ee1e61374644d2116ee289a67d44c6dda7d7b",
+      "4b_sha256": "5ae8ab7d78883e7d821308b3f24ee1e61374644d2116ee289a67d44c6dda7d7b",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "src/film-v1/store.cpp",
+      "original": "local/film-store-v4/private-candidate-v1/source/src/film-v1/store.cpp",
+      "original_sha256": "e86ae37b095528ca79e74ce3d6a9676ba621244e745da489082bb3c401138b50",
+      "207_sha256": "e86ae37b095528ca79e74ce3d6a9676ba621244e745da489082bb3c401138b50",
+      "4b_sha256": "e86ae37b095528ca79e74ce3d6a9676ba621244e745da489082bb3c401138b50",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "src/film-v1/store.h",
+      "original": "local/film-store-v4/private-candidate-v1/source/src/film-v1/store.h",
+      "original_sha256": "26ae210f12bb89405bddceb724b388034f1de35df37a53b77b06cd44ba115aaa",
+      "207_sha256": "26ae210f12bb89405bddceb724b388034f1de35df37a53b77b06cd44ba115aaa",
+      "4b_sha256": "26ae210f12bb89405bddceb724b388034f1de35df37a53b77b06cd44ba115aaa",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "src/film-v1/tokenizer.cpp",
+      "original": "local/film-store-v3/candidate/source/src/film-v1/tokenizer.cpp",
+      "original_sha256": "ecdc0290017903c6f3950d33e766e053caf3e507d3f0938f6e612ac0067b369c",
+      "207_sha256": "ecdc0290017903c6f3950d33e766e053caf3e507d3f0938f6e612ac0067b369c",
+      "4b_sha256": "ecdc0290017903c6f3950d33e766e053caf3e507d3f0938f6e612ac0067b369c",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "src/film-v1/worker.cpp",
+      "original": "local/film-store-v4/private-candidate-v1/source/src/film-v1/worker.cpp",
+      "original_sha256": "ebd2aab6d2edb1b3b4ccd96fb62b7f6e364554f9718920b0b54900903ebfb7f3",
+      "207_sha256": "ebd2aab6d2edb1b3b4ccd96fb62b7f6e364554f9718920b0b54900903ebfb7f3",
+      "4b_sha256": "ebd2aab6d2edb1b3b4ccd96fb62b7f6e364554f9718920b0b54900903ebfb7f3",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "src/film-v1/worker_qualification.h",
+      "original": "local/film-store-v4/private-candidate-v1/source/src/film-v1/worker_qualification.h",
+      "original_sha256": "49b64e0d14465a99850df4b6594d597b3ee0076ea9f513a68e8afecb63d40119",
+      "207_sha256": "49b64e0d14465a99850df4b6594d597b3ee0076ea9f513a68e8afecb63d40119",
+      "4b_sha256": "49b64e0d14465a99850df4b6594d597b3ee0076ea9f513a68e8afecb63d40119",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "src/service-v3/main.cpp",
+      "original": "local/film-store-v4/private-candidate-v1/source/src/service-v3/main.cpp",
+      "original_sha256": "69b8294fc559b4543023a984b1b86ff3fa881e3c47fbbb5cbc53f7c3e4a8b0e5",
+      "207_sha256": "69b8294fc559b4543023a984b1b86ff3fa881e3c47fbbb5cbc53f7c3e4a8b0e5",
+      "4b_sha256": "69b8294fc559b4543023a984b1b86ff3fa881e3c47fbbb5cbc53f7c3e4a8b0e5",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "src/ui-v4/FilmPage.qml",
+      "original": "local/film-ui-controls-v17/repair-3/source/product/FilmPage.qml",
+      "original_sha256": "a0c212a098874a2412ab0091ef611d248c1cfdf0e8d848a439013ad885311389",
+      "207_sha256": "a0c212a098874a2412ab0091ef611d248c1cfdf0e8d848a439013ad885311389",
+      "4b_sha256": "a0c212a098874a2412ab0091ef611d248c1cfdf0e8d848a439013ad885311389",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "src/ui-v4/Main.qml",
+      "original": "local/film-ui-controls-v17/repair-3/source/product/Main.qml",
+      "original_sha256": "79ba1c6b2928ae8ce506f986a53979a80f91341be2c52aa4387f10ce614a444c",
+      "207_sha256": "79ba1c6b2928ae8ce506f986a53979a80f91341be2c52aa4387f10ce614a444c",
+      "4b_sha256": "79ba1c6b2928ae8ce506f986a53979a80f91341be2c52aa4387f10ce614a444c",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "src/ui-v4/backend.cpp",
+      "original": "local/film-auto-worker-preparation-v2/primary/src/ui-v4/backend.cpp",
+      "original_sha256": "9fff3d3a44aaeddb200b288ef8fbacae04c74d224d7cad4574a236b80ff2f7fc",
+      "207_sha256": "9fff3d3a44aaeddb200b288ef8fbacae04c74d224d7cad4574a236b80ff2f7fc",
+      "4b_sha256": "9fff3d3a44aaeddb200b288ef8fbacae04c74d224d7cad4574a236b80ff2f7fc",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "src/ui-v4/film_backend.cpp",
+      "original": "local/film-auto-worker-preparation-v2/primary/src/ui-v4/film_backend.cpp",
+      "original_sha256": "43d63610bcb34a80f896290c437acf733ab56b50358cc0a96a0f41889739ddc8",
+      "207_sha256": "43d63610bcb34a80f896290c437acf733ab56b50358cc0a96a0f41889739ddc8",
+      "4b_sha256": "43d63610bcb34a80f896290c437acf733ab56b50358cc0a96a0f41889739ddc8",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "src/ui-v4/film_backend.h",
+      "original": "local/film-ui-controls-v17/repair-3/source/product/film_backend.h",
+      "original_sha256": "7cb6a18c324b2b3a2d316f9fc5db7e53e1e878b583334414989ae107c7390cfb",
+      "207_sha256": "7cb6a18c324b2b3a2d316f9fc5db7e53e1e878b583334414989ae107c7390cfb",
+      "4b_sha256": "7cb6a18c324b2b3a2d316f9fc5db7e53e1e878b583334414989ae107c7390cfb",
+      "matches_207": true,
+      "matches_4b": true
+    },
+    {
+      "path": "src/ui-v4/main.cpp",
+      "original": "local/film-auto-worker-preparation-v2/primary/src/ui-v4/main.cpp",
+      "original_sha256": "0b6c03b9d3481c1a16595856c2e276712ff8bac8dd6e06f1beca59c4c202538d",
+      "207_sha256": "0b6c03b9d3481c1a16595856c2e276712ff8bac8dd6e06f1beca59c4c202538d",
+      "4b_sha256": "0b6c03b9d3481c1a16595856c2e276712ff8bac8dd6e06f1beca59c4c202538d",
+      "matches_207": true,
+      "matches_4b": true
+    }
+  ]
+}

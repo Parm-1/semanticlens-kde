@@ -1,0 +1,794 @@
+{
+  "scope": "affected service pending/lifecycle/profile + frozen source-only commit reuse; authored fixture fixed timing",
+  "lifecycle": {
+    "owner_cancel": {
+      "phase": {
+        "job_id": "dd91a18b-9a7a-4b94-b399-49b7bbf194b1",
+        "begin_id": "c351317e-d7bd-431e-acfe-66c9bbf1fccf",
+        "ticket": "film-7853dae9-3a22e762-3b81acb5-eeea9957-",
+        "pending_id": "d04038b0-b58f-4881-bb5e-2265d7d4418a",
+        "worker_pid": 1362774,
+        "input_sha256": "411df72c13bae8334931f7162c333343aabccea55f9d219ace83ec78c73b6b2f"
+      },
+      "terminal": {
+        "done": 0,
+        "error": "canceled",
+        "job_id": "dd91a18b-9a7a-4b94-b399-49b7bbf194b1",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "canceled",
+        "total": 0
+      },
+      "reuse": {
+        "done": 8,
+        "error": "",
+        "job_id": "09325fc9-fc78-4eba-945b-b2ccac0a1ac1",
+        "kind": "manifest",
+        "stage": "committed",
+        "state": "complete",
+        "total": 8
+      }
+    },
+    "disconnect": {
+      "phase": {
+        "job_id": "77e516d5-0304-46ca-adad-e25675b699ff",
+        "begin_id": "6dca6539-0ed1-4a59-a50e-1f57172b0638",
+        "ticket": "film-98d5f25d-674ce87e-621eb5b6-4f1ae9eb-",
+        "pending_id": "cb114905-0d40-4055-9d9f-68222e024958",
+        "worker_pid": 1362774,
+        "input_sha256": "312416dbf2671b0a962137d2688ccdcae1e53936199abbcc75857ee31632baed"
+      },
+      "terminal": {
+        "done": 0,
+        "error": "disconnected",
+        "job_id": "77e516d5-0304-46ca-adad-e25675b699ff",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "canceled",
+        "total": 0
+      },
+      "reuse": {
+        "done": 8,
+        "error": "",
+        "job_id": "99a1370d-30ea-4608-bb86-ca78c8922667",
+        "kind": "manifest",
+        "stage": "committed",
+        "state": "complete",
+        "total": 8
+      }
+    },
+    "reuse_terminal_BLOB_matches": {
+      "cancel": 8,
+      "disconnect": 8
+    },
+    "source_replacement": {
+      "phase": {
+        "job_id": "6fe153c2-05c0-40bf-9aa0-d65334f58844",
+        "begin_id": "72328448-609d-45a0-8899-c1219ba19cd0",
+        "ticket": "film-2b526999-3930c19c-c1ce8967-83a94fb4-",
+        "pending_id": "c4f45aa9-08e5-45d9-b106-e8c7e563acc1",
+        "worker_pid": 1364391,
+        "input_sha256": "2454e74c323a1d1cdc53c05177b08f1038d9c25c480a0948beb59c51eb351ddd"
+      },
+      "terminal": {
+        "done": 0,
+        "error": "canceled",
+        "job_id": "6fe153c2-05c0-40bf-9aa0-d65334f58844",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "canceled",
+        "total": 0
+      },
+      "immediate_snapshot_equal": true,
+      "snapshot_vector_count": 9,
+      "final_vector_count": 1,
+      "final_snapshot": {
+        "legacy": {
+          "identity_rows": [
+            [
+              "identity",
+              "eyJiYWNrZW5kIjoiQ1BVIiwiYnl0ZV9vcmRlciI6ImxpdHRsZSIsImRpbWVuc2lvbiI6NzY4LCJkdHlwZSI6ImZsb2F0MzIiLCJlbmdpbmVfcGlwZWxpbmUiOiJrZGUtaW5kZXgtZnVsbC1wYWdlcy12My1zZWdtZW50czE4MDAtaW1hZ2UxNDAtb2NyMzIiLCJleHRyYWN0b3JzIjp7InBkZmluZm8iOiJwZGZpbmZvIHZlcnNpb24gMjYuMDguMCIsInBkZnRvcHBtIjoicGRmdG9wcG0gdmVyc2lvbiAyNi4wOC4wIiwicGRmdG90ZXh0IjoicGRmdG90ZXh0IHZlcnNpb24gMjYuMDguMCIsInRlc3NlcmFjdCI6InRlc3NlcmFjdCA1LjUuMyJ9LCJpbWFnZV9zaGEyNTYiOiJjNGE4YTUyNjkxZWNlZjQwNjE4NDM4OTI4YmRmOWU2ODM3OWI4NTRlMjQxNjZmMjkyNTkyMzUzZGIwYWFiNjRmIiwibWF4X3Rva2VucyI6MjA0OCwibW9kZWwiOiJnb29nbGUvZW1iZWRkaW5nZ2VtbWEtMiIsIm1vZGVsX3JldmlzaW9uIjoiYmZjZDI5ODc2MmNjMzRkMDM1N2VjZTVlYmRkMzE3OTFhM2EzNzRkOCIsInBpcGVsaW5lIjoiZGlndXAtdmVjdG9yczEtbGludXgtY3B1LXByb2JlMSIsInByb2R1Y2VyX3NoYTI1NiI6ImZhN2QxNDY3NGY4MjcxNTM4NjEwMTE5NWQ4MGE5NTljZDU0NTZhMTZlM2NjMTYyMWY2Y2U0ODhlZDRiZTJkZDAiLCJyZXByZXNlbnRhdGlvbiI6MywicnVudGltZSI6ImxsYW1hLmNwcC1iMTE0NjErbm8tbG9naXRzIiwidGV4dF9zaGEyNTYiOiIyMTg4YWMxZGVjYTRiNzdkZmZlZmQ2MDNjMjc3NmE5ZDc2ZDlkNzRlYzAxODQxMzkyOTgyZWJiODQwYjA5MTM1In0=",
+              "bytes"
+            ]
+          ],
+          "segment_vectors": [
+            "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"
+          ]
+        },
+        "film_identity": {
+          "sqlite_type": "blob",
+          "base64": "eyJiYWNrZW5kIjoiQ1BVIiwiYnl0ZV9vcmRlciI6ImxpdHRsZSIsImNodW5rZXIiOiJ3aG9sZS11bml0cy1jb3VudDY0MC1vdmVybGFwOTBjcC8xIiwiZGltZW5zaW9uIjo3NjgsImR0eXBlIjoiZmxvYXQzMiIsImVuZ2luZV9waXBlbGluZSI6ImtkZS1pbmRleC1mdWxsLXBhZ2VzLXYzLXNlZ21lbnRzMTgwMC1pbWFnZTE0MC1vY3IzMiIsImV4dHJhY3RvcnMiOnsicGRmaW5mbyI6InBkZmluZm8gdmVyc2lvbiAyNi4wOC4wIiwicGRmdG9wcG0iOiJwZGZ0b3BwbSB2ZXJzaW9uIDI2LjA4LjAiLCJwZGZ0b3RleHQiOiJwZGZ0b3RleHQgdmVyc2lvbiAyNi4wOC4wIiwidGVzc2VyYWN0IjoidGVzc2VyYWN0IDUuNS4zIn0sImZhY2V0X3JlbmRlcmVyIjoiY2xhaW0tdGV4dC8xIiwiZmlsbV9yZXByZXNlbnRhdGlvbiI6MSwiZmlsbV93b3JrZXIiOnsiYWxsb2NhdGlvbiI6InJlc2VydmVkLWZvcmVncm91bmQvMSIsImJhY2tlbmQiOiJDUFUiLCJiYWNrZ3JvdW5kX3RocmVhZHMiOjUsImJhdGNoX3Rva2VucyI6MjA0OCwiY29udGV4dF90b2tlbnMiOjIwNDgsImRpbWVuc2lvbiI6NzY4LCJmaWxtX3ByZXByb2Nlc3NpbmciOiJmaWxtLXF1ZXJ5LXN0cmljdDIwNDgvMSIsImZvcmVncm91bmRfdGhyZWFkcyI6MSwia3ZfdW5pZmllZCI6dHJ1ZSwibGVnYWN5X3ByZXByb2Nlc3NpbmciOiJsZWdhY3ktcXVlcnktY2xpcDIwNDgtZW9zLzEiLCJtYXhfdG9rZW5zIjoyMDQ4LCJtb2RlbCI6Imdvb2dsZS9lbWJlZGRpbmdnZW1tYS0yIiwibW9kZWxfcmV2aXNpb24iOiJiZmNkMjk4NzYyY2MzNGQwMzU3ZWNlNWViZGQzMTc5MWEzYTM3NGQ4IiwicG9vbGluZyI6Im1lYW4iLCJwcm90b2NvbCI6InNlbWFudGljbGVucy1maWxtLXdvcmtlci8xIiwicmVmZXJlbmNlX3Byb2R1Y2VyX3NoYTI1NiI6ImZhN2QxNDY3NGY4MjcxNTM4NjEwMTE5NWQ4MGE5NTljZDU0NTZhMTZlM2NjMTYyMWY2Y2U0ODhlZDRiZTJkZDAiLCJydW50aW1lIjoibGxhbWEuY3BwLWIxMTQ2MStuby1sb2dpdHMiLCJzZXF1ZW5jZXMiOjE2LCJ0aHJlYWRzX3RvdGFsIjo2LCJ1YmF0Y2hfdG9rZW5zIjoyMDQ4fSwiZmlsbV93b3JrZXJfc2hhMjU2IjoiZGZmMTIxMmI2NGZjZmIxNzZjZTRhMzY2NmJkNWU2YjgyNTI1OWFkM2I0NmYwNGE2MjVmMzk5NWE5ZGQ4MzZlNSIsImZvcm1hdHRlciI6ImxlZ2FjeS10ZXh0cy1leGFjdC8xIiwiaW1hZ2Vfc2hhMjU2IjoiYzRhOGE1MjY5MWVjZWY0MDYxODQzODkyOGJkZjllNjgzNzliODU0ZTI0MTY2ZjI5MjU5MjM1M2RiMGFhYjY0ZiIsIm1heF90b2tlbnMiOjIwNDgsIm1vZGVsIjoiZ29vZ2xlL2VtYmVkZGluZ2dlbW1hLTIiLCJtb2RlbF9yZXZpc2lvbiI6ImJmY2QyOTg3NjJjYzM0ZDAzNTdlY2U1ZWJkZDMxNzkxYTNhMzc0ZDgiLCJub3JtYWxpemF0aW9uIjoic2VtYW50aWNsZW5zLWZpbG0tdW5pdHMvMSIsInBpcGVsaW5lIjoiZGlndXAtdmVjdG9yczEtbGludXgtY3B1LXByb2JlMSIsInByb2R1Y2VyX3NoYTI1NiI6ImZhN2QxNDY3NGY4MjcxNTM4NjEwMTE5NWQ4MGE5NTljZDU0NTZhMTZlM2NjMTYyMWY2Y2U0ODhlZDRiZTJkZDAiLCJyZXByZXNlbnRhdGlvbiI6MywicnVudGltZSI6ImxsYW1hLmNwcC1iMTE0NjErbm8tbG9naXRzIiwidGV4dF9zaGEyNTYiOiIyMTg4YWMxZGVjYTRiNzdkZmZlZmQ2MDNjMjc3NmE5ZDc2ZDlkNzRlYzAxODQxMzkyOTgyZWJiODQwYjA5MTM1IiwidG9rZW5pemVyIjp7ImFkZF9zcGVjaWFsIjp0cnVlLCJwYXJzZV9zcGVjaWFsIjp0cnVlLCJydW50aW1lIjoibGxhbWEuY3BwLWIxMTQ2MStuby1sb2dpdHMiLCJ0b2tlbml6ZXIiOiJzZW1hbnRpY2xlbnMtZmlsbS10b2tlbml6ZXIvMSIsInZvY2FiX29ubHkiOnRydWV9LCJ0b2tlbml6ZXJfc2hhMjU2IjoiYmNhNTJiNWYyOTQ1ZjI5NTliNzQ5M2YzY2Q2ZDQ4ZjBjYmNlMzU1NDdkNmUyMTViOTViNTU1ZjY0MzY1OWExYiJ9"
+        },
+        "edition_rows": [
+          [
+            {
+              "sqlite_type": "str",
+              "value": "21fbd43caf420528b4c8da7c06b967dff7f4095eb018a49bee427626ebcceed0"
+            },
+            {
+              "sqlite_type": "blob",
+              "base64": "eyJjb2xsZWN0aW9uX2lkIjoiYTYyYTg5M2YtNGZiMi00ZDFhLTk3MzItYTIxZWMwOGRlMDAxIiwiZGlzcGxheV90aXRsZSI6IkxpZmVjeWNsZSBlcG9jaCIsImVkaXRpb25faWQiOiJlZGl0aW9uOmVwb2NoIiwiZmlsbV9pZCI6ImZpbG06ZXBvY2giLCJzY2hlbWFfdmVyc2lvbiI6InNlbWFudGljbGVucy5maWxtLm1hbmlmZXN0LzEiLCJzb3VyY2VzIjpbeyJlZGl0aW9uX3JlbGF0aW9uIjoiZXhhY3RfZWRpdGlvbiIsImxhbmd1YWdlIjoiZW4iLCJyZWxhdGl2ZV9wYXRoIjoiZXBvY2gudHh0Iiwic2hhMjU2IjoiNWYyNjdkZTcxOTlmNjgxNTYxZTEzZjJjYjM0YWEyYzZmZWMyYzMzY2UwODZkN2NlZmM5MjI5NGIwNDFmYmJjMiIsInNvdXJjZV9pZCI6InNvdXJjZTplcG9jaCIsInNvdXJjZV9raW5kIjoic2NyZWVucGxheSJ9XSwieWVhciI6bnVsbH0="
+            }
+          ],
+          [
+            {
+              "sqlite_type": "str",
+              "value": "b5ae36e3da23d41d895502f9240aa665f4ef0ef90260d83d33e222d718101345"
+            },
+            {
+              "sqlite_type": "blob",
+              "base64": "eyJjb2xsZWN0aW9uX2lkIjoiYTYyYTg5M2YtNGZiMi00ZDFhLTk3MzItYTIxZWMwOGRlMDAxIiwiZGlzcGxheV90aXRsZSI6IkhhcmJvciDigJQgYXV0aG9yZWQgZml4dHVyZSIsImVkaXRpb25faWQiOiJlZGl0aW9uOmhhcmJvcjpkcmFmdC0xIiwiZmlsbV9pZCI6ImZpbG06aGFyYm9yIiwic2NoZW1hX3ZlcnNpb24iOiJzZW1hbnRpY2xlbnMuZmlsbS5tYW5pZmVzdC8xIiwic291cmNlcyI6W3siZWRpdGlvbl9yZWxhdGlvbiI6ImV4YWN0X2VkaXRpb24iLCJsYW5ndWFnZSI6ImVuIiwicmVsYXRpdmVfcGF0aCI6ImhhcmJvci9oYXJib3IudHh0Iiwic2hhMjU2IjoiYjNiNDQzMGYyMGM1ODY4NjZmMjFmNWQ1YzcxNWNjMWVhYzA0ZWJkODU4YWFjMDRhYmQxZDkxNmY0MmM3MjIxNyIsInNvdXJjZV9pZCI6InNvdXJjZTpoYXJib3I6c2NyaXB0Iiwic291cmNlX2tpbmQiOiJzY3JlZW5wbGF5In1dLCJ5ZWFyIjpudWxsfQ=="
+            }
+          ]
+        ],
+        "vector_rows": [
+          [
+            {
+              "sqlite_type": "str",
+              "value": "67bdb679-103c-4d31-b745-ba5c32b8a7ca"
+            },
+            {
+              "sqlite_type": "blob",
+              "base64": "eyJhbmFseXNpc19pZCI6bnVsbCwiY2xhaW1faWQiOm51bGwsImNvbGxlY3Rpb25faWQiOiJhNjJhODkzZi00ZmIyLTRkMWEtOTczMi1hMjFlYzA4ZGUwMDEiLCJlZGl0aW9uX2lkIjoiZWRpdGlvbjpoYXJib3I6ZHJhZnQtMSIsImVuZF9jb2RlcG9pbnQiOjI2LCJmaWxtX2lkIjoiZmlsbTpoYXJib3IiLCJmb3JtYXR0ZWRfc2hhMjU2IjoiZTJjMWU3MTNkMjBkZDMzMGVhNWNjYzcyZTgzYzg2NzVmNTkxNzEzOTFiNjk5NmEyYzY1ODdjOGI4YzIwNDQxYyIsImlucHV0X3Rva2VuX2NvdW50Ijo3MSwicmVmZXJlbmNlX2tpbmQiOiJzb3VyY2UiLCJzb3VyY2VfaWQiOiJzb3VyY2U6aGFyYm9yOnNjcmlwdCIsInNvdXJjZV9yZXZpc2lvbiI6ImIzYjQ0MzBmMjBjNTg2ODY2ZjIxZjVkNWM3MTVjYzFlYWMwNGViZDg1OGFhYzA0YWJkMWQ5MTZmNDJjNzIyMTciLCJzcGFucyI6W3siYW5hbHlzaXNfaWQiOm51bGwsImNsYWltX2lkIjpudWxsLCJjb2xsZWN0aW9uX2lkIjoiYTYyYTg5M2YtNGZiMi00ZDFhLTk3MzItYTIxZWMwOGRlMDAxIiwiZWRpdGlvbl9pZCI6ImVkaXRpb246aGFyYm9yOmRyYWZ0LTEiLCJlbmRfY29kZXBvaW50IjoyNiwiZmlsbV9pZCI6ImZpbG06aGFyYm9yIiwicmVmZXJlbmNlX2tpbmQiOiJzb3VyY2UiLCJzb3VyY2VfaWQiOiJzb3VyY2U6aGFyYm9yOnNjcmlwdCIsInNvdXJjZV9yZXZpc2lvbiI6ImIzYjQ0MzBmMjBjNTg2ODY2ZjIxZjVkNWM3MTVjYzFlYWMwNGViZDg1OGFhYzA0YWJkMWQ5MTZmNDJjNzIyMTciLCJzdGFydF9jb2RlcG9pbnQiOjAsInVuaXRfaWQiOiJsaW5lLTEifSx7ImFuYWx5c2lzX2lkIjpudWxsLCJjbGFpbV9pZCI6bnVsbCwiY29sbGVjdGlvbl9pZCI6ImE2MmE4OTNmLTRmYjItNGQxYS05NzMyLWEyMWVjMDhkZTAwMSIsImVkaXRpb25faWQiOiJlZGl0aW9uOmhhcmJvcjpkcmFmdC0xIiwiZW5kX2NvZGVwb2ludCI6NDksImZpbG1faWQiOiJmaWxtOmhhcmJvciIsInJlZmVyZW5jZV9raW5kIjoic291cmNlIiwic291cmNlX2lkIjoic291cmNlOmhhcmJvcjpzY3JpcHQiLCJzb3VyY2VfcmV2aXNpb24iOiJiM2I0NDMwZjIwYzU4Njg2NmYyMWY1ZDVjNzE1Y2MxZWFjMDRlYmQ4NThhYWMwNGFiZDFkOTE2ZjQyYzcyMjE3Iiwic3RhcnRfY29kZXBvaW50IjowLCJ1bml0X2lkIjoibGluZS0zIn0seyJhbmFseXNpc19pZCI6bnVsbCwiY2xhaW1faWQiOm51bGwsImNvbGxlY3Rpb25faWQiOiJhNjJhODkzZi00ZmIyLTRkMWEtOTczMi1hMjFlYzA4ZGUwMDEiLCJlZGl0aW9uX2lkIjoiZWRpdGlvbjpoYXJib3I6ZHJhZnQtMSIsImVuZF9jb2RlcG9pbnQiOjMzLCJmaWxtX2lkIjoiZmlsbTpoYXJib3IiLCJyZWZlcmVuY2Vfa2luZCI6InNvdXJjZSIsInNvdXJjZV9pZCI6InNvdXJjZTpoYXJib3I6c2NyaXB0Iiwic291cmNlX3JldmlzaW9uIjoiYjNiNDQzMGYyMGM1ODY4NjZmMjFmNWQ1YzcxNWNjMWVhYzA0ZWJkODU4YWFjMDRhYmQxZDkxNmY0MmM3MjIxNyIsInN0YXJ0X2NvZGVwb2ludCI6MCwidW5pdF9pZCI6ImxpbmUtNCJ9LHsiYW5hbHlzaXNfaWQiOm51bGwsImNsYWltX2lkIjpudWxsLCJjb2xsZWN0aW9uX2lkIjoiYTYyYTg5M2YtNGZiMi00ZDFhLTk3MzItYTIxZWMwOGRlMDAxIiwiZWRpdGlvbl9pZCI6ImVkaXRpb246aGFyYm9yOmRyYWZ0LTEiLCJlbmRfY29kZXBvaW50Ijo0OSwiZmlsbV9pZCI6ImZpbG06aGFyYm9yIiwicmVmZXJlbmNlX2tpbmQiOiJzb3VyY2UiLCJzb3VyY2VfaWQiOiJzb3VyY2U6aGFyYm9yOnNjcmlwdCIsInNvdXJjZV9yZXZpc2lvbiI6ImIzYjQ0MzBmMjBjNTg2ODY2ZjIxZjVkNWM3MTVjYzFlYWMwNGViZDg1OGFhYzA0YWJkMWQ5MTZmNDJjNzIyMTciLCJzdGFydF9jb2RlcG9pbnQiOjAsInVuaXRfaWQiOiJsaW5lLTUifSx7ImFuYWx5c2lzX2lkIjpudWxsLCJjbGFpbV9pZCI6bnVsbCwiY29sbGVjdGlvbl9pZCI6ImE2MmE4OTNmLTRmYjItNGQxYS05NzMyLWEyMWVjMDhkZTAwMSIsImVkaXRpb25faWQiOiJlZGl0aW9uOmhhcmJvcjpkcmFmdC0xIiwiZW5kX2NvZGVwb2ludCI6NjYsImZpbG1faWQiOiJmaWxtOmhhcmJvciIsInJlZmVyZW5jZV9raW5kIjoic291cmNlIiwic291cmNlX2lkIjoic291cmNlOmhhcmJvcjpzY3JpcHQiLCJzb3VyY2VfcmV2aXNpb24iOiJiM2I0NDMwZjIwYzU4Njg2NmYyMWY1ZDVjNzE1Y2MxZWFjMDRlYmQ4NThhYWMwNGFiZDFkOTE2ZjQyYzcyMjE3Iiwic3RhcnRfY29kZXBvaW50IjowLCJ1bml0X2lkIjoibGluZS02In1dLCJzdGFydF9jb2RlcG9pbnQiOjAsInVuaXRfaWQiOiJsaW5lLTEifQ=="
+            },
+            {
+              "sqlite_type": "blob",
+              "base64": "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"
+            }
+          ]
+        ]
+      },
+      "replacement_sha256": "5f267de7199f681561e13f2cb34aa2c6fec2c33ce086d7cefc92294b041fbbc2",
+      "inode_scope": "source operation os.replace of newly created file; no numeric dev/ino readback"
+    },
+    "worker_fault": {
+      "phase": {
+        "job_id": "5ba1e51f-f4df-4b9f-9563-c374b7575d83",
+        "begin_id": "3642a26f-6992-4acf-95db-4b3f7e032983",
+        "ticket": "film-8aa39c6a-43a90286-600723d9-540d0c82-",
+        "pending_id": "c66760a7-1bed-4314-9569-cf4cf7542133",
+        "worker_pid": 1364774,
+        "input_sha256": "6f718c6473eef44efe61c827c767cf7c95688b597dffbda15f576b5fd4b2d70d"
+      },
+      "pid": 1364774,
+      "visible_error": "Film worker disabled: film_unavailable: worker timeout/exit",
+      "persisted_SQL": [
+        "failed",
+        "embed",
+        "film_unavailable: worker timeout/exit"
+      ],
+      "reopened": {
+        "done": 0,
+        "error": "film_unavailable: worker timeout/exit",
+        "job_id": "5ba1e51f-f4df-4b9f-9563-c374b7575d83",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "failed",
+        "total": 0
+      },
+      "reimport": {
+        "done": 8,
+        "error": "",
+        "job_id": "24bf9168-bda6-4b42-844e-36528afbcb4e",
+        "kind": "manifest",
+        "stage": "committed",
+        "state": "complete",
+        "total": 8
+      }
+    },
+    "profiles": {
+      "old_identity": {
+        "sqlite_type": "blob",
+        "base64": "eyJiYWNrZW5kIjoiQ1BVIiwiYnl0ZV9vcmRlciI6ImxpdHRsZSIsImNodW5rZXIiOiJ3aG9sZS11bml0cy1jb3VudDY0MC1vdmVybGFwOTBjcC8xIiwiZGltZW5zaW9uIjo3NjgsImR0eXBlIjoiZmxvYXQzMiIsImVuZ2luZV9waXBlbGluZSI6ImtkZS1pbmRleC1mdWxsLXBhZ2VzLXYzLXNlZ21lbnRzMTgwMC1pbWFnZTE0MC1vY3IzMiIsImV4dHJhY3RvcnMiOnsicGRmaW5mbyI6InBkZmluZm8gdmVyc2lvbiAyNi4wOC4wIiwicGRmdG9wcG0iOiJwZGZ0b3BwbSB2ZXJzaW9uIDI2LjA4LjAiLCJwZGZ0b3RleHQiOiJwZGZ0b3RleHQgdmVyc2lvbiAyNi4wOC4wIiwidGVzc2VyYWN0IjoidGVzc2VyYWN0IDUuNS4zIn0sImZhY2V0X3JlbmRlcmVyIjoiY2xhaW0tdGV4dC8xIiwiZmlsbV9yZXByZXNlbnRhdGlvbiI6MSwiZm9ybWF0dGVyIjoibGVnYWN5LXRleHRzLWV4YWN0LzEiLCJpbWFnZV9zaGEyNTYiOiJjNGE4YTUyNjkxZWNlZjQwNjE4NDM4OTI4YmRmOWU2ODM3OWI4NTRlMjQxNjZmMjkyNTkyMzUzZGIwYWFiNjRmIiwibWF4X3Rva2VucyI6MjA0OCwibW9kZWwiOiJnb29nbGUvZW1iZWRkaW5nZ2VtbWEtMiIsIm1vZGVsX3JldmlzaW9uIjoiYmZjZDI5ODc2MmNjMzRkMDM1N2VjZTVlYmRkMzE3OTFhM2EzNzRkOCIsIm5vcm1hbGl6YXRpb24iOiJzZW1hbnRpY2xlbnMtZmlsbS11bml0cy8xIiwicGlwZWxpbmUiOiJkaWd1cC12ZWN0b3JzMS1saW51eC1jcHUtcHJvYmUxIiwicHJvZHVjZXJfc2hhMjU2IjoiZmE3ZDE0Njc0ZjgyNzE1Mzg2MTAxMTk1ZDgwYTk1OWNkNTQ1NmExNmUzY2MxNjIxZjZjZTQ4OGVkNGJlMmRkMCIsInJlcHJlc2VudGF0aW9uIjozLCJydW50aW1lIjoibGxhbWEuY3BwLWIxMTQ2MStuby1sb2dpdHMiLCJ0ZXh0X3NoYTI1NiI6IjIxODhhYzFkZWNhNGI3N2RmZmVmZDYwM2MyNzc2YTlkNzZkOWQ3NGVjMDE4NDEzOTI5ODJlYmI4NDBiMDkxMzUiLCJ0b2tlbml6ZXIiOnsiYWRkX3NwZWNpYWwiOnRydWUsInBhcnNlX3NwZWNpYWwiOnRydWUsInJ1bnRpbWUiOiJsbGFtYS5jcHAtYjExNDYxK25vLWxvZ2l0cyIsInRva2VuaXplciI6InNlbWFudGljbGVucy1maWxtLXRva2VuaXplci8xIiwidm9jYWJfb25seSI6dHJ1ZX0sInRva2VuaXplcl9zaGEyNTYiOiJiY2E1MmI1ZjI5NDVmMjk1OWI3NDkzZjNjZDZkNDhmMGNiY2UzNTU0N2Q2ZTIxNWI5NWI1NTVmNjQzNjU5YTFiIn0="
+      },
+      "new_private_identity": {
+        "sqlite_type": "blob",
+        "base64": "eyJiYWNrZW5kIjoiQ1BVIiwiYnl0ZV9vcmRlciI6ImxpdHRsZSIsImNodW5rZXIiOiJ3aG9sZS11bml0cy1jb3VudDY0MC1vdmVybGFwOTBjcC8xIiwiZGltZW5zaW9uIjo3NjgsImR0eXBlIjoiZmxvYXQzMiIsImVuZ2luZV9waXBlbGluZSI6ImtkZS1pbmRleC1mdWxsLXBhZ2VzLXYzLXNlZ21lbnRzMTgwMC1pbWFnZTE0MC1vY3IzMiIsImV4dHJhY3RvcnMiOnsicGRmaW5mbyI6InBkZmluZm8gdmVyc2lvbiAyNi4wOC4wIiwicGRmdG9wcG0iOiJwZGZ0b3BwbSB2ZXJzaW9uIDI2LjA4LjAiLCJwZGZ0b3RleHQiOiJwZGZ0b3RleHQgdmVyc2lvbiAyNi4wOC4wIiwidGVzc2VyYWN0IjoidGVzc2VyYWN0IDUuNS4zIn0sImZhY2V0X3JlbmRlcmVyIjoiY2xhaW0tdGV4dC8xIiwiZmlsbV9yZXByZXNlbnRhdGlvbiI6MSwiZmlsbV93b3JrZXIiOnsiYWxsb2NhdGlvbiI6InJlc2VydmVkLWZvcmVncm91bmQvMSIsImJhY2tlbmQiOiJDUFUiLCJiYWNrZ3JvdW5kX3RocmVhZHMiOjUsImJhdGNoX3Rva2VucyI6MjA0OCwiY29udGV4dF90b2tlbnMiOjIwNDgsImRpbWVuc2lvbiI6NzY4LCJmaWxtX3ByZXByb2Nlc3NpbmciOiJmaWxtLXF1ZXJ5LXN0cmljdDIwNDgvMSIsImZvcmVncm91bmRfdGhyZWFkcyI6MSwia3ZfdW5pZmllZCI6dHJ1ZSwibGVnYWN5X3ByZXByb2Nlc3NpbmciOiJsZWdhY3ktcXVlcnktY2xpcDIwNDgtZW9zLzEiLCJtYXhfdG9rZW5zIjoyMDQ4LCJtb2RlbCI6Imdvb2dsZS9lbWJlZGRpbmdnZW1tYS0yIiwibW9kZWxfcmV2aXNpb24iOiJiZmNkMjk4NzYyY2MzNGQwMzU3ZWNlNWViZGQzMTc5MWEzYTM3NGQ4IiwicG9vbGluZyI6Im1lYW4iLCJwcm90b2NvbCI6InNlbWFudGljbGVucy1maWxtLXdvcmtlci8xIiwicmVmZXJlbmNlX3Byb2R1Y2VyX3NoYTI1NiI6ImZhN2QxNDY3NGY4MjcxNTM4NjEwMTE5NWQ4MGE5NTljZDU0NTZhMTZlM2NjMTYyMWY2Y2U0ODhlZDRiZTJkZDAiLCJydW50aW1lIjoibGxhbWEuY3BwLWIxMTQ2MStuby1sb2dpdHMiLCJzZXF1ZW5jZXMiOjE2LCJ0aHJlYWRzX3RvdGFsIjo2LCJ1YmF0Y2hfdG9rZW5zIjoyMDQ4fSwiZmlsbV93b3JrZXJfc2hhMjU2IjoiZGZmMTIxMmI2NGZjZmIxNzZjZTRhMzY2NmJkNWU2YjgyNTI1OWFkM2I0NmYwNGE2MjVmMzk5NWE5ZGQ4MzZlNSIsImZvcm1hdHRlciI6ImxlZ2FjeS10ZXh0cy1leGFjdC8xIiwiaW1hZ2Vfc2hhMjU2IjoiYzRhOGE1MjY5MWVjZWY0MDYxODQzODkyOGJkZjllNjgzNzliODU0ZTI0MTY2ZjI5MjU5MjM1M2RiMGFhYjY0ZiIsIm1heF90b2tlbnMiOjIwNDgsIm1vZGVsIjoiZ29vZ2xlL2VtYmVkZGluZ2dlbW1hLTIiLCJtb2RlbF9yZXZpc2lvbiI6ImJmY2QyOTg3NjJjYzM0ZDAzNTdlY2U1ZWJkZDMxNzkxYTNhMzc0ZDgiLCJub3JtYWxpemF0aW9uIjoic2VtYW50aWNsZW5zLWZpbG0tdW5pdHMvMSIsInBpcGVsaW5lIjoiZGlndXAtdmVjdG9yczEtbGludXgtY3B1LXByb2JlMSIsInByb2R1Y2VyX3NoYTI1NiI6ImZhN2QxNDY3NGY4MjcxNTM4NjEwMTE5NWQ4MGE5NTljZDU0NTZhMTZlM2NjMTYyMWY2Y2U0ODhlZDRiZTJkZDAiLCJyZXByZXNlbnRhdGlvbiI6MywicnVudGltZSI6ImxsYW1hLmNwcC1iMTE0NjErbm8tbG9naXRzIiwidGV4dF9zaGEyNTYiOiIyMTg4YWMxZGVjYTRiNzdkZmZlZmQ2MDNjMjc3NmE5ZDc2ZDlkNzRlYzAxODQxMzkyOTgyZWJiODQwYjA5MTM1IiwidG9rZW5pemVyIjp7ImFkZF9zcGVjaWFsIjp0cnVlLCJwYXJzZV9zcGVjaWFsIjp0cnVlLCJydW50aW1lIjoibGxhbWEuY3BwLWIxMTQ2MStuby1sb2dpdHMiLCJ0b2tlbml6ZXIiOiJzZW1hbnRpY2xlbnMtZmlsbS10b2tlbml6ZXIvMSIsInZvY2FiX29ubHkiOnRydWV9LCJ0b2tlbml6ZXJfc2hhMjU2IjoiYmNhNTJiNWYyOTQ1ZjI5NTliNzQ5M2YzY2Q2ZDQ4ZjBjYmNlMzU1NDdkNmUyMTViOTViNTU1ZjY0MzY1OWExYiJ9"
+      },
+      "mismatch_error": "film representation changed; explicitly rebuild film collection",
+      "old_rows_equal": true
+    },
+    "invalid_attempts": [
+      {
+        "n": 1,
+        "error": "RuntimeError(\"no applicable pending phase: {'done': 0, 'error': '', 'job_id': '97dbfc0b-85e0-4c4d-bdc1-7af63dc38728', 'kind': 'manifest', 'stage': 'committed', 'state': 'complete', 'total': 0}\")",
+        "closures": [
+          {
+            "case": "cancel-disconnect-epoch",
+            "pid": 1362680,
+            "exit": 0,
+            "forced": false,
+            "remaining_group": []
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "error": "RuntimeError('fault restart not honest/preserving')",
+        "closures": [
+          {
+            "case": "epoch-swap",
+            "pid": 1364288,
+            "exit": 0,
+            "forced": false,
+            "remaining_group": []
+          },
+          {
+            "case": "worker-fault",
+            "pid": 1364718,
+            "exit": 0,
+            "forced": false,
+            "remaining_group": []
+          },
+          {
+            "case": "fault-reopen",
+            "pid": 1364845,
+            "exit": 0,
+            "forced": false,
+            "remaining_group": []
+          }
+        ]
+      }
+    ],
+    "known_pid_closure": {
+      "scope": "Known scoped full-service/lifecycle launcher and observer-admitted process PIDs, after normal group closures; installed rc2 excluded",
+      "known_pids": [
+        1352887,
+        1352888,
+        1352892,
+        1352902,
+        1352936,
+        1352952,
+        1352961,
+        1353728,
+        1353729,
+        1353732,
+        1353742,
+        1353745,
+        1353775,
+        1353812,
+        1354336,
+        1354477,
+        1354493,
+        1354513,
+        1362680,
+        1362681,
+        1362685,
+        1362751,
+        1362753,
+        1362768,
+        1362774,
+        1364288,
+        1364289,
+        1364347,
+        1364362,
+        1364363,
+        1364384,
+        1364391,
+        1364718,
+        1364719,
+        1364721,
+        1364731,
+        1364732,
+        1364768,
+        1364774,
+        1364831,
+        1364845,
+        1364846,
+        1364849,
+        1364870,
+        1364938,
+        1366355,
+        1366356,
+        1366368,
+        1366395,
+        1366396,
+        1367025,
+        1367026,
+        1367028,
+        1367041,
+        1367056,
+        1367057,
+        1367059,
+        1367073,
+        1367074,
+        1367095,
+        1367096,
+        1367098,
+        1367108,
+        1367109,
+        1367132,
+        1367141,
+        1367159,
+        1367160,
+        1367164,
+        1367313
+      ],
+      "remaining": [],
+      "tool_handles_terminal": [
+        64369,
+        12374,
+        38162,
+        80976,
+        59065
+      ]
+    },
+    "engine.cpp_guard_sha256": "c6aa1098a1af1dbb4169b8028e5899ad7cc23623e88f8258ea21ea380de7e979",
+    "store.cpp_guard_sha256": "6799fc7de253e64518a909a0461f1e1f26064fe9b1f91da2504ae74b6535c4f6"
+  },
+  "timing": {
+    "warm_idle": {
+      "n": 48,
+      "p95_ms": 165.972001,
+      "max_ms": 185.978776
+    },
+    "warm_indexing": {
+      "n": 48,
+      "p95_ms": 169.855515,
+      "max_ms": 173.041268
+    },
+    "cold": {
+      "phase": "cold_reload",
+      "mode": "source",
+      "query_id": "literal-subtitle",
+      "request_id": "matrix-595",
+      "start_ns": 99147189220328,
+      "end_ns": 99149333670999,
+      "elapsed_ms": 2144.450671
+    },
+    "indexing_progress_counts": {
+      "(0, 0, 0, 0)": 22,
+      "(1, 512, 1, 512)": 22,
+      "(1, 512, 2, 512)": 1,
+      "(2, 512, 2, 512)": 3
+    },
+    "resource_snapshots": [
+      {
+        "phase": "pilot idle before unload",
+        "monotonic_ns": 99136072328258,
+        "processes": [
+          {
+            "pid": 1372706,
+            "exe": "/workspace/semanticlens/local/film-store-v4/private-runnable-v1/bin/kde-index-service",
+            "status": {
+              "PPid": "1372644",
+              "VmHWM": "26732 kB",
+              "VmRSS": "26732 kB"
+            }
+          },
+          {
+            "pid": 1372809,
+            "exe": "/workspace/semanticlens/local/film-store-v4/private-runnable-v1/bin/semanticlens-film-tokenizer",
+            "status": {
+              "PPid": "1372706",
+              "VmHWM": "136520 kB",
+              "VmRSS": "115056 kB"
+            }
+          },
+          {
+            "pid": 1372810,
+            "exe": "/workspace/semanticlens/local/film-store-v4/private-runnable-v1/bin/semanticlens-film-worker",
+            "status": {
+              "PPid": "1372706",
+              "VmHWM": "531976 kB",
+              "VmRSS": "531976 kB"
+            }
+          }
+        ],
+        "data_files": {
+          "film.sqlite": 4096,
+          "film.sqlite-shm": 32768,
+          "film.sqlite-wal": 980592,
+          "index.sqlite": 4096,
+          "index.sqlite-shm": 32768,
+          "index.sqlite-wal": 98912,
+          "service.lock": 109
+        },
+        "data_bytes": 1153341
+      },
+      {
+        "phase": "pilot idle after unload",
+        "monotonic_ns": 99147188828008,
+        "processes": [
+          {
+            "pid": 1372706,
+            "exe": "/workspace/semanticlens/local/film-store-v4/private-runnable-v1/bin/kde-index-service",
+            "status": {
+              "PPid": "1372644",
+              "VmHWM": "26740 kB",
+              "VmRSS": "26740 kB"
+            }
+          }
+        ],
+        "data_files": {
+          "film.sqlite": 4096,
+          "film.sqlite-shm": 32768,
+          "film.sqlite-wal": 1030032,
+          "index.sqlite": 4096,
+          "index.sqlite-shm": 32768,
+          "index.sqlite-wal": 98912,
+          "service.lock": 109
+        },
+        "data_bytes": 1202781
+      },
+      {
+        "phase": "after cold reload",
+        "monotonic_ns": 99149334080232,
+        "processes": [
+          {
+            "pid": 1372706,
+            "exe": "/workspace/semanticlens/local/film-store-v4/private-runnable-v1/bin/kde-index-service",
+            "status": {
+              "PPid": "1372644",
+              "VmHWM": "26972 kB",
+              "VmRSS": "26972 kB"
+            }
+          },
+          {
+            "pid": 1373019,
+            "exe": "/workspace/semanticlens/local/film-store-v4/private-runnable-v1/bin/semanticlens-film-tokenizer",
+            "status": {
+              "PPid": "1372706",
+              "VmHWM": "136236 kB",
+              "VmRSS": "115008 kB"
+            }
+          },
+          {
+            "pid": 1373020,
+            "exe": "/workspace/semanticlens/local/film-store-v4/private-runnable-v1/bin/semanticlens-film-worker",
+            "status": {
+              "PPid": "1372706",
+              "VmHWM": "504420 kB",
+              "VmRSS": "504420 kB"
+            }
+          }
+        ],
+        "data_files": {
+          "film.sqlite": 4096,
+          "film.sqlite-shm": 32768,
+          "film.sqlite-wal": 1030032,
+          "index.sqlite": 4096,
+          "index.sqlite-shm": 32768,
+          "index.sqlite-wal": 98912,
+          "service.lock": 109
+        },
+        "data_bytes": 1202781
+      },
+      {
+        "phase": "after warm_idle matrix",
+        "monotonic_ns": 99157873905943,
+        "processes": [
+          {
+            "pid": 1372706,
+            "exe": "/workspace/semanticlens/local/film-store-v4/private-runnable-v1/bin/kde-index-service",
+            "status": {
+              "PPid": "1372644",
+              "VmHWM": "27144 kB",
+              "VmRSS": "27144 kB"
+            }
+          },
+          {
+            "pid": 1373019,
+            "exe": "/workspace/semanticlens/local/film-store-v4/private-runnable-v1/bin/semanticlens-film-tokenizer",
+            "status": {
+              "PPid": "1372706",
+              "VmHWM": "136236 kB",
+              "VmRSS": "115008 kB"
+            }
+          },
+          {
+            "pid": 1373020,
+            "exe": "/workspace/semanticlens/local/film-store-v4/private-runnable-v1/bin/semanticlens-film-worker",
+            "status": {
+              "PPid": "1372706",
+              "VmHWM": "504468 kB",
+              "VmRSS": "504468 kB"
+            }
+          }
+        ],
+        "data_files": {
+          "film.sqlite": 4096,
+          "film.sqlite-shm": 32768,
+          "film.sqlite-wal": 1030032,
+          "index.sqlite": 4096,
+          "index.sqlite-shm": 32768,
+          "index.sqlite-wal": 98912,
+          "service.lock": 109
+        },
+        "data_bytes": 1202781
+      },
+      {
+        "phase": "after warm_indexing matrix",
+        "monotonic_ns": 99175548102883,
+        "processes": [
+          {
+            "pid": 1372706,
+            "exe": "/workspace/semanticlens/local/film-store-v4/private-runnable-v1/bin/kde-index-service",
+            "status": {
+              "PPid": "1372644",
+              "VmHWM": "248248 kB",
+              "VmRSS": "246740 kB"
+            }
+          },
+          {
+            "pid": 1373019,
+            "exe": "/workspace/semanticlens/local/film-store-v4/private-runnable-v1/bin/semanticlens-film-tokenizer",
+            "status": {
+              "PPid": "1372706",
+              "VmHWM": "136236 kB",
+              "VmRSS": "115008 kB"
+            }
+          },
+          {
+            "pid": 1373020,
+            "exe": "/workspace/semanticlens/local/film-store-v4/private-runnable-v1/bin/semanticlens-film-worker",
+            "status": {
+              "PPid": "1372706",
+              "VmHWM": "559192 kB",
+              "VmRSS": "559192 kB"
+            }
+          }
+        ],
+        "data_files": {
+          "film-extract-ONSRcN/input.json": 433,
+          "film-extract-VFaNec/input.txt": 1143722,
+          "film.sqlite": 4096,
+          "film.sqlite-shm": 32768,
+          "film.sqlite-wal": 1067112,
+          "index.sqlite": 4096,
+          "index.sqlite-shm": 32768,
+          "index.sqlite-wal": 98912,
+          "service.lock": 109
+        },
+        "data_bytes": 2384016
+      },
+      {
+        "phase": "post-cancel idle before unload",
+        "monotonic_ns": 99175629962044,
+        "processes": [
+          {
+            "pid": 1372706,
+            "exe": "/workspace/semanticlens/local/film-store-v4/private-runnable-v1/bin/kde-index-service",
+            "status": {
+              "PPid": "1372644",
+              "VmHWM": "248248 kB",
+              "VmRSS": "246740 kB"
+            }
+          },
+          {
+            "pid": 1373019,
+            "exe": "/workspace/semanticlens/local/film-store-v4/private-runnable-v1/bin/semanticlens-film-tokenizer",
+            "status": {
+              "PPid": "1372706",
+              "VmHWM": "136236 kB",
+              "VmRSS": "115008 kB"
+            }
+          },
+          {
+            "pid": 1373020,
+            "exe": "/workspace/semanticlens/local/film-store-v4/private-runnable-v1/bin/semanticlens-film-worker",
+            "status": {
+              "PPid": "1372706",
+              "VmHWM": "559372 kB",
+              "VmRSS": "559372 kB"
+            }
+          }
+        ],
+        "data_files": {
+          "film.sqlite": 4096,
+          "film.sqlite-shm": 32768,
+          "film.sqlite-wal": 1071232,
+          "index.sqlite": 4096,
+          "index.sqlite-shm": 32768,
+          "index.sqlite-wal": 98912,
+          "service.lock": 109
+        },
+        "data_bytes": 1243981
+      },
+      {
+        "phase": "post-cancel idle after unload",
+        "monotonic_ns": 99185844528041,
+        "processes": [
+          {
+            "pid": 1372706,
+            "exe": "/workspace/semanticlens/local/film-store-v4/private-runnable-v1/bin/kde-index-service",
+            "status": {
+              "PPid": "1372644",
+              "VmHWM": "248248 kB",
+              "VmRSS": "246740 kB"
+            }
+          }
+        ],
+        "data_files": {
+          "film.sqlite": 4096,
+          "film.sqlite-shm": 32768,
+          "film.sqlite-wal": 1071232,
+          "index.sqlite": 4096,
+          "index.sqlite-shm": 32768,
+          "index.sqlite-wal": 98912,
+          "service.lock": 109
+        },
+        "data_bytes": 1243981
+      }
+    ],
+    "closure": {
+      "service_exit": 0,
+      "socket_absent": true,
+      "remaining_owned_process_group": []
+    },
+    "source_scope": "running/embed bracket eligibility; no per-query simultaneous math or peak resource proof"
+  },
+  "legacy": {
+    "scope": "owned rc2-to-S1 four-file six-segment snapshots and isolated QCore RunnerManager; no graphical KRunner",
+    "snapshot_fields_equal": true,
+    "final_wal_inclusive_SQL_equal": true,
+    "vector_count": 6,
+    "vectors": [
+      {
+        "id": 1,
+        "path": "/workspace/semanticlens/local/film-legacy-run-v2/legacy-corpus/i05.png",
+        "page": 0,
+        "kind": "image",
+        "sha256": "3b2a88a772e525971dd340ded4770171e81a88b89e4f9854dfa88ebd03b8ccb0"
+      },
+      {
+        "id": 2,
+        "path": "/workspace/semanticlens/local/film-legacy-run-v2/legacy-corpus/i05.png",
+        "page": 0,
+        "kind": "image",
+        "sha256": "18b99f81837b2055119f26d64c9b7195dd7f14de1a6b34334f4df3b1ce96217f"
+      },
+      {
+        "id": 3,
+        "path": "/workspace/semanticlens/local/film-legacy-run-v2/legacy-corpus/manual.pdf",
+        "page": 1,
+        "kind": "pdf",
+        "sha256": "4ce62a1eef90696c8fa4926fafc977d67f17c9cd429477f741f91246a1613482"
+      },
+      {
+        "id": 4,
+        "path": "/workspace/semanticlens/local/film-legacy-run-v2/legacy-corpus/manual.pdf",
+        "page": 2,
+        "kind": "pdf",
+        "sha256": "ceb698ad6b426b85f43104ac57a9d91e376fa2f62167f2b1016ab76c531f52e1"
+      },
+      {
+        "id": 5,
+        "path": "/workspace/semanticlens/local/film-legacy-run-v2/legacy-corpus/payment.txt",
+        "page": 0,
+        "kind": "text",
+        "sha256": "355a9cd40852c2a79e955750d2e330eb99449a437915b4c5405b464d752176aa"
+      },
+      {
+        "id": 6,
+        "path": "/workspace/semanticlens/local/film-legacy-run-v2/legacy-corpus/picture.jpg",
+        "page": 0,
+        "kind": "image",
+        "sha256": "14eb99c7a3dad684f5ab7fb1c6ae8cd3eb61c5578e2d9278e7b5aaccebb5bf46"
+      }
+    ],
+    "identity_sql_type": "blob",
+    "native_fields": {
+      "finished": true,
+      "off_main_thread": true,
+      "runner_id": "kde-index-runner",
+      "discovered": [
+        {
+          "file": "/tmp/test/plugins/kf6/krunner/kde-index-runner.so",
+          "id": "kde-index-runner",
+          "valid": true
+        }
+      ],
+      "matches": [
+        {
+          "data": {
+            "kind": "text",
+            "page": 0,
+            "path": "/workspace/semanticlens/local/film-legacy-run-v2/legacy-corpus/payment.txt"
+          },
+          "relevance": 1,
+          "subtext": "Contact the bank when a credit card is declined. Receipt reference CARD-39312. ",
+          "text": "payment.txt"
+        },
+        {
+          "data": {
+            "kind": "pdf",
+            "page": 2,
+            "path": "/workspace/semanticlens/local/film-legacy-run-v2/legacy-corpus/manual.pdf"
+          },
+          "relevance": 0.8681468955966763,
+          "subtext": "Page 2 \u00b7 Maintenance serial PDF-10299 belongs to the cooling system.",
+          "text": "manual.pdf"
+        },
+        {
+          "data": {
+            "kind": "image",
+            "page": 0,
+            "path": "/workspace/semanticlens/local/film-legacy-run-v2/legacy-corpus/i05.png"
+          },
+          "relevance": 0.8652340742101713,
+          "subtext": "Backup settings Automatic backup C\u2019 Status: Disabled Last copy: 24 days ago Backup code BAK-84319",
+          "text": "i05.png"
+        },
+        {
+          "data": {
+            "kind": "image",
+            "page": 0,
+            "path": "/workspace/semanticlens/local/film-legacy-run-v2/legacy-corpus/picture.jpg"
+          },
+          "relevance": 0.8509069172031007,
+          "subtext": "/workspace/semanticlens/local/film-legacy-run-v2/legacy-corpus/picture.jpg",
+          "text": "picture.jpg"
+        }
+      ]
+    },
+    "native_scope": "runner QObject affinity differs from helper main thread; no new all-invocation stack claim",
+    "sessions": [
+      {
+        "name": "rc2",
+        "argv": [
+          "/workspace/semanticlens/local/release-rc2-stage-v1/usr/bin/kde-index-service",
+          "--data-dir",
+          "/workspace/semanticlens/local/film-legacy-run-v2/data",
+          "--socket",
+          "/workspace/semanticlens/local/film-legacy-run-v2/rc2.sock",
+          "--probe",
+          "/workspace/semanticlens/local/release-rc2-stage-v1/usr/bin/embedding-probe",
+          "--probe-sha256",
+          "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+          "--text-model",
+          "/workspace/semanticlens/models/embeddinggemma-2-Q8_0.gguf",
+          "--image-model",
+          "/workspace/semanticlens/models/mmproj-embeddinggemma-2-Q8_0.gguf",
+          "--threads",
+          "2"
+        ],
+        "sha256_at_launch": "28c0d5ddf0ab20608ef527dd891cb023ecd2194690b9f281b95533dacd202ebe",
+        "pid": 1375417,
+        "closure": {
+          "exit": 0,
+          "socket_absent": true,
+          "remaining_group": []
+        }
+      },
+      {
+        "name": "s1",
+        "argv": [
+          "/workspace/semanticlens/local/film-store-v4/private-runnable-v1/bin/kde-index-service",
+          "--data-dir",
+          "/workspace/semanticlens/local/film-legacy-run-v2/data",
+          "--socket",
+          "/workspace/semanticlens/local/film-legacy-run-v2/s1.sock",
+          "--probe",
+          "/workspace/semanticlens/local/release-rc2-stage-v1/usr/bin/embedding-probe",
+          "--probe-sha256",
+          "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+          "--text-model",
+          "/workspace/semanticlens/models/embeddinggemma-2-Q8_0.gguf",
+          "--image-model",
+          "/workspace/semanticlens/models/mmproj-embeddinggemma-2-Q8_0.gguf",
+          "--threads",
+          "2",
+          "--film-tokenizer",
+          "/workspace/semanticlens/local/film-store-v4/private-runnable-v1/bin/semanticlens-film-tokenizer",
+          "--film-tokenizer-sha256",
+          "bca52b5f2945f2959b7493f3cd6d48f0cbce35547d6e215b95b555f643659a1b",
+          "--film-worker",
+          "/workspace/semanticlens/local/film-store-v4/private-runnable-v1/bin/semanticlens-film-worker",
+          "--film-worker-sha256",
+          "dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5"
+        ],
+        "sha256_at_launch": "a59a737bb7e27bcd593d237e36ab113742f566dadd25418d316f1ffebb28f6e3",
+        "pid": 1375519,
+        "closure": {
+          "exit": 0,
+          "socket_absent": true,
+          "remaining_group": []
+        }
+      }
+    ],
+    "service_records": 450
+  },
+  "reference_count": 397,
+  "usage_cost": "unknown"
+}

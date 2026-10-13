@@ -14,6 +14,8 @@ Kirigami.ApplicationWindow {
     property int selectedIndex: -1
     property bool previewVisible: true
     property bool gridMode: true
+    readonly property var filmClient: typeof filmBackend === "undefined" ? null : filmBackend
+    property bool filmMode: false
     property var selectedResult: selectedIndex >= 0 && selectedIndex < backend.results.length
                                   ? backend.results[selectedIndex] : ({})
     readonly property int gutter: 24
@@ -44,6 +46,7 @@ Kirigami.ApplicationWindow {
         searchField.forceActiveFocus()
     }
     function focusSearch() {
+        if (filmMode && filmPage.item) { filmPage.item.focusSearch(); return }
         searchField.forceActiveFocus()
         searchField.selectAll()
     }
@@ -53,6 +56,10 @@ Kirigami.ApplicationWindow {
     }
 
     onClosing: backend.closePreview()
+    onFilmModeChanged: {
+        clearSelection()
+        if (filmClient) filmClient.setEnabled(filmMode)
+    }
     pageStack.globalToolBar.style: Kirigami.ApplicationHeaderStyle.None
     onNarrowChanged: {
         if (narrow && previewVisible && selectedIndex >= 0) backend.previewResult(selectedResult)
@@ -216,6 +223,8 @@ Kirigami.ApplicationWindow {
                 Label { textFormat: Text.PlainText; text: "Find by meaning"; color: subtleColor; font.pixelSize: 11 }
             }
             Item { Layout.fillWidth: true }
+            ToolButton { objectName: "fileModeButton"; text: "Files"; visible: window.filmClient !== null; checkable: true; checked: !window.filmMode; onClicked: window.filmMode = false }
+            ToolButton { objectName: "filmModeButton"; text: "Films · pilot"; visible: window.filmClient !== null; checkable: true; checked: window.filmMode; onClicked: window.filmMode = true }
             ToolButton { objectName: "settingsButton"; text: "Settings"; icon.name: "settings-configure"; onClicked: settingsDialog.open() }
         }
     }
@@ -224,6 +233,7 @@ Kirigami.ApplicationWindow {
         title: ""
         padding: 0
         ColumnLayout {
+            visible: !window.filmMode
             anchors.fill: parent
             spacing: 0
             ColumnLayout {
@@ -569,6 +579,14 @@ Kirigami.ApplicationWindow {
                     }
                 }
             }
+        }
+
+        Loader {
+            id: filmPage
+            anchors.fill: parent
+            active: window.filmMode
+            visible: active
+            sourceComponent: Component { FilmPage { client: window.filmClient } }
         }
 
         Component {

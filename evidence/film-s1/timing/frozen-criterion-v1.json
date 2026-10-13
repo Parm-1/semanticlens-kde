@@ -1,0 +1,20 @@
+{
+  "warm_target_ms": 1000,
+  "percentile": 95,
+  "algorithm": "nearest rank: ceil(0.95*n)-1",
+  "matrix": "eight fixed queries x source/hybrid x three repetitions, in declared order",
+  "samples_per_phase": 48,
+  "phases": [
+    "warm_idle",
+    "warm_indexing"
+  ],
+  "indexing_eligibility": "running embed job before AND after the measured interval",
+  "query_sha256": "fa5fbcdcd67580af62c4996cb8679f611dc89dae8038a1086a1dbc9883957c86",
+  "clock": "Python time.monotonic_ns",
+  "background_source_sha256": "2ad791bad8ce569ef69a6a700d7deba5f787b13430530ff0661b491c1b847ed5",
+  "background_manifest_sha256": "b9db34685092d74f9df88fc0fabc1cf27768072681f358e734ccfc0bf41c2ab1",
+  "interval": "prepared request send through complete parsed reply; logs/phase checks outside",
+  "cold_query_scope": "one source query after observed producer/tokenizer exit; separate from warm p95",
+  "resource_scope": "phase snapshots of owned process RSS/HWM and data-file bytes, not peak workload memory",
+  "scope": "authored six-edition/four-analysis CPU pilot; no real-film or bulk-library claim"
+}

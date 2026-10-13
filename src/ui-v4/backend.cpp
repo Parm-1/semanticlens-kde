@@ -200,10 +200,20 @@ void Backend::connectService() {
             if (!producer.open(QIODevice::ReadOnly) || !producerHash.addData(&producer)) {
                 m_message = "Unable to read the embedding executable. Check the installation."; emit changed(); return;
             }
-            const QStringList args {"--data-dir", m_paths.data, "--socket", m_paths.socket, "--probe", m_paths.probe,
+            QStringList args {"--data-dir", m_paths.data, "--socket", m_paths.socket, "--probe", m_paths.probe,
                                     "--probe-sha256", QString::fromLatin1(producerHash.result().toHex()),
                                     "--text-model", QDir(m_paths.models).filePath("embeddinggemma-2-Q8_0.gguf"),
                                     "--image-model", QDir(m_paths.models).filePath("mmproj-embeddinggemma-2-Q8_0.gguf")};
+            const auto tokenizerPath = QDir(QFileInfo(m_paths.service).absolutePath()).filePath("semanticlens-film-tokenizer");
+            QFile tokenizer(tokenizerPath);
+            QCryptographicHash tokenizerHash(QCryptographicHash::Sha256);
+            if (tokenizer.open(QIODevice::ReadOnly) && tokenizerHash.addData(&tokenizer))
+                args << "--film-tokenizer" << tokenizerPath << "--film-tokenizer-sha256" << QString::fromLatin1(tokenizerHash.result().toHex());
+            const auto filmWorkerPath = QDir(QFileInfo(m_paths.service).absolutePath()).filePath("semanticlens-film-worker");
+            QFile filmWorker(filmWorkerPath);
+            QCryptographicHash filmWorkerHash(QCryptographicHash::Sha256);
+            if (filmWorker.open(QIODevice::ReadOnly) && filmWorkerHash.addData(&filmWorker))
+                args << "--film-worker" << filmWorkerPath << "--film-worker-sha256" << QString::fromLatin1(filmWorkerHash.result().toHex());
             ++m_serviceLaunches;
             qint64 pid = 0;
             if (!QProcess::startDetached(m_paths.service, args, QString(), &pid)) {

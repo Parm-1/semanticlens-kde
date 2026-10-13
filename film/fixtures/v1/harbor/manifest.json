@@ -1,0 +1,17 @@
+{
+  "schema_version": "semanticlens.film.manifest/1",
+  "film_id": "film:harbor",
+  "edition_id": "edition:harbor:draft-1",
+  "display_title": "Harbor — authored fixture",
+  "year": null,
+  "sources": [
+    {
+      "source_id": "source:harbor:script",
+      "relative_path": "harbor/harbor.txt",
+      "sha256": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+      "source_kind": "screenplay",
+      "language": "en",
+      "edition_relation": "exact_edition"
+    }
+  ]
+}

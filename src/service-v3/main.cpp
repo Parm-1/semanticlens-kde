@@ -25,6 +25,10 @@ int main(int argc,char **argv){
         ,{
             "threads","CPU threads 1..16","count","6"
         }
+        ,{"film-tokenizer","Optional verified film vocabulary companion","file"}
+        ,{"film-tokenizer-sha256","Expected film companion SHA256","digest"}
+        ,{"film-worker","Optional verified shared-model film query worker","file"}
+        ,{"film-worker-sha256","Expected film worker SHA256","digest"}
         ,{
             "probe-sha256","Expected accepted/build-derived producer SHA256","digest","f34469aa625f5000a7a3bb24a04b3c0cc91cf63ddb4e4a17fdbbf0fa1f49a9bf"
         }
@@ -36,6 +40,8 @@ int main(int argc,char **argv){
     }
     ;
     options.probeSha=parser.value("probe-sha256");
+    options.filmTokenizer=parser.value("film-tokenizer");options.filmTokenizerSha=parser.value("film-tokenizer-sha256");
+    options.filmWorker=parser.value("film-worker");options.filmWorkerSha=parser.value("film-worker-sha256");
     if(!QRegularExpression("^[a-f0-9]{64}$").match(options.probeSha).hasMatch()){
         qCritical("invalid producer SHA256");
         return 2;
@@ -87,6 +93,7 @@ int main(int argc,char **argv){
     bool rescanPending=false;
     QString watcherError;
     auto schedule=[&]{
+        engine.filmChanged();
         rescanPending=true;
         debounce.start();
     }
@@ -108,6 +115,7 @@ int main(int argc,char **argv){
             ,"watcher",[](QJsonObject){
             }
             );
+            engine.submit({{"id","film-watch-reconcile"},{"op","film_reconcile"}},"watcher",[](QJsonObject){});
         }
     }
     );
@@ -126,7 +134,7 @@ int main(int argc,char **argv){
             QSet<QString> installed(nowWatching.begin(),nowWatching.end());
             bool installedNewPath=false;
             for(const auto &path:add)if(installed.contains(path)){installedNewPath=true;break;}
-            if(installedNewPath)schedule();
+            if(installedNewPath){rescanPending=true;debounce.start();}
         }
         // Report the final desired coverage on every synchronization, including
         // removal-only updates. Previous failures must not outlive the selection.
@@ -184,24 +192,32 @@ int main(int argc,char **argv){
                     }
                     pending->insert(id);
                     QString op=r.value("op").toString();
-                    auto reply=[&,guard=QPointer<QLocalSocket>(socket),pending,canceledIds,id,op,target=r.value("target").toString()](QJsonObject out){
-                        QMetaObject::invokeMethod(&app,[&,guard,pending,canceledIds,id,op,target,out]()mutable{
+                    auto reply=[&,guard=QPointer<QLocalSocket>(socket),pending,canceledIds,id,op,owner,target=r.value("target").toString()](QJsonObject out){
+                        QMetaObject::invokeMethod(&app,[&,guard,pending,canceledIds,id,op,owner,target,out]()mutable{
                             pending->remove(id);
+                            if(op=="film_status"&&out.contains("status")){
+                                // Coverage describes this serialization phase, including
+                                // newly selected paths before the next 500ms sync.
+                                auto desiredPaths=engine.watchPaths();auto installedPaths=watcher.files()+watcher.directories();QSet<QString> installed(installedPaths.begin(),installedPaths.end());bool complete=true;for(const auto &path:desiredPaths)if(!installed.contains(path)){complete=false;break;}
+                                auto status=out["status"].toObject();auto coverage=status["coverage"].toObject();coverage["watch_complete"]=complete;coverage["limited"]=coverage["limited"].toBool()||!complete;status["coverage"]=coverage;status["watch_error"]=complete?QString():watcherError.isEmpty()?QString("native watch registration pending"):watcherError;out["status"]=status;
+                            }
                             if(op=="cancel"&&out.value("accepted").toBool())canceledIds->insert(target);
-                            bool wasCanceled=canceledIds->remove(id);if(op=="search"&&(wasCanceled||(out.contains("generation")&&out.value("generation").toVariant().toULongLong()!=engine.currentGeneration())))out={
+                            bool wasCanceled=canceledIds->remove(id);bool filmDisclosure=op=="film_search"||op=="film_evidence"||op=="film_navigation"||op=="film_sidecar_digest";if((op=="search"&&(wasCanceled||(out.contains("generation")&&out.value("generation").toVariant().toULongLong()!=engine.currentGeneration())))||(filmDisclosure&&(wasCanceled||(out.contains("film_epoch")&&out.value("film_epoch").toString()!=QString::number(engine.currentFilmEpoch()))))){
+                                if(op=="film_navigation"&&out.contains("navigation"))engine.submit({{"id","discard-"+QUuid::createUuid().toString()},{"op","film_release_navigation"},{"token",out["navigation"].toObject()["token"]}},owner,[](QJsonObject){});
+                                out={
                                 {
                                     "ok",false
                                 }
                                 ,{
                                     "error","canceled"
                                 }
+                            };
                             }
-                            ;
                             if(!guard||guard->state()!=QLocalSocket::ConnectedState)return;
                             out["protocol"]=1;
                             out["id"]=id;
                             if(!out.contains("ok"))out["ok"]=true;
-                            guard->write(QJsonDocument(out).toJson(QJsonDocument::Compact)+"\n");
+                            auto bytes=QJsonDocument(out).toJson(QJsonDocument::Compact)+"\n";if(op.startsWith("film_")&&bytes.size()>1024*1024)bytes=QJsonDocument(QJsonObject{{"protocol",1},{"id",id},{"ok",false},{"error_code","limit_exceeded"},{"error","film response byte limit"}}).toJson(QJsonDocument::Compact)+"\n";guard->write(bytes);
                         }
                         ,Qt::QueuedConnection);
                     }
@@ -215,6 +231,9 @@ int main(int argc,char **argv){
                             }
                         }
                         );
+                    }
+                    else if(op=="film_status"&&!r.contains("job_id")){
+                        if(r.size()!=2)reply({{"ok",false},{"error_code","invalid_request"},{"error","unknown status field"}});else{auto status=engine.filmStatus();status["film_epoch"]=QString::number(engine.currentFilmEpoch());status["watch_error"]=watcherError;auto coverage=status["coverage"].toObject();coverage["watch_complete"]=watcherError.isEmpty();coverage["limited"]=coverage["limited"].toBool()||!watcherError.isEmpty();status["coverage"]=coverage;reply({{"status",status}});}
                     }
                     else if(op=="shutdown"){
                         if(!shuttingDown){

@@ -1,0 +1,173 @@
+{
+  "files": [
+    {
+      "path": "bin/embedding-probe",
+      "sha256": "b6f46c925d22721961b9e49d83db175b0a4adff12ba7f8371693a47441da7f86",
+      "mode": "0o755",
+      "bytes": 8745776,
+      "matches_validated_stage": false
+    },
+    {
+      "path": "bin/kde-index",
+      "sha256": "a4f52094dcad1f616606a9156ea0b84d5b502d8bfc77c0f791fa75959baad0f6",
+      "mode": "0o755",
+      "bytes": 1013816,
+      "matches_validated_stage": false
+    },
+    {
+      "path": "bin/kde-index-cli",
+      "sha256": "6773a256b55b7c1e555727097d8e3be5db69e84e705d7ca4caf05929ffdfd086",
+      "mode": "0o755",
+      "bytes": 33968,
+      "matches_validated_stage": true
+    },
+    {
+      "path": "bin/kde-index-service",
+      "sha256": "77cbfcb40f02622af889281124c5a5f19ac740c94baf1e1c36fe2354420e3376",
+      "mode": "0o755",
+      "bytes": 1091488,
+      "matches_validated_stage": false
+    },
+    {
+      "path": "bin/semanticlens-film-tokenizer",
+      "sha256": "811f75ee9274ce4dd9f9df45b972942577ca2d2f08949aceda42b9981074dfb6",
+      "mode": "0o755",
+      "bytes": 6846544,
+      "matches_validated_stage": false
+    },
+    {
+      "path": "bin/semanticlens-film-worker",
+      "sha256": "74d7eeafa32d5f0b45156e50dffb1f410adf89a6813801d33603d9cdf9274b7c",
+      "mode": "0o755",
+      "bytes": 6882856,
+      "matches_validated_stage": false
+    },
+    {
+      "path": "bin/semanticlens-media",
+      "sha256": "5d1bcebe749ccc46e9ec5cd0af91d6150f1b63dcdbd49028af7098c6e4216a87",
+      "mode": "0o755",
+      "bytes": 88600,
+      "matches_validated_stage": true
+    },
+    {
+      "path": "lib/qt6/plugins/kf6/krunner/kde-index-runner.so",
+      "sha256": "a587a20400e4892c0eded5af30c08e646ea09885a971eb3a6a6e6c61bda2e9ba",
+      "mode": "0o755",
+      "bytes": 95264,
+      "matches_validated_stage": true
+    },
+    {
+      "path": "share/applications/org.kdeindex.Search.desktop",
+      "sha256": "717a04a28df88cacaa1ebbd938902f31d7e879231c60a69a2b5b411580b2a6e9",
+      "mode": "0o644",
+      "bytes": 255,
+      "matches_validated_stage": true
+    },
+    {
+      "path": "share/kde-index/model_download.py",
+      "sha256": "b4542f5b8d9f7326fd31770ef96ef7020e7992be23db7d066619fbdd8208d47c",
+      "mode": "0o755",
+      "bytes": 3114,
+      "matches_validated_stage": true
+    },
+    {
+      "path": "share/licenses/kde-index/Apache-2.0.txt",
+      "sha256": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff",
+      "mode": "0o644",
+      "bytes": 10280,
+      "matches_validated_stage": true
+    },
+    {
+      "path": "share/licenses/kde-index/DigUp-MIT.txt",
+      "sha256": "2ba7d3ad3aafa9b791002d62a6fe237e89fa4287c2f4e59234b09d25bd909b26",
+      "mode": "0o644",
+      "bytes": 1068,
+      "matches_validated_stage": true
+    },
+    {
+      "path": "share/licenses/kde-index/LICENSE",
+      "sha256": "fb981668c18a279e285fc4d83fba1e836cc84dd4daa73c9697d3cfd2d8aca6e0",
+      "mode": "0o644",
+      "bytes": 34674,
+      "matches_validated_stage": true
+    },
+    {
+      "path": "share/licenses/kde-index/THIRD_PARTY_NOTICES.md",
+      "sha256": "f04451a10c92688003d7051b85a26a0ac87bb9f519138244aa880b67ef851020",
+      "mode": "0o644",
+      "bytes": 4525,
+      "matches_validated_stage": true
+    },
+    {
+      "path": "share/licenses/kde-index/llama.cpp-MIT.txt",
+      "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d",
+      "mode": "0o644",
+      "bytes": 1078,
+      "matches_validated_stage": true
+    },
+    {
+      "path": "share/licenses/kde-index/miniaudio-MIT-0.txt",
+      "sha256": "c2410d4d14ad58e05a59e5de1b02c44fd73cbceb4a628d9676c2c19549908430",
+      "mode": "0o644",
+      "bytes": 1000,
+      "matches_validated_stage": true
+    },
+    {
+      "path": "share/licenses/kde-index/nlohmann-json-MIT.txt",
+      "sha256": "c0d068392ea65358b798b8c165103560f06e9e3b38c4ab4e2d8810a7b931af86",
+      "mode": "0o644",
+      "bytes": 1075,
+      "matches_validated_stage": true
+    },
+    {
+      "path": "share/licenses/kde-index/rotate-bits-MIT.txt",
+      "sha256": "ca0b44aec101afb6b46f4c39b23369fa06a64fb9c0add37c2689d702156fee55",
+      "mode": "0o644",
+      "bytes": 1088,
+      "matches_validated_stage": true
+    },
+    {
+      "path": "share/licenses/kde-index/sha1-Public-Domain.txt",
+      "sha256": "239e38879a3f4a4d00ec227e714afe0cc6493c3745d06c1bbf551b50d97c17c4",
+      "mode": "0o644",
+      "bytes": 63,
+      "matches_validated_stage": true
+    },
+    {
+      "path": "share/licenses/kde-index/sha256-Public-Domain.txt",
+      "sha256": "b81d0022ca6367918c67b57e9647d3513ee58809fd4b0ef0b3492f1356bced25",
+      "mode": "0o644",
+      "bytes": 41,
+      "matches_validated_stage": true
+    },
+    {
+      "path": "share/licenses/kde-index/sheredom-Unlicense.txt",
+      "sha256": "fa8fd67c42f8d9581198eb797005a9e7f0444f0baf201491e7f8c7efccbcff36",
+      "mode": "0o644",
+      "bytes": 1271,
+      "matches_validated_stage": true
+    },
+    {
+      "path": "share/licenses/kde-index/stb-image-MIT.txt",
+      "sha256": "7169810d8b6cf25c9bc0d1067ecce30bbff74a1ccafdfe37ccbe1ee7849d5c36",
+      "mode": "0o644",
+      "bytes": 1081,
+      "matches_validated_stage": true
+    },
+    {
+      "path": "share/licenses/kde-index/xxHash-BSD-2-Clause.txt",
+      "sha256": "6ffedbc0f7878612d2b23589f1ff2ab15633e1df7963a5d9fc750ec5500c7e7a",
+      "mode": "0o644",
+      "bytes": 1389,
+      "matches_validated_stage": true
+    },
+    {
+      "path": "share/metainfo/org.kdeindex.Search.metainfo.xml",
+      "sha256": "d36e3c3198a96a772aaded5902a4a44d090ff9285bdf094fafc08744a2c36d14",
+      "mode": "0o644",
+      "bytes": 1090,
+      "matches_validated_stage": true
+    }
+  ],
+  "required_executables_present": true
+}

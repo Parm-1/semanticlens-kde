@@ -1,0 +1,3275 @@
+{
+  "criterion": {
+    "warm_target_ms": 1000,
+    "percentile": 95,
+    "algorithm": "nearest rank: ceil(0.95*n)-1",
+    "matrix": "eight fixed queries x source/hybrid x three repetitions, in declared order",
+    "samples_per_phase": 48,
+    "phases": [
+      "warm_idle",
+      "warm_indexing"
+    ],
+    "indexing_eligibility": "running embed job before AND after the measured interval",
+    "query_sha256": "fa5fbcdcd67580af62c4996cb8679f611dc89dae8038a1086a1dbc9883957c86",
+    "clock": "Python time.monotonic_ns",
+    "background_source_sha256": "2ad791bad8ce569ef69a6a700d7deba5f787b13430530ff0661b491c1b847ed5",
+    "background_manifest_sha256": "b9db34685092d74f9df88fc0fabc1cf27768072681f358e734ccfc0bf41c2ab1",
+    "interval": "prepared request send through complete parsed reply; logs/phase checks outside",
+    "cold_query_scope": "one source query after observed producer/tokenizer exit; separate from warm p95",
+    "resource_scope": "phase snapshots of owned process RSS/HWM and data-file bytes, not peak workload memory",
+    "scope": "authored six-edition/four-analysis CPU pilot; no real-film or bulk-library claim"
+  },
+  "pins": {
+    "/workspace/semanticlens/local/film-store-v3/candidate/bin/kde-index-service": "9e102f7e127f7f29419a7cba281b90f03dd81fa9609c534d702eead0533d80df",
+    "/workspace/semanticlens/local/film-store-v3/candidate/bin/semanticlens-film-tokenizer": "bca52b5f2945f2959b7493f3cd6d48f0cbce35547d6e215b95b555f643659a1b",
+    "/workspace/semanticlens/local/release-rc2-stage-v1/usr/bin/embedding-probe": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+    "/workspace/semanticlens/models/embeddinggemma-2-Q8_0.gguf": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135",
+    "/workspace/semanticlens/models/mmproj-embeddinggemma-2-Q8_0.gguf": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+    "/workspace/semanticlens/local/film-fixtures-v1/corpus/queries.json": "fa5fbcdcd67580af62c4996cb8679f611dc89dae8038a1086a1dbc9883957c86"
+  },
+  "fixture_pins": {
+    "LICENSE.txt": "43f30f7c2515928b8cb3947aa3d223dcfd5830fc2215f79fabac60e2bbb6e093",
+    "README.md": "04bd98e99d748a9076217263b8fc07284f849be9b04d4ea8a22a471486f0165a",
+    "archive/archive.md": "d326503d0849f13b7ce64def7dceb6ffe5c35313f92868663b61fe6dd1f58993",
+    "archive/manifest.json": "9f19a2cde030d60b238ddf4eaebfabb2d984b20d9a84d5583aa727d57f86ce91",
+    "crossing/analysis.json": "36e97c6e995a7d5da366c698525df83621baf11e69c53f5674be63cefd76abc1",
+    "crossing/crossing.vtt": "182b7c6cb384d5f91eddb5978f72f54c2ed8c0a13d2a0aad4d9e221a6a52ca14",
+    "crossing/manifest.json": "857878b5994b319234d65761ea38da79fabdb1764ecfb1a7cb8a9e30b45287ac",
+    "harbor/analysis.json": "c6d7bd5891dae969f0053f76d2aa4a46cb0bda0aa15e1ac0d87e45d4b9d399a0",
+    "harbor/harbor.txt": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+    "harbor/manifest.json": "fa4357dc448599f9e5e691395259d863f3763cacfe5bd4a61de39c4d465c49ba",
+    "harbor-cut/analysis.json": "43024b39660d825de11831838b430df27d6dae3d005cb6b85d9dadb67c2d34b0",
+    "harbor-cut/harbor.txt": "bb1a42911fcbc9d7580de67191ad07e6d406051d9b4b13ae113106e7fc3202f7",
+    "harbor-cut/manifest.json": "1f80a6a31bbba4a4019c85e0dc622223a8e8c4174fa19f486653f8871c488932",
+    "orchard/analysis.json": "a0946e173889df9f8e9e8f00133dfda9664ab8aa375ea562882a48b0449ec708",
+    "orchard/manifest.json": "5b401c40240092fd1d55f8bea3bbac810a00bc98ad855ed3eca7e545653e9969",
+    "orchard/orchard.srt": "be60b62b04f169b91239905ac98f0b1d958d237456602eaededf7686c9c02249",
+    "parcel-pdf/manifest.json": "4d13d5edf730fe62bae869c953b820b82245e65740d75fae3d6c9c9e705fcfe1",
+    "parcel-pdf/parcel.pdf": "ed2cd03fbed382f055f781de69886492a7bf8cc50f83e531b6146d9c87a19b3f",
+    "queries.json": "fa5fbcdcd67580af62c4996cb8679f611dc89dae8038a1086a1dbc9883957c86"
+  },
+  "timings": [
+    {
+      "phase": "cold_reload",
+      "mode": "source",
+      "query_id": "literal-subtitle",
+      "request_id": "matrix-190",
+      "start_ns": 81727218315151,
+      "end_ns": 81730042959597,
+      "elapsed_ms": 2824.644446
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "literal-subtitle",
+      "repetition": 1,
+      "request_id": "matrix-207",
+      "start_ns": 81731488095549,
+      "end_ns": 81731571730703,
+      "elapsed_ms": 83.635154,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "analysis-only-literal",
+      "repetition": 1,
+      "request_id": "matrix-208",
+      "start_ns": 81731571779355,
+      "end_ns": 81731651699864,
+      "elapsed_ms": 79.920509,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:parcel-pdf:test-1",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "vtt-source-literal",
+      "repetition": 1,
+      "request_id": "matrix-209",
+      "start_ns": 81731651748756,
+      "end_ns": 81731730374640,
+      "elapsed_ms": 78.625884,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "cross-unit-quote",
+      "repetition": 1,
+      "request_id": "matrix-210",
+      "start_ns": 81731730419996,
+      "end_ns": 81731831452314,
+      "elapsed_ms": 101.032318,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:archive:test-1",
+        "edition:harbor:draft-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "pdf-page-identifier",
+      "repetition": 1,
+      "request_id": "matrix-211",
+      "start_ns": 81731831491478,
+      "end_ns": 81731920936655,
+      "elapsed_ms": 89.445177,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1",
+        "edition:orchard:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "concept-uncredited-help",
+      "repetition": 1,
+      "request_id": "matrix-212",
+      "start_ns": 81731920976710,
+      "end_ns": 81732004918353,
+      "elapsed_ms": 83.941643,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "concept-perfection",
+      "repetition": 1,
+      "request_id": "matrix-213",
+      "start_ns": 81732004961374,
+      "end_ns": 81732090500955,
+      "elapsed_ms": 85.539581,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:crossing:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "negative-spaceflight",
+      "repetition": 1,
+      "request_id": "matrix-214",
+      "start_ns": 81732090544777,
+      "end_ns": 81732187046330,
+      "elapsed_ms": 96.501553,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:orchard:test-1",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "literal-subtitle",
+      "repetition": 1,
+      "request_id": "matrix-215",
+      "start_ns": 81732187089722,
+      "end_ns": 81732278153695,
+      "elapsed_ms": 91.063973,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "analysis-only-literal",
+      "repetition": 1,
+      "request_id": "matrix-216",
+      "start_ns": 81732278193189,
+      "end_ns": 81732361162606,
+      "elapsed_ms": 82.969417,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:harbor:draft-1",
+        "edition:orchard:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "vtt-source-literal",
+      "repetition": 1,
+      "request_id": "matrix-217",
+      "start_ns": 81732361203564,
+      "end_ns": 81732446524020,
+      "elapsed_ms": 85.320456,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "cross-unit-quote",
+      "repetition": 1,
+      "request_id": "matrix-218",
+      "start_ns": 81732446567923,
+      "end_ns": 81732553283785,
+      "elapsed_ms": 106.715862,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:archive:test-1",
+        "edition:harbor:draft-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "pdf-page-identifier",
+      "repetition": 1,
+      "request_id": "matrix-219",
+      "start_ns": 81732553330142,
+      "end_ns": 81732639010709,
+      "elapsed_ms": 85.680567,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:parcel-pdf:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:harbor:draft-1",
+        "edition:crossing:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "concept-uncredited-help",
+      "repetition": 1,
+      "request_id": "matrix-220",
+      "start_ns": 81732639053590,
+      "end_ns": 81732721126694,
+      "elapsed_ms": 82.073104,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "concept-perfection",
+      "repetition": 1,
+      "request_id": "matrix-221",
+      "start_ns": 81732721166790,
+      "end_ns": 81732806820055,
+      "elapsed_ms": 85.653265,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "negative-spaceflight",
+      "repetition": 1,
+      "request_id": "matrix-222",
+      "start_ns": 81732806864108,
+      "end_ns": 81732899209091,
+      "elapsed_ms": 92.344983,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "literal-subtitle",
+      "repetition": 2,
+      "request_id": "matrix-223",
+      "start_ns": 81732899249657,
+      "end_ns": 81732983973497,
+      "elapsed_ms": 84.72384,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "analysis-only-literal",
+      "repetition": 2,
+      "request_id": "matrix-224",
+      "start_ns": 81732984025055,
+      "end_ns": 81733068912373,
+      "elapsed_ms": 84.887318,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:parcel-pdf:test-1",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "vtt-source-literal",
+      "repetition": 2,
+      "request_id": "matrix-225",
+      "start_ns": 81733068952820,
+      "end_ns": 81733152483687,
+      "elapsed_ms": 83.530867,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "cross-unit-quote",
+      "repetition": 2,
+      "request_id": "matrix-226",
+      "start_ns": 81733152527199,
+      "end_ns": 81733258909952,
+      "elapsed_ms": 106.382753,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:archive:test-1",
+        "edition:harbor:draft-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "pdf-page-identifier",
+      "repetition": 2,
+      "request_id": "matrix-227",
+      "start_ns": 81733258950909,
+      "end_ns": 81733357278790,
+      "elapsed_ms": 98.327881,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1",
+        "edition:orchard:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "concept-uncredited-help",
+      "repetition": 2,
+      "request_id": "matrix-228",
+      "start_ns": 81733357321230,
+      "end_ns": 81733452995851,
+      "elapsed_ms": 95.674621,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "concept-perfection",
+      "repetition": 2,
+      "request_id": "matrix-229",
+      "start_ns": 81733453075952,
+      "end_ns": 81733546461750,
+      "elapsed_ms": 93.385798,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:crossing:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "negative-spaceflight",
+      "repetition": 2,
+      "request_id": "matrix-230",
+      "start_ns": 81733546513007,
+      "end_ns": 81733638974489,
+      "elapsed_ms": 92.461482,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:orchard:test-1",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "literal-subtitle",
+      "repetition": 2,
+      "request_id": "matrix-231",
+      "start_ns": 81733639033130,
+      "end_ns": 81733727686962,
+      "elapsed_ms": 88.653832,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "analysis-only-literal",
+      "repetition": 2,
+      "request_id": "matrix-232",
+      "start_ns": 81733727726997,
+      "end_ns": 81733809288736,
+      "elapsed_ms": 81.561739,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:harbor:draft-1",
+        "edition:orchard:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "vtt-source-literal",
+      "repetition": 2,
+      "request_id": "matrix-233",
+      "start_ns": 81733809330565,
+      "end_ns": 81733890249750,
+      "elapsed_ms": 80.919185,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "cross-unit-quote",
+      "repetition": 2,
+      "request_id": "matrix-234",
+      "start_ns": 81733890293392,
+      "end_ns": 81733990685602,
+      "elapsed_ms": 100.39221,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:archive:test-1",
+        "edition:harbor:draft-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "pdf-page-identifier",
+      "repetition": 2,
+      "request_id": "matrix-235",
+      "start_ns": 81733990727511,
+      "end_ns": 81734071742717,
+      "elapsed_ms": 81.015206,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:parcel-pdf:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:harbor:draft-1",
+        "edition:crossing:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "concept-uncredited-help",
+      "repetition": 2,
+      "request_id": "matrix-236",
+      "start_ns": 81734071787171,
+      "end_ns": 81734146008768,
+      "elapsed_ms": 74.221597,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "concept-perfection",
+      "repetition": 2,
+      "request_id": "matrix-237",
+      "start_ns": 81734146051699,
+      "end_ns": 81734223646616,
+      "elapsed_ms": 77.594917,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "negative-spaceflight",
+      "repetition": 2,
+      "request_id": "matrix-238",
+      "start_ns": 81734223689808,
+      "end_ns": 81734310866410,
+      "elapsed_ms": 87.176602,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "literal-subtitle",
+      "repetition": 3,
+      "request_id": "matrix-239",
+      "start_ns": 81734310917436,
+      "end_ns": 81734393659343,
+      "elapsed_ms": 82.741907,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "analysis-only-literal",
+      "repetition": 3,
+      "request_id": "matrix-240",
+      "start_ns": 81734393709197,
+      "end_ns": 81734475976699,
+      "elapsed_ms": 82.267502,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:parcel-pdf:test-1",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "vtt-source-literal",
+      "repetition": 3,
+      "request_id": "matrix-241",
+      "start_ns": 81734476029689,
+      "end_ns": 81734552874840,
+      "elapsed_ms": 76.845151,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "cross-unit-quote",
+      "repetition": 3,
+      "request_id": "matrix-242",
+      "start_ns": 81734552915777,
+      "end_ns": 81734651733093,
+      "elapsed_ms": 98.817316,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:archive:test-1",
+        "edition:harbor:draft-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "pdf-page-identifier",
+      "repetition": 3,
+      "request_id": "matrix-243",
+      "start_ns": 81734651771325,
+      "end_ns": 81734741925320,
+      "elapsed_ms": 90.153995,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1",
+        "edition:orchard:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "concept-uncredited-help",
+      "repetition": 3,
+      "request_id": "matrix-244",
+      "start_ns": 81734741971196,
+      "end_ns": 81734817561327,
+      "elapsed_ms": 75.590131,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "concept-perfection",
+      "repetition": 3,
+      "request_id": "matrix-245",
+      "start_ns": 81734817601603,
+      "end_ns": 81734895073498,
+      "elapsed_ms": 77.471895,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:crossing:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "source",
+      "query_id": "negative-spaceflight",
+      "repetition": 3,
+      "request_id": "matrix-246",
+      "start_ns": 81734895113243,
+      "end_ns": 81734983264145,
+      "elapsed_ms": 88.150902,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:orchard:test-1",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "literal-subtitle",
+      "repetition": 3,
+      "request_id": "matrix-247",
+      "start_ns": 81734983304241,
+      "end_ns": 81735065143404,
+      "elapsed_ms": 81.839163,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "analysis-only-literal",
+      "repetition": 3,
+      "request_id": "matrix-248",
+      "start_ns": 81735065184681,
+      "end_ns": 81735142911217,
+      "elapsed_ms": 77.726536,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:harbor:draft-1",
+        "edition:orchard:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "vtt-source-literal",
+      "repetition": 3,
+      "request_id": "matrix-249",
+      "start_ns": 81735142951263,
+      "end_ns": 81735220915097,
+      "elapsed_ms": 77.963834,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "cross-unit-quote",
+      "repetition": 3,
+      "request_id": "matrix-250",
+      "start_ns": 81735220955122,
+      "end_ns": 81735318278326,
+      "elapsed_ms": 97.323204,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:archive:test-1",
+        "edition:harbor:draft-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "pdf-page-identifier",
+      "repetition": 3,
+      "request_id": "matrix-251",
+      "start_ns": 81735318317650,
+      "end_ns": 81735403613581,
+      "elapsed_ms": 85.295931,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:parcel-pdf:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:harbor:draft-1",
+        "edition:crossing:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "concept-uncredited-help",
+      "repetition": 3,
+      "request_id": "matrix-252",
+      "start_ns": 81735403653456,
+      "end_ns": 81735480407014,
+      "elapsed_ms": 76.753558,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "concept-perfection",
+      "repetition": 3,
+      "request_id": "matrix-253",
+      "start_ns": 81735480446519,
+      "end_ns": 81735556809770,
+      "elapsed_ms": 76.363251,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_idle",
+      "mode": "hybrid",
+      "query_id": "negative-spaceflight",
+      "repetition": 3,
+      "request_id": "matrix-254",
+      "start_ns": 81735556849154,
+      "end_ns": 81735646873505,
+      "elapsed_ms": 90.024351,
+      "before": null,
+      "after": null,
+      "result_editions": [
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "literal-subtitle",
+      "repetition": 1,
+      "request_id": "matrix-666",
+      "start_ns": 81750487715018,
+      "end_ns": 81752313905395,
+      "elapsed_ms": 1826.190377,
+      "before": {
+        "done": 2,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 4,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "analysis-only-literal",
+      "repetition": 1,
+      "request_id": "matrix-669",
+      "start_ns": 81756290741854,
+      "end_ns": 81758193196437,
+      "elapsed_ms": 1902.454583,
+      "before": {
+        "done": 5,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 7,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:parcel-pdf:test-1",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "vtt-source-literal",
+      "repetition": 1,
+      "request_id": "matrix-672",
+      "start_ns": 81762138878366,
+      "end_ns": 81763916534982,
+      "elapsed_ms": 1777.656616,
+      "before": {
+        "done": 8,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 10,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "cross-unit-quote",
+      "repetition": 1,
+      "request_id": "matrix-675",
+      "start_ns": 81767317843519,
+      "end_ns": 81769150090340,
+      "elapsed_ms": 1832.246821,
+      "before": {
+        "done": 11,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 13,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:archive:test-1",
+        "edition:harbor:draft-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "pdf-page-identifier",
+      "repetition": 1,
+      "request_id": "matrix-678",
+      "start_ns": 81772575898377,
+      "end_ns": 81774387390485,
+      "elapsed_ms": 1811.492108,
+      "before": {
+        "done": 14,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 16,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1",
+        "edition:orchard:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "concept-uncredited-help",
+      "repetition": 1,
+      "request_id": "matrix-681",
+      "start_ns": 81777918027095,
+      "end_ns": 81779730825522,
+      "elapsed_ms": 1812.798427,
+      "before": {
+        "done": 17,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 19,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "concept-perfection",
+      "repetition": 1,
+      "request_id": "matrix-684",
+      "start_ns": 81783197861856,
+      "end_ns": 81784999751093,
+      "elapsed_ms": 1801.889237,
+      "before": {
+        "done": 20,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 22,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:crossing:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "negative-spaceflight",
+      "repetition": 1,
+      "request_id": "matrix-687",
+      "start_ns": 81788445669681,
+      "end_ns": 81790296861067,
+      "elapsed_ms": 1851.191386,
+      "before": {
+        "done": 23,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 25,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:orchard:test-1",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "literal-subtitle",
+      "repetition": 1,
+      "request_id": "matrix-690",
+      "start_ns": 81793896147523,
+      "end_ns": 81795771740273,
+      "elapsed_ms": 1875.59275,
+      "before": {
+        "done": 26,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 28,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "analysis-only-literal",
+      "repetition": 1,
+      "request_id": "matrix-693",
+      "start_ns": 81799385702008,
+      "end_ns": 81801277251805,
+      "elapsed_ms": 1891.549797,
+      "before": {
+        "done": 29,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 31,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:harbor:draft-1",
+        "edition:orchard:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "vtt-source-literal",
+      "repetition": 1,
+      "request_id": "matrix-696",
+      "start_ns": 81804908825153,
+      "end_ns": 81806767038476,
+      "elapsed_ms": 1858.213323,
+      "before": {
+        "done": 32,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 34,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "cross-unit-quote",
+      "repetition": 1,
+      "request_id": "matrix-699",
+      "start_ns": 81810751460695,
+      "end_ns": 81810865283049,
+      "elapsed_ms": 113.822354,
+      "before": {
+        "done": 35,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 36,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:archive:test-1",
+        "edition:harbor:draft-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "pdf-page-identifier",
+      "repetition": 1,
+      "request_id": "matrix-702",
+      "start_ns": 81816238282868,
+      "end_ns": 81818337228559,
+      "elapsed_ms": 2098.945691,
+      "before": {
+        "done": 37,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 39,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:parcel-pdf:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:harbor:draft-1",
+        "edition:crossing:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "concept-uncredited-help",
+      "repetition": 1,
+      "request_id": "matrix-705",
+      "start_ns": 81821879252265,
+      "end_ns": 81823748980690,
+      "elapsed_ms": 1869.728425,
+      "before": {
+        "done": 40,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 42,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "concept-perfection",
+      "repetition": 1,
+      "request_id": "matrix-708",
+      "start_ns": 81827341358803,
+      "end_ns": 81829206228815,
+      "elapsed_ms": 1864.870012,
+      "before": {
+        "done": 43,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 45,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "negative-spaceflight",
+      "repetition": 1,
+      "request_id": "matrix-711",
+      "start_ns": 81832814700816,
+      "end_ns": 81834726585327,
+      "elapsed_ms": 1911.884511,
+      "before": {
+        "done": 46,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 48,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "literal-subtitle",
+      "repetition": 2,
+      "request_id": "matrix-714",
+      "start_ns": 81838235239875,
+      "end_ns": 81840114068732,
+      "elapsed_ms": 1878.828857,
+      "before": {
+        "done": 49,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 51,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "analysis-only-literal",
+      "repetition": 2,
+      "request_id": "matrix-717",
+      "start_ns": 81843763135464,
+      "end_ns": 81845582187764,
+      "elapsed_ms": 1819.0523,
+      "before": {
+        "done": 52,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 54,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:parcel-pdf:test-1",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "vtt-source-literal",
+      "repetition": 2,
+      "request_id": "matrix-720",
+      "start_ns": 81849150543485,
+      "end_ns": 81851064834417,
+      "elapsed_ms": 1914.290932,
+      "before": {
+        "done": 55,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 57,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "cross-unit-quote",
+      "repetition": 2,
+      "request_id": "matrix-723",
+      "start_ns": 81854689875542,
+      "end_ns": 81856928063480,
+      "elapsed_ms": 2238.187938,
+      "before": {
+        "done": 58,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 60,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:archive:test-1",
+        "edition:harbor:draft-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "pdf-page-identifier",
+      "repetition": 2,
+      "request_id": "matrix-726",
+      "start_ns": 81860601656360,
+      "end_ns": 81862560215567,
+      "elapsed_ms": 1958.559207,
+      "before": {
+        "done": 61,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 63,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1",
+        "edition:orchard:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "concept-uncredited-help",
+      "repetition": 2,
+      "request_id": "matrix-729",
+      "start_ns": 81866222517497,
+      "end_ns": 81868080879181,
+      "elapsed_ms": 1858.361684,
+      "before": {
+        "done": 64,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 66,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "concept-perfection",
+      "repetition": 2,
+      "request_id": "matrix-732",
+      "start_ns": 81871754138058,
+      "end_ns": 81873613543424,
+      "elapsed_ms": 1859.405366,
+      "before": {
+        "done": 67,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 69,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:crossing:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "negative-spaceflight",
+      "repetition": 2,
+      "request_id": "matrix-735",
+      "start_ns": 81877314526903,
+      "end_ns": 81879205954716,
+      "elapsed_ms": 1891.427813,
+      "before": {
+        "done": 70,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 72,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:orchard:test-1",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "literal-subtitle",
+      "repetition": 2,
+      "request_id": "matrix-738",
+      "start_ns": 81882886348815,
+      "end_ns": 81884741768748,
+      "elapsed_ms": 1855.419933,
+      "before": {
+        "done": 73,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 75,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "analysis-only-literal",
+      "repetition": 2,
+      "request_id": "matrix-741",
+      "start_ns": 81888337275269,
+      "end_ns": 81890214718005,
+      "elapsed_ms": 1877.442736,
+      "before": {
+        "done": 76,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 78,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:harbor:draft-1",
+        "edition:orchard:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "vtt-source-literal",
+      "repetition": 2,
+      "request_id": "matrix-744",
+      "start_ns": 81893906688131,
+      "end_ns": 81895834794348,
+      "elapsed_ms": 1928.106217,
+      "before": {
+        "done": 79,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 81,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "cross-unit-quote",
+      "repetition": 2,
+      "request_id": "matrix-747",
+      "start_ns": 81899450895197,
+      "end_ns": 81901376457942,
+      "elapsed_ms": 1925.562745,
+      "before": {
+        "done": 82,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 84,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:archive:test-1",
+        "edition:harbor:draft-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "pdf-page-identifier",
+      "repetition": 2,
+      "request_id": "matrix-750",
+      "start_ns": 81904930601117,
+      "end_ns": 81906934195511,
+      "elapsed_ms": 2003.594394,
+      "before": {
+        "done": 85,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 87,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:parcel-pdf:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:harbor:draft-1",
+        "edition:crossing:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "concept-uncredited-help",
+      "repetition": 2,
+      "request_id": "matrix-753",
+      "start_ns": 81910696727154,
+      "end_ns": 81912584464206,
+      "elapsed_ms": 1887.737052,
+      "before": {
+        "done": 88,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 90,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "concept-perfection",
+      "repetition": 2,
+      "request_id": "matrix-756",
+      "start_ns": 81916234164979,
+      "end_ns": 81918144430644,
+      "elapsed_ms": 1910.265665,
+      "before": {
+        "done": 91,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 93,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "negative-spaceflight",
+      "repetition": 2,
+      "request_id": "matrix-759",
+      "start_ns": 81921673171945,
+      "end_ns": 81923560982342,
+      "elapsed_ms": 1887.810397,
+      "before": {
+        "done": 94,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 96,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "literal-subtitle",
+      "repetition": 3,
+      "request_id": "matrix-762",
+      "start_ns": 81927168280007,
+      "end_ns": 81929104923081,
+      "elapsed_ms": 1936.643074,
+      "before": {
+        "done": 97,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 99,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "analysis-only-literal",
+      "repetition": 3,
+      "request_id": "matrix-765",
+      "start_ns": 81932767359961,
+      "end_ns": 81934615309139,
+      "elapsed_ms": 1847.949178,
+      "before": {
+        "done": 100,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 102,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:parcel-pdf:test-1",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "vtt-source-literal",
+      "repetition": 3,
+      "request_id": "matrix-768",
+      "start_ns": 81938230275100,
+      "end_ns": 81940203129182,
+      "elapsed_ms": 1972.854082,
+      "before": {
+        "done": 103,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 105,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "cross-unit-quote",
+      "repetition": 3,
+      "request_id": "matrix-771",
+      "start_ns": 81943896343906,
+      "end_ns": 81945811957566,
+      "elapsed_ms": 1915.61366,
+      "before": {
+        "done": 106,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 108,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:archive:test-1",
+        "edition:harbor:draft-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "pdf-page-identifier",
+      "repetition": 3,
+      "request_id": "matrix-774",
+      "start_ns": 81949430722846,
+      "end_ns": 81951334080738,
+      "elapsed_ms": 1903.357892,
+      "before": {
+        "done": 109,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 111,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1",
+        "edition:orchard:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "concept-uncredited-help",
+      "repetition": 3,
+      "request_id": "matrix-777",
+      "start_ns": 81954880259049,
+      "end_ns": 81956703847933,
+      "elapsed_ms": 1823.588884,
+      "before": {
+        "done": 112,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 114,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "concept-perfection",
+      "repetition": 3,
+      "request_id": "matrix-780",
+      "start_ns": 81960220933445,
+      "end_ns": 81962081109545,
+      "elapsed_ms": 1860.1761,
+      "before": {
+        "done": 115,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 117,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:crossing:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "source",
+      "query_id": "negative-spaceflight",
+      "repetition": 3,
+      "request_id": "matrix-783",
+      "start_ns": 81965821747342,
+      "end_ns": 81967694468016,
+      "elapsed_ms": 1872.720674,
+      "before": {
+        "done": 118,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 120,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:orchard:test-1",
+        "edition:harbor:draft-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "literal-subtitle",
+      "repetition": 3,
+      "request_id": "matrix-786",
+      "start_ns": 81971320051878,
+      "end_ns": 81973194496247,
+      "elapsed_ms": 1874.444369,
+      "before": {
+        "done": 121,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 123,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "analysis-only-literal",
+      "repetition": 3,
+      "request_id": "matrix-789",
+      "start_ns": 81976842549294,
+      "end_ns": 81979027030430,
+      "elapsed_ms": 2184.481136,
+      "before": {
+        "done": 124,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 126,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:harbor:draft-1",
+        "edition:orchard:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "vtt-source-literal",
+      "repetition": 3,
+      "request_id": "matrix-792",
+      "start_ns": 81982688113841,
+      "end_ns": 81984695081912,
+      "elapsed_ms": 2006.968071,
+      "before": {
+        "done": 127,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 129,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "cross-unit-quote",
+      "repetition": 3,
+      "request_id": "matrix-795",
+      "start_ns": 81988545776078,
+      "end_ns": 81990480694998,
+      "elapsed_ms": 1934.91892,
+      "before": {
+        "done": 130,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 132,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:archive:test-1",
+        "edition:harbor:draft-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "pdf-page-identifier",
+      "repetition": 3,
+      "request_id": "matrix-798",
+      "start_ns": 81994051313603,
+      "end_ns": 81995966720325,
+      "elapsed_ms": 1915.406722,
+      "before": {
+        "done": 133,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 135,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:parcel-pdf:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:harbor:draft-1",
+        "edition:crossing:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "concept-uncredited-help",
+      "repetition": 3,
+      "request_id": "matrix-801",
+      "start_ns": 81999677203008,
+      "end_ns": 82001587514575,
+      "elapsed_ms": 1910.311567,
+      "before": {
+        "done": 136,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 138,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:orchard:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:archive:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "concept-perfection",
+      "repetition": 3,
+      "request_id": "matrix-804",
+      "start_ns": 82005276911468,
+      "end_ns": 82007393690690,
+      "elapsed_ms": 2116.779222,
+      "before": {
+        "done": 139,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 141,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:crossing:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    },
+    {
+      "phase": "warm_indexing",
+      "mode": "hybrid",
+      "query_id": "negative-spaceflight",
+      "repetition": 3,
+      "request_id": "matrix-807",
+      "start_ns": 82010973904384,
+      "end_ns": 82012882258437,
+      "elapsed_ms": 1908.354053,
+      "before": {
+        "done": 142,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "after": {
+        "done": 144,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      },
+      "result_editions": [
+        "edition:crossing:test-1",
+        "edition:harbor:draft-1",
+        "edition:harbor:alternate-cut",
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1"
+      ],
+      "eligible": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "legacy ready, producer unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "qualified default-exclusion ranking policy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "harbor source imported",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "harbor-cut source imported",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "orchard source imported",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "crossing source imported",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archive source imported",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "parcel-pdf source imported",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "harbor analysis imported",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "harbor-cut analysis imported",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "orchard analysis imported",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "crossing analysis imported",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged pilot active counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pilot idle loaded worker observed",
+      "passed": true,
+      "detail": {
+        "phase": "pilot idle before unload",
+        "monotonic_ns": 81716101109644,
+        "processes": [
+          {
+            "pid": 1187745,
+            "exe": "/workspace/semanticlens/local/film-store-v3/candidate/bin/kde-index-service",
+            "status": {
+              "PPid": "1187725",
+              "VmHWM": "26676 kB",
+              "VmRSS": "26676 kB"
+            }
+          },
+          {
+            "pid": 1187748,
+            "exe": "/workspace/semanticlens/local/release-rc2-stage-v1/usr/bin/embedding-probe",
+            "status": {
+              "PPid": "1187745",
+              "VmHWM": "1036412 kB",
+              "VmRSS": "1036412 kB"
+            }
+          },
+          {
+            "pid": 1187765,
+            "exe": "/workspace/semanticlens/local/film-store-v3/candidate/bin/semanticlens-film-tokenizer",
+            "status": {
+              "PPid": "1187745",
+              "VmHWM": "135736 kB",
+              "VmRSS": "114464 kB"
+            }
+          }
+        ],
+        "data_files": {
+          "film.sqlite": 4096,
+          "film.sqlite-shm": 32768,
+          "film.sqlite-wal": 951752,
+          "index.sqlite": 4096,
+          "index.sqlite-shm": 32768,
+          "index.sqlite-wal": 98912,
+          "service.lock": 109
+        },
+        "data_bytes": 1124501
+      }
+    },
+    {
+      "name": "pilot idle workers exited without another request",
+      "passed": true,
+      "detail": {
+        "phase": "pilot idle after unload",
+        "monotonic_ns": 81727218011428,
+        "processes": [
+          {
+            "pid": 1187745,
+            "exe": "/workspace/semanticlens/local/film-store-v3/candidate/bin/kde-index-service",
+            "status": {
+              "PPid": "1187725",
+              "VmHWM": "26652 kB",
+              "VmRSS": "26652 kB"
+            }
+          }
+        ],
+        "data_files": {
+          "film.sqlite": 4096,
+          "film.sqlite-shm": 32768,
+          "film.sqlite-wal": 984712,
+          "index.sqlite": 4096,
+          "index.sqlite-shm": 32768,
+          "index.sqlite-wal": 98912,
+          "service.lock": 109
+        },
+        "data_bytes": 1157461
+      }
+    },
+    {
+      "name": "warm_idle complete declared matrix",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "name": "warm_idle p95 <= 1 second",
+      "passed": true,
+      "detail": 101.032318
+    },
+    {
+      "name": "background embedding stage observed",
+      "passed": true,
+      "detail": {
+        "done": 1,
+        "error": "",
+        "job_id": "4882ef08-c571-40db-8c69-580424acc1ce",
+        "kind": "manifest",
+        "stage": "embed",
+        "state": "running",
+        "total": 512
+      }
+    },
+    {
+      "name": "warm_indexing complete declared matrix",
+      "passed": true,
+      "detail": 48
+    },
+    {
+      "name": "warm_indexing p95 <= 1 second",
+      "passed": false,
+      "detail": 2116.779222
+    }
+  ],
+  "summary": {
+    "cold_reload": {
+      "n": 1,
+      "elapsed_ms": 2824.644446,
+      "result_editions": [
+        "edition:orchard:test-1",
+        "edition:archive:test-1",
+        "edition:parcel-pdf:test-1",
+        "edition:crossing:test-1",
+        "edition:harbor:alternate-cut",
+        "edition:harbor:draft-1"
+      ]
+    },
+    "warm_idle": {
+      "n": 48,
+      "p95_ms": 101.032318,
+      "max_ms": 106.715862
+    },
+    "warm_indexing": {
+      "n": 48,
+      "p95_ms": 2116.779222,
+      "max_ms": 2238.187938
+    }
+  },
+  "resource_closure": {
+    "service_exit": -15,
+    "socket_absent": false,
+    "remaining_owned_process_group": [
+      1187943
+    ]
+  },
+  "resource_snapshots": [
+    {
+      "phase": "pilot idle before unload",
+      "monotonic_ns": 81716101109644,
+      "processes": [
+        {
+          "pid": 1187745,
+          "exe": "/workspace/semanticlens/local/film-store-v3/candidate/bin/kde-index-service",
+          "status": {
+            "PPid": "1187725",
+            "VmHWM": "26676 kB",
+            "VmRSS": "26676 kB"
+          }
+        },
+        {
+          "pid": 1187748,
+          "exe": "/workspace/semanticlens/local/release-rc2-stage-v1/usr/bin/embedding-probe",
+          "status": {
+            "PPid": "1187745",
+            "VmHWM": "1036412 kB",
+            "VmRSS": "1036412 kB"
+          }
+        },
+        {
+          "pid": 1187765,
+          "exe": "/workspace/semanticlens/local/film-store-v3/candidate/bin/semanticlens-film-tokenizer",
+          "status": {
+            "PPid": "1187745",
+            "VmHWM": "135736 kB",
+            "VmRSS": "114464 kB"
+          }
+        }
+      ],
+      "data_files": {
+        "film.sqlite": 4096,
+        "film.sqlite-shm": 32768,
+        "film.sqlite-wal": 951752,
+        "index.sqlite": 4096,
+        "index.sqlite-shm": 32768,
+        "index.sqlite-wal": 98912,
+        "service.lock": 109
+      },
+      "data_bytes": 1124501
+    },
+    {
+      "phase": "pilot idle after unload",
+      "monotonic_ns": 81727218011428,
+      "processes": [
+        {
+          "pid": 1187745,
+          "exe": "/workspace/semanticlens/local/film-store-v3/candidate/bin/kde-index-service",
+          "status": {
+            "PPid": "1187725",
+            "VmHWM": "26652 kB",
+            "VmRSS": "26652 kB"
+          }
+        }
+      ],
+      "data_files": {
+        "film.sqlite": 4096,
+        "film.sqlite-shm": 32768,
+        "film.sqlite-wal": 984712,
+        "index.sqlite": 4096,
+        "index.sqlite-shm": 32768,
+        "index.sqlite-wal": 98912,
+        "service.lock": 109
+      },
+      "data_bytes": 1157461
+    },
+    {
+      "phase": "after cold reload",
+      "monotonic_ns": 81730043410238,
+      "processes": [
+        {
+          "pid": 1187745,
+          "exe": "/workspace/semanticlens/local/film-store-v3/candidate/bin/kde-index-service",
+          "status": {
+            "PPid": "1187725",
+            "VmHWM": "26800 kB",
+            "VmRSS": "26800 kB"
+          }
+        },
+        {
+          "pid": 1187938,
+          "exe": "/workspace/semanticlens/local/film-store-v3/candidate/bin/semanticlens-film-tokenizer",
+          "status": {
+            "PPid": "1187745",
+            "VmHWM": "135464 kB",
+            "VmRSS": "114308 kB"
+          }
+        },
+        {
+          "pid": 1187943,
+          "exe": "/workspace/semanticlens/local/release-rc2-stage-v1/usr/bin/embedding-probe",
+          "status": {
+            "PPid": "1187745",
+            "VmHWM": "930464 kB",
+            "VmRSS": "930464 kB"
+          }
+        }
+      ],
+      "data_files": {
+        "film.sqlite": 4096,
+        "film.sqlite-shm": 32768,
+        "film.sqlite-wal": 984712,
+        "index.sqlite": 4096,
+        "index.sqlite-shm": 32768,
+        "index.sqlite-wal": 98912,
+        "service.lock": 109
+      },
+      "data_bytes": 1157461
+    },
+    {
+      "phase": "after warm idle matrix",
+      "monotonic_ns": 81735647288077,
+      "processes": [
+        {
+          "pid": 1187745,
+          "exe": "/workspace/semanticlens/local/film-store-v3/candidate/bin/kde-index-service",
+          "status": {
+            "PPid": "1187725",
+            "VmHWM": "29056 kB",
+            "VmRSS": "29056 kB"
+          }
+        },
+        {
+          "pid": 1187938,
+          "exe": "/workspace/semanticlens/local/film-store-v3/candidate/bin/semanticlens-film-tokenizer",
+          "status": {
+            "PPid": "1187745",
+            "VmHWM": "135464 kB",
+            "VmRSS": "114308 kB"
+          }
+        },
+        {
+          "pid": 1187943,
+          "exe": "/workspace/semanticlens/local/release-rc2-stage-v1/usr/bin/embedding-probe",
+          "status": {
+            "PPid": "1187745",
+            "VmHWM": "932016 kB",
+            "VmRSS": "932016 kB"
+          }
+        }
+      ],
+      "data_files": {
+        "film.sqlite": 4096,
+        "film.sqlite-shm": 32768,
+        "film.sqlite-wal": 984712,
+        "index.sqlite": 4096,
+        "index.sqlite-shm": 32768,
+        "index.sqlite-wal": 98912,
+        "service.lock": 109
+      },
+      "data_bytes": 1157461
+    }
+  ],
+  "background_input": {
+    "source_sha256": "2ad791bad8ce569ef69a6a700d7deba5f787b13430530ff0661b491c1b847ed5",
+    "manifest": {
+      "schema_version": "semanticlens.film.manifest/1",
+      "film_id": "film:timing-load",
+      "edition_id": "edition:timing-load",
+      "display_title": "Authored background timing load",
+      "year": null,
+      "sources": [
+        {
+          "source_id": "source:timing-load",
+          "relative_path": "timing-load.txt",
+          "sha256": "2ad791bad8ce569ef69a6a700d7deba5f787b13430530ff0661b491c1b847ed5",
+          "source_kind": "screenplay",
+          "language": "en",
+          "edition_relation": "exact_edition"
+        }
+      ]
+    },
+    "lines": 2048
+  },
+  "argv": [
+    "/workspace/semanticlens/local/film-store-v3/candidate/bin/kde-index-service",
+    "--data-dir",
+    "/workspace/semanticlens/local/film-timing-run-v1/data",
+    "--socket",
+    "/workspace/semanticlens/local/film-timing-run-v1/service.sock",
+    "--probe",
+    "/workspace/semanticlens/local/release-rc2-stage-v1/usr/bin/embedding-probe",
+    "--probe-sha256",
+    "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+    "--text-model",
+    "/workspace/semanticlens/models/embeddinggemma-2-Q8_0.gguf",
+    "--image-model",
+    "/workspace/semanticlens/models/mmproj-embeddinggemma-2-Q8_0.gguf",
+    "--threads",
+    "2",
+    "--film-tokenizer",
+    "/workspace/semanticlens/local/film-store-v3/candidate/bin/semanticlens-film-tokenizer",
+    "--film-tokenizer-sha256",
+    "bca52b5f2945f2959b7493f3cd6d48f0cbce35547d6e215b95b555f643659a1b"
+  ],
+  "identity": {
+    "backend": "CPU",
+    "byte_order": "little",
+    "dimension": 768,
+    "dtype": "float32",
+    "engine_pipeline": "kde-index-full-pages-v3-segments1800-image140-ocr32",
+    "extractors": {
+      "pdfinfo": "pdfinfo version 26.05.0",
+      "pdftoppm": "pdftoppm version 26.05.0",
+      "pdftotext": "pdftotext version 26.08.0",
+      "tesseract": "tesseract 5.5.3"
+    },
+    "image_sha256": "c4a8a52691ecef40618438928bdf9e68379b854e24166f292592353db0aab64f",
+    "max_tokens": 2048,
+    "model": "google/embeddinggemma-2",
+    "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+    "pipeline": "digup-vectors1-linux-cpu-probe1",
+    "producer_sha256": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+    "representation": 3,
+    "runtime": "llama.cpp-b11461+no-logits",
+    "text_sha256": "2188ac1deca4b77dffefd603c2776a9d76d9d74ec01841392982ebb840b09135"
+  },
+  "failure": "AssertionError('warm_indexing p95 <= 1 second')",
+  "passed": false
+}

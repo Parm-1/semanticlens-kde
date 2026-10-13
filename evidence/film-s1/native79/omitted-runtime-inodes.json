@@ -1,0 +1,7 @@
+[
+  {
+    "path": "runtime/at-spi/bus",
+    "mode": "0o140755",
+    "reason": "non-regular runtime inode; not a replay artifact"
+  }
+]

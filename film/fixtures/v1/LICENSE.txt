@@ -1,0 +1,1 @@
+All original fixture story text, annotations and test queries in this directory are dedicated to the public domain under CC0 1.0. They are fictional test inputs, not actual films or generated analyses. https://creativecommons.org/publicdomain/zero/1.0/

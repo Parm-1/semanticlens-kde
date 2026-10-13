@@ -1,0 +1,5 @@
+{
+  "test_stage_actors_remaining": [],
+  "service_exit": 0,
+  "scope": "Actual read-only process-executable census after runner/service exit, stage-specific; installed rc2 outside scope."
+}

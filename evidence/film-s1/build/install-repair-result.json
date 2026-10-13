@@ -1,0 +1,42 @@
+{
+  "source_commit": "207dac64c5d48454f259b1d40a6fcdc9c787e2e6",
+  "commands": [
+    {
+      "argv": [
+        "cmake",
+        "-S",
+        "/workspace/semanticlens/local/film-public-s1-v1",
+        "-B",
+        "/workspace/semanticlens/local/film-public-s1-v1/build-clean",
+        "-G",
+        "Ninja",
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 2.93753182
+    },
+    {
+      "argv": [
+        "cmake",
+        "--build",
+        "/workspace/semanticlens/local/film-public-s1-v1/build-clean",
+        "-j",
+        "2"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.136951914
+    },
+    {
+      "argv": [
+        "cmake",
+        "--install",
+        "/workspace/semanticlens/local/film-public-s1-v1/build-clean",
+        "--prefix",
+        "/usr"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.053825483
+    }
+  ],
+  "scope": "Install-rule-only repair on the successful clean build. Original failed stage retained separately. No model/UI/live install."
+}

@@ -1,0 +1,148 @@
+{
+  "session_environment": {
+    "WAYLAND_DISPLAY": "semanticlens-test",
+    "DISPLAY": null,
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/tmp/dbus-E5gigjIAbJ,guid=b6c1c2d94760ecab4549ce766ace1cf8",
+    "XDG_RUNTIME_DIR": "/tmp/test/runtime",
+    "HOME": "/tmp/test/home",
+    "XDG_CONFIG_HOME": "/tmp/test/config",
+    "XDG_CACHE_HOME": "/tmp/test/cache",
+    "XDG_DATA_HOME": "/tmp/test/data",
+    "XDG_STATE_HOME": "/tmp/test/state",
+    "XDG_SESSION_TYPE": "wayland",
+    "XDG_CURRENT_DESKTOP": "KDE",
+    "QT_QPA_PLATFORM": "wayland",
+    "dedicated_socket_path": "/tmp/test/runtime/semanticlens-test",
+    "dedicated_socket_inode": 9084079,
+    "dedicated_socket_observed": true
+  },
+  "approved_stage": {
+    "approved_stage_pins_sha256": "e518c8d525e983d75c90808600a72ed0560444c33182abfe30e016c09e5cd31f",
+    "actual_stage_pins_sha256": "e518c8d525e983d75c90808600a72ed0560444c33182abfe30e016c09e5cd31f",
+    "stage_pins": {
+      "bin/embedding-probe": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+      "bin/kde-index": "31e87f64e63febcfe099cd68a1acc73eefacd31b77151bd74c18d41509152abe",
+      "bin/kde-index-cli": "6773a256b55b7c1e555727097d8e3be5db69e84e705d7ca4caf05929ffdfd086",
+      "bin/kde-index-service": "a59a737bb7e27bcd593d237e36ab113742f566dadd25418d316f1ffebb28f6e3",
+      "bin/semanticlens-film-tokenizer": "bca52b5f2945f2959b7493f3cd6d48f0cbce35547d6e215b95b555f643659a1b",
+      "bin/semanticlens-film-worker": "dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5",
+      "bin/semanticlens-media": "5d1bcebe749ccc46e9ec5cd0af91d6150f1b63dcdbd49028af7098c6e4216a87",
+      "lib/qt6/plugins/kf6/krunner/kde-index-runner.so": "a587a20400e4892c0eded5af30c08e646ea09885a971eb3a6a6e6c61bda2e9ba",
+      "share/applications/org.kdeindex.Search.desktop": "717a04a28df88cacaa1ebbd938902f31d7e879231c60a69a2b5b411580b2a6e9",
+      "share/kde-index/model_download.py": "b4542f5b8d9f7326fd31770ef96ef7020e7992be23db7d066619fbdd8208d47c",
+      "share/licenses/kde-index/Apache-2.0.txt": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff",
+      "share/licenses/kde-index/DigUp-MIT.txt": "2ba7d3ad3aafa9b791002d62a6fe237e89fa4287c2f4e59234b09d25bd909b26",
+      "share/licenses/kde-index/LICENSE": "fb981668c18a279e285fc4d83fba1e836cc84dd4daa73c9697d3cfd2d8aca6e0",
+      "share/licenses/kde-index/THIRD_PARTY_NOTICES.md": "f04451a10c92688003d7051b85a26a0ac87bb9f519138244aa880b67ef851020",
+      "share/licenses/kde-index/llama.cpp-MIT.txt": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d",
+      "share/licenses/kde-index/miniaudio-MIT-0.txt": "c2410d4d14ad58e05a59e5de1b02c44fd73cbceb4a628d9676c2c19549908430",
+      "share/licenses/kde-index/nlohmann-json-MIT.txt": "c0d068392ea65358b798b8c165103560f06e9e3b38c4ab4e2d8810a7b931af86",
+      "share/licenses/kde-index/rotate-bits-MIT.txt": "ca0b44aec101afb6b46f4c39b23369fa06a64fb9c0add37c2689d702156fee55",
+      "share/licenses/kde-index/sha1-Public-Domain.txt": "239e38879a3f4a4d00ec227e714afe0cc6493c3745d06c1bbf551b50d97c17c4",
+      "share/licenses/kde-index/sha256-Public-Domain.txt": "b81d0022ca6367918c67b57e9647d3513ee58809fd4b0ef0b3492f1356bced25",
+      "share/licenses/kde-index/sheredom-Unlicense.txt": "fa8fd67c42f8d9581198eb797005a9e7f0444f0baf201491e7f8c7efccbcff36",
+      "share/licenses/kde-index/stb-image-MIT.txt": "7169810d8b6cf25c9bc0d1067ecce30bbff74a1ccafdfe37ccbe1ee7849d5c36",
+      "share/licenses/kde-index/xxHash-BSD-2-Clause.txt": "6ffedbc0f7878612d2b23589f1ff2ab15633e1df7963a5d9fc750ec5500c7e7a",
+      "share/metainfo/org.kdeindex.Search.metainfo.xml": "d36e3c3198a96a772aaded5902a4a44d090ff9285bdf094fafc08744a2c36d14"
+    }
+  },
+  "film_worker": {
+    "path": "/tmp/test/film-worker",
+    "sha256": "dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5"
+  },
+  "scope": "owned authored text and two-page PDF full-copy native reader, page intent and copy lifecycle",
+  "passed": false,
+  "events": [],
+  "control_records": [],
+  "checks": [
+    {
+      "name": "owned mime cache",
+      "passed": true
+    },
+    {
+      "name": "real owned handler recommendation",
+      "passed": false
+    }
+  ],
+  "package_usage": "unknown",
+  "timing_scope": "diagnostic execution only; no latency/engineering-cost benchmark",
+  "sources": {
+    "/tmp/test/work/corpus/harbor/harbor.txt": {
+      "sha256": "b3b4430f20c586866f21f5d5c715cc1eac04ebd858aac04abd1d916f42c72217",
+      "size": 229,
+      "mode": "0o444",
+      "inode": 9084046
+    },
+    "/tmp/test/work/corpus/parcel-pdf/parcel.pdf": {
+      "sha256": "ed2cd03fbed382f055f781de69886492a7bf8cc50f83e531b6146d9c87a19b3f",
+      "size": 1919,
+      "mode": "0o444",
+      "inode": 9084067
+    }
+  },
+  "binaries": {
+    "/tmp/test/stage/bin/kde-index": "31e87f64e63febcfe099cd68a1acc73eefacd31b77151bd74c18d41509152abe",
+    "/tmp/test/stage/bin/kde-index-service": "a59a737bb7e27bcd593d237e36ab113742f566dadd25418d316f1ffebb28f6e3",
+    "/tmp/test/stage/bin/embedding-probe": "fa7d14674f82715386101195d80a959cd5456a16e3cc1621f6ce488ed4be2dd0",
+    "/tmp/test/stage/bin/semanticlens-film-tokenizer": "bca52b5f2945f2959b7493f3cd6d48f0cbce35547d6e215b95b555f643659a1b",
+    "/usr/bin/konsole": "b499a7e7c656b52da664686b532f152e3ba78a51f37aaa8e6894de39f9bb8dba",
+    "/usr/bin/cat": "b97039a4875fc8d2262bb78523032f5b7637308da54551fb55038c38274817be",
+    "/tmp/test/work/receiver-observer.so": "b17b5a9dc0b954fe8cf606820df0fc602b16f1ed299f5723a297c4b6761043d7",
+    "/tmp/test/work/app-observer.so": "1ce03bd70b3cd818eaab3feff9e20fcbfa6cb6986d37df5fb0bd19447896bfd7",
+    "/tmp/test/work/pdf-observer.so": "28a78df7470052b6f2c325b7d9b0494310c86c16404a29f113af3a8d596f5418",
+    "/usr/bin/okular": "7d699b067b6f12d2689cc9a70f8c63f7f2de50b98e02098bbd4ef5c50df01226",
+    "/usr/lib/libOkular6Core.so.4.0.0": "e011663feccf9977bb33af31cde27540c78a3ac19eab3cbcbad36a9c5944ad08",
+    "/usr/lib/qt6/plugins/kf6/parts/okularpart.so": "03169aee83484a62935003d9d0a7717adce6cda9aad8d0259d4c90ccb748fa60",
+    "/usr/bin/tesseract": "9c19bce33d5408d82d691e9827862da3276814033b32f5e5e3263175a3d8b917",
+    "/usr/bin/pdftotext": "2116d335bcb1eb44f291c0f4e83775888ac436556ecc715c875bc2ff03faf8a0"
+  },
+  "gio": {
+    "default": "film-source-consumer.desktop",
+    "fallback_to_all": false,
+    "choices": [
+      {
+        "id": "film-source-consumer.desktop",
+        "executable": "/usr/bin/konsole",
+        "commandline": "/usr/bin/konsole --separate --nofork --hold -e /usr/bin/cat %f",
+        "should_show": true
+      },
+      {
+        "id": "okularApplication_txt.desktop",
+        "executable": "okular",
+        "commandline": "okular %U",
+        "should_show": false
+      }
+    ]
+  },
+  "error": "AssertionError('real owned handler recommendation')",
+  "closure": {
+    "owned_exits": [],
+    "relay_threads_closed": true,
+    "accept_thread_closed": true,
+    "receiver_closure": [],
+    "namespace_processes_pending_outer_exit": [
+      {
+        "pid": 1,
+        "argv": "bwrap --unshare-user --unshare-pid --unshare-net --die-with-parent --ro-bind / / --tmpfs /home --tmpfs /root --tmpfs /run/user --tmpfs /tmp --bind /workspace/semanticlens/local/film-open-qualified-preparation-v1/runtime-v1 /tmp/test --ro-bind /workspace/semanticlens/local/film-open-qualified-preparation-v1/stage/usr /tmp/test/stage --ro-bind /workspace/semanticlens/models /tmp/test/models --ro-bind /workspace/semanticlens/local/film-open-qualified-preparation-v1/stage/usr/bin/semanticlens-film-worker /tmp/test/film-worker --dev /dev --proc /proc --clearenv --setenv PATH /usr/bin:/bin --setenv LANG C.UTF-8 --setenv HOME /tmp/test/home --setenv XDG_CONFIG_HOME /tmp/test/config --setenv XDG_CACHE_HOME /tmp/test/cache --setenv XDG_DATA_HOME /tmp/test/data --setenv XDG_STATE_HOME /tmp/test/state --setenv XDG_RUNTIME_DIR /tmp/test/runtime --setenv XDG_SESSION_TYPE wayland --setenv XDG_CURRENT_DESKTOP KDE --setenv QT_QPA_PLATFORM wayland --setenv XDG_DATA_DIRS /tmp/test/stage/share:/usr/share --setenv QT_PLUGIN_PATH /tmp/test/stage/lib/qt6/plugins:/usr/lib/qt6/plugins --setenv QT_QUICK_BACKEND software --setenv LIBGL_ALWAYS_SOFTWARE 1 --setenv DESKTOP_SESSION plasma --setenv G_MESSAGES_DEBUG xdg-desktop-portal dbus-run-session -- kwin_wayland --virtual --width 1440 --height 1000 --socket semanticlens-test --no-lockscreen --no-global-shortcuts --no-kactivities --exit-with-session /tmp/test/session.sh "
+      },
+      {
+        "pid": 2,
+        "argv": "dbus-run-session -- kwin_wayland --virtual --width 1440 --height 1000 --socket semanticlens-test --no-lockscreen --no-global-shortcuts --no-kactivities --exit-with-session /tmp/test/session.sh "
+      },
+      {
+        "pid": 3,
+        "argv": "dbus-daemon --nofork --print-address 4 --session "
+      },
+      {
+        "pid": 4,
+        "argv": "kwin_wayland --virtual --width 1440 --height 1000 --socket semanticlens-test --no-lockscreen --no-global-shortcuts --no-kactivities --exit-with-session /tmp/test/session.sh "
+      },
+      {
+        "pid": 8,
+        "argv": "/usr/bin/python3 /tmp/test/work/run.py --package /tmp/test/work --session --film-worker /tmp/test/film-worker --film-worker-sha256 dff1212b64fcfb176ce4a3666bd5e6b825259ad3b46f04a625f3995a9dd836e5 "
+      }
+    ],
+    "socket_paths_absent": true,
+    "copy_paths_remaining": []
+  }
+}

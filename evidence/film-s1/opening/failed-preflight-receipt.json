@@ -1,0 +1,16 @@
+{
+  "scope": "model-free actual GIO private-profile check",
+  "argv": [
+    "/usr/bin/update-desktop-database",
+    "<private-data>/applications"
+  ],
+  "gio_helper_sha256": "3fe4f621921984e50f5cb99caa6b0ebf18382990ea0c0d0c40fb624e9aaba9b6",
+  "result_sha256": "65fd57dadbd6d2d0f6e4886da0c7c64e4c89f098106ce7c612836fe67fd292cc",
+  "default": "film-source-consumer.desktop",
+  "recommendations": [
+    "film-source-consumer.desktop"
+  ],
+  "private_removed_association": "text/plain=okularApplication_txt.desktop;",
+  "host_mime_desktop_cache_changed": false,
+  "models_loaded": false
+}
