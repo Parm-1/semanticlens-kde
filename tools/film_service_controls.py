@@ -75,7 +75,7 @@ try:
  check('declared provenance exact and unreviewed',revealed['generation']==json.loads((corpus/'harbor/analysis.json').read_text())['generation'] and revealed['facet']=='central_tension' and revealed['scope']=='scene' and revealed['semantic_review']=='unreviewed')
  prior=json.loads((corpus/'harbor/analysis.json').read_text());prior['analysis_id']='analysis:prior';prior['claims']=[dict(prior['claims'][0],claim_id='claim:prior',basis='unverified_prior',text='PRIOR-LANTERN-616 is an imported unverified interpretation.',evidence=[])]
  (corpus/'prior.json').write_text(json.dumps(prior));time.sleep(.8);state=job('film_import_analysis','prior.json',cid);check('anchorless prior accepted',state['state']=='complete')
- pr=good('film_search',text='PRIOR-LANTERN-616',mode='hybrid',collection_id=cid)
+ pr=good('film_search',text='PRIOR-LANTERN-616',mode='hybrid',collection_id=cid,include_unverified_prior=True)
  pe=next(e for e in pr['results'][0]['evidence'] if e['reference'].get('analysis_id')=='analysis:prior');pref=pe['reference']
  check('prior reference has no invented source',pref.get('reference_kind')=='analysis_only' and 'source_id' not in pref and pe['source_excerpt'] is None)
  pe=good('film_evidence',reference=pref,expected_film_revision=pr['film_revision'])['evidence'];check('prior default hide',pe['analysis_text'] is None)

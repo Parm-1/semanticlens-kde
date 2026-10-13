@@ -6,10 +6,11 @@ distinct interpretation lane; the application does not generate analyses or
 contact a provider. Both its legacy producer and the optional shared-model query
 worker run EmbeddingGemma locally.
 
-S1 is being qualified on authored, redistributable fixtures. It is not a claim
-of measured real-film retrieval quality or a bulk-library rollout. The published
-rc2 release does not contain this feature. Final review and target evidence are
-still pending.
+S1 is an offline development pilot validated on authored, redistributable
+fixtures. It is not a claim of measured real-film retrieval quality or a
+bulk-library rollout. The published rc2 release does not contain this feature.
+See the [validation scopes and measurements](FILM_VALIDATION.md). The pilot is
+delivered for review; it has not been merged, released or installed over rc2.
 
 ## Try the development build
 
@@ -18,8 +19,18 @@ native app, `semanticlens-film-tokenizer` companion and experimental
 `semanticlens-film-worker`. The tokenizer counts the
 exact formatted model input before embedding; film input must fit the qualified
 2,048-token context. The shared worker uses one text model with separate query
-and indexing contexts; the tokenizer loads vocabulary only. This execution repair
-is still under qualification and does not yet establish the latency target.
+and indexing contexts; the tokenizer loads vocabulary only. The private validated
+native snapshot has qualified two- and six-thread worker configurations. Its
+frozen two-thread pilot passed the one-second warm-query p95 target while
+indexing. These measurements apply to that exact snapshot and corpus. The snapshot remains
+local for owner review because its helpers contain private build-path strings;
+it is not uploaded with the public source/evidence export.
+
+A new source build has different executable hashes and does not inherit that
+binary qualification. The service reports unfamiliar producers/workers as
+unqualified, even when their own model labels match. That preserves honest
+provenance. Its fresh embedding producer passed the eight reference-vector
+controls; the rebuilt shared worker has no new concurrency or timing claim.
 
 For an isolated pilot, select an existing verified model directory and embedding
 producer explicitly. Keeping the installed rc2 producer avoids changing its
